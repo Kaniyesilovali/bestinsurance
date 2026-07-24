@@ -1,0 +1,321 @@
+/* ==========================================================================
+   KKTC Sigorta Rehberi — tasarım sistemi
+   Tek aile, iki yüzey, tek eylem rengi. Yerleşim Tailwind utility'leriyle.
+   ========================================================================== */
+
+:root {
+  /* Yüzeyler — yalnızca iki tane. Koyu bant yok. */
+  --white:      #FFFFFF;
+  --paper:      #F5F5F7;   /* dönüşümlü bölüm zemini */
+  --card:       #FFFFFF;
+  --line:       #D2D2D7;   /* saç teli ayraç */
+  --line-soft:  #E8E8ED;   /* bant izi, dolgusuz yüzey */
+
+  /* Metin */
+  --text:       #1D1D1F;
+  --muted:      #6E6E73;
+  --muted-dark: #86868B;   /* koyu zemin üstünde ikincil metin */
+
+  /* Tek eylem rengi. Koyu bölümlerde aşağıda parlak sürümüne dönüyor. */
+  --accent:     #0071E3;
+  --accent-ink: #0055B3;   /* gövde metni içindeki bağlantı — kontrast için koyu */
+
+  /* Anlam taşıyan tek uyarı rengi: yalnızca "zorunlu" ve teminat boşluğu */
+  --flag:       #BF4800;
+  --flag-soft:  #FFF6F0;
+
+  --radius:     18px;      /* kart */
+  --radius-sm:  12px;
+  --pill:       980px;
+}
+
+/* Koyu zeminli bölümler (iç sayfalarda kalanlar) mavinin parlak sürümüne geçer */
+.bg-ink, .bg-ink2, [class*="bg-ink"] { --accent: #2997FF; --accent-ink: #2997FF; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter',
+               'Helvetica Neue', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.47059;
+  letter-spacing: -0.012em;
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Farsça sürüm: Vazirmatn her iki rolü de üstlenir */
+html[lang="fa"] body,
+html[lang="fa"] .u-display { font-family: 'Vazirmatn', 'Inter', sans-serif; }
+
+/* --------------------------------------------------------------------------
+   Tipografi rolleri
+   Tek aile, iki genişlik. Display Inter Tight — daha sıkı çizilmiş olduğu için
+   büyük puntoda SF Pro Display'in yaptığını yapar. Gövde normal Inter.
+   Ayrı bir mono yok: rakamlar aynı ailenin tabular sürümüyle hizalanıyor.
+   -------------------------------------------------------------------------- */
+
+.u-display {
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont,
+               'SF Pro Display', system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+.u-display--tight { letter-spacing: -0.022em; }
+
+/* Rakamlar her zaman tabular — bir puanlama sitesinde sayılar sütun hâlinde
+   hizalanmak zorunda. Ayrı bir mono aile getirmeye gerek yok. */
+.u-num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+  letter-spacing: -0.02em;
+}
+
+/* Üst etiket — büyük harf ve harf aralığı yok, yalnızca küçük ve gri.
+   Apple'ın bölüm etiketi bu kadar sessiz. */
+.u-eyebrow {
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--muted);
+  font-weight: 600;
+}
+.u-eyebrow--dark { color: var(--muted-dark); }
+
+/* Ölçü sınıfları */
+.u-lead { font-size: 21px; line-height: 1.381; letter-spacing: .011em; color: var(--muted); }
+.u-cap  { font-size: 12px; line-height: 1.33337; color: var(--muted); letter-spacing: -.01em; }
+
+/* Okunabilir metin ölçüsü */
+.u-prose { max-width: 42rem; }
+.u-prose p { margin-block: 0 1.2em; line-height: 1.6; }
+.u-prose h2 { margin-block: 2em .5em; }
+.u-prose h3 { margin-block: 1.6em .35em; }
+.u-prose a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
+
+/* --------------------------------------------------------------------------
+   İMZA BİLEŞENİ — Teminat Profili
+   Sabit sırada 6 puanlanan bant + ayrılmış 2 "veri yok" bandı.
+   Aynı sıra her yerde tekrarlandığı için liste boyunca aşağı bakarken her
+   şirketin kendine has bir silueti oluşuyor.
+
+   Son iki bant mali gücü ve hasar ödeme performansını temsil ediyor. KKTC'de
+   bu veriler 2016'dan beri şirket bazında yayımlanmadığı için puanlanamıyor.
+   Dolgusuz ve kesik çizgili duruyorlar: bir bant boş kalabilir, ama yerini
+   koruduğu sürece "sıfır puan" diye okunmaz — orada ölçülmemiş bir şey var.
+   -------------------------------------------------------------------------- */
+
+.cp {
+  display: inline-flex;
+  gap: 3px;
+  align-items: flex-end;
+  height: 22px;
+  vertical-align: middle;
+}
+.cp > i {
+  display: block;
+  position: relative;
+  width: 4px;
+  height: 100%;
+  background: var(--line-soft);         /* açıkta kalan kısım */
+  border-radius: 2px;
+  overflow: hidden;
+}
+.cp > i::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: calc(var(--v) * 100%);
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* "Veri yayımlanmıyor" bandı — puanlanmışlardan boşlukla ayrılır, dolgusu
+   yoktur, yalnızca yerini tutan kesik bir çerçevedir. */
+.cp > i.cp-nd {
+  margin-inline-start: 9px;
+  background: transparent;
+  border: 1px dashed var(--line);
+  border-radius: 2px;
+  overflow: visible;
+}
+.cp > i.cp-nd + i.cp-nd { margin-inline-start: 3px; }
+.cp > i.cp-nd::after { display: none; }
+
+/* Koyu zeminde iz rengi değişir */
+.cp--on-dark > i { background: rgba(255,255,255,.18); }
+.cp--on-dark > i.cp-nd { background: transparent; border-color: rgba(255,255,255,.32); }
+
+/* Büyük varyant — metodoloji ve şirket detay sayfasında etiketli hâli */
+.cp--lg { height: 64px; gap: 6px; }
+.cp--lg > i { width: 12px; border-radius: 6px; }
+.cp--lg > i::after { border-radius: 6px; }
+.cp--lg > i.cp-nd { margin-inline-start: 18px; border-radius: 6px; }
+.cp--lg > i.cp-nd + i.cp-nd { margin-inline-start: 6px; }
+
+/* Açılış: bantlar soldan sağa sırayla doluyor. Sayfadaki tek koreografi bu. */
+@media (prefers-reduced-motion: no-preference) {
+  .cp > i::after {
+    animation: cp-fill .55s cubic-bezier(.28,.11,.32,1) backwards;
+    animation-delay: calc(var(--i, 0) * 45ms + var(--row, 0) * 60ms);
+  }
+  @keyframes cp-fill { from { height: 0; } }
+}
+
+/* Bant sırası — her <i> kendi gecikmesini alsın */
+.cp > i:nth-child(1) { --i: 0 } .cp > i:nth-child(2) { --i: 1 }
+.cp > i:nth-child(3) { --i: 2 } .cp > i:nth-child(4) { --i: 3 }
+.cp > i:nth-child(5) { --i: 4 } .cp > i:nth-child(6) { --i: 5 }
+
+/* --------------------------------------------------------------------------
+   İMZA BÖLÜMÜ — Boşluk
+   Puanlanmayan iki ölçüt, sayfanın en büyük ve en sessiz anı. Rakam yerine
+   iki tire. Sitenin iddiası "ölçemediğimizi de söylüyoruz" olduğu için bu
+   boşluk süs değil, argümanın kendisi.
+   -------------------------------------------------------------------------- */
+
+.blank-row {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1.5rem;
+  padding: .75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.blank-row:first-child { border-top: 1px solid var(--line); }
+
+.blank {
+  font-family: 'Inter Tight', -apple-system, system-ui, sans-serif;
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  line-height: 1;
+  font-weight: 500;
+  color: var(--muted-dark);
+  user-select: none;
+}
+
+/* --------------------------------------------------------------------------
+   Sıralama tablosu
+   -------------------------------------------------------------------------- */
+
+.rank { width: 100%; border-collapse: collapse; }
+.rank th {
+  font-size: 12px;
+  letter-spacing: -.01em;
+  text-transform: none;
+  font-weight: 600;
+  text-align: start;
+  padding: 0 0 .75rem;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+.rank td { padding: 1.1rem 0; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.rank tbody tr { transition: background-color .2s ease; }
+.rank tbody tr:hover { background: rgba(0,0,0,.02); }
+
+/* Koyu zeminli sürüm (iç sayfalarda kalan bantlar) */
+.rank--on-dark th { color: var(--muted-dark); border-bottom-color: rgba(255,255,255,.18); }
+.rank--on-dark td { border-bottom-color: rgba(255,255,255,.18); }
+.rank--on-dark tbody tr:hover { background: rgba(255,255,255,.05); }
+.rank--light th { color: var(--muted); border-bottom-color: var(--line); }
+.rank--light td { border-bottom-color: var(--line); }
+
+/* Sıra numarası — burada 01/02/03 dekoratif değil, sıralamanın kendisi */
+.rank-no {
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: -.02em;
+}
+.rank--light .rank-no { color: var(--muted); }
+
+/* --------------------------------------------------------------------------
+   Eylemler
+   -------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: .35rem;
+  min-height: 44px;
+  padding: .6875rem 1.375rem;
+  border-radius: var(--pill);
+  font-size: 17px; font-weight: 400; letter-spacing: -.012em;
+  background: var(--accent); color: #fff;
+  transition: background-color .2s ease;
+}
+.btn:hover { background: #0077ED; }
+.btn--secondary { background: var(--line-soft); color: var(--text); }
+.btn--secondary:hover { background: #DCDCE1; }
+
+/* Chevron bağlantı — Apple'ın "Daha fazla bilgi ›" kalıbı */
+.arrow {
+  display: inline-flex; align-items: baseline; gap: .3rem;
+  color: var(--accent-ink); font-size: 17px; letter-spacing: -.012em;
+}
+.arrow::after { content: '\203A'; font-size: 1.15em; line-height: 1; transition: transform .2s ease; }
+.arrow:hover { text-decoration: underline; text-underline-offset: 3px; }
+.arrow:hover::after { transform: translateX(2px); }
+.arrow--sm { font-size: 14px; }
+html[dir="rtl"] .arrow::after { content: '\2039'; }
+html[dir="rtl"] .arrow:hover::after { transform: translateX(-2px); }
+
+/* --------------------------------------------------------------------------
+   Küçük parçalar
+   -------------------------------------------------------------------------- */
+
+.badge {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: 12px; font-weight: 600; letter-spacing: -.01em;
+  padding: .1875rem .5rem; border-radius: var(--pill);
+  text-transform: none;
+}
+.badge--zorunlu { background: var(--flag-soft); color: var(--flag); }
+.badge--taslak  { background: var(--line-soft); color: var(--muted); }
+.badge--ok      { background: #EEF6FF; color: var(--accent-ink); }
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  transition: transform .25s cubic-bezier(.28,.11,.32,1);
+}
+a.card:hover { transform: translateY(-2px); }
+
+.hairline { border: 0; border-top: 1px solid var(--line); }
+.hairline--dark { border-top-color: rgba(255,255,255,.18); }
+
+/* Gövde metni içindeki bağlantı: mavi, üstünde çizgi belirir */
+.link-u { color: inherit; }
+.link-u:hover, .link-u:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+
+/* --------------------------------------------------------------------------
+   Kaydırınca beliren bölümler — tek hareket kalıbı, 8px yükselme.
+   JS yoksa veya hareket azaltılmışsa her şey görünür kalır.
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal { opacity: 0; transform: translateY(12px); }
+  .js .reveal.is-in {
+    opacity: 1; transform: none;
+    transition: opacity .7s cubic-bezier(.28,.11,.32,1),
+                transform .7s cubic-bezier(.28,.11,.32,1);
+    transition-delay: calc(var(--d, 0) * 80ms);
+  }
+}
+
+/* Klavye odağı — her yerde görünür */
+:where(a, button, input, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Ekran okuyucuya özel */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}

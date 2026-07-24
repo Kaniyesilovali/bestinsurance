@@ -1,0 +1,3857 @@
+[
+ {
+  "ad": "DAĞLI SİGORTA CO LTD.",
+  "slug": "dagli-sigorta",
+  "sehir": "Gazimağusa",
+  "web": "daglisigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": 1967,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "seyahat",
+   "ferdi_kaza",
+   "hayat",
+   "nakliyat",
+   "sorumluluk"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": true,
+  "diller": [
+   "tr",
+   "en",
+   "ru",
+   "el"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": 25,
+  "ofis_sehirler": [
+   "Gazimağusa",
+   "Lefkoşa",
+   "Girne",
+   "İskele"
+  ],
+  "email": "info@daglisigorta.com",
+  "email_kurumsal": true,
+  "adres": "İsmet İnönü Bulvarı, No: 104/B Gazimağusa, Kuzey Kıbrıs",
+  "whatsapp": "+905338840900",
+  "instagram": "https://www.instagram.com/daglisigortaltd/",
+  "facebook": "https://www.facebook.com/dagliinsurance",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.daglisigorta.com/",
+  "notlar": "1967'den beri. Acente sayısında sitede tutarsızlık: metinde '25 acentemizle', footer'da '22 Acente' — ikisi de beyan. police.daglisigorta.com'da çalışan online trafik poliçesi. Mobil uygulama App Store + Google Play. 4 dil (TR/EN/RU/EL) — listedeki en geniş gerçek dil desteği. Siber, eczane paket, doktor mesleki sorumluluk gibi geniş ürün gamı.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 8,
+    "detay": {
+     "var": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 9.1,
+    "detay": {
+     "brans_sayisi": 10
+    }
+   },
+   "erisim": {
+    "puan": 9.5,
+    "detay": {
+     "sehir_sayisi": 4,
+     "acente": 25
+    }
+   },
+   "dijital": {
+    "puan": 8.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe",
+      "mobil uygulama"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 9.0,
+    "detay": {
+     "diller": [
+      "en",
+      "ru",
+      "el"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 8.0,
+    "detay": {
+     "kurulus_yili": 1967,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 8.6,
+  "profil": [
+   0.8,
+   0.9099999999999999,
+   0.95,
+   0.8,
+   0.9,
+   0.8
+  ],
+  "sira": 1
+ },
+ {
+  "ad": "LİMASOL SİGORTA LTD",
+  "slug": "limasol-sigorta",
+  "sehir": "Girne",
+  "web": "limasolsigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": 1995,
+  "sirket_turu": "banka_bagli",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "seyahat",
+   "hayat",
+   "ferdi_kaza",
+   "nakliyat",
+   "muhendislik",
+   "sorumluluk"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": true,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Girne",
+   "Güzelyurt",
+   "İskele"
+  ],
+  "email": "info@limasolsigorta.com",
+  "email_kurumsal": true,
+  "adres": null,
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": "https://www.facebook.com/limasolsigorta/",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.limasolsigorta.com/",
+  "notlar": "Kuruluş 1995 ('27 Yaşında', 05.09.2022 haberinden). Büyük hissedar Limasol Türk Kooperatif Bankası. Ayrı Hasar İhbar formu var. Limasol Assist 7/24: +90 533 866 63 63. Merkez adresi yayınlanmamış.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "kuruluş yılı",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "açık adres",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 10.0,
+    "detay": {
+     "brans_sayisi": 11
+    }
+   },
+   "erisim": {
+    "puan": 6.0,
+    "detay": {
+     "sehir_sayisi": 3,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 8.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe",
+      "online hasar ihbarı"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 9.0,
+    "detay": {
+     "kurulus_yili": 1995,
+     "tur": "banka_bagli"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 7.3,
+  "profil": [
+   0.6,
+   1.0,
+   0.6,
+   0.8,
+   0.5,
+   0.9
+  ],
+  "sira": 2
+ },
+ {
+  "ad": "KIBRIS SİGORTA ŞTİ. LTD.",
+  "slug": "kibris-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "kibrissigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": 1995,
+  "sirket_turu": "banka_bagli",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "saglik",
+   "hayat",
+   "ferdi_kaza",
+   "isyeri",
+   "nakliyat",
+   "muhendislik",
+   "sorumluluk"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": 56,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Girne",
+   "Gazimağusa",
+   "Güzelyurt",
+   "İskele"
+  ],
+  "email": "info@kibrissigorta.com",
+  "email_kurumsal": true,
+  "adres": "Abdi İpekçi Cad., Eti Binaları, Lefkoşa / KKTC",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/kibrissigorta/",
+  "facebook": "https://www.facebook.com/kibrissigorta",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.kibrissigorta.com/",
+  "notlar": "19.04.1995 tescil, 01.09.1995 faaliyet — KKTC'nin ilk yerel sigorta şirketi. Hissedarlar: KKTC Kalkınma Bankası %37, ETİ %21, Kıbrıs Vakıflar Bankası %17, Okyay Nazım %14, Mez Koop %6. Footer '© 2021'.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 8,
+    "detay": {
+     "var": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 9.1,
+    "detay": {
+     "brans_sayisi": 10
+    }
+   },
+   "erisim": {
+    "puan": 8.0,
+    "detay": {
+     "sehir_sayisi": 5,
+     "acente": 56
+    }
+   },
+   "dijital": {
+    "puan": 6.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": 9.0,
+    "detay": {
+     "kurulus_yili": 1995,
+     "tur": "banka_bagli"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 7.1,
+  "profil": [
+   0.8,
+   0.9099999999999999,
+   0.8,
+   0.6,
+   0.0,
+   0.9
+  ],
+  "sira": 3
+ },
+ {
+  "ad": "CAN SİGORTA LTD.",
+  "slug": "can-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "cansigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": 1958,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "seyahat",
+   "sorumluluk",
+   "ferdi_kaza",
+   "muhendislik",
+   "nakliyat"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": true,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Girne"
+  ],
+  "email": "info@cansigorta.com",
+  "email_kurumsal": true,
+  "adres": "Ali Rıza Efendi Caddesi, Efruz Apt. No: 2/4, Ortaköy - Lefkoşa",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/cansigorta",
+  "facebook": "https://www.facebook.com/cansigortaltd",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://cansigorta.com/",
+  "notlar": "Ana sayfada '1958'den beri' ibaresi — listedeki en eski şirket. police.cansigorta.com'da çalışan online trafik poliçesi doğrulandı. 'TEKLİF AL', 'SİGORTA YENİLE', 'HASAR BİLDİR' aksiyonları var. TR/EN ayrı sayfalar. ASP.NET tabanlı eski nesil site.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 8,
+    "detay": {
+     "var": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 8.2,
+    "detay": {
+     "brans_sayisi": 9
+    }
+   },
+   "erisim": {
+    "puan": 4,
+    "detay": {
+     "sehir_sayisi": 2,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 8.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe",
+      "online hasar ihbarı"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 8.0,
+    "detay": {
+     "kurulus_yili": 1958,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 6.9,
+  "profil": [
+   0.8,
+   0.82,
+   0.4,
+   0.8,
+   0.5,
+   0.8
+  ],
+  "sira": 4
+ },
+ {
+  "ad": "CREDITWEST SİGORTA LTD.",
+  "slug": "creditwest-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "creditwestinsurance.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "banka_bagli",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "sorumluluk",
+   "konut",
+   "isyeri",
+   "ferdi_kaza",
+   "nakliyat",
+   "yat",
+   "seyahat",
+   "hayat"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": true,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en",
+   "ru"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": 35,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@creditwestinsurance.com",
+  "email_kurumsal": true,
+  "adres": "Şehit Mustafa A. Ruso Cad., No.157/E, Lefkoşa / KKTC",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.creditwestinsurance.com/",
+  "notlar": "Cloudflare bot koruması nedeniyle standart isteklere 403 dönüyor, tarayıcıda 200. Creditwest Bank bağlantısı kendi İK linklerinden doğrulanıyor. Beyanlar: '70000 Memnun Müşteri', '25 Ürün', '35 Acente'. Online poliçe akışı, online hasar bildirim formu ve pert araç listesi var. Eski WordPress eklentileri kullanıyor.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 9.1,
+    "detay": {
+     "brans_sayisi": 10
+    }
+   },
+   "erisim": {
+    "puan": 3.5,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": 35
+    }
+   },
+   "dijital": {
+    "puan": 8.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe",
+      "online hasar ihbarı"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 8.0,
+    "detay": {
+     "diller": [
+      "en",
+      "ru"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "banka_bagli"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 6.7,
+  "profil": [
+   0.6,
+   0.9099999999999999,
+   0.35,
+   0.8,
+   0.8,
+   0.5
+  ],
+  "sira": 5
+ },
+ {
+  "ad": "AVEON SİGORTA LTD.",
+  "slug": "aveon-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "aveoninsurance.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "seyahat",
+   "nakliyat",
+   "muhendislik",
+   "sorumluluk",
+   "ferdi_kaza"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Girne",
+   "Gazimağusa"
+  ],
+  "email": "info@aveoninsurance.com",
+  "email_kurumsal": true,
+  "adres": "17/C Memduh Asaf Sokak Köşklüçiftlik, Lefkoşa - KKTC",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/sigortaaveon",
+  "facebook": "https://www.facebook.com/aveonsigorta",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://aveoninsurance.com/",
+  "notlar": "police.aveoninsurance.com'da çalışan online zorunlu trafik poliçesi (plaka + kimlik ile fiyat ve satın alma), yalnızca bireysel araç. Genel teklif formu ise fiyat hesaplamıyor. Hasar hattı +90 542 869 90 00.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 9.1,
+    "detay": {
+     "brans_sayisi": 10
+    }
+   },
+   "erisim": {
+    "puan": 6.0,
+    "detay": {
+     "sehir_sayisi": 3,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 6.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 3.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 6.4,
+  "profil": [
+   0.6,
+   0.9099999999999999,
+   0.6,
+   0.6,
+   0.5,
+   0.3
+  ],
+  "sira": 6
+ },
+ {
+  "ad": "TÜRK SİGORTA LTD.",
+  "slug": "turk-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "turksigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "banka_bagli",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "nakliyat",
+   "muhendislik",
+   "sorumluluk",
+   "ferdi_kaza",
+   "hayat",
+   "seyahat",
+   "yat"
+  ],
+  "online_teklif": true,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Girne",
+   "Gazimağusa",
+   "Güzelyurt"
+  ],
+  "email": "turksigorta@turksigorta.com",
+  "email_kurumsal": true,
+  "adres": "Belediye Bulvarı, Akview Apt. No:4, Yenikent/Gönyeli, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.turksigorta.com/",
+  "notlar": "SSL sertifika zinciri eksik. TurkishBank Group üyesi. Teklif formunda doğum yılı seçenekleri 2003'te bitiyor — yıllardır güncellenmemiş. Genel Şartlar sayfası boş: 'Bu bölüm güncellenmektedir'. Sayfa memnuniyet oylaması 1.7/5.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 10.0,
+    "detay": {
+     "brans_sayisi": 11
+    }
+   },
+   "erisim": {
+    "puan": 6.0,
+    "detay": {
+     "sehir_sayisi": 4,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 4.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "banka_bagli"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 6.2,
+  "profil": [
+   0.6,
+   1.0,
+   0.6,
+   0.4,
+   0.5,
+   0.5
+  ],
+  "sira": 7
+ },
+ {
+  "ad": "AKFİNANS SİGORTA",
+  "slug": "akfinans-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "akfinans.one",
+  "http_durum": 200,
+  "kurulus_yili": 1996,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "nakliyat",
+   "muhendislik",
+   "sorumluluk",
+   "ferdi_kaza",
+   "yat"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Gazimağusa",
+   "Girne"
+  ],
+  "email": "akfinans@akfinans.com",
+  "email_kurumsal": true,
+  "adres": "16 Osmanpaşa Caddesi Köşklüçiftlik, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": "https://www.facebook.com/AkfinansBank/",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.akfinans.one/",
+  "notlar": "Site tamamen İngilizce, Türkçe sürüm yok. 1996'da yerel sermaye ile kurulmuş, KKTC'nin ilk yerel şirketlerinden. Sayfaların üstünde PHP hatası basılıyor (wp-includes/script-loader.php). Sosyal medya ikonları boş placeholder; Facebook linki Akfinans Bank'a gidiyor. E-posta akfinans.com, site akfinans.one.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 8,
+    "detay": {
+     "var": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 8.2,
+    "detay": {
+     "brans_sayisi": 9
+    }
+   },
+   "erisim": {
+    "puan": 6.0,
+    "detay": {
+     "sehir_sayisi": 3,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 7.0,
+    "detay": {
+     "kurulus_yili": 1996,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 6.1,
+  "profil": [
+   0.8,
+   0.82,
+   0.6,
+   0.2,
+   0.5,
+   0.7
+  ],
+  "sira": 8
+ },
+ {
+  "ad": "BICARE INSURANCE LTD.",
+  "slug": "bicare-insurance",
+  "sehir": "Lefkoşa",
+  "web": "bicareinsurance.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "nakliyat",
+   "yat",
+   "muhendislik",
+   "sorumluluk",
+   "ferdi_kaza",
+   "seyahat",
+   "saglik"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "diller_makine": true,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "İskele"
+  ],
+  "email": "info@bicareinsurance.com",
+  "email_kurumsal": true,
+  "adres": "Şehit Albay Karaoğlanoğlu Caddesi No:15 Çağlayan, Lefkoşa / KKTC",
+  "whatsapp": "+905488310247",
+  "instagram": "https://www.instagram.com/bicareinsurance",
+  "facebook": "https://www.facebook.com/profile.php?id=61554968125735",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.bicareinsurance.com/",
+  "notlar": "police.bicareinsurance.com'da çalışan online trafik poliçesi satın alma (bireysel araç). Sitede 8 dil görünüyor ANCAK bunlar GTranslate eklentisiyle otomatik makine çevirisi — insan çevirisi değil, bu yüzden yabancı dil hizmeti sayılmadı. Beyanlar: 'Tecrübe 15+', 'Çalışan 12', 'Anlaşmalı Kurum 243+'. Plaka ile araç muayene sorgulama aracı var.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 10.0,
+    "detay": {
+     "brans_sayisi": 11
+    }
+   },
+   "erisim": {
+    "puan": 6,
+    "detay": {
+     "sehir_sayisi": 2,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 6.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "neden": "Dil seçenekleri otomatik makine çevirisi, insan çevirisi değil"
+    }
+   },
+   "kurumsal": {
+    "puan": 3.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 6.1,
+  "profil": [
+   0.6,
+   1.0,
+   0.6,
+   0.6,
+   0.0,
+   0.3
+  ],
+  "sira": 9
+ },
+ {
+  "ad": "KIBRIS KAPITAL INSURANCE LTD.",
+  "slug": "kibris-kapital-insurance",
+  "sehir": "Lefkoşa",
+  "web": "capitalinsurance.com.tr",
+  "http_durum": 200,
+  "kurulus_yili": 2013,
+  "sirket_turu": "banka_bagli",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "seyahat",
+   "muhendislik",
+   "sorumluluk",
+   "nakliyat",
+   "ferdi_kaza"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "acente_sayisi": 50,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Gazimağusa",
+   "İskele",
+   "Güzelyurt"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": "Şht. Mustafa Ruso Cad., Muhtar Yusuf Galleria, Kat:1 No:102, K.Kaymaklı, Lefkoşa",
+  "whatsapp": "+905338244400",
+  "instagram": "https://www.instagram.com/capitalinsurancecy",
+  "facebook": "https://www.facebook.com/Capitalinsurancekibris",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://capitalinsurance.com.tr/",
+  "notlar": "Kuruluş 13.12.2013, faaliyet 01.01.2014. Kapital Grup üyesi. '18 Şube 50 Acente' beyanı. 'Teklif Al' fiyat hesaplayıcı değil, talep formu. E-posta yayınlanmamış.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 4,
+    "detay": {
+     "var": [
+      "kuruluş yılı",
+      "açık adres"
+     ],
+     "yok": [
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 9.1,
+    "detay": {
+     "brans_sayisi": 10
+    }
+   },
+   "erisim": {
+    "puan": 10.0,
+    "detay": {
+     "sehir_sayisi": 4,
+     "acente": 50
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 8.0,
+    "detay": {
+     "kurulus_yili": 2013,
+     "tur": "banka_bagli"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 6.1,
+  "profil": [
+   0.4,
+   0.9099999999999999,
+   1.0,
+   0.2,
+   0.5,
+   0.8
+  ],
+  "sira": 10
+ },
+ {
+  "ad": "COMMERCIAL INSURANCE LTD.",
+  "slug": "commercial-insurance",
+  "sehir": "Lefkoşa",
+  "web": "commercialcyprus.com",
+  "http_durum": 200,
+  "kurulus_yili": 1998,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "ferdi_kaza",
+   "muhendislik",
+   "nakliyat",
+   "sorumluluk",
+   "seyahat",
+   "hayat"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Girne",
+   "Gazimağusa"
+  ],
+  "email": "info@commercialcyprus.com",
+  "email_kurumsal": true,
+  "adres": "111 Bedreddin Demirel Caddesi Kat: 5-6 Lefkoşa / KKTC",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://commercialcyprus.com/",
+  "notlar": "1982'de Batı Sigorta Acenteliği olarak başlamış, 1998'de sigorta şirketi olarak Birlik üyesi olmuş. Statik şablonun demo adresleri hâlâ HTML yorumu olarak duruyor. 'Online İşlemler' menüsü poliçe satışı değil. Sosyal medya hesabı yok.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 8,
+    "detay": {
+     "var": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 7.3,
+    "detay": {
+     "brans_sayisi": 8
+    }
+   },
+   "erisim": {
+    "puan": 6.0,
+    "detay": {
+     "sehir_sayisi": 3,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 7.0,
+    "detay": {
+     "kurulus_yili": 1998,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 5.9,
+  "profil": [
+   0.8,
+   0.73,
+   0.6,
+   0.2,
+   0.5,
+   0.7
+  ],
+  "sira": 11
+ },
+ {
+  "ad": "GÜVEN SİGORTA (KIBRIS) LTD.",
+  "slug": "guven-sigorta-kibris",
+  "sehir": "Lefkoşa",
+  "web": "guvensigortakibris.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "tr_ortakligi",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "nakliyat",
+   "yat",
+   "muhendislik",
+   "sorumluluk",
+   "ferdi_kaza",
+   "seyahat",
+   "saglik"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "İskele",
+   "Girne"
+  ],
+  "email": "sigorta@guvensigortakibris.com",
+  "email_kurumsal": true,
+  "adres": null,
+  "whatsapp": "+905338667785",
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://guvensigortakibris.com/",
+  "notlar": "'TEKLİF ALIN' formu fiyat hesaplamıyor. online.guvensigortakibris.com sadece ödeme ve poliçe sorgulama sunuyor, satın alma yok. Hasar ihbarı telefon/WhatsApp. Genel müdürlüğün açık adresi sitede yazılı değil, yalnızca harita. Departman e-postaları ayrı. Sosyal medya linki yok. Telif '© 2022'.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 4,
+    "detay": {
+     "var": [
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "açık adres",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 10.0,
+    "detay": {
+     "brans_sayisi": 11
+    }
+   },
+   "erisim": {
+    "puan": 8.0,
+    "detay": {
+     "sehir_sayisi": 3,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "tr_ortakligi"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 5.8,
+  "profil": [
+   0.4,
+   1.0,
+   0.8,
+   0.2,
+   0.5,
+   0.5
+  ],
+  "sira": 12
+ },
+ {
+  "ad": "KIBRIS İKTİSAT SİGORTA LTD.",
+  "slug": "kibris-iktisat-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "iktisatsigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "banka_bagli",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "nakliyat",
+   "ferdi_kaza"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "acente_sayisi": 16,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Gazimağusa",
+   "Girne",
+   "Güzelyurt"
+  ],
+  "email": "info@iktisatsigorta.com",
+  "email_kurumsal": true,
+  "adres": "15, Müftü Ziyai Efendi Sokak, Lefkoşa / KKTC",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": "https://www.facebook.com/pages/İktisat-Sigorta/1389337791310397",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://iktisatsigorta.com/",
+  "notlar": "Footer'da '© 2013', Google+ linki hâlâ duruyor. '16 Hizmet Noktası' beyanı. Şube listesi İktisatbank şubeleriyle örtüşüyor.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 5.5,
+    "detay": {
+     "brans_sayisi": 6
+    }
+   },
+   "erisim": {
+    "puan": 7.0,
+    "detay": {
+     "sehir_sayisi": 4,
+     "acente": 16
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "banka_bagli"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 5.2,
+  "profil": [
+   0.6,
+   0.55,
+   0.7,
+   0.2,
+   0.5,
+   0.5
+  ],
+  "sira": 13
+ },
+ {
+  "ad": "ANADOLU ANONİM TÜRK SİGORTA ŞTİ.",
+  "slug": "anadolu-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "kibris.anadolusigorta.com.tr",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "tr_subesi",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "seyahat",
+   "ferdi_kaza",
+   "nakliyat",
+   "yat"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": true,
+  "diller": [
+   "tr"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "bolge50@anadolusigorta.com.tr",
+  "email_kurumsal": true,
+  "adres": "Memduh Asaf Sokak 8 Köşklüçiftlik Lefkoşa / KKTC",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/anadolusigortakibris/",
+  "facebook": "https://www.facebook.com/anadolusigortakibris",
+  "police_sartlari_yayinda": true,
+  "kaynak_url": "https://kibris.anadolusigorta.com.tr/",
+  "notlar": "React SPA — JS kapalıyken içerik görünmüyor. Genel Şartlar ve Bilgilendirme Formu PDF'leri yayında, bazıları İngilizce kloz içeriyor. Mobil uygulamalar Türkiye geneli ('Sigortam Cepte'). Teklif/satın alma ekranı yok.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 8,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı",
+      "poliçe genel şartları yayında"
+     ],
+     "yok": [
+      "kuruluş yılı"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 8.2,
+    "detay": {
+     "brans_sayisi": 9
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 4.0,
+    "detay": {
+     "ozellikler": [
+      "mobil uygulama"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "tr_subesi"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 5.1,
+  "profil": [
+   0.8,
+   0.82,
+   0.2,
+   0.4,
+   0.0,
+   0.5
+  ],
+  "sira": 14
+ },
+ {
+  "ad": "NORTHPRIME INSURANCE LTD.",
+  "slug": "northprime-insurance",
+  "sehir": "Lefkoşa",
+  "web": "npikibris.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "hayat",
+   "ferdi_kaza",
+   "seyahat"
+  ],
+  "online_teklif": true,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": true,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Gazimağusa",
+   "Girne",
+   "Güzelyurt",
+   "İskele"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": null,
+  "whatsapp": "+905338867575",
+  "instagram": "https://www.instagram.com/northprime.insurance/",
+  "facebook": "https://www.facebook.com/NorthPrime/",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://npikibris.com/",
+  "notlar": "Gruptaki tek mobil uygulama: App Store id6468776597 + Google Play. '13 YILLIK TECRÜBE', '93 BİN MUTLU MÜŞTERİ' beyanları. Site tamamen JS ile yükleniyor, acente listesi boş dönüyor. TLS 1.0/1.1 kısıtlı sunucu.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 0,
+    "detay": {
+     "var": [],
+     "yok": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 7.3,
+    "detay": {
+     "brans_sayisi": 8
+    }
+   },
+   "erisim": {
+    "puan": 8.0,
+    "detay": {
+     "sehir_sayisi": 5,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 6.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "mobil uygulama"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "kurumsal"
+  ],
+  "genel_puan": 5.0,
+  "profil": [
+   0.0,
+   0.73,
+   0.8,
+   0.6,
+   0.5,
+   null
+  ],
+  "sira": 15
+ },
+ {
+  "ad": "AXA SİGORTA A.Ş.",
+  "slug": "axa-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "axasigorta.com.tr/kibris-subemiz",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "tr_subesi",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "seyahat",
+   "muhendislik"
+  ],
+  "online_teklif": true,
+  "online_police": false,
+  "online_hasar_ihbar": true,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa",
+   "Girne",
+   "Gazimağusa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": "Gazeteci Kemal Aşık Caddesi No:70, Lefkoşa / KKTC",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.axasigorta.com.tr/kibris-subemiz",
+  "notlar": "Bağımsız KKTC sitesi yok; Türkiye sitesi içinde 'Kıbrıs Şubemiz' bölümü. Zorunlu trafik teklif ekranı ve OASIS üzerinden hasar ihbarı var. KKTC'ye özel ürünler mevcut (Kıbrıs Özel Sağlık Sigortası). KKTC'ye özel e-posta veya sosyal medya yok.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 2,
+    "detay": {
+     "var": [
+      "açık adres"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 6.4,
+    "detay": {
+     "brans_sayisi": 7
+    }
+   },
+   "erisim": {
+    "puan": 6.0,
+    "detay": {
+     "sehir_sayisi": 3,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 6.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online hasar ihbarı"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "tr_subesi"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 4.9,
+  "profil": [
+   0.2,
+   0.64,
+   0.6,
+   0.6,
+   0.5,
+   0.5
+  ],
+  "sira": 16
+ },
+ {
+  "ad": "İYİ-GELECEK SİGORTA LTD.",
+  "slug": "iyi-gelecek-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "iyigeleceksigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "nakliyat",
+   "muhendislik",
+   "sorumluluk",
+   "ferdi_kaza",
+   "hayat",
+   "seyahat",
+   "yat"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@iyigeleceksigorta.com",
+  "email_kurumsal": true,
+  "adres": "Şht. Ertuğrul Arif Sokak No:11, Kızılay, Lefkoşa",
+  "whatsapp": "+905469993500",
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://iyigeleceksigorta.com/",
+  "notlar": "Sitede '33 Years Experiences' ve '30 yılı aşkın deneyim' ifadeleri çelişiyor. Hasar ihbarı yalnızca WhatsApp/telefon. /biz-kimiz sayfası 404.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 10.0,
+    "detay": {
+     "brans_sayisi": 11
+    }
+   },
+   "erisim": {
+    "puan": 4,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "kurumsal"
+  ],
+  "genel_puan": 4.9,
+  "profil": [
+   0.6,
+   1.0,
+   0.4,
+   0.2,
+   0.0,
+   null
+  ],
+  "sira": 17
+ },
+ {
+  "ad": "ŞEKER SİGORTA (KIBRIS) LTD.",
+  "slug": "seker-sigorta-kibris",
+  "sehir": "Lefkoşa",
+  "web": "sekerinsurance.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "sorumluluk",
+   "muhendislik"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": 90,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@sekerinsurance.com",
+  "email_kurumsal": true,
+  "adres": "İlhan Savut Sokak No:7, P.K. 664, Köşklüçiftlik, Lefkoşa",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/sekersigortakibris/",
+  "facebook": "https://www.facebook.com/Şeker-Sigorta-Kıbrıs-Ltd-349174412147733/",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.sekerinsurance.com/",
+  "notlar": "'90 ACENTEMİZLE' beyanı (doğrulanmadı). 01.11.2024'ten itibaren deprem ve yanardağ teminatı duyurusu. 'Tarihçemiz' menüde var ama URL 404. Kaportacılar için ayrı giriş paneli.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 5.5,
+    "detay": {
+     "brans_sayisi": 6
+    }
+   },
+   "erisim": {
+    "puan": 4,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": 90
+    }
+   },
+   "dijital": {
+    "puan": 6.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "kurumsal"
+  ],
+  "genel_puan": 4.8,
+  "profil": [
+   0.6,
+   0.55,
+   0.4,
+   0.6,
+   0.0,
+   null
+  ],
+  "sira": 18
+ },
+ {
+  "ad": "GİG SİGORTA A.Ş.",
+  "slug": "gig-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "gig.com.tr",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "tr_subesi",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "seyahat",
+   "ferdi_kaza",
+   "nakliyat",
+   "sorumluluk",
+   "muhendislik"
+  ],
+  "online_teklif": false,
+  "online_police": true,
+  "online_hasar_ihbar": true,
+  "mobil_uygulama": true,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": null,
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/gigsigorta",
+  "facebook": null,
+  "police_sartlari_yayinda": true,
+  "kaynak_url": "https://www.gig.com.tr/",
+  "notlar": "KKTC'ye özel site veya şube sayfası YOK — gig.com.tr tamamen Türkiye merkezli. KKTC'ye dair tek içerik hasar beyan formu PDF'leri. Sitede Lefkoşa ofis adresi, KKTC telefonu veya e-postası bulunamadı. 'Gigit' mobil uygulaması Türkiye geneli.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 2,
+    "detay": {
+     "var": [
+      "poliçe genel şartları yayında"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 7.3,
+    "detay": {
+     "brans_sayisi": 8
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 8.0,
+    "detay": {
+     "ozellikler": [
+      "online poliçe",
+      "online hasar ihbarı",
+      "mobil uygulama"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "tr_subesi"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 4.7,
+  "profil": [
+   0.2,
+   0.73,
+   0.2,
+   0.8,
+   0.5,
+   0.5
+  ],
+  "sira": 19
+ },
+ {
+  "ad": "SMART TARGET INSURANCE LTD.",
+  "slug": "smart-target-insurance",
+  "sehir": "Lefkoşa",
+  "web": "targetsigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "seyahat",
+   "nakliyat"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@targetsigorta.com",
+  "email_kurumsal": true,
+  "adres": "No:10 Sabri Kazmaoğlu Sokak, Köşklüçiftlik, Lefkoşa / KKTC",
+  "whatsapp": "+905391460010",
+  "instagram": "https://www.instagram.com/targetsigorta/",
+  "facebook": "https://www.facebook.com/targetsigorta",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://targetsigorta.com/",
+  "notlar": "Tam İngilizce sürüm (/en/). Hakkımızda'da aynı jenerik paragraf üç kez tekrarlanıyor. Teklif ve hasar ihbarı tamamen WhatsApp üzerinden, online form yok.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 5.5,
+    "detay": {
+     "brans_sayisi": 6
+    }
+   },
+   "erisim": {
+    "puan": 4,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "kurumsal"
+  ],
+  "genel_puan": 4.5,
+  "profil": [
+   0.6,
+   0.55,
+   0.4,
+   0.2,
+   0.5,
+   null
+  ],
+  "sira": 20
+ },
+ {
+  "ad": "ALFA SİGORTA CO. LTD.",
+  "slug": "alfa-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "alfasigorta.net",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "saglik",
+   "konut",
+   "isyeri",
+   "ferdi_kaza"
+  ],
+  "online_teklif": true,
+  "online_police": true,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@alfasigorta.net",
+  "email_kurumsal": true,
+  "adres": "Marmara Bölgesi 4. Sok. No:4, Lefkoşa / KKTC",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/alfasigortakibris",
+  "facebook": "https://www.facebook.com/alfasigortakibris",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://alfasigorta.net/",
+  "notlar": "'ANINDA SİGORTA' bölümünde gerçek fiyat hesaplayan formlar var (/insurance/KTS, /insurance/PKS). Online satın alma beyanı mevcut. Drupal tabanlı, acente bölümü var.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 5.5,
+    "detay": {
+     "brans_sayisi": 6
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 6.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif",
+      "online poliçe"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": 3.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 4.4,
+  "profil": [
+   0.6,
+   0.55,
+   0.2,
+   0.6,
+   0.0,
+   0.3
+  ],
+  "sira": 21
+ },
+ {
+  "ad": "LIGHTSTAR INSURANCE LTD.",
+  "slug": "lightstar-insurance",
+  "sehir": "Lefkoşa",
+  "web": "lightstarinsurance.com.tr",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "seyahat"
+  ],
+  "online_teklif": true,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@lightstarinsurance.com.tr",
+  "email_kurumsal": true,
+  "adres": "Yıldırım Beyazıt Sokak No:4, Kumsal, Lefkoşa",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/lightstarinsurancecy",
+  "facebook": "https://www.facebook.com/lightstarinsurance",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://lightstarinsurance.com.tr/",
+  "notlar": "Teklif formları var ama anlık fiyat motoru değil. 'Satış Sözleşmesi' ve 'Garanti Fonu' bilgi sayfaları mevcut. Şube/acente listesi yok.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 5.5,
+    "detay": {
+     "brans_sayisi": 6
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 4.0,
+    "detay": {
+     "ozellikler": [
+      "online teklif"
+     ]
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "kurumsal"
+  ],
+  "genel_puan": 4.0,
+  "profil": [
+   0.6,
+   0.55,
+   0.2,
+   0.4,
+   0.0,
+   null
+  ],
+  "sira": 22
+ },
+ {
+  "ad": "MAPFREE INSURANCE LTD",
+  "slug": "mapfree-insurance",
+  "sehir": "Girne",
+  "web": "mapfreesigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": 2011,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "konut",
+   "isyeri"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Girne"
+  ],
+  "email": "info@mapfreesigorta.com",
+  "email_kurumsal": true,
+  "adres": "Karaoğlanoğlu Caddesi, Karaoğlanoğlu, Girne / KKTC",
+  "whatsapp": "+905469933009",
+  "instagram": "https://www.instagram.com/mapfreesigorta",
+  "facebook": "https://www.facebook.com/mapfreesigorta",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://mapfreesigorta.com/",
+  "notlar": "'2011 yılında yüzde yüz yerel sermaye ile kurulup'. Şablonun ücretli sürüme geçirilmemiş hali: 'Buy Pro Version', 'Lorem ipsum' ve '27x7 Support' placeholder metinleri duruyor. 'Araç Sigortası' başlığında trafik/kasko ayrımı yok.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 8,
+    "detay": {
+     "var": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 1.8,
+    "detay": {
+     "brans_sayisi": 2
+    }
+   },
+   "erisim": {
+    "puan": 4,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": 6.0,
+    "detay": {
+     "kurulus_yili": 2011,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 3.9,
+  "profil": [
+   0.8,
+   0.18,
+   0.4,
+   0.2,
+   0.0,
+   0.6
+  ],
+  "sira": 23
+ },
+ {
+  "ad": "AS-CAN SİGORTA ŞTİ LTD.",
+  "slug": "as-can-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "ascansigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "ferdi_kaza",
+   "muhendislik",
+   "sorumluluk"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@as-cansigorta.com",
+  "email_kurumsal": true,
+  "adres": "Mehmet Akif Str. No.122, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "http://ascansigorta.com/",
+  "notlar": "SSL geçersiz, yalnızca HTTP. Sayfa başlığının yanında '***TEST YAYINIDIR***' ibaresi duruyor. Telif notu 'Copyright 2013'. Sosyal medya ikonları var ama linkler boş.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 4.5,
+    "detay": {
+     "brans_sayisi": 5
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 3.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 3.8,
+  "profil": [
+   0.6,
+   0.45,
+   0.2,
+   0.2,
+   0.5,
+   0.3
+  ],
+  "sira": 24
+ },
+ {
+  "ad": "ION INSURANCE",
+  "slug": "ion-insurance",
+  "sehir": "Lefkoşa",
+  "web": "ioninsurance.com.tr",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr",
+   "en"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@ioninsurance.com.tr",
+  "email_kurumsal": true,
+  "adres": "Ali Mehmet Küçük Sokak, Gözde Küçük İş Merkezi Kat:2 No:3/4 Ortaköy, Lefkoşa",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/ioninsurancecy",
+  "facebook": "https://www.facebook.com/ioninsurancecy",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.ioninsurance.com.tr/",
+  "notlar": "'20+ Yıllık Sigortacılık Tecrübesi' beyanı, kuruluş yılı yazılı değil. 'Teklif İste' formu fiyat hesaplamıyor. Yalnızca 4 ürün. WPML ile TR/EN. Departman e-postaları ayrı. 'Garanti Fonu' ve 'Sigorta Tanımları' bilgi sayfaları var. Blogdaki son yazı Aralık 2024.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 3.6,
+    "detay": {
+     "brans_sayisi": 4
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 5.0,
+    "detay": {
+     "diller": [
+      "en"
+     ]
+    }
+   },
+   "kurumsal": {
+    "puan": 3.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 3.7,
+  "profil": [
+   0.6,
+   0.36,
+   0.2,
+   0.2,
+   0.5,
+   0.3
+  ],
+  "sira": 25
+ },
+ {
+  "ad": "ALLSAFE INSURANCE LTD.",
+  "slug": "allsafe-insurance",
+  "sehir": "Lefkoşa",
+  "web": "allsafeins.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "saglik",
+   "hayat",
+   "ferdi_kaza",
+   "seyahat",
+   "nakliyat"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": "Cengiz Han Sk. No:7A Köşklüçiftlik / Lefkoşa",
+  "whatsapp": "+905338675528",
+  "instagram": "https://www.instagram.com/allsafe.insurance",
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://allsafeins.com/tr",
+  "notlar": "'Teklif almak istiyorum' formu fiyat hesaplamıyor, geri arama formu. Sitede e-posta adresi hiç yok. Yeni ve düzenli güncellenen site (Kasım 2025 haberi var).",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 2,
+    "detay": {
+     "var": [
+      "açık adres"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 8.2,
+    "detay": {
+     "brans_sayisi": 9
+    }
+   },
+   "erisim": {
+    "puan": 4,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": 3.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 3.5,
+  "profil": [
+   0.2,
+   0.82,
+   0.4,
+   0.2,
+   0.0,
+   0.3
+  ],
+  "sira": 26
+ },
+ {
+  "ad": "GRAND PLUS INSURANCE",
+  "slug": "grand-plus-insurance",
+  "sehir": "Lefkoşa",
+  "web": "grandplusinsurance.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@grandplusinsurance.com",
+  "email_kurumsal": true,
+  "adres": "Köşklüçiftlik, Lefkoşa",
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/grandplusinsurance",
+  "facebook": "https://www.facebook.com/grandplusinsurance/",
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://www.grandplusinsurance.com/",
+  "notlar": "SSL yalnızca www alt alanını kapsıyor; apex alan adı doğrulanamıyor. 'Teklif Al' formu fiyat hesaplamıyor. Beyanlar: '10 k+ Mutlu Müşteri', '10 Yıllık Tecrübe', '100% Müşteri Memnuniyeti'. Eylül 2025'te yayına alınmış yeni site. Adres yalnızca semt düzeyinde, açık adres yok.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 3.6,
+    "detay": {
+     "brans_sayisi": 4
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": 3.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 3.2,
+  "profil": [
+   0.6,
+   0.36,
+   0.2,
+   0.2,
+   0.0,
+   0.3
+  ],
+  "sira": 27
+ },
+ {
+  "ad": "EUROCITY SİGORTA",
+  "slug": "eurocity-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "eurocitysigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "info@eurocityinsurance.com",
+  "email_kurumsal": true,
+  "adres": "Organize sanayi bölgesi, 26.Sokak No.8A, Cezaevi karşısı, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "http://eurocitysigorta.com/",
+  "notlar": "Tek sayfalık, linksiz kartvizit sayfası — sadece şirket adı, telefon, adres, e-posta ve genel müdür adı. SSL geçersiz, yalnızca HTTP. E-posta farklı alan adında (eurocityinsurance.com). eigsigorta.com ile aynı IP ve aynı şablon.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 6,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta",
+      "kurumsal e-posta alan adı"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun",
+   "kurumsal"
+  ],
+  "genel_puan": 3.1,
+  "profil": [
+   0.6,
+   null,
+   0.2,
+   0.2,
+   0.0,
+   null
+  ],
+  "sira": 28
+ },
+ {
+  "ad": "ZİRVE SİGORTA LTD.",
+  "slug": "zirve-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "zirvesigortaltd.com/b/",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "saglik",
+   "seyahat",
+   "konut",
+   "isyeri",
+   "ferdi_kaza",
+   "sorumluluk",
+   "nakliyat"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": "Şehit İbrahim Ramadan Sokak No:7, Yenişehir, Lefkoşa / KKTC",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://zirvesigortaltd.com/b/",
+  "notlar": "Ana alan adından değil /b/ alt dizininden yayında (eski Joomla). Tanıtım filmleri 2015-2017 tarihli. 'Select Language' gerçek çeviri değil, Google Translate widget'ı. E-posta JS ile gizlenmiş.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 2,
+    "detay": {
+     "var": [
+      "açık adres"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 8.2,
+    "detay": {
+     "brans_sayisi": 9
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "kurumsal"
+  ],
+  "genel_puan": 3.1,
+  "profil": [
+   0.2,
+   0.82,
+   0.2,
+   0.2,
+   0.0,
+   null
+  ],
+  "sira": 29
+ },
+ {
+  "ad": "GOLD INSURANCE LTD.",
+  "slug": "gold-insurance",
+  "sehir": "Lefkoşa",
+  "web": "gold-insurance.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "yerel",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri",
+   "nakliyat"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": "19 Şht. İhsan Güven Sokak Yenişehir, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": "https://www.facebook.com/insurancegold",
+  "police_sartlari_yayinda": true,
+  "kaynak_url": "https://www.gold-insurance.com/",
+  "notlar": "'25 Yıllık Tecrübe' beyanı, kuruluş yılı yazılı değil. Ürünler yalnızca üç üst başlık; trafik/kasko ve konut/işyeri ayrımı sitede açık yapılmamış. Mevzuat bölümü var ama Genel Şartlar PDF'leri kendi sunucusunda değil, Birlik sitesinde barındırılıyor. Sitede e-posta adresi hiç yok.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 4,
+    "detay": {
+     "var": [
+      "açık adres",
+      "poliçe genel şartları yayında"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "e-posta"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 4.5,
+    "detay": {
+     "brans_sayisi": 5
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": 3.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "yerel"
+    }
+   }
+  },
+  "veri_yok_olcutler": [],
+  "genel_puan": 2.8,
+  "profil": [
+   0.4,
+   0.45,
+   0.2,
+   0.2,
+   0.0,
+   0.3
+  ],
+  "sira": 30
+ },
+ {
+  "ad": "EIG SİGORTA LTD.",
+  "slug": "eig-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "eigsigorta.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "eigsigorta@outlook.com",
+  "email_kurumsal": false,
+  "adres": "Öğretmenler Evleri, 1.Sokak, No.40, Yenikent, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "http://eigsigorta.com/",
+  "notlar": "Tek sayfalık, linksiz kartvizit sayfası — sadece şirket adı, telefon, adres, e-posta ve genel müdür adı. Ürün, hakkımızda, hasar veya form hiç yok. SSL geçersiz, yalnızca HTTP. E-posta outlook.com. eurocitysigorta.com ile aynı IP (104.247.162.35) ve aynı şablon.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 4,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "kurumsal e-posta alan adı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun",
+   "kurumsal"
+  ],
+  "genel_puan": 2.4,
+  "profil": [
+   0.4,
+   null,
+   0.2,
+   0.2,
+   0.0,
+   null
+  ],
+  "sira": 31
+ },
+ {
+  "ad": "TOWER INSURANCE LTD.",
+  "slug": "tower-insurance",
+  "sehir": "Lefkoşa",
+  "web": "tower-insurance.com",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "towerinsurance@hotmail.com",
+  "email_kurumsal": false,
+  "adres": "Organize Sanayi Bölgesi, 26. Sokak No.8, Cezaevi karşısı, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "http://tower-insurance.com/",
+  "notlar": "Tek sayfalık, ~190 karakter metin içeren kartvizit sayfası. Ürün, menü, link, görsel yok. HTTPS çalışmıyor, yalnızca HTTP. E-posta hotmail.com.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 4,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "kurumsal e-posta alan adı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun",
+   "kurumsal"
+  ],
+  "genel_puan": 2.4,
+  "profil": [
+   0.4,
+   null,
+   0.2,
+   0.2,
+   0.0,
+   null
+  ],
+  "sira": 32
+ },
+ {
+  "ad": "UNIVERSAL SİGORTA LTD.",
+  "slug": "universal-sigorta",
+  "sehir": "Lefkoşa",
+  "web": null,
+  "http_durum": "site_yok",
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": "nuraktekiner1972@gmail.com",
+  "email_kurumsal": false,
+  "adres": "57 Mehmet Akif Caddesi, Köşklüçiftlik, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": null,
+  "notlar": "Web sitesi yok, arandı bulunamadı. Bilgiler KKSRSB üye listesinden: Genel Müdür Burak Tekiner, tel 444 0724. Birlik listesindeki resmi e-posta bir gmail adresi.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 4,
+    "detay": {
+     "var": [
+      "açık adres",
+      "e-posta"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "kurumsal e-posta alan adı",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 0.0,
+    "detay": {
+     "neden": "Web sitesi yayında değil"
+    }
+   },
+   "dil": {
+    "puan": null,
+    "sebep": "Web sitesine erişilemediği için dil desteği gözlemlenemedi"
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun",
+   "dil",
+   "kurumsal"
+  ],
+  "genel_puan": 2.2,
+  "profil": [
+   0.4,
+   null,
+   0.2,
+   0.0,
+   null,
+   null
+  ],
+  "sira": 33
+ },
+ {
+  "ad": "TÜRKİYE SİGORTA",
+  "slug": "turkiye-sigorta",
+  "sehir": "Lefkoşa",
+  "web": "kibris.turkiyesigorta.com.tr",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "tr_subesi",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": "Server Somuncuoğlu Sok. No:14, Köşklüçiftlik, Lefkoşa",
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://kibris.turkiyesigorta.com.tr/yardim-merkezi/iletisim/kktc-sube-mudurlugu-iletisim",
+  "notlar": "KKTC alt alan adı Türkiye ana sitesinin kopyası; sadece 'KKTC Şube Müdürlüğü İletişim' sayfası Kıbrıs'a özel (0392 228 66 90). KKTC'ye özel ürün/teklif/hasar akışı yok. Birlik listesinde ayrıca Hakim İzzet Bey Sk. No:13 Ortaköy adresi ve hikmet.dogru@turkiyesigorta.com.tr geçiyor.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 2,
+    "detay": {
+     "var": [
+      "açık adres"
+     ],
+     "yok": [
+      "kuruluş yılı",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "tr_subesi"
+    }
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun"
+  ],
+  "genel_puan": 1.9,
+  "profil": [
+   0.2,
+   null,
+   0.2,
+   0.2,
+   0.0,
+   0.5
+  ],
+  "sira": 34
+ },
+ {
+  "ad": "LONDON INSURANCE",
+  "slug": "london-insurance",
+  "sehir": "Lefkoşa",
+  "web": "londoninsurance.com.tr",
+  "http_durum": 200,
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [
+   "trafik",
+   "kasko",
+   "konut",
+   "isyeri"
+  ],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [
+   "tr"
+  ],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": null,
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://londoninsurance.com.tr/",
+  "notlar": "Hazır WordPress teması (Enfold) varsayılan ayarlarda: footer'daki Facebook linki tema geliştiricisine (facebook.com/kriesi.at) gidiyor. E-posta, adres, telefon yayınlanmamış. Sadece 4 ürün.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 0,
+    "detay": {
+     "var": [],
+     "yok": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": 3.6,
+    "detay": {
+     "brans_sayisi": 4
+    }
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 2.0,
+    "detay": {
+     "ozellikler": []
+    }
+   },
+   "dil": {
+    "puan": 0.0,
+    "detay": {
+     "diller": []
+    }
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "kurumsal"
+  ],
+  "genel_puan": 1.6,
+  "profil": [
+   0.0,
+   0.36,
+   0.2,
+   0.2,
+   0.0,
+   null
+  ],
+  "sira": 35
+ },
+ {
+  "ad": "ZURICH SİGORTA A.Ş.",
+  "slug": "zurich-sigorta",
+  "sehir": "Lefkoşa",
+  "web": null,
+  "http_durum": "site_yok",
+  "kurulus_yili": null,
+  "sirket_turu": "tr_subesi",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": null,
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": null,
+  "notlar": "KKTC'ye özel web sitesi bulunamadı. zurichsigorta.com.tr bölge müdürlükleri listesinde KKTC yok. KKTC'deki yapısı siteden doğrulanamadı.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 0,
+    "detay": {
+     "var": [],
+     "yok": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 0.0,
+    "detay": {
+     "neden": "Web sitesi yayında değil"
+    }
+   },
+   "dil": {
+    "puan": null,
+    "sebep": "Web sitesine erişilemediği için dil desteği gözlemlenemedi"
+   },
+   "kurumsal": {
+    "puan": 5.0,
+    "detay": {
+     "kurulus_yili": null,
+     "tur": "tr_subesi"
+    }
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun",
+   "dil"
+  ],
+  "genel_puan": 0.9,
+  "profil": [
+   0.0,
+   null,
+   0.2,
+   0.0,
+   null,
+   0.5
+  ],
+  "sira": 36
+ },
+ {
+  "ad": "CORRECT CHOICE INSURANCE LTD.",
+  "slug": "correct-choice-insurance",
+  "sehir": "Lefkoşa",
+  "web": "correctchoiceinsurance.com",
+  "http_durum": "ölü",
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": null,
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://correctchoiceinsurance.com/",
+  "notlar": "Site tamamen ölü. DNS'te hiç çözülmüyor (A ve NS kaydı yok) — alan adı süresi dolmuş görünüyor.",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 0,
+    "detay": {
+     "var": [],
+     "yok": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 0.0,
+    "detay": {
+     "neden": "Web sitesi yayında değil"
+    }
+   },
+   "dil": {
+    "puan": null,
+    "sebep": "Web sitesine erişilemediği için dil desteği gözlemlenemedi"
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun",
+   "dil",
+   "kurumsal"
+  ],
+  "genel_puan": 0.6,
+  "profil": [
+   0.0,
+   null,
+   0.2,
+   0.0,
+   null,
+   null
+  ],
+  "sira": 37
+ },
+ {
+  "ad": "EAGER INSURANCE LTD.",
+  "slug": "eager-insurance",
+  "sehir": "Lefkoşa",
+  "web": "eagersigorta.com",
+  "http_durum": "ölü",
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [],
+  "diller_makine": false,
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": null,
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://eagersigorta.com/",
+  "notlar": "Yayında web sitesi YOK. Alan adı sunucu kontrol panelinin varsayılan sayfasına yönleniyor (Plesk Obsidian 18.0.78). SSL sertifikası da geçersiz. Şirket hakkında sitede hiçbir bilgi yok.",
+  "olcutler": {
+   "seffaflik": {
+    "puan": 0,
+    "detay": {
+     "var": [],
+     "yok": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 0.0,
+    "detay": {
+     "neden": "Web sitesi yayında değil"
+    }
+   },
+   "dil": {
+    "puan": null,
+    "sebep": "Web sitesine erişilemediği için dil desteği gözlemlenemedi"
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun",
+   "dil",
+   "kurumsal"
+  ],
+  "genel_puan": 0.6,
+  "profil": [
+   0.0,
+   null,
+   0.2,
+   0.0,
+   null,
+   null
+  ],
+  "sira": 38
+ },
+ {
+  "ad": "SEGURE INSURANCE LTD.",
+  "slug": "segure-insurance",
+  "sehir": "Lefkoşa",
+  "web": "segureinsurance.com",
+  "http_durum": "ölü",
+  "kurulus_yili": null,
+  "sirket_turu": "bilinmiyor",
+  "branslar": [],
+  "online_teklif": false,
+  "online_police": false,
+  "online_hasar_ihbar": false,
+  "mobil_uygulama": false,
+  "diller": [],
+  "acente_sayisi": null,
+  "ofis_sehirler": [
+   "Lefkoşa"
+  ],
+  "email": null,
+  "email_kurumsal": false,
+  "adres": null,
+  "whatsapp": null,
+  "instagram": null,
+  "facebook": null,
+  "police_sartlari_yayinda": false,
+  "kaynak_url": "https://segureinsurance.com/",
+  "notlar": "Site ölü. DNS çözülüyor (212.68.34.70) ama ne HTTP ne HTTPS yanıt veriyor (curl kod 000).",
+  "diller_makine": false,
+  "olcutler": {
+   "seffaflik": {
+    "puan": 0,
+    "detay": {
+     "var": [],
+     "yok": [
+      "kuruluş yılı",
+      "açık adres",
+      "e-posta",
+      "poliçe genel şartları"
+     ]
+    }
+   },
+   "urun": {
+    "puan": null,
+    "sebep": "Şirketin yayımladığı bir ürün listesi bulunamadı"
+   },
+   "erisim": {
+    "puan": 2,
+    "detay": {
+     "sehir_sayisi": 1,
+     "acente": null
+    }
+   },
+   "dijital": {
+    "puan": 0.0,
+    "detay": {
+     "neden": "Web sitesi yayında değil"
+    }
+   },
+   "dil": {
+    "puan": null,
+    "sebep": "Web sitesine erişilemediği için dil desteği gözlemlenemedi"
+   },
+   "kurumsal": {
+    "puan": null,
+    "sebep": "Kuruluş yılı ve şirket yapısı doğrulanamadı"
+   }
+  },
+  "veri_yok_olcutler": [
+   "urun",
+   "dil",
+   "kurumsal"
+  ],
+  "genel_puan": 0.6,
+  "profil": [
+   0.0,
+   null,
+   0.2,
+   0.0,
+   null,
+   null
+  ],
+  "sira": 39
+ }
+]

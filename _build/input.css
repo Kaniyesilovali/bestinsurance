@@ -1,0 +1,5 @@
+/* Tailwind giriş dosyası. Çıktı: /assets/css/tailwind.css
+   site.css bundan AYRI ve elle yazılmış durumda — ona dokunulmuyor. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
