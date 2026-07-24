@@ -1,0 +1,97 @@
+{
+  "_aciklama": "Sitenin tek yapılandırma dosyası. Alan adı, menü ve dil rotaları burada. Değiştirip 'python3 _build/uret.py' çalıştırın; tüm sayfalar güncellenir.",
+
+  "alan_adi": "https://ORNEK-ALAN-ADI.com",
+  "site_adi": "Kıbrıs Sigorta Rehberi",
+  "site_adi_kisa": "Kıbrıs Sigorta",
+  "site_aciklamasi": "Kuzey Kıbrıs'taki sigorta şirketlerini bağımsız olarak değerlendiren bilgi sitesi.",
+  "varsayilan_dil": "tr",
+
+  "yayin": {
+    "noindex": true,
+    "_noindex_notu": "Alan adı belli olup site canlıya alınana kadar true bırakın. true iken her sayfaya noindex eklenir ve sitemap üretilmez.",
+    "sayfa_basina_yazi": 12
+  },
+
+  "diller": {
+    "tr": { "ad": "Türkçe", "kisa": "TR", "og_locale": "tr_TR", "dir": "ltr" },
+    "en": { "ad": "English", "kisa": "EN", "og_locale": "en_GB", "dir": "ltr" },
+    "ru": { "ad": "Русский", "kisa": "RU", "og_locale": "ru_RU", "dir": "ltr" },
+    "fa": { "ad": "فارسی", "kisa": "FA", "og_locale": "fa_IR", "dir": "rtl" }
+  },
+
+  "blog": {
+    "tr": {
+      "kok": "/tr/rehber/",
+      "baslik": "Rehber",
+      "aciklama": "Sık karşılaşılan durumlar için pratik yazılar. Her yazıda kaynağını gösterebildiğimizi yazıyoruz — gösteremediğimizi de söylüyoruz.",
+      "konu_kok": "/tr/rehber/konu/"
+    }
+  },
+
+  "menu": {
+    "tr": [
+      { "id": "sirketler",  "url": "/tr/sirketler/",        "ad": "Şirketler",        "mobil_ad": "Şirketler" },
+      { "id": "trafik",     "url": "/tr/sigorta/trafik/",   "ad": "Trafik",           "mobil_ad": "Trafik sigortası" },
+      { "id": "kasko",      "url": "/tr/sigorta/kasko/",    "ad": "Kasko",            "mobil_ad": "Kasko" },
+      { "id": "saglik",     "url": "/tr/sigorta/saglik/",   "ad": "Sağlık",           "mobil_ad": "Sağlık sigortası" },
+      { "id": "rehber",     "url": "/tr/rehber/",           "ad": "Rehber",           "mobil_ad": "Rehber" },
+      { "id": "metodoloji", "url": "/tr/metodoloji/",       "ad": "Nasıl puanlıyoruz", "mobil_ad": "Nasıl puanlıyoruz" }
+    ]
+  },
+
+  "footer": {
+    "tr": {
+      "uyari": "Bu sitedeki bilgiler genel bilgilendirme amaçlıdır, sigorta tavsiyesi değildir. Poliçe kararı vermeden önce şirketin güncel poliçe şartlarını okuyun. Puanlar dışarıdan gözlemlenebilir ölçütlere dayanır; mali güç ve hasar ödeme performansı puanlanmamaktadır.",
+      "sutunlar": [
+        {
+          "baslik": "Sigorta türleri",
+          "aria": "Sigorta türleri",
+          "baglantilar": [
+            { "url": "/tr/sigorta/trafik/",  "ad": "Zorunlu trafik" },
+            { "url": "/tr/sigorta/kasko/",   "ad": "Kasko" },
+            { "url": "/tr/sigorta/saglik/",  "ad": "Sağlık" },
+            { "url": "/tr/sigorta/konut/",   "ad": "Konut" },
+            { "url": "/tr/sigorta/seyahat/", "ad": "Seyahat" },
+            { "url": "/tr/sigorta/isyeri/",  "ad": "İşyeri" }
+          ]
+        },
+        {
+          "baslik": "Site",
+          "aria": "Site",
+          "baglantilar": [
+            { "url": "/tr/sirketler/",   "ad": "Şirketler" },
+            { "url": "/tr/metodoloji/",  "ad": "Puanlama yöntemi" },
+            { "url": "/tr/rehber/",      "ad": "Rehber" },
+            { "url": "/tr/hakkimizda/",  "ad": "Hakkımızda" },
+            { "url": "/tr/iletisim/",    "ad": "İletişim" }
+          ]
+        },
+        {
+          "baslik": "Yasal",
+          "aria": "Yasal",
+          "baglantilar": [
+            { "url": "/tr/yasal-uyari/", "ad": "Yasal uyarı" },
+            { "url": "/tr/gizlilik/",    "ad": "Gizlilik" },
+            { "url": "/tr/duzeltme/",    "ad": "Düzeltme talebi" }
+          ]
+        }
+      ],
+      "telif": "© 2026 Kıbrıs Sigorta Rehberi. Tüm hakları saklıdır."
+    }
+  },
+
+  "_rotalar_notu": "Bir sayfanın dört dildeki adresi. Anahtar = TR adresi. hreflang, dil değiştirici ve sitemap bunu kullanır. Yeni blog yazıları buraya YAZILMAZ — onların rotası yazı dosyasındaki 'ceviriler' alanından gelir.",
+  "rotalar": {
+    "/tr/":                   { "en": "/en/",                              "ru": "/ru/",                             "fa": "/fa/" },
+    "/tr/sirketler/":         { "en": "/en/companies/",                    "ru": "/ru/kompanii/",                    "fa": "/fa/companies/" },
+    "/tr/metodoloji/":        { "en": "/en/methodology/",                  "ru": "/ru/metodologiya/",                "fa": "/fa/methodology/" },
+    "/tr/sigorta/trafik/":    { "en": "/en/insurance/motor-third-party/",  "ru": "/ru/strahovanie/osago/",           "fa": "/fa/insurance/motor-third-party/" },
+    "/tr/sigorta/kasko/":     { "en": "/en/insurance/comprehensive/",      "ru": "/ru/strahovanie/kasko/",           "fa": "/fa/insurance/comprehensive/" },
+    "/tr/sigorta/saglik/":    { "en": "/en/insurance/health/",             "ru": "/ru/strahovanie/zdorove/",         "fa": "/fa/insurance/health/" },
+    "/tr/sigorta/konut/":     { "en": "/en/insurance/home/",               "ru": "/ru/strahovanie/zhilje/",          "fa": "/fa/insurance/home/" },
+    "/tr/sigorta/seyahat/":   { "en": "/en/insurance/travel/",             "ru": "/ru/strahovanie/puteshestvie/",    "fa": "/fa/insurance/travel/" },
+    "/tr/sigorta/isyeri/":    { "en": "/en/insurance/business/",           "ru": "/ru/strahovanie/biznes/",          "fa": "/fa/insurance/business/" },
+    "/tr/rehber/":            { "en": "/en/guides/",                       "ru": "/ru/rukovodstvo/",                 "fa": "/fa/guides/" }
+  }
+}

@@ -1,0 +1,147 @@
+{# Rehber liste sayfası. Sayfalama ve konu filtresi otomatik;
+   100 yazıda da bu dosyaya dokunmanız gerekmez. #}
+
+<!-- ── Giriş ─────────────────────────────────────────────────────────────── -->
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] pt-[72px] pb-[48px] sm:pt-[96px] sm:pb-[64px]">
+    <nav aria-label="Konum" class="text-[12px] text-muted mb-6">
+      <a href="/{{ dil }}/" class="hover:text-text">Ana sayfa</a> <span class="mx-2">/</span>
+      {%- if konu %}
+      <a href="{{ blog.kok }}" class="hover:text-text">{{ blog.baslik }}</a> <span class="mx-2">/</span>
+      {{ konu }}
+      {%- else %}
+      {{ blog.baslik }}
+      {%- endif %}
+    </nav>
+
+    <h1 class="u-display u-display--tight text-[2.25rem] sm:text-[3rem] leading-[1.05] mb-6 max-w-[20ch]">
+      {{ liste_h1 }}
+    </h1>
+    <p class="u-lead max-w-[52ch]">
+      {{ liste_giris }}
+    </p>
+  </div>
+</section>
+
+{%- if konular %}
+<!-- ── Konular ───────────────────────────────────────────────────────────── -->
+<section class="bg-white border-t border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-6">
+    <nav aria-label="Konular" class="flex flex-wrap gap-2 text-[12px]">
+      {%- if konu %}
+      <a href="{{ blog.kok }}" class="px-3 py-1.5 border border-line rounded-[980px] text-muted hover:text-text transition-colors">Tümü</a>
+      {%- else %}
+      <span class="px-3 py-1.5 border border-text rounded-[980px] text-text font-medium" aria-current="page">Tümü</span>
+      {%- endif %}
+      {%- for k in konular %}
+      {%- if k.ad == konu %}
+      <span class="px-3 py-1.5 border border-text rounded-[980px] text-text font-medium" aria-current="page">{{ k.ad }} <span class="text-muted font-normal">{{ k.sayi }}</span></span>
+      {%- else %}
+      <a href="{{ k.url }}" class="px-3 py-1.5 border border-line rounded-[980px] text-muted hover:text-text transition-colors">{{ k.ad }} <span class="text-muted">{{ k.sayi }}</span></a>
+      {%- endif %}
+      {%- endfor %}
+    </nav>
+  </div>
+</section>
+{%- endif %}
+
+<!-- ── Yazılar ───────────────────────────────────────────────────────────── -->
+<section class="bg-white border-t border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+
+    <div class="grid gap-px bg-line border border-line">
+      {%- for y in yazilar %}
+      <article class="bg-white p-7 sm:p-9">
+        <div class="grid md:grid-cols-[8rem_minmax(0,1fr)] gap-3 md:gap-8">
+          <div>
+            {%- if y.kategori %}
+            <p class="u-eyebrow">{{ y.kategori }}</p>
+            {%- endif %}
+            <p class="text-[12px] text-muted mt-1">{{ y.tarih_tr }}</p>
+          </div>
+          <div>
+            <h2 class="u-display text-[21px] sm:text-[26px] leading-[1.15] mb-3">
+              <a href="{{ y.url }}" class="link-u">{{ y.h1 }}</a>
+            </h2>
+            <p class="text-[15px] leading-relaxed text-muted mb-4 max-w-prose">
+              {{ y.ozet }}
+            </p>
+            <a href="{{ y.url }}" class="arrow arrow--sm">Yazıyı oku</a>
+          </div>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+
+    {%- if sayfalama.toplam > 1 %}
+    <nav aria-label="Sayfalar" class="flex items-center justify-between gap-4 mt-10 text-[13px]">
+      {%- if sayfalama.onceki %}
+      <a href="{{ sayfalama.onceki }}" class="arrow arrow--sm arrow--geri">Önceki</a>
+      {%- else %}
+      <span></span>
+      {%- endif %}
+
+      <p class="text-muted">Sayfa {{ sayfalama.simdiki }} / {{ sayfalama.toplam }}</p>
+
+      {%- if sayfalama.sonraki %}
+      <a href="{{ sayfalama.sonraki }}" class="arrow arrow--sm">Sonraki</a>
+      {%- else %}
+      <span></span>
+      {%- endif %}
+    </nav>
+    {%- endif %}
+  </div>
+</section>
+
+{%- if not konu and sayfalama.simdiki == 1 %}
+<!-- ── Yazıların dayandığı ilke ───────────────────────────────────────────── -->
+<section class="bg-paper border-t border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-[80px] sm:py-[104px]">
+    <div class="max-w-prose mx-auto text-center">
+      <h2 class="u-display text-[clamp(1.5rem,3.5vw,2.25rem)] mb-5">
+        Doğrulayamadığımızı yazmıyoruz.
+      </h2>
+      <p class="u-lead">
+        Bu yazılarda birkaç yerde rakam yerine boşluk göreceksiniz: sigortasız araç cezası,
+        hasarsızlık indirim oranları, hasar ihbar süresi, tahkim limitleri. Bunların hepsi
+        KKTC için kamuya açık bir kaynakta bulunmuyor ve internetteki karşılıkları
+        Türkiye'ye ait. Tahmin etmek yerine boş bırakıyoruz.
+      </p>
+      <p class="mt-7">
+        <a href="/{{ dil }}/metodoloji/" class="arrow">Nasıl çalıştığımızı okuyun</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Sigorta türleri ───────────────────────────────────────────────────── -->
+<section class="bg-white border-t border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-16 sm:py-20">
+    <div class="flex flex-wrap items-baseline justify-between gap-4 mb-8">
+      <h2 class="u-display text-[1.5rem] sm:text-[2rem]">Sigorta türleri</h2>
+      <a href="/{{ dil }}/sirketler/" class="arrow arrow--sm">Şirketleri karşılaştır</a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="/{{ dil }}/sigorta/trafik/" class="card p-7 flex flex-col">
+        <span class="h-[22px] mb-4"><span class="badge badge--zorunlu">Zorunlu</span></span>
+        <h3 class="text-[19px] font-medium tracking-[-.015em] mb-2">Trafik sigortası</h3>
+        <p class="text-[14px] leading-[1.43] text-muted mb-5">Üçüncü şahıslara verdiğiniz zararı karşılar.</p>
+        <span class="arrow arrow--sm mt-auto">İncele</span>
+      </a>
+      <a href="/{{ dil }}/sigorta/kasko/" class="card p-7 flex flex-col">
+        <span class="h-[22px] mb-4" aria-hidden="true"></span>
+        <h3 class="text-[19px] font-medium tracking-[-.015em] mb-2">Kasko</h3>
+        <p class="text-[14px] leading-[1.43] text-muted mb-5">Kendi aracınızdaki hasar.</p>
+        <span class="arrow arrow--sm mt-auto">İncele</span>
+      </a>
+      <a href="/{{ dil }}/sigorta/saglik/" class="card p-7 flex flex-col">
+        <span class="h-[22px] mb-4" aria-hidden="true"></span>
+        <h3 class="text-[19px] font-medium tracking-[-.015em] mb-2">Sağlık sigortası</h3>
+        <p class="text-[14px] leading-[1.43] text-muted mb-5">Sağlık Fonu primi ile özel poliçenin farkı.</p>
+        <span class="arrow arrow--sm mt-auto">İncele</span>
+      </a>
+    </div>
+  </div>
+</section>
+{%- endif %}

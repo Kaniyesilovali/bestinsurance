@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-data/sirketler.json → tr/sirketler/index.html  (statik, filtrelenebilir tablo)
-ve tr/index.html ana sayfa sıralamasının ilk 5 satırı.
+data/sirketler.json → content/tr/sayfa/sirketler/index.html  (filtrelenebilir tablo)
+ve content/tr/sayfa/index.html ana sayfa sıralamasının ilk 5 satırı.
 
-Üretilen çıktı saf HTML'dir; sitede çalışma anında hiçbir şablon motoru yok.
-Çalıştırma:  python3 data/uret-sirketler.py
+Çıktı bir içerik parçasıdır: head/header/footer'ı _build/uret.py ekler.
+Sayfaların frontmatter bloğu korunur, yalnızca gövde yenilenir.
+
+Çalıştırma:  python3 data/uret-sirketler.py && python3 _build/uret.py
 """
 import json, pathlib, html
 
@@ -79,152 +81,19 @@ def satir_html(s, i):
 '''
 
 
-BASLIK = '''<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KKTC sigorta şirketleri — 39 ruhsatlı şirket karşılaştırması | Kıbrıs Sigorta Rehberi</title>
-<meta name="description" content="Kuzey Kıbrıs'ta ruhsatlı 39 sigorta şirketinin tam listesi. Şeffaflık, ürün genişliği, erişilebilirlik, dijital hizmet ve yabancı dilde hizmet açısından karşılaştırın. Branşa ve şehre göre filtreleyin.">
-<link rel="canonical" href="https://ORNEK-ALAN-ADI.com/tr/sirketler/">
-<link rel="alternate" hreflang="tr" href="https://ORNEK-ALAN-ADI.com/tr/sirketler/">
-<link rel="alternate" hreflang="en" href="https://ORNEK-ALAN-ADI.com/en/companies/">
-<link rel="alternate" hreflang="ru" href="https://ORNEK-ALAN-ADI.com/ru/kompanii/">
-<link rel="alternate" hreflang="fa" href="https://ORNEK-ALAN-ADI.com/fa/companies/">
-<link rel="alternate" hreflang="x-default" href="https://ORNEK-ALAN-ADI.com/tr/sirketler/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="tr_TR">
-<meta property="og:title" content="KKTC sigorta şirketleri — 39 ruhsatlı şirket karşılaştırması">
-<meta property="og:description" content="Ruhsatlı şirketlerin tam listesi, altı gözlemlenebilir ölçütle karşılaştırıldı.">
-<meta property="og:url" content="https://ORNEK-ALAN-ADI.com/tr/sirketler/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = { theme: { extend: {
-  colors: {
-    ink:'#0D2B28', ink2:'#123B36', ink3:'#1B4F47',
-    paper:'#EFF1ED', line:'#D7DAD2',
-    sea:'#0F6E62', seadeep:'#0A4F46', seasoft:'#DCE9E5',
-    sun:'#E0A43B', sundeep:'#A9711A', sunsoft:'#F7ECD7',
-    flag:'#C8102E', flagsoft:'#FBE7EA',
-    muted:'#586965', muteddark:'#8FA9A3'
-  },
-  fontFamily: {
-    display:['Archivo','system-ui','sans-serif'],
-    body:['"IBM Plex Sans"','system-ui','sans-serif'],
-    mono:['"IBM Plex Mono"','ui-monospace','monospace']
-  },
-  maxWidth: { shell:'78rem' }
-}}}
-</script>
-<link rel="stylesheet" href="/assets/css/site.css">
-</head>
+def frontmatter(dosya):
+    """Sayfanın mevcut frontmatter bloğunu korur.
 
-<body class="min-h-screen flex flex-col">
-<a href="#icerik" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-3 focus:bg-ink focus:text-white focus:px-4 focus:py-2">İçeriğe atla</a>
-
-<header class="sticky top-0 z-40 bg-paper/95 backdrop-blur border-b border-line">
-  <div class="mx-auto max-w-shell px-5 sm:px-8 h-16 flex items-center justify-between gap-6">
-    <a href="/tr/" class="u-display text-[15px] sm:text-base tracking-tight shrink-0">
-      Kıbrıs Sigorta<span class="text-muted font-medium"> Rehberi</span>
-    </a>
-    <nav class="hidden lg:flex items-center gap-7 text-sm" aria-label="Ana menü">
-      <a href="/tr/sirketler/" class="link-u text-sea font-medium" aria-current="page">Şirketler</a>
-      <a href="/tr/sigorta/trafik/" class="link-u">Trafik</a>
-      <a href="/tr/sigorta/kasko/" class="link-u">Kasko</a>
-      <a href="/tr/sigorta/saglik/" class="link-u">Sağlık</a>
-      <a href="/tr/rehber/" class="link-u">Rehber</a>
-      <a href="/tr/metodoloji/" class="link-u">Nasıl puanlıyoruz</a>
-    </nav>
-    <div class="flex items-center gap-3">
-      <nav aria-label="Dil" class="hidden sm:flex items-center gap-1 font-mono text-[11px] tracking-widest uppercase">
-        <span class="px-1.5 py-0.5 bg-ink text-white rounded-sm" aria-current="true">TR</span>
-        <a href="/en/companies/" class="px-1.5 py-0.5 text-muted hover:text-ink">EN</a>
-        <a href="/ru/kompanii/" class="px-1.5 py-0.5 text-muted hover:text-ink">RU</a>
-        <a href="/fa/companies/" class="px-1.5 py-0.5 text-muted hover:text-ink">FA</a>
-      </nav>
-      <button data-menu-toggle aria-expanded="false" aria-controls="mobil-menu" class="lg:hidden p-2 -mr-2" aria-label="Menüyü aç">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-    </div>
-  </div>
-  <div id="mobil-menu" data-menu hidden class="lg:hidden border-t border-line bg-paper">
-    <nav class="mx-auto max-w-shell px-5 py-4 grid gap-1 text-[15px]" aria-label="Mobil menü">
-      <a href="/tr/sirketler/" class="py-2 text-sea font-medium">Şirketler</a>
-      <a href="/tr/sigorta/trafik/" class="py-2">Trafik sigortası</a>
-      <a href="/tr/sigorta/kasko/" class="py-2">Kasko</a>
-      <a href="/tr/sigorta/saglik/" class="py-2">Sağlık sigortası</a>
-      <a href="/tr/rehber/" class="py-2">Rehber</a>
-      <a href="/tr/metodoloji/" class="py-2">Nasıl puanlıyoruz</a>
-    </nav>
-  </div>
-</header>
-
-<main id="icerik" class="flex-1">
-'''
-
-ALTBILGI = '''</main>
-
-<footer class="bg-ink2 text-white/70 text-sm">
-  <div class="mx-auto max-w-shell px-5 sm:px-8 py-12">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
-      <div>
-        <p class="u-display text-white text-[15px] mb-3">Kıbrıs Sigorta Rehberi</p>
-        <p class="leading-relaxed">Kuzey Kıbrıs'taki sigorta şirketlerini bağımsız olarak değerlendiren bilgi sitesi.</p>
-      </div>
-      <nav aria-label="Sigorta türleri">
-        <p class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-3">Sigorta türleri</p>
-        <ul class="space-y-2">
-          <li><a href="/tr/sigorta/trafik/" class="link-u">Zorunlu trafik</a></li>
-          <li><a href="/tr/sigorta/kasko/" class="link-u">Kasko</a></li>
-          <li><a href="/tr/sigorta/saglik/" class="link-u">Sağlık</a></li>
-          <li><a href="/tr/sigorta/konut/" class="link-u">Konut</a></li>
-          <li><a href="/tr/sigorta/seyahat/" class="link-u">Seyahat</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Site">
-        <p class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-3">Site</p>
-        <ul class="space-y-2">
-          <li><a href="/tr/sirketler/" class="link-u">Şirketler</a></li>
-          <li><a href="/tr/metodoloji/" class="link-u">Puanlama yöntemi</a></li>
-          <li><a href="/tr/rehber/" class="link-u">Rehber</a></li>
-          <li><a href="/tr/hakkimizda/" class="link-u">Hakkımızda</a></li>
-          <li><a href="/tr/iletisim/" class="link-u">İletişim</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Yasal ve dil">
-        <p class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-3">Yasal</p>
-        <ul class="space-y-2 mb-6">
-          <li><a href="/tr/yasal-uyari/" class="link-u">Yasal uyarı</a></li>
-          <li><a href="/tr/gizlilik/" class="link-u">Gizlilik</a></li>
-          <li><a href="/tr/duzeltme/" class="link-u">Düzeltme talebi</a></li>
-        </ul>
-        <p class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-3">Dil</p>
-        <div class="flex gap-2 font-mono text-[11px] uppercase tracking-widest">
-          <span class="px-2 py-1 bg-white/15 text-white rounded-sm">TR</span>
-          <a href="/en/companies/" class="px-2 py-1 hover:text-white">EN</a>
-          <a href="/ru/kompanii/" class="px-2 py-1 hover:text-white">RU</a>
-          <a href="/fa/companies/" class="px-2 py-1 hover:text-white">FA</a>
-        </div>
-      </nav>
-    </div>
-    <hr class="hairline hairline--dark mb-6">
-    <div class="flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between text-[13px] text-white/50">
-      <p>© 2026 Kıbrıs Sigorta Rehberi</p>
-      <p class="max-w-xl leading-relaxed">
-        Bu sitedeki bilgiler genel bilgilendirme amaçlıdır, sigorta tavsiyesi değildir.
-        Poliçe kararı vermeden önce şirketin güncel poliçe şartlarını okuyun.
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script src="/assets/js/site.js" defer></script>
-</body>
-</html>
-'''
+    Bu betik yalnızca gövdeyi (tabloyu) yeniler; başlık, açıklama ve adres
+    içerik dosyasında elle düzenlenir. Sayfa iskeletini _build/uret.py ekler.
+    """
+    if dosya.is_file():
+        metin = dosya.read_text(encoding="utf-8")
+        if metin.startswith("---"):
+            son = metin.find("\n---", 3)
+            if son != -1:
+                return metin[:son + 5]
+    raise SystemExit(f"frontmatter bulunamadı: {dosya}")
 
 
 def main():
@@ -362,13 +231,15 @@ def main():
 </section>
 '''
 
-    cikti = KOK / "tr" / "sirketler" / "index.html"
+    # Çıktı artık içerik parçasıdır: head/header/footer'ı _build/uret.py ekler.
+    # Sayfanın frontmatter'ı korunur, yalnızca gövde yenilenir.
+    cikti = KOK / "content" / "tr" / "sayfa" / "sirketler" / "index.html"
     cikti.parent.mkdir(parents=True, exist_ok=True)
-    cikti.write_text(BASLIK + govde + ALTBILGI, encoding="utf-8")
-    print(f"→ tr/sirketler/index.html ({len(VERI)} satır, {canli} canlı, {olu} ölü)")
+    cikti.write_text(frontmatter(cikti) + govde.lstrip("\n"), encoding="utf-8")
+    print(f"→ content/tr/sayfa/sirketler/index.html ({len(VERI)} satır, {canli} canlı, {olu} ölü)")
 
     # Ana sayfadaki ilk 5 satırı gerçek veriyle değiştir
-    ana = KOK / "tr" / "index.html"
+    ana = KOK / "content" / "tr" / "sayfa" / "index.html"
     s = ana.read_text(encoding="utf-8")
     ilk5 = "".join(satir_html_koyu(x, i) for i, x in enumerate(VERI[:5]))
     import re
@@ -378,7 +249,7 @@ def main():
     if n:
         s2 = s2.replace('<p class="badge badge--taslak mb-4">Taslak veri</p>\n\n        ', '')
         ana.write_text(s2, encoding="utf-8")
-        print("→ tr/index.html sıralaması gerçek veriyle güncellendi")
+        print("→ content/tr/sayfa/index.html sıralaması gerçek veriyle güncellendi")
 
 
 def satir_html_koyu(s, i):

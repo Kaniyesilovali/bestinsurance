@@ -1,0 +1,4 @@
+# Yalnızca üretim sırasında gerekir; siteye yüklenmez.
+#   pip3 install --user -r requirements.txt
+markdown>=3.5
+jinja2>=3.1

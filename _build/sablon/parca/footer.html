@@ -1,0 +1,43 @@
+{# Alt bilgi. Sütunlar ve bağlantılar site.json > footer içinden gelir. #}
+<footer class="bg-paper text-muted">
+  <div class="mx-auto max-w-shell px-[22px] py-10 text-[12px] leading-[1.33337]">
+
+    <p class="pb-6 max-w-[80ch]">
+      {{ footer.uyari }}
+    </p>
+
+    <hr class="hairline">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
+      {%- for sutun in footer.sutunlar %}
+      <nav aria-label="{{ sutun.aria }}">
+        <p class="text-text font-semibold mb-2">{{ sutun.baslik }}</p>
+        <ul class="space-y-1.5">
+          {%- for bag in sutun.baglantilar %}
+          <li><a href="{{ bag.url }}" class="link-u">{{ bag.ad }}</a></li>
+          {%- endfor %}
+        </ul>
+      </nav>
+      {%- endfor %}
+      <div>
+        <p class="text-text font-semibold mb-2">{{ site_adi }}</p>
+        <p>{{ site_aciklamasi }}</p>
+      </div>
+    </div>
+
+    <hr class="hairline">
+
+    <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between pt-6">
+      <p>{{ footer.telif }}</p>
+      <nav aria-label="Dil" class="flex gap-4">
+        {%- for kod, d in diller.items() %}
+        {%- if kod == dil %}
+        <span class="text-text font-medium">{{ d.ad }}</span>
+        {%- elif hreflang[kod] %}
+        <a href="{{ hreflang[kod] }}" class="link-u" hreflang="{{ kod }}">{{ d.ad }}</a>
+        {%- endif %}
+        {%- endfor %}
+      </nav>
+    </div>
+  </div>
+</footer>

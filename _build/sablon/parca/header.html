@@ -1,0 +1,55 @@
+{# Üst menü. Öğeler site.json > menu içinden gelir; aktif öğe sayfanın
+   frontmatter'ındaki "menu:" alanıyla eşleşir. #}
+<header class="sticky top-0 z-40 bg-white/72 backdrop-blur-xl border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] h-12 flex items-center justify-between gap-6">
+
+    <a href="/{{ dil }}/" class="text-[15px] font-medium tracking-[-.015em] shrink-0">
+      {{ site_adi_kisa }}<span class="text-muted font-normal"> Rehberi</span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 text-[12px]" aria-label="Ana menü">
+      {%- for oge in menu %}
+      {%- if oge.id == aktif_menu %}
+      <a href="{{ oge.url }}" class="text-text font-medium" aria-current="page">{{ oge.ad }}</a>
+      {%- else %}
+      <a href="{{ oge.url }}" class="text-muted hover:text-text transition-colors">{{ oge.ad }}</a>
+      {%- endif %}
+      {%- endfor %}
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <nav aria-label="Dil" class="hidden sm:flex items-center gap-3 text-[12px]">
+        {%- for kod, d in diller.items() %}
+        {%- if kod == dil %}
+        <span class="text-text font-medium" aria-current="true">{{ d.kisa }}</span>
+        {%- elif hreflang[kod] %}
+        <a href="{{ hreflang[kod] }}" class="text-muted hover:text-text transition-colors" hreflang="{{ kod }}">{{ d.kisa }}</a>
+        {%- endif %}
+        {%- endfor %}
+      </nav>
+      <button data-menu-toggle aria-expanded="false" aria-controls="mobil-menu"
+              class="lg:hidden p-2 -mr-2 text-muted" aria-label="Menüyü aç">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M3 7h18M3 17h18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobil-menu" data-menu hidden class="lg:hidden border-t border-line bg-white">
+    <nav class="mx-auto max-w-shell px-[22px] py-3 grid text-[17px]" aria-label="Mobil menü">
+      {%- for oge in menu %}
+      <a href="{{ oge.url }}" class="py-2.5{% if not loop.last %} border-b border-line{% endif %}{% if oge.id == aktif_menu %} text-text font-medium{% endif %}"{% if oge.id == aktif_menu %} aria-current="page"{% endif %}>{{ oge.mobil_ad }}</a>
+      {%- endfor %}
+      <div class="flex gap-4 pt-4 mt-2 border-t border-line text-[12px]">
+        {%- for kod, d in diller.items() %}
+        {%- if kod == dil %}
+        <span class="text-text font-medium">{{ d.kisa }}</span>
+        {%- elif hreflang[kod] %}
+        <a href="{{ hreflang[kod] }}" class="text-muted" hreflang="{{ kod }}">{{ d.kisa }}</a>
+        {%- endif %}
+        {%- endfor %}
+      </div>
+    </nav>
+  </div>
+</header>

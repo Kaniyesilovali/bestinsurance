@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-# Kaynak ve çalışma dosyaları — yayımlanan sayfa değil
-Disallow: /copy/
-Disallow: /data/
-
-Sitemap: https://ORNEK-ALAN-ADI.com/sitemap.xml

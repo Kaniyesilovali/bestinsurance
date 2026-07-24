@@ -1,0 +1,70 @@
+{# Her sayfanın dış iskeleti. Head, header ve footer yalnızca burada tanımlıdır;
+   100 sayfa olsa da menüyü veya footer'ı tek yerden değiştirirsiniz. #}
+<!DOCTYPE html>
+<html lang="{{ dil }}"{% if dil_dir == 'rtl' %} dir="rtl"{% endif %}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+{%- if aciklama %}
+<meta name="description" content="{{ aciklama }}">
+{%- endif %}
+{%- if noindex %}
+<meta name="robots" content="noindex,follow">
+{%- endif %}
+
+<link rel="canonical" href="{{ alan_adi }}{{ url }}">
+{%- for kod, adres in hreflang.items() %}
+<link rel="alternate" hreflang="{{ kod }}" href="{{ alan_adi }}{{ adres }}">
+{%- endfor %}
+{%- if hreflang.tr %}
+<link rel="alternate" hreflang="x-default" href="{{ alan_adi }}{{ hreflang.tr }}">
+{%- endif %}
+
+<meta property="og:type" content="{{ og_tur }}">
+<meta property="og:site_name" content="{{ site_adi }}">
+<meta property="og:locale" content="{{ og_locale }}">
+<meta property="og:title" content="{{ og_baslik }}">
+{%- if og_aciklama %}
+<meta property="og:description" content="{{ og_aciklama }}">
+{%- endif %}
+<meta property="og:url" content="{{ alan_adi }}{{ url }}">
+{%- if og_gorsel %}
+<meta property="og:image" content="{{ alan_adi }}{{ og_gorsel }}">
+<meta name="twitter:card" content="summary_large_image">
+{%- endif %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500;600{% if dil == 'fa' %}&family=Vazirmatn:wght@400;500;600{% endif %}&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+{%- if jsonld %}
+
+{% for blok in jsonld %}<script type="application/ld+json">
+{{ blok }}
+</script>
+{% endfor %}
+{%- endif %}
+{%- if head_ek %}
+{{ head_ek }}
+{%- endif %}
+</head>
+
+<body class="min-h-screen flex flex-col bg-white">
+
+<a href="#icerik" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-3 focus:bg-ink focus:text-white focus:px-4 focus:py-2">İçeriğe atla</a>
+
+{% include 'parca/header.html' %}
+
+<main id="icerik" class="flex-1 min-w-0">
+{{ icerik }}
+</main>
+
+{% include 'parca/footer.html' %}
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

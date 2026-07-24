@@ -1,0 +1,53 @@
+{# Blog yazısı sarmalayıcısı: giriş bloğu + gövde + ilgili yazılar.
+   Yazı dosyasında yalnızca gövde bulunur; buradaki her şey otomatiktir. #}
+
+<!-- ── Giriş ─────────────────────────────────────────────────────────────── -->
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] pt-[72px] pb-[40px] sm:pt-[96px] sm:pb-[56px]">
+    <nav aria-label="Konum" class="text-[12px] text-muted mb-6">
+      <a href="/{{ dil }}/" class="hover:text-text">Ana sayfa</a> <span class="mx-2">/</span>
+      <a href="{{ blog.kok }}" class="hover:text-text">{{ blog.baslik }}</a> <span class="mx-2">/</span>
+      {{ yazi.kisa_baslik or yazi.h1 }}
+    </nav>
+
+    <div class="max-w-prose">
+      {%- if yazi.kategori %}
+      <p class="u-eyebrow mb-4">{{ yazi.kategori }}</p>
+      {%- endif %}
+      <h1 class="u-display u-display--tight text-[2.25rem] sm:text-[3rem] leading-[1.05] mb-6">
+        {{ yazi.h1 }}
+      </h1>
+      {%- if yazi.giris %}
+      <p class="u-lead mb-6">
+        {{ yazi.giris }}
+      </p>
+      {%- endif %}
+      <p class="u-cap">Son güncelleme: {{ yazi.guncelleme_tr }}</p>
+    </div>
+  </div>
+</section>
+
+{{ icerik_govde }}
+
+{%- if ilgili %}
+<!-- ── İlgili yazılar ────────────────────────────────────────────────────── -->
+<section class="bg-white border-t border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-16 sm:py-20">
+    <div class="flex flex-wrap items-baseline justify-between gap-4 mb-8">
+      <h2 class="u-display text-[1.5rem] sm:text-[2rem]">İlgili yazılar</h2>
+      <a href="{{ blog.kok }}" class="arrow arrow--sm">Tüm yazılar</a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {%- for y in ilgili %}
+      <a href="{{ y.url }}" class="card p-7 flex flex-col">
+        <span class="u-eyebrow mb-3">{{ y.kategori }}</span>
+        <h3 class="text-[19px] font-medium tracking-[-.015em] leading-[1.2] mb-2">{{ y.h1 }}</h3>
+        <p class="text-[14px] leading-[1.43] text-muted mb-5">{{ y.ozet_kisa }}</p>
+        <span class="arrow arrow--sm mt-auto">Oku</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}

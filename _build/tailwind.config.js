@@ -1,18 +1,16 @@
 /* Tailwind derleme yapılandırması.
    Bu klasör siteye YÜKLENMEZ — yalnızca CSS'i yeniden üretmek için.
-   Sayfalardaki inline tailwind.config bloğunun birebir aynısı.
 
+   Sınıflar artık şablonlarda ve content/ içinde yaşıyor; ikisi de taranıyor.
    Yeniden derlemek için (proje kökünde):
-     npx -y tailwindcss@3.4.17 -c _build/tailwind.config.js \
-       -i _build/input.css -o assets/css/tailwind.css --minify
+     npm run css        ya da        ./yayinla.sh
 */
 module.exports = {
   content: [
-    './tr/**/*.html',
-    './en/**/*.html',
-    './ru/**/*.html',
-    './fa/**/*.html',
-    './index.html',
+    './_build/sablon/**/*.html',
+    './content/**/*.html',
+    './content/**/*.md',
+    './_build/uret.py',
   ],
   theme: {
     extend: {

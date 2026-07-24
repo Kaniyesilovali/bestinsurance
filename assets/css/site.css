@@ -99,6 +99,88 @@ html[lang="fa"] .u-display { font-family: 'Vazirmatn', 'Inter', sans-serif; }
 .u-prose a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
 
 /* --------------------------------------------------------------------------
+   Markdown gövdesi (.u-md)
+   Yazılar Markdown'la yazıldığında çıkan sade etiketleri tasarım sistemine
+   bağlar. Elle yazılmış HTML bölümleri bu sınıfın dışında kaldığı için
+   mevcut sayfalar etkilenmez.
+   -------------------------------------------------------------------------- */
+.u-md > :first-child { margin-top: 0; }
+.u-md > :last-child  { margin-bottom: 0; }
+
+.u-md h2 {
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+  line-height: 1.15;
+  letter-spacing: -.022em;
+  color: var(--text);
+}
+.u-md h3 {
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.25;
+  letter-spacing: -.018em;
+  color: var(--text);
+}
+.u-md p, .u-md li { font-size: 17px; color: var(--muted); }
+.u-md strong { color: var(--text); font-weight: 600; }
+
+.u-md ul, .u-md ol { margin-block: 0 1.2em; padding-inline-start: 1.25em; }
+.u-md ul { list-style: none; padding-inline-start: 0; }
+.u-md ul > li { position: relative; padding-inline-start: 1.1em; margin-block-end: .5em; line-height: 1.6; }
+.u-md ul > li::before {
+  content: '·';
+  position: absolute;
+  inset-inline-start: .2em;
+  color: var(--muted);
+}
+.u-md ol { list-style: decimal; }
+.u-md ol > li { margin-block-end: .5em; line-height: 1.6; padding-inline-start: .25em; }
+.u-md li > ul, .u-md li > ol { margin-block: .5em 0; }
+
+.u-md blockquote {
+  margin: 1.6em 0;
+  padding: 1.1em 1.3em;
+  background: var(--paper);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+}
+.u-md blockquote p:last-child { margin-bottom: 0; }
+
+.u-md hr { border: 0; border-top: 1px solid var(--line); margin-block: 2.4em; }
+
+.u-md table { width: 100%; border-collapse: collapse; margin-block: 1.6em; font-size: 15px; }
+.u-md thead th {
+  text-align: start;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-block: .7rem;
+  border-bottom: 1px solid var(--line);
+}
+.u-md tbody td { padding-block: .85rem; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+
+.u-md code {
+  font-size: .92em;
+  background: var(--line-soft);
+  padding: .12em .4em;
+  border-radius: 5px;
+  color: var(--text);
+}
+.u-md pre { background: var(--paper); padding: 1.1em 1.3em; border-radius: var(--radius-sm); overflow-x: auto; margin-block: 1.6em; }
+.u-md pre code { background: none; padding: 0; }
+
+.u-md img { max-width: 100%; height: auto; border-radius: var(--radius-sm); margin-block: 1.6em; }
+
+/* Tablolar dar ekranda sayfayı yatay kaydırtmasın */
+@media (max-width: 640px) {
+  .u-md table { display: block; overflow-x: auto; }
+}
+
+/* --------------------------------------------------------------------------
    İMZA BİLEŞENİ — Teminat Profili
    Sabit sırada 6 puanlanan bant + ayrılmış 2 "veri yok" bandı.
    Aynı sıra her yerde tekrarlandığı için liste boyunca aşağı bakarken her
@@ -261,6 +343,11 @@ html[lang="fa"] .u-display { font-family: 'Vazirmatn', 'Inter', sans-serif; }
 .arrow:hover { text-decoration: underline; text-underline-offset: 3px; }
 .arrow:hover::after { transform: translateX(2px); }
 .arrow--sm { font-size: 14px; }
+
+/* Geriye bakan ok — sayfalamada "Önceki" */
+.arrow--geri::after { content: none; }
+.arrow--geri::before { content: '\2039'; font-size: 1.15em; line-height: 1; transition: transform .2s ease; }
+.arrow--geri:hover::before { transform: translateX(-2px); }
 html[dir="rtl"] .arrow::after { content: '\2039'; }
 html[dir="rtl"] .arrow:hover::after { transform: translateX(-2px); }
 
