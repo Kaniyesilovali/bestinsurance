@@ -1,0 +1,68 @@
+name: Yayınla
+
+# main dalına her push'ta site üretilir ve FTP ile hosting'e yüklenir.
+# Elle tetiklemek için: Actions sekmesi → Yayınla → Run workflow.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Aynı anda iki yayın çalışmasın; yeni push öncekini iptal etmez, sıraya alır.
+concurrency:
+  group: yayin
+  cancel-in-progress: false
+
+jobs:
+  yayinla:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Python paketleri
+        run: pip install -r requirements.txt
+
+      # site.json placeholder'la kalmışsa yayınlamak zararlı: canonical, sitemap
+      # ve Open Graph adresleri yanlış çıkar. Bilerek geçmek isterseniz bu adımı silin.
+      - name: Alan adı kontrolü
+        run: |
+          if grep -q "ORNEK-ALAN-ADI" site.json; then
+            echo "::error::site.json içindeki alan_adi hâlâ placeholder. YAYIN.md > İlk yayın öncesi kontrol listesi."
+            exit 1
+          fi
+
+      - name: Siteyi üret
+        shell: bash
+        run: |
+          set -o pipefail
+          if ./yayinla.sh 2>&1 | tee uretim.log; then
+            echo "Üretim temiz."
+          elif grep -q "kırık bağlantı" uretim.log; then
+            echo "::warning::Kırık iç bağlantı var — yayın sürüyor. Rapor için log'a bakın."
+          else
+            echo "::error::Üretim başarısız."
+            exit 1
+          fi
+          test -f dist/index.html
+          if grep -rq "ORNEK-ALAN-ADI" dist/; then
+            echo "::error::Üretilen sayfalarda placeholder adres kaldı."
+            exit 1
+          fi
+
+      - name: FTP ile yükle
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./dist/
+          server-dir: ${{ vars.FTP_DIR || '/public_html/' }}

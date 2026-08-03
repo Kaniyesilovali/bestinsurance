@@ -1,7 +1,7 @@
 {
   "_aciklama": "Sitenin tek yapılandırma dosyası. Alan adı, menü ve dil rotaları burada. Değiştirip 'python3 _build/uret.py' çalıştırın; tüm sayfalar güncellenir.",
 
-  "alan_adi": "https://ORNEK-ALAN-ADI.com",
+  "alan_adi": "https://kktcsigortamerkezi.com",
   "site_adi": "Kıbrıs Sigorta Rehberi",
   "site_adi_kisa": "Kıbrıs Sigorta",
   "site_aciklamasi": "Kuzey Kıbrıs'taki sigorta şirketlerini bağımsız olarak değerlendiren bilgi sitesi.",
