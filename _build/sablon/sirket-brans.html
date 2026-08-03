@@ -1,0 +1,53 @@
+{# Branşa göre şirket listesi. Bağlam _build/uret.py > sirket_branslari(). #}
+<section class="bg-ink text-white">
+  <div class="mx-auto max-w-shell px-5 sm:px-8 py-12 sm:py-16">
+    <nav aria-label="Konum" class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-6">
+      <a href="/tr/" class="hover:text-white">Ana sayfa</a> <span class="mx-2">/</span>
+      <a href="/tr/sirketler/" class="hover:text-white">Şirketler</a> <span class="mx-2">/</span> {{ b.ad }}
+    </nav>
+    <div class="max-w-prose">
+      <h1 class="u-display u-display--tight text-[2.25rem] sm:text-[3rem] leading-[1.05] mb-5">
+        KKTC'de {{ b.ad_kucuk }} yapan {{ b.sayi }} şirket
+      </h1>
+      <p class="text-[16px] leading-relaxed text-white/75">{{ b.bulgu }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-paper border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-10 sm:py-14">
+    <div class="overflow-x-auto">
+      <table class="rank rank--light">
+        <caption class="sr-only">{{ b.ad }} branşında ürünü doğrulanan şirketler, genel puana göre</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="w-8">#</th>
+            <th scope="col">Şirket</th>
+            <th scope="col" class="text-end">Puan</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for s in b.sirketler %}
+          <tr>
+            <td class="rank-no align-top pt-4">{{ "%02d"|format(loop.index) }}</td>
+            <td class="pe-4">
+              <a href="/tr/sirketler/{{ s.slug }}/" class="u-display text-[15px] link-u">{{ s.ad }}</a>
+              <div class="font-mono text-[11px] text-muted mt-1">{{ s.sehir }} · {{ s.brans_sayisi }} branş</div>
+            </td>
+            <td class="text-end align-top pt-3 u-num text-[20px] {{ 'text-sundeep' if s.puan_sayi >= 6 else 'text-text' }}">{{ s.puan }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-[14px] text-muted leading-relaxed mt-6 max-w-prose">
+      Bu liste şirketlerin kendi sitelerindeki ürün sayfalarından derlendi. Bir şirketin
+      listede olmaması o ürünü satmadığı anlamına gelmez; sitesinde bulamadığımız anlamına
+      gelir. Puanlar altı gözlemlenebilir ölçüte dayanır —
+      <a href="/tr/metodoloji/" class="text-sea link-u">nasıl puanlıyoruz</a>.
+      {% if b.hub_url %}<br>{{ b.ad }} sigortasının kapsamı ve kuralları için
+      <a href="{{ b.hub_url }}" class="text-sea link-u">{{ b.ad }} sigortası sayfası</a>.{% endif %}
+    </p>
+  </div>
+</section>

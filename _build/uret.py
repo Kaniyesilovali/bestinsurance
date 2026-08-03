@@ -520,6 +520,259 @@ class Uretici:
         )
         yaz(CIKTI / blog["kok"].strip("/") / "feed.xml", icerik)
 
+    # -- şirket profilleri --------------------------------------------------
+
+    def sirket_profilleri(self):
+        """data/sirketler.json → /tr/sirketler/<slug>/ profil sayfaları.
+
+        Tablo 39 şirketin tümüne bağlanır; veri-fakiri şirketlerde sayfa dürüst
+        bir 'doğrulayamadık' beyanına dönüşür — sitenin tezinin tekil hâli.
+        """
+        veri_yolu = KOK / "data" / "sirketler.json"
+        if not veri_yolu.is_file():
+            return
+        veri = json.loads(veri_yolu.read_text(encoding="utf-8"))
+        indeks = {s["slug"]: s for s in veri}
+
+        OLCUT = [
+            ("seffaflik", "Şeffaflık ve doğrulanabilirlik", 25),
+            ("urun", "Ürün genişliği", 20),
+            ("erisim", "Erişilebilirlik", 20),
+            ("dijital", "Dijital hizmet", 20),
+            ("dil", "Yabancı dilde hizmet", 10),
+            ("kurumsal", "Kurumsal derinlik", 5),
+        ]
+        BRANS = [
+            ("trafik", "Trafik"), ("kasko", "Kasko"), ("saglik", "Sağlık"),
+            ("konut", "Konut"), ("isyeri", "İşyeri"), ("seyahat", "Seyahat"),
+            ("nakliyat", "Nakliyat"), ("muhendislik", "Mühendislik"),
+            ("sorumluluk", "Sorumluluk"), ("ferdi_kaza", "Ferdi kaza"),
+            ("hayat", "Hayat"), ("yat", "Yat"),
+        ]
+        TUR = {
+            "yerel": "KKTC'de kurulmuş yerel şirket",
+            "tr_subesi": "Türkiye şirketinin KKTC şubesi",
+            "tr_ortakligi": "Türkiye sigortacısıyla yerel ortaklık",
+            "banka_bagli": "Banka grubuna bağlı",
+            "bilinmiyor": "Şirket yapısı doğrulanamadı",
+        }
+        HTTP_KISA = {200: "Çalışıyor", "ölü": "Yanıt vermiyor", "site_yok": "Yok"}
+        HTTP_UZUN = {
+            200: "Site Temmuz 2026'da test edildi ve yanıt verdi.",
+            "ölü": "Şirketin alan adı Temmuz 2026'da yanıt vermedi.",
+            "site_yok": "Şirketin bir web sitesi bulunamadı.",
+        }
+        DIL_ADI = {"en": "İngilizce", "ru": "Rusça", "el": "Yunanca", "fa": "Farsça"}
+        ESLI = {"eurocity-sigorta": "eig-sigorta", "eig-sigorta": "eurocity-sigorta"}
+
+        def vir(x):
+            return str(x).replace(".", ",")
+
+        def liste_metni(xs):
+            return " · ".join(xs) if xs else ""
+
+        sablon = self.jinja.get_template("sirket-profil.html")
+
+        for s in veri:
+            olcutler = s.get("olcutler", {})
+            branslar = set(s.get("branslar") or [])
+            sehirler = s.get("ofis_sehirler") or ([s["sehir"]] if s.get("sehir") else [])
+            veri_yok = set(s.get("veri_yok_olcutler") or [])
+
+            olcut_ctx, bosluk_ctx = [], []
+            for anahtar, ad, agirlik in OLCUT:
+                o = olcutler.get(anahtar, {})
+                puan = o.get("puan")
+                detay = o.get("detay", {}) or {}
+                if puan is None:
+                    sebep = o.get("sebep") or "Bu ölçüt için veri toplanamadı."
+                    olcut_ctx.append({"ad": ad, "agirlik": agirlik, "veri_yok": True,
+                                      "sebep": sebep})
+                    bosluk_ctx.append({"ad": ad, "sebep": sebep})
+                else:
+                    olcut_ctx.append({
+                        "ad": ad, "agirlik": agirlik, "veri_yok": False,
+                        "puan": vir(puan),
+                        "var": liste_metni(detay.get("var") or []),
+                        "yok": liste_metni(detay.get("yok") or []),
+                    })
+
+            brans_matris = [{"key": k, "ad": ad, "var": k in branslar} for k, ad in BRANS]
+            ilk_brans = next(((k, ad) for k, ad in BRANS if k in branslar), None)
+
+            diller_yabanci = [DIL_ADI.get(d, d) for d in (s.get("diller") or []) if d != "tr"]
+
+            dijital = [
+                {"ad": "Online teklif", "var": bool(s.get("online_teklif"))},
+                {"ad": "Online poliçe", "var": bool(s.get("online_police"))},
+                {"ad": "Online hasar ihbarı", "var": bool(s.get("online_hasar_ihbar"))},
+                {"ad": "Mobil uygulama", "var": bool(s.get("mobil_uygulama"))},
+            ]
+
+            iletisim = []
+            if s.get("adres"):
+                iletisim.append(("Adres", s["adres"]))
+            if s.get("email"):
+                iletisim.append(("E-posta", s["email"]))
+            if s.get("whatsapp"):
+                iletisim.append(("WhatsApp", s["whatsapp"]))
+            if s.get("instagram"):
+                iletisim.append(("Instagram", s["instagram"]))
+            if s.get("facebook"):
+                iletisim.append(("Facebook", s["facebook"]))
+
+            # Benzer: aynı tür + branş örtüşmesi; yoksa yalnız branş örtüşmesi.
+            def ortak(o):
+                return len(branslar & set(o.get("branslar") or []))
+            adaylar = [o for o in veri if o["slug"] != s["slug"]]
+            ayni_tur = [o for o in adaylar if o.get("sirket_turu") == s.get("sirket_turu")]
+            havuz = sorted(ayni_tur, key=ortak, reverse=True)
+            if len([o for o in havuz if ortak(o)]) < 3:
+                havuz = sorted(adaylar, key=ortak, reverse=True)
+            benzer = [{
+                "slug": o["slug"], "ad": o["ad"], "sehir": o.get("sehir", ""),
+                "brans_sayisi": len(o.get("branslar") or []), "puan": vir(o["genel_puan"]),
+            } for o in havuz[:3] if ortak(o) or o.get("sirket_turu") == s.get("sirket_turu")]
+
+            web = (s.get("web") or "").strip()
+            puan = s["genel_puan"]
+
+            p = {
+                "ad": s["ad"], "slug": s["slug"], "sehir": s.get("sehir", ""),
+                "tur_metni": TUR.get(s.get("sirket_turu"), "Şirket yapısı doğrulanamadı"),
+                "kurulus_yili": s.get("kurulus_yili"),
+                "puan": vir(puan), "dusuk": puan is not None and puan < 3,
+                "brans_sayisi": len(branslar), "sehir_sayisi": len(sehirler),
+                "http_kisa": HTTP_KISA.get(s.get("http_durum"), "Bilinmiyor"),
+                "http_uzun": HTTP_UZUN.get(s.get("http_durum"), ""),
+                "ozet": s.get("notlar") or "Bu şirket hakkında doğrulanabilir bir gözlem derleyemedik.",
+                "olcutler": olcut_ctx, "bosluklar": bosluk_ctx,
+                "brans_matris": brans_matris,
+                "ilk_brans": ilk_brans[1] if ilk_brans else "",
+                "ilk_brans_key": ilk_brans[0] if ilk_brans else "",
+                "ofis_metni": liste_metni(sehirler),
+                "tek_sehir": len(sehirler) == 1,
+                "acente_sayisi": s.get("acente_sayisi"),
+                "dijital": dijital,
+                "police_sartlari": bool(s.get("police_sartlari_yayinda")),
+                "notlar_dijital": "",
+                "esli_slug": ESLI.get(s["slug"]),
+                "esli_ad": indeks[ESLI[s["slug"]]]["ad"] if s["slug"] in ESLI else "",
+                "iletisim": iletisim, "has_email": bool(s.get("email")),
+                "has_adres": bool(s.get("adres")),
+                "email_kurumsal": s.get("email_kurumsal"),
+                "benzer": benzer,
+                "kaynak_url": s.get("kaynak_url"), "kaynak_web": web or s.get("kaynak_url", ""),
+            }
+
+            url = f"/tr/sirketler/{s['slug']}/"
+            title = f"{s['ad']} — KKTC sigorta şirketi profili"
+            if len(branslar) >= 8:
+                desc = (f"{p['sehir']} merkezli {s['ad']}. {len(branslar)} branşta ürün, "
+                        f"{len(sehirler)} şehirde ofis. Şeffaflık, dijital hizmet ve dil "
+                        f"desteğinde ne doğrulayabildiğimiz.")
+            elif len(branslar) >= 4:
+                desc = (f"{p['sehir']} merkezli {s['ad']}. {len(branslar)} branşta ürün "
+                        f"doğrulandı. Hangi bilgileri yayımladığı, hangilerini yayımlamadığı.")
+            else:
+                desc = (f"{p['sehir']} merkezli {s['ad']}. Şeffaflık, erişim ve dijital hizmet "
+                        f"ölçütlerinde neyi doğrulayabildiğimiz, neyi doğrulayamadığımız.")
+
+            jsonld = [
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "Organization",
+                    "name": s["ad"],
+                    "url": f"https://{web}" if web else f"{self.alan_adi}{url}",
+                    "areaServed": "TR-CY" if False else "Cyprus",
+                    "address": {"@type": "PostalAddress", "addressLocality": p["sehir"],
+                                "addressRegion": "Kuzey Kıbrıs"},
+                }, ensure_ascii=False),
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Ana sayfa",
+                         "item": f"{self.alan_adi}/tr/"},
+                        {"@type": "ListItem", "position": 2, "name": "Şirketler",
+                         "item": f"{self.alan_adi}/tr/sirketler/"},
+                        {"@type": "ListItem", "position": 3, "name": s["ad"],
+                         "item": f"{self.alan_adi}{url}"},
+                    ],
+                }, ensure_ascii=False),
+            ]
+
+            bag = self.baglam(
+                dil="tr", url=url, baslik=title, aciklama=desc,
+                aktif_menu="sirketler", og_tur="profile", og_baslik=s["ad"],
+                og_aciklama=desc, jsonld=jsonld,
+            )
+            bag["hreflang"] = {"tr": url}
+            govde = sablon.render(p=p, **bag)
+            self.sayfa_yaz(url, bag, govde, date(2026, 7, 24))
+
+    # -- branşa göre şirket listeleri ---------------------------------------
+
+    def sirket_branslari(self):
+        """/tr/sirketler/<brans>/ — bir branşta ürünü doğrulanan şirketler."""
+        veri_yolu = KOK / "data" / "sirketler.json"
+        if not veri_yolu.is_file():
+            return
+        veri = json.loads(veri_yolu.read_text(encoding="utf-8"))
+
+        BRANS = {
+            "trafik": "Trafik", "kasko": "Kasko", "saglik": "Sağlık",
+            "konut": "Konut", "isyeri": "İşyeri", "seyahat": "Seyahat",
+            "nakliyat": "Nakliyat", "muhendislik": "Mühendislik",
+            "sorumluluk": "Sorumluluk", "ferdi_kaza": "Ferdi kaza",
+            "hayat": "Hayat", "yat": "Yat",
+        }
+        HUB = {"trafik", "kasko", "saglik", "konut", "seyahat", "isyeri"}
+        HUB_URL = {b: f"/tr/sigorta/{b}/" for b in HUB}
+        sablon = self.jinja.get_template("sirket-brans.html")
+
+        # Hangi branşlarda kaç şirket var
+        havuz = {}
+        for s in veri:
+            for br in (s.get("branslar") or []):
+                havuz.setdefault(br, []).append(s)
+
+        for br, ad in BRANS.items():
+            sirketler = havuz.get(br, [])
+            if not sirketler:
+                continue
+            sirketler = sorted(sirketler, key=lambda s: s["genel_puan"], reverse=True)
+            liste = [{
+                "slug": s["slug"], "ad": s["ad"], "sehir": s.get("sehir", ""),
+                "brans_sayisi": len(s.get("branslar") or []),
+                "puan": str(s["genel_puan"]).replace(".", ","),
+                "puan_sayi": s["genel_puan"],
+            } for s in sirketler]
+
+            bulgu = (f"39 ruhsatlı hayat dışı şirketin {len(sirketler)}'inde {ad.lower()} "
+                     f"ürünü sitesinden doğrulandı. Genel puana göre sıralı; her ad "
+                     f"şirketin tam profiline gider.")
+
+            b = {"key": br, "ad": ad, "ad_kucuk": ad.lower(), "sayi": len(sirketler),
+                 "sirketler": liste, "bulgu": bulgu, "hub_url": HUB_URL.get(br)}
+
+            url = f"/tr/sirketler/{br}/"
+            title = f"KKTC'de {ad.lower()} sigortası yapan {len(sirketler)} şirket"
+            desc = (f"Kuzey Kıbrıs'ta {ad.lower()} branşında ürünü doğrulanan {len(sirketler)} "
+                    f"ruhsatlı sigorta şirketi, genel puana göre sıralı. Her şirketin tam profili.")
+            jsonld = [json.dumps({
+                "@context": "https://schema.org", "@type": "ItemList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1, "name": s["ad"],
+                     "url": f"{self.alan_adi}/tr/sirketler/{s['slug']}/"}
+                    for i, s in enumerate(sirketler)
+                ],
+            }, ensure_ascii=False)]
+
+            bag = self.baglam(dil="tr", url=url, baslik=title, aciklama=desc,
+                              aktif_menu="sirketler", og_aciklama=desc, jsonld=jsonld)
+            bag["hreflang"] = {"tr": url}
+            govde = sablon.render(b=b, **bag)
+            self.sayfa_yaz(url, bag, govde, date(2026, 7, 24))
+
     # -- sitemap, robots, kök yönlendirme, 404 ------------------------------
 
     def sitemap(self):
@@ -676,6 +929,8 @@ class Uretici:
 
         self.varliklar()
         self.statik_sayfalar()
+        self.sirket_profilleri()
+        self.sirket_branslari()
         self.blog_yazilari()
         self.bloglar()
         sitemap_var = self.sitemap()

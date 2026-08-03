@@ -1,0 +1,306 @@
+{# Şirket profili gövdesi. Bağlam _build/uret.py > sirket_profilleri() içinde
+   hazırlanır; buradaki mantık yalnızca sunumdur. İskeleti iskelet.html ekler. #}
+<section class="bg-ink text-white">
+  <div class="mx-auto max-w-shell px-5 sm:px-8 py-12 sm:py-16">
+    <nav aria-label="Konum" class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-6">
+      <a href="/tr/" class="hover:text-white">Ana sayfa</a> <span class="mx-2">/</span>
+      <a href="/tr/sirketler/" class="hover:text-white">Şirketler</a> <span class="mx-2">/</span> {{ p.ad }}
+    </nav>
+    <div class="grid lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
+      <div>
+        <p class="u-eyebrow text-muteddark mb-3">{{ p.sehir }} · {{ p.tur_metni }}</p>
+        <h1 class="u-display u-display--tight text-[2.25rem] sm:text-[3rem] leading-[1.05] mb-5">{{ p.ad }}</h1>
+        <p class="text-[15px] leading-relaxed text-white/70 border-s-2 border-sun ps-4">
+          Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği üyesi. Ruhsatlı sigorta
+          şirketi — acente değil.{% if p.kurulus_yili %} {{ p.kurulus_yili }}'den beri faaliyette.{% endif %}
+        </p>
+      </div>
+      <dl class="grid grid-cols-2 gap-x-8 gap-y-5">
+        <div class="border-t border-ink3 pt-3">
+          <dt class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-1">Genel puan</dt>
+          <dd class="u-num text-[28px] {% if p.dusuk %}text-flag{% else %}text-sun{% endif %}">{{ p.puan }}</dd>
+        </div>
+        <div class="border-t border-ink3 pt-3">
+          <dt class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-1">Doğrulanan branş</dt>
+          <dd class="u-num text-[28px]">{{ p.brans_sayisi }}</dd>
+        </div>
+        <div class="border-t border-ink3 pt-3">
+          <dt class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-1">Ofis şehri</dt>
+          <dd class="u-num text-[28px]">{{ p.sehir_sayisi }}</dd>
+        </div>
+        <div class="border-t border-ink3 pt-3">
+          <dt class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-1">Web sitesi</dt>
+          <dd class="text-[14px] text-white/85 pt-2 leading-snug">{{ p.http_kisa }}</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+{# ── Özet: şirkete özel gözlem ─────────────────────────────────────────── #}
+<section class="bg-paper border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-14">
+    <div class="max-w-prose">
+      <p class="u-eyebrow mb-3">Gözlemimiz</p>
+      <p class="u-lead">{{ p.ozet }}</p>
+    </div>
+  </div>
+</section>
+
+{% if p.dusuk %}
+<section class="bg-white border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-8">
+    <div class="max-w-prose bg-paper border border-line rounded-[14px] p-6">
+      <p class="u-eyebrow mb-2">Düşük puan ne demek, ne demek değil</p>
+      <p class="text-[15px] text-muted leading-relaxed">
+        Bu puan şirketin dışarıdan ne kadar görülebildiğini ölçer. Bir şirket iyi hizmet
+        veriyor ama sitesini güncellemiyor olabilir — bunu ölçemiyoruz. Puan, sizin
+        doğrulayabileceğiniz bilginin ne kadar az olduğunu gösterir; şirketin kötü
+        olduğunu değil.
+      </p>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ── Altı ölçüt ────────────────────────────────────────────────────────── #}
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <div class="max-w-prose mb-8">
+      <h2 class="u-display text-[1.75rem] sm:text-[2.25rem] leading-[1.1] mb-4">Neyi ölçtük</h2>
+      <p class="text-[15px] text-muted leading-relaxed">
+        Altı ölçütün her birinde şirketin ne yayımladığına baktık. Puanın yanında dayandığı
+        liste var — katılmadığınız yeri görebilirsiniz.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-5">
+      {% for o in p.olcutler %}
+      <div class="border border-line rounded-[14px] p-6 bg-paper">
+        <div class="flex items-baseline justify-between gap-3 mb-4">
+          <h3 class="u-display text-[16px]">{{ o.ad }}</h3>
+          <span class="u-num text-sm text-muted shrink-0">ağırlık %{{ o.agirlik }}</span>
+        </div>
+        {% if o.veri_yok %}
+          <p class="u-num text-[22px] text-flag mb-2">veri yok</p>
+          <p class="text-[14px] text-muted leading-relaxed">{{ o.sebep }}</p>
+        {% else %}
+          <p class="u-num text-[22px] mb-3">{{ o.puan }}<span class="text-muted text-[15px]">/10</span></p>
+          {% if o.var %}
+          <p class="text-[13px] text-muted mb-1"><span class="text-text">Bulduklarımız:</span> {{ o.var }}</p>
+          {% endif %}
+          {% if o.yok %}
+          <p class="text-[13px] text-muted"><span class="text-text">Bulamadıklarımız:</span> {{ o.yok }}</p>
+          {% endif %}
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="text-[14px] text-muted leading-relaxed mt-6 max-w-prose">
+      Bu altı ölçüt şirketin <strong class="text-text">görünürlüğünü</strong> ölçer. Hasarınızı
+      ödeyip ödemeyeceğini ölçmez; o veri KKTC'de yayımlanmıyor.
+      <a href="/tr/metodoloji/" class="text-sea link-u">Nasıl puanlıyoruz</a>
+    </p>
+  </div>
+</section>
+
+{# ── Neyi doğrulayamadık ───────────────────────────────────────────────── #}
+<section class="bg-paper border-y border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-14">
+    <div class="max-w-prose">
+      {% if p.bosluklar %}
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Doğrulayamadığımız ölçütler</h2>
+      {% for b in p.bosluklar %}
+      <div class="mb-4">
+        <p class="text-[15px] leading-relaxed">
+          <strong>{{ b.ad }} puanlanmadı.</strong> {{ b.sebep }}
+          Bu ölçütün ağırlığı diğerlerine dağıtıldı; eksik bir puan, düşük bir puan değildir.
+        </p>
+      </div>
+      {% endfor %}
+      {% else %}
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Bu sayfada eksik veri yok</h2>
+      <p class="text-[15px] leading-relaxed">
+        Altı ölçütün altısını da puanlayabildik. Bu, şirketin her bilgiyi yayımladığı
+        anlamına gelmiyor — yayımlamadıkları yukarıda "bulamadıklarımız" satırlarında duruyor.
+      </p>
+      {% endif %}
+
+      <div class="mt-6 bg-white border border-line rounded-[14px] p-6">
+        <p class="text-[15px] leading-relaxed text-muted">
+          <strong class="text-text">Herkeste eksik olan iki şey:</strong> mali güç ve hasar
+          ödeme performansı. Bunlar bu şirkette değil, KKTC'de hiçbir şirkette ölçülemiyor —
+          2016'dan beri şirket bazında yayımlanmıyorlar.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ── Branş matrisi ─────────────────────────────────────────────────────── #}
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-6">Hangi branşlarda ürünü var</h2>
+    {% if p.brans_sayisi %}
+    <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 max-w-3xl mb-6">
+      {% for b in p.brans_matris %}
+      <li class="flex items-center gap-3 text-[15px] py-1 border-b border-line/60">
+        {% if b.var %}<span class="text-sea u-num">✓</span>
+          <a href="/tr/sirketler/{{ b.key }}/" class="link-u">{{ b.ad }}</a>
+        {% else %}<span class="text-muted/50 u-num">—</span>
+          <span class="text-muted/60">{{ b.ad }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="text-[14px] text-muted leading-relaxed max-w-prose">
+      Bu liste şirketin kendi sitesindeki ürün sayfalarından derlendi. Bir branşın işaretsiz
+      olması şirketin o ürünü satmadığı anlamına gelmez; sitesinde bulamadığımız anlamına gelir.
+      Merkezî bir "hangi şirket hangi branşı satıyor" kaydı KKTC'de yok.
+    </p>
+    {% else %}
+    <p class="text-[15px] leading-relaxed max-w-prose">
+      <strong>Hangi branşlarda çalıştığını yazamıyoruz.</strong> Şirketin sitesinde ürün
+      sayfası yok; ürün listesi yayımlamıyor. Branş bilgisi için doğrudan şirkete sormanız
+      gerekiyor.
+    </p>
+    {% endif %}
+  </div>
+</section>
+
+{# ── Erişim ────────────────────────────────────────────────────────────── #}
+<section class="bg-paper border-y border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-14">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Nereden ulaşılıyor</h2>
+      {% if p.ofis_metni %}
+      <p class="text-[15px] leading-relaxed mb-3"><strong>Ofis:</strong> {{ p.ofis_metni }}</p>
+      {% endif %}
+      {% if p.acente_sayisi %}
+      <p class="text-[15px] leading-relaxed mb-3">
+        <strong>{{ p.acente_sayisi }} acente</strong>
+        <span class="text-muted">— şirket beyanı, bağımsız olarak doğrulanmadı</span>
+      </p>
+      {% endif %}
+      {% if p.tek_sehir %}
+      <p class="text-[15px] leading-relaxed text-muted mb-3">
+        Yalnızca {{ p.sehir }}'da ofisi var. Hasar anında yüz yüze görüşmeniz gerekirse
+        mesafe bir maliyettir.
+      </p>
+      {% endif %}
+      <p class="text-[14px] text-muted leading-relaxed">
+        Karşılaştırma için: 39 ruhsatlı şirketin 36'sının merkezi Lefkoşa'da. Girne'de iki,
+        Gazimağusa'da bir şirket merkezli; İskele ve Güzelyurt'ta merkezi olan hiç yok.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# ── Dijital denetim ───────────────────────────────────────────────────── #}
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Sitesi ve dijital hizmetleri</h2>
+      <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2 mb-5">
+        {% for d in p.dijital %}
+        <li class="flex items-center gap-3 text-[15px] py-1 border-b border-line/60">
+          {% if d.var %}<span class="text-sea u-num">✓</span> <span>{{ d.ad }}</span>
+          {% else %}<span class="text-muted/50 u-num">—</span> <span class="text-muted/60">{{ d.ad }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="text-[14px] text-muted leading-relaxed mb-3">{{ p.http_uzun }}
+        39 şirketin 34'ünün sitesi çalışıyor. Üç site yanıt vermiyor, iki şirketin sitesi hiç yok.</p>
+      {% if p.notlar_dijital %}
+      <p class="text-[14px] text-muted leading-relaxed mb-3">{{ p.notlar_dijital }}</p>
+      {% endif %}
+      {% if not p.police_sartlari %}
+      <p class="text-[14px] text-muted leading-relaxed">
+        <strong class="text-text">Poliçe genel şartlarını yayımlamıyor.</strong> 39 şirketin
+        yalnızca üçü yayımlıyor — bu, sektörün geneli. Genel şartların resmî metinlerine
+        KKSRSB'den Türkçe ve İngilizce ulaşabilirsiniz.
+      </p>
+      {% endif %}
+      {% if p.esli_slug %}
+      <p class="text-[14px] text-muted leading-relaxed mt-3">
+        Bu şirketin sitesi ile
+        <a href="/tr/sirketler/{{ p.esli_slug }}/" class="text-sea link-u">{{ p.esli_ad }}</a>'nın
+        sitesi aynı IP adresinde ve aynı şablonda yayında. İkisi de Birlik'in ayrı ayrı
+        ruhsatlı üyesi. Bağlantının niteliğini doğrulayamadık.
+      </p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{# ── İletişim ──────────────────────────────────────────────────────────── #}
+{% if p.iletisim %}
+<section class="bg-paper border-y border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-10 sm:py-12">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.25rem] sm:text-[1.5rem] leading-[1.15] mb-4">İletişim</h2>
+      <dl class="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-[15px]">
+        {% for k, v in p.iletisim %}
+        <div>
+          <dt class="u-eyebrow mb-1">{{ k }}</dt>
+          <dd class="text-muted break-words">{{ v }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+      {% if p.email_kurumsal is not none and not p.email_kurumsal and p.has_email %}
+      <p class="text-[13px] text-muted mt-3">E-posta adresi şirketin kendi alan adında değil.</p>
+      {% endif %}
+      {% if not p.has_adres %}
+      <p class="text-[13px] text-muted mt-3">Sitesinde açık adres yayımlanmamış.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ── Benzer şirketler ──────────────────────────────────────────────────── #}
+{% if p.benzer %}
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <div class="flex items-baseline justify-between gap-4 mb-6 flex-wrap">
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15]">Karşılaştırın</h2>
+      {% if p.ilk_brans %}
+      <a href="/tr/sirketler/{{ p.ilk_brans_key }}/" class="text-[14px] text-sea link-u">
+        {{ p.ilk_brans }} yapan şirketlerin tamamı →</a>
+      {% endif %}
+    </div>
+    <div class="grid sm:grid-cols-3 gap-4">
+      {% for b in p.benzer %}
+      <a href="/tr/sirketler/{{ b.slug }}/" class="block border border-line rounded-[14px] p-5 bg-paper hover:border-ink transition-colors">
+        <p class="u-display text-[15px] mb-1">{{ b.ad }}</p>
+        <p class="text-[13px] text-muted">{{ b.sehir }} · {{ b.brans_sayisi }} branş · {{ b.puan }} puan</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ── Sayfa altı ────────────────────────────────────────────────────────── #}
+<section class="bg-ink text-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-14">
+    <div class="max-w-prose space-y-4 text-[14px] leading-relaxed text-white/70">
+      <p>
+        <span class="u-eyebrow text-muteddark">Kaynak</span><br>
+        {% if p.kaynak_url %}<a href="{{ p.kaynak_url }}" rel="nofollow" class="text-sun link-u">{{ p.kaynak_web }}</a> — {% endif %}Temmuz 2026'da tarandı.
+        Birlik üyeliği: KKSRSB üye listesi. Şirket türü: Birlik listesindeki unvan.
+      </p>
+      <p>
+        Bu sayfadaki bir bilgi yanlışsa
+        <a href="/tr/duzeltme/" class="text-sun link-u">kaynağıyla birlikte bildirin</a>;
+        inceleyip düzeltir ve düzeltme tarihini sayfaya yazarız.
+      </p>
+      <p class="text-white/50">
+        Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır, sigorta tavsiyesi değildir.
+        Puanlar dışarıdan gözlemlenebilir ölçütlere dayanır; mali güç ve hasar ödeme
+        performansı puanlanmamaktadır. Son güncelleme: Temmuz 2026.
+      </p>
+    </div>
+  </div>
+</section>
