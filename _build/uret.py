@@ -84,6 +84,26 @@ def evet_mi(deger):
     return str(deger).strip().lower() in {"evet", "true", "1", "yes", "var"}
 
 
+# Kendi sayfası üretilmeyen şirketin ölçütü: adres, e-posta, branş ve dil
+# verisinin DÖRDÜ BİRDEN boş. "Branşı yok" tek başına eşik değildir — branşsız
+# dokuz şirketin beşinde sayfayı taşıyan özgün bir bulgu var (ölü alan adı,
+# aynı IP'de iki şirket, kişisel e-posta). Bu dördünde o bulgu da yok.
+# Gerekçe: copy/02-programatik-seo.md §2 "İnce içerik eşiği".
+def sayfasiz_mi(sirket):
+    return not any((
+        sirket.get("adres"),
+        sirket.get("email"),
+        sirket.get("branslar"),
+        sirket.get("diller"),
+    ))
+
+
+# Kendi liste sayfası üretilmeyen branşlar. hayat: ayrı ruhsat rejimi, hayat
+# dışı listesiyle karışır. yat: yedi şirket, tür hub'ı yok, tek başına zayıf.
+# İkisi de profillerin branş matrisinde görünmeye devam eder — bağlantısız.
+BRANS_SAYFASIZ = {"hayat", "yat"}
+
+
 def frontmatter_ayikla(kaynak):
     """--- ile sarılı başlık bloğunu sözlüğe çevirir, gövdeyi ayrı döndürür.
 
@@ -525,13 +545,18 @@ class Uretici:
     def sirket_profilleri(self):
         """data/sirketler.json → /tr/sirketler/<slug>/ profil sayfaları.
 
-        Tablo 39 şirketin tümüne bağlanır; veri-fakiri şirketlerde sayfa dürüst
-        bir 'doğrulayamadık' beyanına dönüşür — sitenin tezinin tekil hâli.
+        39 şirketin 35'ine sayfa üretilir. Veri-fakiri dördüne üretilmez: adres,
+        e-posta, branş ve dil verisinin dördü birden boş olan şirket için sayfa
+        bir "doğrulayamadık" beyanından ibaret kalırdı ve 35 iyi profilin
+        güvenilirliğini aşağı çekerdi. O dördü şirketler listesinde tek bir
+        bölümde, neden veri toplanamadığı yazılarak durur.
+        Gerekçe: copy/02-programatik-seo.md §2 "İnce içerik eşiği".
         """
         veri_yolu = KOK / "data" / "sirketler.json"
         if not veri_yolu.is_file():
             return
-        veri = json.loads(veri_yolu.read_text(encoding="utf-8"))
+        tum_veri = json.loads(veri_yolu.read_text(encoding="utf-8"))
+        veri = [s for s in tum_veri if not sayfasiz_mi(s)]
         indeks = {s["slug"]: s for s in veri}
 
         OLCUT = [
@@ -597,8 +622,13 @@ class Uretici:
                         "yok": liste_metni(detay.get("yok") or []),
                     })
 
-            brans_matris = [{"key": k, "ad": ad, "var": k in branslar} for k, ad in BRANS]
-            ilk_brans = next(((k, ad) for k, ad in BRANS if k in branslar), None)
+            # Sayfası olmayan branş matriste görünür ama bağlantı almaz.
+            brans_matris = [{
+                "key": k, "ad": ad, "var": k in branslar,
+                "url": None if k in BRANS_SAYFASIZ else f"/tr/sirketler/{k}/",
+            } for k, ad in BRANS]
+            ilk_brans = next(((k, ad) for k, ad in BRANS
+                              if k in branslar and k not in BRANS_SAYFASIZ), None)
 
             diller_yabanci = [DIL_ADI.get(d, d) for d in (s.get("diller") or []) if d != "tr"]
 
@@ -736,6 +766,8 @@ class Uretici:
                 havuz.setdefault(br, []).append(s)
 
         for br, ad in BRANS.items():
+            if br in BRANS_SAYFASIZ:
+                continue
             sirketler = havuz.get(br, [])
             if not sirketler:
                 continue

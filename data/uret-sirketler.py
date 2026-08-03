@@ -13,6 +13,17 @@ import json, pathlib, html
 KOK = pathlib.Path(__file__).parent.parent
 VERI = json.loads((KOK / "data" / "sirketler.json").read_text(encoding="utf-8"))
 
+
+# Kendi profil sayfası üretilmeyen şirketin ölçütü: adres, e-posta, branş ve dil
+# verisinin DÖRDÜ BİRDEN boş. Ölçüt _build/uret.py > sayfasiz_mi() ile aynıdır;
+# ikisi birlikte değişir. Gerekçe: copy/02-programatik-seo.md §2.
+def sayfasiz_mi(s):
+    return not any((s.get("adres"), s.get("email"), s.get("branslar"), s.get("diller")))
+
+
+SAYFALI = [s for s in VERI if not sayfasiz_mi(s)]      # tabloda, profili var
+SAYFASIZ = [s for s in VERI if sayfasiz_mi(s)]         # tablonun altında, profili yok
+
 BRANS_ADI = {
     "trafik": "Trafik", "kasko": "Kasko", "saglik": "Sağlık", "hayat": "Hayat",
     "konut": "Konut", "isyeri": "İşyeri", "seyahat": "Seyahat",
@@ -96,12 +107,40 @@ def frontmatter(dosya):
     raise SystemExit(f"frontmatter bulunamadı: {dosya}")
 
 
+SAYI_ADI = {1: "bir", 2: "iki", 3: "üç", 4: "dört", 5: "beş",
+            6: "altı", 7: "yedi", 8: "sekiz", 9: "dokuz", 10: "on"}
+
+
+def yazi_sayi(n):
+    return SAYI_ADI.get(n, str(n))
+
+
+def sayfasiz_kart(s):
+    """Profili olmayan şirket için kart: ne bulduğumuz değil, ne bulamadığımız.
+
+    Gerekçe metni `notlar` alanından gelir — o alan tarama sırasında neden veri
+    toplanamadığını zaten yazıyor. Şablon cümle üretmiyoruz.
+    """
+    sebep = s.get("notlar") or "Tarama sırasında şirkete ait doğrulanabilir bir kayıt bulunamadı."
+    web = (s.get("web") or "").strip()
+    durum = {"ölü": "alan adı yanıt vermiyor", "site_yok": "web sitesi bulunamadı"}.get(
+        s.get("http_durum"), "sitesi doğrulanamadı")
+    kunye = f"{e(web)} — {durum}" if web else durum
+    return f'''      <li class="border border-line bg-white rounded-[14px] p-5">
+        <p class="u-display text-[15px] mb-1">{e(s['ad'])}</p>
+        <p class="font-mono text-[11px] text-muted mb-3">{kunye}</p>
+        <p class="text-[14px] text-muted leading-relaxed">{e(sebep)}</p>
+      </li>
+'''
+
+
 def main():
     canli = sum(1 for s in VERI if s.get("http_durum") in (200, 301, 302))
     olu = len(VERI) - canli
     branslar = sorted({b for s in VERI for b in (s.get("branslar") or [])},
                       key=lambda b: BRANS_ADI[b])
     sehirler = sorted({c for s in VERI for c in (s.get("ofis_sehirler") or [s["sehir"]])})
+    sayfasiz_kartlar = "".join(sayfasiz_kart(s) for s in SAYFASIZ)
 
     brans_opt = "\n".join(
         f'            <option value="{e(b)}">{e(BRANS_ADI[b])}</option>' for b in branslar)
@@ -167,7 +206,7 @@ def main():
         </select>
       </div>
       <p class="text-sm text-muted pb-3">
-        <span data-filter-count class="u-num text-text">{len(VERI)}</span> şirket gösteriliyor
+        <span data-filter-count class="u-num text-text">{len(SAYFALI)}</span> şirket gösteriliyor
       </p>
     </div>
 
@@ -182,7 +221,7 @@ def main():
           </tr>
         </thead>
         <tbody>
-{"".join(satir_html(s, i) for i, s in enumerate(VERI))}        </tbody>
+{"".join(satir_html(s, i) for i, s in enumerate(SAYFALI))}        </tbody>
       </table>
     </div>
 
@@ -229,6 +268,33 @@ def main():
     </p>
   </div>
 </section>
+
+<section class="bg-paper border-b border-line">
+  <div class="mx-auto max-w-shell px-5 sm:px-8 py-12 sm:py-14">
+    <div class="max-w-prose mb-8">
+      <p class="u-eyebrow mb-3">Yukarıdaki tabloda olmayanlar</p>
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-4">
+        Veri toplayamadığımız {yazi_sayi(len(SAYFASIZ))} şirket
+      </h2>
+      <p class="text-[15px] text-muted leading-relaxed">
+        Bu {yazi_sayi(len(SAYFASIZ))} şirket Birlik'in ruhsatlı üyesidir — listeden
+        düşmüş değillerdir. Ama adres, e-posta, ürün ve hizmet dili verisinin
+        <strong class="text-text">dördünü birden</strong> bulamadık. Puanlayacak bir
+        şey olmadığı için tabloya, anlatacak bir şey olmadığı için de ayrı sayfaya
+        koymuyoruz. Ne aradığımızı ve ne bulamadığımızı burada yazıyoruz.
+      </p>
+    </div>
+
+    <ul class="grid sm:grid-cols-2 gap-4 mb-6">
+{sayfasiz_kartlar}    </ul>
+
+    <p class="text-sm text-muted max-w-prose leading-relaxed">
+      Bu şirketlerden birini temsil ediyorsanız
+      <a href="/tr/duzeltme/" class="text-sea link-u">bize yazın</a> — adres, iletişim
+      ve ürün bilgisi geldiğinde şirket tabloya girer ve kendi sayfası açılır.
+    </p>
+  </div>
+</section>
 '''
 
     # Çıktı artık içerik parçasıdır: head/header/footer'ı _build/uret.py ekler.
@@ -236,12 +302,12 @@ def main():
     cikti = KOK / "content" / "tr" / "sayfa" / "sirketler" / "index.html"
     cikti.parent.mkdir(parents=True, exist_ok=True)
     cikti.write_text(frontmatter(cikti) + govde.lstrip("\n"), encoding="utf-8")
-    print(f"→ content/tr/sayfa/sirketler/index.html ({len(VERI)} satır, {canli} canlı, {olu} ölü)")
+    print(f"→ content/tr/sayfa/sirketler/index.html ({len(SAYFALI)} profilli satır, {len(SAYFASIZ)} profilsiz, {canli} canlı, {olu} ölü)")
 
     # Ana sayfadaki ilk 5 satırı gerçek veriyle değiştir
     ana = KOK / "content" / "tr" / "sayfa" / "index.html"
     s = ana.read_text(encoding="utf-8")
-    ilk5 = "".join(satir_html_koyu(x, i) for i, x in enumerate(VERI[:5]))
+    ilk5 = "".join(satir_html_koyu(x, i) for i, x in enumerate(SAYFALI[:5]))
     import re
     s2, n = re.subn(r"          <tbody>.*?          </tbody>",
                     "          <tbody>\n" + ilk5 + "          </tbody>",

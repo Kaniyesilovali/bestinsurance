@@ -147,7 +147,8 @@
       {% for b in p.brans_matris %}
       <li class="flex items-center gap-3 text-[15px] py-1 border-b border-line/60">
         {% if b.var %}<span class="text-sea u-num">✓</span>
-          <a href="/tr/sirketler/{{ b.key }}/" class="link-u">{{ b.ad }}</a>
+          {% if b.url %}<a href="{{ b.url }}" class="link-u">{{ b.ad }}</a>
+          {% else %}<span>{{ b.ad }}</span>{% endif %}
         {% else %}<span class="text-muted/50 u-num">—</span>
           <span class="text-muted/60">{{ b.ad }}</span>
         {% endif %}
