@@ -66,3 +66,7 @@ jobs:
           port: 21
           local-dir: ./dist/
           server-dir: ${{ vars.FTP_DIR || '/public_html/' }}
+          # Tek seferlik: sunucu senkron-durumu gerçek içerikle hizasını
+          # kaybetmişti; yeni dosyalar "yüklendi" sayılıp atlanıyordu. Bu
+          # tam yüklemeyi zorlar. Doğrulama sonrası bu satır geri alınır.
+          dangerous-clean-slate: true
