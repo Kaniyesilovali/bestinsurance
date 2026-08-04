@@ -65,8 +65,7 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./dist/
-          server-dir: ${{ vars.FTP_DIR || '/public_html/' }}
-          # Tek seferlik: sunucu senkron-durumu gerçek içerikle hizasını
-          # kaybetmişti; yeni dosyalar "yüklendi" sayılıp atlanıyordu. Bu
-          # tam yüklemeyi zorlar. Doğrulama sonrası bu satır geri alınır.
-          dangerous-clean-slate: true
+          # FTP kullanıcısının kök dizini zaten web kökü. '/public_html/'
+          # yazıldığında dosyalar web kökünün içinde ikinci bir public_html/
+          # klasörüne gidiyordu ve canlı site hiç güncellenmiyordu.
+          server-dir: ${{ vars.FTP_DIR || '/' }}
