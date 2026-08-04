@@ -2,8 +2,8 @@
   "_aciklama": "Sitenin tek yapılandırma dosyası. Alan adı, menü ve dil rotaları burada. Değiştirip 'python3 _build/uret.py' çalıştırın; tüm sayfalar güncellenir.",
 
   "alan_adi": "https://kktcsigortamerkezi.com",
-  "site_adi": "Kıbrıs Sigorta Rehberi",
-  "site_adi_kisa": "Kıbrıs Sigorta",
+  "site_adi": "KKTC Sigorta Merkezi",
+  "site_adi_kisa": "KKTC Sigorta",
   "site_aciklamasi": "Kuzey Kıbrıs'taki sigorta şirketlerini bağımsız olarak değerlendiren bilgi sitesi.",
   "varsayilan_dil": "tr",
 
@@ -77,7 +77,7 @@
           ]
         }
       ],
-      "telif": "© 2026 Kıbrıs Sigorta Rehberi. Tüm hakları saklıdır."
+      "telif": "© 2026 KKTC Sigorta Merkezi. Tüm hakları saklıdır."
     }
   },
 

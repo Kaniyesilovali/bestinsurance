@@ -1,6 +1,6 @@
 ---
 baslik: "İletişim"
-aciklama: "Kıbrıs Sigorta Rehberi'ne nasıl ulaşabilirsiniz: düzeltme talepleri, şirket başvuruları ve genel sorular."
+aciklama: "KKTC Sigorta Merkezi'ne nasıl ulaşabilirsiniz: düzeltme talepleri, şirket başvuruları ve genel sorular."
 url: /tr/iletisim/
 og_aciklama: "Düzeltme talepleri, şirket başvuruları ve genel sorular için iletişim."
 ---

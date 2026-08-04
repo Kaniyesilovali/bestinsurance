@@ -1,6 +1,6 @@
 ---
 baslik: "Hakkımızda"
-aciklama: "Kıbrıs Sigorta Rehberi'ni kimler hazırlıyor, siteyi nasıl finanse ediyoruz ve şirketlerle aramızda nasıl bir ilişki var."
+aciklama: "KKTC Sigorta Merkezi'ni kimler hazırlıyor, siteyi nasıl finanse ediyoruz ve şirketlerle aramızda nasıl bir ilişki var."
 url: /tr/hakkimizda/
 og_aciklama: "Siteyi kimler hazırlıyor, nasıl finanse ediliyor, şirketlerle ilişkimiz ne."
 ---
@@ -36,6 +36,8 @@ anlatıyoruz. Puanlamanın hangi ölçütlere dayandığını
 - Sigorta satmıyoruz, teklif toplamıyoruz, aracılık etmiyoruz.
 - Şirketlerden puan karşılığı ödeme almıyoruz.
 - Doğrulayamadığımız rakamı yazmıyoruz — boş bırakıp neden boş olduğunu söylüyoruz.
+- Resmî bir kurum değiliz. Adımızdaki "merkez" sözcüğüne rağmen Kuzey Kıbrıs Sigorta
+  Bilgi Merkezi (KKSBM), KKSRSB veya herhangi bir devlet dairesiyle ilişkimiz yok.
 
 ## Siteyi kim hazırlıyor
 

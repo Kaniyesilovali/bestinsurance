@@ -1,4 +1,4 @@
-# İçerik stratejisi — Kıbrıs Sigorta Rehberi
+# İçerik stratejisi — KKTC Sigorta Merkezi
 
 **Tarih:** 24 Temmuz 2026
 **Girdi:** `data/arastirma-kktc-sigorta.md` · `data/sirketler.json` (39 şirket) · `copy/00-brief.md`

@@ -6,7 +6,7 @@ Eksik olan **çerçeveleme metni** — okurun listeyi doğru okumasını sağlay
 **Sayfa amacı:** 39 şirketi karşılaştırılabilir kılmak.
 **Tek eylem:** Bir şirket profiline girmek.
 
-**Title:** KKTC'de ruhsatlı 39 sigorta şirketi — puan ve karşılaştırma | Kıbrıs Sigorta Rehberi
+**Title:** KKTC'de ruhsatlı 39 sigorta şirketi — puan ve karşılaştırma | KKTC Sigorta Merkezi
 **Meta description:** Kuzey Kıbrıs'ta ruhsatlı 39 hayat dışı sigorta şirketinin tam listesi. Şeffaflık, ürün genişliği, erişilebilirlik ve dijital hizmet puanlarıyla; şehre ve branşa göre filtrelenebilir.
 
 ---

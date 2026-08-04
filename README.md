@@ -1,4 +1,4 @@
-# Kıbrıs Sigorta Rehberi
+# KKTC Sigorta Merkezi
 
 Kuzey Kıbrıs'taki sigorta şirketlerini karşılaştıran çok dilli statik bilgi sitesi.
 Sayfalar `content/` içindeki kaynaklardan üretilir; çıktı `dist/` klasörüne yazılır

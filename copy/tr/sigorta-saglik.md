@@ -4,7 +4,7 @@
 **Sitenin en yanlış anlaşılan konusu.** Bu sayfanın işi bir ayrımı yapmak.
 **Tek eylem:** Şirketleri karşılaştır (özel poliçe arayanlar için).
 
-**Title:** KKTC sağlık sigortası ve Sağlık Fonu — öğrenci ve oturma izni | Kıbrıs Sigorta Rehberi
+**Title:** KKTC sağlık sigortası ve Sağlık Fonu — öğrenci ve oturma izni | KKTC Sigorta Merkezi
 **Meta description:** Kuzey Kıbrıs'ta öğrenci ikamet izni için ödenen Sağlık Fonu primi özel sağlık sigortası değildir. Aradaki fark, ne kapsadığı ve özel poliçenin ne zaman gerektiği.
 
 ---

@@ -1,4 +1,4 @@
-# Programatik SEO planı — Kıbrıs Sigorta Rehberi
+# Programatik SEO planı — KKTC Sigorta Merkezi
 
 **Tarih:** 24 Temmuz 2026
 **Dayanak:** `copy/01-icerik-stratejisi.md` · `data/sirketler.json` (39 şirket, 30 alan)

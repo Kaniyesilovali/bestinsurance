@@ -165,7 +165,7 @@ komisyon almıyoruz."*
 ## Meta
 
 **Title (mevcut, iyi):**
-KKTC sigorta şirketleri karşılaştırma — 39 ruhsatlı şirket | Kıbrıs Sigorta Rehberi
+KKTC sigorta şirketleri karşılaştırma — 39 ruhsatlı şirket | KKTC Sigorta Merkezi
 
 **Meta description — önerilen düzeltme** (mevcut açıklama 39'u "ruhsatlı 39 şirket" diyor,
 doğru; yalnızca sonuna somut bir fark ekliyorum):

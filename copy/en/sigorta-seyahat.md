@@ -4,7 +4,7 @@
 most searched pages on the site; competitors do not carry correct information.
 **Single action:** Move to the border crossing guide.
 
-**Title:** TRNC Green Card and border crossing insurance — gates, tariff, hours | Cyprus Insurance Guide
+**Title:** TRNC Green Card and border crossing insurance — gates, tariff, hours | KKTC Sigorta Merkezi
 **Meta description:** The TRNC is not a member of the Green Card system. Which insurance you need to drive into Northern Cyprus, which gate sells it, opening hours and the 2024 tariff.
 
 ---

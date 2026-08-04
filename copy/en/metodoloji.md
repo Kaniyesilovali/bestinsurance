@@ -7,7 +7,7 @@ Page copy, section by section. This page is the site's proof.
 ## Meta
 
 **Title:**
-How we score — methodology | Cyprus Insurance Guide
+How we score — methodology | KKTC Sigorta Merkezi
 
 **Meta description:**
 How we score TRNC insurance companies on six observable measures, which sources we use, and why

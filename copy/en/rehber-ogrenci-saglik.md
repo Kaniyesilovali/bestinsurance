@@ -5,7 +5,7 @@
 **Reader:** A newly arrived foreign national student or their parent. Probably knows the Turkish model.
 **This page will take more traffic in EN/RU/FA than in TR.**
 
-**Title:** Student health cover and the Health Fund premium in the TRNC | Cyprus Insurance Guide
+**Title:** Student health cover and the Health Fund premium in the TRNC | KKTC Sigorta Merkezi
 **Meta description:** The Health Fund premium paid for a student residence permit in Northern Cyprus is not private health insurance. How it is paid, what it covers, and what happens if it is not paid.
 
 ---

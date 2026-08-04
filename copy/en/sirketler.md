@@ -8,7 +8,7 @@ Single action: open a company profile.
 ## Meta
 
 **Title:**
-39 insurance companies licensed in the TRNC — scores and comparison | Cyprus Insurance Guide
+39 insurance companies licensed in the TRNC — scores and comparison | KKTC Sigorta Merkezi
 
 **Meta description:**
 The full list of the 39 non-life insurance companies licensed in Northern Cyprus, with scores

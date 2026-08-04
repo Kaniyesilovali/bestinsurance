@@ -5,7 +5,7 @@
 **Reader:** Someone who has just had an accident. Impatient, probably on a phone.
 **Single action:** Company comparison based on who you can reach when you have a claim.
 
-**Title:** What to do after an accident in the TRNC — reporting a claim and the first 48 hours | Cyprus Insurance Guide
+**Title:** What to do after an accident in the TRNC — reporting a claim and the first 48 hours | KKTC Sigorta Merkezi
 **Meta description:** Police report, loss adjuster, claim notification, and where to go if your claim is rejected in Northern Cyprus. Includes the Guarantee Fund and the Insurance Arbitration Commission.
 
 ---

@@ -4,7 +4,7 @@
 **Tek eylem:** Şirketler listesine geçmek.
 **Şablon:** Trafik sayfası.
 
-**Title:** KKTC kasko sigortası — taban prim, kapsam ve şirketler | Kıbrıs Sigorta Rehberi
+**Title:** KKTC kasko sigortası — taban prim, kapsam ve şirketler | KKTC Sigorta Merkezi
 **Meta description:** Kuzey Kıbrıs'ta kaskonun neyi karşıladığı, 2025 kasko taban primleri ve zorunlu trafik sigortasından farkı. Kasko genel şartları KKSRSB tarafından Türkçe ve İngilizce yayımlanıyor.
 
 ---

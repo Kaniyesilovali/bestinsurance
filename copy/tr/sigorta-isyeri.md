@@ -3,7 +3,7 @@
 **Sayfa amacı:** Küçük işletme sahibine hangi teminatın ne işe yaradığını göstermek.
 **Tek eylem:** Ticari branşlarda ürün sunan şirketlere geçmek.
 
-**Title:** KKTC işyeri sigortası — ticari paket, sorumluluk ve nakliyat | Kıbrıs Sigorta Rehberi
+**Title:** KKTC işyeri sigortası — ticari paket, sorumluluk ve nakliyat | KKTC Sigorta Merkezi
 **Meta description:** Kuzey Kıbrıs'ta işyeri sigortası teminatları: ticari paket, iş durması, üçüncü şahıs ve işveren sorumluluğu, makine kırılması, nakliyat ve İnşaat All Risk.
 
 ---

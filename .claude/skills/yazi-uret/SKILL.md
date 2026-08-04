@@ -1,11 +1,11 @@
 ---
 name: yazi-uret
-description: "Kıbrıs Sigorta Rehberi için kuyruktaki sıradaki blog yazısını üretir, doğrular ve yayına gönderir. Kullanıcı 'yeni yazı yaz', 'sıradaki yazıyı üret', 'blog yazısı yayınla', 'kuyruktan yaz' dediğinde ya da zamanlanmış yayın ajanı çalıştığında kullanılır. Yazı yazmadan önce kaynak doğrular; brief'in ⛔ tablosuna uymayan hiçbir cümleyi yayımlamaz."
+description: "KKTC Sigorta Merkezi için kuyruktaki sıradaki blog yazısını üretir, doğrular ve yayına gönderir. Kullanıcı 'yeni yazı yaz', 'sıradaki yazıyı üret', 'blog yazısı yayınla', 'kuyruktan yaz' dediğinde ya da zamanlanmış yayın ajanı çalıştığında kullanılır. Yazı yazmadan önce kaynak doğrular; brief'in ⛔ tablosuna uymayan hiçbir cümleyi yayımlamaz."
 metadata:
   version: 1.0.0
 ---
 
-# Yazı üret — Kıbrıs Sigorta Rehberi
+# Yazı üret — KKTC Sigorta Merkezi
 
 Bu beceri **tek bir blog yazısı** üretir ve yayına gönderir. Doğrudan `main` dalına
 push eder; insan denetimi yoktur. Bu yüzden buradaki kurallar öneri değil, **kapıdır.**

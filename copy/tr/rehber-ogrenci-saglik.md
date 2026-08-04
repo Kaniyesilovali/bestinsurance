@@ -5,7 +5,7 @@
 **Okur:** Yeni gelen yabancı uyruklu öğrenci veya velisi. Muhtemelen Türkiye modelini biliyor.
 **Bu sayfa EN/RU/FA sürümlerinde TR'den daha çok trafik alacak.**
 
-**Title:** KKTC'de öğrenci sağlık sigortası ve Sağlık Fonu primi | Kıbrıs Sigorta Rehberi
+**Title:** KKTC'de öğrenci sağlık sigortası ve Sağlık Fonu primi | KKTC Sigorta Merkezi
 **Meta description:** Kuzey Kıbrıs'ta öğrenci ikamet izni için ödenen Sağlık Fonu primi özel sağlık sigortası değildir. Nasıl ödenir, ne kapsar, ödenmezse ne olur.
 
 ---

@@ -5,7 +5,7 @@
 **Okur:** Yarın sınırdan geçecek biri. Kapı, saat, ücret arıyor.
 **Tek eylem:** Yok — bilgi sayfası. Bağlantı: seyahat sigortası sayfası.
 
-**Title:** Güney'e araçla geçiş: KKTC sigortası geçerli mi? | Kıbrıs Sigorta Rehberi
+**Title:** Güney'e araçla geçiş: KKTC sigortası geçerli mi? | KKTC Sigorta Merkezi
 **Meta description:** KKTC plakalı araçla Güney'e veya Güney'den Kuzey'e geçerken hangi sigorta gerekir, hangi kapıda satılır, saat kaça kadar açık ve ne kadar tutar.
 
 ---

@@ -5,7 +5,7 @@
 **Reader:** Someone crossing tomorrow. Looking for gate, hours, price.
 **Single action:** None — information page. Link: travel insurance page.
 
-**Title:** Driving to the south: is TRNC insurance valid? | Cyprus Insurance Guide
+**Title:** Driving to the south: is TRNC insurance valid? | KKTC Sigorta Merkezi
 **Meta description:** Which insurance you need when driving a TRNC-registered vehicle to the south, or from the south to the north, which gate sells it, how late it is open and what it costs.
 
 ---

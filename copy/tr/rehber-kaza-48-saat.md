@@ -5,7 +5,7 @@
 **Okur:** Az önce kaza yapmış biri. Sabırsız, muhtemelen telefonda.
 **Tek eylem:** Hasarda kime ulaşabileceğinize göre şirket karşılaştırması.
 
-**Title:** KKTC'de kaza sonrası ne yapılır — hasar ihbarı ve ilk 48 saat | Kıbrıs Sigorta Rehberi
+**Title:** KKTC'de kaza sonrası ne yapılır — hasar ihbarı ve ilk 48 saat | KKTC Sigorta Merkezi
 **Meta description:** Kuzey Kıbrıs'ta kaza sonrası polis raporu, eksper, hasar ihbarı ve dosyanız reddedilirse başvurabileceğiniz yollar. Garanti Fonu ve Tahkim Komisyonu dahil.
 
 ---

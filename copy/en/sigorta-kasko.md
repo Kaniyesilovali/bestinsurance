@@ -4,7 +4,7 @@
 **Single action:** Move to the company list.
 **Template:** Compulsory motor insurance page.
 
-**Title:** TRNC comprehensive motor insurance (kasko) — floor premium, cover and companies | Cyprus Insurance Guide
+**Title:** TRNC comprehensive motor insurance (kasko) — floor premium, cover and companies | KKTC Sigorta Merkezi
 **Meta description:** What comprehensive motor insurance (kasko) covers in Northern Cyprus, the 2025 kasko floor premiums, and how it differs from compulsory third-party motor insurance. KKSRSB publishes the kasko general conditions in Turkish and English.
 
 ---

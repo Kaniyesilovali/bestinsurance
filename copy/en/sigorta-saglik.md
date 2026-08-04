@@ -4,7 +4,7 @@
 **The most misunderstood subject on the site.** This page exists to make one distinction.
 **Single action:** Compare the companies (for readers looking for a private policy).
 
-**Title:** TRNC health insurance and the Health Fund — students and residence permits | Cyprus Insurance Guide
+**Title:** TRNC health insurance and the Health Fund — students and residence permits | KKTC Sigorta Merkezi
 **Meta description:** The Health Fund premium paid for a student residence permit in Northern Cyprus is not private health insurance. The difference, what it covers, and when a private policy is needed.
 
 ---

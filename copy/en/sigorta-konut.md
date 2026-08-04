@@ -3,7 +3,7 @@
 **Page purpose:** Answer "is earthquake insurance compulsory?" correctly; separate owner from tenant.
 **Single action:** Move to the companies offering home insurance products.
 
-**Title:** TRNC home insurance — earthquake, fire and theft cover | Cyprus Insurance Guide
+**Title:** TRNC home insurance — earthquake, fire and theft cover | KKTC Sigorta Merkezi
 **Meta description:** Home insurance is not compulsory in Northern Cyprus, and there is no compulsory earthquake insurance equivalent to Türkiye's DASK. Covers, the difference between owner and tenant, and what to check before buying.
 
 ---

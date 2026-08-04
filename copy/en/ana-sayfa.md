@@ -7,7 +7,7 @@ Page copy, section by section. Single action: move to the company list.
 ## Meta
 
 **Title:**
-TRNC insurance company comparison — 39 licensed companies | Cyprus Insurance Guide
+TRNC insurance company comparison — 39 licensed companies | KKTC Sigorta Merkezi
 
 **Meta description:**
 Compare the 39 insurance companies licensed in Northern Cyprus on transparency, product

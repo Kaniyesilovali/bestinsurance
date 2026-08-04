@@ -3,7 +3,7 @@
 **Page purpose:** Show a small business owner which cover does what.
 **Single action:** Move to the companies offering commercial products.
 
-**Title:** TRNC business insurance — commercial package, liability and marine cargo | Cyprus Insurance Guide
+**Title:** TRNC business insurance — commercial package, liability and marine cargo | KKTC Sigorta Merkezi
 **Meta description:** Business insurance covers in Northern Cyprus: commercial package, business interruption, third-party and employer's liability, machinery breakdown, marine cargo and Contractors' All Risks.
 
 ---

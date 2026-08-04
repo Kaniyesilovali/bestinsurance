@@ -4,7 +4,7 @@
 aranacak sayfalarından biri; rakiplerde doğru bilgi yok.
 **Tek eylem:** Sınır geçişi rehberine geçmek.
 
-**Title:** KKTC yeşil kart ve sınır geçiş sigortası — kapılar, tarife, saatler | Kıbrıs Sigorta Rehberi
+**Title:** KKTC yeşil kart ve sınır geçiş sigortası — kapılar, tarife, saatler | KKTC Sigorta Merkezi
 **Meta description:** KKTC yeşil kart sistemine üye değildir. Kuzey Kıbrıs'a araçla girerken hangi sigortanın gerektiği, hangi kapıda satıldığı, saatleri ve 2024 tarifesi.
 
 ---

@@ -1,4 +1,4 @@
-# Yayın kuyruğu — Kıbrıs Sigorta Rehberi
+# Yayın kuyruğu — KKTC Sigorta Merkezi
 
 **Oluşturma:** 3 Ağustos 2026 · **Kapsam:** 78 yazı ≈ 26 hafta (Pzt · Çrş · Cum)
 **Durum:** 1 yayında · 77 bekliyor

@@ -1,4 +1,4 @@
-# Metin brief'i — Kıbrıs Sigorta Rehberi
+# Metin brief'i — KKTC Sigorta Merkezi
 
 Bu dosya sitedeki her metnin uyduğu kurallar. Çeviri yapan da buna uyar.
 

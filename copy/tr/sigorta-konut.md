@@ -3,7 +3,7 @@
 **Sayfa amacı:** "Deprem sigortası zorunlu mu?" sorusunu doğru cevaplamak; ev sahibi/kiracı ayrımı.
 **Tek eylem:** Konut branşında ürün sunan şirketlere geçmek.
 
-**Title:** KKTC konut sigortası — deprem, yangın ve hırsızlık teminatı | Kıbrıs Sigorta Rehberi
+**Title:** KKTC konut sigortası — deprem, yangın ve hırsızlık teminatı | KKTC Sigorta Merkezi
 **Meta description:** Kuzey Kıbrıs'ta konut sigortası zorunlu değildir ve DASK'a denk bir zorunlu deprem sigortası bulunmuyor. Teminatlar, ev sahibi ile kiracı farkı ve poliçe öncesi bakılacaklar.
 
 ---

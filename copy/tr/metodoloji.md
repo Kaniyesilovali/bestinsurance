@@ -9,7 +9,7 @@ Bu bir baştan yazım değil. **Üç ekleme ve iki sıkılaştırma öneriyorum.
 **Sayfa amacı:** Puanların neden güvenilir olduğunu kanıtlamak.
 **Bu sayfa sitenin kanıtı.** Zayıflarsa sıralamanın hiçbir değeri kalmaz.
 
-**Title (mevcut yapı korunur):** Nasıl puanlıyoruz — metodoloji | Kıbrıs Sigorta Rehberi
+**Title (mevcut yapı korunur):** Nasıl puanlıyoruz — metodoloji | KKTC Sigorta Merkezi
 **Meta description:** KKTC sigorta şirketlerini altı gözlemlenebilir ölçütte nasıl puanladığımız, hangi kaynakları kullandığımız ve mali güç ile hasar performansını neden puanlamadığımız.
 
 ---
@@ -119,15 +119,17 @@ sorusu ölçüt ölçüt cevaplanıyor. Bir cümlelik üst gerekçe eksik.
 
 ## Sıkılaştırma 2 — "Ne olduğumuz ve ne olmadığımız"
 
-Bu başlık iyi. İçeriğe bir madde eklenmesini öneriyorum:
+Bu başlık iyi. İçeriğe bir madde eklenmesini öneriyorum — marka adı "KKTC Sigorta
+Merkezi" olduğu için bu madde artık zorunlu:
 
 > **Sigorta acentesi veya brokeri değiliz.** Poliçe satmıyor, komisyon almıyoruz.
 > **Resmî bir kurum değiliz.** Kuzey Kıbrıs Sigorta Bilgi Merkezi (KKSBM), Para Kambiyo
 > Dairesi ve KKSRSB gerçek kurumlardır; bu site onlarla ilişkili değildir, onların
 > yayımladığı veriyi kullanan bağımsız bir yayındır.
 
-*Neden: sitenin adı "Kıbrıs Sigorta Rehberi" ve KKSBM diye gerçek bir resmî kurum var.
-Karışma ihtimalini metinde bizzat kapatmak, sonradan düzeltmekten kolay.*
+*Neden: sitenin adı "KKTC Sigorta Merkezi" ve "Kuzey Kıbrıs Sigorta Bilgi Merkezi
+(KKSBM)" diye gerçek bir resmî kurum var — ikisi de "merkez" ile bitiyor. Karışma
+ihtimalini metinde bizzat kapatmak, sonradan düzeltmekten kolay.*
 
 ---
 
