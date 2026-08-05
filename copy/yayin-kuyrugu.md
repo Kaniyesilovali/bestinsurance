@@ -1,7 +1,7 @@
 # Yayın kuyruğu — KKTC Sigorta Merkezi
 
 **Oluşturma:** 3 Ağustos 2026 · **Kapsam:** 78 yazı ≈ 26 hafta (Pzt · Çrş · Cum)
-**Durum:** 1 yayında · 77 bekliyor
+**Durum:** 2 yayında · 76 bekliyor
 **Dayanak:** `copy/01-icerik-stratejisi.md` sütunları · `copy/00-brief.md` ⛔ tablosu ·
 `data/arastirma-kktc-sigorta.md`
 
@@ -43,7 +43,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | № | Durum | Başlık | Kategori | Hedef sorgu | Zorunlu bağlantı | İlan edilecek boşluk |
 |---|---|---|---|---|---|---|
 | 01 | ✅ | KKTC trafik sigortası Türkiye'den ne kadar farklı — *3 Ağu 2026* | Ayrım | kktc trafik sigortası türkiye farkı | `/tr/sigorta/trafik/` · `/tr/metodoloji/` | Sigortasız araç cezası — Fasıl 333 md. 17 okunmadı |
-| 02 | ⬜ | Taban tarife nedir, KKTC'de fiyatı nasıl belirler | Ayrım | kktc taban tarife sigorta | `/tr/sigorta/trafik/` · `/tr/sirketler/` | 2026 tarifesi yayımlanmadı |
+| 02 | ✅ | Taban tarife nedir, KKTC'de fiyatı nasıl belirler — *5 Ağu 2026* | Ayrım | kktc taban tarife sigorta | `/tr/sigorta/trafik/` · `/tr/sirketler/` | 2026 tarifesi yayımlanmadı |
 | 03 | ⬜ | Sigortasız araç çarptı: KKTC'de Garanti Fonu'na başvuru | Hasar | kktc garanti fonu sigortasız araç | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` | Fonun ödeme limiti — tüzük okunmadı |
 | 04 | ⬜ | KKTC'de sigorta şirketi mi acente mi — nasıl ayırt edilir | Ayrım | kktc sigorta acente şirket farkı | `/tr/sirketler/` · `/tr/metodoloji/` | Acente sayısı beyanları doğrulanamıyor |
 | 05 | ⬜ | Hasar dosyanız reddedilirse: KKTC'de beş basamaklı yol | Hasar | kktc sigorta hasar reddi itiraz | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` · `/tr/duzeltme/` | Yasal itiraz süresi tespit edilemedi |
