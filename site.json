@@ -7,9 +7,14 @@
   "site_aciklamasi": "Kuzey Kıbrıs'taki sigorta şirketlerini bağımsız olarak değerlendiren bilgi sitesi.",
   "varsayilan_dil": "tr",
 
+  "_dogrulama_notu": "Arama motoru doğrulama etiketleri. Anahtar = meta name, değer = content. Boş bırakılan satır basılmaz.",
+  "dogrulama": {
+    "google-site-verification": "U6pbUY2--Tr7Wf_cGEILrNs2R-_b34ttosJH84rCX-M"
+  },
+
   "yayin": {
-    "noindex": true,
-    "_noindex_notu": "Alan adı belli olup site canlıya alınana kadar true bırakın. true iken her sayfaya noindex eklenir ve sitemap üretilmez.",
+    "noindex": false,
+    "_noindex_notu": "5 Ağustos 2026'da false yapıldı — site aramaya açıldı. true iken her sayfaya noindex eklenir, sitemap üretilmez ve robots.txt her şeyi kapatır.",
     "sayfa_basina_yazi": 12
   },
 
