@@ -283,6 +283,7 @@ class Uretici:
         self.yapilandirma = json.loads((KOK / "site.json").read_text(encoding="utf-8"))
         self.alan_adi = self.yapilandirma["alan_adi"].rstrip("/")
         self.noindex = bool(self.yapilandirma.get("yayin", {}).get("noindex", False))
+        self.dogrulama = {k: v for k, v in self.yapilandirma.get("dogrulama", {}).items() if v}
         self.sayfa_basina = int(self.yapilandirma.get("yayin", {}).get("sayfa_basina_yazi", 12))
         self.jinja = Environment(
             loader=FileSystemLoader(str(SABLON)),
@@ -357,6 +358,7 @@ class Uretici:
             "title": tam_baslik,
             "aciklama": aciklama,
             "noindex": self.noindex,
+            "dogrulama": self.dogrulama,
             "hreflang": self.hreflang(url, dil, ceviriler),
             "og_tur": og_tur,
             "og_baslik": og_baslik or baslik,
@@ -857,12 +859,17 @@ class Uretici:
             f'<link rel="alternate" hreflang="{k}" href="{self.alan_adi}/{k}/">'
             for k in diller
         )
+        dogrulama = "\n".join(
+            f'<meta name="{escape(ad)}" content="{escape(deger)}">'
+            for ad, deger in self.dogrulama.items()
+        )
         yaz(CIKTI / "index.html", f"""<!DOCTYPE html>
 <html lang="{varsayilan}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(self.yapilandirma['site_adi'])}</title>
+{dogrulama}
 <meta name="robots" content="noindex,follow">
 <link rel="canonical" href="{self.alan_adi}/{varsayilan}/">
 {hreflang}

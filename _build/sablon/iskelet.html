@@ -6,6 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ title }}</title>
+{%- for ad, deger in dogrulama.items() %}
+<meta name="{{ ad }}" content="{{ deger }}">
+{%- endfor %}
 {%- if aciklama %}
 <meta name="description" content="{{ aciklama }}">
 {%- endif %}
