@@ -1,6 +1,9 @@
 # Üretilen çıktı — kaynaklardan her zaman yeniden oluşturulur
 dist/
 
+# Otomatik yazı üretiminin günlüğü — makineye özel, paylaşılmaz
+_build/otomatik-yazi.log
+
 # Sistem ve düzenleyici artıkları
 .DS_Store
 __pycache__/

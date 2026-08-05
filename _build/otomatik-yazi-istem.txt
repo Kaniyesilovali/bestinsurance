@@ -1,0 +1,22 @@
+KKTC Sigorta Merkezi deposundasın — KKTC'deki sigorta şirketlerini karşılaştıran, Türkçe, statik bir referans sitesi. Görevin: yayın kuyruğundaki sıradaki blog yazısını üretmek ve yayımlamak. TEK yazı üret, birden fazla değil.
+
+`.claude/skills/yazi-uret/SKILL.md` dosyasını oku ve HARFİYEN izle. O dosya bu görevin tek otoritesidir; aşağıdaki özet yalnızca hatırlatmadır, çelişki olursa SKILL.md kazanır.
+
+ÖZET YORDAM
+- Önce `copy/00-brief.md`, `YAZI-YAZMA.md` ve `copy/yayin-kuyrugu.md` okunur.
+- `copy/yayin-kuyrugu.md` içindeki İLK ⬜ satırı alınır. ⛔ satırları atlanır. Tarihe değil sıraya bakılır. ⬜ kalmadıysa yeni başlık UYDURMA — dur ve bildir.
+- YAZMADAN ÖNCE kaynak doğrulanır. Olgular `data/arastirma-kktc-sigorta.md` içinde aranır; yoksa WebFetch ile birincil kaynağa gidilir (KKSRSB, KKSBM, Para Kambiyo Dairesi, Muhaceret Dairesi — adresler araştırma dosyası §8'de). Kaynak açılmıyorsa o olgu YAZILMAZ, yerine boşluk cümlesi kurulur. Ticari/ikincil kaynak tek başına hiçbir şeyi doğrulamaz.
+- RAKAM KURALI: varsayılan rakam yazmamaktır. Bu site rakam sitesi değil, ayrım sitesidir; çoğu yazı hiç rakam içermeden tamdır. `copy/00-brief.md` içindeki ⛔ tablosu HER YAZIDAN ÖNCE açılır ve o tablodaki hiçbir sayı yazılmaz.
+- Ton `content/tr/rehber/` altındaki mevcut yazılarla aynı olmalı: sakin, olgusal, kısa cümle, ünlem yok, emoji yok, satış dili yok, "siz" hitabı.
+- Her yazıda `## Kısa cevap`, `## Doğrulayamadıklarımız` ve `## Kaynaklar` bölümleri bulunur.
+- Kuyruk satırındaki zorunlu iç bağlantılar verilir; AMA her adres verilmeden önce var olduğu doğrulanır (`grep -rl` ile `content/` ve `dist/` içinde). Var olmayan adrese bağlantı VERİLMEZ — kırık iç bağlantı bu sitede içerik hatasından ağır bir hatadır.
+- `./yayinla.sh` çalıştırılır. Çıktıda "kırık bağlantı" geçiyorsa düzeltilir ve tekrar çalıştırılır; temiz çıkmadan yayımlanmaz.
+
+YAYIN
+Kuyruk satırının ⬜ işareti ✅ yapılır ve başlığın sonuna yayın tarihi eklenir. Sonra YALNIZCA `content/tr/rehber/<slug>.md` ve `copy/yayin-kuyrugu.md` commit edilip `main` dalına push edilir. `dist/` KESİNLİKLE commit edilmez — .gitignore'da zaten yok sayılıyor, siteyi GitHub Action üretir. Push'tan sonra site FTP ile birkaç dakika içinde canlıya çıkar.
+
+DURMA
+SKILL.md §8'deki sekiz durma kuralından biri gerçekleşirse YAYIMLAMA: kuyruk satırını ⛔ yap, sebebini satıra yaz, yalnızca kuyruğu commit et ve dur. Kaynak doğrulanamadığı için yayımlamamak başarısızlık değildir; bu sitede yanlış yayımlamak başarısızlıktır.
+
+BAŞARI ÖLÇÜSÜ
+main dalında tek bir yeni yazı commit'i, `./yayinla.sh` kırık bağlantı vermeden geçiyor, kuyruk güncel. Sonunda hangi yazının yayımlandığını, hangi kaynakların doğrulandığını ve hangi bilgilerin boşluk olarak ilan edildiğini kısaca özetle.
