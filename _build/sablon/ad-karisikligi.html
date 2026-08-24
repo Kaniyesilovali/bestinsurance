@@ -1,0 +1,133 @@
+{# Set H — karıştırılan adlar. Bağlam _build/uret.py > ad_karisikliklari().
+   copy/03-marka-sorgulari.md §6. Ana soru H1'de, aynen sorgu biçiminde. #}
+<section class="bg-ink text-white">
+  <div class="mx-auto max-w-shell px-5 sm:px-8 py-12 sm:py-16">
+    <nav aria-label="Konum" class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-6">
+      <a href="/tr/" class="hover:text-white">Ana sayfa</a> <span class="mx-2">/</span>
+      <a href="/tr/sirketler/" class="hover:text-white">Şirketler</a> <span class="mx-2">/</span> Ad karışıklığı
+    </nav>
+    <div class="max-w-prose">
+      <p class="u-eyebrow text-muteddark mb-3">Karıştırılan adlar</p>
+      <h1 class="u-display u-display--tight text-[2rem] sm:text-[2.75rem] leading-[1.08] mb-6">{{ k.h1 }}</h1>
+      <p class="text-[15px] leading-relaxed text-white/70 border-s-2 border-sun ps-4">{{ k.kisa_cevap }}</p>
+    </div>
+  </div>
+</section>
+
+{# ── Yan yana tablo — yalnız doğrulanmış alanlar ───────────────────────── #}
+<section class="bg-white border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-6">Yan yana</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-[14px] border-collapse min-w-[520px]">
+        <thead>
+          <tr class="border-b border-ink">
+            <th scope="col" class="text-start py-3 pe-4 u-eyebrow">Ölçüt</th>
+            {% for t in k.taraflar %}
+            <th scope="col" class="text-start py-3 pe-4 u-display text-[14px] leading-snug">{{ t.ad }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for satir in k.tablo %}
+          <tr class="border-b border-line/70">
+            <th scope="row" class="text-start py-3 pe-4 font-normal text-muted align-top">{{ satir.ad }}</th>
+            {% for h in satir.hucreler %}
+            <td class="py-3 pe-4 align-top{% if h.bos %} text-muted/60{% endif %}">{{ h.deger }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% if k.dis_taraf %}
+    <div class="mt-6 bg-paper border border-line rounded-[14px] p-6 max-w-prose">
+      <p class="u-eyebrow mb-2">{{ k.dis_taraf.ad }}</p>
+      <p class="text-[15px] text-muted leading-relaxed">{{ k.dis_taraf.aciklama }}</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{# ── Karışıklık nereden geliyor ────────────────────────────────────────── #}
+<section class="bg-paper border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Karışıklık nereden geliyor</h2>
+      <p class="text-[15px] text-muted leading-relaxed">{{ k.karisiklik }}</p>
+    </div>
+  </div>
+</section>
+
+{# ── Sizin için pratik farkı ───────────────────────────────────────────── #}
+<section class="bg-white border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Sizin için pratik farkı ne</h2>
+      <p class="text-[15px] text-muted leading-relaxed">{{ k.pratik }}</p>
+    </div>
+  </div>
+</section>
+
+{# ── Doğrulayamadıklarımız ─────────────────────────────────────────────── #}
+<section class="bg-paper border-y border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Doğrulayamadıklarımız</h2>
+      <ul class="border-t border-line mb-5">
+        {% for d in k.dogrulanamayan %}
+        <li class="flex gap-3 text-[15px] py-2 border-b border-line/60 text-muted">
+          <span class="text-muted/50 u-num shrink-0">—</span> <span>{{ d }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="text-[14px] text-muted leading-relaxed">
+        Bunlardan birini birincil kaynağıyla biliyorsanız
+        <a href="/tr/duzeltme/" class="text-sea link-u">bize bildirin</a> —
+        inceleyip ekler ve düzeltme tarihini sayfaya yazarız.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# ── Profiller ─────────────────────────────────────────────────────────── #}
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-6">Tam profiller</h2>
+    <div class="grid sm:grid-cols-{{ k.taraflar | length if k.taraflar | length < 4 else 3 }} gap-4">
+      {% for t in k.taraflar %}
+      {% if t.profil_var %}
+      <a href="/tr/sirketler/{{ t.slug }}/" class="block border border-line rounded-[14px] p-5 bg-paper hover:border-ink transition-colors">
+        <p class="u-display text-[15px] mb-1">{{ t.ad }}</p>
+        <p class="text-[13px] text-muted">{{ t.sehir }} · {{ t.brans_sayisi }} branş · {{ t.puan }} puan</p>
+      </a>
+      {% else %}
+      <div class="border border-line rounded-[14px] p-5 bg-paper">
+        <p class="u-display text-[15px] mb-1">{{ t.ad }}</p>
+        <p class="text-[13px] text-muted">Profil sayfası yok — veri toplanamadı.
+          <a href="/tr/sirketler/#veri-yok" class="text-sea link-u">Nedeni</a></p>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ── Sayfa altı ────────────────────────────────────────────────────────── #}
+<section class="bg-ink text-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-14">
+    <div class="max-w-prose space-y-4 text-[14px] leading-relaxed text-white/70">
+      <p>
+        <span class="u-eyebrow text-muteddark">Kaynak</span><br>
+        Şirketlerin kendi siteleri ve KKSRSB üye listesi, Temmuz 2026'da tarandı.
+        Ruhsat durumu Birlik üye kaydından; diğer alanlar şirketlerin kendi yayınlarından.
+      </p>
+      <p class="text-white/50">
+        Bu sayfa iki kurumun aynı olup olmadığı sorusunu doğrulanabilir alanlarla
+        cevaplar. Bir bağın bulunamamış olması, böyle bir bağın olmadığını kesin olarak
+        kanıtlamaz — yalnızca yayımlanmış bir kaynakta bulamadığımızı gösterir.
+        Bilgiler genel bilgilendirme amaçlıdır, sigorta tavsiyesi değildir.
+      </p>
+    </div>
+  </div>
+</section>

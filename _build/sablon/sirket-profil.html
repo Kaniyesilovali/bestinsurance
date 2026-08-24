@@ -364,6 +364,24 @@
   </div>
 </section>
 
+{# ── Adı karıştırılanlar ── §6 Set H · §9.3 iç bağlantı ────────────────── #}
+{% if p.karsilastirma %}
+<section class="bg-paper border-y border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-10 sm:py-12">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.25rem] sm:text-[1.5rem] leading-[1.15] mb-4">Sık karıştırılıyor</h2>
+      <ul class="border-t border-line">
+        {% for c in p.karsilastirma %}
+        <li class="border-b border-line/60 py-3">
+          <a href="{{ c.url }}" class="text-[15px] text-sea link-u arrow arrow--sm">{{ c.h1 }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {# ── SSS ── §4.5 · FAQPage şeması uret.py'de basılır ───────────────────── #}
 {# ⚠ Zengin sonuç beklentisi kurulmaz; blok LLM ve AI Overviews çıkarımı için. #}
 <section class="bg-paper border-y border-line">

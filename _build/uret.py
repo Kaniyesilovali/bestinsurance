@@ -654,6 +654,18 @@ class Uretici:
                 return xs[0]
             return ", ".join(xs[:-1]) + " ve " + xs[-1]
 
+        # §9.3 — her profil, adının karıştırıldığı sayfalara bağlanır.
+        # Set H sayfaları böylece öksüz kalmaz.
+        kar_yolu = KOK / "data" / "ad-karisikliklari.json"
+        karsilastirma = {}
+        if kar_yolu.is_file():
+            for kay in json.loads(kar_yolu.read_text(encoding="utf-8")).get("kayitlar", []):
+                for sl in kay["taraflar"]:
+                    karsilastirma.setdefault(sl, []).append({
+                        "url": f"/tr/sirketler/karsilastirma/{kay['slug']}/",
+                        "h1": kay["h1"],
+                    })
+
         sablon = self.jinja.get_template("sirket-profil.html")
 
         for s in veri:
@@ -891,6 +903,7 @@ class Uretici:
                 "sirkete": sirkete, "hasar_ihbar_online": hasar_ihbar_online,
                 "kimin_baslik": kimin_baslik, "kimin_cevap": kimin_cevap,
                 "karisan": karisan, "sss": sss,
+                "karsilastirma": karsilastirma.get(s["slug"], []),
             }
 
             url = f"/tr/sirketler/{s['slug']}/"
@@ -962,6 +975,134 @@ class Uretici:
             bag["hreflang"] = {"tr": url}
             govde = sablon.render(p=p, **bag)
             self.sayfa_yaz(url, bag, govde, date(2026, 7, 24))
+
+    # -- Set H: karıştırılan adlar ------------------------------------------
+
+    def ad_karisikliklari(self):
+        """data/ad-karisikliklari.json → /tr/sirketler/karsilastirma/<slug>/
+
+        Ad benzerliği yüzünden karıştırılan şirketleri yan yana koyar. Tablodaki
+        her alan sirketler.json'dan gelir; yorum metinleri veri dosyasında durur.
+        Gerekçe: copy/03-marka-sorgulari.md §6.
+        """
+        yol = KOK / "data" / "ad-karisikliklari.json"
+        veri_yolu = KOK / "data" / "sirketler.json"
+        if not yol.is_file() or not veri_yolu.is_file():
+            return
+        kayitlar = json.loads(yol.read_text(encoding="utf-8")).get("kayitlar", [])
+        tum = json.loads(veri_yolu.read_text(encoding="utf-8"))
+        idx = {x["slug"]: x for x in tum}
+        profilli = {x["slug"] for x in tum if not sayfasiz_mi(x)}
+
+        TUR = {
+            "yerel": "KKTC'de kurulmuş yerel şirket",
+            "tr_subesi": "Türkiye şirketinin KKTC yapısı",
+            "tr_ortakligi": "Türkiye sigortacısıyla yerel ortaklık",
+            "banka_bagli": "Banka grubuna bağlı",
+            "bilinmiyor": "Doğrulanamadı",
+        }
+
+        def vir(x):
+            return str(x).replace(".", ",")
+
+        def duz(t):
+            """Şema ve meta açıklaması için: vurgu işaretlerini söker."""
+            return t.replace("**", "")
+
+        def vurgu(t):
+            """Görüntü için: kaçışlar, sonra **x** -> <strong>. Şablonda
+            autoescape kapalı olduğu için kaçış burada yapılır."""
+            return re.sub(r"\*\*(.+?)\*\*",
+                          r'<strong class="text-text">\1</strong>', escape(t))
+
+        sablon = self.jinja.get_template("ad-karisikligi.html")
+
+        for kay in kayitlar:
+            taraflar = []
+            for sl in kay["taraflar"]:
+                x = idx.get(sl)
+                if not x:
+                    continue
+                taraflar.append({
+                    "slug": sl, "ad": x["ad"], "sehir": x.get("sehir") or "—",
+                    "brans_sayisi": len(x.get("branslar") or []),
+                    "puan": vir(x["genel_puan"]),
+                    "profil_var": sl in profilli,
+                    "_x": x,
+                })
+            if not taraflar:
+                continue
+
+            def satir(ad, uret):
+                hucreler = []
+                for t in taraflar:
+                    d = uret(t["_x"])
+                    hucreler.append({"deger": d or "Doğrulanamadı", "bos": not d})
+                return {"ad": ad, "hucreler": hucreler}
+
+            tablo = [
+                satir("Ruhsat", lambda x: "KKSRSB üyesi"),
+                satir("Şirket türü", lambda x: TUR.get(x.get("sirket_turu"))),
+                satir("Kuruluş", lambda x: str(x["kurulus_yili"]) if x.get("kurulus_yili") else None),
+                satir("Merkez", lambda x: x.get("sehir")),
+                satir("Doğrulanan branş", lambda x: str(len(x.get("branslar") or []))
+                      if (x.get("branslar") or []) else None),
+                satir("Alan adı", lambda x: x.get("web")),
+                satir("Genel puan", lambda x: vir(x["genel_puan"])),
+            ]
+
+            k = {
+                "h1": kay["h1"], "kisa_cevap": vurgu(kay["kisa_cevap"]),
+                "karisiklik": vurgu(kay["karisiklik"]), "pratik": vurgu(kay["pratik"]),
+                "dogrulanamayan": [vurgu(d) for d in kay["dogrulanamayan"]],
+                "dis_taraf": kay.get("dis_taraf"),
+                "taraflar": taraflar, "tablo": tablo,
+            }
+
+            url = f"/tr/sirketler/karsilastirma/{kay['slug']}/"
+            adlar = " ile ".join(t["ad"] for t in taraflar)
+            _cevap_duz = duz(kay["kisa_cevap"])
+            desc = _cevap_duz[:157]
+            if len(_cevap_duz) > 157:
+                desc = desc.rsplit(" ", 1)[0] + "…"
+
+            sss = [{"soru": kay["h1"], "cevap": _cevap_duz}]
+            sss.append({
+                "soru": "Poliçemi hangi şirketten aldığımı nasıl anlarım?",
+                "cevap": ("Sözleşmenin üstündeki tam unvana bakın. Hasar ihbarı ve şikâyet "
+                          "yolu, poliçede adı geçen şirkete işler — benzer adlı başka bir "
+                          "şirkete değil."),
+            })
+
+            jsonld = [
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "FAQPage",
+                    "mainEntity": [
+                        {"@type": "Question", "name": q["soru"],
+                         "acceptedAnswer": {"@type": "Answer", "text": q["cevap"]}}
+                        for q in sss
+                    ],
+                }, ensure_ascii=False),
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Ana sayfa",
+                         "item": f"{self.alan_adi}/tr/"},
+                        {"@type": "ListItem", "position": 2, "name": "Şirketler",
+                         "item": f"{self.alan_adi}/tr/sirketler/"},
+                        {"@type": "ListItem", "position": 3, "name": kay["h1"],
+                         "item": f"{self.alan_adi}{url}"},
+                    ],
+                }, ensure_ascii=False),
+            ]
+
+            bag = self.baglam(
+                dil="tr", url=url, baslik=kay["h1"], aciklama=desc,
+                aktif_menu="sirketler", og_tur="article", og_baslik=kay["h1"],
+                og_aciklama=desc, jsonld=jsonld,
+            )
+            bag["hreflang"] = {"tr": url}
+            self.sayfa_yaz(url, bag, sablon.render(k=k, **bag), date(2026, 7, 24))
 
     # -- branşa göre şirket listeleri ---------------------------------------
 
@@ -1180,6 +1321,21 @@ class Uretici:
                 kirik.append((adres, kaynak))
         return kirik
 
+    def oksuz_kontrol(self):
+        """Üretilen hiçbir sayfaya başka bir sayfadan bağlantı yoksa bildirir.
+        sitemap'te olup hiçbir yerden bağlanmayan sayfa aranamaz sayılır.
+        Gerekçe: copy/03-marka-sorgulari.md §9.3."""
+        baglanan = set()
+        for dosya in CIKTI.rglob("*.html"):
+            kaynak = "/" + str(dosya.relative_to(CIKTI).parent).replace("\\", "/").strip(".")
+            if not kaynak.endswith("/"):
+                kaynak += "/"
+            for adres in re.findall(r'href="(/[^"#?]*)"', dosya.read_text(encoding="utf-8")):
+                if adres != kaynak:                       # kendine bağlantı sayılmaz
+                    baglanan.add(adres.rstrip("/") + "/")
+        return sorted(u for u, _ in self.uretilen
+                      if u != "/" and u.rstrip("/") + "/" not in baglanan)
+
     # -- çalıştır -----------------------------------------------------------
 
     def calistir(self, kontrol=False):
@@ -1191,6 +1347,7 @@ class Uretici:
         self.varliklar()
         self.statik_sayfalar()
         self.sirket_profilleri()
+        self.ad_karisikliklari()
         self.sirket_branslari()
         self.blog_yazilari()
         self.bloglar()
@@ -1213,6 +1370,15 @@ class Uretici:
         print(f"\n  Çıktı: {CIKTI}")
 
         if kontrol:
+            oksuz = self.oksuz_kontrol()
+            if oksuz:
+                print(f"\n  Öksüz sayfa ({len(oksuz)} adet — hiçbir sayfadan bağlanmıyor):")
+                for u in oksuz[:10]:
+                    print(f"    {u}")
+                if len(oksuz) > 10:
+                    print(f"    … {len(oksuz) - 10} sayfa daha")
+            else:
+                print("\n  Öksüz sayfa yok")
             kirik = self.baglanti_kontrol()
             print("\n  Bağlantı denetimi:")
             if not kirik:

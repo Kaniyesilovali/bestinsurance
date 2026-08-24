@@ -1,0 +1,294 @@
+{
+  "_aciklama": "Set H — karıştırılan adlar. copy/03-marka-sorgulari.md §6. Her sayfa bir arama sorusunu H1'de aynen sorar ve veriden cevaplar. Metinlerin tamamı data/sirketler.json'daki 'notlar' alanına ve araştırma dosyasına dayanır; buraya doğrulanmamış iddia yazılmaz.",
+  "_cevap_tipi": "ayri = ayrı iki şirket · ayni_grup = aynı grup, ayrı tüzel kişi · bag_bulunamadi = bir bağ bulunamadı",
+
+  "kayitlar": [
+    {
+      "slug": "turk-sigorta-turkiye-sigorta",
+      "grup": "H-a",
+      "h1": "Türk Sigorta ile Türkiye Sigorta aynı şirket mi?",
+      "cevap_tipi": "ayri",
+      "kisa_cevap": "Hayır. İkisi de Kuzey Kıbrıs'ta faaliyet gösteriyor ama ayrı iki şirket: Türk Sigorta yerel bir banka grubunun şirketi, Türkiye Sigorta ise Türkiye merkezli bir şirketin KKTC yapısı. Adları bir hece farklı.",
+      "taraflar": ["turk-sigorta", "turkiye-sigorta"],
+      "karisiklik": "Karışıklık tamamen addan geliyor: \"Türk\" ile \"Türkiye\" arasında tek hece fark var ve ikisi de Lefkoşa'da. Ama biri KKTC'de kurulmuş yerel bir şirket, diğeri Türkiye'deki bir şirketin buradaki yapısı. Türk Sigorta'nın sitesi TurkishBank Group üyeliğini belirtiyor. Türkiye Sigorta'nın KKTC adresi ise Birlik listesinden geliyor; kibris.turkiyesigorta.com.tr Türkiye ana sitesinin kopyası ve yalnızca \"KKTC Şube Müdürlüğü İletişim\" sayfası Kıbrıs'a özel.",
+      "pratik": "Türk Sigorta'da 11 branşta ürün sayfası doğruladık ve poliçe KKTC'de kurulu bir tüzel kişiden çıkıyor. Türkiye Sigorta'nın KKTC alt alan adında ürün, teklif ya da hasar akışı bulamadık — KKTC'ye özel tek içerik iletişim sayfası. Şikâyet yolu her ikisinde de Birlik'in Tahkim Komisyonu'dur, Türkiye'deki merciler değil.",
+      "dogrulanamayan": [
+        "Türkiye Sigorta'nın KKTC yapısının şube mi acente mi olduğu — sitede yazmıyor",
+        "KKTC'de düzenlenen poliçeye hangi mevzuatın uygulandığı",
+        "Türk Sigorta'nın kuruluş yılı — sitesinde yayımlanmamış"
+      ]
+    },
+    {
+      "slug": "seker-sigorta-kibris-turkiye",
+      "grup": "H-a",
+      "h1": "Şeker Sigorta (Kıbrıs) Türkiye'deki Şeker Sigorta'nın mı?",
+      "cevap_tipi": "bag_bulunamadi",
+      "kisa_cevap": "Doğrulayamadık. Şeker Sigorta (Kıbrıs) Ltd. Birlik'in ruhsatlı üyesi ayrı bir tüzel kişiliktir; Türkiye'de aynı adı taşıyan şirketle arasındaki bağın niteliğini yayımlanmış bir kaynakta bulamadık.",
+      "taraflar": ["seker-sigorta-kibris"],
+      "dis_taraf": {
+        "ad": "Şeker Sigorta (Türkiye)",
+        "aciklama": "Türkiye'de aynı adı taşıyan sigorta şirketi. Bu sitede değerlendirilmiyor — kapsamımız KKSRSB üyesi KKTC şirketleridir."
+      },
+      "karisiklik": "Ad aynı, unvandaki \"(Kıbrıs)\" ibaresi ise kolayca gözden kaçıyor. Elimizdeki tek işaret, Türk sigortacılarla kurulan yerel ortaklıkların \"(Kıbrıs) Ltd.\" yapısıyla kurulduğunu söyleyen ikincil bir kaynaktı; o kaynağın sayfası artık yayında değil ve iddiayı birincil bir belgeyle karşılaştıramadık. Bu yüzden şirketin türünü \"doğrulanamadı\" olarak kaydettik.",
+      "pratik": "Poliçeniz Kuzey Kıbrıs'ta kurulu tüzel kişiden çıkıyor; hasar ve şikâyet yolu KKTC'de işliyor. Türkiye'deki aynı adlı şirketin genel şartlarının, teminat limitlerinin ya da tahkim yolunun burada geçerli olduğunu varsaymayın. Sitesindeki \"90 acentemizle\" ifadesi şirket beyanıdır, ayrıca doğrulamadık.",
+      "dogrulanamayan": [
+        "Türkiye'deki Şeker Sigorta ile hukuki ya da hissedarlık bağı",
+        "Şirketin kuruluş yılı — sitedeki \"Tarihçemiz\" bağlantısı 404 veriyor",
+        "90 acente beyanı"
+      ]
+    },
+    {
+      "slug": "guven-sigorta-kibris-turkiye",
+      "grup": "H-a",
+      "h1": "Güven Sigorta (Kıbrıs) Türkiye'deki Güven Sigorta'nın mı?",
+      "cevap_tipi": "ayni_grup",
+      "kisa_cevap": "Güven Sigorta (Kıbrıs) Ltd.'yi Türkiye'deki bir sigortacıyla kurulmuş yerel ortaklık olarak kaydettik. Ayrı bir tüzel kişiliktir; ortaklık paylarını doğrulayamadık.",
+      "taraflar": ["guven-sigorta-kibris"],
+      "dis_taraf": {
+        "ad": "Güven Sigorta (Türkiye)",
+        "aciklama": "Türkiye'de aynı adı taşıyan sigorta şirketi. Bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "Unvandaki \"(Kıbrıs)\" ibaresi ortaklık yapısını işaret ediyor ama ayrıntısını hiçbir yerde yayımlanmış bulamadık. Şirketin sitesinde genel müdürlüğün açık adresi yazılı değil — yalnızca harita gömülü. Telif notu 2022'de kalmış ve sosyal medya bağlantısı yok.",
+      "pratik": "Poliçenin tarafı Kuzey Kıbrıs'ta kurulu şirkettir; ortaklık yapısı ne olursa olsun hasar ve şikâyet muhatabınız odur. Sitesindeki \"teklif alın\" formu fiyat hesaplamıyor, online panel yalnızca ödeme ve poliçe sorgulama sunuyor — satın alma yok. Hasar ihbarı telefon ya da WhatsApp ile yapılıyor.",
+      "dogrulanamayan": [
+        "Ortaklık payları ve grup içi yükümlülük yapısı",
+        "Şirketin kuruluş yılı",
+        "Genel müdürlüğün açık posta adresi"
+      ]
+    },
+    {
+      "slug": "anadolu-sigorta-kktc-turkiye",
+      "grup": "H-a",
+      "h1": "Anadolu Sigorta KKTC'de faaliyet gösteriyor mu?",
+      "cevap_tipi": "ayni_grup",
+      "kisa_cevap": "Evet, Birlik üye listesinde yer alıyor ve Türkiye merkezli şirketin KKTC yapısı olarak kayıtlı. Ancak KKTC'ye özel bir teklif ya da satın alma ekranı bulamadık.",
+      "taraflar": ["anadolu-sigorta"],
+      "dis_taraf": {
+        "ad": "Anadolu Anonim Türk Sigorta Şirketi (Türkiye)",
+        "aciklama": "Türkiye merkezli ana şirket. Bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "kibris.anadolusigorta.com.tr adresi Türkiye markasının altında duruyor ve arayan kişi çoğu zaman Türkiye'deki şirketin sitesine düştüğünü sanıyor. Site bir React uygulaması: JavaScript kapalıyken içerik hiç görünmüyor. Mobil uygulamalar da Türkiye geneli.",
+      "pratik": "Dokuz branşta ürün sayfası doğruladık ve genel şartlar ile bilgilendirme formları PDF olarak yayında — bu, KKTC'de üç şirketin yaptığı bir şey. Ancak teklif ya da satın alma ekranı yok; poliçe için doğrudan iletişim gerekiyor. Bazı PDF'lerde İngilizce kloz metinleri bulunuyor.",
+      "dogrulanamayan": [
+        "KKTC'de düzenlenen poliçeye hangi mevzuatın uygulandığı",
+        "KKTC yapısının şube mi acente mi olduğu",
+        "Yayımlanan genel şartların KKTC'ye özgü olup olmadığı"
+      ]
+    },
+    {
+      "slug": "axa-sigorta-kktc-kibris-subesi",
+      "grup": "H-a",
+      "h1": "AXA Sigorta'nın KKTC'de şubesi var mı?",
+      "cevap_tipi": "ayni_grup",
+      "kisa_cevap": "Birlik üye listesinde yer alıyor ve Türkiye sitesi içinde \"Kıbrıs Şubemiz\" bölümü bulunuyor. Bağımsız bir KKTC sitesi yok, ama KKTC'ye özel ürün var.",
+      "taraflar": ["axa-sigorta"],
+      "dis_taraf": {
+        "ad": "AXA (küresel grup)",
+        "aciklama": "Uluslararası sigorta grubu. Bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "KKTC'ye ait ayrı bir alan adı yok; içerik Türkiye sitesinin bir alt bölümünde duruyor. Bu, şirketin burada faaliyet göstermediği izlenimi veriyor — oysa Birlik üyesi ve KKTC'ye özel ürünleri var.",
+      "pratik": "Yedi branşta ürün doğruladık. Zorunlu trafik için teklif ekranı ve OASIS üzerinden hasar ihbarı çalışıyor. Kıbrıs Özel Sağlık Sigortası gibi yalnızca KKTC için tanımlanmış ürünler mevcut. KKTC'ye özel bir e-posta adresi ya da sosyal medya hesabı bulamadık.",
+      "dogrulanamayan": [
+        "KKTC şubesine hangi mevzuatın uygulandığı",
+        "KKTC'ye özel iletişim kanalı — yalnızca Türkiye kanalları yayımlanmış"
+      ]
+    },
+
+    {
+      "slug": "mapfree-insurance-mapfre",
+      "grup": "H-b",
+      "h1": "MAPFREE Insurance ile MAPFRE aynı şirket mi?",
+      "cevap_tipi": "bag_bulunamadi",
+      "kisa_cevap": "Aralarında bir bağ bulamadık. MAPFREE Insurance Ltd. kendi sitesinde 2011'de yüzde yüz yerel sermaye ile kurulduğunu yazıyor. Yazımları da farklı: MAPFREE ve MAPFRE.",
+      "taraflar": ["mapfree-insurance"],
+      "dis_taraf": {
+        "ad": "MAPFRE (küresel grup)",
+        "aciklama": "İspanya merkezli uluslararası sigorta grubu. Bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "Adlar bir harf farkla okunuşta neredeyse aynı. Arama motorları da ikisini sık sık birbirine bağlıyor. Ama şirketin kendi beyanı yerel sermaye ile kuruluş yönünde ve iki ad farklı yazılıyor. Küresel grupla bir ilişki iddiasını hiçbir kaynakta doğrulayamadık — bu yüzden böyle bir ilişki olduğunu yazmıyoruz.",
+      "pratik": "Yalnızca iki branşta ürün sayfası doğrulayabildik ve \"Araç Sigortası\" başlığı altında trafik ile kasko ayrımı yapılmamış — hangi teminatı aldığınızı poliçe metninden kontrol edin. Sitede şablonun ücretli sürüme geçirilmemiş hali duruyor: \"Buy Pro Version\", \"Lorem ipsum\" ve \"27x7 Support\" gibi yer tutucu metinler yayında.",
+      "dogrulanamayan": [
+        "MAPFRE ile herhangi bir hukuki, ticari ya da hissedarlık bağı — bulunamadı",
+        "Trafik ve kasko teminatlarının ayrı ayrı kapsamı"
+      ]
+    },
+    {
+      "slug": "zurich-sigorta-kktc",
+      "grup": "H-b",
+      "h1": "Zurich Sigorta'nın KKTC'de faaliyeti var mı?",
+      "cevap_tipi": "bag_bulunamadi",
+      "kisa_cevap": "Birlik'in ruhsatlı üye listesinde yer alıyor, ancak Kuzey Kıbrıs'a ait bir web sitesi, adres ya da iletişim kanalı bulamadık. KKTC'deki yapısını doğrulayamadık.",
+      "taraflar": ["zurich-sigorta"],
+      "dis_taraf": {
+        "ad": "Zurich Insurance Group",
+        "aciklama": "İsviçre merkezli uluslararası sigorta grubu. Bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "Ad küresel bir markayla aynı, dolayısıyla arayan kişi büyük bir kurumsal yapı bekliyor. Oysa KKTC'ye özel hiçbir web varlığı bulamadık; zurichsigorta.com.tr üzerindeki bölge müdürlükleri listesinde de Kuzey Kıbrıs geçmiyor.",
+      "pratik": "Bu şirket için profil sayfası üretmiyoruz: adres, e-posta, branş ve dil verisinin dördü birden boş. Böyle bir sayfa yalnızca \"doğrulayamadık\" beyanından ibaret kalırdı. Ruhsatlı olması faaliyet gösterdiğini gösterir; nasıl ulaşacağınızı ise yayımlanmış bir kaynakta bulamadık. Poliçe düşünüyorsanız doğrudan Birlik'e sorun.",
+      "dogrulanamayan": [
+        "KKTC'deki yapısının niteliği — şube, acente ya da temsilcilik",
+        "Zurich Insurance Group ile bağın niteliği",
+        "İletişim bilgileri, adres ve sunulan branşlar",
+        "Faaliyetin fiilen sürüp sürmediği — yalnızca web varlığını ölçtük"
+      ]
+    },
+    {
+      "slug": "london-insurance-birlesik-krallik",
+      "grup": "H-b",
+      "h1": "London Insurance İngiliz bir şirket mi?",
+      "cevap_tipi": "bag_bulunamadi",
+      "kisa_cevap": "Birleşik Krallık ile bir bağ bulamadık. London Insurance Birlik'in ruhsatlı üyesi, Lefkoşa merkezli bir şirkettir ve alan adı .com.tr uzantılıdır.",
+      "taraflar": ["london-insurance"],
+      "dis_taraf": {
+        "ad": "Birleşik Krallık bağlantısı",
+        "aciklama": "Adın çağrıştırdığı İngiliz kurumsal bağ. Hiçbir kaynakta doğrulanamadı."
+      },
+      "karisiklik": "Ad doğrudan Londra'yı çağrıştırıyor ve sigortacılıkta Londra piyasası köklü bir referans. Ancak alan adı .com.tr uzantılı ve site hazır bir WordPress teması üzerinde varsayılan ayarlarıyla duruyor: footer'daki Facebook bağlantısı şirkete değil, temanın geliştiricisine gidiyor.",
+      "pratik": "Sitede e-posta, açık adres ve telefon yayımlanmamış — şirkete nasıl ulaşacağınızı siteden öğrenemiyorsunuz. Dört üründen fazlası tanımlı değil. Poliçe düşünüyorsanız iletişim bilgisini Birlik üye listesinden alın ve teminat kapsamını yazılı isteyin.",
+      "dogrulanamayan": [
+        "Birleşik Krallık'la herhangi bir kurumsal bağ — bulunamadı",
+        "Kuruluş yılı ve ortaklık yapısı",
+        "İletişim bilgileri — sitede yayımlanmamış"
+      ]
+    },
+    {
+      "slug": "gig-sigorta-kktc",
+      "grup": "H-b",
+      "h1": "GİG Sigorta'nın KKTC'de ofisi var mı?",
+      "cevap_tipi": "ayni_grup",
+      "kisa_cevap": "Birlik üye listesinde yer alıyor, ancak gig.com.tr üzerinde Kuzey Kıbrıs'a ait ofis adresi, telefon ya da e-posta bulamadık.",
+      "taraflar": ["gig-sigorta"],
+      "dis_taraf": {
+        "ad": "GİG Sigorta (Türkiye)",
+        "aciklama": "Türkiye merkezli ana şirket. Bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "Şirketin tek web varlığı Türkiye merkezli gig.com.tr. KKTC'ye özel site ya da şube sayfası yok; Kuzey Kıbrıs'a dair bulabildiğimiz tek içerik hasar beyan formu PDF'leri. Mobil uygulama da Türkiye geneli.",
+      "pratik": "Sekiz branşta ürün sayfası doğruladık ama bunlar Türkiye sitesinin ürünleri. KKTC'de poliçe düşünüyorsanız iletişim bilgisini Birlik üye listesinden alın; sitede KKTC kanalı yayımlanmamış. Hasar beyan formlarının KKTC için geçerli sürümü olup olmadığını kontrol edin.",
+      "dogrulanamayan": [
+        "KKTC'deki ofis adresi, telefonu ve e-postası — sitede yok",
+        "KKTC'de düzenlenen poliçeye hangi mevzuatın uygulandığı",
+        "Türkiye sitesindeki ürünlerin KKTC'de aynen sunulup sunulmadığı"
+      ]
+    },
+
+    {
+      "slug": "limasol-sigorta-limasol-bankasi",
+      "grup": "H-c",
+      "h1": "Limasol Sigorta ile Limasol Bankası aynı kurum mu?",
+      "cevap_tipi": "ayni_grup",
+      "kisa_cevap": "Aynı grup, ayrı tüzel kişi. Limasol Türk Kooperatif Bankası şirketin büyük hissedarıdır, ancak poliçenizi düzenleyen ve hasarınızdan sorumlu olan sigorta şirketidir — banka değil.",
+      "taraflar": ["limasol-sigorta"],
+      "dis_taraf": {
+        "ad": "Limasol Türk Kooperatif Bankası",
+        "aciklama": "Şirketin büyük hissedarı. Banka olarak bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "Ad ortak ve poliçe çoğu zaman banka şubesinde satılıyor. Bu, iki kurumun aynı olduğu izlenimi veriyor. Sigortacılıkta ayrım önemli: bankanın sattığı poliçenin riskini banka değil, sigorta şirketi taşır.",
+      "pratik": "Poliçe alırken sözleşmedeki tarafın sigorta şirketi olduğunu görürsünüz. Hasar ihbarınızı şirketin kendi formundan yapın; şikâyetiniz olursa yol bankanın müşteri hizmetleri değil, şirketin kendisi ve ardından Birlik'in Tahkim Komisyonu'dur. Şirketin 7/24 asistans hattı var. On bir branşta ürün doğruladık.",
+      "dogrulanamayan": [
+        "Hissedarlık oranları ve grup içi yükümlülük yapısı",
+        "Merkez ofisin açık posta adresi — sitede yayımlanmamış"
+      ]
+    },
+    {
+      "slug": "creditwest-sigorta-creditwest-bank",
+      "grup": "H-c",
+      "h1": "Creditwest Sigorta ile Creditwest Bank aynı kurum mu?",
+      "cevap_tipi": "ayni_grup",
+      "kisa_cevap": "Aynı grup, ayrı tüzel kişi. Bağlantı şirketin kendi insan kaynakları sayfalarından doğrulanıyor; poliçenizin tarafı ise sigorta şirketidir.",
+      "taraflar": ["creditwest-sigorta"],
+      "dis_taraf": {
+        "ad": "Creditwest Bank",
+        "aciklama": "Aynı grubun bankası. Banka olarak bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "Marka adı ortak ve banka şubeleri sigorta satışının yaygın kanalı. Bir de teknik bir ayrıntı işi zorlaştırıyor: şirketin sitesi bot korumasından ötürü standart isteklere yanıt vermiyor, yalnızca tarayıcıda açılıyor. Bu, arama sonuçlarında şirketin görünürlüğünü düşürüyor.",
+      "pratik": "On branşta ürün doğruladık. Online poliçe akışı, online hasar bildirim formu ve pert araç listesi çalışıyor — bu üçü birlikte KKTC'de yaygın değil. Şikâyet yolunuz banka değil, şirket ve Birlik'in Tahkim Komisyonu'dur. Sitedeki müşteri ve acente sayısı beyanları şirket beyanıdır, doğrulamadık.",
+      "dogrulanamayan": [
+        "Hissedarlık oranları ve grup içi yükümlülük yapısı",
+        "Kuruluş yılı",
+        "70.000 müşteri ve 35 acente beyanları"
+      ]
+    },
+    {
+      "slug": "akfinans-sigorta-akfinans-bank",
+      "grup": "H-c",
+      "h1": "Akfinans Sigorta ile Akfinans Bank aynı kurum mu?",
+      "cevap_tipi": "ayni_grup",
+      "kisa_cevap": "Aynı grup, ayrı tüzel kişi. Şirket 1996'da yerel sermaye ile kurulmuş; poliçenizin tarafı sigorta şirketidir, banka değil.",
+      "taraflar": ["akfinans-sigorta"],
+      "dis_taraf": {
+        "ad": "Akfinans Bank",
+        "aciklama": "Aynı grubun bankası. Banka olarak bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "Ad ortak olmasının yanında alan adları da kafa karıştırıyor: sitenin adresi akfinans.one, yayımlanan e-posta ise akfinans.com uzantılı. Sitedeki sosyal medya ikonları boş yer tutucu; Facebook bağlantısı sigorta şirketine değil, bankaya gidiyor. Bu üçü birlikte hangi kurumla muhatap olduğunuzu belirsizleştiriyor.",
+      "pratik": "Dokuz branşta ürün doğruladık. Site tamamen İngilizce — Türkçe sürümü yok, ki bu KKTC'de sıra dışı. Sayfaların üstünde bir PHP hatası basılıyor. Poliçe alırken sözleşmedeki tam unvanı ve e-posta alan adını kontrol edin.",
+      "dogrulanamayan": [
+        "Hissedarlık oranları ve grup içi yükümlülük yapısı",
+        "İki farklı alan adının hangisinin resmî kanal olduğu"
+      ]
+    },
+    {
+      "slug": "kibris-iktisat-sigorta-iktisatbank",
+      "grup": "H-c",
+      "h1": "Kıbrıs İktisat Sigorta ile İktisatbank aynı kurum mu?",
+      "cevap_tipi": "ayni_grup",
+      "kisa_cevap": "Aynı grup, ayrı tüzel kişi. Şirketin hizmet noktaları İktisatbank şubeleriyle örtüşüyor, ancak poliçenizin tarafı sigorta şirketidir.",
+      "taraflar": ["kibris-iktisat-sigorta"],
+      "dis_taraf": {
+        "ad": "İktisatbank",
+        "aciklama": "Aynı grubun bankası. Banka olarak bu sitede değerlendirilmiyor."
+      },
+      "karisiklik": "Şirketin şube listesi bankanın şubeleriyle örtüştüğü için iki kurum tek bir yapı gibi görünüyor. Sitenin telif notu 2013'te kalmış ve footer'da hâlâ kapanmış bir sosyal ağın bağlantısı duruyor — bu, sitenin uzun süredir güncellenmediğini gösteriyor.",
+      "pratik": "Altı branşta ürün doğruladık. Poliçeyi banka şubesinde alsanız da hasar ve şikâyet muhatabınız sigorta şirketidir; sonrasında Birlik'in Tahkim Komisyonu. Sitedeki hizmet noktası sayısı şirket beyanıdır.",
+      "dogrulanamayan": [
+        "Hissedarlık oranları ve grup içi yükümlülük yapısı",
+        "Kuruluş yılı",
+        "16 hizmet noktası beyanı"
+      ]
+    },
+
+    {
+      "slug": "can-sigorta-as-can-sigorta",
+      "grup": "H-d",
+      "h1": "Can Sigorta ile As-Can Sigorta aynı şirket mi?",
+      "cevap_tipi": "ayri",
+      "kisa_cevap": "Hayır. İkisi de Lefkoşa merkezli ve Birlik'in ayrı ayrı ruhsatlı üyesi, ama ayrı tüzel kişilikler. Aralarında bir mülkiyet ilişkisi doğrulayamadık.",
+      "taraflar": ["can-sigorta", "as-can-sigorta"],
+      "karisiklik": "Adların çekirdeği ortak ve ikisi de Lefkoşa'da; \"As-\" ön eki konuşma dilinde kolayca düşüyor. Sigortacılıkta bu tür ad benzerlikleri sık görülür ve tek başına bir grup ilişkisi göstermez.",
+      "pratik": "İki şirket arasında doğrulanabilir fark büyük. Can Sigorta dokuz branşta ürün sunuyor; online teklif, online poliçe ve online hasar ihbarının üçü de çalışıyor. As-Can beş branşta ürün sunuyor ve bu dijital işlevlerin hiçbiri yok; sitesi geçerli bir SSL sertifikası olmadan yalnızca HTTP üzerinden yayında ve sayfa başlığında bir test yayını ibaresi duruyor. Poliçe alırken sözleşmedeki tam unvana bakın — hasar ve şikâyet yolu hangi şirketle sözleştiyseniz ona işler.",
+      "dogrulanamayan": [
+        "İki şirket arasında mülkiyet ya da grup ilişkisi — bulunamadı",
+        "As-Can Sigorta'nın kuruluş yılı"
+      ]
+    },
+    {
+      "slug": "kibris-sigorta-iktisat-kapital",
+      "grup": "H-d",
+      "h1": "Kıbrıs Sigorta, Kıbrıs İktisat ve Kıbrıs Kapital aynı şirket mi?",
+      "cevap_tipi": "ayri",
+      "kisa_cevap": "Hayır. Üçü de \"Kıbrıs\" ile başlıyor ama ayrı ayrı ruhsatlı, ayrı hissedar yapılarına sahip üç şirket.",
+      "taraflar": ["kibris-sigorta", "kibris-iktisat-sigorta", "kibris-kapital-insurance"],
+      "karisiklik": "Ülke adının unvan başında kullanılması KKTC'de yaygın; üç şirket de bunu yapıyor ve üçü de Lefkoşa merkezli. Ayırt edici olan ikinci kelime: biri bağımsız bir hissedar yapısına, ikisi ayrı banka gruplarına dayanıyor.",
+      "pratik": "Kıbrıs Sigorta, Kuzey Kıbrıs'ın ilk yerel sigorta şirketidir — 19 Nisan 1995'te tescil edilmiş, 1 Eylül 1995'te faaliyete geçmiş — ve hissedar yapısını açıkça yayımlayan az sayıdaki şirketten biridir. Kıbrıs İktisat Sigorta bir banka grubuna bağlıdır ve hizmet noktaları o bankanın şubeleriyle örtüşür. Kıbrıs Kapital Insurance 2013'te kurulmuş, ayrı bir gruba bağlıdır. Poliçe alırken sözleşmedeki tam unvanı okuyun; üçünün hasar ve şikâyet muhatabı ayrıdır.",
+      "dogrulanamayan": [
+        "Kıbrıs İktisat Sigorta ve Kıbrıs Kapital Insurance'ın hissedarlık oranları",
+        "Üç şirket arasında herhangi bir ortak hissedar — bulunamadı",
+        "Kıbrıs İktisat Sigorta'nın kuruluş yılı"
+      ]
+    },
+    {
+      "slug": "eurocity-sigorta-eig-sigorta",
+      "grup": "H-d",
+      "h1": "Eurocity Sigorta ile EIG Sigorta aynı şirket mi?",
+      "cevap_tipi": "ayri",
+      "kisa_cevap": "İkisi de Birlik'in ayrı ayrı ruhsatlı üyesidir. Web siteleri aynı IP adresinde ve aynı şablonda yayında — bunu gözlemledik, ama bir mülkiyet ilişkisi kanıtı değildir.",
+      "taraflar": ["eurocity-sigorta", "eig-sigorta"],
+      "karisiklik": "Adlar birbirine benzemiyor; karışıklık web varlıklarından geliyor. İki alan adı aynı IP adresinde ve aynı şablonla yayınlanıyor. **Bu bir mülkiyet ilişkisi kanıtı değildir** — ortak barındırma da aynı sonucu verir. İki şirkete bu soruyu soracağız; cevap gelirse bu sayfaya yazacağız.",
+      "pratik": "Her ikisinin sitesi de tek sayfalık, bağlantısız bir kartvizit: yalnızca şirket adı, telefon, adres, e-posta ve genel müdür adı. Ürün, hakkımızda, hasar bildirimi ya da form hiçbirinde yok — bu yüzden ikisinde de doğrulanmış branş sayımız sıfır. İkisinin de sitesi geçerli SSL sertifikası olmadan yalnızca HTTP üzerinden yayında. Poliçe düşünüyorsanız teminat kapsamını ve genel şartları yazılı isteyin; siteden öğrenemezsiniz.",
+      "dogrulanamayan": [
+        "İki şirket arasında mülkiyet, grup ya da yönetim ilişkisi — ortak barındırma tek başına kanıt değil",
+        "Her ikisinin de kuruluş yılı ve sundukları branşlar",
+        "Ortak barındırmanın nedeni"
+      ]
+    }
+  ]
+}

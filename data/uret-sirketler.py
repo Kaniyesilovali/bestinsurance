@@ -24,6 +24,14 @@ def sayfasiz_mi(s):
 SAYFALI = [s for s in VERI if not sayfasiz_mi(s)]      # tabloda, profili var
 SAYFASIZ = [s for s in VERI if sayfasiz_mi(s)]         # tablonun altında, profili yok
 
+# Set H — karıştırılan adlar. Profili olmayan şirketin kartı buradan bağlanır.
+try:
+    KARISIKLIK = json.loads(
+        (KOK / "data" / "ad-karisikliklari.json").read_text(encoding="utf-8")
+    ).get("kayitlar", [])
+except (OSError, ValueError):
+    KARISIKLIK = []
+
 BRANS_ADI = {
     "trafik": "Trafik", "kasko": "Kasko", "saglik": "Sağlık", "hayat": "Hayat",
     "konut": "Konut", "isyeri": "İşyeri", "seyahat": "Seyahat",
@@ -126,10 +134,18 @@ def sayfasiz_kart(s):
     durum = {"ölü": "alan adı yanıt vermiyor", "site_yok": "web sitesi bulunamadı"}.get(
         s.get("http_durum"), "sitesi doğrulanamadı")
     kunye = f"{e(web)} — {durum}" if web else durum
+    # Adı karıştırılan bir şirketse Set H sayfasına bağlanır; profili olmadığı
+    # için o sayfanın tek iç bağlantısı burasıdır (öksüz kalmasın).
+    ek = ""
+    for kay in KARISIKLIK:
+        if s["slug"] in kay["taraflar"]:
+            ek = (f'\n        <p class="text-[14px] mt-3"><a href="/tr/sirketler/karsilastirma/'
+                  f'{kay["slug"]}/" class="text-sea link-u arrow arrow--sm">{e(kay["h1"])}</a></p>')
+            break
     return f'''      <li class="border border-line bg-white rounded-[14px] p-5">
         <p class="u-display text-[15px] mb-1">{e(s['ad'])}</p>
         <p class="font-mono text-[11px] text-muted mb-3">{kunye}</p>
-        <p class="text-[14px] text-muted leading-relaxed">{e(sebep)}</p>
+        <p class="text-[14px] text-muted leading-relaxed">{e(sebep)}</p>{ek}
       </li>
 '''
 
@@ -269,7 +285,7 @@ def main():
   </div>
 </section>
 
-<section class="bg-paper border-b border-line">
+<section id="veri-yok" class="bg-paper border-b border-line">
   <div class="mx-auto max-w-shell px-5 sm:px-8 py-12 sm:py-14">
     <div class="max-w-prose mb-8">
       <p class="u-eyebrow mb-3">Yukarıdaki tabloda olmayanlar</p>
