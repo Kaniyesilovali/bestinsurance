@@ -583,6 +583,43 @@ class Uretici:
             "banka_bagli": "Banka grubuna bağlı",
             "bilinmiyor": "Şirket yapısı doğrulanamadı",
         }
+        # §4.4 "kimin şirketi" — sirket_turu'nun beş değeri, beş ayrı cevap.
+        # Hiçbirinde hissedar adı geçmez: veride ana_kuruluş alanı yok, uydurulmaz.
+        TUR_KIMIN = {
+            "yerel": ("KKTC'de kurulmuş yerel bir şirket",
+                      "Kuzey Kıbrıs'ta kurulmuş, KKTC yasalarına tabi ayrı bir tüzel kişi. "
+                      "Türkiye'de aynı ya da benzer adı taşıyan bir şirket varsa, onunla "
+                      "hukuki bağını doğrulayamadık — böyle bir bağ olduğunu varsaymayın."),
+            "banka_bagli": ("Bir banka grubuna bağlı",
+                      "Şirketin bir banka grubuna bağlı olduğunu Birlik listesindeki unvandan "
+                      "ve şirketin kendi yayınlarından çıkardık. Hissedarlık oranlarını ve grup "
+                      "içi yükümlülük yapısını doğrulayamadık. Poliçenin tarafı bankanın kendisi "
+                      "değil, sigorta şirketidir."),
+            "tr_subesi": ("Türkiye merkezli bir şirketin KKTC'deki yapısı",
+                      "Türkiye merkezli bir sigorta şirketinin Kuzey Kıbrıs'taki yapısı. "
+                      "KKTC'de düzenlenen poliçeye hangi mevzuatın uygulandığını doğrulayamadık. "
+                      "Türkiye'deki genel şartların, teminat limitlerinin ve tahkim yolunun "
+                      "burada aynen geçerli olduğunu varsaymayın."),
+            "tr_ortakligi": ("Türkiye'deki bir sigortacıyla kurulmuş yerel ortaklık",
+                      "Türkiye'deki bir sigortacıyla kurulmuş yerel ortaklık yapısı. "
+                      "\u0022(Kıbrıs) Ltd.\u0022 unvanı ayrı bir tüzel kişiliktir. Ortaklık paylarını "
+                      "ve grup içi yükümlülük yapısını doğrulayamadık."),
+            "bilinmiyor": ("Ortaklık yapısı doğrulanamadı",
+                      "Şirketin ortaklık yapısını ne Birlik üye listesinden ne de kendi "
+                      "sitesinden çıkarabildik. Profil sayfası olan 35 şirketin 11'inde durum "
+                      "aynı. Bu bir suçlama değil, bir boşluk tespitidir — şirketin kim "
+                      "olduğunu okurun öğrenebileceği yayımlanmış bir kaynak yok."),
+        }
+        # §6 H-d — birbirine benzeyen yerel adlar. Karıştırılma gerçek; ikisi de ruhsatlı.
+        KARISAN = {
+            "can-sigorta": ["as-can-sigorta"],
+            "as-can-sigorta": ["can-sigorta"],
+            "kibris-sigorta": ["kibris-iktisat-sigorta", "kibris-kapital-insurance"],
+            "kibris-iktisat-sigorta": ["kibris-sigorta", "kibris-kapital-insurance"],
+            "kibris-kapital-insurance": ["kibris-sigorta", "kibris-iktisat-sigorta"],
+            "eurocity-sigorta": ["eig-sigorta"],
+            "eig-sigorta": ["eurocity-sigorta"],
+        }
         HTTP_KISA = {200: "Çalışıyor", "ölü": "Yanıt vermiyor", "site_yok": "Yok"}
         HTTP_UZUN = {
             200: "Site Temmuz 2026'da test edildi ve yanıt verdi.",
@@ -597,6 +634,25 @@ class Uretici:
 
         def liste_metni(xs):
             return " · ".join(xs) if xs else ""
+
+        def yil_den(yil):
+            """1958'den, 2013'ten, 1967'den — okunuşun son sözcüğüne göre ek."""
+            son2, son1 = int(yil) % 100, int(yil) % 10
+            ONLUK = {0: "den", 10: "dan", 20: "den", 30: "dan", 40: "tan",
+                     50: "den", 60: "tan", 70: "ten", 80: "den", 90: "dan"}
+            BIRLIK = {0: "dan", 1: "den", 2: "den", 3: "ten", 4: "ten",
+                      5: "ten", 6: "dan", 7: "den", 8: "den", 9: "dan"}
+            ek = ONLUK[son2] if son1 == 0 else BIRLIK[son1]
+            return f"{yil}'{ek}"
+
+        def liste_metni_ve(xs):
+            """Cümle içi liste: 'a, b ve c'."""
+            xs = list(xs)
+            if not xs:
+                return ""
+            if len(xs) == 1:
+                return xs[0]
+            return ", ".join(xs[:-1]) + " ve " + xs[-1]
 
         sablon = self.jinja.get_template("sirket-profil.html")
 
@@ -669,6 +725,140 @@ class Uretici:
             web = (s.get("web") or "").strip()
             puan = s["genel_puan"]
 
+            # ---- §4.1 Cevap-önce özeti -------------------------------------
+            # LLM ve AI Overviews'un çıkarıp alıntıladığı blok. Kural: puan yok,
+            # sıfat yok, bağlantı yok. Yalnız olgu.
+            if s.get("http_durum") == "site_yok":
+                online_cumlesi = "Şirketin bir web sitesi bulunamadı"
+            elif s.get("http_durum") == "ölü":
+                online_cumlesi = "Şirketin alan adı Temmuz 2026'da yanıt vermedi"
+            elif s.get("online_teklif") or s.get("online_police") or s.get("online_hasar_ihbar"):
+                _dv = [d["ad"].replace("Online ", "online ") for d in dijital if d["var"]]
+                online_cumlesi = "Sitesinde " + liste_metni_ve(_dv) + " var"
+            else:
+                online_cumlesi = "Sitesinde çalışan bir online teklif ya da poliçe işlevi bulunamadı"
+
+            cevap_once = (
+                f"{s['ad']}, Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'ne üye "
+                f"ruhsatlı bir sigorta şirketidir — acente değil."
+            )
+            if p_sehir := s.get("sehir", ""):
+                cevap_once += f" {p_sehir} merkezli"
+                cevap_once += (f", {yil_den(s['kurulus_yili'])} beri faaliyette."
+                               if s.get("kurulus_yili") else ".")
+            cevap_once += (
+                (f" {len(branslar)} branşta ürünü doğrulandı, "
+                 if branslar else " Ürün sayfalarında doğrulanabilen bir branş bulunamadı, ")
+                + f"{len(sehirler)} şehirde ofisi var. {online_cumlesi}. "
+                f"Hasar ödeme performansı ve mali gücü — KKTC'deki hiçbir şirkette "
+                f"olduğu gibi — ölçülemiyor; nedeni aşağıda."
+            )
+
+            # ---- §4.2 "güvenilir mi" — doğrulananlar ve doğrulanamayanlar ---
+            dogrulanan = []
+            _sef = (olcutler.get("seffaflik", {}).get("detay") or {}).get("var") or []
+            for madde in _sef:
+                dogrulanan.append(f"Sitesinde {madde} yayımlıyor")
+            if branslar:
+                dogrulanan.append(f"{len(branslar)} branşta ürün sayfası var")
+            if sehirler:
+                dogrulanan.append(
+                    f"{len(sehirler)} şehirde ofisi var: {liste_metni(sehirler)}")
+            if s.get("acente_sayisi"):
+                dogrulanan.append(
+                    f"{s['acente_sayisi']} acente beyan ediyor (şirket beyanı, doğrulanmadı)")
+            _dij = [d["ad"] for d in dijital if d["var"]]
+            if _dij:
+                dogrulanan.append("Çalışır durumda: " + liste_metni(_dij))
+            if diller_yabanci:
+                dogrulanan.append("Türkçe dışında " + liste_metni(diller_yabanci) + " sunuyor")
+            if s.get("http_durum") == 200:
+                dogrulanan.append("Sitesi Temmuz 2026'da test edildi ve yanıt verdi")
+
+            dogrulanamayan = [
+                "Mali gücü ve ödenmiş sermayesi",
+                "Hasar ödeme oranı — kaç ihbarın kabul edildiği, ne kadar sürede ödendiği",
+                "Pazar payı ve prim üretimi",
+            ]
+            if not s.get("police_sartlari_yayinda"):
+                dogrulanamayan.append(
+                    "Poliçe genel şartları — yayımlamadığı için teminat kapsamını okuyamıyoruz")
+
+            # ---- §4.3 Sorun kanalları --------------------------------------
+            sirkete = []
+            if s.get("email"):
+                sirkete.append(s["email"])
+            if s.get("whatsapp"):
+                sirkete.append("WhatsApp " + s["whatsapp"])
+            hasar_ihbar_online = bool(s.get("online_hasar_ihbar"))
+
+            # ---- §4.4 Kimin şirketi ----------------------------------------
+            kimin_baslik, kimin_cevap = TUR_KIMIN.get(
+                s.get("sirket_turu"), TUR_KIMIN["bilinmiyor"])
+
+            # ---- §6 H-d karıştırılan adlar ---------------------------------
+            karisan = [{"slug": k, "ad": indeks[k]["ad"]}
+                       for k in KARISAN.get(s["slug"], []) if k in indeks]
+
+            # ---- §4.5 SSS — beş soru, koşullu altıncı ----------------------
+            _brans_adlari = [ad for k, ad in BRANS if k in branslar]
+            _ulasim = []
+            if s.get("adres"):
+                _ulasim.append("Adresi: " + s["adres"])
+            if s.get("email"):
+                _ulasim.append("E-posta: " + s["email"])
+            if s.get("whatsapp"):
+                _ulasim.append("WhatsApp: " + s["whatsapp"])
+            _ulasim_metni = (". ".join(_ulasim) + ". "
+                             if _ulasim else "Açık bir iletişim bilgisi bulamadık. ")
+
+            sss = [
+                {"soru": f"{s['ad']} ruhsatlı bir sigorta şirketi mi?",
+                 "cevap": (f"Evet. Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin "
+                           f"üye listesinde yer alıyor; acente ya da broker değil, poliçenin "
+                           f"arkasındaki risk taşıyıcının kendisi. KKTC'de \u0022sigorta\u0022 adıyla "
+                           f"çalışan her kuruluş ruhsatlı şirket değildir — bu ayrım poliçe "
+                           f"alırken kontrol edilmesi gereken ilk şeydir.")},
+                {"soru": f"{s['ad']} güvenilir mi?",
+                 "cevap": (f"Bu soruyu KKTC'de hiç kimse veriyle cevaplayamıyor: şirket bazında "
+                           f"mali güç ve hasar ödeme verisi yayımlanmıyor. Doğrulayabildiğimiz "
+                           f"{len(dogrulanan)} şey var — Birlik üyeliği, {len(branslar)} branşta "
+                           f"ürün, {len(sehirler)} şehirde ofis ve dijital hizmetleri. "
+                           f"Doğrulayamadıklarımız sayfada ayrıca listeli. Karar sizin.")},
+                {"soru": f"{s['ad']} hangi sigortaları yapıyor?",
+                 "cevap": ((f"Ürün sayfalarında {len(branslar)} branş doğrulandı: "
+                            f"{liste_metni_ve([b.lower() for b in _brans_adlari])}. "
+                            f"Bu ölçüt şirketin ne sattığını söylediğini ölçer, fiilen ne "
+                            f"sattığını değil.")
+                           if branslar else
+                           ("Şirketin sitesinde hangi branşlarda ürün sunduğunu gösteren bir "
+                            "sayfa bulamadık. Branş bilgisi için şirkete doğrudan sorun."))},
+                {"soru": f"{s['ad']} ile nasıl iletişime geçilir?",
+                 "cevap": (_ulasim_metni
+                           + (f"Ofisi {liste_metni(sehirler)} şehrinde. " if sehirler else "")
+                           + ("Online hasar ihbarı sitesinden yapılabiliyor."
+                              if hasar_ihbar_online else
+                              "Online hasar ihbarı yok; ihbar telefon ya da "
+                              "e-posta ile yapılıyor."))},
+                {"soru": f"{s['ad']} ile ilgili şikâyetimi nereye götürürüm?",
+                 "cevap": ("Önce şirketin kendisine yazılı olarak başvurun. Sonuç alamazsanız "
+                           "KKSRSB bünyesindeki Sigorta Tahkim Komisyonu'na gidebilirsiniz; "
+                           "tahkimin ücreti, parasal limiti ve süresi tüzük metni "
+                           "incelenmediği için bu sayfada yazılmıyor. Düzenleyici mercii "
+                           "Para, Kambiyo ve İnkişaf Sandığı İşleri Dairesi'dir. KKTC'de "
+                           "merkezî bir tüketici şikâyet mercii tespit edemedik.")},
+            ]
+            for k in karisan:
+                sss.append({
+                    "soru": f"{s['ad']} ile {k['ad']} aynı şirket mi?",
+                    "cevap": (f"Hayır. İkisi de Birlik'in ayrı ayrı ruhsatlı üyesi, ayrı tüzel "
+                              f"kişilikler. Adlarının benzemesi bir mülkiyet ya da grup ilişkisi "
+                              f"göstermez; böyle bir ilişki doğrulayamadık. Poliçe alırken "
+                              f"sözleşmedeki tam unvana bakın — hasar ve şikâyet yolu "
+                              f"hangi şirketle sözleştiyseniz ona işler."),
+                })
+
+
             p = {
                 "ad": s["ad"], "slug": s["slug"], "sehir": s.get("sehir", ""),
                 "tur_metni": TUR.get(s.get("sirket_turu"), "Şirket yapısı doğrulanamadı"),
@@ -695,6 +885,12 @@ class Uretici:
                 "email_kurumsal": s.get("email_kurumsal"),
                 "benzer": benzer,
                 "kaynak_url": s.get("kaynak_url"), "kaynak_web": web or s.get("kaynak_url", ""),
+                # İP-1 — copy/03-marka-sorgulari.md §4
+                "cevap_once": cevap_once,
+                "dogrulanan": dogrulanan, "dogrulanamayan": dogrulanamayan,
+                "sirkete": sirkete, "hasar_ihbar_online": hasar_ihbar_online,
+                "kimin_baslik": kimin_baslik, "kimin_cevap": kimin_cevap,
+                "karisan": karisan, "sss": sss,
             }
 
             url = f"/tr/sirketler/{s['slug']}/"
@@ -710,14 +906,40 @@ class Uretici:
                 desc = (f"{p['sehir']} merkezli {s['ad']}. Şeffaflık, erişim ve dijital hizmet "
                         f"ölçütlerinde neyi doğrulayabildiğimiz, neyi doğrulayamadığımız.")
 
+            # §9.1 — Sayfa şirketin KENDİSİ değil, şirket HAKKINDA. Bu yüzden
+            # ProfilePage + mainEntity; çıplak Organization sayfanın şirket
+            # olduğunu ima ediyordu. sameAs varlık eşleşmesinin ana sinyali.
+            # parentOrganization basılmıyor: veride doğrulanmış ana kuruluş yok.
+            varlik = {
+                "@type": "Organization",
+                "name": s["ad"],
+                "url": f"https://{web}" if web else f"{self.alan_adi}{url}",
+                "areaServed": "Cyprus",
+                "address": {"@type": "PostalAddress", "addressLocality": p["sehir"],
+                            "addressRegion": "Kuzey Kıbrıs", "addressCountry": "CY"},
+            }
+            sameas = [x for x in (f"https://{web}" if web else None,
+                                  s.get("instagram"), s.get("facebook")) if x]
+            if sameas:
+                varlik["sameAs"] = sameas
+            if s.get("kurulus_yili"):
+                varlik["foundingDate"] = str(s["kurulus_yili"])
+            if s.get("email"):
+                varlik["email"] = s["email"]
+
             jsonld = [
                 json.dumps({
-                    "@context": "https://schema.org", "@type": "Organization",
-                    "name": s["ad"],
-                    "url": f"https://{web}" if web else f"{self.alan_adi}{url}",
-                    "areaServed": "TR-CY" if False else "Cyprus",
-                    "address": {"@type": "PostalAddress", "addressLocality": p["sehir"],
-                                "addressRegion": "Kuzey Kıbrıs"},
+                    "@context": "https://schema.org", "@type": "ProfilePage",
+                    "dateModified": "2026-07-24",
+                    "mainEntity": varlik,
+                }, ensure_ascii=False),
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "FAQPage",
+                    "mainEntity": [
+                        {"@type": "Question", "name": q["soru"],
+                         "acceptedAnswer": {"@type": "Answer", "text": q["cevap"]}}
+                        for q in sss
+                    ],
                 }, ensure_ascii=False),
                 json.dumps({
                     "@context": "https://schema.org", "@type": "BreadcrumbList",
