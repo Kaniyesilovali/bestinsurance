@@ -264,6 +264,7 @@
       "slug": "kibris-sigorta-iktisat-kapital",
       "grup": "H-d",
       "h1": "Kıbrıs Sigorta, Kıbrıs İktisat ve Kıbrıs Kapital aynı şirket mi?",
+      "title": "Kıbrıs Sigorta, İktisat ve Kapital aynı mı?",
       "cevap_tipi": "ayri",
       "kisa_cevap": "Hayır. Üçü de \"Kıbrıs\" ile başlıyor ama ayrı ayrı ruhsatlı, ayrı hissedar yapılarına sahip üç şirket.",
       "taraflar": ["kibris-sigorta", "kibris-iktisat-sigorta", "kibris-kapital-insurance"],

@@ -32,6 +32,14 @@ try:
 except (OSError, ValueError):
     KARISIKLIK = []
 
+# İP-2 — kendi ölçüm sayfası üretilen şirketler.
+try:
+    VERI_YOK_SAYFALI = set(json.loads(
+        (KOK / "data" / "veri-yok-olcumleri.json").read_text(encoding="utf-8")
+    ).get("kayitlar", {}))
+except (OSError, ValueError):
+    VERI_YOK_SAYFALI = set()
+
 BRANS_ADI = {
     "trafik": "Trafik", "kasko": "Kasko", "saglik": "Sağlık", "hayat": "Hayat",
     "konut": "Konut", "isyeri": "İşyeri", "seyahat": "Seyahat",
@@ -134,14 +142,17 @@ def sayfasiz_kart(s):
     durum = {"ölü": "alan adı yanıt vermiyor", "site_yok": "web sitesi bulunamadı"}.get(
         s.get("http_durum"), "sitesi doğrulanamadı")
     kunye = f"{e(web)} — {durum}" if web else durum
-    # Adı karıştırılan bir şirketse Set H sayfasına bağlanır; profili olmadığı
-    # için o sayfanın tek iç bağlantısı burasıdır (öksüz kalmasın).
+    # İP-2 — bu şirketin kendi ölçüm sayfası varsa kart adı oraya bağlanır.
     ek = ""
-    for kay in KARISIKLIK:
-        if s["slug"] in kay["taraflar"]:
-            ek = (f'\n        <p class="text-[14px] mt-3"><a href="/tr/sirketler/karsilastirma/'
-                  f'{kay["slug"]}/" class="text-sea link-u arrow arrow--sm">{e(kay["h1"])}</a></p>')
-            break
+    if s["slug"] in VERI_YOK_SAYFALI:
+        ek = (f'\n        <p class="text-[14px] mt-3"><a href="/tr/sirketler/{e(s["slug"])}/" '
+              f'class="text-sea link-u arrow arrow--sm">Ne ölçtük, nasıl ölçtük</a></p>')
+    else:
+        for kay in KARISIKLIK:
+            if s["slug"] in kay["taraflar"]:
+                ek = (f'\n        <p class="text-[14px] mt-3"><a href="/tr/sirketler/karsilastirma/'
+                      f'{kay["slug"]}/" class="text-sea link-u arrow arrow--sm">{e(kay["h1"])}</a></p>')
+                break
     return f'''      <li class="border border-line bg-white rounded-[14px] p-5">
         <p class="u-display text-[15px] mb-1">{e(s['ad'])}</p>
         <p class="font-mono text-[11px] text-muted mb-3">{kunye}</p>

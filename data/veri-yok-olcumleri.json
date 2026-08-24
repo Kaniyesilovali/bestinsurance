@@ -1,0 +1,46 @@
+{
+  "_aciklama": "İP-2 — Birlik üyesi ama web varlığı doğrulanamayan şirketler. copy/03-marka-sorgulari.md §5. Bu sayfalarda YALNIZCA ölçülen teknik durum yazılır; şirketin faaliyet durumu hakkında çıkarım yazılmaz (§13 kural 1). Her ölçüm yöntemi ve tarihiyle kaydedilir (§13 kural 2).",
+  "_yasak": "faaliyette değil · kapandı · tasfiye · dikkat — bu kelimeler bu sayfalarda geçmez.",
+  "olcum_tarihi": "22 Temmuz 2026",
+
+  "kayitlar": {
+    "zurich-sigorta": {
+      "ozet": "Şirketin Kuzey Kıbrıs'a ait bir web sitesini bulamadık. Türkiye'deki aynı adlı şirketin bölge müdürlükleri listesinde de Kuzey Kıbrıs geçmiyor.",
+      "olcumler": [
+        {"yontem": "Alan adı araması", "sonuc": "Şirkete ait, Kuzey Kıbrıs'a özel bir alan adı bulunamadı."},
+        {"yontem": "zurichsigorta.com.tr bölge müdürlükleri sayfası", "sonuc": "Listede Kuzey Kıbrıs yer almıyor."},
+        {"yontem": "KKSRSB üye listesi", "sonuc": "Şirket ruhsatlı üye olarak listede."}
+      ],
+      "ek": "Adı küresel bir sigorta grubuyla aynı. O grupla bağın niteliğini doğrulayamadık — bağ olduğunu da olmadığını da yazmıyoruz."
+    },
+    "correct-choice-insurance": {
+      "ozet": "Şirketin alan adı ad sunucularında hiç çözülmüyor. Bu, sitenin geçici olarak erişilemez olmasından farklı bir durum: alan adı için kayıt bulunamıyor.",
+      "olcumler": [
+        {"yontem": "DNS sorgusu (A kaydı)", "sonuc": "Kayıt yok — alan adı bir IP adresine çözülmüyor."},
+        {"yontem": "DNS sorgusu (NS kaydı)", "sonuc": "Ad sunucusu kaydı yok."},
+        {"yontem": "KKSRSB üye listesi", "sonuc": "Şirket ruhsatlı üye olarak listede."}
+      ],
+      "ek": "A ve NS kaydının birlikte bulunmaması, alan adı kaydının süresinin dolmuş olmasıyla uyumlu bir tablodur — ancak alan adı kayıt kaydını (WHOIS) ayrıca sorgulamadık, dolayısıyla bunu doğrulanmış saymıyoruz."
+    },
+    "eager-insurance": {
+      "ozet": "Şirketin alan adı yanıt veriyor ama bir web sitesi sunmuyor: gelen sayfa, sunucu yönetim panelinin kurulum sonrası varsayılan ekranı.",
+      "olcumler": [
+        {"yontem": "HTTP isteği", "sonuc": "Sunucu yönetim panelinin varsayılan sayfası döndü (Plesk Obsidian 18.0.78)."},
+        {"yontem": "SSL sertifika denetimi", "sonuc": "Sertifika geçersiz — alan adıyla eşleşmiyor."},
+        {"yontem": "Sayfa içeriği", "sonuc": "Şirkete ait hiçbir metin, iletişim bilgisi ya da ürün bilgisi yok."},
+        {"yontem": "KKSRSB üye listesi", "sonuc": "Şirket ruhsatlı üye olarak listede."}
+      ],
+      "ek": "Varsayılan panel sayfası, alan adının bir sunucuya bağlandığını ama üzerine site yayımlanmadığını gösterir."
+    },
+    "segure-insurance": {
+      "ozet": "Şirketin alan adı bir IP adresine çözülüyor, ancak o adres ne HTTP ne de HTTPS isteklerine yanıt veriyor.",
+      "olcumler": [
+        {"yontem": "DNS sorgusu (A kaydı)", "sonuc": "Alan adı 212.68.34.70 adresine çözülüyor."},
+        {"yontem": "HTTP isteği (port 80)", "sonuc": "Bağlantı kurulamadı — yanıt kodu alınamadı."},
+        {"yontem": "HTTPS isteği (port 443)", "sonuc": "Bağlantı kurulamadı — yanıt kodu alınamadı."},
+        {"yontem": "KKSRSB üye listesi", "sonuc": "Şirket ruhsatlı üye olarak listede."}
+      ],
+      "ek": "DNS kaydının durup sunucunun yanıt vermemesi, alan adının kayıtlı olduğunu ama üzerinde çalışan bir web sunucusu bulunmadığını gösterir."
+    }
+  }
+}

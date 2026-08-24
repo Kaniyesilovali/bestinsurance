@@ -908,6 +908,8 @@ class Uretici:
 
             url = f"/tr/sirketler/{s['slug']}/"
             title = f"{s['ad']} — KKTC sigorta şirketi profili"
+            if len(title) >= 60:
+                title = f"{s['ad']} — şirket profili"
             if len(branslar) >= 8:
                 desc = (f"{p['sehir']} merkezli {s['ad']}. {len(branslar)} branşta ürün, "
                         f"{len(sehirler)} şehirde ofis. Şeffaflık, dijital hizmet ve dil "
@@ -976,6 +978,110 @@ class Uretici:
             govde = sablon.render(p=p, **bag)
             self.sayfa_yaz(url, bag, govde, date(2026, 7, 24))
 
+    # -- İP-2: web varlığı doğrulanamayan şirketler --------------------------
+
+    def veri_yok_sayfalari(self):
+        """Birlik üyesi ama web varlığı doğrulanamayan şirketler için kısa sayfa.
+
+        Eşik "veri var mı" değil, "özgün ve doğrulanmış bir şey söyleyebiliyor
+        muyuz". Dördünde de söyleyebiliyoruz: DNS, HTTP ve SSL ölçümleri.
+        ⛔ Faaliyet durumu hakkında çıkarım yazılmaz — yalnız ölçülen yazılır.
+        Gerekçe: copy/03-marka-sorgulari.md §5 ve §13.
+        """
+        olcum_yolu = KOK / "data" / "veri-yok-olcumleri.json"
+        veri_yolu = KOK / "data" / "sirketler.json"
+        if not olcum_yolu.is_file() or not veri_yolu.is_file():
+            return
+        blob = json.loads(olcum_yolu.read_text(encoding="utf-8"))
+        kayitlar = blob.get("kayitlar", {})
+        olcum_tarihi = blob.get("olcum_tarihi", "Temmuz 2026")
+        tum = json.loads(veri_yolu.read_text(encoding="utf-8"))
+        idx = {x["slug"]: x for x in tum}
+
+        karsilastirma = {}
+        kar_yolu = KOK / "data" / "ad-karisikliklari.json"
+        if kar_yolu.is_file():
+            for kay in json.loads(kar_yolu.read_text(encoding="utf-8")).get("kayitlar", []):
+                for sl in kay["taraflar"]:
+                    karsilastirma.setdefault(sl, []).append({
+                        "url": f"/tr/sirketler/karsilastirma/{kay['slug']}/",
+                        "h1": kay["h1"],
+                    })
+
+        sablon = self.jinja.get_template("sirket-veri-yok.html")
+
+        for slug, kay in kayitlar.items():
+            x = idx.get(slug)
+            if x is None:
+                continue
+            v = {
+                "ad": x["ad"], "slug": slug,
+                "ozet": kay["ozet"], "olcumler": kay["olcumler"],
+                "ek": kay.get("ek", ""), "olcum_tarihi": olcum_tarihi,
+                "karsilastirma": karsilastirma.get(slug, []),
+            }
+
+            url = f"/tr/sirketler/{slug}/"
+            title = f"{x['ad']} — neden bilgi bulunamıyor"
+            desc = (f"{x['ad']} KKSRSB üyesi ruhsatlı bir sigorta şirketi. "
+                    f"Web varlığını {olcum_tarihi} tarihinde ölçtük ve doğrulayamadık; "
+                    f"ölçümün yöntemi ve sonucu bu sayfada.")
+
+            sss = [
+                {"soru": f"{x['ad']} ruhsatlı bir sigorta şirketi mi?",
+                 "cevap": (f"Evet. {olcum_tarihi} tarihinde Kuzey Kıbrıs Sigorta ve "
+                           f"Reasürans Şirketleri Birliği'nin üye listesinde ruhsatlı "
+                           f"sigorta şirketi olarak yer alıyordu. Bir şirketin web "
+                           f"sitesinin yanıt vermemesi, ruhsatı hakkında bir şey söylemez.")},
+                {"soru": f"{x['ad']} hakkında neden internette bilgi yok?",
+                 "cevap": kay["ozet"]},
+                {"soru": f"{x['ad']} şirketinden poliçem var, ne yapmalıyım?",
+                 "cevap": ("Poliçenizin geçerliliği hakkında bir şey söyleyemeyiz — bunu "
+                           "ölçmedik. Sorunuz varsa KKTC Sigorta ve Reasürans Şirketleri "
+                           "Birliği'ne ya da Para, Kambiyo ve İnkişaf Sandığı İşleri "
+                           "Dairesi'ne sorun. Poliçenizi ve ödeme belgelerinizi saklayın.")},
+            ]
+
+            jsonld = [
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "ProfilePage",
+                    "dateModified": "2026-07-24",
+                    "mainEntity": {
+                        "@type": "Organization", "name": x["ad"],
+                        "url": f"{self.alan_adi}{url}", "areaServed": "Cyprus",
+                        "address": {"@type": "PostalAddress",
+                                    "addressRegion": "Kuzey Kıbrıs", "addressCountry": "CY"},
+                    },
+                }, ensure_ascii=False),
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "FAQPage",
+                    "mainEntity": [
+                        {"@type": "Question", "name": q["soru"],
+                         "acceptedAnswer": {"@type": "Answer", "text": q["cevap"]}}
+                        for q in sss
+                    ],
+                }, ensure_ascii=False),
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Ana sayfa",
+                         "item": f"{self.alan_adi}/tr/"},
+                        {"@type": "ListItem", "position": 2, "name": "Şirketler",
+                         "item": f"{self.alan_adi}/tr/sirketler/"},
+                        {"@type": "ListItem", "position": 3, "name": x["ad"],
+                         "item": f"{self.alan_adi}{url}"},
+                    ],
+                }, ensure_ascii=False),
+            ]
+
+            bag = self.baglam(
+                dil="tr", url=url, baslik=title, aciklama=desc,
+                aktif_menu="sirketler", og_tur="profile", og_baslik=x["ad"],
+                og_aciklama=desc, jsonld=jsonld,
+            )
+            bag["hreflang"] = {"tr": url}
+            self.sayfa_yaz(url, bag, sablon.render(v=v, **bag), date(2026, 7, 24))
+
     # -- Set H: karıştırılan adlar ------------------------------------------
 
     def ad_karisikliklari(self):
@@ -992,7 +1098,13 @@ class Uretici:
         kayitlar = json.loads(yol.read_text(encoding="utf-8")).get("kayitlar", [])
         tum = json.loads(veri_yolu.read_text(encoding="utf-8"))
         idx = {x["slug"]: x for x in tum}
-        profilli = {x["slug"] for x in tum if not sayfasiz_mi(x)}
+        # İP-2 sonrası dört veri-yok şirketinin de kendi sayfası var.
+        olcum_yolu = KOK / "data" / "veri-yok-olcumleri.json"
+        veri_yok_sayfali = set()
+        if olcum_yolu.is_file():
+            veri_yok_sayfali = set(
+                json.loads(olcum_yolu.read_text(encoding="utf-8")).get("kayitlar", {}))
+        profilli = {x["slug"] for x in tum if not sayfasiz_mi(x)} | veri_yok_sayfali
 
         TUR = {
             "yerel": "KKTC'de kurulmuş yerel şirket",
@@ -1097,7 +1209,7 @@ class Uretici:
             ]
 
             bag = self.baglam(
-                dil="tr", url=url, baslik=kay["h1"], aciklama=desc,
+                dil="tr", url=url, baslik=kay.get("title") or kay["h1"], aciklama=desc,
                 aktif_menu="sirketler", og_tur="article", og_baslik=kay["h1"],
                 og_aciklama=desc, jsonld=jsonld,
             )
@@ -1347,6 +1459,7 @@ class Uretici:
         self.varliklar()
         self.statik_sayfalar()
         self.sirket_profilleri()
+        self.veri_yok_sayfalari()
         self.ad_karisikliklari()
         self.sirket_branslari()
         self.blog_yazilari()
