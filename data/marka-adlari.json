@@ -1,0 +1,186 @@
+{
+  "_aciklama": "§9.2 otomatik marka bağlama. Rehber yazısında bu adlardan biri geçtiğinde ilk geçişte şirketin profiline bağlanır. Bir yazıda aynı şirkete en fazla bir bağlantı; başlıklarda ve mevcut bağlantıların içinde bağlama yapılmaz. Desenler uzundan kısaya sıralı denenir — 'Can Sigorta' deseni 'As-Can Sigorta' içinde eşleşmez.",
+  "_korunan_aciklama": "Kurum adları. Bunların içinde marka bağlama YAPILMAZ. 'Kuzey Kıbrıs Sigorta Bilgi Merkezi' içindeki 'Kıbrıs Sigorta' özel bir şirket değil, kurumun adının parçasıdır.",
+  "korunan": [
+    "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği",
+    "Kuzey Kıbrıs Sigorta Bilgi Merkezi",
+    "Kıbrıs Türk Sigorta ve Reasürans Şirketleri Birliği",
+    "Sigorta Bilgi ve Gözetim Merkezi",
+    "Sigorta ve Reasürans Şirketleri Birliği",
+    "Sigorta Tahkim Komisyonu",
+    "Sigorta Bilgi Merkezi",
+    "Para, Kambiyo ve İnkişaf Sandığı İşleri Dairesi",
+    "Sigorta Yöneticisi"
+  ],
+  "kayitlar": {
+    "dagli-sigorta": [
+      "DAĞLI SİGORTA CO LTD.",
+      "DAĞLI SİGORTA"
+    ],
+    "limasol-sigorta": [
+      "LİMASOL SİGORTA LTD",
+      "LİMASOL SİGORTA"
+    ],
+    "kibris-sigorta": [
+      "KIBRIS SİGORTA ŞTİ. LTD.",
+      "KIBRIS SİGORTA"
+    ],
+    "can-sigorta": [
+      "CAN SİGORTA LTD.",
+      "CAN SİGORTA"
+    ],
+    "creditwest-sigorta": [
+      "CREDITWEST SİGORTA LTD.",
+      "CREDITWEST SİGORTA",
+      "Creditwest Insurance"
+    ],
+    "aveon-sigorta": [
+      "AVEON SİGORTA LTD.",
+      "AVEON SİGORTA"
+    ],
+    "turk-sigorta": [
+      "TÜRK SİGORTA LTD.",
+      "TÜRK SİGORTA"
+    ],
+    "akfinans-sigorta": [
+      "AKFİNANS SİGORTA",
+      "Akfinans"
+    ],
+    "bicare-insurance": [
+      "BICARE INSURANCE LTD.",
+      "BICARE INSURANCE"
+    ],
+    "kibris-kapital-insurance": [
+      "KIBRIS KAPITAL INSURANCE LTD.",
+      "KIBRIS KAPITAL INSURANCE",
+      "Kıbrıs Kapital",
+      "Capital Insurance"
+    ],
+    "commercial-insurance": [
+      "COMMERCIAL INSURANCE LTD.",
+      "COMMERCIAL INSURANCE"
+    ],
+    "guven-sigorta-kibris": [
+      "GÜVEN SİGORTA (KIBRIS) LTD.",
+      "GÜVEN SİGORTA (KIBRIS)",
+      "Güven Sigorta"
+    ],
+    "kibris-iktisat-sigorta": [
+      "KIBRIS İKTİSAT SİGORTA LTD.",
+      "KIBRIS İKTİSAT SİGORTA",
+      "Kıbrıs İktisat",
+      "İktisat Sigorta"
+    ],
+    "anadolu-sigorta": [
+      "ANADOLU ANONİM TÜRK SİGORTA ŞTİ.",
+      "ANADOLU ANONİM TÜRK SİGORTA",
+      "Anadolu Sigorta"
+    ],
+    "northprime-insurance": [
+      "NORTHPRIME INSURANCE LTD.",
+      "NORTHPRIME INSURANCE",
+      "NorthPrime"
+    ],
+    "axa-sigorta": [
+      "AXA SİGORTA A.Ş.",
+      "AXA SİGORTA"
+    ],
+    "iyi-gelecek-sigorta": [
+      "İYİ-GELECEK SİGORTA LTD.",
+      "İYİ-GELECEK SİGORTA",
+      "İyi Gelecek Sigorta"
+    ],
+    "seker-sigorta-kibris": [
+      "ŞEKER SİGORTA (KIBRIS) LTD.",
+      "ŞEKER SİGORTA (KIBRIS)",
+      "Şeker Sigorta"
+    ],
+    "gig-sigorta": [
+      "GİG SİGORTA A.Ş.",
+      "GİG SİGORTA"
+    ],
+    "smart-target-insurance": [
+      "SMART TARGET INSURANCE LTD.",
+      "SMART TARGET INSURANCE",
+      "Smart Target"
+    ],
+    "alfa-sigorta": [
+      "ALFA SİGORTA CO. LTD.",
+      "ALFA SİGORTA"
+    ],
+    "lightstar-insurance": [
+      "LIGHTSTAR INSURANCE LTD.",
+      "LIGHTSTAR INSURANCE",
+      "Lightstar"
+    ],
+    "mapfree-insurance": [
+      "MAPFREE INSURANCE LTD",
+      "MAPFREE INSURANCE",
+      "MAPFREE"
+    ],
+    "as-can-sigorta": [
+      "AS-CAN SİGORTA ŞTİ LTD.",
+      "AS-CAN SİGORTA",
+      "As-Can Sigorta",
+      "Ascan Sigorta"
+    ],
+    "ion-insurance": [
+      "ION INSURANCE"
+    ],
+    "allsafe-insurance": [
+      "ALLSAFE INSURANCE LTD.",
+      "ALLSAFE INSURANCE"
+    ],
+    "grand-plus-insurance": [
+      "GRAND PLUS INSURANCE",
+      "Grand Plus"
+    ],
+    "eurocity-sigorta": [
+      "EUROCITY SİGORTA"
+    ],
+    "zirve-sigorta": [
+      "ZİRVE SİGORTA LTD.",
+      "ZİRVE SİGORTA"
+    ],
+    "gold-insurance": [
+      "GOLD INSURANCE LTD.",
+      "GOLD INSURANCE"
+    ],
+    "eig-sigorta": [
+      "EIG SİGORTA LTD.",
+      "EIG SİGORTA",
+      "EIG"
+    ],
+    "tower-insurance": [
+      "TOWER INSURANCE LTD.",
+      "TOWER INSURANCE"
+    ],
+    "universal-sigorta": [
+      "UNIVERSAL SİGORTA LTD.",
+      "UNIVERSAL SİGORTA"
+    ],
+    "turkiye-sigorta": [
+      "TÜRKİYE SİGORTA"
+    ],
+    "london-insurance": [
+      "LONDON INSURANCE"
+    ],
+    "zurich-sigorta": [
+      "ZURICH SİGORTA A.Ş.",
+      "ZURICH SİGORTA"
+    ],
+    "correct-choice-insurance": [
+      "CORRECT CHOICE INSURANCE LTD.",
+      "CORRECT CHOICE INSURANCE",
+      "Correct Choice"
+    ],
+    "eager-insurance": [
+      "EAGER INSURANCE LTD.",
+      "EAGER INSURANCE"
+    ],
+    "segure-insurance": [
+      "SEGURE INSURANCE LTD.",
+      "SEGURE INSURANCE"
+    ]
+  }
+}

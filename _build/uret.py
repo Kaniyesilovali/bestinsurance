@@ -170,6 +170,106 @@ def markdown_uret():
     )
 
 
+# §9.2 — otomatik marka bağlama.
+# Türkçe büyük/küçük harf çiftleri: re.IGNORECASE bunları doğru eşleştirmez
+# (i↔İ ve ı↔I ayrı çiftlerdir), bu yüzden her harf kendi sınıfına çevrilir.
+TR_CIFT = {"i": "iİ", "İ": "İi", "ı": "ıI", "I": "Iı",
+           "ş": "şŞ", "Ş": "Şş", "ğ": "ğĞ", "Ğ": "Ğğ",
+           "ü": "üÜ", "Ü": "Üü", "ö": "öÖ", "Ö": "Öö",
+           "ç": "çÇ", "Ç": "Çç"}
+# Sözcük sınırı: önünde harf, rakam, alt çizgi ya da tire olmasın. Tire önemli —
+# "As-Can Sigorta" içinde "Can Sigorta" eşleşmemeli.
+MARKA_ON = r"(?<![0-9A-Za-zÇĞİÖŞÜçğıöşü_\-])"
+MARKA_ARD = r"(?![0-9A-Za-zÇĞİÖŞÜçğıöşü_])"
+# İçinde bağlama yapılmayan öğeler.
+MARKA_KORUMALI = {"a", "h1", "h2", "h3", "h4", "h5", "h6",
+                  "script", "style", "code", "pre"}
+
+
+def marka_deseni(ad):
+    """Bir marka adını büyük/küçük harf duyarsız desene çevirir."""
+    parcalar = []
+    for harf in ad:
+        if harf in TR_CIFT:
+            parcalar.append(f"[{TR_CIFT[harf]}]")
+        elif harf.isalpha():
+            parcalar.append(f"[{harf.upper()}{harf.lower()}]")
+        elif harf == " ":
+            parcalar.append(r"\s+")
+        else:
+            parcalar.append(re.escape(harf))
+    return MARKA_ON + "".join(parcalar) + MARKA_ARD
+
+
+class MarkaBaglayici:
+    """Rehber yazılarında geçen şirket adlarını profil sayfasına bağlar.
+
+    Kural (copy/03-marka-sorgulari.md §9.2): bir yazıda aynı şirkete en fazla
+    bir bağlantı, yalnız ilk geçişte. Başlıklarda, mevcut bağlantıların ve kod
+    bloklarının içinde bağlama yapılmaz.
+    """
+
+    def __init__(self, kok):
+        self.desenler = []
+        self.korunan = []
+        yol = kok / "data" / "marka-adlari.json"
+        veri_yolu = kok / "data" / "sirketler.json"
+        if not yol.is_file() or not veri_yolu.is_file():
+            return
+        blob = json.loads(yol.read_text(encoding="utf-8"))
+        kayitlar = blob.get("kayitlar", {})
+        # Kurum adları korunur: "Kuzey Kıbrıs Sigorta Bilgi Merkezi" içindeki
+        # "Kıbrıs Sigorta" bir şirket değil, kurumun adının parçasıdır.
+        self.korunan = [re.compile(marka_deseni(a)) for a in blob.get("korunan", [])]
+        gecerli = {x["slug"] for x in json.loads(veri_yolu.read_text(encoding="utf-8"))}
+        ciftler = [(slug, ad) for slug, adlar in kayitlar.items()
+                   if slug in gecerli for ad in adlar]
+        # Uzun desen önce: "Anadolu Anonim Türk Sigorta" tüketilmeden
+        # "Türk Sigorta" denenirse yanlış şirkete bağlanır.
+        ciftler.sort(key=lambda p: len(p[1]), reverse=True)
+        self.desenler = [(slug, re.compile(marka_deseni(ad))) for slug, ad in ciftler]
+
+    def bagla(self, html):
+        if not self.desenler:
+            return html
+        # Yazar zaten elle profile bağlamışsa ikinci bağlantı eklenmez.
+        kullanilmis = set(re.findall(r'href="/tr/sirketler/([^/"]+)/"', html))
+        parcalar = re.split(r"(<[^>]+>)", html)
+        derinlik = 0
+        for i, parca in enumerate(parcalar):
+            if parca.startswith("<"):
+                etiket = re.match(r"</?\s*([A-Za-z0-9]+)", parca)
+                if etiket and etiket.group(1).lower() in MARKA_KORUMALI:
+                    if parca.startswith("</"):
+                        derinlik = max(0, derinlik - 1)
+                    elif not parca.rstrip().endswith("/>"):
+                        derinlik += 1
+                continue
+            if derinlik or not parca.strip():
+                continue
+            for slug, desen in self.desenler:
+                if slug in kullanilmis:
+                    continue
+                # Kurum adlarının kapladığı aralıklar her denemede yeniden
+                # hesaplanır; metin bağlantı eklendikçe değişiyor.
+                yasak = [(m.start(), m.end())
+                         for k in self.korunan for m in k.finditer(parca)]
+                eslesme = next(
+                    (m for m in desen.finditer(parca)
+                     if not any(m.start() < bit and bas < m.end()
+                                for bas, bit in yasak)),
+                    None)
+                if not eslesme:
+                    continue
+                kullanilmis.add(slug)
+                parca = (parca[:eslesme.start()]
+                         + f'<a href="/tr/sirketler/{slug}/" class="link-u">'
+                         + eslesme.group(0) + "</a>"
+                         + parca[eslesme.end():])
+            parcalar[i] = parca
+        return "".join(parcalar)
+
+
 def govde_isle(kaynak, markdown_mi, cevirici):
     """Markdown parçalarını dönüştürür, ham <section> bloklarını olduğu gibi bırakır."""
     if not markdown_mi:
@@ -292,6 +392,7 @@ class Uretici:
             lstrip_blocks=False,
         )
         self.cevirici = markdown_uret()
+        self.marka = MarkaBaglayici(KOK)          # §9.2
         self.sayfalar = []
         self.yazilar = []
         self.uretilen = []                                 # (url, lastmod)
@@ -430,7 +531,7 @@ class Uretici:
                 jsonld=[self.yazi_jsonld(y)] + y.jsonld,
                 ceviriler=y.ceviriler,
             )
-            govde = sablon.render(yazi=y, icerik_govde=y.govde,
+            govde = sablon.render(yazi=y, icerik_govde=self.marka.bagla(y.govde),
                                   ilgili=self.ilgili_yazilar(y), **bag)
             self.sayfa_yaz(y.url, bag, govde, y.guncelleme)
 
