@@ -1627,14 +1627,20 @@ class Uretici:
 
     # -- sitemap, robots, kök yönlendirme, 404 ------------------------------
 
-    def sitemap(self):
-        if self.noindex:
-            return False
+    # Sitemap dört dosyaya ayrılır: her setin indekslenme oranı ayrı ölçülsün.
+    # Gerekçe: copy/02-programatik-seo.md §10 ve copy/03-marka-sorgulari.md §16.
+    SITEMAP_SETLERI = [
+        ("karsilastirma", lambda u: u.startswith("/tr/sirketler/karsilastirma/")),
+        ("sirketler", lambda u: u.startswith("/tr/sirketler/")),
+        ("rehber", lambda u: u.startswith("/tr/rehber/")),
+        ("sayfalar", lambda u: True),
+    ]
+
+    def _sitemap_govde(self, kayitlar, mevcut):
         satirlar = ['<?xml version="1.0" encoding="UTF-8"?>',
                     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
                     '        xmlns:xhtml="http://www.w3.org/1999/xhtml">']
-        mevcut = {u for u, _ in self.uretilen}
-        for url, lastmod in sorted(self.uretilen):
+        for url, lastmod in sorted(kayitlar):
             dil = url.strip("/").split("/")[0]
             alternatifler = self.hreflang(url, dil) if url in mevcut else {}
             alternatifler = {k: v for k, v in alternatifler.items() if v in mevcut}
@@ -1650,6 +1656,31 @@ class Uretici:
             satirlar.append(f"    <lastmod>{lastmod.isoformat()}</lastmod>")
             satirlar.append("  </url>")
         satirlar.append("</urlset>")
+        return "\n".join(satirlar) + "\n"
+
+    def sitemap(self):
+        if self.noindex:
+            return False
+        mevcut = {u for u, _ in self.uretilen}
+        kalan = list(self.uretilen)
+        self.sitemap_ozet = []
+        for ad, kosul in self.SITEMAP_SETLERI:
+            bu = [(u, t) for u, t in kalan if kosul(u)]
+            kalan = [(u, t) for u, t in kalan if not kosul(u)]
+            if not bu:
+                continue
+            yaz(CIKTI / f"sitemap-{ad}.xml", self._sitemap_govde(bu, mevcut))
+            self.sitemap_ozet.append((ad, len(bu), max(t for _, t in bu)))
+
+        # sitemap.xml artık dizin; robots.txt ve arama motorları buradan girer.
+        satirlar = ['<?xml version="1.0" encoding="UTF-8"?>',
+                    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+        for ad, _, son in self.sitemap_ozet:
+            satirlar.append("  <sitemap>")
+            satirlar.append(f"    <loc>{self.alan_adi}/sitemap-{ad}.xml</loc>")
+            satirlar.append(f"    <lastmod>{son.isoformat()}</lastmod>")
+            satirlar.append("  </sitemap>")
+        satirlar.append("</sitemapindex>")
         yaz(CIKTI / "sitemap.xml", "\n".join(satirlar) + "\n")
         return True
 
@@ -1823,7 +1854,8 @@ class Uretici:
             print("  ! noindex açık — sitemap üretilmedi, robots.txt her şeyi kapatıyor.")
             print("    Yayına alırken site.json > yayin.noindex = false yapın.")
         else:
-            print("  sitemap.xml + robots.txt üretildi")
+            ozet = " · ".join(f"{ad} {n}" for ad, n, _ in getattr(self, "sitemap_ozet", []))
+            print(f"  sitemap dizini + robots.txt üretildi  ({ozet})")
         print(f"\n  Çıktı: {CIKTI}")
 
         if kontrol:
