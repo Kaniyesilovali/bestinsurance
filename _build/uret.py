@@ -8,6 +8,7 @@ dist/ klasörü yayına hazır statik sitedir; olduğu gibi sunucuya yüklenir.
 Kaynak dosyalara (content/, site.json, _build/) dokunulmaz.
 """
 
+import itertools
 import json
 import os
 import re
@@ -199,6 +200,32 @@ def marka_deseni(ad):
         else:
             parcalar.append(re.escape(harf))
     return MARKA_ON + "".join(parcalar) + MARKA_ARD
+
+
+_SESLI_EK = {"a": "mı", "ı": "mı", "e": "mi", "i": "mi",
+             "o": "mu", "u": "mu", "ö": "mü", "ü": "mü"}
+
+
+def _tr_kucult(t):
+    """Türkçe küçültme: I→ı, İ→i. Python'un lower()'ı bunu yanlış yapar."""
+    return t.replace("I", "ı").replace("İ", "i").lower()
+
+
+def SORU_EKI(ad):
+    """Soru ekini son sesliye göre seçer: Sigorta mı, Insurance mi."""
+    for harf in reversed(_tr_kucult(ad)):
+        if harf in _SESLI_EK:
+            return _SESLI_EK[harf]
+    return "mı"
+
+
+def SIRKET_KISA(ad):
+    """Unvandan hukuki eki söker: 'DAĞLI SİGORTA CO LTD.' -> 'DAĞLI SİGORTA'."""
+    t = ad.strip()
+    for kal in [r"\s*CO\.?\s*LTD\.?$", r"\s*ŞTİ\.?\s*LTD\.?$",
+                r"\s*LTD\.?$", r"\s*A\.Ş\.$", r"\s*ŞTİ\.?$"]:
+        t = re.sub(kal, "", t, flags=re.I).strip()
+    return t or ad
 
 
 class MarkaBaglayici:
@@ -393,6 +420,7 @@ class Uretici:
         )
         self.cevirici = markdown_uret()
         self.marka = MarkaBaglayici(KOK)          # §9.2
+        self._set_i = None
         self.sayfalar = []
         self.yazilar = []
         self.uretilen = []                                 # (url, lastmod)
@@ -767,6 +795,16 @@ class Uretici:
                         "h1": kay["h1"],
                     })
 
+        # §9.3 — her profil kendi ayrışma karşılaştırmalarına bağlanır.
+        esler = {}
+        for cift in self.set_i_ciftleri():
+            for bu, oteki in ((cift["a"], cift["b"]), (cift["b"], cift["a"])):
+                esler.setdefault(bu["slug"], []).append({
+                    "url": cift["url"], "ad": SIRKET_KISA(oteki["ad"]),
+                    "puan": str(oteki["genel_puan"]).replace(".", ","),
+                    "fark": len(cift["fark"]),
+                })
+
         sablon = self.jinja.get_template("sirket-profil.html")
 
         for s in veri:
@@ -1005,6 +1043,8 @@ class Uretici:
                 "kimin_baslik": kimin_baslik, "kimin_cevap": kimin_cevap,
                 "karisan": karisan, "sss": sss,
                 "karsilastirma": karsilastirma.get(s["slug"], []),
+                "esler": sorted(esler.get(s["slug"], []),
+                                key=lambda e: -e["fark"])[:4],
             }
 
             url = f"/tr/sirketler/{s['slug']}/"
@@ -1182,6 +1222,208 @@ class Uretici:
             )
             bag["hreflang"] = {"tr": url}
             self.sayfa_yaz(url, bag, sablon.render(v=v, **bag), date(2026, 7, 24))
+
+    # -- Set I: ayrışan şirket çiftleri --------------------------------------
+
+    def set_i_ciftleri(self):
+        """Set I çiftlerini bir kez hesaplar; profiller de bunu kullanır."""
+        if getattr(self, "_set_i", None) is not None:
+            return self._set_i
+        self._set_i = []
+        veri_yolu = KOK / "data" / "sirketler.json"
+        if not veri_yolu.is_file():
+            return self._set_i
+        tum = json.loads(veri_yolu.read_text(encoding="utf-8"))
+        uygun = [x for x in tum if (x.get("genel_puan") or 0) >= 5.0
+                 and not sayfasiz_mi(x)]
+        anahtarlar = ["seffaflik", "urun", "erisim", "dijital", "dil", "kurumsal"]
+
+        def puan(x, k):
+            return (x.get("olcutler", {}).get(k) or {}).get("puan")
+
+        for a, b in itertools.combinations(uygun, 2):
+            fark = [k for k in anahtarlar
+                    if puan(a, k) is not None and puan(b, k) is not None
+                    and abs(puan(a, k) - puan(b, k)) >= 1.5]
+            if len(fark) < 5:
+                continue
+            a, b = sorted([a, b], key=lambda x: (-x["genel_puan"], x["slug"]))
+            ka, kb = SIRKET_KISA(a["ad"]), SIRKET_KISA(b["ad"])
+            self._set_i.append({
+                "a": a, "b": b, "fark": fark,
+                "h1": f"{ka} {SORU_EKI(ka)} {kb} {SORU_EKI(kb)}?",
+                "url": f"/tr/sirketler/karsilastirma/{a['slug']}-{b['slug']}/",
+            })
+        return self._set_i
+
+
+    def karsilastirmalar(self):
+        """Genel puanı 5,0+ olan şirketlerden ayrışan çiftler için sayfa.
+
+        Çift seçme kuralı sayıyı belirler, biz değil: iki şirketin de genel puanı
+        5,0 ve üstü olacak VE altı ölçütün en az beşinde 1,5 puan ya da daha
+        fazla ayrışacak. Ayrışmayan çiftin sayfası hiçbir şey söylemez.
+        Gerekçe: copy/03-marka-sorgulari.md §7.
+        ⛔ "Hangisi daha iyi" cevabı yok; sayfa ayrışmayı gösterir, seçimi değil.
+        """
+        veri_yolu = KOK / "data" / "sirketler.json"
+        if not veri_yolu.is_file():
+            return
+        tum = json.loads(veri_yolu.read_text(encoding="utf-8"))
+        uygun = [x for x in tum if (x.get("genel_puan") or 0) >= 5.0
+                 and not sayfasiz_mi(x)]
+
+        OLCUT = [
+            ("seffaflik", "Şeffaflık", 25),
+            ("urun", "Ürün genişliği", 20),
+            ("erisim", "Erişilebilirlik", 20),
+            ("dijital", "Dijital hizmet", 20),
+            ("dil", "Yabancı dilde hizmet", 10),
+            ("kurumsal", "Kurumsal derinlik", 5),
+        ]
+        ESIK = 1.5
+        DIL_ADI = {"en": "İngilizce", "ru": "Rusça", "el": "Yunanca", "fa": "Farsça"}
+
+        def puan(x, k):
+            return (x.get("olcutler", {}).get(k) or {}).get("puan")
+
+        def ayrisan(a, b):
+            return [k for k, _, _ in OLCUT
+                    if puan(a, k) is not None and puan(b, k) is not None
+                    and abs(puan(a, k) - puan(b, k)) >= ESIK]
+
+        def vir(v):
+            """Karşılaştırma tablosunda hep tek ondalık: 8 ve 9,1 yan yana durmasın."""
+            return f"{float(v):.1f}".replace(".", ",")
+
+        def kucult(t):
+            """Türkçe küçültme: I→ı, İ→i. Python'un lower()'ı bunu yanlış yapar."""
+            return t.replace("I", "ı").replace("İ", "i").lower()
+
+        SESLI = {"a": "mı", "ı": "mı", "e": "mi", "i": "mi",
+                 "o": "mu", "u": "mu", "ö": "mü", "ü": "mü"}
+
+        def soru_eki(ad):
+            for harf in reversed(kucult(ad)):
+                if harf in SESLI:
+                    return SESLI[harf]
+            return "mı"
+
+        def kisa_ad(ad):
+            t = ad.strip()
+            for kal in [r"\s*CO\.?\s*LTD\.?$", r"\s*ŞTİ\.?\s*LTD\.?$",
+                        r"\s*LTD\.?$", r"\s*A\.Ş\.$", r"\s*ŞTİ\.?$"]:
+                t = re.sub(kal, "", t, flags=re.I).strip()
+            return t or ad
+
+        def olcut_cumlesi(k, x):
+            """Bir ölçütte şirketin somut durumu — puan değil, olgu."""
+            d = (x.get("olcutler", {}).get(k) or {}).get("detay", {}) or {}
+            if k == "seffaflik":
+                var = d.get("var") or []
+                return (", ".join(var) + " yayımlıyor") if var else "bu alanların hiçbirini yayımlamıyor"
+            if k == "urun":
+                n = d.get("brans_sayisi") or len(x.get("branslar") or [])
+                return f"{n} branşta ürün sayfası" if n else "ürün sayfası bulunamadı"
+            if k == "erisim":
+                sehir = d.get("sehir_sayisi") or len(x.get("ofis_sehirler") or [])
+                acente = d.get("acente")
+                p = f"{sehir} şehirde ofis" if sehir else "ofis şehri doğrulanamadı"
+                return p + (f", {acente} acente beyanı" if acente else ", acente sayısı açıklanmamış")
+            if k == "dijital":
+                oz = d.get("ozellikler") or []
+                return (", ".join(oz)) if oz else "çalışan dijital işlev bulunamadı"
+            if k == "dil":
+                diller = [DIL_ADI.get(x_, x_) for x_ in (d.get("diller") or [])]
+                return ("Türkçe dışında " + ", ".join(diller)) if diller else "yalnızca Türkçe"
+            if k == "kurumsal":
+                yil = d.get("kurulus_yili") or x.get("kurulus_yili")
+                tur = {"yerel": "yerel şirket", "tr_subesi": "Türkiye şirketinin KKTC yapısı",
+                       "tr_ortakligi": "Türkiye ortaklığı", "banka_bagli": "banka grubuna bağlı",
+                       "bilinmiyor": "ortaklık yapısı doğrulanamadı"}.get(x.get("sirket_turu"), "")
+                return (f"{yil}'den beri, {tur}" if yil else tur or "kuruluş yılı yayımlanmamış")
+            return ""
+
+        sablon = self.jinja.get_template("karsilastirma.html")
+
+        for cift in self.set_i_ciftleri():
+            a, b, fark = cift["a"], cift["b"], cift["fark"]
+            ka, kb = kisa_ad(a["ad"]), kisa_ad(b["ad"])
+            h1 = cift["h1"]
+
+            tablo = []
+            for k, ad, agirlik in OLCUT:
+                pa, pb = puan(a, k), puan(b, k)
+                tablo.append({
+                    "ad": ad, "agirlik": agirlik,
+                    "a": vir(pa) if pa is not None else "veri yok",
+                    "b": vir(pb) if pb is not None else "veri yok",
+                    "fark": (vir(round(abs(pa - pb), 1))
+                             if pa is not None and pb is not None else "—"),
+                    "ayrisiyor": k in fark,
+                })
+
+            sirali = sorted(fark, key=lambda k: abs(puan(a, k) - puan(b, k)), reverse=True)
+            ayrinti = [{
+                "ad": dict((k, ad) for k, ad, _ in OLCUT)[k],
+                "a": olcut_cumlesi(k, a), "b": olcut_cumlesi(k, b),
+            } for k in sirali[:3]]
+            benzer = [dict((k, ad) for k, ad, _ in OLCUT)[k]
+                      for k, _, _ in OLCUT if k not in fark]
+
+            c = {
+                "h1": h1, "fark_sayisi": len(fark),
+                "a": {"slug": a["slug"], "ad": a["ad"], "kisa": ka,
+                      "puan": vir(a["genel_puan"]), "sehir": a.get("sehir", "")},
+                "b": {"slug": b["slug"], "ad": b["ad"], "kisa": kb,
+                      "puan": vir(b["genel_puan"]), "sehir": b.get("sehir", "")},
+                "tablo": tablo, "ayrinti": ayrinti, "benzer": benzer,
+            }
+
+            url = f"/tr/sirketler/karsilastirma/{a['slug']}-{b['slug']}/"
+            desc = (f"{ka} ve {kb} altı ölçütte yan yana. "
+                    f"{len(fark)} ölçütte ayrışıyorlar. Hangisinin daha iyi olduğunu "
+                    f"söylemiyoruz — yayımladıklarını karşılaştırıyoruz.")
+
+            sss = [
+                {"soru": h1,
+                 "cevap": (f"Bu soruya \u0022şu daha iyi\u0022 diye cevap vermiyoruz. İki şirket "
+                           f"altı ölçütün {len(fark)}'inde ayrışıyor; sayfa bu ayrışmayı "
+                           f"gösterir. Hangisinin hasarınızı daha iyi ödediğini gösteremez — "
+                           f"o veri Kuzey Kıbrıs'ta yayımlanmıyor.")},
+                {"soru": "Bu karşılaştırmada fiyat neden yok?",
+                 "cevap": ("Şirket bazında prim verisi yayımlanmıyor. Ayrıca zorunlu trafikte "
+                           "taban tarife rejimi geçerli olduğu için şirketler arası fiyat farkı "
+                           "serbest bir piyasada beklenenden dardır.")},
+            ]
+
+            jsonld = [
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "FAQPage",
+                    "mainEntity": [{"@type": "Question", "name": q["soru"],
+                                    "acceptedAnswer": {"@type": "Answer", "text": q["cevap"]}}
+                                   for q in sss],
+                }, ensure_ascii=False),
+                json.dumps({
+                    "@context": "https://schema.org", "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Ana sayfa",
+                         "item": f"{self.alan_adi}/tr/"},
+                        {"@type": "ListItem", "position": 2, "name": "Şirketler",
+                         "item": f"{self.alan_adi}/tr/sirketler/"},
+                        {"@type": "ListItem", "position": 3, "name": h1,
+                         "item": f"{self.alan_adi}{url}"},
+                    ],
+                }, ensure_ascii=False),
+            ]
+
+            bag = self.baglam(
+                dil="tr", url=url, baslik=h1, aciklama=desc,
+                aktif_menu="sirketler", og_tur="article", og_baslik=h1,
+                og_aciklama=desc, jsonld=jsonld,
+            )
+            bag["hreflang"] = {"tr": url}
+            self.sayfa_yaz(url, bag, sablon.render(c=c, **bag), date(2026, 7, 24))
 
     # -- Set H: karıştırılan adlar ------------------------------------------
 
@@ -1562,6 +1804,7 @@ class Uretici:
         self.sirket_profilleri()
         self.veri_yok_sayfalari()
         self.ad_karisikliklari()
+        self.karsilastirmalar()
         self.sirket_branslari()
         self.blog_yazilari()
         self.bloglar()

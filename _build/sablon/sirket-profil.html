@@ -419,6 +419,25 @@
       </a>
       {% endfor %}
     </div>
+
+    {% if p.esler %}
+    {# §7 Set I — bu şirketin belirgin biçimde ayrıştığı şirketler #}
+    <div class="max-w-prose mt-10">
+      <p class="u-eyebrow mb-3">Yan yana karşılaştırma</p>
+      <p class="text-[14px] text-muted leading-relaxed mb-4">
+        Bu şirketin altı ölçütün en az beşinde belirgin biçimde ayrıştığı şirketler.
+        Ayrışmayan çiftler için sayfa üretmiyoruz — hiçbir şey söylemezlerdi.
+      </p>
+      <ul class="border-t border-line">
+        {% for e in p.esler %}
+        <li class="border-b border-line/60 py-3 flex items-baseline justify-between gap-4">
+          <a href="{{ e.url }}" class="text-[15px] text-sea link-u arrow arrow--sm">{{ p.ad }} · {{ e.ad }}</a>
+          <span class="u-cap shrink-0">{{ e.fark }} ölçütte ayrışıyor</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
   </div>
 </section>
 {% endif %}

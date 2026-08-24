@@ -1,0 +1,156 @@
+{# Set I — ayrışan şirket çiftleri. Bağlam _build/uret.py > karsilastirmalar().
+   copy/03-marka-sorgulari.md §7.
+   ⛔ "Hangisi daha iyi" cevabı yok. Fiyat yok. Hasar ödeme karşılaştırması yok. #}
+<section class="bg-ink text-white">
+  <div class="mx-auto max-w-shell px-5 sm:px-8 py-12 sm:py-16">
+    <nav aria-label="Konum" class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-6">
+      <a href="/tr/" class="hover:text-white">Ana sayfa</a> <span class="mx-2">/</span>
+      <a href="/tr/sirketler/" class="hover:text-white">Şirketler</a> <span class="mx-2">/</span> Karşılaştırma
+    </nav>
+    <div class="max-w-prose">
+      <p class="u-eyebrow text-muteddark mb-3">Altı ölçütte yan yana</p>
+      <h1 class="u-display u-display--tight text-[2rem] sm:text-[2.75rem] leading-[1.08] mb-6">{{ c.h1 }}</h1>
+      <p class="text-[15px] leading-relaxed text-white/70 border-s-2 border-sun ps-4">
+        Bu sayfa &ldquo;şu daha iyi&rdquo; demiyor. İki şirket altı ölçütün
+        {{ c.fark_sayisi }}&rsquo;inde belirgin biçimde ayrışıyor — nerede ve ne kadar
+        ayrıştıklarını gösteriyoruz. Seçim sizin.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# ── Altı ölçüt tablosu ────────────────────────────────────────────────── #}
+<section class="bg-white border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-6">Altı ölçütte yan yana</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-[14px] border-collapse min-w-[560px]">
+        <thead>
+          <tr class="border-b border-ink">
+            <th scope="col" class="text-start py-3 pe-4 u-eyebrow">Ölçüt</th>
+            <th scope="col" class="text-start py-3 pe-4 u-display text-[14px] leading-snug">{{ c.a.kisa }}</th>
+            <th scope="col" class="text-start py-3 pe-4 u-display text-[14px] leading-snug">{{ c.b.kisa }}</th>
+            <th scope="col" class="text-end py-3 u-eyebrow">Fark</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for s in c.tablo %}
+          <tr class="border-b border-line/70">
+            <th scope="row" class="text-start py-3 pe-4 font-normal align-top">
+              {{ s.ad }} <span class="u-cap">%{{ s.agirlik }}</span>
+            </th>
+            <td class="py-3 pe-4 u-num align-top">{{ s.a }}</td>
+            <td class="py-3 pe-4 u-num align-top">{{ s.b }}</td>
+            <td class="py-3 text-end u-num align-top{% if s.ayrisiyor %} text-sundeep{% else %} text-muted/60{% endif %}">{{ s.fark }}</td>
+          </tr>
+          {% endfor %}
+          <tr class="border-b-2 border-ink">
+            <th scope="row" class="text-start py-3 pe-4 u-display text-[14px]">Genel puan</th>
+            <td class="py-3 pe-4 u-num text-[18px]">{{ c.a.puan }}</td>
+            <td class="py-3 pe-4 u-num text-[18px]">{{ c.b.puan }}</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="u-cap mt-4">Turuncu fark, ölçütte 1,5 puan ya da daha fazla ayrışma olduğunu gösterir.</p>
+  </div>
+</section>
+
+{# ── En çok nerede ayrışıyorlar ────────────────────────────────────────── #}
+<section class="bg-paper border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-6">En çok nerede ayrışıyorlar</h2>
+      <div class="space-y-7">
+        {% for d in c.ayrinti %}
+        <div class="border-t border-line pt-5">
+          <p class="u-eyebrow mb-3">{{ d.ad }}</p>
+          <dl class="space-y-2 text-[15px]">
+            <div class="flex gap-3">
+              <dt class="u-display text-[14px] shrink-0 w-[42%] sm:w-[34%]">{{ c.a.kisa }}</dt>
+              <dd class="text-muted leading-relaxed">{{ d.a }}</dd>
+            </div>
+            <div class="flex gap-3">
+              <dt class="u-display text-[14px] shrink-0 w-[42%] sm:w-[34%]">{{ c.b.kisa }}</dt>
+              <dd class="text-muted leading-relaxed">{{ d.b }}</dd>
+            </div>
+          </dl>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ── Ortak yanları ─────────────────────────────────────────────────────── #}
+{% if c.benzer %}
+<section class="bg-white border-b border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-10 sm:py-12">
+    <div class="max-w-prose">
+      <h2 class="u-display text-[1.25rem] sm:text-[1.5rem] leading-[1.15] mb-4">Ayrışmadıkları yer</h2>
+      <p class="text-[15px] text-muted leading-relaxed">
+        Şu ölçütlerde iki şirket birbirine yakın: <strong class="text-text">{{ c.benzer | join(' · ') }}</strong>.
+        Bu ölçütler seçiminizde ayırt edici olmayacaktır.
+      </p>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ── Sabit kapanış — §7 gereği her sayfada aynen ───────────────────────── #}
+<section class="bg-paper border-y border-line">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-14">
+    <div class="max-w-prose">
+      <div class="bg-white border border-line rounded-[14px] p-6 mb-6">
+        <p class="text-[15px] leading-relaxed">
+          <strong class="text-text">Bu tablo iki şirketin yayımladıklarını karşılaştırır.</strong>
+          Hangisinin hasarınızı daha iyi ödediğini göstermez — o veri Kuzey Kıbrıs'ta
+          yayımlanmıyor.
+        </p>
+      </div>
+      <p class="text-[14px] text-muted leading-relaxed">
+        Fiyat karşılaştırması da yok: şirket bazında prim verisi yayımlanmıyor ve zorunlu
+        trafikte <a href="/tr/rehber/kktc-taban-tarife/" class="text-sea link-u">taban tarife</a>
+        rejimi nedeniyle şirketler arası fark serbest bir piyasada beklenenden dar.
+        Ölçütlerin tanımı <a href="/tr/metodoloji/" class="text-sea link-u">metodoloji sayfasında</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+{# ── İki profil ────────────────────────────────────────────────────────── #}
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
+    <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-6">Tam profiller</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      {% for t in [c.a, c.b] %}
+      <a href="/tr/sirketler/{{ t.slug }}/" class="block border border-line rounded-[14px] p-5 bg-paper hover:border-ink transition-colors">
+        <p class="u-display text-[15px] mb-1">{{ t.ad }}</p>
+        <p class="text-[13px] text-muted">{{ t.sehir }} · {{ t.puan }} puan · tam profil</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ── Sayfa altı ────────────────────────────────────────────────────────── #}
+<section class="bg-ink text-white">
+  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-14">
+    <div class="max-w-prose space-y-4 text-[14px] leading-relaxed text-white/70">
+      <p>
+        <span class="u-eyebrow text-muteddark">Kaynak</span><br>
+        Şirketlerin kendi siteleri ve KKSRSB üye listesi, Temmuz 2026'da tarandı.
+        Puanlar altı gözlemlenebilir ölçütten hesaplandı; yöntem
+        <a href="/tr/metodoloji/" class="text-sun link-u">metodoloji sayfasında</a>.
+        Bir bilgi yanlışsa <a href="/tr/duzeltme/" class="text-sun link-u">kaynağıyla bildirin</a>.
+      </p>
+      <p class="text-white/50">
+        Bu sayfa iki şirketin dışarıdan doğrulanabilir özelliklerini karşılaştırır.
+        Mali güç ve hasar ödeme performansı hiçbir şirket için puanlanmamaktadır —
+        bu veriler Kuzey Kıbrıs'ta kamuya açık olarak yayımlanmıyor. Bilgiler genel
+        bilgilendirme amaçlıdır, sigorta tavsiyesi değildir.
+      </p>
+    </div>
+  </div>
+</section>
