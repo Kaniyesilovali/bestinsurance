@@ -77,7 +77,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | M2 | ⬜ | Adında "Kıbrıs" ya da Türkiye'nin markası geçen şirketler aynı mı | Ayrım | kktc sigorta şirketi türkiyenin mi | `/tr/sirketler/` · `/tr/sirketler/karsilastirma/turk-sigorta-turkiye-sigorta/` | Beş şirkette TR bağının niteliği doğrulanamadı |
 | M3 | ⬜ | Sigorta şirketiniz hakkındaki şikâyetinizi nereye götürürsünüz | Hasar | kktc sigorta şikayet nereye | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` · `/tr/duzeltme/` | Merkezî tüketici şikâyet mercii belirsiz; tahkim ücreti ve süresi okunmadı |
 | M4 | ⬜ | Web sitesi olmayan beş ruhsatlı sigorta şirketi | Şeffaflık | kktc sigorta şirketi sitesi yok | `/tr/sirketler/zurich-sigorta/` · `/tr/sirketler/eager-insurance/` · `/tr/sirketler/` | **Faaliyet durumu yazılmaz** — yalnız web varlığı ölçüldü |
-| M5 | ⬜ | Bankaya bağlı sigorta şirketinden poliçe almak ne değiştirir | Şirket seçimi | kktc banka sigorta şirketi | `/tr/sirketler/karsilastirma/limasol-sigorta-limasol-bankasi/` · `/tr/sirketler/` | Grup içi yükümlülük yapısı doğrulanmadı |
+| M5 | ✅ | Bankaya bağlı sigorta şirketinden poliçe almak ne değiştirir — *30 Ağu 2026* | Şirket seçimi | kktc banka sigorta şirketi | `/tr/sirketler/karsilastirma/limasol-sigorta-limasol-bankasi/` · `/tr/sirketler/` | Grup içi yükümlülük yapısı doğrulanmadı |
 | M6 | ⬜ | Bir sigorta şirketinin güvenilirliğini KKTC'de neye bakarak ölçebilirsiniz | Şeffaflık | kktc sigorta şirketi güvenilir mi | `/tr/metodoloji/` · `/tr/sirketler/` | Mali güç ve hasar ödemesi hiçbir şirkette ölçülemiyor |
 | M7 | ⬜ | İki sigorta şirketinin sitesi aynı IP'de: Eurocity ve EIG | Şeffaflık | kktc eurocity eig sigorta aynı mı | `/tr/sirketler/karsilastirma/eurocity-sigorta-eig-sigorta/` | **Mülkiyet yorumu yazılmaz** — ortak barındırma da aynı sonucu verir |
 | M8 | ⬜ | Türkiye'deki sigorta şubesinden KKTC'de poliçe almak | Ayrım | kktc türkiye sigorta şubesi | `/tr/sirketler/karsilastirma/anadolu-sigorta-kktc-turkiye/` · `/tr/sigorta/trafik/` | KKTC şubelerine hangi mevzuatın uygulandığı doğrulanmadı |
@@ -102,7 +102,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | 35 | ⬜ | KKTC'de seyahat sigortası: yurt dışına çıkarken | Ürün | kktc seyahat sigortası | `/tr/sigorta/seyahat/` | Schengen başvurusunda kabul rejimi doğrulanmadı |
 | 36 | ⬜ | Poliçe genel şartlarını nereden okursunuz | Ayrım | kktc sigorta genel şartlar nerede | `/tr/sigorta/trafik/` · `/tr/metodoloji/` | Genel şartların son güncelleme tarihi belirsiz |
 | 37 | ⬜ | Kiralık araçla Güney'e geçiş | Sınır geçişi | kktc kiralık araç güneye geçiş | `/tr/rehber/sinir-gecisi-sigortasi/` | Kiralama şirketlerinin izin politikası standart değil |
-| 38 | ⬜ | Banka grubuna bağlı sigorta şirketleri | Şirket seçimi | kktc banka sigorta şirketi | `/tr/sirketler/` | Grup içi reasürans ilişkisi doğrulanmadı |
+| 38 | ✅ | Banka grubuna bağlı sigorta şirketleri — **M5 ile karşılandı**, ayrıca yazılmayacak | Şirket seçimi | kktc banka sigorta şirketi | `/tr/rehber/banka-bagli-sigorta-sirketleri/` | Grup içi reasürans ilişkisi doğrulanmadı — M5'te ilan edildi |
 | 39 | ⬜ | KKTC'de kiracıysanız konut sigortası kime ait | Ürün | kktc kiracı konut sigortası | `/tr/sigorta/konut/` | Kira sözleşmelerinde standart madde yok |
 
 ## Kasım 2026
