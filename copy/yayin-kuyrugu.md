@@ -70,7 +70,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | 21 | ⬜ | KKTC'de online poliçe kesebilen şirketler | Şirket seçimi | kktc online sigorta poliçe | `/tr/sirketler/` | Online akışların hepsi test edilmedi |
 | 22 | ⬜ | Üç aydan uzun ikamette sağlık sigortası şartı | Yabancılar | kktc ikamet sağlık sigortası zorunlu | `/tr/rehber/ogrenci-saglik-sigortasi/` · `/tr/sigorta/saglik/` | Hangi poliçe türünün kabul edildiği net değil |
 | 23 | ⬜ | KKTC'de kasko poliçesinde sık atlanan maddeler | Ürün | kktc kasko poliçe kapsam | `/tr/sigorta/kasko/` | Kasko fiyat aralığı yalnızca ticari kaynakta |
-| 24 | ⬜ | Puanlama modelimiz neden mali gücü içermiyor | Şeffaflık | kktc sigorta şirketi güvenilir mi | `/tr/metodoloji/` | Ödenmiş sermaye verisi yayımlanmıyor |
+| 24 | ✅ | Puanlama modelimiz neden mali gücü içermiyor — **`/tr/metodoloji/` ile karşılandı**, ayrıca yazılmayacak. Hedef sorgu M6'ya devredildi (bkz. `03-marka-sorgulari.md` §10) | Şeffaflık | — | `/tr/metodoloji/` | Ödenmiş sermaye verisi yayımlanmıyor — metodoloji sayfasında ilan edildi |
 | 25 | ⬜ | Yabancı plakayla KKTC'de araç kullanmak | Yabancılar | yabancı plaka kktc sigorta | `/tr/rehber/sinir-gecisi-sigortasi/` | Azami kullanım süresi doğrulanmadı |
 | 26 | ⬜ | KKTC'de işyeri sigortası neyi kapsar | Ürün | kktc işyeri sigortası | `/tr/sigorta/isyeri/` · `/tr/sirketler/` | Zorunlu işveren sorumluluk rejimi belirsiz |
 | M1 | ⬜ | KKTC'de ruhsatlı 39 sigorta şirketinin tam listesi | Şirket seçimi | kktc sigorta şirketleri listesi | `/tr/sirketler/` · `/tr/metodoloji/` | Birlik listesi dışında resmî bir güncel kayıt bulunamadı |

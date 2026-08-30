@@ -486,14 +486,34 @@ mevcut sıra bozulmaz (kuyruk kuralı 1).
 | M2 | ⬜ | Adında "Kıbrıs" ya da Türkiye'nin markası geçen şirketler aynı mı | Ayrım | kktc sigorta şirketi türkiyenin mi | `/tr/sirketler/` · Set H sayfaları | Beş şirkette TR bağının niteliği doğrulanamadı |
 | M3 | ⬜ | Sigorta şirketiniz hakkındaki şikâyetinizi nereye götürürsünüz | Hasar | kktc sigorta şikayet nereye | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` · `/tr/duzeltme/` | Merkezî tüketici şikâyet mercii belirsiz; tahkim ücreti ve süresi okunmadı |
 | M4 | ⬜ | Web sitesi olmayan beş ruhsatlı sigorta şirketi | Şeffaflık | kktc sigorta şirketi sitesi yok | K1 sayfaları ×5 · `/tr/sirketler/` | Faaliyet durumları gözlenmedi — yalnız web varlığı ölçüldü |
-| M5 | ⬜ | Bankaya bağlı sigorta şirketinden poliçe almak ne değiştirir | Şirket seçimi | kktc banka sigorta şirketi | Set H-c sayfaları · `/tr/sirketler/` | Grup içi yükümlülük yapısı doğrulanmadı |
-| M6 | ⬜ | Bir sigorta şirketinin güvenilirliğini KKTC'de neye bakarak ölçebilirsiniz | Şeffaflık | kktc sigorta şirketi güvenilir mi | `/tr/metodoloji/` · `/tr/sirketler/` | Mali güç ve hasar ödemesi hiçbir şirkette ölçülemiyor |
+| M5 | ✅ | Bankaya bağlı sigorta şirketinden poliçe almak ne değiştirir — *30 Ağu 2026*, `/tr/rehber/banka-bagli-sigorta-sirketleri/` | Şirket seçimi | kktc banka sigorta şirketi | Set H-c sayfaları · `/tr/sirketler/` | Grup içi yükümlülük yapısı doğrulanmadı |
+| M6 | ✅ | Bir sigorta şirketinin güvenilirliğini KKTC'de neye bakarak ölçebilirsiniz — *30 Ağu 2026*, `/tr/rehber/kktc-sigorta-sirketi-guvenilir-mi/` | Şeffaflık | kktc sigorta şirketi güvenilir mi | `/tr/metodoloji/` · `/tr/sirketler/` | Mali güç ve hasar ödemesi hiçbir şirkette ölçülemiyor |
 | M7 | ⬜ | İki sigorta şirketinin sitesi aynı IP'de: Eurocity ve EIG | Şeffaflık | eurocity eig sigorta | Set H-d Eurocity–EIG · iki profil | Ortak barındırma mı ortak mülkiyet mi — ayırt edilemedi |
 | M8 | ⬜ | Türkiye'deki sigorta şubesinden KKTC'de poliçe almak | Ayrım | kktc türkiye sigorta şubesi | Set H-a sayfaları · `/tr/sigorta/trafik/` | KKTC şubelerine hangi mevzuatın uygulandığı doğrulanmadı |
 
-M6, kuyruktaki mevcut **№24** ("Puanlama modelimiz neden mali gücü içermiyor") ile
-komşu konudadır. İkisi birleştirilmez: №24 yöntemi anlatır, M6 okurun kendi
-kontrol listesini verir ve `x sigorta güvenilir mi` desenini hedefler.
+**Sorgu sahipliği — 30 Ağustos 2026'da düzeltildi.** M6 ile kuyruktaki №24
+("Puanlama modelimiz neden mali gücü içermiyor") birebir aynı hedef sorguyu
+taşıyordu: `kktc sigorta şirketi güvenilir mi`. İkisini de yazmak §8'in engellediği
+şeyi kendi kuyruğumuzun içinde üretirdi — aynı sorguda iki kendi sayfamız.
+
+Çözüm birleştirme değil, sahiplik: **sorgu M6'nındır.** №24 kapatıldı, çünkü konusu
+zaten yayında — `/tr/metodoloji/` sayfasında "Mali güç ve hasar ödeme performansını
+puanlamıyoruz" başlıklı bölüm yöntemi anlatıyor. Ayrı bir yazı o sayfanın tekrarı
+olurdu. Ayrım şöyle duruyor:
+
+| Sorgu | Sahip sayfa |
+|---|---|
+| `kktc sigorta şirketi güvenilir mi` | M6 — okurun kendi kontrol listesi |
+| Puanlama modeli neden mali gücü içermiyor | `/tr/metodoloji/` — yöntemin kendisi |
+| `kktc sigorta şirketi mali durum` | №06 — sektör düzeyinde veri yokluğu |
+
+M6 yöntemi anlatmaz, `/tr/metodoloji/` sayfasına bağlar.
+
+Bu karar, aynı paragrafın önceki sürümündeki **"ikisi birleştirilmez"** notunu geçersiz
+kılar. O not içerik olarak haklıydı — iki yazının anlatacağı şey gerçekten farklı — ama
+hedef sorgu sütununa bakmamıştı; ikisi de `kktc sigorta şirketi güvenilir mi` yazıyordu.
+Ayrı konu, ayrı sorgu demek değildir. Kuyruğa yeni satır girerken hedef sorgunun
+kuyrukta zaten sahibi olup olmadığı kontrol edilir.
 
 ---
 
