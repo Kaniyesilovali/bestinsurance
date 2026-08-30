@@ -10,14 +10,6 @@ tarih: 2026-08-24
 guncelleme: 2026-08-24
 og_baslik: "Can Sigorta Lefkoşa"
 url: /tr/rehber/can-sigorta-lefkosa/
-taslak: evet
-# TASLAK GEREKÇESİ (24 Ağustos 2026)
-# copy/03-marka-sorgulari.md §8 "marka × şehir" sayfalarını üretilmeyecekler
-# listesine almış: profil sayfasının "Nereden ulaşılıyor" bölümü aynı sorguyu
-# karşılıyor ve /tr/sirketler/can-sigorta/ ile kanibalizasyon doğuruyor.
-# Can ↔ As-Can ayrımı ise Set H-d'de ayrı sayfa olarak planlı ve §15 gereği
-# İP-1 (profil derinleştirme) yayımlanmadan Set H yayımlanmıyor.
-# Karar verilene kadar taslakta bekliyor.
 ---
 
 <script type="application/ld+json">

@@ -400,6 +400,15 @@ Marka sorgularında hacim kolayca elde edilir; bu plan üçünü bilinçle almı
 Toplam alınmayan hacim: **739 sayfa.** 35 iyi profilin güvenilirliği, 739 ince sayfadan
 daha değerli — ve marka sorgusunu kazandıracak olan güvenilirliktir.
 
+> **İstisna (30 Ağustos 2026):** "Marka × şehir" kuralı tümden kaldırılmadı ama
+> `/tr/rehber/can-sigorta-lefkosa/` site sahibinin kararıyla yayımlandı. Yazı,
+> tabloda tarif edilen ince permütasyon değil: profilde bulunmayan Can ↔ As-Can
+> ayrımını ve puanın gerekçesini taşıyor, gövdesinden iki kez
+> `/tr/sirketler/can-sigorta/` profiline bağlanıyor. Şirket odaklı yazılar
+> `kategori: Şirket` ile `/tr/rehber/konu/sirket/` altında toplanıyor. Aynı
+> muafiyet, aynı ölçüt karşılandığında sonraki şirket yazıları için de geçerli:
+> profilin tekrarı olan bir sayfa yine üretilmez.
+
 ---
 
 ## 9. Varlık (entity) ve şema işleri
