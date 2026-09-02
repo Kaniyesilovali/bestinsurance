@@ -31,6 +31,12 @@
       "baslik": "Rehber",
       "aciklama": "Sık karşılaşılan durumlar için pratik yazılar. Her yazıda kaynağını gösterebildiğimizi yazıyoruz — gösteremediğimizi de söylüyoruz.",
       "konu_kok": "/tr/rehber/konu/"
+    },
+    "en": {
+      "kok": "/en/guides/",
+      "baslik": "Guides",
+      "aciklama": "Practical notes on situations people actually run into. Each one says what we could verify — and what we could not.",
+      "konu_kok": "/en/guides/topic/"
     }
   },
 
@@ -42,6 +48,10 @@
       { "id": "saglik",     "url": "/tr/sigorta/saglik/",   "ad": "Sağlık",           "mobil_ad": "Sağlık sigortası" },
       { "id": "rehber",     "url": "/tr/rehber/",           "ad": "Rehber",           "mobil_ad": "Rehber" },
       { "id": "metodoloji", "url": "/tr/metodoloji/",       "ad": "Nasıl puanlıyoruz", "mobil_ad": "Nasıl puanlıyoruz" }
+    ],
+    "_en_notu": "EN menüsü yalnızca üretilmiş adresleri taşır. Yeni bir EN sayfası eklendiğinde satırı buraya girilir; girilmeyen sayfa menüde görünmez ama üretilir.",
+    "en": [
+      { "id": "trafik", "url": "/en/insurance/motor-third-party/", "ad": "Compulsory motor", "mobil_ad": "Compulsory motor" }
     ]
   },
 
@@ -83,6 +93,19 @@
         }
       ],
       "telif": "© 2026 KKTC Sigorta Merkezi. Tüm hakları saklıdır."
+    },
+    "en": {
+      "uyari": "The information on this site is general information, not insurance advice. Read the company's current policy conditions before making a decision. Scores are based on externally observable criteria; financial strength and claims-paying performance are not scored. TRNC insurers are not within EU insurance schemes, and the Republic of Cyprus Financial Ombudsman has no jurisdiction over a TRNC policy.",
+      "sutunlar": [
+        {
+          "baslik": "Insurance types",
+          "aria": "Insurance types",
+          "baglantilar": [
+            { "url": "/en/insurance/motor-third-party/", "ad": "Compulsory motor" }
+          ]
+        }
+      ],
+      "telif": "© 2026 KKTC Sigorta Merkezi. All rights reserved."
     }
   },
 

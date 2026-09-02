@@ -458,10 +458,34 @@ class Uretici:
     # -- ortak bağlam -------------------------------------------------------
 
     def hreflang(self, url, dil, ceviriler=None):
-        """Sayfanın dört dildeki adresi. Yalnızca tanımlı olanlar döner."""
-        harita = dict(self.yapilandirma.get("rotalar", {}).get(url, {}))
+        """Sayfanın dört dildeki adresi. Yalnızca tanımlı olanlar döner.
+
+        `rotalar` yalnızca TR adresiyle anahtarlanır. Karşılığı olan bir kümeye
+        hangi dilden bakılırsa bakılsın **aynı** küme dönmelidir: hreflang
+        karşılıklı olmazsa arama motoru çiftin tamamını yok sayar. Bu yüzden
+        önce kümenin tamamı kurulur, sonra içinden bakılır — TR adresinden mi
+        yoksa EN adresinden mi girildiği fark etmez.
+        """
+        rotalar = self.yapilandirma.get("rotalar", {})
+        harita = None
+
+        # 1) Doğrudan TR adresiyle giriş
+        if url in rotalar:
+            harita = {dil: url, **rotalar[url]}
+        else:
+            # 2) Ters arama: bu adres bir kümenin çevirisi olarak geçiyor mu
+            for tr_url, esler in rotalar.items():
+                if url in esler.values():
+                    harita = {"tr": tr_url, **esler}
+                    break
+
+        harita = dict(harita) if harita else {}
         if ceviriler:
+            # Yazıların 'ceviriler' alanı da TR dosyasında durur; aynı ters
+            # arama gerekir, yoksa EN yazı yalnızca kendini gösterir.
+            harita.setdefault("tr", url) if dil == "tr" else None
             harita.update(ceviriler)
+
         sonuc = {dil: url}
         for kod, adres in harita.items():
             if kod in self.yapilandirma["diller"] and adres and adres in self.mevcut:
