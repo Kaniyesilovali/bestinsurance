@@ -38,6 +38,8 @@ Ek olarak konuya göre: `data/arastirma-kktc-sigorta.md` (olgular ve kaynak list
 zorunlu bağlantılar, ilan edilecek boşluk, numara.
 
 Kuyrukta `⬜` kalmadıysa: yeni başlık **uydurulmaz.** Dur, durumu bildir.
+Yeni satır gerekiyorsa iş `sorgu-sec` becerisinindir — hedef sorgu kararını o verir,
+kuyruk satırını o üretir. Bu beceri yalnızca var olan satırı yazar.
 
 ---
 
@@ -235,7 +237,7 @@ alır. Yayın birkaç dakika sürer.
 | ⛔ tablosundaki bir rakam olmadan yazı anlamsız kalıyor | Aynı — `⛔`, sebep yazılır |
 | `./yayinla.sh` hata veriyor | Yayımlama, hatayı bildir |
 | Kırık iç bağlantı düzeltilemiyor | Yayımlama |
-| Kuyrukta `⬜` yok | Dur, yeni başlık uydurma |
+| Kuyrukta `⬜` yok | Dur, yeni başlık uydurma — `sorgu-sec` çalıştırılmalı |
 | Araştırma dosyasıyla çelişen bulgu | Yayımlama, çelişkiyi bildir |
 | `git push` reddedildi | `git pull --rebase` dene; çakışma varsa dur, bildir |
 

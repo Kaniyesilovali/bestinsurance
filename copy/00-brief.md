@@ -19,6 +19,37 @@ ve doğrulayamadığımız yeri boş bırakıyoruz.
 | Expat / öğrenci (EN, RU, FA) | "Oturma iznim için ne gerekiyor?" | AB/Güney mekanizmalarının burada işlediğini sanıyor |
 | Türkiye'den gelen | "Poliçem geçerli mi?" | Türkiye rakamlarını KKTC sanıyor |
 
+## Pazar kapsamı
+
+**Pazar KKTC'dir. Türkiye pazar değildir.**
+
+Bu ayrım okur tablosundaki "Türkiye'den gelen" satırıyla çelişmez, onu tanımlar:
+o kişi **buraya gelmiştir.** Aracı, poliçesi ya da alışkanlığı Türkiye'den gelir;
+kendisi burada yaşıyordur. Türkiye'de yaşayan, Türkiye plakasına Türkiye'den poliçe
+arayan kişi bu sitenin okuru değildir.
+
+| | Yazılır | Yazılmaz |
+|---|---|---|
+| **Türkiye nerede geçer** | Buraya gelmiş okurun geçmişi olarak: "Türkiye'den taşındıysanız poliçeniz burada geçerli değil" | Kıyas zemini olarak: "Türkiye'nin karşılaştırma siteleri şöyle yapar, biz…" |
+| **Hedef sorgu** | `kktc` ya da `kuzey kıbrıs` nitelemesi taşıyanlar | Çıplak sorgular (`trafik sigortası`, `online sigorta`) ve Türkiye sorguları |
+| **Rakip** | KKTC'de ruhsatlı şirketler, KKTC acenteleri | Türkiye'nin sigorta şirketleri ve karşılaştırma siteleri |
+
+**Rakip araştırması metni biçimlendirmez.** Bir sorgunun sonuç sayfasına bakmak
+hedefin alınabilir olup olmadığını anlamak içindir. Orada Türkiye çıkması, yazının
+Türkiye'yle açılacağı anlamına gelmez. Yazı kendi verimizle açılır.
+
+### KKTC ≠ Türkiye ayrımının sahibi
+
+Bu ayrım sitenin birinci sütunudur (bkz. "Sürekli tekrarlanan üç ayrım") ama
+**her sayfada tekrarlanmaz.** Sahibi olan sayfalar şunlardır:
+
+- `/tr/sigorta/trafik/` — limit kıyası
+- `/tr/rehber/kktc-turkiye-farki/` — ayrımın kendisi
+- `Ayrım` kategorisindeki kuyruk satırları
+
+Başka bir sayfada aynı kıyası kurmadan önce sorun: bu sayfanın konusu bu mu? Değilse
+kıyas yazılmaz, sahibi olan sayfaya bağlantı verilir.
+
 ## Ses tonu
 
 - **Sakin ve olgusal.** Reklam değil, referans metni. Hiçbir cümlede ünlem yok.
