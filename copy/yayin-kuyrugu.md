@@ -1,7 +1,7 @@
 # Yayın kuyruğu — KKTC Sigorta Merkezi
 
 **Oluşturma:** 3 Ağustos 2026 · **Kapsam:** 86 yazı ≈ 29 hafta (Pzt · Çrş · Cum)
-**Durum:** 2 yayında · 84 bekliyor
+**Durum:** 6 yayında · 80 bekliyor
 **Dayanak:** `copy/01-icerik-stratejisi.md` sütunları · `copy/00-brief.md` ⛔ tablosu ·
 `data/arastirma-kktc-sigorta.md`
 
@@ -67,7 +67,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | 18 | ⬜ | 39 şirketin yalnızca üçü poliçe genel şartlarını yayımlıyor | Şeffaflık | kktc sigorta poliçe genel şartları | `/tr/sirketler/` · `/tr/metodoloji/` | Yayımlamayan şirketlerin gerekçesi sorulmadı |
 | 19 | ⬜ | Türkiye'den KKTC'ye taşınırken poliçenizde ne değişir | Ayrım | türkiyeden kktc ye taşınma sigorta | `/tr/sigorta/trafik/` · `/tr/sigorta/saglik/` | TR poliçesinin devir usulü doğrulanmadı |
 | 20 | ⬜ | Kaçan araç çarptıysa KKTC'de ne yapılır | Hasar | kktc kaçan araç çarptı sigorta | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` | Fonun başvuru süresi doğrulanmadı |
-| 21 | ⬜ | KKTC'de online poliçe kesebilen şirketler | Şirket seçimi | kktc online sigorta poliçe | `/tr/sirketler/` | Online akışların hepsi test edilmedi |
+| 21 | ✅ | KKTC'de online poliçe kesebilen şirketler — **M9 ile karşılandı**, ayrıca yazılmayacak (§ sorgu sahipliği) | Şirket seçimi | kktc online sigorta poliçe | `/tr/rehber/kktc-online-trafik-sigortasi/` | Online akışların hepsi test edilmedi — M9'da ilan edildi |
 | 22 | ⬜ | Üç aydan uzun ikamette sağlık sigortası şartı | Yabancılar | kktc ikamet sağlık sigortası zorunlu | `/tr/rehber/ogrenci-saglik-sigortasi/` · `/tr/sigorta/saglik/` | Hangi poliçe türünün kabul edildiği net değil |
 | 23 | ⬜ | KKTC'de kasko poliçesinde sık atlanan maddeler | Ürün | kktc kasko poliçe kapsam | `/tr/sigorta/kasko/` | Kasko fiyat aralığı yalnızca ticari kaynakta |
 | 24 | ✅ | Puanlama modelimiz neden mali gücü içermiyor — **`/tr/metodoloji/` ile karşılandı**, ayrıca yazılmayacak. Hedef sorgu M6'ya devredildi (bkz. `03-marka-sorgulari.md` §10) | Şeffaflık | — | `/tr/metodoloji/` | Ödenmiş sermaye verisi yayımlanmıyor — metodoloji sayfasında ilan edildi |
@@ -81,6 +81,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | M6 | ⬜ | Bir sigorta şirketinin güvenilirliğini KKTC'de neye bakarak ölçebilirsiniz | Şeffaflık | kktc sigorta şirketi güvenilir mi | `/tr/metodoloji/` · `/tr/sirketler/` | Mali güç ve hasar ödemesi hiçbir şirkette ölçülemiyor |
 | M7 | ⬜ | İki sigorta şirketinin sitesi aynı IP'de: Eurocity ve EIG | Şeffaflık | kktc eurocity eig sigorta aynı mı | `/tr/sirketler/karsilastirma/eurocity-sigorta-eig-sigorta/` | **Mülkiyet yorumu yazılmaz** — ortak barındırma da aynı sonucu verir |
 | M8 | ⬜ | Türkiye'deki sigorta şubesinden KKTC'de poliçe almak | Ayrım | kktc türkiye sigorta şubesi | `/tr/sirketler/karsilastirma/anadolu-sigorta-kktc-turkiye/` · `/tr/sigorta/trafik/` | KKTC şubelerine hangi mevzuatın uygulandığı doğrulanmadı |
+| M9 | ⬜ | KKTC'de trafik sigortasını online yaptırmak gerçekten mümkün mü | Şirket seçimi | kktc online trafik sigortası | `/tr/sigorta/trafik/` · `/tr/sirketler/trafik/` · `/tr/rehber/kktc-taban-tarife/` | Online akışların hiçbiri uçtan uca test edilmedi; e-poliçenin kâğıt poliçeyle hukuki eşdeğerliği doğrulanmadı |
 
 > **M satırları** marka sorgularını besleyen hub yazılarıdır
 > (`copy/03-marka-sorgulari.md` §10). Sayı yerine M öneki taşırlar; böylece
@@ -111,7 +112,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 |---|---|---|---|---|---|---|
 | 40 | ⬜ | Sigorta şirketiniz cevap vermiyorsa şikâyet zinciri | Hasar | kktc sigorta şikayet nereye | `/tr/duzeltme/` · `/tr/rehber/kaza-sonrasi-ilk-48-saat/` | Merkezî şikâyet mercii tespit edilemedi |
 | 41 | ⬜ | AB tüketici mekanizmaları KKTC'de neden işlemez | Yabancılar | north cyprus insurance complaint | `/tr/metodoloji/` | KKTC şirketlerinin AB şema dışılığı resmî metinle doğrulanmadı |
-| 42 | ⬜ | KKTC'de online teklif veren şirketler | Şirket seçimi | kktc online sigorta teklif | `/tr/sirketler/` | Teklif ekranlarının fiyat verip vermediği test edilmedi |
+| 42 | ✅ | KKTC'de online teklif veren şirketler — **M9 ile karşılandı**, ayrıca yazılmayacak (§ sorgu sahipliği) | Şirket seçimi | kktc online sigorta teklif | `/tr/rehber/kktc-online-trafik-sigortasi/` | Teklif ekranlarının fiyat verip vermediği test edilmedi — M9'da ilan edildi |
 | 43 | ⬜ | Aynı IP adresinde iki ruhsatlı sigorta şirketi | Şeffaflık | kktc sigorta şirketi ruhsat | `/tr/sirketler/` · `/tr/duzeltme/` | Bağlantının niteliği doğrulanamadı |
 | 44 | ⬜ | Ehliyetsiz sürücünün yaptığı kazada haklarınız | Hasar | kktc ehliyetsiz sürücü kaza sigorta | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` | Fonun rücu usulü doğrulanmadı |
 | 45 | ⬜ | KKTC'de ev satın alan yabancı için konut sigortası | Yabancılar | kuzey kıbrıs ev sigortası yabancı | `/tr/sigorta/konut/` | Tapu sürecinde sigorta şartı olup olmadığı belirsiz |
@@ -139,7 +140,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | 62 | ⬜ | Türkiye şubesi olarak çalışan şirketler | Şirket seçimi | kktc türkiye sigorta şubesi | `/tr/sirketler/` | Şube-ortaklık ayrımı Birlik listesinde net değil |
 | 63 | ⬜ | Emeklilikte KKTC'ye yerleşenler için sağlık | Yabancılar | kuzey kıbrıs emekli sağlık sigortası | `/tr/sigorta/saglik/` | Yaş üst sınırı politikaları yayımlı değil |
 | 64 | ⬜ | Polis raporu hasar dosyasında ne işe yarar | Hasar | kktc kaza polis raporu sigorta | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` | Raporun zorunlu olduğu haller doğrulanmadı |
-| 65 | ⬜ | Online sigorta KKTC'de nereye kadar mümkün | Ürün | kktc online sigorta | `/tr/sirketler/` · `/tr/sigorta/trafik/` | Uçtan uca dijital akış oranı ölçülmedi |
+| 65 | ⬜ | Trafik dışında online sigorta KKTC'de nereye kadar mümkün | Ürün | kktc online sigorta | `/tr/rehber/kktc-online-trafik-sigortasi/` · `/tr/sirketler/` | Trafik dışı branşlarda online akış hiç ölçülmedi |
 
 ## Ocak 2027
 
