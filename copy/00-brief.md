@@ -84,7 +84,8 @@ Bunlardan birini yazmak sitenin tek iddiasını çürütür.
 | KKTC'de zorunlu deprem sigortası (DASK benzeri) | Var olduğuna dair kanıt yok. |
 | "SEDDK", "Sigorta Tahkim Komisyonu (TR)", "SBM" | KKTC'de karşılıkları: Para Kambiyo Dairesi, KKSRSB Tahkim Komisyonu, KKSBM |
 | Standart hasar ihbar süresi (örn. "5 iş günü") | KKTC'ye özgü süre tespit edilemedi. |
-| Tahkim ücreti, limiti, süresi; Garanti Fonu ödeme limiti | Tüzük metinleri incelenmedi. |
+| Tahkim ücreti, limiti, süresi | Sigorta Tahkim Tüzüğü (28.02.2013) metni incelenmedi. |
+| Garanti Fonu bedeni zarar tavanı; başvuru zamanaşımı süresi | Tüzükte bedeni zarar için tutar yok; zamanaşımı Haksız Fiiller Yasası md. 68'e gönderiyor, o yasa okunmadı. |
 | Hayat dışı şirketler için asgari sermaye rakamı | 60/2010 md. 39 okunamadı. |
 | 2026 taban tarifesi | Yayımlanmadı. Sitedeki tablo **2025** tarifesidir, hep böyle etiketlenir. |
 | Sitenin adında "Sigorta Bilgi Merkezi" benzeri ifade | KKSBM gerçek bir resmî kurum — karışır. |
@@ -99,6 +100,8 @@ Bunlardan birini yazmak sitenin tek iddiasını çürütür.
 | 2024 toplam prim üretimi | Raporda iki çelişkili rakam var — hangisini kullandığımızı yazarız |
 | 2025 taban tarife tablosu | "PDF metin katmanı kısmen bozuk; okunamayan 4 satır dahil edilmedi" |
 | 3 aydan uzun ikamette sağlık sigortası zorunluluğu | "hangi türün kabul edildiği net değil" |
+| Garanti Fonu mal zararı tavanı 50.000 ₺ | Zorunlu Sigortalar Garanti Fonu Tüzüğü md. 14 — tüzük metni Eylül 2026'da okundu. Aynı madde ödemelerin "cemile mahiyetinde" olduğunu söyler; tavan yazılırken bu ibare de yazılır. |
+| Genel şartlar metninden gelen süreler (örn. yangın genel şartları md. B.1.1'deki 2 iş günü) | "Bu süre bir tüzükten değil, poliçe genel şartlarından gelir; mevzuatta genel bir hasar ihbar süresi yazmıyor. Diğer branşlara genellenmez." Etiket olmadan yazılmaz. |
 
 ---
 
