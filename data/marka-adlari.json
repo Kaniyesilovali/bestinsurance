@@ -182,5 +182,13 @@
       "SEGURE INSURANCE LTD.",
       "SEGURE INSURANCE"
     ]
+  },
+  "_gorunen_aciklama": "Ana sayfadaki ilk beş sıralama satırında görünen kısa ad. Tam ticari unvan değil, markanın okunur hâli. Büyük/küçük harf ALGORİTMAYLA türetilmez: Türkçe I→ı kuralı yabancı markada yanlış sonuç verir (CREDITWEST → 'Credıtwest') ve tire kaybı sitenin ayırmaya çalıştığı karışıklığı üretir (AS-CAN → 'Ascan'). Bu yüzden her ad elle yazılır. Listede olmayan bir şirket ilk beşe girerse data/uret-sirketler.py durur ve adı ister.",
+  "gorunen_adlar": {
+    "dagli-sigorta": "Dağlı Sigorta",
+    "limasol-sigorta": "Limasol Sigorta",
+    "kibris-sigorta": "Kıbrıs Sigorta",
+    "can-sigorta": "Can Sigorta",
+    "creditwest-sigorta": "Creditwest Sigorta"
   }
 }

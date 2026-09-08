@@ -1,30 +1,45 @@
 {
   "_aciklama": "Sitenin tek yapılandırma dosyası. Alan adı, menü ve dil rotaları burada. Değiştirip 'python3 _build/uret.py' çalıştırın; tüm sayfalar güncellenir.",
-
   "alan_adi": "https://kktcsigortamerkezi.com",
   "site_adi": "KKTC Sigorta Merkezi",
   "site_adi_kisa": "KKTC Sigorta",
   "site_aciklamasi": "Kuzey Kıbrıs'taki sigorta şirketlerini bağımsız olarak değerlendiren bilgi sitesi.",
   "varsayilan_dil": "tr",
-
   "_dogrulama_notu": "Arama motoru doğrulama etiketleri. Anahtar = meta name, değer = content. Boş bırakılan satır basılmaz.",
   "dogrulama": {
     "google-site-verification": "U6pbUY2--Tr7Wf_cGEILrNs2R-_b34ttosJH84rCX-M"
   },
-
   "yayin": {
     "noindex": false,
     "_noindex_notu": "5 Ağustos 2026'da false yapıldı — site aramaya açıldı. true iken her sayfaya noindex eklenir, sitemap üretilmez ve robots.txt her şeyi kapatır.",
     "sayfa_basina_yazi": 12
   },
-
   "diller": {
-    "tr": { "ad": "Türkçe", "kisa": "TR", "og_locale": "tr_TR", "dir": "ltr" },
-    "en": { "ad": "English", "kisa": "EN", "og_locale": "en_GB", "dir": "ltr" },
-    "ru": { "ad": "Русский", "kisa": "RU", "og_locale": "ru_RU", "dir": "ltr" },
-    "fa": { "ad": "فارسی", "kisa": "FA", "og_locale": "fa_IR", "dir": "rtl" }
+    "tr": {
+      "ad": "Türkçe",
+      "kisa": "TR",
+      "og_locale": "tr_TR",
+      "dir": "ltr"
+    },
+    "en": {
+      "ad": "English",
+      "kisa": "EN",
+      "og_locale": "en_GB",
+      "dir": "ltr"
+    },
+    "ru": {
+      "ad": "Русский",
+      "kisa": "RU",
+      "og_locale": "ru_RU",
+      "dir": "ltr"
+    },
+    "fa": {
+      "ad": "فارسی",
+      "kisa": "FA",
+      "og_locale": "fa_IR",
+      "dir": "rtl"
+    }
   },
-
   "blog": {
     "tr": {
       "kok": "/tr/rehber/",
@@ -39,22 +54,67 @@
       "konu_kok": "/en/guides/topic/"
     }
   },
-
   "menu": {
     "tr": [
-      { "id": "sirketler",  "url": "/tr/sirketler/",        "ad": "Şirketler",        "mobil_ad": "Şirketler" },
-      { "id": "trafik",     "url": "/tr/sigorta/trafik/",   "ad": "Trafik",           "mobil_ad": "Trafik sigortası" },
-      { "id": "kasko",      "url": "/tr/sigorta/kasko/",    "ad": "Kasko",            "mobil_ad": "Kasko" },
-      { "id": "saglik",     "url": "/tr/sigorta/saglik/",   "ad": "Sağlık",           "mobil_ad": "Sağlık sigortası" },
-      { "id": "rehber",     "url": "/tr/rehber/",           "ad": "Rehber",           "mobil_ad": "Rehber" },
-      { "id": "metodoloji", "url": "/tr/metodoloji/",       "ad": "Nasıl puanlıyoruz", "mobil_ad": "Nasıl puanlıyoruz" }
+      {
+        "id": "sirketler",
+        "url": "/tr/sirketler/",
+        "ad": "Şirketler",
+        "mobil_ad": "Şirketler"
+      },
+      {
+        "id": "trafik",
+        "url": "/tr/sigorta/trafik/",
+        "ad": "Trafik",
+        "mobil_ad": "Trafik sigortası"
+      },
+      {
+        "id": "kasko",
+        "url": "/tr/sigorta/kasko/",
+        "ad": "Kasko",
+        "mobil_ad": "Kasko"
+      },
+      {
+        "id": "saglik",
+        "url": "/tr/sigorta/saglik/",
+        "ad": "Sağlık",
+        "mobil_ad": "Sağlık sigortası"
+      },
+      {
+        "id": "rehber",
+        "url": "/tr/rehber/",
+        "ad": "Rehber",
+        "mobil_ad": "Rehber"
+      },
+      {
+        "id": "metodoloji",
+        "url": "/tr/metodoloji/",
+        "ad": "Nasıl puanlıyoruz",
+        "mobil_ad": "Nasıl puanlıyoruz"
+      }
     ],
-    "_en_notu": "EN menüsü yalnızca üretilmiş adresleri taşır. Yeni bir EN sayfası eklendiğinde satırı buraya girilir; girilmeyen sayfa menüde görünmez ama üretilir.",
+    "_en_notu": "EN menüsü dil katmanı büyüdükçe genişler. Yalnızca ÜRETİLMİŞ sayfalar menüye girer — üretilmemiş bir adres menüye yazılırsa her EN sayfasında kırık bağlantı doğar. Sıra: Blok B sağlık ve seyahati, Blok C kasko/konut/işyerini ekler (bkz. copy/04-dil-katmani.md §6).",
     "en": [
-      { "id": "trafik", "url": "/en/insurance/motor-third-party/", "ad": "Compulsory motor", "mobil_ad": "Compulsory motor" }
+      {
+        "id": "sirketler",
+        "url": "/en/companies/",
+        "ad": "Companies",
+        "mobil_ad": "Companies"
+      },
+      {
+        "id": "trafik",
+        "url": "/en/insurance/motor-third-party/",
+        "ad": "Compulsory motor",
+        "mobil_ad": "Compulsory motor"
+      },
+      {
+        "id": "metodoloji",
+        "url": "/en/methodology/",
+        "ad": "How we score",
+        "mobil_ad": "How we score"
+      }
     ]
   },
-
   "footer": {
     "tr": {
       "uyari": "Bu sitedeki bilgiler genel bilgilendirme amaçlıdır, sigorta tavsiyesi değildir. Poliçe kararı vermeden önce şirketin güncel poliçe şartlarını okuyun. Puanlar dışarıdan gözlemlenebilir ölçütlere dayanır; mali güç ve hasar ödeme performansı puanlanmamaktadır.",
@@ -63,32 +123,74 @@
           "baslik": "Sigorta türleri",
           "aria": "Sigorta türleri",
           "baglantilar": [
-            { "url": "/tr/sigorta/trafik/",  "ad": "Zorunlu trafik" },
-            { "url": "/tr/sigorta/kasko/",   "ad": "Kasko" },
-            { "url": "/tr/sigorta/saglik/",  "ad": "Sağlık" },
-            { "url": "/tr/sigorta/konut/",   "ad": "Konut" },
-            { "url": "/tr/sigorta/seyahat/", "ad": "Seyahat" },
-            { "url": "/tr/sigorta/isyeri/",  "ad": "İşyeri" }
+            {
+              "url": "/tr/sigorta/trafik/",
+              "ad": "Zorunlu trafik"
+            },
+            {
+              "url": "/tr/sigorta/kasko/",
+              "ad": "Kasko"
+            },
+            {
+              "url": "/tr/sigorta/saglik/",
+              "ad": "Sağlık"
+            },
+            {
+              "url": "/tr/sigorta/konut/",
+              "ad": "Konut"
+            },
+            {
+              "url": "/tr/sigorta/seyahat/",
+              "ad": "Seyahat"
+            },
+            {
+              "url": "/tr/sigorta/isyeri/",
+              "ad": "İşyeri"
+            }
           ]
         },
         {
           "baslik": "Site",
           "aria": "Site",
           "baglantilar": [
-            { "url": "/tr/sirketler/",   "ad": "Şirketler" },
-            { "url": "/tr/metodoloji/",  "ad": "Puanlama yöntemi" },
-            { "url": "/tr/rehber/",      "ad": "Rehber" },
-            { "url": "/tr/hakkimizda/",  "ad": "Hakkımızda" },
-            { "url": "/tr/iletisim/",    "ad": "İletişim" }
+            {
+              "url": "/tr/sirketler/",
+              "ad": "Şirketler"
+            },
+            {
+              "url": "/tr/metodoloji/",
+              "ad": "Puanlama yöntemi"
+            },
+            {
+              "url": "/tr/rehber/",
+              "ad": "Rehber"
+            },
+            {
+              "url": "/tr/hakkimizda/",
+              "ad": "Hakkımızda"
+            },
+            {
+              "url": "/tr/iletisim/",
+              "ad": "İletişim"
+            }
           ]
         },
         {
           "baslik": "Yasal",
           "aria": "Yasal",
           "baglantilar": [
-            { "url": "/tr/yasal-uyari/", "ad": "Yasal uyarı" },
-            { "url": "/tr/gizlilik/",    "ad": "Gizlilik" },
-            { "url": "/tr/duzeltme/",    "ad": "Düzeltme talebi" }
+            {
+              "url": "/tr/yasal-uyari/",
+              "ad": "Yasal uyarı"
+            },
+            {
+              "url": "/tr/gizlilik/",
+              "ad": "Gizlilik"
+            },
+            {
+              "url": "/tr/duzeltme/",
+              "ad": "Düzeltme talebi"
+            }
           ]
         }
       ],
@@ -101,25 +203,67 @@
           "baslik": "Insurance types",
           "aria": "Insurance types",
           "baglantilar": [
-            { "url": "/en/insurance/motor-third-party/", "ad": "Compulsory motor" }
+            {
+              "url": "/en/insurance/motor-third-party/",
+              "ad": "Compulsory motor"
+            }
           ]
         }
       ],
       "telif": "© 2026 KKTC Sigorta Merkezi. All rights reserved."
     }
   },
-
   "_rotalar_notu": "Bir sayfanın dört dildeki adresi. Anahtar = TR adresi. hreflang, dil değiştirici ve sitemap bunu kullanır. Yeni blog yazıları buraya YAZILMAZ — onların rotası yazı dosyasındaki 'ceviriler' alanından gelir.",
   "rotalar": {
-    "/tr/":                   { "en": "/en/",                              "ru": "/ru/",                             "fa": "/fa/" },
-    "/tr/sirketler/":         { "en": "/en/companies/",                    "ru": "/ru/kompanii/",                    "fa": "/fa/companies/" },
-    "/tr/metodoloji/":        { "en": "/en/methodology/",                  "ru": "/ru/metodologiya/",                "fa": "/fa/methodology/" },
-    "/tr/sigorta/trafik/":    { "en": "/en/insurance/motor-third-party/",  "ru": "/ru/strahovanie/osago/",           "fa": "/fa/insurance/motor-third-party/" },
-    "/tr/sigorta/kasko/":     { "en": "/en/insurance/comprehensive/",      "ru": "/ru/strahovanie/kasko/",           "fa": "/fa/insurance/comprehensive/" },
-    "/tr/sigorta/saglik/":    { "en": "/en/insurance/health/",             "ru": "/ru/strahovanie/zdorove/",         "fa": "/fa/insurance/health/" },
-    "/tr/sigorta/konut/":     { "en": "/en/insurance/home/",               "ru": "/ru/strahovanie/zhilje/",          "fa": "/fa/insurance/home/" },
-    "/tr/sigorta/seyahat/":   { "en": "/en/insurance/travel/",             "ru": "/ru/strahovanie/puteshestvie/",    "fa": "/fa/insurance/travel/" },
-    "/tr/sigorta/isyeri/":    { "en": "/en/insurance/business/",           "ru": "/ru/strahovanie/biznes/",          "fa": "/fa/insurance/business/" },
-    "/tr/rehber/":            { "en": "/en/guides/",                       "ru": "/ru/rukovodstvo/",                 "fa": "/fa/guides/" }
+    "/tr/": {
+      "en": "/en/",
+      "ru": "/ru/",
+      "fa": "/fa/"
+    },
+    "/tr/sirketler/": {
+      "en": "/en/companies/",
+      "ru": "/ru/kompanii/",
+      "fa": "/fa/companies/"
+    },
+    "/tr/metodoloji/": {
+      "en": "/en/methodology/",
+      "ru": "/ru/metodologiya/",
+      "fa": "/fa/methodology/"
+    },
+    "/tr/sigorta/trafik/": {
+      "en": "/en/insurance/motor-third-party/",
+      "ru": "/ru/strahovanie/osago/",
+      "fa": "/fa/insurance/motor-third-party/"
+    },
+    "/tr/sigorta/kasko/": {
+      "en": "/en/insurance/comprehensive/",
+      "ru": "/ru/strahovanie/kasko/",
+      "fa": "/fa/insurance/comprehensive/"
+    },
+    "/tr/sigorta/saglik/": {
+      "en": "/en/insurance/health/",
+      "ru": "/ru/strahovanie/zdorove/",
+      "fa": "/fa/insurance/health/"
+    },
+    "/tr/sigorta/konut/": {
+      "en": "/en/insurance/home/",
+      "ru": "/ru/strahovanie/zhilje/",
+      "fa": "/fa/insurance/home/"
+    },
+    "/tr/sigorta/seyahat/": {
+      "en": "/en/insurance/travel/",
+      "ru": "/ru/strahovanie/puteshestvie/",
+      "fa": "/fa/insurance/travel/"
+    },
+    "/tr/sigorta/isyeri/": {
+      "en": "/en/insurance/business/",
+      "ru": "/ru/strahovanie/biznes/",
+      "fa": "/fa/insurance/business/"
+    },
+    "/tr/rehber/": {
+      "en": "/en/guides/",
+      "ru": "/ru/rukovodstvo/",
+      "fa": "/fa/guides/"
+    }
   }
 }
