@@ -1,7 +1,7 @@
 # Yayın kuyruğu — KKTC Sigorta Merkezi
 
-**Oluşturma:** 3 Ağustos 2026 · **Kapsam:** 86 yazı ≈ 29 hafta (Pzt · Çrş · Cum)
-**Durum:** 6 yayında · 80 bekliyor
+**Oluşturma:** 3 Ağustos 2026 · **Kapsam:** 87 yazı (78 numaralı + 9 M) ≈ 29 hafta (Pzt · Çrş · Cum)
+**Durum:** 7 yayında · 77 bekliyor · 3 dil katmanına devredildi (`⛔`)
 **Dayanak:** `copy/01-icerik-stratejisi.md` sütunları · `copy/00-brief.md` ⛔ tablosu ·
 `data/arastirma-kktc-sigorta.md`
 
@@ -111,7 +111,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | № | Durum | Başlık | Kategori | Hedef sorgu | Zorunlu bağlantı | İlan edilecek boşluk |
 |---|---|---|---|---|---|---|
 | 40 | ⬜ | Sigorta şirketiniz cevap vermiyorsa şikâyet zinciri | Hasar | kktc sigorta şikayet nereye | `/tr/duzeltme/` · `/tr/rehber/kaza-sonrasi-ilk-48-saat/` | Merkezî şikâyet mercii tespit edilemedi |
-| 41 | ⬜ | AB tüketici mekanizmaları KKTC'de neden işlemez | Yabancılar | north cyprus insurance complaint | `/tr/metodoloji/` | KKTC şirketlerinin AB şema dışılığı resmî metinle doğrulanmadı |
+| 41 | ⛔ | AB tüketici mekanizmaları KKTC'de neden işlemez — **EN katmanına devredildi** (`04-dil-katmani.md` §7); hedef sorgu İngilizce, TR yazıyla karşılanamaz | Yabancılar | north cyprus insurance complaint | `/en/methodology/` | KKTC şirketlerinin AB şema dışılığı resmî metinle doğrulanmadı |
 | 42 | ✅ | KKTC'de online teklif veren şirketler — **M9 ile karşılandı**, ayrıca yazılmayacak (§ sorgu sahipliği) | Şirket seçimi | kktc online sigorta teklif | `/tr/rehber/kktc-online-trafik-sigortasi/` | Teklif ekranlarının fiyat verip vermediği test edilmedi — M9'da ilan edildi |
 | 43 | ⬜ | Aynı IP adresinde iki ruhsatlı sigorta şirketi | Şeffaflık | kktc sigorta şirketi ruhsat | `/tr/sirketler/` · `/tr/duzeltme/` | Bağlantının niteliği doğrulanamadı |
 | 44 | ⬜ | Ehliyetsiz sürücünün yaptığı kazada haklarınız | Hasar | kktc ehliyetsiz sürücü kaza sigorta | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` | Fonun rücu usulü doğrulanmadı |
@@ -135,7 +135,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | 57 | ⬜ | Mobil uygulaması olan KKTC sigorta şirketleri | Şirket seçimi | kktc sigorta mobil uygulama | `/tr/sirketler/` | Uygulamaların içeride ne yaptığı test edilmedi |
 | 58 | ⬜ | Nakliyat sigortası: KKTC'ye mal getiren için | Ürün | kktc nakliyat sigortası | `/tr/sirketler/` | Liman ve gümrük şartları doğrulanmadı |
 | 59 | ⬜ | Hasar ihbarını kaç gün içinde yapmalısınız | Hasar | kktc hasar ihbar süresi | `/tr/rehber/kaza-sonrasi-ilk-48-saat/` | KKTC'ye özgü süre tespit edilemedi |
-| 60 | ⬜ | İngilizce hizmet veren şirketler nasıl bulunur | Yabancılar | north cyprus english speaking insurance | `/tr/sirketler/` | Hizmetin gerçekten İngilizce verildiği test edilmedi |
+| 60 | ⛔ | İngilizce hizmet veren şirketler nasıl bulunur — **EN katmanına devredildi** (`04-dil-katmani.md` §7); sahibi `/en/companies/` | Yabancılar | north cyprus english speaking insurance | `/en/companies/` | Hizmetin gerçekten İngilizce verildiği test edilmedi |
 | 61 | ⬜ | Kurumsal e-posta neden bir şeffaflık göstergesi | Şeffaflık | kktc sigorta şirketi iletişim | `/tr/metodoloji/` · `/tr/sirketler/` | Ölçütün sınırı: küçük şirket dezavantajlı olabilir |
 | 62 | ⬜ | Türkiye şubesi olarak çalışan şirketler | Şirket seçimi | kktc türkiye sigorta şubesi | `/tr/sirketler/` | Şube-ortaklık ayrımı Birlik listesinde net değil |
 | 63 | ⬜ | Emeklilikte KKTC'ye yerleşenler için sağlık | Yabancılar | kuzey kıbrıs emekli sağlık sigortası | `/tr/sigorta/saglik/` | Yaş üst sınırı politikaları yayımlı değil |
@@ -155,7 +155,7 @@ sütunundaki her ifade bu niteliği taşır; taşımayan bir hedef kuyruğa girm
 | 72 | ⬜ | 2024 raporundaki iki farklı prim rakamı | Şeffaflık | kktc sigorta sektörü büyüklüğü | `/tr/metodoloji/` | Hangi rakamın doğru olduğu Birlik'e sorulmadı |
 | 73 | ⬜ | Yat sigortası: KKTC'de dar bir pazar | Ürün | kktc yat sigortası | `/tr/sirketler/` | Marina şartları ve kapsam doğrulanmadı |
 | 74 | ⬜ | 36/2025 reformu sigortalı için ne değiştirdi | Ayrım | kktc sigorta yasası değişiklik | `/tr/metodoloji/` | Yürürlük takvimi ve geçiş hükümleri okunmadı |
-| 75 | ⬜ | Rusça hizmet: KKTC sigortasında gerçek durum | Yabancılar | северный кипр страхование | `/tr/sirketler/` | İki şirket dışında Rusça hizmet doğrulanamadı |
+| 75 | ⛔ | Rusça hizmet: KKTC sigortasında gerçek durum — **RU katmanına devredildi** (`04-dil-katmani.md` §7); sahibi `/ru/kompanii/` | Yabancılar | северный кипр страхование | `/ru/kompanii/` | İki şirket dışında Rusça hizmet doğrulanamadı |
 | 76 | ⬜ | Kasko mu trafik mi: KKTC'de ne farkı var | Ayrım | kktc kasko trafik farkı | `/tr/sigorta/kasko/` · `/tr/sigorta/trafik/` | Kasko fiyat aralığı yalnızca ticari kaynakta |
 | 77 | ⬜ | Sigortasız araç kullanmanın KKTC'deki sonucu | Ayrım | kktc sigortasız araç cezası | `/tr/sigorta/trafik/` | **Ceza tutarı yazılmaz** — Fasıl 333 md. 17 okunmadı |
 | 78 | ⬜ | Taban primlerdeki artış sigortalı için ne anlama geliyor | Şeffaflık | kktc sigorta zam | `/tr/sigorta/trafik/` | 2026 tarifesi yayımlanmadı; karşılaştırma yapılamıyor |

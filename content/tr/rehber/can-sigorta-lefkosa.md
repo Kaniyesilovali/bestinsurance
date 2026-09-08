@@ -5,7 +5,7 @@ kisa_baslik: "Can Sigorta"
 aciklama: "Can Sigorta Lefkoşa merkezli, 1958 kuruluş beyanlı yerel bir şirket. Ortaköy adresi, dokuz branşı, online hizmetleri ve altı ölçütte aldığı bağımsız 6,9 puan."
 ozet: "Lefkoşa Ortaköy merkezli, listedeki en eski kuruluş beyanına sahip yerel şirket. Dijital hizmette güçlü, erişilebilirlikte zayıf. Benzer adlı As-Can Sigorta ile karıştırılmaması gereken ayrı bir tüzel kişilik."
 giris: "Can Sigorta'nın Lefkoşa adresi, hangi branşlarda poliçe verdiği ve altı ölçütte aldığı puan bir arada. Rakamların tamamı şirketin kendi yayınlarından; doğrulayamadıklarımızı da yazdık."
-kategori: Şirket
+kategori: Şirket seçimi
 tarih: 2026-08-24
 guncelleme: 2026-08-24
 og_baslik: "Can Sigorta Lefkoşa"
