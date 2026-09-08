@@ -1771,6 +1771,35 @@ class Uretici:
 </html>
 """)
 
+    def sunucu_ayari(self):
+        """dist/.htaccess — Apache'ye üretilen 404 sayfasını kullandırır.
+
+        Bu dosya olmadan iki şey birden bozuk kalıyordu:
+
+        1. `404.html` üretiliyor ama sunucu ondan habersiz olduğu için hiç
+           gösterilmiyordu; ziyaretçi hosting'in jenerik sayfasını görüyordu.
+        2. Silinen bir sayfanın klasörü sunucuda boş kalınca sunucu o adrese
+           **200** ile cevap veriyordu. Gövdede "404 Not Found" yazarken statü
+           200 dönmesi soft-404'tür: arama motoru sayfayı geçerli sayıp
+           indeksleyebilir. Sitenin tamamı arama görünürlüğü üzerine kurulu
+           olduğu için bu kalıntılar birikirse zarar verir.
+
+        `Options -Indexes` ikinci maddenin kaynağını kapatır; 403 da 404'e
+        yönlendirilir çünkü ziyaretçi için ikisi aynı şeydir: sayfa yok.
+
+        YAYIN.md > Sunucu ayarları bu dosyayı zaten tarif ediyordu; üretimde
+        karşılığı yoktu. Elle `dist/` içine koymak işe yaramaz — `dist/` her
+        üretimde silinip yeniden yazılır.
+        """
+        yaz(CIKTI / ".htaccess", (
+            "# Bu dosya _build/uret.py > sunucu_ayari() tarafından üretilir.\n"
+            "# Elle düzenlemeyin: dist/ her üretimde yeniden yazılır.\n"
+            "\n"
+            "Options -Indexes\n"
+            "ErrorDocument 404 /404.html\n"
+            "ErrorDocument 403 /404.html\n"
+        ))
+
     def sayfa_404(self):
         dil = self.yapilandirma["varsayilan_dil"]
         bag = self.baglam(dil=dil, url="/404.html", baslik="Sayfa bulunamadı",
@@ -1867,6 +1896,7 @@ class Uretici:
         self.robots(sitemap_var)
         self.kok_yonlendirme()
         self.sayfa_404()
+        self.sunucu_ayari()
 
         print(f"  {len(self.sayfalar):>3} sayfa")
         print(f"  {len(self.yazilar):>3} blog yazısı")
