@@ -1,4 +1,4 @@
-{# Reklam bandı. Metin ve numara site.json > reklam içinden gelir.
+{# Reklam bandı. Metin ve adres site.json > reklam içinden gelir.
    O blok bir dilde yoksa bant o dilde hiç basılmaz. #}
 {%- if reklam %}
 <section class="bg-white" aria-labelledby="reklam-baslik">
@@ -14,8 +14,8 @@
         {%- endif %}
       </div>
       <div class="shrink-0 sm:text-end">
-        <a href="{{ reklam.telefon_baglanti }}" class="btn u-num"
-           {% if reklam.eylem_aria %}aria-label="{{ reklam.eylem_aria }}"{% endif %}>{{ reklam.telefon }}</a>
+        <a href="{{ reklam.adres_baglanti }}" class="btn max-w-full text-center"
+           {% if reklam.eylem_aria %}aria-label="{{ reklam.eylem_aria }}"{% endif %}>{{ reklam.adres }}</a>
         {%- if reklam.eylem %}
         <p class="u-cap mt-2">{{ reklam.eylem }}</p>
         {%- endif %}

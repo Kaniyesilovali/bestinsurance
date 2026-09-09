@@ -365,22 +365,22 @@
     "tr": {
       "etiket": "Reklam",
       "baslik": "Bu sitede reklam verin",
-      "metin": "Sitenin reklam ve sponsorluk anlaşmalarını Mercan yürütüyor. Anlaşma koşullarını konuşmak için telefonla ulaşın.",
+      "metin": "Sitenin reklam ve sponsorluk anlaşmalarını Mercan yürütüyor. Anlaşma koşullarını konuşmak için e-postayla ulaşın.",
       "dipnot": "Reklam anlaşmaları bir şirketin bu sitedeki kaydını etkilemez.",
-      "eylem": "Anlaşma için arayın",
-      "telefon": "+90 (501) 035 56 05",
-      "telefon_baglanti": "tel:+905010355605",
-      "eylem_aria": "Mercan'ı arayın: +90 501 035 56 05"
+      "eylem": "Anlaşma için yazın",
+      "adres": "info@kktcsigortamerkezi.com",
+      "adres_baglanti": "mailto:info@kktcsigortamerkezi.com",
+      "eylem_aria": "Mercan'a e-posta gönderin: info@kktcsigortamerkezi.com"
     },
     "en": {
       "etiket": "Advertising",
       "baslik": "Advertise on this site",
-      "metin": "Advertising and sponsorship on this site is handled by Mercan. Call to discuss terms.",
+      "metin": "Advertising and sponsorship on this site is handled by Mercan. Email us to discuss terms.",
       "dipnot": "Advertising deals do not affect a company's entry on this site.",
-      "eylem": "Call to arrange a deal",
-      "telefon": "+90 (501) 035 56 05",
-      "telefon_baglanti": "tel:+905010355605",
-      "eylem_aria": "Call Mercan: +90 501 035 56 05"
+      "eylem": "Email to arrange a deal",
+      "adres": "info@kktcsigortamerkezi.com",
+      "adres_baglanti": "mailto:info@kktcsigortamerkezi.com",
+      "eylem_aria": "Email Mercan: info@kktcsigortamerkezi.com"
     }
   },
   "_rotalar_notu": "Bir sayfanın dört dildeki adresi. Anahtar = TR adresi. hreflang, dil değiştirici ve sitemap bunu kullanır. Yeni blog yazıları buraya YAZILMAZ — onların rotası yazı dosyasındaki 'ceviriler' alanından gelir.",
