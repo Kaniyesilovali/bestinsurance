@@ -14,8 +14,14 @@
         {%- endif %}
       </div>
       <div class="shrink-0 sm:text-end">
+        {#- Cloudflare'in e-posta gizleme özelliği mailto'yu /cdn-cgi/ bağlantısına
+            çevirip buton yazısını "[email protected]" yapıyor; adres ancak onun
+            JavaScript'i çalışınca beliriyor. Bu blokta kapatıyoruz: sitenin geri
+            kalanı gibi bu düğme de JavaScript olmadan çalışmalı. #}
+        <!--email_off-->
         <a href="{{ reklam.adres_baglanti }}" class="btn max-w-full text-center"
            {% if reklam.eylem_aria %}aria-label="{{ reklam.eylem_aria }}"{% endif %}>{{ reklam.adres }}</a>
+        <!--/email_off-->
         {%- if reklam.eylem %}
         <p class="u-cap mt-2">{{ reklam.eylem }}</p>
         {%- endif %}
