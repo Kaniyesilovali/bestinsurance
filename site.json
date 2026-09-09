@@ -81,8 +81,8 @@
       "liste_ilke": {
         "baslik": "Doğrulayamadığımızı yazmıyoruz.",
         "metin": "Bu yazılarda birkaç yerde rakam yerine boşluk göreceksiniz: sigortasız araç cezası, hasarsızlık indirim oranları, hasar ihbar süresi, tahkim limitleri. Bunların hepsi KKTC için kamuya açık bir kaynakta bulunmuyor ve internetteki karşılıkları Türkiye'ye ait. Tahmin etmek yerine boş bırakıyoruz.",
-        "cta": "Nasıl çalıştığımızı okuyun",
-        "cta_url": "/tr/metodoloji/"
+        "cta": "Şirket listesini görün",
+        "cta_url": "/tr/sirketler/"
       },
       "liste_turler": {
         "baslik": "Sigorta türleri",
@@ -135,8 +135,8 @@
       "liste_ilke": {
         "baslik": "We do not write what we could not verify.",
         "metin": "In a few places these guides leave a blank where a figure would go: the penalty for driving uninsured, no-claims discount rates, the claim notification deadline, arbitration limits. None of them is published in a public TRNC source, and the figures circulating online belong to Türkiye. Rather than guess, we leave the space empty.",
-        "cta": "Read how we work",
-        "cta_url": "/en/methodology/"
+        "cta": "See the company list",
+        "cta_url": "/en/companies/"
       },
       "liste_turler": {
         "baslik": "Insurance types",
@@ -196,12 +196,6 @@
         "url": "/tr/rehber/",
         "ad": "Rehber",
         "mobil_ad": "Rehber"
-      },
-      {
-        "id": "metodoloji",
-        "url": "/tr/metodoloji/",
-        "ad": "Nasıl puanlıyoruz",
-        "mobil_ad": "Nasıl puanlıyoruz"
       }
     ],
     "_en_notu": "EN menüsü dil katmanı büyüdükçe genişler. Yalnızca ÜRETİLMİŞ sayfalar menüye girer — üretilmemiş bir adres menüye yazılırsa her EN sayfasında kırık bağlantı doğar. Blok B ve C ile altı madde tamamlandı: TR menüsünün birebir karşılığı (bkz. copy/04-dil-katmani.md §6).",
@@ -235,18 +229,12 @@
         "url": "/en/guides/",
         "ad": "Guides",
         "mobil_ad": "Guides"
-      },
-      {
-        "id": "metodoloji",
-        "url": "/en/methodology/",
-        "ad": "How we score",
-        "mobil_ad": "How we score"
       }
     ]
   },
   "footer": {
     "tr": {
-      "uyari": "Bu sitedeki bilgiler genel bilgilendirme amaçlıdır, sigorta tavsiyesi değildir. Poliçe kararı vermeden önce şirketin güncel poliçe şartlarını okuyun. Puanlar dışarıdan gözlemlenebilir ölçütlere dayanır; mali güç ve hasar ödeme performansı puanlanmamaktadır.",
+      "uyari": "Bu sitedeki bilgiler genel bilgilendirme amaçlıdır, sigorta tavsiyesi değildir. Poliçe kararı vermeden önce şirketin güncel poliçe şartlarını okuyun. Bilgiler şirketlerin kendi yayınlarından dışarıdan doğrulanmıştır; mali güç ve hasar ödeme performansı KKTC'de yayımlanmadığı için yer almaz.",
       "sutunlar": [
         {
           "baslik": "Sigorta türleri",
@@ -287,10 +275,6 @@
               "ad": "Şirketler"
             },
             {
-              "url": "/tr/metodoloji/",
-              "ad": "Puanlama yöntemi"
-            },
-            {
               "url": "/tr/rehber/",
               "ad": "Rehber"
             },
@@ -326,7 +310,7 @@
       "telif": "© 2026 KKTC Sigorta Merkezi. Tüm hakları saklıdır."
     },
     "en": {
-      "uyari": "The information on this site is general information, not insurance advice. Read the company's current policy conditions before making a decision. Scores are based on externally observable criteria; financial strength and claims-paying performance are not scored. TRNC insurers are not within EU insurance schemes, and the Republic of Cyprus Financial Ombudsman has no jurisdiction over a TRNC policy.",
+      "uyari": "The information on this site is general information, not insurance advice. Read the company's current policy conditions before making a decision. The information is verified from the companies' own publications; financial strength and claims-paying performance are not shown, because they are not published in the TRNC. TRNC insurers are not within EU insurance schemes, and the Republic of Cyprus Financial Ombudsman has no jurisdiction over a TRNC policy.",
       "sutunlar": [
         {
           "baslik": "Insurance types",
@@ -367,10 +351,6 @@
               "ad": "Companies"
             },
             {
-              "url": "/en/methodology/",
-              "ad": "How we score"
-            },
-            {
               "url": "/en/guides/",
               "ad": "Guides"
             }
@@ -386,7 +366,7 @@
       "etiket": "Reklam",
       "baslik": "Bu sitede reklam verin",
       "metin": "Sitenin reklam ve sponsorluk anlaşmalarını Mercan yürütüyor. Anlaşma koşullarını konuşmak için telefonla ulaşın.",
-      "dipnot": "Reklam anlaşmaları şirket puanlarını ve sıralamayı etkilemez.",
+      "dipnot": "Reklam anlaşmaları bir şirketin bu sitedeki kaydını etkilemez.",
       "eylem": "Anlaşma için arayın",
       "telefon": "+90 (501) 035 56 05",
       "telefon_baglanti": "tel:+905010355605",
@@ -396,7 +376,7 @@
       "etiket": "Advertising",
       "baslik": "Advertise on this site",
       "metin": "Advertising and sponsorship on this site is handled by Mercan. Call to discuss terms.",
-      "dipnot": "Advertising deals do not affect company scores or rankings.",
+      "dipnot": "Advertising deals do not affect a company's entry on this site.",
       "eylem": "Call to arrange a deal",
       "telefon": "+90 (501) 035 56 05",
       "telefon_baglanti": "tel:+905010355605",
@@ -414,11 +394,6 @@
       "en": "/en/companies/",
       "ru": "/ru/kompanii/",
       "fa": "/fa/companies/"
-    },
-    "/tr/metodoloji/": {
-      "en": "/en/methodology/",
-      "ru": "/ru/metodologiya/",
-      "fa": "/fa/methodology/"
     },
     "/tr/sigorta/trafik/": {
       "en": "/en/insurance/motor-third-party/",

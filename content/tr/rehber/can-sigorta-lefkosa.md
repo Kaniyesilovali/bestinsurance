@@ -72,7 +72,7 @@ Bu ölçüt "ne sattığını söylüyor"u ölçer, fiilen ne sattığını değ
 | Kurumsal geçmiş | %5 | 8,0 |
 | **Genel** | | **6,9** |
 
-Ölçütlerin tam tanımı ve nasıl hesaplandığı [puanlama metodolojisi](/tr/metodoloji/) sayfasında. Şirketin tüm alan verisi [Can Sigorta profilinde](/tr/sirketler/can-sigorta/).
+Şirketin tüm alan verisi [Can Sigorta profilinde](/tr/sirketler/can-sigorta/).
 
 ### Güçlü yanı: dijital hizmet
 
@@ -156,4 +156,3 @@ En çok puan kaybettiği ölçüt erişilebilirlik (4,0): ofisi yalnızca iki ş
 - **police.cansigorta.com** — online teklif, poliçe ve hasar ihbarı işlevleri doğrudan test edilerek doğrulandı. 22 Temmuz 2026'da görüldü.
 - **KKSRSB üye listesi** — https://www.kksrsb.org/uyelerimiz.html — şirketin Birlik üyesi ruhsatlı sigorta şirketi olduğu ve acente olmadığı buradan doğrulandı. 22 Temmuz 2026'da görüldü.
 - **As-Can Sigorta sitesi** — http://ascansigorta.com/ — karşılaştırma tablosundaki adres ve branş verisi. 22 Temmuz 2026'da görüldü.
-- **Puanlar** bu sitenin [metodolojisiyle](/tr/metodoloji/) hesaplandı; ölçüt tanımları ve ağırlıklar orada.

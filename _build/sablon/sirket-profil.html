@@ -6,33 +6,13 @@
       <a href="/tr/" class="hover:text-white">Ana sayfa</a> <span class="mx-2">/</span>
       <a href="/tr/sirketler/" class="hover:text-white">Şirketler</a> <span class="mx-2">/</span> {{ p.ad }}
     </nav>
-    <div class="grid lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
-      <div>
-        <p class="u-eyebrow text-muteddark mb-3">{{ p.sehir }} · {{ p.tur_metni }}</p>
-        <h1 class="u-display u-display--tight text-[2.25rem] sm:text-[3rem] leading-[1.05] mb-5">{{ p.ad }}</h1>
-        {# §4.1 — çıkarılıp alıntılanan blok. Kural: puan yok, sıfat yok, bağlantı yok. #}
-        <p class="text-[15px] leading-relaxed text-white/70 border-s-2 border-sun ps-4">
-          {{ p.cevap_once }}
-        </p>
-      </div>
-      <dl class="grid grid-cols-2 gap-x-8 gap-y-5">
-        <div class="border-t border-ink3 pt-3">
-          <dt class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-1">Genel puan</dt>
-          <dd class="u-num text-[28px] {% if p.dusuk %}text-flag{% else %}text-sun{% endif %}">{{ p.puan }}</dd>
-        </div>
-        <div class="border-t border-ink3 pt-3">
-          <dt class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-1">Doğrulanan branş</dt>
-          <dd class="u-num text-[28px]">{{ p.brans_sayisi }}</dd>
-        </div>
-        <div class="border-t border-ink3 pt-3">
-          <dt class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-1">Ofis şehri</dt>
-          <dd class="u-num text-[28px]">{{ p.sehir_sayisi }}</dd>
-        </div>
-        <div class="border-t border-ink3 pt-3">
-          <dt class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-1">Web sitesi</dt>
-          <dd class="text-[14px] text-white/85 pt-2 leading-snug">{{ p.http_kisa }}</dd>
-        </div>
-      </dl>
+    <div class="max-w-prose">
+      <p class="u-eyebrow text-muteddark mb-3">{{ p.sehir }} · {{ p.tur_metni }}</p>
+      <h1 class="u-display u-display--tight text-[2.25rem] sm:text-[3rem] leading-[1.05] mb-5">{{ p.ad }}</h1>
+      {# §4.1 — çıkarılıp alıntılanan blok. Kural: puan yok, sıfat yok, bağlantı yok. #}
+      <p class="text-[15px] leading-relaxed text-white/70 border-s-2 border-sun ps-4">
+        {{ p.cevap_once }}
+      </p>
     </div>
   </div>
 </section>
@@ -62,97 +42,6 @@
         Aralarında bir mülkiyet ilişkisi doğrulayamadık.
       </p>
       {% endif %}
-    </div>
-  </div>
-</section>
-
-{% if p.dusuk %}
-<section class="bg-white border-b border-line">
-  <div class="mx-auto max-w-shell px-[22px] py-8">
-    <div class="max-w-prose bg-paper border border-line rounded-[14px] p-6">
-      <p class="u-eyebrow mb-2">Düşük puan ne demek, ne demek değil</p>
-      <p class="text-[15px] text-muted leading-relaxed">
-        Bu puan şirketin dışarıdan ne kadar görülebildiğini ölçer. Bir şirket iyi hizmet
-        veriyor ama sitesini güncellemiyor olabilir — bunu ölçemiyoruz. Puan, sizin
-        doğrulayabileceğiniz bilginin ne kadar az olduğunu gösterir; şirketin kötü
-        olduğunu değil.
-      </p>
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{# ── Altı ölçüt ────────────────────────────────────────────────────────── #}
-<section class="bg-white">
-  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
-    <div class="max-w-prose mb-8">
-      <h2 class="u-display text-[1.75rem] sm:text-[2.25rem] leading-[1.1] mb-4">Neyi ölçtük</h2>
-      <p class="text-[15px] text-muted leading-relaxed">
-        Altı ölçütün her birinde şirketin ne yayımladığına baktık. Puanın yanında dayandığı
-        liste var — katılmadığınız yeri görebilirsiniz.
-      </p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 gap-5">
-      {% for o in p.olcutler %}
-      <div class="border border-line rounded-[14px] p-6 bg-paper">
-        <div class="flex items-baseline justify-between gap-3 mb-4">
-          <h3 class="u-display text-[16px]">{{ o.ad }}</h3>
-          <span class="u-num text-sm text-muted shrink-0">ağırlık %{{ o.agirlik }}</span>
-        </div>
-        {% if o.veri_yok %}
-          <p class="u-num text-[22px] text-flag mb-2">veri yok</p>
-          <p class="text-[14px] text-muted leading-relaxed">{{ o.sebep }}</p>
-        {% else %}
-          <p class="u-num text-[22px] mb-3">{{ o.puan }}<span class="text-muted text-[15px]">/10</span></p>
-          {% if o.var %}
-          <p class="text-[13px] text-muted mb-1"><span class="text-text">Bulduklarımız:</span> {{ o.var }}</p>
-          {% endif %}
-          {% if o.yok %}
-          <p class="text-[13px] text-muted"><span class="text-text">Bulamadıklarımız:</span> {{ o.yok }}</p>
-          {% endif %}
-        {% endif %}
-      </div>
-      {% endfor %}
-    </div>
-
-    <p class="text-[14px] text-muted leading-relaxed mt-6 max-w-prose">
-      Bu altı ölçüt şirketin <strong class="text-text">görünürlüğünü</strong> ölçer. Hasarınızı
-      ödeyip ödemeyeceğini ölçmez; o veri KKTC'de yayımlanmıyor.
-      <a href="/tr/metodoloji/" class="text-sea link-u">Nasıl puanlıyoruz</a>
-    </p>
-  </div>
-</section>
-
-{# ── Neyi doğrulayamadık ───────────────────────────────────────────────── #}
-<section class="bg-paper border-y border-line">
-  <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-14">
-    <div class="max-w-prose">
-      {% if p.bosluklar %}
-      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Doğrulayamadığımız ölçütler</h2>
-      {% for b in p.bosluklar %}
-      <div class="mb-4">
-        <p class="text-[15px] leading-relaxed">
-          <strong>{{ b.ad }} puanlanmadı.</strong> {{ b.sebep }}
-          Bu ölçütün ağırlığı diğerlerine dağıtıldı; eksik bir puan, düşük bir puan değildir.
-        </p>
-      </div>
-      {% endfor %}
-      {% else %}
-      <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-5">Bu sayfada eksik veri yok</h2>
-      <p class="text-[15px] leading-relaxed">
-        Altı ölçütün altısını da puanlayabildik. Bu, şirketin her bilgiyi yayımladığı
-        anlamına gelmiyor — yayımlamadıkları yukarıda "bulamadıklarımız" satırlarında duruyor.
-      </p>
-      {% endif %}
-
-      <div class="mt-6 bg-white border border-line rounded-[14px] p-6">
-        <p class="text-[15px] leading-relaxed text-muted">
-          <strong class="text-text">Herkeste eksik olan iki şey:</strong> mali güç ve hasar
-          ödeme performansı. Bunlar bu şirkette değil, KKTC'de hiçbir şirkette ölçülemiyor —
-          2016'dan beri şirket bazında yayımlanmıyorlar.
-        </p>
-      </div>
     </div>
   </div>
 </section>
@@ -188,8 +77,7 @@
       </ul>
       <p class="text-[14px] text-muted leading-relaxed">
         Bu boşluk bu şirkete özgü değil: KKTC'de hiçbir sigorta şirketi için mali güç ya da
-        hasar ödeme performansı kamuya açık kaynakta yayımlanmıyor. Bu yüzden ikisi de
-        <a href="/tr/metodoloji/" class="text-sea link-u">puanlamamıza girmiyor</a>.
+        hasar ödeme performansı kamuya açık kaynakta yayımlanmıyor.
         Karar sizin — ama en azından neyi bilmediğinizi bilerek verin.
       </p>
     </div>
@@ -415,29 +303,11 @@
       {% for b in p.benzer %}
       <a href="/tr/sirketler/{{ b.slug }}/" class="block border border-line rounded-[14px] p-5 bg-paper hover:border-ink transition-colors">
         <p class="u-display text-[15px] mb-1">{{ b.ad }}</p>
-        <p class="text-[13px] text-muted">{{ b.sehir }} · {{ b.brans_sayisi }} branş · {{ b.puan }} puan</p>
+        <p class="text-[13px] text-muted">{{ b.sehir }} · {{ b.brans_sayisi }} branş</p>
       </a>
       {% endfor %}
     </div>
 
-    {% if p.esler %}
-    {# §7 Set I — bu şirketin belirgin biçimde ayrıştığı şirketler #}
-    <div class="max-w-prose mt-10">
-      <p class="u-eyebrow mb-3">Yan yana karşılaştırma</p>
-      <p class="text-[14px] text-muted leading-relaxed mb-4">
-        Bu şirketin altı ölçütün en az beşinde belirgin biçimde ayrıştığı şirketler.
-        Ayrışmayan çiftler için sayfa üretmiyoruz — hiçbir şey söylemezlerdi.
-      </p>
-      <ul class="border-t border-line">
-        {% for e in p.esler %}
-        <li class="border-b border-line/60 py-3 flex items-baseline justify-between gap-4">
-          <a href="{{ e.url }}" class="text-[15px] text-sea link-u arrow arrow--sm">{{ p.ad }} · {{ e.ad }}</a>
-          <span class="u-cap shrink-0">{{ e.fark }} ölçütte ayrışıyor</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
   </div>
 </section>
 {% endif %}
@@ -458,8 +328,8 @@
       </p>
       <p class="text-white/50">
         Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır, sigorta tavsiyesi değildir.
-        Puanlar dışarıdan gözlemlenebilir ölçütlere dayanır; mali güç ve hasar ödeme
-        performansı puanlanmamaktadır. Son güncelleme: Temmuz 2026.
+        Bilgiler şirketin kendi yayınlarından dışarıdan doğrulanmıştır; mali güç ve hasar
+        ödeme performansı KKTC'de yayımlanmadığı için yer almaz. Son güncelleme: Temmuz 2026.
       </p>
     </div>
   </div>

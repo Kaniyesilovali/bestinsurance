@@ -138,5 +138,5 @@ yazarsanız `<head>` bölümüne taşınır. `BlogPosting` şeması zaten otomat
 
 - Doğrulayamadığınız rakamı yazmayın. Boş bırakın ve neden boş olduğunu söyleyin.
 - Türkiye mevzuatını KKTC'ye taşımayın; sitenin ayırt edici yanı bu.
-- İç bağlantı verin — ilgili sigorta türü ve metodoloji sayfasına.
+- İç bağlantı verin — ilgili sigorta türü ve şirket listesi sayfasına.
 - `guncelleme` alanını gerçekten güncellediğinizde değiştirin; sitemap onu kullanır.

@@ -232,6 +232,24 @@ def _tr_kucult(t):
     return t.replace("I", "ı").replace("İ", "i").lower()
 
 
+# Türk alfabesi, yabancı harfler TDK sırasına göre araya yerleştirilmiş:
+# q → p'den sonra, w ve x → v'den sonra. Bunlar olmadan "AXA" ile
+# "AKFİNANS" yanlış sıralanıyordu.
+_TR_ALFABE = "abcçdefgğhıijklmnoöpqrsştuüvwxyz"
+_TR_SIRA = {h: i for i, h in enumerate(_TR_ALFABE)}
+
+
+def tr_sirala(ad):
+    """Türk alfabesine göre sıralama anahtarı.
+
+    Python'un varsayılan sıralaması Unicode kod noktasına bakar; orada Ç, Ğ, İ,
+    Ö, Ş, Ü Latin harflerinden sonra gelir, yani "Çağdaş" listenin sonuna
+    düşerdi. Alfabede olmayan karakter (rakam, boşluk, noktalama) harflerin
+    önüne alınır ki "3S Sigorta" başta kalsın.
+    """
+    return [_TR_SIRA.get(h, -1) for h in _tr_kucult(ad)]
+
+
 def SORU_EKI(ad):
     """Soru ekini son sesliye göre seçer: Sigorta mı, Insurance mi."""
     for harf in reversed(_tr_kucult(ad)):
@@ -767,14 +785,6 @@ class Uretici:
         veri = [s for s in tum_veri if not sayfasiz_mi(s)]
         indeks = {s["slug"]: s for s in veri}
 
-        OLCUT = [
-            ("seffaflik", "Şeffaflık ve doğrulanabilirlik", 25),
-            ("urun", "Ürün genişliği", 20),
-            ("erisim", "Erişilebilirlik", 20),
-            ("dijital", "Dijital hizmet", 20),
-            ("dil", "Yabancı dilde hizmet", 10),
-            ("kurumsal", "Kurumsal derinlik", 5),
-        ]
         BRANS = [
             ("trafik", "Trafik"), ("kasko", "Kasko"), ("saglik", "Sağlık"),
             ("konut", "Konut"), ("isyeri", "İşyeri"), ("seyahat", "Seyahat"),
@@ -872,41 +882,11 @@ class Uretici:
                         "h1": kay["h1"],
                     })
 
-        # §9.3 — her profil kendi ayrışma karşılaştırmalarına bağlanır.
-        esler = {}
-        for cift in self.set_i_ciftleri():
-            for bu, oteki in ((cift["a"], cift["b"]), (cift["b"], cift["a"])):
-                esler.setdefault(bu["slug"], []).append({
-                    "url": cift["url"], "ad": SIRKET_KISA(oteki["ad"]),
-                    "puan": str(oteki["genel_puan"]).replace(".", ","),
-                    "fark": len(cift["fark"]),
-                })
-
         sablon = self.jinja.get_template("sirket-profil.html")
 
         for s in veri:
-            olcutler = s.get("olcutler", {})
             branslar = set(s.get("branslar") or [])
             sehirler = s.get("ofis_sehirler") or ([s["sehir"]] if s.get("sehir") else [])
-            veri_yok = set(s.get("veri_yok_olcutler") or [])
-
-            olcut_ctx, bosluk_ctx = [], []
-            for anahtar, ad, agirlik in OLCUT:
-                o = olcutler.get(anahtar, {})
-                puan = o.get("puan")
-                detay = o.get("detay", {}) or {}
-                if puan is None:
-                    sebep = o.get("sebep") or "Bu ölçüt için veri toplanamadı."
-                    olcut_ctx.append({"ad": ad, "agirlik": agirlik, "veri_yok": True,
-                                      "sebep": sebep})
-                    bosluk_ctx.append({"ad": ad, "sebep": sebep})
-                else:
-                    olcut_ctx.append({
-                        "ad": ad, "agirlik": agirlik, "veri_yok": False,
-                        "puan": vir(puan),
-                        "var": liste_metni(detay.get("var") or []),
-                        "yok": liste_metni(detay.get("yok") or []),
-                    })
 
             # Sayfası olmayan branş matriste görünür ama bağlantı almaz.
             brans_matris = [{
@@ -947,11 +927,10 @@ class Uretici:
                 havuz = sorted(adaylar, key=ortak, reverse=True)
             benzer = [{
                 "slug": o["slug"], "ad": o["ad"], "sehir": o.get("sehir", ""),
-                "brans_sayisi": len(o.get("branslar") or []), "puan": vir(o["genel_puan"]),
+                "brans_sayisi": len(o.get("branslar") or []),
             } for o in havuz[:3] if ortak(o) or o.get("sirket_turu") == s.get("sirket_turu")]
 
             web = (s.get("web") or "").strip()
-            puan = s["genel_puan"]
 
             # ---- §4.1 Cevap-önce özeti -------------------------------------
             # LLM ve AI Overviews'un çıkarıp alıntıladığı blok. Kural: puan yok,
@@ -984,9 +963,14 @@ class Uretici:
 
             # ---- §4.2 "güvenilir mi" — doğrulananlar ve doğrulanamayanlar ---
             dogrulanan = []
-            _sef = (olcutler.get("seffaflik", {}).get("detay") or {}).get("var") or []
-            for madde in _sef:
-                dogrulanan.append(f"Sitesinde {madde} yayımlıyor")
+            for _alan, _ad in (("kurulus_yili", "kuruluş yılını"),
+                               ("adres", "açık adresini"),
+                               ("email", "e-posta adresini"),
+                               ("police_sartlari_yayinda", "poliçe genel şartlarını")):
+                if s.get(_alan):
+                    dogrulanan.append(f"Sitesinde {_ad} yayımlıyor")
+            if s.get("email") and s.get("email_kurumsal"):
+                dogrulanan.append("Kurumsal e-posta alan adı kullanıyor")
             if branslar:
                 dogrulanan.append(f"{len(branslar)} branşta ürün sayfası var")
             if sehirler:
@@ -1091,12 +1075,10 @@ class Uretici:
                 "ad": s["ad"], "slug": s["slug"], "sehir": s.get("sehir", ""),
                 "tur_metni": TUR.get(s.get("sirket_turu"), "Şirket yapısı doğrulanamadı"),
                 "kurulus_yili": s.get("kurulus_yili"),
-                "puan": vir(puan), "dusuk": puan is not None and puan < 3,
                 "brans_sayisi": len(branslar), "sehir_sayisi": len(sehirler),
                 "http_kisa": HTTP_KISA.get(s.get("http_durum"), "Bilinmiyor"),
                 "http_uzun": HTTP_UZUN.get(s.get("http_durum"), ""),
                 "ozet": s.get("notlar") or "Bu şirket hakkında doğrulanabilir bir gözlem derleyemedik.",
-                "olcutler": olcut_ctx, "bosluklar": bosluk_ctx,
                 "brans_matris": brans_matris,
                 "ilk_brans": ilk_brans[1] if ilk_brans else "",
                 "ilk_brans_key": ilk_brans[0] if ilk_brans else "",
@@ -1120,8 +1102,6 @@ class Uretici:
                 "kimin_baslik": kimin_baslik, "kimin_cevap": kimin_cevap,
                 "karisan": karisan, "sss": sss,
                 "karsilastirma": karsilastirma.get(s["slug"], []),
-                "esler": sorted(esler.get(s["slug"], []),
-                                key=lambda e: -e["fark"])[:4],
             }
 
             url = f"/tr/sirketler/{s['slug']}/"
@@ -1302,206 +1282,6 @@ class Uretici:
 
     # -- Set I: ayrışan şirket çiftleri --------------------------------------
 
-    def set_i_ciftleri(self):
-        """Set I çiftlerini bir kez hesaplar; profiller de bunu kullanır."""
-        if getattr(self, "_set_i", None) is not None:
-            return self._set_i
-        self._set_i = []
-        veri_yolu = KOK / "data" / "sirketler.json"
-        if not veri_yolu.is_file():
-            return self._set_i
-        tum = json.loads(veri_yolu.read_text(encoding="utf-8"))
-        uygun = [x for x in tum if (x.get("genel_puan") or 0) >= 5.0
-                 and not sayfasiz_mi(x)]
-        anahtarlar = ["seffaflik", "urun", "erisim", "dijital", "dil", "kurumsal"]
-
-        def puan(x, k):
-            return (x.get("olcutler", {}).get(k) or {}).get("puan")
-
-        for a, b in itertools.combinations(uygun, 2):
-            fark = [k for k in anahtarlar
-                    if puan(a, k) is not None and puan(b, k) is not None
-                    and abs(puan(a, k) - puan(b, k)) >= 1.5]
-            if len(fark) < 5:
-                continue
-            a, b = sorted([a, b], key=lambda x: (-x["genel_puan"], x["slug"]))
-            ka, kb = SIRKET_KISA(a["ad"]), SIRKET_KISA(b["ad"])
-            self._set_i.append({
-                "a": a, "b": b, "fark": fark,
-                "h1": f"{ka} {SORU_EKI(ka)} {kb} {SORU_EKI(kb)}?",
-                "url": f"/tr/sirketler/karsilastirma/{a['slug']}-{b['slug']}/",
-            })
-        return self._set_i
-
-
-    def karsilastirmalar(self):
-        """Genel puanı 5,0+ olan şirketlerden ayrışan çiftler için sayfa.
-
-        Çift seçme kuralı sayıyı belirler, biz değil: iki şirketin de genel puanı
-        5,0 ve üstü olacak VE altı ölçütün en az beşinde 1,5 puan ya da daha
-        fazla ayrışacak. Ayrışmayan çiftin sayfası hiçbir şey söylemez.
-        Gerekçe: copy/03-marka-sorgulari.md §7.
-        ⛔ "Hangisi daha iyi" cevabı yok; sayfa ayrışmayı gösterir, seçimi değil.
-        """
-        veri_yolu = KOK / "data" / "sirketler.json"
-        if not veri_yolu.is_file():
-            return
-        tum = json.loads(veri_yolu.read_text(encoding="utf-8"))
-        uygun = [x for x in tum if (x.get("genel_puan") or 0) >= 5.0
-                 and not sayfasiz_mi(x)]
-
-        OLCUT = [
-            ("seffaflik", "Şeffaflık", 25),
-            ("urun", "Ürün genişliği", 20),
-            ("erisim", "Erişilebilirlik", 20),
-            ("dijital", "Dijital hizmet", 20),
-            ("dil", "Yabancı dilde hizmet", 10),
-            ("kurumsal", "Kurumsal derinlik", 5),
-        ]
-        ESIK = 1.5
-        DIL_ADI = {"en": "İngilizce", "ru": "Rusça", "el": "Yunanca", "fa": "Farsça"}
-
-        def puan(x, k):
-            return (x.get("olcutler", {}).get(k) or {}).get("puan")
-
-        def ayrisan(a, b):
-            return [k for k, _, _ in OLCUT
-                    if puan(a, k) is not None and puan(b, k) is not None
-                    and abs(puan(a, k) - puan(b, k)) >= ESIK]
-
-        def vir(v):
-            """Karşılaştırma tablosunda hep tek ondalık: 8 ve 9,1 yan yana durmasın."""
-            return f"{float(v):.1f}".replace(".", ",")
-
-        def kucult(t):
-            """Türkçe küçültme: I→ı, İ→i. Python'un lower()'ı bunu yanlış yapar."""
-            return t.replace("I", "ı").replace("İ", "i").lower()
-
-        SESLI = {"a": "mı", "ı": "mı", "e": "mi", "i": "mi",
-                 "o": "mu", "u": "mu", "ö": "mü", "ü": "mü"}
-
-        def soru_eki(ad):
-            for harf in reversed(kucult(ad)):
-                if harf in SESLI:
-                    return SESLI[harf]
-            return "mı"
-
-        def kisa_ad(ad):
-            t = ad.strip()
-            for kal in [r"\s*CO\.?\s*LTD\.?$", r"\s*ŞTİ\.?\s*LTD\.?$",
-                        r"\s*LTD\.?$", r"\s*A\.Ş\.$", r"\s*ŞTİ\.?$"]:
-                t = re.sub(kal, "", t, flags=re.I).strip()
-            return t or ad
-
-        def olcut_cumlesi(k, x):
-            """Bir ölçütte şirketin somut durumu — puan değil, olgu."""
-            d = (x.get("olcutler", {}).get(k) or {}).get("detay", {}) or {}
-            if k == "seffaflik":
-                var = d.get("var") or []
-                return (", ".join(var) + " yayımlıyor") if var else "bu alanların hiçbirini yayımlamıyor"
-            if k == "urun":
-                n = d.get("brans_sayisi") or len(x.get("branslar") or [])
-                return f"{n} branşta ürün sayfası" if n else "ürün sayfası bulunamadı"
-            if k == "erisim":
-                sehir = d.get("sehir_sayisi") or len(x.get("ofis_sehirler") or [])
-                acente = d.get("acente")
-                p = f"{sehir} şehirde ofis" if sehir else "ofis şehri doğrulanamadı"
-                return p + (f", {acente} acente beyanı" if acente else ", acente sayısı açıklanmamış")
-            if k == "dijital":
-                oz = d.get("ozellikler") or []
-                return (", ".join(oz)) if oz else "çalışan dijital işlev bulunamadı"
-            if k == "dil":
-                diller = [DIL_ADI.get(x_, x_) for x_ in (d.get("diller") or [])]
-                return ("Türkçe dışında " + ", ".join(diller)) if diller else "yalnızca Türkçe"
-            if k == "kurumsal":
-                yil = d.get("kurulus_yili") or x.get("kurulus_yili")
-                tur = {"yerel": "yerel şirket", "tr_subesi": "Türkiye şirketinin KKTC yapısı",
-                       "tr_ortakligi": "Türkiye ortaklığı", "banka_bagli": "banka grubuna bağlı",
-                       "bilinmiyor": "ortaklık yapısı doğrulanamadı"}.get(x.get("sirket_turu"), "")
-                return (f"{yil}'den beri, {tur}" if yil else tur or "kuruluş yılı yayımlanmamış")
-            return ""
-
-        sablon = self.jinja.get_template("karsilastirma.html")
-
-        for cift in self.set_i_ciftleri():
-            a, b, fark = cift["a"], cift["b"], cift["fark"]
-            ka, kb = kisa_ad(a["ad"]), kisa_ad(b["ad"])
-            h1 = cift["h1"]
-
-            tablo = []
-            for k, ad, agirlik in OLCUT:
-                pa, pb = puan(a, k), puan(b, k)
-                tablo.append({
-                    "ad": ad, "agirlik": agirlik,
-                    "a": vir(pa) if pa is not None else "veri yok",
-                    "b": vir(pb) if pb is not None else "veri yok",
-                    "fark": (vir(round(abs(pa - pb), 1))
-                             if pa is not None and pb is not None else "—"),
-                    "ayrisiyor": k in fark,
-                })
-
-            sirali = sorted(fark, key=lambda k: abs(puan(a, k) - puan(b, k)), reverse=True)
-            ayrinti = [{
-                "ad": dict((k, ad) for k, ad, _ in OLCUT)[k],
-                "a": olcut_cumlesi(k, a), "b": olcut_cumlesi(k, b),
-            } for k in sirali[:3]]
-            benzer = [dict((k, ad) for k, ad, _ in OLCUT)[k]
-                      for k, _, _ in OLCUT if k not in fark]
-
-            c = {
-                "h1": h1, "fark_sayisi": len(fark),
-                "a": {"slug": a["slug"], "ad": a["ad"], "kisa": ka,
-                      "puan": vir(a["genel_puan"]), "sehir": a.get("sehir", "")},
-                "b": {"slug": b["slug"], "ad": b["ad"], "kisa": kb,
-                      "puan": vir(b["genel_puan"]), "sehir": b.get("sehir", "")},
-                "tablo": tablo, "ayrinti": ayrinti, "benzer": benzer,
-            }
-
-            url = f"/tr/sirketler/karsilastirma/{a['slug']}-{b['slug']}/"
-            desc = (f"{ka} ve {kb} altı ölçütte yan yana. "
-                    f"{len(fark)} ölçütte ayrışıyorlar. Hangisinin daha iyi olduğunu "
-                    f"söylemiyoruz — yayımladıklarını karşılaştırıyoruz.")
-
-            sss = [
-                {"soru": h1,
-                 "cevap": (f"Bu soruya \u0022şu daha iyi\u0022 diye cevap vermiyoruz. İki şirket "
-                           f"altı ölçütün {len(fark)}'inde ayrışıyor; sayfa bu ayrışmayı "
-                           f"gösterir. Hangisinin hasarınızı daha iyi ödediğini gösteremez — "
-                           f"o veri Kuzey Kıbrıs'ta yayımlanmıyor.")},
-                {"soru": "Bu karşılaştırmada fiyat neden yok?",
-                 "cevap": ("Şirket bazında prim verisi yayımlanmıyor. Ayrıca zorunlu trafikte "
-                           "taban tarife rejimi geçerli olduğu için şirketler arası fiyat farkı "
-                           "serbest bir piyasada beklenenden dardır.")},
-            ]
-
-            jsonld = [
-                json.dumps({
-                    "@context": "https://schema.org", "@type": "FAQPage",
-                    "mainEntity": [{"@type": "Question", "name": q["soru"],
-                                    "acceptedAnswer": {"@type": "Answer", "text": q["cevap"]}}
-                                   for q in sss],
-                }, ensure_ascii=False),
-                json.dumps({
-                    "@context": "https://schema.org", "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {"@type": "ListItem", "position": 1, "name": "Ana sayfa",
-                         "item": f"{self.alan_adi}/tr/"},
-                        {"@type": "ListItem", "position": 2, "name": "Şirketler",
-                         "item": f"{self.alan_adi}/tr/sirketler/"},
-                        {"@type": "ListItem", "position": 3, "name": h1,
-                         "item": f"{self.alan_adi}{url}"},
-                    ],
-                }, ensure_ascii=False),
-            ]
-
-            bag = self.baglam(
-                dil="tr", url=url, baslik=h1, aciklama=desc,
-                aktif_menu="sirketler", og_tur="article", og_baslik=h1,
-                og_aciklama=desc, jsonld=jsonld,
-            )
-            bag["hreflang"] = {"tr": url}
-            self.sayfa_yaz(url, bag, sablon.render(c=c, **bag), date(2026, 7, 24))
-
     # -- Set H: karıştırılan adlar ------------------------------------------
 
     def ad_karisikliklari(self):
@@ -1558,7 +1338,6 @@ class Uretici:
                 taraflar.append({
                     "slug": sl, "ad": x["ad"], "sehir": x.get("sehir") or "—",
                     "brans_sayisi": len(x.get("branslar") or []),
-                    "puan": vir(x["genel_puan"]),
                     "profil_var": sl in profilli,
                     "_x": x,
                 })
@@ -1580,7 +1359,6 @@ class Uretici:
                 satir("Doğrulanan branş", lambda x: str(len(x.get("branslar") or []))
                       if (x.get("branslar") or []) else None),
                 satir("Alan adı", lambda x: x.get("web")),
-                satir("Genel puan", lambda x: vir(x["genel_puan"])),
             ]
 
             k = {
@@ -1668,16 +1446,14 @@ class Uretici:
             sirketler = havuz.get(br, [])
             if not sirketler:
                 continue
-            sirketler = sorted(sirketler, key=lambda s: s["genel_puan"], reverse=True)
+            sirketler = sorted(sirketler, key=lambda s: tr_sirala(s["ad"]))
             liste = [{
                 "slug": s["slug"], "ad": s["ad"], "sehir": s.get("sehir", ""),
                 "brans_sayisi": len(s.get("branslar") or []),
-                "puan": str(s["genel_puan"]).replace(".", ","),
-                "puan_sayi": s["genel_puan"],
             } for s in sirketler]
 
             bulgu = (f"39 ruhsatlı hayat dışı şirketin {len(sirketler)}'inde {ad.lower()} "
-                     f"ürünü sitesinden doğrulandı. Genel puana göre sıralı; her ad "
+                     f"ürünü sitesinden doğrulandı. Alfabetik sıralı; her ad "
                      f"şirketin tam profiline gider.")
 
             b = {"key": br, "ad": ad, "ad_kucuk": ad.lower(), "sayi": len(sirketler),
@@ -1686,7 +1462,7 @@ class Uretici:
             url = f"/tr/sirketler/{br}/"
             title = f"KKTC'de {ad.lower()} sigortası yapan {len(sirketler)} şirket"
             desc = (f"Kuzey Kıbrıs'ta {ad.lower()} branşında ürünü doğrulanan {len(sirketler)} "
-                    f"ruhsatlı sigorta şirketi, genel puana göre sıralı. Her şirketin tam profili.")
+                    f"ruhsatlı sigorta şirketi, alfabetik sıralı. Her şirketin tam profili.")
             jsonld = [json.dumps({
                 "@context": "https://schema.org", "@type": "ItemList",
                 "itemListElement": [
@@ -1861,14 +1637,36 @@ class Uretici:
         karşılığı yoktu. Elle `dist/` içine koymak işe yaramaz — `dist/` her
         üretimde silinip yeniden yazılır.
         """
-        yaz(CIKTI / ".htaccess", (
-            "# Bu dosya _build/uret.py > sunucu_ayari() tarafından üretilir.\n"
-            "# Elle düzenlemeyin: dist/ her üretimde yeniden yazılır.\n"
-            "\n"
-            "Options -Indexes\n"
-            "ErrorDocument 404 /404.html\n"
-            "ErrorDocument 403 /404.html\n"
-        ))
+        satirlar = [
+            "# Bu dosya _build/uret.py > sunucu_ayari() tarafından üretilir.",
+            "# Elle düzenlemeyin: dist/ her üretimde yeniden yazılır.",
+            "",
+            "Options -Indexes",
+            "ErrorDocument 404 /404.html",
+            "ErrorDocument 403 /404.html",
+        ]
+
+        # Yayından kaldırılan adresler. Kaynak: data/kaldirilan-adresler.json.
+        # 404 yerine 301: adresler Ağustos 2026'dan beri indeksliydi, gelen
+        # bağlantı ve arama trafiği hedefe taşınır.
+        yol = KOK / "data" / "kaldirilan-adresler.json"
+        if yol.is_file():
+            harita = json.loads(yol.read_text(encoding="utf-8")).get(
+                "kalici_yonlendirme", {})
+            mevcut = {u for u, _ in self.uretilen}
+            catisan = sorted(set(harita) & mevcut)
+            if catisan:
+                raise SystemExit(
+                    "DURDU: şu adresler hem üretiliyor hem de kaldırılmış "
+                    "sayılıyor:\n  " + "\n  ".join(catisan) +
+                    "\ndata/kaldirilan-adresler.json içinden çıkarın; yoksa "
+                    "sunucu var olan bir sayfayı başka yere yönlendirir."
+                )
+            if harita:
+                satirlar += ["", "RewriteEngine On"]
+                for eski, yeni in sorted(harita.items()):
+                    satirlar.append(f"RewriteRule ^{eski.lstrip('/')}$ {yeni} [R=301,L]")
+        yaz(CIKTI / ".htaccess", "\n".join(satirlar) + "\n")
 
     def sayfa_404(self):
         dil = self.yapilandirma["varsayilan_dil"]
@@ -1958,7 +1756,6 @@ class Uretici:
         self.sirket_profilleri()
         self.veri_yok_sayfalari()
         self.ad_karisikliklari()
-        self.karsilastirmalar()
         self.sirket_branslari()
         self.blog_yazilari()
         self.bloglar()

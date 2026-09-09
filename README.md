@@ -34,7 +34,7 @@ Ayrıntı: [YAZI-YAZMA.md](YAZI-YAZMA.md).
 | `_build/uret.py` | Üretici. `content/` + şablon → `dist/`. |
 | `_build/yeni-yazi.py` | Yeni yazı iskeleti oluşturur. |
 | `assets/` | CSS ve JS. `tailwind.css` derlenir, `site.css` elle yazılır. |
-| `data/` | Şirket verisi ve puanlama betikleri. Siteye yüklenmez. |
+| `data/` | Şirket verisi ve veri betikleri. Siteye yüklenmez. |
 | `copy/` | Dört dildeki metin taslakları. Siteye yüklenmez. |
 | `dist/` | **Üretilen çıktı.** Elle düzenlenmez, her üretimde silinip yeniden yazılır. |
 

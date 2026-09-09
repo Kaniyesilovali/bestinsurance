@@ -42,8 +42,8 @@ takip edildiği için daha çabuk sonuçlanır.
 
 ## Sigorta şirketleri için
 
-Şirketinizle ilgili bir bilgi eksik ya da yanlışsa, düzeltilmesini isteyebilirsiniz.
-Puanlar [yayımlanmış ölçütlere](/tr/metodoloji/) göre hesaplanır; ödeme ya da iş
+Şirketinizle ilgili bir bilgi eksik ya da yanlışsa, düzeltilmesini
+isteyebilirsiniz. Kayıtlar şirketin kendi yayınından doğrulanır; ödeme ya da iş
 birliği karşılığında değiştirilmez.
 
 ## Ne kadar sürede dönüyoruz

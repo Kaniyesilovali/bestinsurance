@@ -81,7 +81,7 @@ Zorunlu Sigortalar Garanti Fonu Tüzüğü'nün **14. maddesi** ödemelere bir s
 
 **İkincisi, aynı madde ödemelerin hukuki niteliğini de tanımlıyor:** "Bu kapsamda yapılacak tüm ödemeler cemile mahiyetindedir." Cemile mahiyetinde ödeme, hukuk dilinde talep edilebilir bir hak olarak değil, iyi niyet ödemesi olarak yapılan ödemedir. Tüzüğün bu ifadeyi kullanması, Fon'a başvurmanın sonucu garanti bir alacak doğurmadığı anlamına gelir. Reddedilen bir başvurunun mahkemeye taşınıp taşınamayacağını, taşınırsa nasıl sonuçlandığını doğrulayamadık.
 
-50.000 ₺ tutarını burada yazabiliyoruz çünkü tüzüğün kendi metnini okuduk. Kuzey Kıbrıs'ta çoğu rakam için durum böyle değil; hangi sayıyı neden yazmadığımızı [metodoloji sayfamızda](/tr/metodoloji/) anlatıyoruz. Bu tutarın Türkiye'deki karşılığıyla ilgisi yoktur — iki ülkenin limit rejimi baştan ayrıdır, ayrımın tamamı için [KKTC sigortası Türkiye'den nerede ayrılıyor](/tr/rehber/kktc-turkiye-farki/) yazısında.
+50.000 ₺ tutarını burada yazabiliyoruz çünkü tüzüğün kendi metnini okuduk. Kuzey Kıbrıs'ta çoğu rakam için durum böyle değil; doğrulayamadığımız bir sayıyı yazmıyoruz. Bu tutarın Türkiye'deki karşılığıyla ilgisi yoktur — iki ülkenin limit rejimi baştan ayrıdır, ayrımın tamamı için [KKTC sigortası Türkiye'den nerede ayrılıyor](/tr/rehber/kktc-turkiye-farki/) yazısında.
 
 ## Başvuru süresi: tüzük başka bir yasaya gönderiyor
 

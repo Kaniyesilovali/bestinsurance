@@ -50,10 +50,9 @@ ifadeyi kaldırmak ya da belirsizliği açıkça yazmak da bir düzeltmedir.
 
 ## Sigorta şirketleri için
 
-Şirketinizle ilgili bir bilgi ya da puan yanlışsa aynı yoldan başvurabilirsiniz.
-Puanlar [yayımlanmış ölçütlere](/tr/metodoloji/) göre hesaplanır: ölçüt yanlış
-uygulanmışsa düzeltiriz, ancak ödeme veya iş birliği karşılığında puan
-değiştirmiyoruz.
+Şirketinizle ilgili bir bilgi yanlışsa aynı yoldan başvurabilirsiniz. Kaydı
+kaynağıyla birlikte inceler, yanlışsa düzeltiriz — ancak ödeme veya iş birliği
+karşılığında hiçbir kaydı değiştirmiyoruz.
 
 ## Önemli düzeltmeler
 

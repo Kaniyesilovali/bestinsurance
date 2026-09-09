@@ -18,23 +18,21 @@
   <div class="mx-auto max-w-shell px-[22px] py-10 sm:py-14">
     <div class="overflow-x-auto">
       <table class="rank rank--light">
-        <caption class="sr-only">{{ b.ad }} branşında ürünü doğrulanan şirketler, genel puana göre</caption>
+        <caption class="sr-only">{{ b.ad }} branşında ürünü doğrulanan şirketler, alfabetik</caption>
         <thead>
           <tr>
-            <th scope="col" class="w-8">#</th>
             <th scope="col">Şirket</th>
-            <th scope="col" class="text-end">Puan</th>
+            <th scope="col" class="text-end">Merkez</th>
           </tr>
         </thead>
         <tbody>
           {% for s in b.sirketler %}
           <tr>
-            <td class="rank-no align-top pt-4">{{ "%02d"|format(loop.index) }}</td>
             <td class="pe-4">
               <a href="/tr/sirketler/{{ s.slug }}/" class="u-display text-[15px] link-u">{{ s.ad }}</a>
-              <div class="font-mono text-[11px] text-muted mt-1">{{ s.sehir }} · {{ s.brans_sayisi }} branş</div>
+              <div class="font-mono text-[11px] text-muted mt-1">{{ s.brans_sayisi }} branş</div>
             </td>
-            <td class="text-end align-top pt-3 u-num text-[20px] {{ 'text-sundeep' if s.puan_sayi >= 6 else 'text-text' }}">{{ s.puan }}</td>
+            <td class="text-end align-top pt-4 text-[14px] text-muted">{{ s.sehir }}</td>
           </tr>
           {% endfor %}
         </tbody>
@@ -44,8 +42,7 @@
     <p class="text-[14px] text-muted leading-relaxed mt-6 max-w-prose">
       Bu liste şirketlerin kendi sitelerindeki ürün sayfalarından derlendi. Bir şirketin
       listede olmaması o ürünü satmadığı anlamına gelmez; sitesinde bulamadığımız anlamına
-      gelir. Puanlar altı gözlemlenebilir ölçüte dayanır —
-      <a href="/tr/metodoloji/" class="text-sea link-u">nasıl puanlıyoruz</a>.
+      gelir.
       {% if b.hub_url %}<br>{{ b.ad }} sigortasının kapsamı ve kuralları için
       <a href="{{ b.hub_url }}" class="text-sea link-u">{{ b.ad }} sigortası sayfası</a>.{% endif %}
     </p>

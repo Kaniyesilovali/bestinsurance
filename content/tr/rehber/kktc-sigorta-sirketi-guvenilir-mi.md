@@ -33,7 +33,7 @@ Bir sigorta şirketinin mali gücünü ve hasar ödeme geçmişini Kuzey Kıbrı
 
 Bir sigorta şirketinde en çok merak edilen iki şey, büyük bir hasarda ödeyecek gücünün olup olmadığı ve ödediğini gösteren bir geçmişinin bulunup bulunmadığıdır. Kuzey Kıbrıs'ta ikisi de kamuya açık veriyle cevaplanamıyor: 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı rakamı yayımlanmıyor.
 
-Bu yüzden bu sitedeki puanlamada mali güç ve hasar ödeme performansı **puanlanmıyor** — tahmin üretmek yerine ölçütü boş bırakma kararı aldık. Gerekçesi ve altı ölçütün ağırlıkları [metodoloji sayfasında](/tr/metodoloji/) duruyor.
+Bu yüzden bu sitedeki puanlamada mali güç ve hasar ödeme performansı **puanlanmıyor** — tahmin üretmek yerine ölçütü boş bırakma kararı aldık. 
 
 Bunu bilmek işinize yarar: "en çok ödeyen şirket" ya da "mali gücü en yüksek şirket" iddiasıyla karşılaşırsanız, o iddianın dayanağı yoktur. Kimsede o veri yok.
 
@@ -81,7 +81,7 @@ Sekizinin tamamı aynı şeyi ölçer: şirketin **kendisi hakkında ne kadar bi
 
 Sekiz işareti toplayıp tek bir skora çevirmiyoruz. Böyle bir toplam, hangi eşiği seçtiğinize göre değişir — "kaç şehirde ofis yeterli sayılır" sorusunun veriden gelen bir cevabı yok, seçim yapanın kendi tercihidir. Kaynağını gösteremediğimiz bir sayı da bu sitede yayımlanmaz. Her maddenin yanındaki sayı tek tek doğrulanabilir; toplamı sizin neye ağırlık verdiğinize bağlı.
 
-Ağırlıklandırılmış bir puan istiyorsanız zaten hesaplanmış olan var: altı ölçütlü değerlendirmede 39 şirketin ortalaması 10 üzerinden 4,3, medyanı 4,5. Puanlar ve her puanın kaynağı [şirket listesinde](/tr/sirketler/), ölçütlerin tanımı ve ağırlıkları [metodoloji sayfasında](/tr/metodoloji/). O puan bu sekiz işaretle aynı şey değildir — ölçütleri ve ağırlıkları ayrıdır.
+Her şirket için doğrulayabildiğimiz bilgiler [şirket listesinde](/tr/sirketler/) duruyor.
 
 ## Doğrulayamadıklarımız
 
@@ -124,4 +124,3 @@ Hayır. Sekiz işaretin tamamı şirketin ne kadar denetlenebilir olduğunu öl�
 - KKSRSB (KKTC Sigorta ve Reasürans Şirketleri Birliği) üye şirket listesi — ruhsatlı 39 şirketin tespiti. 22 Temmuz 2026'da görüldü.
 - 39 şirketin kurumsal siteleri — adres, e-posta, branş sayfaları, poliçe şartları, kuruluş yılı ve dil sürümleri tek tek kontrol edildi. 22 Temmuz 2026'da görüldü.
 - Bu sitenin şirket veri seti (`data/sirketler.json`), araştırma tarihi 22 Temmuz 2026. Yazıdaki bütün sayılar 39 şirketin tamamı üzerinden hesaplandı.
-- [Puanlama yöntemi](/tr/metodoloji/) — altı ölçütün tanımı, ağırlıkları ve puanlanmayan iki ölçütün gerekçesi.

@@ -181,106 +181,7 @@ html[lang="fa"] .u-display { font-family: 'Vazirmatn', 'Inter', sans-serif; }
 }
 
 /* --------------------------------------------------------------------------
-   İMZA BİLEŞENİ — Teminat Profili
-   Sabit sırada 6 puanlanan bant + ayrılmış 2 "veri yok" bandı.
-   Aynı sıra her yerde tekrarlandığı için liste boyunca aşağı bakarken her
-   şirketin kendine has bir silueti oluşuyor.
-
-   Son iki bant mali gücü ve hasar ödeme performansını temsil ediyor. KKTC'de
-   bu veriler 2016'dan beri şirket bazında yayımlanmadığı için puanlanamıyor.
-   Dolgusuz ve kesik çizgili duruyorlar: bir bant boş kalabilir, ama yerini
-   koruduğu sürece "sıfır puan" diye okunmaz — orada ölçülmemiş bir şey var.
-   -------------------------------------------------------------------------- */
-
-.cp {
-  display: inline-flex;
-  gap: 3px;
-  align-items: flex-end;
-  height: 22px;
-  vertical-align: middle;
-}
-.cp > i {
-  display: block;
-  position: relative;
-  width: 4px;
-  height: 100%;
-  background: var(--line-soft);         /* açıkta kalan kısım */
-  border-radius: 2px;
-  overflow: hidden;
-}
-.cp > i::after {
-  content: '';
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  height: calc(var(--v) * 100%);
-  background: var(--accent);
-  border-radius: 2px;
-}
-
-/* "Veri yayımlanmıyor" bandı — puanlanmışlardan boşlukla ayrılır, dolgusu
-   yoktur, yalnızca yerini tutan kesik bir çerçevedir. */
-.cp > i.cp-nd {
-  margin-inline-start: 9px;
-  background: transparent;
-  border: 1px dashed var(--line);
-  border-radius: 2px;
-  overflow: visible;
-}
-.cp > i.cp-nd + i.cp-nd { margin-inline-start: 3px; }
-.cp > i.cp-nd::after { display: none; }
-
-/* Koyu zeminde iz rengi değişir */
-.cp--on-dark > i { background: rgba(255,255,255,.18); }
-.cp--on-dark > i.cp-nd { background: transparent; border-color: rgba(255,255,255,.32); }
-
-/* Büyük varyant — metodoloji ve şirket detay sayfasında etiketli hâli */
-.cp--lg { height: 64px; gap: 6px; }
-.cp--lg > i { width: 12px; border-radius: 6px; }
-.cp--lg > i::after { border-radius: 6px; }
-.cp--lg > i.cp-nd { margin-inline-start: 18px; border-radius: 6px; }
-.cp--lg > i.cp-nd + i.cp-nd { margin-inline-start: 6px; }
-
-/* Açılış: bantlar soldan sağa sırayla doluyor. Sayfadaki tek koreografi bu. */
-@media (prefers-reduced-motion: no-preference) {
-  .cp > i::after {
-    animation: cp-fill .55s cubic-bezier(.28,.11,.32,1) backwards;
-    animation-delay: calc(var(--i, 0) * 45ms + var(--row, 0) * 60ms);
-  }
-  @keyframes cp-fill { from { height: 0; } }
-}
-
-/* Bant sırası — her <i> kendi gecikmesini alsın */
-.cp > i:nth-child(1) { --i: 0 } .cp > i:nth-child(2) { --i: 1 }
-.cp > i:nth-child(3) { --i: 2 } .cp > i:nth-child(4) { --i: 3 }
-.cp > i:nth-child(5) { --i: 4 } .cp > i:nth-child(6) { --i: 5 }
-
-/* --------------------------------------------------------------------------
-   İMZA BÖLÜMÜ — Boşluk
-   Puanlanmayan iki ölçüt, sayfanın en büyük ve en sessiz anı. Rakam yerine
-   iki tire. Sitenin iddiası "ölçemediğimizi de söylüyoruz" olduğu için bu
-   boşluk süs değil, argümanın kendisi.
-   -------------------------------------------------------------------------- */
-
-.blank-row {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 1.5rem;
-  padding: .75rem 0;
-  border-bottom: 1px solid var(--line);
-}
-.blank-row:first-child { border-top: 1px solid var(--line); }
-
-.blank {
-  font-family: 'Inter Tight', -apple-system, system-ui, sans-serif;
-  font-size: clamp(2.75rem, 6vw, 4rem);
-  line-height: 1;
-  font-weight: 500;
-  color: var(--muted-dark);
-  user-select: none;
-}
-
-/* --------------------------------------------------------------------------
-   Sıralama tablosu
+   Şirket tablosu
    -------------------------------------------------------------------------- */
 
 .rank { width: 100%; border-collapse: collapse; }
@@ -305,16 +206,6 @@ html[lang="fa"] .u-display { font-family: 'Vazirmatn', 'Inter', sans-serif; }
 .rank--on-dark tbody tr:hover { background: rgba(255,255,255,.05); }
 .rank--light th { color: var(--muted); border-bottom-color: var(--line); }
 .rank--light td { border-bottom-color: var(--line); }
-
-/* Sıra numarası — burada 01/02/03 dekoratif değil, sıralamanın kendisi */
-.rank-no {
-  font-variant-numeric: tabular-nums;
-  font-size: 15px;
-  color: var(--muted);
-  font-weight: 500;
-  letter-spacing: -.02em;
-}
-.rank--light .rank-no { color: var(--muted); }
 
 /* --------------------------------------------------------------------------
    Eylemler

@@ -41,7 +41,7 @@ Banka bağı, poliçenin **satış kanalını** değiştirir; **riskin tarafın�
 | KIBRIS KAPITAL INSURANCE LTD. | Lefkoşa | Kapital Grup | 10 | 6,1 |
 | KIBRIS İKTİSAT SİGORTA LTD. | Lefkoşa | İktisatbank | 6 | 5,2 |
 
-Puan altı ölçütlü değerlendirmemizden geliyor; nasıl hesaplandığı [nasıl puanlıyoruz](/tr/metodoloji/) sayfasında. Tablodaki puanların dağılımı, banka bağının tek başına bir kalite göstergesi olmadığını gösteriyor: aynı sınıfta 7,3 de var, 5,2 de.
+Banka bağı tek başına bir kalite göstergesi değildir.
 
 Sınıflandırma şirketlerin kendi yayınlarına ve unvanlarına dayanıyor. Bağın **niteliği** ise altı şirkette aynı değil — ve çoğunda doğrulanamıyor.
 

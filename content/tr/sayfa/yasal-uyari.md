@@ -37,13 +37,13 @@ gerekirse bir uzmana başvurun.
 teminat limitleri sonradan değişebilir; sitedeki bilgi ile şirketin güncel poliçe
 şartları çeliştiğinde **poliçe şartları geçerlidir.**
 
-## Puanlar
+## Şirket bilgileri
 
-Puanlar dışarıdan gözlemlenebilir ölçütlere dayanır ve
-[metodoloji sayfasında](/tr/metodoloji/) açıklanır. Mali güç ve hasar ödeme
-performansı puanlanmamaktadır — bu veriler KKTC'de şirket bazında kamuya açık
-olarak yayımlanmadığı için ölçülememektedir. Puanlar bir şirketin yükümlülüğünü
-yerine getireceği anlamına gelmez.
+Şirket sayfalarındaki bilgiler şirketlerin kendi yayınlarından dışarıdan
+doğrulanmıştır. Bu sitede şirketlere puan verilmez ve şirketler sıralanmaz.
+Mali güç ve hasar ödeme performansı yer almaz — bu veriler KKTC'de şirket
+bazında kamuya açık olarak yayımlanmamaktadır. Bir şirket hakkında burada
+bilgi bulunması, o şirketin yükümlülüğünü yerine getireceği anlamına gelmez.
 
 ## Sorumluluk
 

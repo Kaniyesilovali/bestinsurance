@@ -114,7 +114,7 @@ Ayrıca ölçüm **Temmuz 2026** tarihlidir. Bir şirket o tarihten sonra online
 
 Bu ayrım online kanalda daha da bulanıklaşıyor, çünkü bir acentenin ödeme alabilen sitesi ile şirketin kendi sitesi dışarıdan aynı görünüyor. Poliçeyi almadan önce ekranda hangi şirketin adının geçtiğine bakın; bu sitedeki [39 ruhsatlı şirketin listesi](/tr/sirketler/) o kontrolü yapmanız için var.
 
-Bir şirketin online yeteneğinin ne anlama geldiğini ve neye bakarak değerlendirdiğimizi [puanlama yöntemi sayfasında](/tr/metodoloji/) anlattık: dijital hizmet altı ölçütten biri ve toplam puanın %20'sini oluşturuyor.
+Hangi şirkette online teklif, online poliçe, online hasar ihbarı ve mobil uygulama bulunduğunu her şirketin [kendi profilinde](/tr/sirketler/) yazıyoruz.
 
 ## Kısa cevaplar
 

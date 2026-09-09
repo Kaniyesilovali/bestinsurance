@@ -66,7 +66,7 @@ Türkiye'den gelen ya da genel sigorta içeriği okuyan çoğu kişi şirketler 
 
 Pratikte şu anlama geliyor: **zorunlu trafik sigortasında şirket seçimini fiyata göre yapmak, elinizdeki en zayıf ölçüttür.** Aradaki fark dardır. Daralan farkın karşılığında aslında seçtiğiniz şirketin hasar anındaki davranışını satın alırsınız.
 
-Bu yüzden bu sitede şirketleri fiyata göre değil, dışarıdan doğrulanabilen ölçütlere göre karşılaştırıyoruz. [Trafik branşında ürünü doğrulanan şirketleri](/tr/sirketler/trafik/) ya da [ruhsatlı şirketlerin tamamını](/tr/sirketler/) görebilir, [ölçütleri nasıl kurduğumuzu](/tr/metodoloji/) okuyabilirsiniz. Zorunlu trafik sigortasının kapsamı ve limitleri için [trafik sigortası sayfamız](/tr/sigorta/trafik/) var.
+Bu yüzden bu sitede şirketleri fiyata göre değil, dışarıdan doğrulanabilen ölçütlere göre karşılaştırıyoruz. [Trafik branşında ürünü doğrulanan şirketleri](/tr/sirketler/trafik/) ya da [ruhsatlı şirketlerin tamamını](/tr/sirketler/) görebilirsiniz. Zorunlu trafik sigortasının kapsamı ve limitleri için [trafik sigortası sayfamız](/tr/sigorta/trafik/) var.
 
 ## Hangi taban size uygulanır
 

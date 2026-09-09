@@ -26,15 +26,15 @@ og_aciklama: "Siteyi kimler hazırlıyor, nasıl finanse ediliyor, şirketlerle 
 
 ## Ne yapıyoruz
 
-Kuzey Kıbrıs'ta faaliyet gösteren sigorta şirketlerini dışarıdan gözlemlenebilir
-ölçütlere göre değerlendiriyoruz ve sigorta türlerini KKTC mevzuatı çerçevesinde
-anlatıyoruz. Puanlamanın hangi ölçütlere dayandığını
-[metodoloji sayfasında](/tr/metodoloji/) tek tek açıklıyoruz.
+Kuzey Kıbrıs'ta faaliyet gösteren sigorta şirketleri hakkında dışarıdan
+doğrulanabilen bilgileri derliyoruz ve sigorta türlerini KKTC mevzuatı
+çerçevesinde anlatıyoruz. Şirketleri puanlamıyor, sıralamıyoruz — her kaydın
+kaynağı şirketin kendi yayınıdır.
 
 ## Ne yapmıyoruz
 
 - Sigorta satmıyoruz, teklif toplamıyoruz, aracılık etmiyoruz.
-- Şirketlerden puan karşılığı ödeme almıyoruz.
+- Şirketlerden listede yer almak ya da bilgilerinin nasıl görüneceği karşılığında ödeme almıyoruz.
 - Doğrulayamadığımız rakamı yazmıyoruz — boş bırakıp neden boş olduğunu söylüyoruz.
 - Resmî bir kurum değiliz. Adımızdaki "merkez" sözcüğüne rağmen Kuzey Kıbrıs Sigorta
   Bilgi Merkezi (KKSBM), KKSRSB veya herhangi bir devlet dairesiyle ilişkimiz yok.
@@ -47,7 +47,7 @@ anlatıyoruz. Puanlamanın hangi ölçütlere dayandığını
 ## Nasıl finanse ediliyor
 
 <!-- DOLDURULACAK: gelir modeli (reklam, ortaklık, kendi kaynağı vb.). -->
-<!-- Bir gelir modeli varsa, puanlamayı etkilemediğini burada açıkça yazın. -->
+<!-- Bir gelir modeli varsa, kayıtları etkilemediğini burada açıkça yazın. -->
 
 ## Bize ulaşın
 

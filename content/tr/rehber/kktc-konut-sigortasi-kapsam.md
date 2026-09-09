@@ -113,7 +113,7 @@ Pratikte bağlayıcı olan, elinizdeki poliçede yazan süredir. Poliçenizde bi
 
 ## Şirket tarafında durum
 
-Ruhsatlı 39 hayat dışı şirketin **28'inde** konut ürünü kendi sitesinden doğrulandı. Bu şirketlerin listesi ve puanları [konut yapan şirketler sayfamızda](/tr/sirketler/konut/); ölçütleri nasıl kurduğumuz [metodoloji sayfamızda](/tr/metodoloji/).
+Ruhsatlı 39 hayat dışı şirketin **28'inde** konut ürünü kendi sitesinden doğrulandı. Bu şirketlerin listesi [konut yapan şirketler sayfamızda](/tr/sirketler/konut/).
 
 Bu 28 şirketin **yalnızca üçü** poliçe genel şartlarını kendi sitesinde yayımlıyor. Kalanında poliçenin içeriğini imzadan önce görmenin tek yolu, şartları yazılı olarak istemektir. Yayımlamamak burada istisna değil kuraldır; bu yüzden tek başına olumsuz bir işaret saymıyoruz, ama şartları görmeden imzalamak için de gerekçe değildir. Ruhsatlı şirketlerin tamamı [şirketler sayfamızda](/tr/sirketler/).
 
