@@ -509,6 +509,28 @@ olurdu. Ayrım şöyle duruyor:
 
 M6 yöntemi anlatmaz, `/tr/metodoloji/` sayfasına bağlar.
 
+### Çoğul sorgu — 9 Eylül 2026'da atandı
+
+`kktc güvenilir sigorta şirketleri` **çoğul** hâli ayrı bir sorgudur ve M6'nın değildir.
+Niyeti farklı: tekil hâlde okur elindeki bir şirketi kontrol etmek ister, çoğul hâlde
+liste ister. M6 liste vermez, veremez de — yöntem yazısıdır.
+
+Sahip `/tr/sirketler/` sayfasıdır. Sayfa o güne kadar bu sorguya hiç aday değildi:
+"güvenilir" kelimesi başlığında, H1'inde ve gövdesinde bir kez bile geçmiyordu.
+Düzeltme yazıyla değil, sayfanın kendi çerçevesiyle yapıldı — başlık, H1 ve giriş
+`data/uret-sirketler.py` içinde değiştirildi, M6'ya bağlantı eklendi.
+
+| Sorgu | Sahip sayfa |
+|---|---|
+| `kktc güvenilir sigorta şirketleri` (çoğul, liste niyeti) | `/tr/sirketler/` |
+| `kktc sigorta şirketi güvenilir mi` (tekil, yöntem niyeti) | M6 |
+
+Bu sorgu için **yeni yazı açılmaz.** Üçüncü bir sayfa iki sahibi de zayıflatır.
+
+> ⚠ **M1 aynı riski taşıyor.** Hedef sorgusu `kktc sigorta şirketleri listesi`;
+> `/tr/sirketler/` sayfasının kendisi zaten o listedir. M1 yazılmadan önce hedef
+> sorgusu ayrıştırılmalı, yoksa ikinci bir çakışma üretir.
+
 Bu karar, aynı paragrafın önceki sürümündeki **"ikisi birleştirilmez"** notunu geçersiz
 kılar. O not içerik olarak haklıydı — iki yazının anlatacağı şey gerçekten farklı — ama
 hedef sorgu sütununa bakmamıştı; ikisi de `kktc sigorta şirketi güvenilir mi` yazıyordu.
