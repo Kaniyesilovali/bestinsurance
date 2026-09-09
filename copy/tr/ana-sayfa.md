@@ -113,11 +113,11 @@ puanlamanın adilliğini koruyor.*
 
 ## Bölüm — Zorunlu trafik
 
-**Mevcut metin doğru.** Limitler araştırmayla eşleşiyor: 150.000 ₺ mal zararı,
+**Mevcut metin doğru.** Limitler araştırmayla eşleşiyor: 1.200.000 ₺ mal zararı,
 8 milyon ₺ hususi.
 
 **Ekleme önerisi** — cümlenin sonuna:
-> Teminat limitleri Türkiye'dekinden farklı: mal zararı 150.000 ₺, ölüm ve yaralanma
+> Teminat limitleri Türkiye'dekinden farklı: mal zararı 1.200.000 ₺, ölüm ve yaralanma
 > hususi araçta 8 milyon ₺'ye kadar. **Aradığınız rakam Türkiye'ninse burada geçerli değil.**
 
 *Neden: bu sayfanın en çok arama trafiği alacak cümlesi. Uyarıyı bir kez daha söylemek

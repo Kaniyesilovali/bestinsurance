@@ -34,7 +34,7 @@ Bu bir "en ucuz sigortayı bul" sitesi değil. Bir **referans sitesi.** Dolayıs
 | Öğrenci (yabancı uyruklu) | TR/EN/RU/FA | "Oturma iznim için ne gerekiyor?" | Sağlık Fonu ≠ özel sigorta ayrımı |
 | Expat / yerleşik yabancı | EN/RU/FA | "Şikâyetimi nereye götürürüm?" | Güney'in Ombudsman'ı ve AB mekanizmaları burada geçmez |
 | Güney'den / TR'den araçla gelen | TR/EN/RU | "Poliçem geçerli mi?" | Yeşil kart geçmez; kapı sigortası tek yol, kapı saatleri kritik |
-| Türkiye'den taşınan | TR | "Limitler neydi?" | 150.000 ₺ / 8M ₺ — Türkiye rakamı değil |
+| Türkiye'den taşınan | TR | "Limitler neydi?" | 1.200.000 ₺ / 8M ₺ — Türkiye rakamı değil |
 
 ---
 
@@ -45,7 +45,7 @@ Bu bir "en ucuz sigortayı bul" sitesi değil. Bir **referans sitesi.** Dolayıs
 sitenin varlık sebebi. Her sayfada tekrar eden bir motif, ayrıca kendi hub'ı var.
 
 Küme:
-- Limit karşılaştırması (mal 150.000 ₺ vs 400.000 ₺ · bedeni 8M/15M ₺ vs 3,6M ₺)
+- Limit karşılaştırması (mal 1.200.000 ₺ vs 400.000 ₺ · bedeni 8M/15M ₺ vs 3,6M ₺)
 - Düzenleyici karşılaştırması (Para Kambiyo Dairesi ≠ SEDDK · KKSBM ≠ SBM · KKSRSB Tahkim ≠ TR Tahkim)
 - Tarife rejimi (taban tarife + bildirim ≠ serbest tarife)
 - Hasarsızlık indirimi (KKTC oranları **bilinmiyor** — bu sayfanın işi boşluğu ilan etmek)

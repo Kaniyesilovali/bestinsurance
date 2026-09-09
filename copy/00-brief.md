@@ -74,7 +74,7 @@ Bunlardan birini yazmak sitenin tek iddiasını çürütür.
 
 | Yazma | Neden |
 |---|---|
-| Türkiye'nin trafik limitleri (400.000 ₺ / 3,6M ₺) KKTC limiti olarak | KKTC: 150.000 ₺ / 8M ₺ hususi / 15M ₺ ticari |
+| Türkiye'nin trafik limitleri (400.000 ₺ / 3,6M ₺) KKTC limiti olarak | KKTC: 1.200.000 ₺ / 8M ₺ hususi / 15M ₺ ticari |
 | Sigortasız araç cezası — **herhangi bir rakam** | Fasıl 333 md. 17 okunamadı. İnternetteki rakamlar Türkiye'nin. |
 | Hasarsızlık basamak sayısı veya indirim oranı | KKTC oranları hiçbir kamu kaynağında yok. Türkiye'nin %5–50'si geçerli değil. |
 | Şirket bazında prim, hasar, pazar payı, özkaynak | 2016'dan beri yayımlanmıyor. |

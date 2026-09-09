@@ -10,7 +10,7 @@
 >
 > | | Türkiye | KKTC |
 > |---|---|---|
-> | Trafik mal zararı limiti | 400.000 TL (2026) | **150.000 TL** |
+> | Trafik mal zararı limiti | 400.000 TL (2026) | **1.200.000 TL** (25.02.2026 tüzüğü) |
 > | Bedeni zarar limiti | 3,6 milyon TL | **8M TL hususi / 15M TL ticari** |
 > | Düzenleyici | SEDDK | **Para Kambiyo ve İnkişaf Sandığı İşleri Dairesi** |
 > | Veri merkezi | SBM | **KKSBM** |
@@ -291,16 +291,38 @@ Sertifika Mali Sorumluluk
 
 **Dayanak:** Fasıl 333. KKTC'de trafiğe çıkan **her araç** için zorunlu.
 
-**Teminat limitleri — İKİ BAĞIMSIZ KAYNAKLA DOĞRULANDI:**
+**Teminat limitleri — MAL ZARARI BİRİNCİL KAYNAKTAN (Resmî Gazete) DOĞRULANDI:**
 
 | Teminat | Limit |
 |---|---|
-| Mal zararı (tek olay / zincirleme) | **150.000 TL** |
+| Mal zararı (tek olay / zincirleme) | **1.200.000 TL** |
 | Ölüm ve yaralanma — **hususi** araçlar | **8.000.000 TL**'ye kadar |
 | Ölüm ve yaralanma — **ticari** araçlar | **15.000.000 TL**'ye kadar |
 
-Kaynaklar: https://www.kibrissigorta.com/tr/trafik-sigortasi/ + Aveon Sigorta trafik sayfası.
-Mal zararı limiti 02.07.2018 ve 07.06.2022 tüzük değişiklikleriyle güncellendi.
+**Mal zararı — birincil kaynak:** Motorlu Araçlar (Üçüncü Şahıs Sigortası) Mal Zararlarına
+İlişkin Yükümlülükler Tüzüğü, madde 5: *"Sigorta şirketleri tek bir olay sonucu meydana gelen
+herhangi bir kaza veya zincirleme kazalar için 1.200.000,00 TL (Bir Milyon İki Yüz Bin Türk
+Lirası)'na kadar olan mal zararlarına ilişkin yükümlülükleri karşılar."*
+Bakanlar Kurulu kararı Ü(K-I)321-2026, 24.02.2026 · **KKTC Resmî Gazete Sayı 41,
+25 Şubat 2026, EK III, s. 730** — https://basimevi.gov.ct.tr/Portals/6/2026/41.pdf
+
+**Mal zararı limitinin seyri (hepsi Resmî Gazete'den okundu):**
+
+| Tüzük | Limit |
+|---|---|
+| R.G. 101 · 02.07.2018 · EK III · A.E. 579 | 150.000 TL |
+| R.G. 430 sayılı ilan · 07.06.2022 | 300.000 TL |
+| R.G. 99 · 11.05.2023 · EK III · A.E. 321 | (2025 tüzüğüyle yürürlükten kaldırıldı) |
+| R.G. 65 · 27.03.2025 · EK III · A.E. 272 | 800.000 TL |
+| **R.G. 41 · 25.02.2026 · EK III** | **1.200.000 TL — yürürlükte** |
+
+> ⚠ **150.000 TL rakamı 2018 tarihlidir ve dört kez değişmiştir.** Sigorta şirketlerinin
+> web siteleri (kibrissigorta.com dâhil) bu eski rakamı hâlâ yayımlıyor; ikincil kaynak
+> yerine Resmî Gazete esas alınmalıdır. Bu limit yılda bir civarında güncelleniyor —
+> her yıl Şubat–Mart aylarında Resmî Gazete'den teyit edilmeli.
+
+Ölüm ve yaralanma limitleri ikincil kaynaklardan (Dağlı Sigorta, Güven Sigorta, Kıbrıs
+Sigorta) doğrulandı; birincil metinden teyit edilmedi.
 
 **Kapsam:** karşı tarafın araç onarımı, çekici, üçüncü şahısların ölümü/kalıcı sakatlığı,
 acil tıbbi tedavi, karşı tarafa verilen her hasar (duvar, kaldırım, elektrik direği).

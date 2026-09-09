@@ -120,7 +120,7 @@ No ranking of paid claims was found for any year.
 **Body:**
 Every vehicle in the TRNC must carry compulsory third-party motor insurance under Chapter 333.
 It pays for the damage you cause to the other party, not for damage to your own vehicle. The
-sums insured differ from those in Türkiye: property damage 150,000 ₺, and death and injury up
+sums insured differ from those in Türkiye: property damage 1,200,000 ₺, and death and injury up
 to 8,000,000 ₺ on private vehicles. On commercial vehicles the death and injury limit is
 15,000,000 ₺. **If the figure you are looking for is a Türkiye figure, it does not apply here.**
 

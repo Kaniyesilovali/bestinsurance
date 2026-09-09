@@ -7,7 +7,7 @@ sütununun hub'ı — fiyat, limit veya ceza yazan her sayfa buraya bağlanır.
 **Tek eylem:** Kendi sigorta türünün KKTC sayfasına geçmek.
 
 **Title:** KKTC sigortası Türkiye'den nerede ayrılıyor — limitler, tarife ve şikâyet mercii
-**Meta description:** Kuzey Kıbrıs'ta trafik sigortası limitleri, fiyat rejimi, düzenleyici kurum ve şikâyet yolları Türkiye'dekinden farklı. Mal zararı 150.000 ₺, bedeni 8 milyon ₺. Doğrulayamadığımız üç konuyu da yazdık.
+**Meta description:** Kuzey Kıbrıs'ta trafik sigortası limitleri, fiyat rejimi, düzenleyici kurum ve şikâyet yolları Türkiye'dekinden farklı. Mal zararı 1.200.000 ₺, bedeni 8 milyon ₺. Doğrulayamadığımız üç konuyu da yazdık.
 
 ---
 
@@ -35,7 +35,7 @@ uyarmak. "Yanlış biliyorsunuz" değil, "arama size yanlışını verdi".*
 
 | | Türkiye | KKTC |
 |---|---|---|
-| Trafik — mal zararı limiti | 400.000 ₺ | **150.000 ₺** |
+| Trafik — mal zararı limiti | 400.000 ₺ | **1.200.000 ₺** |
 | Trafik — bedeni zarar limiti | 3,6 milyon ₺ | **8 milyon ₺** hususi · **15 milyon ₺** ticari |
 | Fiyat rejimi | Serbest tarife | **Taban tarife + bildirim** |
 | Düzenleyici | SEDDK | **Para, Kambiyo ve İnkişaf Sandığı İşleri Dairesi** |
@@ -60,15 +60,15 @@ geliyor. Cevabı ilk ekranda versin, açıklamayı isteyen aşağı insin.*
 Zorunlu trafik sigortası **karşı tarafa** verdiğiniz zararı karşılar. KKTC'deki üst
 sınırlar şunlar:
 
-**Mal zararı: 150.000 ₺**
+**Mal zararı: 1.200.000 ₺**
 Tek olayda da, zincirleme kazada da geçerli üst sınır bu. Karşı tarafın aracı,
 çarptığınız duvar, kaldırım, elektrik direği — hepsi bu limitin içinde.
 
 **Ölüm ve yaralanma: hususi araçlarda 8.000.000 ₺'ye kadar, ticari araçlarda
 15.000.000 ₺'ye kadar.**
 
-Bu rakamlar Türkiye'nin rakamları değil. Türkiye'nin mal zararı limiti daha yüksek,
-bedeni zarar limiti daha düşük. İkisini karıştırmak, hasar sonrası ne kadarının
+Bu rakamlar Türkiye'nin rakamları değil. Türkiye'nin hem mal zararı hem bedeni zarar
+limiti daha düşük. İkisini karıştırmak, hasar sonrası ne kadarının
 sigortadan çıkacağını yanlış hesaplamanıza yol açar.
 
 **Neyi karşılamaz:** kendi aracınızdaki hasarı. Onun için kasko gerekiyor.
@@ -270,7 +270,7 @@ Poliçe kararı vermeden önce şirketin güncel poliçe şartlarını okuyun.
 ```yaml
 baslik: "KKTC sigortası Türkiye'den nerede ayrılıyor — limitler, tarife ve şikâyet mercii"
 h1: "KKTC sigortası Türkiye'den nerede ayrılıyor"
-aciklama: "Kuzey Kıbrıs'ta trafik sigortası limitleri, fiyat rejimi, düzenleyici kurum ve şikâyet yolları Türkiye'dekinden farklı. Mal zararı 150.000 ₺, bedeni 8 milyon ₺. Doğrulayamadığımız üç konuyu da yazdık."
+aciklama: "Kuzey Kıbrıs'ta trafik sigortası limitleri, fiyat rejimi, düzenleyici kurum ve şikâyet yolları Türkiye'dekinden farklı. Mal zararı 1.200.000 ₺, bedeni 8 milyon ₺. Doğrulayamadığımız üç konuyu da yazdık."
 ozet: "Limitler, tarife rejimi, düzenleyici ve şikâyet mercii — sekiz başlıkta iki ülke yan yana. Sigortasız araç cezası, hasarsızlık oranları ve tahkim limitleri için rakam vermiyoruz; sebebini yazıyoruz."
 giris: "KKTC sigortası hakkında arama yaptığınızda dönen sonuçların çoğu Türkiye'yi anlatıyor. Limitler, cezalar, indirim oranları, şikâyet mercii — hepsi ayrı."
 kategori: Ayrım

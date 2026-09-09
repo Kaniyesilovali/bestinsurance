@@ -5,7 +5,7 @@
 **Template:** This page is the template for the other motor pages. Build it first.
 
 **Title:** TRNC compulsory motor insurance — limits, floor tariff and cover | KKTC Sigorta Merkezi
-**Meta description:** Compulsory third-party motor insurance in Northern Cyprus: 150,000 ₺ property damage, 8 million ₺ death and injury. Chapter 333, the floor tariff, and which companies serve in English.
+**Meta description:** Compulsory third-party motor insurance in Northern Cyprus: 1,200,000 ₺ property damage, 8 million ₺ death and injury. Chapter 333, the floor tariff, and which companies serve in English.
 
 > **Adaptation note — not a translation.** The Turkish page opens by separating TRNC limits
 > from Turkey's, because that is the Turkish reader's confusion. It is not this reader's.
@@ -39,7 +39,7 @@ Chapter 333, the Motor Vehicles (Third Party Insurance) Law.
 
 | | |
 |---|---|
-| Property damage — single event or chain collision | 150,000 ₺ |
+| Property damage — single event or chain collision | 1,200,000 ₺ |
 | Death and injury — private vehicles | 8,000,000 ₺ |
 | Death and injury — commercial vehicles | 15,000,000 ₺ |
 
