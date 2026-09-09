@@ -281,7 +281,7 @@ def govde_en(canli, olu):
     <div class="flex flex-wrap items-end gap-4 mb-6">
       <div class="flex-1 min-w-[200px]">
         <label for="ara" class="u-eyebrow block mb-2">Search company or city</label>
-        <input id="ara" type="search" data-filter-search placeholder="e.g. Dağlı, Girne"
+        <input id="ara" type="search" data-filter-search placeholder="e.g. Girne"
                class="w-full border border-line bg-white px-4 py-2.5 text-[15px] rounded-sm">
       </div>
       <div class="min-w-[180px]">
@@ -396,7 +396,7 @@ def main():
     <div class="flex flex-wrap items-end gap-4 mb-6">
       <div class="flex-1 min-w-[200px]">
         <label for="ara" class="u-eyebrow block mb-2">Şirket veya şehir ara</label>
-        <input id="ara" type="search" data-filter-search placeholder="Örn. Dağlı, Girne"
+        <input id="ara" type="search" data-filter-search placeholder="Örn. Girne"
                class="w-full border border-line bg-white px-4 py-2.5 text-[15px] rounded-sm">
       </div>
       <div class="min-w-[180px]">
