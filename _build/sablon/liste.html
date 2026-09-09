@@ -4,8 +4,8 @@
 <!-- ── Giriş ─────────────────────────────────────────────────────────────── -->
 <section class="bg-white">
   <div class="mx-auto max-w-shell px-[22px] pt-[72px] pb-[48px] sm:pt-[96px] sm:pb-[64px]">
-    <nav aria-label="Konum" class="text-[12px] text-muted mb-6">
-      <a href="/{{ dil }}/" class="hover:text-text">Ana sayfa</a> <span class="mx-2">/</span>
+    <nav aria-label="{{ metin.konum_aria }}" class="text-[12px] text-muted mb-6">
+      <a href="/{{ dil }}/" class="hover:text-text">{{ metin.ana_sayfa }}</a> <span class="mx-2">/</span>
       {%- if konu %}
       <a href="{{ blog.kok }}" class="hover:text-text">{{ blog.baslik }}</a> <span class="mx-2">/</span>
       {{ konu }}
@@ -27,11 +27,11 @@
 <!-- ── Konular ───────────────────────────────────────────────────────────── -->
 <section class="bg-white border-t border-line">
   <div class="mx-auto max-w-shell px-[22px] py-6">
-    <nav aria-label="Konular" class="flex flex-wrap gap-2 text-[12px]">
+    <nav aria-label="{{ metin.konular_aria }}" class="flex flex-wrap gap-2 text-[12px]">
       {%- if konu %}
-      <a href="{{ blog.kok }}" class="px-3 py-1.5 border border-line rounded-[980px] text-muted hover:text-text transition-colors">Tümü</a>
+      <a href="{{ blog.kok }}" class="px-3 py-1.5 border border-line rounded-[980px] text-muted hover:text-text transition-colors">{{ metin.tumu }}</a>
       {%- else %}
-      <span class="px-3 py-1.5 border border-text rounded-[980px] text-text font-medium" aria-current="page">Tümü</span>
+      <span class="px-3 py-1.5 border border-text rounded-[980px] text-text font-medium" aria-current="page">{{ metin.tumu }}</span>
       {%- endif %}
       {%- for k in konular %}
       {%- if k.ad == konu %}
@@ -57,7 +57,7 @@
             {%- if y.kategori %}
             <p class="u-eyebrow">{{ y.kategori }}</p>
             {%- endif %}
-            <p class="text-[12px] text-muted mt-1">{{ y.tarih_tr }}</p>
+            <p class="text-[12px] text-muted mt-1">{{ y.tarih_metin }}</p>
           </div>
           <div>
             <h2 class="u-display text-[21px] sm:text-[26px] leading-[1.15] mb-3">
@@ -66,7 +66,7 @@
             <p class="text-[15px] leading-relaxed text-muted mb-4 max-w-prose">
               {{ y.ozet }}
             </p>
-            <a href="{{ y.url }}" class="arrow arrow--sm">Yazıyı oku</a>
+            <a href="{{ y.url }}" class="arrow arrow--sm">{{ metin.yaziyi_oku }}</a>
           </div>
         </div>
       </article>
@@ -74,17 +74,17 @@
     </div>
 
     {%- if sayfalama.toplam > 1 %}
-    <nav aria-label="Sayfalar" class="flex items-center justify-between gap-4 mt-10 text-[13px]">
+    <nav aria-label="{{ metin.sayfalar_aria }}" class="flex items-center justify-between gap-4 mt-10 text-[13px]">
       {%- if sayfalama.onceki %}
-      <a href="{{ sayfalama.onceki }}" class="arrow arrow--sm arrow--geri">Önceki</a>
+      <a href="{{ sayfalama.onceki }}" class="arrow arrow--sm arrow--geri">{{ metin.onceki }}</a>
       {%- else %}
       <span></span>
       {%- endif %}
 
-      <p class="text-muted">Sayfa {{ sayfalama.simdiki }} / {{ sayfalama.toplam }}</p>
+      <p class="text-muted">{{ metin.sayfa_no.format(simdiki=sayfalama.simdiki, toplam=sayfalama.toplam) }}</p>
 
       {%- if sayfalama.sonraki %}
-      <a href="{{ sayfalama.sonraki }}" class="arrow arrow--sm">Sonraki</a>
+      <a href="{{ sayfalama.sonraki }}" class="arrow arrow--sm">{{ metin.sonraki }}</a>
       {%- else %}
       <span></span>
       {%- endif %}
@@ -99,16 +99,13 @@
   <div class="mx-auto max-w-shell px-[22px] py-[80px] sm:py-[104px]">
     <div class="max-w-prose mx-auto text-center">
       <h2 class="u-display text-[clamp(1.5rem,3.5vw,2.25rem)] mb-5">
-        Doğrulayamadığımızı yazmıyoruz.
+        {{ metin.liste_ilke.baslik }}
       </h2>
       <p class="u-lead">
-        Bu yazılarda birkaç yerde rakam yerine boşluk göreceksiniz: sigortasız araç cezası,
-        hasarsızlık indirim oranları, hasar ihbar süresi, tahkim limitleri. Bunların hepsi
-        KKTC için kamuya açık bir kaynakta bulunmuyor ve internetteki karşılıkları
-        Türkiye'ye ait. Tahmin etmek yerine boş bırakıyoruz.
+        {{ metin.liste_ilke.metin }}
       </p>
       <p class="mt-7">
-        <a href="/{{ dil }}/metodoloji/" class="arrow">Nasıl çalıştığımızı okuyun</a>
+        <a href="{{ metin.liste_ilke.cta_url }}" class="arrow">{{ metin.liste_ilke.cta }}</a>
       </p>
     </div>
   </div>
@@ -118,29 +115,23 @@
 <section class="bg-white border-t border-line">
   <div class="mx-auto max-w-shell px-[22px] py-16 sm:py-20">
     <div class="flex flex-wrap items-baseline justify-between gap-4 mb-8">
-      <h2 class="u-display text-[1.5rem] sm:text-[2rem]">Sigorta türleri</h2>
-      <a href="/{{ dil }}/sirketler/" class="arrow arrow--sm">Şirketleri karşılaştır</a>
+      <h2 class="u-display text-[1.5rem] sm:text-[2rem]">{{ metin.liste_turler.baslik }}</h2>
+      <a href="{{ metin.liste_turler.cta_url }}" class="arrow arrow--sm">{{ metin.liste_turler.cta }}</a>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <a href="/{{ dil }}/sigorta/trafik/" class="card p-7 flex flex-col">
-        <span class="h-[22px] mb-4"><span class="badge badge--zorunlu">Zorunlu</span></span>
-        <h3 class="text-[19px] font-medium tracking-[-.015em] mb-2">Trafik sigortası</h3>
-        <p class="text-[14px] leading-[1.43] text-muted mb-5">Üçüncü şahıslara verdiğiniz zararı karşılar.</p>
-        <span class="arrow arrow--sm mt-auto">İncele</span>
-      </a>
-      <a href="/{{ dil }}/sigorta/kasko/" class="card p-7 flex flex-col">
+      {%- for kart in metin.liste_turler.kartlar %}
+      <a href="{{ kart.url }}" class="card p-7 flex flex-col">
+        {%- if kart.rozet %}
+        <span class="h-[22px] mb-4"><span class="badge badge--zorunlu">{{ kart.rozet }}</span></span>
+        {%- else %}
         <span class="h-[22px] mb-4" aria-hidden="true"></span>
-        <h3 class="text-[19px] font-medium tracking-[-.015em] mb-2">Kasko</h3>
-        <p class="text-[14px] leading-[1.43] text-muted mb-5">Kendi aracınızdaki hasar.</p>
-        <span class="arrow arrow--sm mt-auto">İncele</span>
+        {%- endif %}
+        <h3 class="text-[19px] font-medium tracking-[-.015em] mb-2">{{ kart.ad }}</h3>
+        <p class="text-[14px] leading-[1.43] text-muted mb-5">{{ kart.aciklama }}</p>
+        <span class="arrow arrow--sm mt-auto">{{ metin.incele }}</span>
       </a>
-      <a href="/{{ dil }}/sigorta/saglik/" class="card p-7 flex flex-col">
-        <span class="h-[22px] mb-4" aria-hidden="true"></span>
-        <h3 class="text-[19px] font-medium tracking-[-.015em] mb-2">Sağlık sigortası</h3>
-        <p class="text-[14px] leading-[1.43] text-muted mb-5">Sağlık Fonu primi ile özel poliçenin farkı.</p>
-        <span class="arrow arrow--sm mt-auto">İncele</span>
-      </a>
+      {%- endfor %}
     </div>
   </div>
 </section>

@@ -29,7 +29,7 @@
 
     <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between pt-6">
       <p>{{ footer.telif }}</p>
-      <nav aria-label="Dil" class="flex gap-4">
+      <nav aria-label="{{ metin.dil_aria }}" class="flex gap-4">
         {%- for kod, d in diller.items() %}
         {%- if kod == dil %}
         <span class="text-text font-medium">{{ d.ad }}</span>

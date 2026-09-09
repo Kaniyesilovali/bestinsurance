@@ -7,7 +7,7 @@
       {{ site_adi_kisa }}<span class="text-muted font-normal"> Merkezi</span>
     </a>
 
-    <nav class="hidden lg:flex items-center gap-8 text-[12px]" aria-label="Ana menü">
+    <nav class="hidden lg:flex items-center gap-8 text-[12px]" aria-label="{{ metin.menu_aria }}">
       {%- for oge in menu %}
       {%- if oge.id == aktif_menu %}
       <a href="{{ oge.url }}" class="text-text font-medium" aria-current="page">{{ oge.ad }}</a>
@@ -18,7 +18,7 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      <nav aria-label="Dil" class="hidden sm:flex items-center gap-3 text-[12px]">
+      <nav aria-label="{{ metin.dil_aria }}" class="hidden sm:flex items-center gap-3 text-[12px]">
         {%- for kod, d in diller.items() %}
         {%- if kod == dil %}
         <span class="text-text font-medium" aria-current="true">{{ d.kisa }}</span>
@@ -28,7 +28,7 @@
         {%- endfor %}
       </nav>
       <button data-menu-toggle aria-expanded="false" aria-controls="mobil-menu"
-              class="lg:hidden p-2 -mr-2 text-muted" aria-label="Menüyü aç">
+              class="lg:hidden p-2 -mr-2 text-muted" aria-label="{{ metin.menu_ac }}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
           <path d="M3 7h18M3 17h18"/>
         </svg>
@@ -37,7 +37,7 @@
   </div>
 
   <div id="mobil-menu" data-menu hidden class="lg:hidden border-t border-line bg-white">
-    <nav class="mx-auto max-w-shell px-[22px] py-3 grid text-[17px]" aria-label="Mobil menü">
+    <nav class="mx-auto max-w-shell px-[22px] py-3 grid text-[17px]" aria-label="{{ metin.mobil_menu_aria }}">
       {%- for oge in menu %}
       <a href="{{ oge.url }}" class="py-2.5{% if not loop.last %} border-b border-line{% endif %}{% if oge.id == aktif_menu %} text-text font-medium{% endif %}"{% if oge.id == aktif_menu %} aria-current="page"{% endif %}>{{ oge.mobil_ad }}</a>
       {%- endfor %}

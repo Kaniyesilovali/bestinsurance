@@ -44,8 +44,9 @@ Ayrıntı: [YAZI-YAZMA.md](YAZI-YAZMA.md).
 |---|---|
 | Alan adını değiştirmek | `site.json` → `alan_adi` |
 | Siteyi aramaya açmak | `site.json` → `yayin.noindex` → `false` |
-| Menüye madde eklemek | `site.json` → `menu.tr` |
+| Menüye madde eklemek | `site.json` → `menu.tr` (EN için `menu.en`) |
 | Footer bağlantısı | `site.json` → `footer.tr` |
+| Şablondaki sabit metin | `site.json` → `metinler.<dil>` |
 | Sayfa başına yazı sayısı | `site.json` → `yayin.sayfa_basina_yazi` |
 | Tüm sayfaların üst/alt bölümü | `_build/sablon/parca/` |
 | Blog liste sayfasının düzeni | `_build/sablon/liste.html` |
@@ -69,7 +70,22 @@ Bunları elle yazmayın; her üretimde yeniden oluşturulurlar:
 
 ## Diller
 
-Yapı dört dili (`tr`, `en`, `ru`, `fa`) destekler; şu an yalnızca **TR** üretiliyor.
-`content/en/…` altına içerik eklendiğinde dil değiştirici ve `hreflang` etiketleri
-kendiliğinden belirir — var olmayan bir dile bağlantı verilmez. Metin taslakları
-`copy/` altında hazır bekliyor.
+Yapı dört dili (`tr`, `en`, `ru`, `fa`) destekler; şu an **TR ve EN** üretiliyor.
+RU ve FA'nın metin taslakları `copy/` altında hazır bekliyor.
+
+Dil değiştirici ve `hreflang` etiketleri yalnızca **üretilmiş** adresleri gösterir —
+var olmayan bir dile bağlantı verilmez, o dilin içeriği eklendiği anda bağlantılar
+kendiliğinden belirir.
+
+**Yeni bir dil açarken sıra şudur.** İlk üç adım atlanırsa üretici durur ya da
+sayfa yanlış dilde çıkar:
+
+1. `site.json` → `metinler.<dil>` — şablonların sabit arayüz metinleri (buton,
+   `aria-label`, sayfalama, liste sayfasının alt blokları). **Eksikse üretim durur.**
+2. `site.json` → `menu.<dil>`, `footer.<dil>` — yalnızca üretilmiş adresler yazılır.
+3. `site.json` → `blog.<dil>` — o dilde rehber yazısı yayımlanacaksa gerekir.
+4. `content/<dil>/sayfa/` ve `content/<dil>/rehber/` altına içerik.
+5. Yazıların çeviri eşleri **tek yerde** durur: TR dosyasının `ceviriler` alanında.
+   Karşı taraf yazmasa da hreflang iki yönlü kurulur.
+
+Ayrıntılı gerekçe ve yayın sırası: `copy/04-dil-katmani.md`.

@@ -54,6 +54,117 @@
       "konu_kok": "/en/guides/topic/"
     }
   },
+  "_metinler_notu": "Şablonlardaki sabit arayüz metinleri. Bir dil için bu blok yazılmadan o dilde rehber sayfası üretilmemelidir: üretilirse İngilizce sayfada Türkçe arayüz metni ve Türkçe ay adı çıkar. uret.py, metinler[dil] yoksa durur.",
+  "metinler": {
+    "tr": {
+      "icerige_atla": "İçeriğe atla",
+      "menu_aria": "Ana menü",
+      "mobil_menu_aria": "Mobil menü",
+      "menu_ac": "Menüyü aç",
+      "dil_aria": "Dil",
+      "konum_aria": "Konum",
+      "ana_sayfa": "Ana sayfa",
+      "son_guncelleme": "Son güncelleme",
+      "ilgili_yazilar": "İlgili yazılar",
+      "tum_yazilar": "Tüm yazılar",
+      "oku": "Oku",
+      "yaziyi_oku": "Yazıyı oku",
+      "konular_aria": "Konular",
+      "tumu": "Tümü",
+      "sayfalar_aria": "Sayfalar",
+      "onceki": "Önceki",
+      "sonraki": "Sonraki",
+      "sayfa_no": "Sayfa {simdiki} / {toplam}",
+      "sayfa_eki": "sayfa {no}",
+      "konu_giris": "{blog} bölümünde “{konu}” konulu yazılar.",
+      "incele": "İncele",
+      "liste_ilke": {
+        "baslik": "Doğrulayamadığımızı yazmıyoruz.",
+        "metin": "Bu yazılarda birkaç yerde rakam yerine boşluk göreceksiniz: sigortasız araç cezası, hasarsızlık indirim oranları, hasar ihbar süresi, tahkim limitleri. Bunların hepsi KKTC için kamuya açık bir kaynakta bulunmuyor ve internetteki karşılıkları Türkiye'ye ait. Tahmin etmek yerine boş bırakıyoruz.",
+        "cta": "Nasıl çalıştığımızı okuyun",
+        "cta_url": "/tr/metodoloji/"
+      },
+      "liste_turler": {
+        "baslik": "Sigorta türleri",
+        "cta": "Şirketleri karşılaştır",
+        "cta_url": "/tr/sirketler/",
+        "kartlar": [
+          {
+            "url": "/tr/sigorta/trafik/",
+            "rozet": "Zorunlu",
+            "ad": "Trafik sigortası",
+            "aciklama": "Üçüncü şahıslara verdiğiniz zararı karşılar."
+          },
+          {
+            "url": "/tr/sigorta/kasko/",
+            "rozet": "",
+            "ad": "Kasko",
+            "aciklama": "Kendi aracınızdaki hasar."
+          },
+          {
+            "url": "/tr/sigorta/saglik/",
+            "rozet": "",
+            "ad": "Sağlık sigortası",
+            "aciklama": "Sağlık Fonu primi ile özel poliçenin farkı."
+          }
+        ]
+      }
+    },
+    "en": {
+      "icerige_atla": "Skip to content",
+      "menu_aria": "Main menu",
+      "mobil_menu_aria": "Mobile menu",
+      "menu_ac": "Open menu",
+      "dil_aria": "Language",
+      "konum_aria": "Breadcrumb",
+      "ana_sayfa": "Home",
+      "son_guncelleme": "Last updated",
+      "ilgili_yazilar": "Related guides",
+      "tum_yazilar": "All guides",
+      "oku": "Read",
+      "yaziyi_oku": "Read the guide",
+      "konular_aria": "Topics",
+      "tumu": "All",
+      "sayfalar_aria": "Pages",
+      "onceki": "Previous",
+      "sonraki": "Next",
+      "sayfa_no": "Page {simdiki} of {toplam}",
+      "sayfa_eki": "page {no}",
+      "konu_giris": "{blog} filed under “{konu}”.",
+      "incele": "See the page",
+      "liste_ilke": {
+        "baslik": "We do not write what we could not verify.",
+        "metin": "In a few places these guides leave a blank where a figure would go: the penalty for driving uninsured, no-claims discount rates, the claim notification deadline, arbitration limits. None of them is published in a public TRNC source, and the figures circulating online belong to Türkiye. Rather than guess, we leave the space empty.",
+        "cta": "Read how we work",
+        "cta_url": "/en/methodology/"
+      },
+      "liste_turler": {
+        "baslik": "Insurance types",
+        "cta": "Compare the companies",
+        "cta_url": "/en/companies/",
+        "kartlar": [
+          {
+            "url": "/en/insurance/motor-third-party/",
+            "rozet": "Legal requirement",
+            "ad": "Compulsory motor",
+            "aciklama": "Pays for the damage you cause to other people."
+          },
+          {
+            "url": "/en/insurance/comprehensive/",
+            "rozet": "",
+            "ad": "Comprehensive (kasko)",
+            "aciklama": "Damage to your own vehicle."
+          },
+          {
+            "url": "/en/insurance/health/",
+            "rozet": "",
+            "ad": "Health insurance",
+            "aciklama": "What the Health Fund covers and what a private policy adds."
+          }
+        ]
+      }
+    }
+  },
   "menu": {
     "tr": [
       {
@@ -93,7 +204,7 @@
         "mobil_ad": "Nasıl puanlıyoruz"
       }
     ],
-    "_en_notu": "EN menüsü dil katmanı büyüdükçe genişler. Yalnızca ÜRETİLMİŞ sayfalar menüye girer — üretilmemiş bir adres menüye yazılırsa her EN sayfasında kırık bağlantı doğar. Sıra: Blok B sağlık ve seyahati, Blok C kasko/konut/işyerini ekler (bkz. copy/04-dil-katmani.md §6).",
+    "_en_notu": "EN menüsü dil katmanı büyüdükçe genişler. Yalnızca ÜRETİLMİŞ sayfalar menüye girer — üretilmemiş bir adres menüye yazılırsa her EN sayfasında kırık bağlantı doğar. Blok B ve C ile altı madde tamamlandı: TR menüsünün birebir karşılığı (bkz. copy/04-dil-katmani.md §6).",
     "en": [
       {
         "id": "sirketler",
@@ -106,6 +217,24 @@
         "url": "/en/insurance/motor-third-party/",
         "ad": "Compulsory motor",
         "mobil_ad": "Compulsory motor"
+      },
+      {
+        "id": "kasko",
+        "url": "/en/insurance/comprehensive/",
+        "ad": "Comprehensive",
+        "mobil_ad": "Comprehensive (kasko)"
+      },
+      {
+        "id": "saglik",
+        "url": "/en/insurance/health/",
+        "ad": "Health",
+        "mobil_ad": "Health insurance"
+      },
+      {
+        "id": "rehber",
+        "url": "/en/guides/",
+        "ad": "Guides",
+        "mobil_ad": "Guides"
       },
       {
         "id": "metodoloji",
@@ -206,6 +335,44 @@
             {
               "url": "/en/insurance/motor-third-party/",
               "ad": "Compulsory motor"
+            },
+            {
+              "url": "/en/insurance/comprehensive/",
+              "ad": "Comprehensive (kasko)"
+            },
+            {
+              "url": "/en/insurance/health/",
+              "ad": "Health"
+            },
+            {
+              "url": "/en/insurance/home/",
+              "ad": "Home"
+            },
+            {
+              "url": "/en/insurance/travel/",
+              "ad": "Travel"
+            },
+            {
+              "url": "/en/insurance/business/",
+              "ad": "Business"
+            }
+          ]
+        },
+        {
+          "baslik": "Site",
+          "aria": "Site",
+          "baglantilar": [
+            {
+              "url": "/en/companies/",
+              "ad": "Companies"
+            },
+            {
+              "url": "/en/methodology/",
+              "ad": "How we score"
+            },
+            {
+              "url": "/en/guides/",
+              "ad": "Guides"
             }
           ]
         }

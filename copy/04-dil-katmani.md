@@ -76,12 +76,13 @@ karşılaştırma kaynağı yok — alan boş, ve dolduran taraf poliçe satan a
 | | EN | RU | FA |
 |---|---|---|---|
 | `copy/` taslağı | **12** | 11 | 11 |
-| `content/` sayfası | **4** (Blok A) | 0 | 0 |
-| `dist/` canlı sayfa | **4** | 0 | 0 |
+| `content/` sayfası | **12** (A + B + C) | 0 | 0 |
+| `dist/` canlı adres | **16** (12 sayfa + liste + 3 konu) | 0 | 0 |
 | `site.json` rotası | 10 adres tanımlı | yok | yok |
-| `site.json` menu | var (3 madde) | yok | yok |
-| `site.json` footer | var (AB uyarısı yazılı) | yok | yok |
+| `site.json` menu | var (**6 madde**, TR ile birebir) | yok | yok |
+| `site.json` footer | var (AB uyarısı + 2 sütun) | yok | yok |
 | `site.json` blog | var (`/en/guides/`) | yok | yok |
+| `site.json` metinler | var (**arayüz metinleri**) | yok | yok |
 
 **Taslakların kapsamı** (her dilde aynı iskelet): ana sayfa · metodoloji ·
 şirketler · 6 sigorta türü · 3 rehber. Yani çekirdek sitenin tamamı.
@@ -99,7 +100,7 @@ Yazılmış tek EN sayfası — `content/en/sayfa/insurance/motor-third-party/` 
 `taslak: evet` ile bekliyor. Sebebi içerik değil, yapı:
 
 - `_build/sablon/parca/header.html`: her sayfadaki logo `/{dil}/` adresine bağlanır.
-- `_build/uret.py:1723`: dil değiştirici yalnızca `/{dil}/` üretilmiş dilleri listeler.
+- `_build/uret.py` > `kok_yonlendirme()`: dil değiştirici ve kök yönlendirme yalnızca `/{dil}/` üretilmiş dilleri listeler.
 
 Yani **hiçbir EN sayfası `/en/` olmadan tek başına yayımlanamaz** — kırık
 bağlantı doğar. Aynı kural RU ve FA için de geçerli.
@@ -183,25 +184,32 @@ Bağımlılık sırasıdır, önem sırası değil. Her adım bir öncekini gere
 A4 bittiğinde EN katmanı **kendi başına ayakta duran bir site** olur:
 giriş, yöntem, veri, ve bir ürün sayfası.
 
-### Blok B — EN zarar anı ve ikamet (P3 + P4)
+### Blok B — EN zarar anı ve ikamet (P3 + P4) · ✅ tamamlandı 9 Eylül 2026
 
 | # | Sayfa | Kaynak taslak |
 |---|---|---|
-| B1 | `/en/guides/border-crossing-insurance/` | `copy/en/rehber-sinir-gecisi.md` |
-| B2 | `/en/insurance/travel/` | `copy/en/sigorta-seyahat.md` |
-| B3 | `/en/guides/student-health-insurance/` | `copy/en/rehber-ogrenci-saglik.md` |
-| B4 | `/en/insurance/health/` | `copy/en/sigorta-saglik.md` |
-| B5 | `/en/guides/first-48-hours-after-an-accident/` | `copy/en/rehber-kaza-48-saat.md` |
+| B1 | ✅ `/en/guides/border-crossing-insurance/` | `copy/en/rehber-sinir-gecisi.md` |
+| B2 | ✅ `/en/insurance/travel/` | `copy/en/sigorta-seyahat.md` |
+| B3 | ✅ `/en/guides/student-health-insurance/` | `copy/en/rehber-ogrenci-saglik.md` |
+| B4 | ✅ `/en/insurance/health/` | `copy/en/sigorta-saglik.md` |
+| B5 | ✅ `/en/guides/first-48-hours-after-an-accident/` | `copy/en/rehber-kaza-48-saat.md` |
 
 B1 ve B2 önce: 238.320 poliçelik ölçülmüş talep bu ikisinin arkasında.
 
-### Blok C — EN kalan branşlar
+Blok B ilk EN **yazısını** doğurduğu için rehber şablonunun dil katmanı da
+burada açıldı — ayrıntısı §14.
+
+### Blok C — EN kalan branşlar · ✅ tamamlandı 9 Eylül 2026
 
 | # | Sayfa | Kaynak taslak |
 |---|---|---|
-| C1 | `/en/insurance/comprehensive/` | `copy/en/sigorta-kasko.md` |
-| C2 | `/en/insurance/home/` | `copy/en/sigorta-konut.md` |
-| C3 | `/en/insurance/business/` | `copy/en/sigorta-isyeri.md` |
+| C1 | ✅ `/en/insurance/comprehensive/` | `copy/en/sigorta-kasko.md` |
+| C2 | ✅ `/en/insurance/home/` | `copy/en/sigorta-konut.md` |
+| C3 | ✅ `/en/insurance/business/` | `copy/en/sigorta-isyeri.md` |
+
+Blok C bittiğinde §5'in EN satırı kapanır: **hedeflenen 12 sayfanın 12'si canlı.**
+EN ana sayfası da Blok A'da işaret edecek sayfası olmadığı için yazılmamış iki
+bölümü kazandı: sigorta türleri kartları ve rehber kartları.
 
 ### Blok D — RU
 
@@ -293,10 +301,12 @@ Yayın sırası bunlara takılır. Sırası gelince kapatılır, önceden hepsi 
 
 | Boşluk | Durum | Karar |
 |---|---|---|
-| `rotalar` → EN rehber adresleri | 3 rehberin rotası yok | Blok B'den önce eklenir |
-| **`/en/guide/` mi `/en/guides/` mi** | Taslaklar tekil, `blog.en.kok` çoğul | **Çoğul kazanır** — liste sayfası `/en/guides/`, yazılar `/en/guides/<slug>/`. Taslaklardaki tekil adresler düzeltilir. |
+| `rotalar` → EN rehber adresleri | ✅ kapandı | **`rotalar`'a yazılmaz.** Yazıların eşleri TR dosyasının `ceviriler` alanında durur (`site.json` > `_rotalar_notu`). Bu satır boşluğu yanlış yere koymuştu. |
+| **Rehber slug'ları** | ✅ karara bağlandı | TR dosyalarındaki `ceviriler` bu belgeden **önce** yazılmıştı ve üç slug tutmuyordu (`crossing-the-border`, `student-health-cover`, `after-an-accident`). Bu belge kazandı: slug'lar §6'daki anahtar taşıyan adreslere çevrildi. Hiçbir EN adresi henüz canlı olmadığı için taşıma maliyeti yoktu. |
+| **`/en/guide/` mi `/en/guides/` mi** | ✅ kapandı | **Çoğul kazandı** — liste `/en/guides/`, yazılar `/en/guides/<slug>/`. |
 | **`/en/insurance/kasko/` mi `comprehensive/` mi** | ✅ karara bağlandı | **Rota kazanır.** `00-brief.md` terim tablosu: "Comprehensive motor insurance", "Kasko" parantez içinde korunur. |
-| `menu.en` | ✅ 3 madde (Blok A) | Her blok sonunda genişletilir |
+| `menu.en` | ✅ 6 madde (Blok C sonu) | TR menüsünün birebir karşılığı; yasal sayfalar EN'de olmadığı için footer'da yasal sütun **açılmadı** |
+| `metinler.en` | ✅ eklendi | Şablonların sabit arayüz metinleri. Yeni dil açılırken önce bu blok yazılır — §14 |
 | `menu.ru`, `menu.fa` | yok | Blok D / E başında |
 | `footer.ru`, `footer.fa` | yok | Blok D / E başında, AB uyarısı dahil |
 | `blog.ru`, `blog.fa` | yok | Rehber sayfası üretilecekse gerekir |
@@ -388,3 +398,54 @@ onarılan hatanın aynısı.
   satıra dokunulmaz; ilk `⬜` kuralı işlemeye devam eder.
 - **FA'yı kapatmaz.** FA katmanı açılır, yalnızca şirket karşılaştırması
   içermez. Bu bir kapsam kararıdır, bir vazgeçiş değil.
+
+---
+
+## 14. Yol üstünde çıkan: şablonların dil katmanı
+
+Blok A yalnızca **statik sayfa** üretmişti. Blok B ilk EN **yazısını** doğurunca
+rehber şablonları devreye girdi — ve orada dil diye bir şey yoktu.
+
+**Bulgu.** `yazi.html`, `liste.html`, `header.html`, `iskelet.html`: dördü de
+Türkçe metni gövdesine gömülü taşıyordu. Blok B'yi olduğu gibi yayımlasaydık
+İngilizce rehber sayfası şunları basacaktı:
+
+| Nerede | Ne basacaktı |
+|---|---|
+| Yazı başlığı altı | "Son güncelleme: **Eylül 2026**" |
+| Liste kartı | "Yazıyı oku" · "Tüm yazılar" · "Tümü" |
+| Sayfalama | "Sayfa 1 / 2" |
+| Konu sayfası girişi | "Rehber bölümünde “Border crossing” konulu yazılar." |
+| Atlama bağlantısı | "İçeriğe atla" |
+| Menü `aria-label` | "Ana menü" · "Dil" · "Menüyü aç" |
+
+Bunların üçü ekran okuyucuya konuşur, ikisi gözle görünür. Hepsi
+`<html lang="en">` diyen bir sayfanın içinde duracaktı.
+
+**Daha sert olanı: kırık bağlantı.** `liste.html`'in alt iki bölümü adresleri
+`/{{ dil }}/sigorta/trafik/` gibi **TR yol adlarıyla** kuruyordu. EN listesinde
+bu `/en/sigorta/trafik/` üretir — var olmayan bir adres. Aynı blok
+`/en/metodoloji/` ve `/en/sirketler/` de üretecekti. Yani EN rehber listesi
+doğduğu anda dört kırık bağlantıyla doğacaktı.
+
+**Onarım.** Sabit metinler `site.json > metinler.<dil>` altına taşındı; şablonlar
+artık oradan okuyor. Adresler de aynı bloktan geliyor — yol adı türetmek yerine
+her dil kendi adresini yazıyor.
+
+| Ne | Nasıl |
+|---|---|
+| Ay adları | `AYLAR_DIL` tablosu; `tarih_bicim(gun, dil)`. Bilinmeyen dilde TR'ye **düşmez**, ISO döner — yanlış dilde ay adı basmaktansa tarafsız biçim daha az yanıltıcı. |
+| Eksik dil bloğu | `metinler(dil)` bulamazsa `SystemExit`. Sessiz düşüş burada §12'deki hatanın aynısı olurdu: üretim başarılı görünür, sayfa yanlış dilde çıkar. |
+| Liste alt blokları | Kartlar ve kapanış metni `metinler.<dil>.liste_turler` / `liste_ilke` içinden; adresler elle yazılı. |
+| hreflang karşılıklılığı | Yazıların çeviri kümesi artık `oku()` içinde tersine dizine giriyor. Eskiden ters arama yalnızca `rotalar` için vardı; yazılarda **EN sayfa yalnızca kendini gösteriyordu.** Küme artık hangi dilden bakılırsa bakılsın aynı dönüyor. |
+| Sitemap seti | Varsayılan dil dışındaki her dil kendi setini alır (`sitemap-dil-en.xml`). Eskiden EN adresleri "sayfalar" setinde TR statik sayfalarıyla karışıyordu; §10'un ilk sorusu o karışımda ölçülemezdi. |
+
+**Doğrulama.** Onarımdan sonra TR çıktısı, onarım öncesi çıktıyla karşılaştırıldı:
+tek fark bir paragrafın satır sarması (metin artık JSON'dan tek satır geliyor).
+Yani TR tarafı anlamca bir karakter değişmedi. Değişen tek şey, Blok A'nın
+dört EN sayfasının Türkçe `aria-label` ve atlama bağlantısından kurtulması —
+o zaten hatalıydı, sadece görünmüyordu.
+
+**RU ve FA'ya etkisi.** `metinler.ru` ve `metinler.fa` yazılmadan o dillerde
+sayfa üretilemez; üretici durur. Blok D ve E'nin ilk adımı artık menü ve footer
+değil, **bu blok.** FA'da ayrıca `dir="rtl"` kontrolü buraya eklenir (§8.5).

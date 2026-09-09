@@ -37,6 +37,14 @@ except ImportError as hata:
 AYLAR = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
          "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
 
+# Tarih dile bağlıdır. Bu tablo olmadan İngilizce bir rehber sayfası
+# "8 Eylül 2026" basardı — sayfanın geri kalanı İngilizceyken.
+AYLAR_DIL = {
+    "tr": AYLAR,
+    "en": ["January", "February", "March", "April", "May", "June",
+           "July", "August", "September", "October", "November", "December"],
+}
+
 TR_HARF = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
 
 # Ham HTML bloğu: satır başında <section ...> ile başlayıp satır başında
@@ -73,12 +81,25 @@ def tarih_oku(deger, varsayilan=None):
     return varsayilan
 
 
-def tarih_tr(gun, uzun=False):
+def tarih_bicim(gun, dil="tr", uzun=False):
+    """Tarihi sayfanın dilinde yazar. Bilinmeyen dilde TR'ye düşmez, ISO döner —
+    yanlış dilde bir ay adı basmaktansa tarafsız biçim daha az yanıltıcı."""
     if not gun:
         return ""
+    aylar = AYLAR_DIL.get(dil)
+    if not aylar:
+        return gun.isoformat()
+    if dil == "en":
+        # İngilizcede gün adı öne yazılmaz: "8 September 2026" değil,
+        # "September 2026" / "8 September 2026" kalıbı TR ile aynı sırada durur.
+        return f"{gun.day} {aylar[gun.month - 1]} {gun.year}" if uzun else f"{aylar[gun.month - 1]} {gun.year}"
     if uzun:
-        return f"{gun.day} {AYLAR[gun.month - 1]} {gun.year}"
-    return f"{AYLAR[gun.month - 1]} {gun.year}"
+        return f"{gun.day} {aylar[gun.month - 1]} {gun.year}"
+    return f"{aylar[gun.month - 1]} {gun.year}"
+
+
+def tarih_tr(gun, uzun=False):
+    return tarih_bicim(gun, "tr", uzun)
 
 
 def evet_mi(deger):
@@ -395,12 +416,12 @@ class Belge:
         return self.ozet[:107].rsplit(" ", 1)[0] + "…"
 
     @property
-    def tarih_tr(self):
-        return tarih_tr(self.tarih)
+    def tarih_metin(self):
+        return tarih_bicim(self.tarih, self.dil)
 
     @property
-    def guncelleme_tr(self):
-        return tarih_tr(self.guncelleme)
+    def guncelleme_metin(self):
+        return tarih_bicim(self.guncelleme, self.dil)
 
 
 # ── üretici ────────────────────────────────────────────────────────────────
@@ -423,6 +444,7 @@ class Uretici:
         self._set_i = None
         self.sayfalar = []
         self.yazilar = []
+        self.ceviri_kumesi = {}                            # adres -> {dil: adres}
         self.uretilen = []                                 # (url, lastmod)
         self.mevcut = set()                                # üretilecek tüm adresler
 
@@ -449,6 +471,17 @@ class Uretici:
         # Gerçekten üretilecek adresler. hreflang ve dil değiştirici bunu
         # kullanır: henüz yazılmamış bir dile bağlantı verilmez, o dilin
         # içeriği eklendiği anda bağlantılar kendiliğinden belirir.
+        # Çeviri kümeleri tek yerde yazılır — yazıların eşleri TR dosyasının
+        # 'ceviriler' alanında durur. Karşılıklılık bu tersine dizinden gelir:
+        # kümeye hangi dilden bakılırsa bakılsın aynı küme dönmeli, yoksa
+        # hreflang tek yönlü kalır ve arama motoru çiftin tamamını yok sayar.
+        for belge in self.sayfalar + self.yazilar:
+            if not belge.ceviriler:
+                continue
+            kume = {belge.dil: belge.url, **belge.ceviriler}
+            for adres in kume.values():
+                self.ceviri_kumesi.setdefault(adres, {}).update(kume)
+
         self.mevcut = {s.url for s in self.sayfalar} | {y.url for y in self.yazilar}
         for dil, blog in self.yapilandirma.get("blog", {}).items():
             if any(y.dil == dil for y in self.yazilar):
@@ -481,16 +514,32 @@ class Uretici:
 
         harita = dict(harita) if harita else {}
         if ceviriler:
-            # Yazıların 'ceviriler' alanı da TR dosyasında durur; aynı ters
-            # arama gerekir, yoksa EN yazı yalnızca kendini gösterir.
-            harita.setdefault("tr", url) if dil == "tr" else None
             harita.update(ceviriler)
+        # Belgenin kendi yazdığı eşler yetmez: EN yazı kendi dosyasında hiçbir
+        # eş yazmasa da TR dosyasının kurduğu kümeye ait olabilir (oku()).
+        harita.update(self.ceviri_kumesi.get(url, {}))
 
         sonuc = {dil: url}
         for kod, adres in harita.items():
             if kod in self.yapilandirma["diller"] and adres and adres in self.mevcut:
                 sonuc[kod] = adres
         return {k: sonuc[k] for k in self.yapilandirma["diller"] if k in sonuc}
+
+    def metinler(self, dil):
+        """Şablonların sabit arayüz metinleri. Eksikse ÜRETİM DURUR.
+
+        Sessiz düşüş burada tehlikeli: karşılığı yoksa TR metne düşmek,
+        İngilizce sayfaya "Yazıyı oku" ve "Eylül 2026" basar. Bu, dil
+        katmanının tamamının güvenilirliğini yiyen türden bir sessiz hata —
+        bkz. copy/04-dil-katmani.md §12'deki üretici onarımı.
+        """
+        m = self.yapilandirma.get("metinler", {}).get(dil)
+        if not m:
+            raise SystemExit(
+                f"site.json > metinler.{dil} tanımlı değil. "
+                f"'{dil}' dilinde sayfa üretilmeden önce bu blok yazılmalı."
+            )
+        return m
 
     def baglam(self, *, dil, url, baslik, aciklama="", aktif_menu="",
                og_tur="website", og_baslik="", og_aciklama="", og_gorsel="",
@@ -522,6 +571,7 @@ class Uretici:
             "aktif_menu": aktif_menu,
             "footer": self.yapilandirma["footer"].get(dil, {}),
             "blog": self.yapilandirma["blog"].get(dil, {}),
+            "metin": self.metinler(dil),
         }
 
     def sayfa_yaz(self, url, baglam, icerik, lastmod):
@@ -602,12 +652,13 @@ class Uretici:
         """Bir yazı kümesini sayfalara böler; 1. sayfa kök adreste durur."""
         sablon = self.jinja.get_template("liste.html")
         blog = self.yapilandirma["blog"][dil]
+        metin = self.metinler(dil)
         toplam = max(1, -(-len(yazilar) // self.sayfa_basina))
 
         for no in range(1, toplam + 1):
             dilim = yazilar[(no - 1) * self.sayfa_basina: no * self.sayfa_basina]
             url = kok_url if no == 1 else f"{kok_url}sayfa/{no}/"
-            baslik = h1 if no == 1 else f"{h1} — sayfa {no}"
+            baslik = h1 if no == 1 else f"{h1} — {metin['sayfa_eki'].format(no=no)}"
             sayfalama = {
                 "simdiki": no,
                 "toplam": toplam,
@@ -660,7 +711,8 @@ class Uretici:
                 kume = [y for y in yazilar if y.kategori == konu["ad"]]
                 self.liste_uret(
                     dil, kume, konu["url"], konu["ad"],
-                    f"{blog['baslik']} bölümünde “{konu['ad']}” konulu yazılar.",
+                    self.metinler(dil)["konu_giris"].format(
+                        blog=blog["baslik"], konu=konu["ad"]),
                     konu=konu["ad"], konular=konular,
                 )
             self.besleme(dil, yazilar[:20], blog)
@@ -1660,6 +1712,23 @@ class Uretici:
         ("sayfalar", lambda u: True),
     ]
 
+    def sitemap_setleri(self):
+        """Setler ölçüm içindir. Varsayılan dilin dışındaki her dil KENDİ setini
+        alır ve TR setlerinden önce gelir.
+
+        Gerekçe: yukarıdaki setler TR adres önekine bağlı, dolayısıyla EN
+        adresleri "sayfalar" setine düşüp TR statik sayfalarıyla karışıyordu.
+        Dil katmanının indekslenip indekslenmediği o karışımda ölçülemez —
+        copy/04-dil-katmani.md §10'un ilk sorusu tam olarak budur. Dil setleri
+        kendiliğinden doğar: RU ve FA açıldığında ayrıca bir şey yazılmaz.
+        """
+        varsayilan = self.yapilandirma["varsayilan_dil"]
+        dil_setleri = [
+            (f"dil-{dil}", lambda u, o=f"/{dil}/": u.startswith(o))
+            for dil in self.yapilandirma["diller"] if dil != varsayilan
+        ]
+        return dil_setleri + list(self.SITEMAP_SETLERI)
+
     def _sitemap_govde(self, kayitlar, mevcut):
         satirlar = ['<?xml version="1.0" encoding="UTF-8"?>',
                     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
@@ -1688,7 +1757,7 @@ class Uretici:
         mevcut = {u for u, _ in self.uretilen}
         kalan = list(self.uretilen)
         self.sitemap_ozet = []
-        for ad, kosul in self.SITEMAP_SETLERI:
+        for ad, kosul in self.sitemap_setleri():
             bu = [(u, t) for u, t in kalan if kosul(u)]
             kalan = [(u, t) for u, t in kalan if not kosul(u)]
             if not bu:
