@@ -380,6 +380,29 @@
       "telif": "© 2026 KKTC Sigorta Merkezi. All rights reserved."
     }
   },
+  "_reklam_notu": "Her sayfanın altındaki reklam bandı. Blok silinirse bant hiç basılmaz; bir dil eksikse yalnızca o dilde çıkmaz.",
+  "reklam": {
+    "tr": {
+      "etiket": "Reklam",
+      "baslik": "Bu sitede reklam verin",
+      "metin": "Sitenin reklam ve sponsorluk anlaşmalarını Mercan yürütüyor. Anlaşma koşullarını konuşmak için telefonla ulaşın.",
+      "dipnot": "Reklam anlaşmaları şirket puanlarını ve sıralamayı etkilemez.",
+      "eylem": "Anlaşma için arayın",
+      "telefon": "+90 (501) 035 56 05",
+      "telefon_baglanti": "tel:+905010355605",
+      "eylem_aria": "Mercan'ı arayın: +90 501 035 56 05"
+    },
+    "en": {
+      "etiket": "Advertising",
+      "baslik": "Advertise on this site",
+      "metin": "Advertising and sponsorship on this site is handled by Mercan. Call to discuss terms.",
+      "dipnot": "Advertising deals do not affect company scores or rankings.",
+      "eylem": "Call to arrange a deal",
+      "telefon": "+90 (501) 035 56 05",
+      "telefon_baglanti": "tel:+905010355605",
+      "eylem_aria": "Call Mercan: +90 501 035 56 05"
+    }
+  },
   "_rotalar_notu": "Bir sayfanın dört dildeki adresi. Anahtar = TR adresi. hreflang, dil değiştirici ve sitemap bunu kullanır. Yeni blog yazıları buraya YAZILMAZ — onların rotası yazı dosyasındaki 'ceviriler' alanından gelir.",
   "rotalar": {
     "/tr/": {

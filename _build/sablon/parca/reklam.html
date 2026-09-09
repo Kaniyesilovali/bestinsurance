@@ -1,0 +1,26 @@
+{# Reklam bandı. Metin ve numara site.json > reklam içinden gelir.
+   O blok bir dilde yoksa bant o dilde hiç basılmaz. #}
+{%- if reklam %}
+<section class="bg-white" aria-labelledby="reklam-baslik">
+  <div class="mx-auto max-w-shell px-[22px]">
+    <hr class="hairline">
+    <div class="py-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+      <div class="max-w-[54ch]">
+        <p class="u-eyebrow mb-1">{{ reklam.etiket }}</p>
+        <h2 id="reklam-baslik" class="u-display text-[21px] sm:text-[26px] leading-[1.15]">{{ reklam.baslik }}</h2>
+        <p class="mt-2 text-[15px] leading-[1.4] text-muted">{{ reklam.metin }}</p>
+        {%- if reklam.dipnot %}
+        <p class="u-cap mt-2">{{ reklam.dipnot }}</p>
+        {%- endif %}
+      </div>
+      <div class="shrink-0 sm:text-end">
+        <a href="{{ reklam.telefon_baglanti }}" class="btn u-num"
+           {% if reklam.eylem_aria %}aria-label="{{ reklam.eylem_aria }}"{% endif %}>{{ reklam.telefon }}</a>
+        {%- if reklam.eylem %}
+        <p class="u-cap mt-2">{{ reklam.eylem }}</p>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{%- endif %}

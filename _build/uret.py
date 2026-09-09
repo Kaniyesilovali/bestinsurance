@@ -570,6 +570,7 @@ class Uretici:
             "menu": self.yapilandirma["menu"].get(dil, []),
             "aktif_menu": aktif_menu,
             "footer": self.yapilandirma["footer"].get(dil, {}),
+            "reklam": self.yapilandirma.get("reklam", {}).get(dil, {}),
             "blog": self.yapilandirma["blog"].get(dil, {}),
             "metin": self.metinler(dil),
         }
