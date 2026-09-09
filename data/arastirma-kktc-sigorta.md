@@ -319,7 +319,8 @@ Bakanlar Kurulu kararı Ü(K-I)321-2026, 24.02.2026 · **KKTC Resmî Gazete Say�
 > ⚠ **150.000 TL rakamı 2018 tarihlidir ve dört kez değişmiştir.** Sigorta şirketlerinin
 > web siteleri (kibrissigorta.com dâhil) bu eski rakamı hâlâ yayımlıyor; ikincil kaynak
 > yerine Resmî Gazete esas alınmalıdır. Bu limit yılda bir civarında güncelleniyor —
-> her yıl Şubat–Mart aylarında Resmî Gazete'den teyit edilmeli.
+> ayda bir Resmî Gazete'den teyit edilmeli. Değişiklikler sabit bir aya düşmüyor:
+> Şubat (2026), Mart (2025), Mayıs (2023), Haziran (2022).
 
 Ölüm ve yaralanma limitleri ikincil kaynaklardan (Dağlı Sigorta, Güven Sigorta, Kıbrıs
 Sigorta) doğrulandı; birincil metinden teyit edilmedi.
