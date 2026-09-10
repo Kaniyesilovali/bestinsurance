@@ -1,13 +1,13 @@
 ---
-baslik: "Can Sigorta Lefkoşa: adres, branşlar ve bağımsız puanı"
+baslik: "Can Sigorta Lefkoşa: adres, branşlar ve online hizmetler"
 h1: "Can Sigorta Lefkoşa"
 kisa_baslik: "Can Sigorta"
-aciklama: "Can Sigorta Lefkoşa merkezli, 1958 kuruluş beyanlı yerel bir şirket. Ortaköy adresi, dokuz branşı, online hizmetleri ve altı ölçütte aldığı bağımsız 6,9 puan."
-ozet: "Lefkoşa Ortaköy merkezli, listedeki en eski kuruluş beyanına sahip yerel şirket. Dijital hizmette güçlü, erişilebilirlikte zayıf. Benzer adlı As-Can Sigorta ile karıştırılmaması gereken ayrı bir tüzel kişilik."
-giris: "Can Sigorta'nın Lefkoşa adresi, hangi branşlarda poliçe verdiği ve altı ölçütte aldığı puan bir arada. Rakamların tamamı şirketin kendi yayınlarından; doğrulayamadıklarımızı da yazdık."
+aciklama: "Can Sigorta Lefkoşa merkezli, 1958 kuruluş beyanlı yerel bir şirket. Ortaköy adresi, dokuz branşı, online hizmetleri ve şirketin yayımlamadığı bilgiler."
+ozet: "Lefkoşa Ortaköy merkezli, listedeki en eski kuruluş beyanına sahip yerel şirket. Üç online işlevi de sunuyor, ofisi iki şehirde. Benzer adlı As-Can Sigorta ile karıştırılmaması gereken ayrı bir tüzel kişilik."
+giris: "Can Sigorta'nın Lefkoşa adresi, hangi branşlarda poliçe verdiği ve hangi online işlevleri sunduğu bir arada. Bilgilerin tamamı şirketin kendi yayınlarından; doğrulayamadıklarımızı da yazdık."
 kategori: Şirket seçimi
 tarih: 2026-08-24
-guncelleme: 2026-08-24
+guncelleme: 2026-09-10
 og_baslik: "Can Sigorta Lefkoşa"
 url: /tr/rehber/can-sigorta-lefkosa/
 ---
@@ -18,16 +18,16 @@ url: /tr/rehber/can-sigorta-lefkosa/
 {"@type":"Question","name":"Can Sigorta hangi sigortaları yapıyor?","acceptedAnswer":{"@type":"Answer","text":"Dokuz branşta ürün sunuyor: zorunlu trafik, kasko, konut, işyeri, seyahat, sorumluluk, ferdi kaza, mühendislik ve nakliyat. Sağlık ve hayat sigortası ürün listesinde yer almıyor."}},
 {"@type":"Question","name":"Can Sigorta online poliçe veriyor mu?","acceptedAnswer":{"@type":"Answer","text":"Evet. Online teklif alma, online poliçe düzenleme ve online hasar ihbarı işlevlerinin üçü de çalışır durumda doğrulandı. Şirketin mobil uygulaması ise yok."}},
 {"@type":"Question","name":"Can Sigorta kaç yılında kuruldu?","acceptedAnswer":{"@type":"Answer","text":"Şirket kendi sitesinde 1958'den beri faaliyet gösterdiğini belirtiyor. Bu, incelediğimiz 39 KKTC sigorta şirketi arasındaki en eski kuruluş beyanıdır. Bağımsız bir sicil kaydıyla ayrıca doğrulanmamıştır; şirket beyanı olarak kaydedilmiştir."}},
-{"@type":"Question","name":"Can Sigorta ile As-Can Sigorta aynı şirket mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İkisi de Lefkoşa merkezli olsa da ayrı tüzel kişiliklerdir. Can Sigorta 9 branşta ürün sunar ve 6,9 puan alır; As-Can Sigorta 5 branşta ürün sunar, online hizmeti yoktur ve 3,8 puan alır."}},
-{"@type":"Question","name":"Can Sigorta'nın puanı neden 10 değil?","acceptedAnswer":{"@type":"Answer","text":"En çok puan kaybettiği ölçüt erişilebilirlik (4,0): ofisi yalnızca iki şehirde ve acente sayısını açıklamıyor. Ayrıca poliçe genel şartlarını yayımlamıyor, mobil uygulaması yok ve sitesi yalnızca Türkçe ile İngilizce sunuluyor."}}
+{"@type":"Question","name":"Can Sigorta ile As-Can Sigorta aynı şirket mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İkisi de Lefkoşa merkezli olsa da ayrı tüzel kişiliklerdir. Can Sigorta 9 branşta ürün sunuyor ve online teklif, poliçe, hasar ihbarı işlevlerini sunuyor; As-Can Sigorta 5 branşta ürün sunuyor ve online hizmeti yok."}},
+{"@type":"Question","name":"Can Sigorta hangi bilgileri yayımlamıyor?","acceptedAnswer":{"@type":"Answer","text":"Poliçe genel şartlarını ve bilgilendirme formlarını sitesinde yayımlamıyor, acente sayısını açıklamıyor, WhatsApp hattı vermiyor. Mobil uygulaması yok ve sitesi yalnızca Türkçe ile İngilizce sunuluyor."}}
 ]}
 </script>
 
-Can Sigorta Lefkoşa merkezli, Kuzey Kıbrıs'ın en eski sigorta şirketlerinden biri. Bu sayfa şirketin Lefkoşa adresini, hangi branşlarda poliçe verdiğini ve altı ölçütte verdiğimiz puanı bir arada topluyor. Rakamların tamamı şirketin kendi yayınlarından ve dışarıdan doğrulanabilir kaynaklardan geliyor.
+Can Sigorta Lefkoşa merkezli, Kuzey Kıbrıs'ın en eski kuruluş beyanına sahip sigorta şirketi. Bu sayfa şirketin Lefkoşa adresini, hangi branşlarda poliçe verdiğini ve hangi online işlevleri sunduğunu bir arada topluyor. Bilgilerin tamamı şirketin kendi yayınlarından ve dışarıdan doğrulanabilir kaynaklardan geliyor.
 
 ## Kısa cevap
 
-Can Sigorta Ltd., merkez ofisi Lefkoşa Ortaköy'de bulunan yerel bir sigorta şirketidir. Kendi sitesinde belirttiği kuruluş yılı 1958'dir; incelediğimiz 39 şirket arasındaki en eski beyan budur. Dokuz branşta ürün sunar, Lefkoşa ve Girne'de ofisi vardır ve altı ölçütlü değerlendirmemizde **10 üzerinden 6,9** puanla **4. sırada** yer alır.
+Can Sigorta Ltd., merkez ofisi Lefkoşa Ortaköy'de bulunan yerel bir sigorta şirketidir. Kendi sitesinde belirttiği kuruluş yılı 1958'dir; incelediğimiz 39 şirket arasındaki en eski beyan budur. Dokuz branşta ürün sunar, Lefkoşa ve Girne'de ofisi vardır ve online teklif, online poliçe, online hasar ihbarı işlevlerinin üçünü de çalışır durumda sunar.
 
 ## Lefkoşa adresi ve iletişim
 
@@ -40,7 +40,7 @@ Can Sigorta Ltd., merkez ofisi Lefkoşa Ortaköy'de bulunan yerel bir sigorta ş
 | Şirket türü | Yerel (KKTC'de kurulu) |
 | Beyan edilen kuruluş | 1958 |
 
-Şirket bir WhatsApp hattı yayımlamıyor; bu yüzden erişim ölçütünde WhatsApp puanı verilmedi. Acente sayısını da açıklamadığı için o alan boş bırakıldı — tahmin yazmıyoruz.
+Şirket bir WhatsApp hattı yayımlamıyor. Acente sayısını da açıklamadığı için o alanı boş bıraktık — tahmin yazmıyoruz.
 
 ## Hangi branşlarda poliçe veriyor
 
@@ -58,37 +58,25 @@ Can Sigorta'nın ürün sayfalarında **dokuz branş** görünüyor:
 
 Listede **sağlık ve hayat sigortası yok.** Lefkoşa'da [sağlık poliçesi](/tr/sigorta/saglik/) arıyorsanız başka bir şirkete bakmanız gerekir. Trafik ve kasko için şirketleri yan yana görmek isterseniz [trafik sigortası veren şirketler](/tr/sirketler/trafik/) ve [kasko veren şirketler](/tr/sirketler/kasko/) listelerimiz var.
 
-Bu ölçüt "ne sattığını söylüyor"u ölçer, fiilen ne sattığını değil. Ürün sayfasında görünen bir branş, size teklif verileceğinin garantisi değildir.
+Bu liste "ne sattığını söylüyor"u gösterir, fiilen ne sattığını değil. Ürün sayfasında görünen bir branş, size teklif verileceğinin garantisi değildir.
 
-## Puanı: 39 şirket arasında 4. sırada
-
-| Ölçüt | Ağırlık | Puan |
-|---|---|---|
-| Şeffaflık ve doğrulanabilirlik | %25 | 8,0 |
-| Ürün ve teminat genişliği | %20 | 8,2 |
-| Erişilebilirlik | %20 | 4,0 |
-| Dijital hizmet | %20 | 8,0 |
-| Dil desteği | %10 | 5,0 |
-| Kurumsal geçmiş | %5 | 8,0 |
-| **Genel** | | **6,9** |
-
-Şirketin tüm alan verisi [Can Sigorta profilinde](/tr/sirketler/can-sigorta/).
-
-### Güçlü yanı: dijital hizmet
+## Online hizmetleri
 
 Can Sigorta üç dijital işlevi de çalışır durumda sunuyor: **online teklif, online poliçe ve online hasar ihbarı.** Bu üçlüyü birlikte sunan şirket sayısı listede az. Özellikle online hasar ihbarı, hasar anında telefon sırası beklemeyi ortadan kaldırdığı için pratik bir fark yaratıyor — hasar sürecinin ilk adımlarını [kaza sonrası ilk 48 saat](/tr/rehber/kaza-sonrasi-ilk-48-saat/) yazısında anlattık.
 
 Eksik olan tek dijital başlık **mobil uygulama.** Şirketin App Store veya Google Play'de yayımlanmış bir uygulaması bulunamadı.
 
-### Zayıf yanı: erişilebilirlik
+Şirketin tüm alan verisi [Can Sigorta profilinde](/tr/sirketler/can-sigorta/).
 
-Erişim puanı 4,0 ile şirketin en düşük notu. Sebebi iki başlıkta toplanıyor: ofis yalnızca **iki şehirde** (Lefkoşa ve Girne) ve **acente sayısı açıklanmamış.** Gazimağusa veya İskele'de oturuyorsanız, hasar anında fiziksel olarak gidebileceğiniz bir Can Sigorta ofisi yok.
+## Ofisleri iki şehirde
 
-Bu, KKTC genelinde yaygın bir tablo: 39 şirketin 36'sı Lefkoşa merkezli. Lefkoşa'da yaşayan biri için bu bir dezavantaj değil; ada genelinde şube ağı arayan biri için gerçek bir kısıt.
+Ofis yalnızca **Lefkoşa ve Girne'de**, **acente sayısı ise açıklanmamış.** Gazimağusa veya İskele'de oturuyorsanız, hasar anında fiziksel olarak gidebileceğiniz bir Can Sigorta ofisi yok.
 
-### Yayımlamadığı şey: poliçe genel şartları
+Bu, KKTC genelinde yaygın bir tablo: 39 şirketin 36'sı Lefkoşa merkezli. Lefkoşa'da yaşayan biri için bu bir kısıt değil; ada genelinde şube ağı arayan biri için gerçek bir kısıt.
 
-Şeffaflık puanı 8,0. Kuruluş yılı, açık adres, kurumsal e-posta — hepsi sitede var. Eksik olan tek başlık **poliçe genel şartları ve bilgilendirme formları.** Bu belgeleri yayımlamayan bir şirketle anlaşmazlığa düştüğünüzde elinizde önceden okuduğunuz bir metin olmaz. Poliçe imzalamadan önce genel şartları yazılı olarak isteyin.
+## Yayımlamadığı şey: poliçe genel şartları
+
+Kuruluş yılı, açık adres, kurumsal e-posta — hepsi sitede var. Eksik olan tek başlık **poliçe genel şartları ve bilgilendirme formları.** Bu belgeleri yayımlamayan bir şirketle anlaşmazlığa düştüğünüzde elinizde önceden okuduğunuz bir metin olmaz. Poliçe imzalamadan önce genel şartları yazılı olarak isteyin.
 
 ## Can Sigorta ile As-Can Sigorta aynı şirket değil
 
@@ -99,20 +87,19 @@ Lefkoşa'da benzer adlı iki ayrı şirket var ve sık karıştırılıyorlar:
 | Adres | Ortaköy, Lefkoşa | Mehmet Akif Cad. No: 122, Lefkoşa |
 | Branş sayısı | 9 | 5 |
 | Online hizmet | Teklif, poliçe, hasar ihbarı | Yok |
-| Genel puan | 6,9 (4. sıra) | 3,8 (24. sıra) |
 
-Ayrı tüzel kişilikler, ayrı poliçeler, ayrı puanlar. Poliçe alırken sözleşmedeki tam unvana bakın. İkisinin profili de sitede: [Can Sigorta](/tr/sirketler/can-sigorta/) ve [As-Can Sigorta](/tr/sirketler/as-can-sigorta/).
+Ayrı tüzel kişilikler, ayrı poliçeler. Poliçe alırken sözleşmedeki tam unvana bakın. İkisinin profili de sitede: [Can Sigorta](/tr/sirketler/can-sigorta/) ve [As-Can Sigorta](/tr/sirketler/as-can-sigorta/).
 
 ## Lefkoşa'da poliçe alırken kontrol edin
 
 1. **Şirket mi, acente mi?** KKTC'de "sigorta" adıyla çalışan her kuruluş sigorta şirketi değil. Can Sigorta Birlik üyesi ruhsatlı bir şirkettir; poliçenizin arkasındaki risk taşıyıcı odur.
 2. **Genel şartları yazılı isteyin.** Sitede yayımlanmadığı için imza öncesi talep etmeniz gerekir.
 3. **Fiyatı taban tarifeye göre okuyun.** KKTC'de zorunlu trafikte fiyatın altında bir zemin var, üstünde tavan yok — nedeni [taban tarife yazısında](/tr/rehber/kktc-taban-tarife/).
-4. **Karşılaştırın.** Tek şirketle sınırlı kalmayın; [39 şirketin tamamı](/tr/sirketler/) puanlarıyla listede.
+4. **Karşılaştırın.** Tek şirketle sınırlı kalmayın; [39 şirketin tamamı](/tr/sirketler/) listede.
 
 ## Doğrulayamadıklarımız
 
-**Acente sayısı.** Şirket bir acente ağı sayısı yayımlamıyor. Erişim ölçütünde bu alan boş bırakıldı; tahmini bir sayı puanlamaya girmedi.
+**Acente sayısı.** Şirket bir acente ağı sayısı yayımlamıyor. Bu alanı boş bıraktık; tahmini bir sayı yazmadık.
 
 **Poliçe genel şartları.** Sitede yayımlanmadığı için teminat kapsamını, istisnaları ve muafiyetleri bu sayfada anlatamıyoruz. KKSRSB, zorunlu trafik ve kasko için sektör geneli genel şartları yayımlıyor; şirkete özel sapmaların olup olmadığını bilmiyoruz.
 
@@ -120,7 +107,7 @@ Ayrı tüzel kişilikler, ayrı poliçeler, ayrı puanlar. Poliçe alırken söz
 
 **Prim ve fiyat.** Bu sayfada hiçbir prim tutarı yok. Fiyat araca, sürücü kaydına ve hasarsızlık basamağına göre değişir; şirketten şirkete geçerli bir "Can Sigorta fiyatı" yayımlanmıyor.
 
-**Mali güç ve hasar ödeme performansı.** KKTC'de şirket bazında prim, hasar ve özkaynak verisi kamuya açık olarak yayımlanmıyor. Bu iki başlık hiçbir şirket için puanlanmamaktadır — Can Sigorta için de.
+**Mali güç ve hasar ödeme performansı.** KKTC'de şirket bazında prim, hasar ve özkaynak verisi kamuya açık olarak yayımlanmıyor. Bu yüzden Can Sigorta'nın ödeme gücü ve hasar ödeme davranışı hakkında bir şey söylemiyoruz — hiçbir şirket için söylemiyoruz.
 
 Bunlardan birini birincil kaynağıyla biliyorsanız [bize bildirin](/tr/duzeltme/) — inceleyip ekler ve düzeltme tarihini sayfaya yazarız.
 
@@ -144,11 +131,11 @@ Evet. Online teklif alma, online poliçe düzenleme ve online hasar ihbarı işl
 
 ### Can Sigorta ile As-Can Sigorta aynı şirket mi?
 
-Hayır. İkisi de Lefkoşa merkezli olsa da ayrı tüzel kişiliklerdir. Can Sigorta 9 branşta ürün sunar ve 6,9 puan alır; As-Can Sigorta 5 branşta ürün sunar, online hizmeti yoktur ve 3,8 puan alır.
+Hayır. İkisi de Lefkoşa merkezli olsa da ayrı tüzel kişiliklerdir. Can Sigorta 9 branşta ürün sunuyor ve online teklif, poliçe, hasar ihbarı işlevlerini sunuyor; As-Can Sigorta 5 branşta ürün sunuyor ve online hizmeti yok.
 
-### Can Sigorta'nın puanı neden 10 değil?
+### Can Sigorta hangi bilgileri yayımlamıyor?
 
-En çok puan kaybettiği ölçüt erişilebilirlik (4,0): ofisi yalnızca iki şehirde ve acente sayısını açıklamıyor. Ayrıca poliçe genel şartlarını yayımlamıyor, mobil uygulaması yok ve sitesi yalnızca Türkçe ile İngilizce sunuluyor.
+Poliçe genel şartlarını ve bilgilendirme formlarını sitesinde yayımlamıyor, acente sayısını açıklamıyor, WhatsApp hattı vermiyor. Mobil uygulaması yok ve sitesi yalnızca Türkçe ile İngilizce sunuluyor.
 
 ## Kaynaklar
 
