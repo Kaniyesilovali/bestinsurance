@@ -56,7 +56,7 @@ kıyas yazılmaz, sahibi olan sayfaya bağlantı verilir.
 - **Bilmediğimizi söyleriz.** Bu sitenin farkı burada — boşluğu gizlemek değil, göstermek.
 - **Kısa cümle.** Bir cümle bir iş yapar.
 - **Sen değil siz.** Resmî değil ama saygılı.
-- **Şirket övmüyoruz.** Puan bir gözlemdir, tavsiye değil.
+- **Şirket övmüyoruz.** Yazdığımız her şey bir gözlemdir, tavsiye değil.
 
 ## Her sayfada olması gerekenler
 
@@ -145,7 +145,7 @@ Para birimi: TL sitede **₺**, EUR **€**. Ondalık ayırıcı TR'de virgül, 
 
 Bu site poliçe satmıyor. Bu yüzden CTA'lar **satın alma değil, okuma** eylemidir.
 
-Kullanılan: "Şirketleri karşılaştır" · "Nasıl puanladığımızı okuyun" ·
+Kullanılan: "Şirketleri karşılaştır" · "Neyi nasıl doğruladığımızı okuyun" ·
 "39 şirketin tamamını görün" · "Neyi doğrulayabildiğimizi görün"
 
 Kullanılmayan: "Teklif al" · "Hemen başla" · "En ucuzunu bul" · "Ücretsiz karşılaştır"

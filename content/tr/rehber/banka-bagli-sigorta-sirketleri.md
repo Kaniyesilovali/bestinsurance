@@ -32,16 +32,16 @@ Banka bağı, poliçenin **satış kanalını** değiştirir; **riskin tarafın�
 
 İncelediğimiz 39 ruhsatlı şirketten altısını banka grubuna bağlı olarak sınıflandırdık:
 
-| Şirket | Merkez | Bağlı olduğu grup | Branş | Puan |
-|---|---|---|---|---|
-| LİMASOL SİGORTA LTD | Girne | Limasol Türk Kooperatif Bankası | 11 | 7,3 |
-| KIBRIS SİGORTA ŞTİ. LTD. | Lefkoşa | KKTC Kalkınma Bankası · Kıbrıs Vakıflar Bankası | 10 | 7,1 |
-| CREDITWEST SİGORTA LTD. | Lefkoşa | Creditwest Bank | 10 | 6,7 |
-| TÜRK SİGORTA LTD. | Lefkoşa | TurkishBank Group | 11 | 6,2 |
-| KIBRIS KAPITAL INSURANCE LTD. | Lefkoşa | Kapital Grup | 10 | 6,1 |
-| KIBRIS İKTİSAT SİGORTA LTD. | Lefkoşa | İktisatbank | 6 | 5,2 |
+| Şirket | Merkez | Bağlı olduğu grup | Branş |
+|---|---|---|---|
+| CREDITWEST SİGORTA LTD. | Lefkoşa | Creditwest Bank | 10 |
+| KIBRIS İKTİSAT SİGORTA LTD. | Lefkoşa | İktisatbank | 6 |
+| KIBRIS KAPITAL INSURANCE LTD. | Lefkoşa | Kapital Grup | 10 |
+| KIBRIS SİGORTA ŞTİ. LTD. | Lefkoşa | KKTC Kalkınma Bankası · Kıbrıs Vakıflar Bankası | 10 |
+| LİMASOL SİGORTA LTD | Girne | Limasol Türk Kooperatif Bankası | 11 |
+| TÜRK SİGORTA LTD. | Lefkoşa | TurkishBank Group | 11 |
 
-Banka bağı tek başına bir kalite göstergesi değildir.
+Liste alfabetik; sıra bir üstünlük anlamına gelmiyor. Banka bağı da tek başına bir kalite göstergesi değildir.
 
 Sınıflandırma şirketlerin kendi yayınlarına ve unvanlarına dayanıyor. Bağın **niteliği** ise altı şirkette aynı değil — ve çoğunda doğrulanamıyor.
 
@@ -78,14 +78,14 @@ Bu soruya veriyle evet ya da hayır diyemiyoruz, ve diyen bir kaynak da bulamad�
 
 Bir sigorta şirketinin ödeme gücünü değerlendirmek için mali gücünü, ödenmiş sermayesini ve hasar ödeme performansını görmek gerekir. KKTC'de bu üçü şirket bazında 2016'dan beri yayımlanmıyor — banka grubuna bağlı şirketler için de yayımlanmıyor. Grubun şirketin yükümlülüğünü üstlenip üstlenmediğini, yani bağın hukuki ağırlığını da doğrulayamadık.
 
-Doğrulanabilir olan şey sahiplik bilgisidir. Doğrulanamayan şey, o sahipliğin hasar anında ne anlama geldiğidir. İkisini birbirinin yerine kullanmıyoruz. Altı şirketin tamamını, ölçüt ölçüt, [39 şirketin listesinde](/tr/sirketler/) görebilirsiniz.
+Doğrulanabilir olan şey sahiplik bilgisidir. Doğrulanamayan şey, o sahipliğin hasar anında ne anlama geldiğidir. İkisini birbirinin yerine kullanmıyoruz. Altı şirketin tamamı için doğrulayabildiğimiz bilgiler [39 şirketin listesinde](/tr/sirketler/) duruyor.
 
 ## Doğrulayamadıklarımız
 
 - **Grup içi yükümlülük yapısı.** Grubun ya da bankanın, sigorta şirketinin borcuna karşı bir taahhüdü var mı — hiçbir şirkette doğrulayamadık.
 - **Grup içi reasürans ilişkisi.** Riskin grup içinde nasıl dağıtıldığına dair yayımlanmış bilgi bulamadık.
 - **Hissedarlık oranları — beş şirkette.** Yalnızca Kıbrıs Sigorta oranlarını yayımlıyor.
-- **Mali güç, ödenmiş sermaye ve hasar ödeme performansı.** KKTC'de hiçbir sigorta şirketi için ölçülemiyor; bu yüzden puanlamamıza da girmiyor.
+- **Mali güç, ödenmiş sermaye ve hasar ödeme performansı.** KKTC'de hiçbir sigorta şirketi için ölçülemiyor; bu yüzden bu yazıdaki karşılaştırmaya da girmiyor.
 - **Kuruluş yılı — üç şirkette.** Creditwest Sigorta, Türk Sigorta ve Kıbrıs İktisat Sigorta kuruluş yılını yayımlamıyor.
 - **Bankasürans payı.** Poliçelerin ne kadarının şube kanalından satıldığına dair yayımlanmış bir oran yok.
 

@@ -67,8 +67,8 @@ html[lang="fa"] .u-display { font-family: 'Vazirmatn', 'Inter', sans-serif; }
 }
 .u-display--tight { letter-spacing: -0.022em; }
 
-/* Rakamlar her zaman tabular — bir puanlama sitesinde sayılar sütun hâlinde
-   hizalanmak zorunda. Ayrı bir mono aile getirmeye gerek yok. */
+/* Rakamlar her zaman tabular — tablolardaki sayılar sütun hâlinde hizalanmak
+   zorunda. Ayrı bir mono aile getirmeye gerek yok. */
 .u-num {
   font-variant-numeric: tabular-nums;
   font-feature-settings: 'tnum' 1;

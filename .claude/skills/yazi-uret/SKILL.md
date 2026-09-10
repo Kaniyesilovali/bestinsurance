@@ -105,12 +105,14 @@ Yeni yazı onların yanında yabancı durmamalı.
 - Sakin ve olgusal. **Hiçbir cümlede ünlem yok.**
 - Kısa cümle; bir cümle bir iş yapar.
 - "Sen" değil "siz". Resmî değil ama saygılı.
-- Şirket övülmez. Puan bir gözlemdir, tavsiye değil.
+- Şirket övülmez. Yazılan her şey bir gözlemdir, tavsiye değil.
+- Şirketlere puan verilmez, şirketler sıralanmaz; "en iyi", "birinci",
+  "X puan" gibi bir üstünlük iddiası hiçbir yazıya girmez.
 - "Bu yazımızda", "gelin birlikte bakalım", "unutmayın ki" gibi ısınma ve dolgu
   cümleleri yok. Doğrudan konuya girilir.
 - Emoji yok. Abartılı sıfat yok ("muhteşem", "en iyi", "kesinlikle").
-- CTA satın alma değil okuma eylemidir: "Şirketleri karşılaştır", "Nasıl
-  puanladığımızı okuyun". "Teklif al", "en ucuzunu bul" **kullanılmaz.**
+- CTA satın alma değil okuma eylemidir: "Şirketleri karşılaştır", "Neyi nasıl
+  doğruladığımızı okuyun". "Teklif al", "en ucuzunu bul" **kullanılmaz.**
 
 Terimler `copy/00-brief.md` sözlüğünde sabittir. Kurum adları çevrilmez, ilk geçişte
 açıklanır (KKSRSB, KKSBM, Para Kambiyo Dairesi).

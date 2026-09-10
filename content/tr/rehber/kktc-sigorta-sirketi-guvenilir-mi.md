@@ -15,7 +15,7 @@ url: /tr/rehber/kktc-sigorta-sirketi-guvenilir-mi/
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"KKTC'de bir sigorta şirketinin güvenilir olduğu nasıl anlaşılır?","acceptedAnswer":{"@type":"Answer","text":"Güvenilirliğin en çok merak edilen iki bileşeni — mali güç ve hasar ödeme geçmişi — Kuzey Kıbrıs'ta şirket bazında yayımlanmadığı için dışarıdan ölçülemez. Ölçülebilen kısım şirketin kendi yayınlarıdır: ruhsat durumu, açık adres, kurumsal e-posta, poliçe genel şartları, kuruluş yılı, ürün sayfaları, ofis sayısı ve sitesinin ayakta olup olmadığı. Bu sekiz işaret şirketin ne kadar denetlenebilir olduğunu gösterir."}},
-{"@type":"Question","name":"KKTC'de sigorta şirketlerinin mali durumu nereden öğrenilir?","acceptedAnswer":{"@type":"Answer","text":"Öğrenilemiyor. 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı verisi kamuya açık bir kaynakta yayımlanmıyor. Bu yüzden bu sitede mali güç ve hasar ödeme performansı hiçbir şirket için puanlanmıyor; tahmin üretmek yerine ölçütü boş bırakıyoruz."}},
+{"@type":"Question","name":"KKTC'de sigorta şirketlerinin mali durumu nereden öğrenilir?","acceptedAnswer":{"@type":"Answer","text":"Öğrenilemiyor. 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı verisi kamuya açık bir kaynakta yayımlanmıyor. Bu yüzden bu sitede hiçbir şirketin mali gücü ya da hasar ödeme performansı hakkında bir değerlendirme yayımlanmıyor; tahmin üretmek yerine bu alanı boş bırakıyoruz."}},
 {"@type":"Question","name":"Sigorta şirketi ile acente arasındaki fark nedir?","acceptedAnswer":{"@type":"Answer","text":"Şirket poliçenin tarafı olan tüzel kişidir; acente ise poliçeyi satan aracıdır. Hasarda ve şikâyette muhatabınız şirkettir. Kuzey Kıbrıs'ta ruhsatlı şirketler KKSRSB üye listesinde yer alır; internetteki birçok \"sigorta şirketleri\" listesi acenteleri şirket gibi sıralar."}},
 {"@type":"Question","name":"Poliçe genel şartlarını sitesinde yayımlamayan şirketten poliçe alınır mı?","acceptedAnswer":{"@type":"Answer","text":"Alınabilir, ancak şartları imzadan önce yazılı olarak istemek gerekir. İncelediğimiz 39 şirketten yalnızca 3'ü poliçe genel şartlarını sitesinde yayımlıyor; yayımlamamak Kuzey Kıbrıs'ta istisna değil, kural. Bu yüzden tek başına olumsuz bir işaret sayılmaz ama şartları görmeden imzalamak için gerekçe de değildir."}},
 {"@type":"Question","name":"Sigorta şirketinin açık adresini yayımlamaması sorun mu?","acceptedAnswer":{"@type":"Answer","text":"Diğer eksiklerden daha dikkat çekicidir, çünkü yaygın değil: 39 şirketten 30'u açık posta adresini yayımlıyor. Yayımlamayan 9 şirket azınlıkta kalıyor. Adres, yazılı bildirim göndermeniz gerektiğinde işe yarar."}},
@@ -33,7 +33,7 @@ Bir sigorta şirketinin mali gücünü ve hasar ödeme geçmişini Kuzey Kıbrı
 
 Bir sigorta şirketinde en çok merak edilen iki şey, büyük bir hasarda ödeyecek gücünün olup olmadığı ve ödediğini gösteren bir geçmişinin bulunup bulunmadığıdır. Kuzey Kıbrıs'ta ikisi de kamuya açık veriyle cevaplanamıyor: 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı rakamı yayımlanmıyor.
 
-Bu yüzden bu sitedeki puanlamada mali güç ve hasar ödeme performansı **puanlanmıyor** — tahmin üretmek yerine ölçütü boş bırakma kararı aldık. 
+Bu yüzden bu sitede hiçbir şirketin mali gücü ya da hasar ödeme performansı hakkında bir şey **yazmıyoruz** — tahmin üretmek yerine bu alanı boş bırakma kararı aldık.
 
 Bunu bilmek işinize yarar: "en çok ödeyen şirket" ya da "mali gücü en yüksek şirket" iddiasıyla karşılaşırsanız, o iddianın dayanağı yoktur. Kimsede o veri yok.
 
@@ -79,7 +79,7 @@ Sekizinin tamamı aynı şeyi ölçer: şirketin **kendisi hakkında ne kadar bi
 
 Şeffaf bir şirketin hasarı ödeyeceğine ya da kapalı bir şirketin ödemeyeceğine dair elimizde veri yok. Aradaki bağ makul görünebilir ama doğrulanmış değil, o yüzden kurmuyoruz. Bu işaretlerin verdiği tek şey şu: bir sorun çıktığında şirketin sizinle nasıl iletişim kuracağı ve yükümlülüğünü nereden okuyabileceğiniz önceden belli mi, değil mi.
 
-Sekiz işareti toplayıp tek bir skora çevirmiyoruz. Böyle bir toplam, hangi eşiği seçtiğinize göre değişir — "kaç şehirde ofis yeterli sayılır" sorusunun veriden gelen bir cevabı yok, seçim yapanın kendi tercihidir. Kaynağını gösteremediğimiz bir sayı da bu sitede yayımlanmaz. Her maddenin yanındaki sayı tek tek doğrulanabilir; toplamı sizin neye ağırlık verdiğinize bağlı.
+Sekiz işareti toplayıp tek bir sayıya çevirmiyoruz. Böyle bir toplam, hangi eşiği seçtiğinize göre değişir — "kaç şehirde ofis yeterli sayılır" sorusunun veriden gelen bir cevabı yok, seçim yapanın kendi tercihidir. Kaynağını gösteremediğimiz bir sayı da bu sitede yayımlanmaz. Her maddenin yanındaki sayı tek tek doğrulanabilir; toplamı sizin neye ağırlık verdiğinize bağlı.
 
 Her şirket için doğrulayabildiğimiz bilgiler [şirket listesinde](/tr/sirketler/) duruyor.
 
@@ -87,7 +87,7 @@ Her şirket için doğrulayabildiğimiz bilgiler [şirket listesinde](/tr/sirket
 
 - **Mali güç ve hasar ödeme performansı.** Hiçbir şirket için ölçülemiyor; kamuya açık kaynak yok.
 - **Faaliyet durumu.** Sitesi yanıt vermeyen beş şirketin faaliyette olup olmadığını gözlemlemedik, yalnızca web varlığını ölçtük.
-- **Acente ağı büyüklükleri.** Bazı şirketler bir sayı beyan ediyor; beyanları doğrulayamadık, bu yüzden ölçüte katmadık.
+- **Acente ağı büyüklükleri.** Bazı şirketler bir sayı beyan ediyor; beyanları doğrulayamadık, bu yüzden yukarıdaki sayılara katmadık.
 - **Prim tutarları.** Bu sitede hiçbir şirket için fiyat rakamı yayımlamıyoruz. Zorunlu trafikte fiyatın nasıl belirlendiği [taban tarife yazısında](/tr/rehber/kktc-taban-tarife/).
 - **Şirketlerin beyan ettiği kuruluş yıllarının doğruluğu.** Yayımlayan sekiz şirketin beyanını ayrıca bir sicil kaydıyla karşılaştırmadık.
 
@@ -101,7 +101,7 @@ Güvenilirliğin en çok merak edilen iki bileşeni — mali güç ve hasar öde
 
 ### KKTC'de sigorta şirketlerinin mali durumu nereden öğrenilir?
 
-Öğrenilemiyor. 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı verisi kamuya açık bir kaynakta yayımlanmıyor. Bu yüzden mali güç ve hasar ödeme performansı hiçbir şirket için puanlanmıyor; tahmin üretmek yerine ölçüt boş bırakılıyor.
+Öğrenilemiyor. 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı verisi kamuya açık bir kaynakta yayımlanmıyor. Bu yüzden bu sitede hiçbir şirketin mali gücü ya da hasar ödeme performansı hakkında bir değerlendirme yayımlanmıyor; tahmin üretmek yerine bu alan boş bırakılıyor.
 
 ### Sigorta şirketi ile acente arasındaki fark nedir?
 

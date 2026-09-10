@@ -1040,8 +1040,8 @@ class Uretici:
                 {"soru": f"{s['ad']} hangi sigortaları yapıyor?",
                  "cevap": ((f"Ürün sayfalarında {len(branslar)} branş doğrulandı: "
                             f"{liste_metni_ve([b.lower() for b in _brans_adlari])}. "
-                            f"Bu ölçüt şirketin ne sattığını söylediğini ölçer, fiilen ne "
-                            f"sattığını değil.")
+                            f"Bu sayım şirketin ne sattığını söylediğini gösterir, fiilen "
+                            f"ne sattığını değil.")
                            if branslar else
                            ("Şirketin sitesinde hangi branşlarda ürün sunduğunu gösteren bir "
                             "sayfa bulamadık. Branş bilgisi için şirkete doğrudan sorun."))},
@@ -1117,7 +1117,7 @@ class Uretici:
                         f"doğrulandı. Hangi bilgileri yayımladığı, hangilerini yayımlamadığı.")
             else:
                 desc = (f"{p['sehir']} merkezli {s['ad']}. Şeffaflık, erişim ve dijital hizmet "
-                        f"ölçütlerinde neyi doğrulayabildiğimiz, neyi doğrulayamadığımız.")
+                        f"başlıklarında neyi doğrulayabildiğimiz, neyi doğrulayamadığımız.")
 
             # §9.1 — Sayfa şirketin KENDİSİ değil, şirket HAKKINDA. Bu yüzden
             # ProfilePage + mainEntity; çıplak Organization sayfanın şirket
