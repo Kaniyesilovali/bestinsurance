@@ -1,0 +1,188 @@
+{
+  "slug": "anadolu-sigorta",
+  "ad": "Anadolu Sigorta",
+  "ad_ilgi": "Anadolu Sigorta'nın",
+  "unvan": "ANADOLU ANONİM TÜRK SİGORTA ŞTİ.",
+  "web": "https://kibris.anadolusigorta.com.tr/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde ANADOLU ANONİM TÜRK SİGORTA ŞTİ. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "KKTC'deki yapı",
+      "metin": "Şirketin KKTC için ayrı bir sitesi var; iletişim bölümünde Lefkoşa'daki Kıbrıs Şubesi'nin adresi veriliyor.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/iletisim"
+    },
+    {
+      "etiket": "Faaliyet alanı",
+      "metin": "Şirket profiline göre hayat dışındaki tüm branşlarda — yangın, nakliyat, kaza, mühendislik, ferdi kaza ve sağlık — faaliyet gösteriyor.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/hakkimizda"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "KKTC sitesinde ürünler araç, konut, işyeri, sağlık, seyahat ve ferdi kaza, tekne ve nakliyat ile diğer ürünler başlıkları altında sıralanıyor.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/site-haritasi"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede, kaza ya da arıza durumunda telefonla ulaşılabilen ve haftanın her günü 24 saat hizmet verdiği belirtilen \"Anadolu Hizmet\" yardım hizmetleri anlatılıyor.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/"
+    },
+    {
+      "metin": "Sitede araç, konut/işyeri ve sağlık için ayrı hasar süreci bölümleri bulunuyor.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/site-haritasi"
+    },
+    {
+      "metin": "Her ürün grubu için bilgilendirme dokümanları bölümü bulunuyor.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/site-haritasi"
+    },
+    {
+      "metin": "Sitede şikâyet ve öneri bildirimi için bir bölüm bulunuyor; şirketin \"Sigortam Cepte\" mobil uygulamasına bağlantı veriliyor.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/iletisim"
+    }
+  ],
+  "iletisim": {
+    "adres": "Memduh Asaf Sokak 8, Köşklüçiftlik, Lefkoşa",
+    "telefon": "(392) 227 95 95",
+    "eposta": "bolge50@anadolusigorta.com.tr",
+    "instagram": "https://www.instagram.com/anadolusigortakibris/",
+    "facebook": "https://www.facebook.com/anadolusigortakibris",
+    "kaynak": "https://kibris.anadolusigorta.com.tr/iletisim"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Trafik sigortası",
+      "kisa": "Zorunlu üçüncü şahıs sigortası.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/arac/trafik-sigortasi"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Aracın kendisine gelen zararlar için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/arac/kasko-sigortasi"
+    },
+    {
+      "slug": "sinir-kapisi",
+      "brans": "trafik",
+      "ad": "Sınır kapısı sigortası",
+      "kisa": "Sınır kapısından giriş yapan araçlar için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/arac/sinir-kapisi"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut sigortası",
+      "kisa": "Ev ve eşyalar için yangından hırsızlığa, depremden su baskınına paket sigorta.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/konut/konut-saglik"
+    },
+    {
+      "slug": "gunes-paneli",
+      "brans": "konut",
+      "ad": "Çatı tipi güneş enerji paneli sigortası",
+      "kisa": "Bireysel çatı tipi güneş panelleri için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/konut/cati-tipi-gunes-enerji-paneli-sigortasi"
+    },
+    {
+      "slug": "site-apartman",
+      "brans": "konut",
+      "ad": "Site/apartman ortak alan poliçesi",
+      "kisa": "Toplu yaşam alanları ve yönetici sorumlulukları için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/konut/site-apartman-ortak-alan-policesi"
+    },
+    {
+      "slug": "isyeri-paket",
+      "brans": "isyeri",
+      "ad": "İşyeri paket sigortası",
+      "kisa": "Bina, cam ve muhteviyat için yangından hırsızlığa paket sigorta.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/is-yeri/is-yeri-paket-sigortasi"
+    },
+    {
+      "slug": "sektorel-paket",
+      "brans": "isyeri",
+      "ad": "Sektörel paket sigortaları",
+      "kisa": "Sektöre göre hazırlanmış işyeri paketleri.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/is-yeri/sektorel-paket-sigortasi"
+    },
+    {
+      "slug": "siber",
+      "brans": "sorumluluk",
+      "ad": "Ticari siber güvenlik",
+      "kisa": "İşletmeler için siber risk sigortası.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/is-yeri/ticeri-siber-guvenlik"
+    },
+    {
+      "slug": "saglik",
+      "brans": "saglik",
+      "ad": "Bireysel ve Nefes sağlık sigortası",
+      "kisa": "Bireysel sağlık sigortası seçenekleri.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/saglik/bireysel-saglik-sigortasi"
+    },
+    {
+      "slug": "seyahat",
+      "brans": "seyahat",
+      "ad": "Seyahat sigortaları",
+      "kisa": "Yurt dışı, Türkiye ve yurt dışı eğitim seyahatleri için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/seyahat-ve-ferdi-kaza/yurt-disi-seyahat-sigortası"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza ve aile sigortası",
+      "kisa": "Kazanın sigortalı ve aile üzerindeki sonuçları için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/seyahat-ve-ferdi-kaza/ferdi-kaza-sigortasi"
+    },
+    {
+      "slug": "tekne-nakliyat",
+      "brans": "nakliyat",
+      "ad": "Tekne ve nakliyat sigortaları",
+      "kisa": "Tekne ve taşınan mal için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/tekne-nakliyat-sigortalari/tekne-sigortasi"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Mühendislik sigortaları",
+      "kisa": "İnşaat, montaj ve makine riskleri için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/diger-urunler/muhendislik-sigortalari"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "Üçüncü kişilere karşı sorumluluk için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/diger-urunler/sorumluluk-sigortalari"
+    },
+    {
+      "slug": "patim-guvende",
+      "brans": "ferdi_kaza",
+      "ad": "Patim Güvende sigortası",
+      "kisa": "Evcil hayvanlar için.",
+      "kaynak": "https://kibris.anadolusigorta.com.tr/urunler/diger-urunler"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://kibris.anadolusigorta.com.tr/",
+    "https://kibris-api.anadolusigorta.com.tr/kws/web-site (sites/map, products/list, communications/list, abouts/list)",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "İletişim bölümündeki Türkiye bölge müdürlükleri: KKTC dışı.",
+    "'En geniş güvence', 'çok ekonomik çözüm': reklam iddiası.",
+    "Yönetim ve icra kurulu üyeleri: kişi adı yazılmaz.",
+    "Ödüller ve politikalar: tanıtım için gereksiz; iddia içerir."
+  ]
+}

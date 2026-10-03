@@ -42,16 +42,23 @@
   <div class="mx-auto max-w-shell px-[22px] py-12 sm:py-16">
     <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-3">{{ t.ad }} ürünleri</h2>
     <p class="text-[15px] text-muted leading-relaxed max-w-prose mb-8">
-      Şirketin sitesinde ayrı sayfası olan ürünler. Her birinde ürün sayfasında
-      anlatılanları özetledik.
+      Şirketin sitesinde tanıtılan ürünler. Bağlantılı olanlarda şirketin anlattıklarını
+      ve sigortanın KKTC'de genel olarak nasıl işlediğini ayrı bir yazıda özetledik.
     </p>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {% for u in t.urunler %}
+      {% if u.url %}
       <a href="{{ u.url }}" class="card p-7 flex flex-col">
         <h3 class="text-[19px] font-medium tracking-[-.015em] leading-[1.2] mb-2">{{ u.ad }}</h3>
         <p class="text-[14px] leading-[1.43] text-muted mb-5">{{ u.kisa }}</p>
         <span class="arrow arrow--sm mt-auto">Ürünü oku</span>
       </a>
+      {% else %}
+      <div class="card p-7 flex flex-col">
+        <h3 class="text-[19px] font-medium tracking-[-.015em] leading-[1.2] mb-2">{{ u.ad }}</h3>
+        <p class="text-[14px] leading-[1.43] text-muted">{{ u.kisa }}</p>
+      </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>

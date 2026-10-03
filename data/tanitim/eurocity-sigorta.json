@@ -1,0 +1,44 @@
+{
+  "slug": "eurocity-sigorta",
+  "ad": "Eurocity Sigorta",
+  "ad_ilgi": "Eurocity Sigorta'nın",
+  "unvan": "EUROCITY SİGORTA",
+  "web": "http://eurocitysigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde EUROCITY SİGORTA unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Web sitesi",
+      "metin": "Şirketin sitesi tek sayfadan oluşuyor; sayfada unvan, adres, telefon ve e-posta bilgisi veriliyor.",
+      "kaynak": "http://eurocitysigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "http://eurocitysigorta.com/"
+    }
+  ],
+  "hizmetler": [],
+  "iletisim": {
+    "adres": "Organize Sanayi Bölgesi, 26. Sokak No:8A, Cezaevi karşısı, Lefkoşa",
+    "telefon": "(0392) 227 12 11",
+    "eposta": "eurocityinsurance@outlook.com",
+    "kaynak": "http://eurocitysigorta.com/"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "http://eurocitysigorta.com/",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Genel müdür adı: kişi adı yazılmaz.",
+    "Temmuz 2026 verisindeki branş listesi: sitede artık ürün bilgisi yok; yalnızca güncel sitede yazan yazıldı.",
+    "Önceki profildeki başka bir şirketle aynı sunucu notu: ima; yazılmaz."
+  ]
+}

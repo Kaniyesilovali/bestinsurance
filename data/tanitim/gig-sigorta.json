@@ -1,0 +1,55 @@
+{
+  "slug": "gig-sigorta",
+  "ad": "GIG Sigorta",
+  "ad_ilgi": "GIG Sigorta'nın",
+  "unvan": "GİG SİGORTA A.Ş.",
+  "web": "https://www.gig.com.tr/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde GİG SİGORTA A.Ş. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "KKTC'deki yapı",
+      "metin": "Şirketin tanıtım sayfasına göre Türkiye'deki bölge müdürlüklerinin yanında bir KKTC Şube Müdürlüğü bulunuyor.",
+      "kaynak": "https://www.gig.com.tr/hakkimizda/bizi-taniyin/dunyada-ve-turkiyede-gig"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Şirketin sitesi Türkiye'deki ürünleri anlatıyor; KKTC'de sunulan ürünlerin ayrı bir listesi sitede yer almıyor. KKTC'deki ürünler için şube müdürlüğüne başvurulabilir.",
+      "kaynak": "https://www.gig.com.tr/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "https://www.gig.com.tr/en/home"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Hasar bilgi ve beyan formları sayfasında KKTC için ayrı bir sekme bulunuyor.",
+      "kaynak": "https://www.gig.com.tr/hasar-islemleri/bilgi-ve-beyan-formlari/bireysel"
+    }
+  ],
+  "iletisim": {
+    "adres": "Şht. Ecvet Yusuf Cad. B603 Celsus Business Center No:28/47, Yenişehir, Lefkoşa",
+    "telefon": "(0392) 227 57 84",
+    "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "https://www.gig.com.tr/",
+    "https://www.gig.com.tr/hakkimizda/bizi-taniyin/dunyada-ve-turkiyede-gig",
+    "https://www.gig.com.tr/hasar-islemleri/bilgi-ve-beyan-formlari/bireysel",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Türkiye'ye ait ürün sayfaları (DASK dahil): KKTC'de sunulduğu sitede yazmıyor; ürün olarak yazılmadı.",
+    "Çalışan cinsiyet ve eğitim oranları, yatırımcı raporları: mali ve iç yapı bilgisi.",
+    "Birlik listesindeki müdür adı: kişi adı yazılmaz."
+  ]
+}

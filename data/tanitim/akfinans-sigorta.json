@@ -1,0 +1,92 @@
+{
+  "slug": "akfinans-sigorta",
+  "ad": "Akfinans Sigorta",
+  "ad_ilgi": "Akfinans Sigorta'nın",
+  "unvan": "AKFİNANS SİGORTA",
+  "web": "https://www.akfinans.one/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde AKFİNANS SİGORTA adıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre 1996'da yerel bir sigorta şirketi olarak kuruldu.",
+      "kaynak": "https://akfinans.one/about-us/"
+    },
+    {
+      "etiket": "Faaliyet alanı",
+      "metin": "Tanıtım sayfasına göre hayat dışı sigortacılık alanında poliçe düzenliyor.",
+      "kaynak": "https://akfinans.one/about-us/"
+    },
+    {
+      "etiket": "Şubeler",
+      "metin": "Şube sayfasında Lefkoşa'daki genel müdürlüğün yanında Kaymaklı, Gönyeli, Gazimağusa ve Girne şubeleri listeleniyor.",
+      "kaynak": "http://akfinans.one/branches/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünlerini kaza, nakliyat, yangın ve mühendislik olmak üzere dört başlık altında topluyor.",
+      "kaynak": "https://akfinans.one/about-us/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "İngilizce.",
+      "kaynak": "https://www.akfinans.one/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede trafik kazası anında izlenecek adımları anlatan bir soru-cevap bölümü bulunuyor.",
+      "kaynak": "https://www.akfinans.one/"
+    },
+    {
+      "metin": "Sitede bir iletişim formu bulunuyor.",
+      "kaynak": "https://akfinans.one/contact/"
+    },
+    {
+      "metin": "Sitede belirtilen çalışma saatleri: hafta içi 08.00–17.00, cumartesi 09.00–13.00.",
+      "kaynak": "https://www.akfinans.one/"
+    },
+    {
+      "metin": "Sigorta sözleşmelerine ilişkin Türkçe bir bilgilendirme formu broşürü yayımlanıyor.",
+      "kaynak": "https://akfinans.one/insurance/"
+    }
+  ],
+  "iletisim": {
+    "adres": "16 Osmanpaşa Caddesi, Köşklüçiftlik, Lefkoşa",
+    "telefon": "+90 392 228 90 03",
+    "eposta": "akfinans@akfinans.com",
+    "kaynak": "https://www.akfinans.one/"
+  },
+  "urunler": [
+    {"slug": "trafik", "brans": "trafik", "ad": "Zorunlu trafik sigortası", "kisa": "Kazaya neden olan sürücünün üçüncü kişilere karşı sorumluluğu için yasal sigorta.", "kaynak": "https://akfinans.one/insurance/"},
+    {"slug": "kasko", "brans": "kasko", "ad": "Kasko sigortası", "kisa": "Aracın park hâlinde ya da trafikteyken uğrayacağı zararlar için.", "kaynak": "https://akfinans.one/insurance/"},
+    {"slug": "yangin", "brans": "konut", "ad": "Yangın sigortası", "kisa": "Bina ve içindekiler için; deprem, sel gibi ek teminatlar eklenebiliyor.", "kaynak": "https://akfinans.one/insurance/"},
+    {"slug": "hirsizlik", "brans": "isyeri", "ad": "Hırsızlık sigortası", "kisa": "Ev ya da işyerinde zorla girilerek yapılan hırsızlık için.", "kaynak": "https://akfinans.one/insurance/"},
+    {"slug": "ferdi-kaza", "brans": "ferdi_kaza", "ad": "Ferdi kaza sigortası", "kisa": "Kaza sonucu ölüm, kalıcı ya da geçici sakatlık için tazminat.", "kaynak": "https://akfinans.one/insurance/"},
+    {"slug": "muhendislik", "brans": "muhendislik", "ad": "Mühendislik sigortaları", "kisa": "İnşaat all risk, makine kırılması ve elektronik cihaz sigortaları.", "kaynak": "https://akfinans.one/insurance/"},
+    {"slug": "isletme", "brans": "sorumluluk", "ad": "İşletmelere yönelik diğer sigortalar", "kisa": "Para nakli, emniyeti suistimal, cam ve asansör sorumluluk sigortaları.", "kaynak": "https://akfinans.one/insurance/"},
+    {"slug": "nakliyat", "brans": "nakliyat", "ad": "Nakliyat ve yat sigortası", "kisa": "Yük, tekne ve yat için deniz sigortaları.", "kaynak": "https://akfinans.one/about-us/"}
+  ],
+  "taranan_sayfalar": [
+    "https://www.akfinans.one/",
+    "https://akfinans.one/about-us/",
+    "https://akfinans.one/insurance/",
+    "http://akfinans.one/branches/",
+    "https://akfinans.one/contact/",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "'Kuzey Kıbrıs'ın ilk şirketlerinden biri', 'büyüyen sermaye', 'en iyi hizmet', 'en uygun fiyat': üstünlük ve reklam iddiası.",
+    "Kuruluş öncesinde yurt dışındaki bir şirketin tek acentesi olduğu cümlesi: şirketin adı verilmiyor, doğrulanamaz bağ.",
+    "Vizyondaki 'AB standartlarında finans kurumu' hedefi: gelecek zamanlı niyet.",
+    "Sosyal medya bağlantıları: Facebook bağlantısı Akfinans Bank sayfasına, diğerleri platformların ana sayfasına gidiyor; şirketin hesabı olarak yazılmadı.",
+    "Şube telefon ve faks numaraları: genel iletişim yeterli; şube adları yazıldı.",
+    "Sitedeki SSS'de alkollü sürücü ve aracı kimlerin kullanabileceğine dair cevaplar: ürün yazısında ele alınacak."
+  ]
+}

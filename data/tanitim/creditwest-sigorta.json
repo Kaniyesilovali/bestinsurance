@@ -1,0 +1,110 @@
+{
+  "slug": "creditwest-sigorta",
+  "ad": "Creditwest Sigorta",
+  "ad_ilgi": "Creditwest Sigorta'nın",
+  "unvan": "CREDITWEST SİGORTA LTD.",
+  "web": "https://www.creditwestinsurance.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "elle_kontrol": "Site otomatik isteklere 403 veriyor; ürün sayfalarının metni okunamadı. Ürün adları ve dil seçenekleri sitenin menüsünden alındı.",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde CREDITWEST SİGORTA LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitenin ürün menüsünde zorunlu trafik, kasko, konut paket, yangın, hırsızlık, cam kırılması, ticari paket, ferdi kaza, nakliyat, yat, asansör, üçüncü şahıs mali sorumluluk, seyahat ve kredi hayat sigortaları listeleniyor.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe; sitede İngilizce ve Rusça seçenekleri de var.",
+      "kaynak": "https://www.creditwestinsurance.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede online sigortacılık ve araç sigortası satın alma bölümleri ile bir hasar bildirim formu bulunuyor.",
+      "kaynak": "https://www.creditwestinsurance.com/"
+    },
+    {
+      "metin": "Sitede pert araçlar ve acenteler için ayrı sayfalar bulunuyor.",
+      "kaynak": "https://www.creditwestinsurance.com/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Şht. Hüseyin Mustafa Ruso Caddesi No:27, Küçükkaymaklı, Lefkoşa",
+    "telefon": "(0392) 678 00 00",
+    "eposta": "info@creditwestinsurance.com",
+    "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/zorunlu-trafik-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko araç sigortası",
+      "kisa": "Aracın kendisine gelen zararlar için.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/kasko-arac-sigortasi/"
+    },
+    {
+      "slug": "konut-paket",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Ev ve eşyalar için paket sigorta.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/konut-paket-sigortasi/"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket sigortası",
+      "kisa": "İşyerleri için paket sigorta.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/ticari-paket-sigortasi/"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Kazanın sigortalı üzerindeki sonuçları için.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/ferdi-kaza-sigortasi/"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat sigortası",
+      "kisa": "Taşınan mal için.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/nakliyat-sigortasi/"
+    },
+    {
+      "slug": "yat",
+      "brans": "yat",
+      "ad": "Yat sigortası",
+      "kisa": "Yatlar için.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/yat-sigortasi/"
+    },
+    {
+      "slug": "seyahat",
+      "brans": "seyahat",
+      "ad": "Seyahat sigortası",
+      "kisa": "Seyahatteki riskler için.",
+      "kaynak": "https://www.creditwestinsurance.com/urunler/seyahat-sigortasi-2/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.creditwestinsurance.com/",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Acenteler bağlantısındaki sayı: neyi saydığı okunamadı; yazılmadı.",
+    "Ürün sayfalarının içeriği: okunamadı; yalnızca ürün adları yazıldı."
+  ]
+}

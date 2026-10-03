@@ -1,0 +1,87 @@
+{
+  "slug": "as-can-sigorta",
+  "ad": "As-Can Sigorta",
+  "ad_ilgi": "As-Can Sigorta'nın",
+  "unvan": "AS-CAN SİGORTA ŞTİ LTD.",
+  "web": "http://ascansigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde AS-CAN SİGORTA ŞTİ LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre 1983'te kuruldu.",
+      "kaynak": "http://ascansigorta.com/aboutus.aspx"
+    },
+    {
+      "etiket": "Merkez",
+      "metin": "Tanıtım sayfasına göre merkezi Lefkoşa Dereboyu'nda.",
+      "kaynak": "http://ascansigorta.com/aboutus.aspx"
+    },
+    {
+      "etiket": "Acenteler",
+      "metin": "Tanıtım sayfasına göre dört acentesi var: biri Girne'de, ikisi Lefkoşa'da, biri Gazimağusa'da.",
+      "kaynak": "http://ascansigorta.com/aboutus.aspx"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede dokuz ürünün ayrı sayfası var: yangın, hırsızlık, zorunlu trafik, kasko, ferdi kaza, cam kırılması, elektronik cihaz, asansör ve emniyeti suistimal.",
+      "kaynak": "http://ascansigorta.com/services.aspx"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "http://ascansigorta.com/?lang=en"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede sigorta yaptırırken dikkat edilecek konular, hasar anında yapılacaklar ve hasarsızlık indirimi üzerine bilgi sayfaları bulunuyor.",
+      "kaynak": "http://ascansigorta.com/information.aspx"
+    },
+    {
+      "metin": "İletişim sayfasında talep ve şikâyetlerin iletilebildiği bir form bulunuyor.",
+      "kaynak": "http://ascansigorta.com/contact.aspx"
+    },
+    {
+      "metin": "Sitede belirtilen çalışma saatleri: hafta içi 09.00–18.00, cumartesi 10.00–17.00.",
+      "kaynak": "http://ascansigorta.com/contact.aspx"
+    }
+  ],
+  "iletisim": {
+    "adres": "Mehmet Akif Caddesi No:122, Lefkoşa",
+    "telefon": "(0392) 227 64 44",
+    "eposta": "info@as-cansigorta.com",
+    "kaynak": "http://ascansigorta.com/contact.aspx"
+  },
+  "urunler": [
+    {"slug": "yangin", "brans": "konut", "ad": "Yangın sigortası", "kisa": "Bina ve içindekiler için; deprem, sel, dahili su gibi ek teminatlarla.", "kaynak": "http://ascansigorta.com/services/service1.aspx"},
+    {"slug": "hirsizlik", "brans": "isyeri", "ad": "Hırsızlık sigortası", "kisa": "Ev ve işyerindeki eşya ve mallar için zorla girişle yapılan hırsızlığa karşı.", "kaynak": "http://ascansigorta.com/services/service2.aspx"},
+    {"slug": "trafik", "brans": "trafik", "ad": "Zorunlu trafik sigortası", "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta.", "kaynak": "http://ascansigorta.com/services.aspx"},
+    {"slug": "kasko", "brans": "kasko", "ad": "Kasko sigortası", "kisa": "Aracın kendisine gelen zararlar için.", "kaynak": "http://ascansigorta.com/services.aspx"},
+    {"slug": "ferdi-kaza", "brans": "ferdi_kaza", "ad": "Ferdi kaza sigortası", "kisa": "Kazanın sigortalı üzerindeki sonuçları için kişisel sigorta.", "kaynak": "http://ascansigorta.com/services.aspx"},
+    {"slug": "cam", "brans": "konut", "ad": "Cam kırılması sigortası", "kisa": "Bina ve işyeri camları için.", "kaynak": "http://ascansigorta.com/services.aspx"},
+    {"slug": "elektronik-cihaz", "brans": "muhendislik", "ad": "Elektronik cihaz sigortası", "kisa": "Elektronik cihazların ani ve beklenmedik hasarları için.", "kaynak": "http://ascansigorta.com/services.aspx"},
+    {"slug": "asansor", "brans": "sorumluluk", "ad": "Asansör sigortası", "kisa": "Asansör kazalarından doğan sorumluluk için.", "kaynak": "http://ascansigorta.com/services.aspx"},
+    {"slug": "emniyeti-suistimal", "brans": "sorumluluk", "ad": "Emniyeti suistimal sigortası", "kisa": "Çalışanların neden olduğu maddi zararlar için işletmelere yönelik.", "kaynak": "http://ascansigorta.com/services.aspx"}
+  ],
+  "taranan_sayfalar": [
+    "http://ascansigorta.com/", "http://ascansigorta.com/?lang=en", "http://ascansigorta.com/aboutus.aspx",
+    "http://ascansigorta.com/managment.aspx", "http://ascansigorta.com/services.aspx",
+    "http://ascansigorta.com/information.aspx", "http://ascansigorta.com/contact.aspx",
+    "http://ascansigorta.com/services/service1.aspx … service9.aspx", "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Hissedar, yönetici ve personel sayıları ile yöneticilerin adları ve e-postaları: kişi bilgisi ve iç yapı; yazılmaz.",
+    "Ürünler sayfasındaki 'sigorta acentelerinden birisidir' ifadesi: Birlik listesinde şirket olarak yer alıyor; çelişki yorumlanmaz.",
+    "Ana sayfada adı geçen iki acente (bir banka ve bir kişi): kişi adı yazılmaz; acente sayısı tanıtım sayfasından yazıldı.",
+    "Sayfa başlığındaki test ibaresi, eski telif yılı, SSL durumu: kusur yazılmaz.",
+    "Ürün sayfalarındaki oran ve tutarlar (enkaz kaldırma yüzdesi, hırsızlıkta yüzde sınırları, rüzgâr hızı): rakam yazılmaz.",
+    "'En uygun sigortayı en iyi fiyata': reklam iddiası."
+  ]
+}

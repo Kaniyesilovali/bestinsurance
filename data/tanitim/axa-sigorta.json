@@ -1,0 +1,76 @@
+{
+  "slug": "axa-sigorta",
+  "ad": "AXA Sigorta",
+  "ad_ilgi": "AXA Sigorta'nın",
+  "unvan": "AXA SİGORTA A.Ş",
+  "web": "https://www.axasigorta.com.tr/kibris-subemiz",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde AXA SİGORTA A.Ş unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "KKTC'deki yapı",
+      "metin": "Şirketin sitesinde KKTC faaliyetleri \"Kıbrıs Şubemiz\" başlıklı ayrı bir sayfada anlatılıyor.",
+      "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Kıbrıs şubesi sayfasında yirmi bir ürün listeleniyor; bunlar arasında zorunlu trafik, kasko, konut, işyeri paket, özel sağlık, ferdi kaza, hayat, nakliyat, seyahat ve mühendislik sigortaları ile eczane, akaryakıt istasyonu ve otel gibi sektörlere özel paketler var.",
+      "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Kıbrıs şubesi sayfası Türkçe.",
+      "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Kıbrıs şubesi sayfasında Lefkoşa, Girne ve Gazimağusa'daki anlaşmalı otomobil servislerinin aranabildiği bir arama aracı bulunuyor.",
+      "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"
+    },
+    {
+      "metin": "Sayfada, sigortalı riskin gerçekleşmesi hâlinde yapılacaklara ilişkin bir bilgilendirme ile görüş ve öneri bağlantısı yer alıyor.",
+      "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"
+    },
+    {
+      "metin": "Sayfada, KKTC'de zorunlu trafik sigortasına ilişkin düzenlemelerin Fasıl 333 Motorlu Araçlar (Üçüncü Şahıs Sigortası) Yasası'nda yer aldığı belirtiliyor.",
+      "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"
+    }
+  ],
+  "iletisim": {
+    "adres": "Yıldırım Beyazid Sokak No:4, Köşklüçiftlik, Lefkoşa",
+    "telefon": "(0392) 228 73 85",
+    "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+  },
+  "urunler": [
+    {"slug": "trafik", "brans": "trafik", "ad": "Zorunlu trafik sigortası", "kisa": "Araç işletenin üçüncü kişilere karşı hukuki sorumluluğu için yasal sigorta.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "maksimum-kasko", "brans": "kasko", "ad": "Maksimum Kasko", "kisa": "Aracı kapsamlı biçimde güvenceye alan kasko ürünü.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "evim", "brans": "konut", "ad": "Evim Sigortası", "kisa": "Yangından hırsızlığa, elektronik eşyaya kadar ev için konut sigortası.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "isyerim", "brans": "isyeri", "ad": "İşyerim Paket Sigortası", "kisa": "İşyeri için genişletilmiş teminatlı paket poliçe.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "ozel-saglik", "brans": "saglik", "ad": "Kıbrıs Özel Sağlık Sigortası", "kisa": "Yatarak ve ayakta tedavi seçenekli paket sağlık ürünleri.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "ferdi-kaza", "brans": "ferdi_kaza", "ad": "Genel Ferdi Kaza Sigortası", "kisa": "Kazaların sigortalı üzerindeki sonuçları için.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "hayat", "brans": "hayat", "ad": "Yıllık ve uzun süreli hayat sigortası", "kisa": "Beklenmedik risklere karşı aile için hayat sigortası seçenekleri.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "nakliyat", "brans": "nakliyat", "ad": "Nakliyat Emtea Sigortası", "kisa": "Deniz, hava, kara ve demiryoluyla taşınan mal için.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "seyahat", "brans": "seyahat", "ad": "Kıbrıs Seyahat ve Öğrenci Seyahat Sağlık", "kisa": "Konsolosluk ve öğrenci seyahatleri için seyahat sağlık ürünleri.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "muhendislik", "brans": "muhendislik", "ad": "Mühendislik sigortaları", "kisa": "İnşaat ve montaj tüm riskler, makine kırılması, elektronik ve taşınabilir cihaz.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "sektor-paketleri", "brans": "isyeri", "ad": "Sektöre özel paketler", "kisa": "Eczane, akaryakıt istasyonu, otel ve tatil köyü ile endüstriyel yangın paketleri.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"},
+    {"slug": "isveren-sorumluluk", "brans": "sorumluluk", "ad": "İşveren Mali Sorumluluk Sigortası", "kisa": "İşverenin çalışanlarına karşı sorumluluğu için.", "kaynak": "https://www.axasigorta.com.tr/kibris-subemiz"}
+  ],
+  "taranan_sayfalar": [
+    "https://www.axasigorta.com.tr/kibris-subemiz",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Türkiye sitesindeki genel ürün sayfaları: Türkiye pazarına ait; yalnızca Kıbrıs şubesi sayfası esas alındı.",
+    "Evim Sigortası'ndaki hasarsızlık indirim oranları: rakam yazılmaz.",
+    "Sayfadaki yedi bankanın genel müdürlük bilgileri: listenin işlevi sayfada yazmıyor; yazılmaz.",
+    "'Çok daha altında maliyet', 'en kaliteli hizmet': reklam iddiası.",
+    "KKTC Elden Fatura Girişi bağlantısı: kurumsal işlem ekranı, tanıtım bilgisi değil."
+  ]
+}

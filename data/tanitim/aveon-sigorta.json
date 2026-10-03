@@ -1,0 +1,109 @@
+{
+  "slug": "aveon-sigorta",
+  "ad": "Aveon Sigorta",
+  "ad_ilgi": "Aveon Sigorta'nın",
+  "unvan": "AVEON SİGORTA LTD.",
+  "web": "https://aveoninsurance.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde AVEON SİGORTA LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre 2011'de Lefkoşa'da kuruldu.",
+      "kaynak": "https://aveoninsurance.com/tr/hakkimizda"
+    },
+    {
+      "etiket": "Şubeler",
+      "metin": "Şubeler sayfasında Lefkoşa'daki genel müdürlüğün yanında Girne ve Gazimağusa şubeleri listeleniyor.",
+      "kaynak": "https://aveoninsurance.com/tr/subeler"
+    },
+    {
+      "etiket": "Acenteler",
+      "metin": "Tanıtım sayfasında şubelerin yanı sıra ada genelinde bir acente ağıyla çalışıldığı belirtiliyor; acente sayısı verilmiyor.",
+      "kaynak": "https://aveoninsurance.com/tr/hakkimizda"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede on yedi ürünün ayrı sayfası var; bunlar arasında zorunlu trafik, kasko, kısmi kasko, pert kasko, konut, işyeri, acil sağlık, seyahat sağlık, ferdi kaza, nakliyat, inşaat, makine kırılması, elektronik cihaz, hırsızlık, mesleki sorumluluk, siber güvenlik ve kredi kartı sigortaları bulunuyor.",
+      "kaynak": "https://aveoninsurance.com/"
+    },
+    {
+      "etiket": "Hizmet dilleri",
+      "metin": "Tanıtım sayfasına göre Türkçe ve İngilizce; sitenin İngilizce sürümü de var.",
+      "kaynak": "https://aveoninsurance.com/tr/hakkimizda"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Zorunlu trafik poliçesinin internet üzerinden düzenlenebildiği ayrı bir online poliçe sayfası bulunuyor.",
+      "kaynak": "https://police.aveoninsurance.com/"
+    },
+    {
+      "metin": "Sitede bir teklif formu ve müşteri girişi bulunuyor.",
+      "kaynak": "https://aveoninsurance.com/tr/teklif-al"
+    },
+    {
+      "metin": "Hasar ihbarları için 7/24 açık olduğu belirtilen bir acil hat numarası veriliyor.",
+      "kaynak": "https://aveoninsurance.com/tr/subeler"
+    },
+    {
+      "metin": "Hasar sayfasında ev, araç ve işyeri hasarları için bildirim rehberleri yer alıyor.",
+      "kaynak": "https://aveoninsurance.com/tr/hasar"
+    },
+    {
+      "metin": "Şubeler sayfasına göre üç ofiste de teklif, poliçe, yenileme ve hasar danışmanlığı işlemleri randevusuz yapılabiliyor; çalışma saatleri hafta içi 08.00–17.00.",
+      "kaynak": "https://aveoninsurance.com/tr/subeler"
+    },
+    {
+      "metin": "Sitede sık sorulan sorular sayfası ve bir blog bulunuyor.",
+      "kaynak": "https://aveoninsurance.com/tr/sikca-sorulan-sorular"
+    }
+  ],
+  "iletisim": {
+    "adres": "17/C Memduh Asaf Sokak, Köşklüçiftlik–Dereboyu, Lefkoşa",
+    "telefon": "+90 392 228 71 60",
+    "hasar_hatti": "+90 542 869 90 00",
+    "eposta": "info@aveoninsurance.com",
+    "instagram": "https://www.instagram.com/aveon.sigorta",
+    "facebook": "https://www.facebook.com/aveonsigorta",
+    "kaynak": "https://aveoninsurance.com/"
+  },
+  "urunler": [
+    {"slug": "trafik", "brans": "trafik", "ad": "Zorunlu trafik sigortası", "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta; online da düzenlenebiliyor.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/trafik-sigortasi"},
+    {"slug": "kasko", "brans": "kasko", "ad": "Kasko sigortası", "kisa": "Aracın hasar, hırsızlık ve afet risklerine karşı.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/kasko-sigortasi"},
+    {"slug": "kismi-kasko", "brans": "kasko", "ad": "Kısmi kasko", "kisa": "Belirli risklerle sınırlı kasko seçeneği.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/kismi-kasko-sigortasi"},
+    {"slug": "pert-kasko", "brans": "kasko", "ad": "Pert kasko", "kisa": "Aracın tam hasarına yönelik kasko seçeneği.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/pert-kasko-sigortasi"},
+    {"slug": "konut", "brans": "konut", "ad": "Konut sigortası", "kisa": "Ev ve eşyalar için hırsızlık, su baskını gibi teminatlar.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/konut-sigortasi"},
+    {"slug": "isyeri", "brans": "isyeri", "ad": "İşyeri sigortası", "kisa": "İşyerlerinin risklerine yönelik paket sigorta.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/isyeri-sigortasi"},
+    {"slug": "acil-saglik", "brans": "saglik", "ad": "Acil sağlık sigortası", "kisa": "Anlaşmalı kurumlarda geçerli sağlık paketleri.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/saglik-sigortasi"},
+    {"slug": "seyahat-saglik", "brans": "seyahat", "ad": "Seyahat sağlık sigortası", "kisa": "Yurt dışı seyahatlerde sağlık sorunlarına karşı.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/seyahat-saglik-sigortasi"},
+    {"slug": "ferdi-kaza", "brans": "ferdi_kaza", "ad": "Ferdi kaza sigortası", "kisa": "Kaza sonucu vefat ve maluliyet tazminatı.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/ferdi-kaza-sigortasi"},
+    {"slug": "nakliyat", "brans": "nakliyat", "ad": "Nakliyat sigortası", "kisa": "Yük taşımacılığında oluşabilecek hasarlar için.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/nakliyat-sigortasi"},
+    {"slug": "insaat", "brans": "muhendislik", "ad": "İnşaat sigortası", "kisa": "İnşaat projeleri için all risk mühendislik sigortası.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/insaat-sigortasi"},
+    {"slug": "makine-kirilmasi", "brans": "muhendislik", "ad": "Makine kırılması sigortası", "kisa": "Üretim makinelerinin arızalanmasına karşı.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/makine-kirilmasi-sigortasi"},
+    {"slug": "elektronik-cihaz", "brans": "muhendislik", "ad": "Elektronik cihaz sigortası", "kisa": "İşyeri cihazlarının bozulma ve hasarlarına karşı.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/elektronik-cihaz-sigortasi"},
+    {"slug": "hirsizlik", "brans": "isyeri", "ad": "Hırsızlık sigortası", "kisa": "Değerli varlıkların çalınma riskine karşı.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/hirsizlik-sigortasi"},
+    {"slug": "mesleki-sorumluluk", "brans": "sorumluluk", "ad": "Mesleki sorumluluk sigortası", "kisa": "Meslek icrası sırasındaki hatalardan doğan sorumluluk için.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/mesleki-sorumluluk-sigortasi"},
+    {"slug": "siber-guvenlik", "brans": "sorumluluk", "ad": "Siber güvenlik sigortası", "kisa": "Veri kaybı ve siber saldırılara karşı.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/siber-guvenlik-sigortasi"},
+    {"slug": "kredi-karti", "brans": "hayat", "ad": "Kredi kartı sigortası", "kisa": "İşsizlik ya da kaza durumunda kart borcuna yönelik güvence.", "kaynak": "https://aveoninsurance.com/tr/hizmetlerimiz/kredi-karti-sigortasi"}
+  ],
+  "taranan_sayfalar": [
+    "https://aveoninsurance.com/", "https://aveoninsurance.com/tr/hakkimizda", "https://aveoninsurance.com/tr/subeler",
+    "https://aveoninsurance.com/tr/sikca-sorulan-sorular", "https://aveoninsurance.com/tr/hasar",
+    "https://aveoninsurance.com/tr/teklif-al", "https://police.aveoninsurance.com/",
+    "https://aveoninsurance.com/tr/hizmetlerimiz/* (17 ürün sayfası)", "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Ödenmiş sermaye tutarı: mali bilgi; yazılmaz.",
+    "'Prim üretiminde ilk 5', 'sektörün en büyüklerinden', 'KKTC'nin güvenilir sigorta gücü', 'güçlü acente ağı': mali ve üstünlük iddiası; yazılmaz.",
+    "SSS'deki 'kapandı mı', 'güvenilir mi' cevapları: şirketin kendi beyanı; aktarılmaz.",
+    "Şubelerin hizmet verdiği semt listeleri: tanıtım için gereksiz ayrıntı.",
+    "Blog yazıları: tarihli içerik, tanıtım bilgisi değil."
+  ]
+}

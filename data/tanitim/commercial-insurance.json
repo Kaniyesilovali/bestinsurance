@@ -1,0 +1,133 @@
+{
+  "slug": "commercial-insurance",
+  "ad": "Commercial Insurance",
+  "ad_ilgi": "Commercial Insurance'ın",
+  "unvan": "COMMERCIAL INSURANCE LTD.",
+  "web": "https://commercialcyprus.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde COMMERCIAL INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Tarihçe",
+      "metin": "Tarihçe sayfasına göre sigorta faaliyetine 1982'de bir acentelikle başladı; 1998'de Birlik'e üye olarak yerel şirket statüsünde hizmet vermeye başladı.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-tarihce.html"
+    },
+    {
+      "etiket": "Ofisler",
+      "metin": "İletişim sayfasında Lefkoşa'daki genel müdürlüğün yanında Girne ve Gazimağusa bölge müdürlükleri listeleniyor.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-iletisim.html"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede dokuz ürün grubunun ayrı sayfası var: motorlu araç, yangın, kaza, mühendislik, nakliyat, sorumluluk, seyahat sağlık, hayat kredi ve eğitim destek sigortaları.",
+      "kaynak": "https://commercialcyprus.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "https://commercialcyprus.com/home.html"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "İletişim sayfasında mesaj bırakılabilen bir form bulunuyor.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-iletisim.html"
+    },
+    {
+      "metin": "Acenteler sayfasında acentelik için şirketle iletişime geçilmesi isteniyor.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-acentelerimiz.html"
+    }
+  ],
+  "iletisim": {
+    "adres": "111 Bedreddin Demirel Caddesi, Kat 5-6, Lefkoşa",
+    "telefon": "0392 227 02 85",
+    "eposta": "info@commercialcyprus.com",
+    "kaynak": "https://commercialcyprus.com/commercial-insurance-iletisim.html"
+  },
+  "urunler": [
+    {
+      "slug": "motorlu-arac",
+      "brans": "kasko",
+      "ad": "Motorlu araç sigortaları",
+      "kisa": "Zorunlu trafik ve kasko dahil araç sigortaları.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-motorlu-arac-sigortalari.html"
+    },
+    {
+      "slug": "yangin",
+      "brans": "konut",
+      "ad": "Yangın sigortaları",
+      "kisa": "Bina ve içindekiler için yangın ve ek teminatlar.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-yangin-sigortalari.html"
+    },
+    {
+      "slug": "kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Kaza sigortaları",
+      "kisa": "Ferdi kaza ve diğer kaza sigortaları.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-kaza-sigortasi.html"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Mühendislik sigortaları",
+      "kisa": "İnşaat, montaj ve makine riskleri için.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-muhendislik-sigortalari.html"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat sigortası",
+      "kisa": "Taşınan mal için.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-nakliyat-sigortalari.html"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortası",
+      "kisa": "Üçüncü kişilere karşı hukuki sorumluluk için.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-sorumluluk-sigortalari.html"
+    },
+    {
+      "slug": "seyahat-saglik",
+      "brans": "seyahat",
+      "ad": "Seyahat sağlık sigortası",
+      "kisa": "Seyahatteki sağlık riskleri için.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-seyahat-saglik-sigortasi.html"
+    },
+    {
+      "slug": "hayat-kredi",
+      "brans": "hayat",
+      "ad": "Hayat kredi sigortası",
+      "kisa": "Kredi borcuna bağlı hayat sigortası.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-hayat-kredi-sigortasi.html"
+    },
+    {
+      "slug": "egitim-destek",
+      "brans": "ferdi_kaza",
+      "ad": "Eğitim destek sigortası",
+      "kisa": "Ebeveynin vefatı ya da sürekli sakatlığında çocuğun eğitim masrafları için ferdi kaza sigortası.",
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-egitim-destek-sigortasi.html"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://commercialcyprus.com/",
+    "https://commercialcyprus.com/commercial-insurance-tarihce.html",
+    "https://commercialcyprus.com/commercial-insurance-iletisim.html",
+    "https://commercialcyprus.com/commercial-insurance-iletisim-girne.html",
+    "https://commercialcyprus.com/commercial-insurance-iletisim-magusa.html",
+    "https://commercialcyprus.com/commercial-insurance-acentelerimiz.html",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Ana sayfa kartlarındaki şablondan kalma yabancı adresler ve 'Online İşlemler' bağlantısının açılmaması: kusur yazılmaz.",
+    "Acentelikle başladığı ilk şirketin adı: başka bir şirketle bağ; yazılmadı.",
+    "Bölge müdürlüklerinin telefon ve faksları: genel iletişim yeterli."
+  ]
+}

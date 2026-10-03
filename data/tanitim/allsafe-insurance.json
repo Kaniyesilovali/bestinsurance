@@ -1,0 +1,95 @@
+{
+  "slug": "allsafe-insurance",
+  "ad": "Allsafe Insurance",
+  "ad_ilgi": "Allsafe Insurance'ın",
+  "unvan": "ALLSAFE INSURANCE LTD.",
+  "web": "https://allsafeins.com/tr",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde ALLSAFE INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Genel müdürlük",
+      "metin": "İletişim sayfasında genel müdürlük adresi Lefkoşa Köşklüçiftlik olarak veriliyor.",
+      "kaynak": "https://allsafeins.com/contact"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünler sayfasında dokuz ürün tanıtılıyor: zorunlu trafik, kasko, konut, ticari paket, sağlık, kredi hayat, ferdi kaza, seyahat sağlık ve nakliyat.",
+      "kaynak": "https://allsafeins.com/our-products"
+    },
+    {
+      "etiket": "Acenteler",
+      "metin": "Kurumsal sayfada şirketin acente ağıyla çalıştığı belirtiliyor; acente sayısı verilmiyor.",
+      "kaynak": "https://allsafeins.com/institutional"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://allsafeins.com/tr"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Ana sayfada, ad ve telefon bırakılarak geri arama istenebilen bir teklif formu bulunuyor.",
+      "kaynak": "https://allsafeins.com/tr"
+    },
+    {
+      "metin": "Sitede genel telefondan ayrı bir hasar hattı numarası veriliyor.",
+      "kaynak": "https://allsafeins.com/contact"
+    },
+    {
+      "metin": "Hasar işlemleri sayfasında, branşlara göre hasar başvurusunda istenen belgeler listeleniyor.",
+      "kaynak": "https://allsafeins.com/damage-procedures"
+    },
+    {
+      "metin": "İletişim formunda konu olarak şikâyet, teklif ve genel başlıkları seçilebiliyor.",
+      "kaynak": "https://allsafeins.com/contact"
+    },
+    {
+      "metin": "Sitede WhatsApp üzerinden iletişim bağlantısı bulunuyor.",
+      "kaynak": "https://allsafeins.com/tr"
+    }
+  ],
+  "iletisim": {
+    "adres": "Cengiz Han Sk. No:7A, Köşklüçiftlik, Lefkoşa",
+    "telefon": "0533 857 45 45",
+    "hasar_hatti": "0533 886 45 45",
+    "whatsapp": "+90 533 867 55 28",
+    "instagram": "https://www.instagram.com/allsafe.insurance",
+    "kaynak": "https://allsafeins.com/contact"
+  },
+  "urunler": [
+    {"slug": "trafik", "brans": "trafik", "ad": "Zorunlu trafik sigortası", "kisa": "Kazada üçüncü kişilere verilen zararlar için yasal sigorta.", "kaynak": "https://allsafeins.com/our-products/traffic"},
+    {"slug": "kasko", "brans": "kasko", "ad": "Kasko sigortası", "kisa": "Çarpma, çalınma ve doğal afetlere karşı araç sigortası.", "kaynak": "https://allsafeins.com/our-products/kasko"},
+    {"slug": "konut", "brans": "konut", "ad": "Konut sigortası", "kisa": "Yangın ana teminatına deprem, sel, dahili su gibi ek teminatlar eklenen ev sigortası.", "kaynak": "https://allsafeins.com/our-products/konut"},
+    {"slug": "ticari-paket", "brans": "isyeri", "ad": "Ticari paket sigortası", "kisa": "İşyeri, demirbaş ve emtia için yangından hırsızlığa paket sigorta.", "kaynak": "https://allsafeins.com/our-products/ticari"},
+    {"slug": "saglik", "brans": "saglik", "ad": "Sağlık sigortası", "kisa": "Kaza ve hastalık kaynaklı sağlık giderleri için, yatarak tedavi teminatlarıyla.", "kaynak": "https://allsafeins.com/our-products/saglik"},
+    {"slug": "kredi-hayat", "brans": "hayat", "ad": "Kredi hayat sigortası", "kisa": "Vefat ya da sakatlık hâlinde kredi borcuna yönelik güvence.", "kaynak": "https://allsafeins.com/our-products"},
+    {"slug": "ferdi-kaza", "brans": "ferdi_kaza", "ad": "Ferdi kaza sigortası", "kisa": "Kaza sonrası tedavi, devamlı sakatlık ve vefat teminatları.", "kaynak": "https://allsafeins.com/our-products/ferdi"},
+    {"slug": "seyahat-saglik", "brans": "seyahat", "ad": "Seyahat sağlık sigortası", "kisa": "Seyahatte sağlık, bagaj ve iptal gibi riskler için.", "kaynak": "https://allsafeins.com/our-products/seyahat"},
+    {"slug": "nakliyat", "brans": "nakliyat", "ad": "Nakliyat sigortası", "kisa": "Taşınan yük için tam ziya, dar ve geniş teminat seçenekleri.", "kaynak": "https://allsafeins.com/our-products/nakliyat"}
+  ],
+  "taranan_sayfalar": [
+    "https://allsafeins.com/tr", "https://allsafeins.com/institutional", "https://allsafeins.com/our-products",
+    "https://allsafeins.com/damage-procedures", "https://allsafeins.com/contact",
+    "https://allsafeins.com/our-products/traffic", "https://allsafeins.com/our-products/kasko",
+    "https://allsafeins.com/our-products/konut", "https://allsafeins.com/our-products/ticari",
+    "https://allsafeins.com/our-products/saglik", "https://allsafeins.com/our-products/kredi",
+    "https://allsafeins.com/our-products/ferdi", "https://allsafeins.com/our-products/seyahat",
+    "https://allsafeins.com/our-products/nakliyat", "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Trafik sayfasındaki teminat tutarları (bedeni ve maddi): rakam yazılmaz.",
+    "Kasko sayfasındaki 'trafik sigortası fiyatları serbest tarifeyle belirlenir' cümlesi: KKTC'de taban tarife var; aktarılmaz, düzeltme de yazılmaz.",
+    "'Biz yeni adresimize taşındık' haberi: yeni adres haberde verilmiyor; iletişim sayfasındaki adres yazıldı. Birlik listesindeki adres farklı.",
+    "'Hızlı, yenilikçi, güvenilir, şeffaf', 'genç ve dinamik ekip', 'uzun yıllara dayanan tecrübe': reklam iddiası.",
+    "Kredi kartıyla tahsilat haberi: tarihli duyuru, tanıtım bilgisi değil.",
+    "Genel müdür adı: kişi adı yazılmaz."
+  ]
+}

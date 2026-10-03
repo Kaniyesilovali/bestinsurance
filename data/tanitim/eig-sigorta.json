@@ -1,0 +1,44 @@
+{
+  "slug": "eig-sigorta",
+  "ad": "EIG Sigorta",
+  "ad_ilgi": "EIG Sigorta'nın",
+  "unvan": "EIG Sigorta LTD.",
+  "web": "http://eigsigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde EIG Sigorta LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Web sitesi",
+      "metin": "Şirketin sitesi tek sayfadan oluşuyor; sayfada unvan, adres, telefon ve e-posta bilgisi veriliyor.",
+      "kaynak": "http://eigsigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "http://eigsigorta.com/"
+    }
+  ],
+  "hizmetler": [],
+  "iletisim": {
+    "adres": "Cengiz Topel Sok. Levent Apt. 38/22 A, Köşklüçiftlik, Lefkoşa",
+    "telefon": "(0392) 229 19 11",
+    "eposta": "eigsigorta@outlook.com",
+    "kaynak": "http://eigsigorta.com/"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "http://eigsigorta.com/",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Genel müdür adı: kişi adı yazılmaz.",
+    "Temmuz 2026 verisindeki branş listesi: sitede artık ürün bilgisi yok; yalnızca güncel sitede yazan yazıldı.",
+    "Önceki profildeki başka bir şirketle aynı sunucu notu: ima; yazılmaz."
+  ]
+}

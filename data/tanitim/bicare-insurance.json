@@ -1,0 +1,89 @@
+{
+  "slug": "bicare-insurance",
+  "ad": "BiCare Insurance",
+  "ad_ilgi": "BiCare Insurance'ın",
+  "unvan": "BICARE INSURANCE LTD.",
+  "web": "https://www.bicareinsurance.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde BICARE INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ofisler",
+      "metin": "Sitede iki ofis adresi veriliyor: Lefkoşa Çağlayan ve İskele.",
+      "kaynak": "https://www.bicareinsurance.com/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede on yedi ürünün ayrı sayfası var; bunlar motorlu araç, yangın, nakliyat, mühendislik, sorumluluk ve diğer sigortalar başlıkları altında toplanıyor.",
+      "kaynak": "https://www.bicareinsurance.com/urunlerimiz.html"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe. Sitede otomatik çeviri aracıyla İngilizce, Rusça, Farsça, Arapça, Almanca, Fransızca ve Yunanca seçenekleri sunuluyor.",
+      "kaynak": "https://www.bicareinsurance.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Bireysel araçlar için zorunlu trafik poliçesinin internet üzerinden düzenlenebildiği bir online poliçe sayfası bulunuyor; ticari araçlar için şirketle iletişime geçilmesi isteniyor.",
+      "kaynak": "https://police.bicareinsurance.com/TrafikPolicesi?culture=tr-tr"
+    },
+    {
+      "metin": "Sitede online sigorta işlemleri için ayrı bir portal ve teklif formu bulunuyor.",
+      "kaynak": "https://www.bicareinsurance.com/"
+    },
+    {
+      "metin": "Hasar işlemleri sayfasında telefon ve WhatsApp üzerinden hasar bildirimi yapılabildiği belirtiliyor; ev, araç, işyeri ve nakliyat hasarları için istenen belgeler listeleniyor.",
+      "kaynak": "https://www.bicareinsurance.com/hasar-islemleri.html"
+    },
+    {
+      "metin": "Ana sayfada plakaya göre araç muayene dönemini gösteren bir sorgulama aracı bulunuyor.",
+      "kaynak": "https://www.bicareinsurance.com/"
+    },
+    {
+      "metin": "Sitede belirtilen çalışma saatleri: hafta içi 08.00–17.00.",
+      "kaynak": "https://www.bicareinsurance.com/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Şehit Albay Karaoğlanoğlu Caddesi No:15, Çağlayan, Lefkoşa",
+    "telefon": "+90 392 228 49 49",
+    "hasar_hatti": "+90 548 824 02 47",
+    "eposta": "info@bicareinsurance.com",
+    "facebook": "https://www.facebook.com/profile.php?id=61554968125735",
+    "kaynak": "https://www.bicareinsurance.com/"
+  },
+  "urunler": [
+    {"slug": "trafik", "brans": "trafik", "ad": "Zorunlu trafik sigortası", "kisa": "Karşı tarafın malına ya da canına verilen zarar için yasal sigorta; bireysel araçlarda online.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/motorlu-arac-sigortalari/zorunlu-trafik-sigortasi.html"},
+    {"slug": "kasko", "brans": "kasko", "ad": "Kasko sigortası", "kisa": "Aracın kendisine gelen zararlar için.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/motorlu-arac-sigortalari/kasko-sigortasi.html"},
+    {"slug": "kismi-kasko", "brans": "kasko", "ad": "Kısmi kasko sigortası", "kisa": "Motorlu araçlarla çarpışmayla sınırlı kasko seçeneği.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/motorlu-arac-sigortalari/kismi-kasko-sigortasi.html"},
+    {"slug": "konut-paket", "brans": "konut", "ad": "Konut paket sigortası", "kisa": "Ev için deprem, hırsızlık, yangın ve terör gibi risklere karşı.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/yangin-sigortalari/konut-paket-sigortasi.html"},
+    {"slug": "ticari-paket", "brans": "isyeri", "ad": "Ticari paket sigortası", "kisa": "İşyeri için paket yangın sigortası.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/yangin-sigortalari/ticari-paket-sigortasi.html"},
+    {"slug": "nakliyat", "brans": "nakliyat", "ad": "Nakliyat emtea ve tekne sigortası", "kisa": "Taşınan mal ve tekne için deniz sigortaları.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/nakliyat-sigortalari/nakliyat-emtea-sigortasi.html"},
+    {"slug": "muhendislik", "brans": "muhendislik", "ad": "Makine kırılması ve elektronik cihaz sigortası", "kisa": "Makinelerin iç kaynaklı hasarları ve elektronik cihazlar için.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/muhendislik-sigortalari/makine-kirilmasi-sigortasi.html"},
+    {"slug": "sorumluluk", "brans": "sorumluluk", "ad": "Sorumluluk sigortaları", "kisa": "Üçüncü şahıs, işveren, asansör ve mesleki sorumluluk sigortaları.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/sorumluluk-sigortalari.html"},
+    {"slug": "ferdi-kaza", "brans": "ferdi_kaza", "ad": "Ferdi kaza sigortası", "kisa": "Sigorta süresinde uğranılan kazaların sonuçları için.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/diger-sigortalar/ferdi-kaza-sigortasi.html"},
+    {"slug": "acil-saglik", "brans": "saglik", "ad": "Acil sağlık sigortası", "kisa": "Acil sağlık durumları için.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/diger-sigortalar/acil-saglik-sigortasi.html"},
+    {"slug": "seyahat-saglik", "brans": "seyahat", "ad": "Seyahat sağlık sigortası", "kisa": "Seyahat sırasındaki sağlık riskleri için.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/diger-sigortalar/seyahat-saglik-sigortasi.html"},
+    {"slug": "tasinan-para", "brans": "isyeri", "ad": "Taşınan para sigortası", "kisa": "Taşınan nakit için işletmelere yönelik.", "kaynak": "https://www.bicareinsurance.com/urunlerimiz/diger-sigortalar/tasinan-para-sigortasi.html"}
+  ],
+  "taranan_sayfalar": [
+    "https://www.bicareinsurance.com/", "https://www.bicareinsurance.com/hakkimizda/biz-kimiz.html",
+    "https://www.bicareinsurance.com/urunlerimiz.html (ve 17 ürün sayfası)",
+    "https://www.bicareinsurance.com/hasar-islemleri.html", "https://www.bicareinsurance.com/iletisim.html",
+    "https://police.bicareinsurance.com/TrafikPolicesi?culture=tr-tr", "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Ana sayfadaki 'tecrübe 15+', 'çalışan sayısı', 'anlaşmalı kurum 243+', 'müşteri memnuniyeti %99': doğrulanamaz sayı ve iddia.",
+    "Müşteri yorumları ve 'en uygun, en kapsamlı, en profesyonel' ifadeleri: reklam.",
+    "SSS'deki 'trafik sigortası fiyatları serbest tarifeyle belirlenir' cümlesi: KKTC'de taban tarife var; aktarılmaz.",
+    "Hasar sayfasındaki '24 saat' ihbar vurgusu: süre yazılmaz.",
+    "Dil seçenekleri otomatik çeviri (GTranslate); 'hizmet dili' olarak değil, çeviri seçeneği olarak yazıldı."
+  ]
+}

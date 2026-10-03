@@ -1212,7 +1212,10 @@ class Uretici:
             url = f"/tr/sirketler/{v['slug']}/"
             web_kisa = re.sub(r"^https?://(www\.)?|/$", "", v["web"])
 
-            urunler = [dict(u, url=f"{url}{u['slug']}/") for u in v.get("urunler", [])]
+            # Gövdesi (.md) yazılmış ürün kendi sayfasını alır; yazılmamış olan
+            # tanıtım sayfasında bağlantısız kart olarak durur.
+            urunler = [dict(u, url=f"{url}{u['slug']}/" if u.get("govde") else "")
+                       for u in v.get("urunler", [])]
 
             il = v.get("iletisim") or {}
             iletisim = []
@@ -1221,6 +1224,9 @@ class Uretici:
             if il.get("telefon"):
                 iletisim.append(("Telefon", il["telefon"],
                                  "tel:" + re.sub(r"[^\d+]", "", il["telefon"])))
+            if il.get("hasar_hatti"):
+                iletisim.append(("Hasar hattı", il["hasar_hatti"],
+                                 "tel:" + re.sub(r"[^\d+]", "", il["hasar_hatti"])))
             if il.get("eposta"):
                 iletisim.append(("E-posta", il["eposta"], ""))
             if il.get("whatsapp"):
@@ -1300,7 +1306,7 @@ class Uretici:
             self.sayfa_yaz(url, bag, sablon.render(t=t, **bag), kontrol)
 
             # -- şirket × ürün ------------------------------------------------
-            for u in urunler:
+            for u in [x for x in urunler if x["url"]]:
                 kucuk = _tr_kucult(u["ad"])
                 h1 = f"{v['ad']} {kucuk}"
                 # Gövde elle yazılmış Markdown'dır; sonundaki "## Sıkça Sorulan
@@ -1318,7 +1324,7 @@ class Uretici:
                           giris=(f"{u['kisa']} {v['ad_ilgi']} kendi sitesinde anlattıkları "
                                  f"ve bu sigortanın KKTC'de genel olarak nasıl işlediği."),
                           govde=govde_isle(md, True, self.cevirici),
-                          diger=[d for d in urunler if d["slug"] != u["slug"]])
+                          diger=[d for d in urunler if d["url"] and d["slug"] != u["slug"]])
                 ujsonld = [
                     json.dumps({"@context": "https://schema.org", "@type": "WebPage",
                                 "name": h1, "dateModified": kontrol.isoformat(),
