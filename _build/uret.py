@@ -1218,8 +1218,15 @@ class Uretici:
 
             # Gövdesi (.md) yazılmış ürün kendi sayfasını alır; yazılmamış olan
             # tanıtım sayfasında bağlantısız kart olarak durur.
-            urunler = [dict(u, url=f"{url}{u['slug']}/" if u.get("govde") else "")
-                       for u in v.get("urunler", [])]
+            # Ürün yazısı data/tanitim/<slug>/<urun>.md dosyasıdır; dosya varsa ürün
+            # kendi sayfasını alır, yoksa tanıtım sayfasında bağlantısız kart olur.
+            # Başlık ve açıklama dosyanın frontmatter'ından (baslik, aciklama) okunur.
+            urunler = []
+            for u in v.get("urunler", []):
+                govde = u.get("govde") or f"data/tanitim/{v['slug']}/{u['slug']}.md"
+                var = (KOK / govde).is_file()
+                urunler.append(dict(u, govde=govde if var else "",
+                                    url=f"{url}{u['slug']}/" if var else ""))
 
             il = v.get("iletisim") or {}
             iletisim = []
@@ -1322,6 +1329,12 @@ class Uretici:
                 # Gövde elle yazılmış Markdown'dır; sonundaki "## Sıkça Sorulan
                 # Sorular" bölümünün ### başlıkları FAQPage şemasına da basılır.
                 md = (KOK / u["govde"]).read_text(encoding="utf-8")
+                if md.startswith("---"):
+                    on, _, md = md[3:].partition("\n---")
+                    for satir in on.strip().splitlines():
+                        k, _, deger = satir.partition(":")
+                        if k.strip() in ("baslik", "aciklama"):
+                            u = dict(u, **{k.strip(): deger.strip().strip('"')})
                 sss_md = md.split("## Sıkça Sorulan Sorular", 1)[1] if "## Sıkça Sorulan Sorular" in md else ""
                 usss = []
                 for blok in re.split(r"^### ", sss_md, flags=re.M)[1:]:

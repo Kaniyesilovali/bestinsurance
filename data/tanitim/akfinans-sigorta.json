@@ -64,14 +64,62 @@
     "kaynak": "https://www.akfinans.one/"
   },
   "urunler": [
-    {"slug": "trafik", "brans": "trafik", "ad": "Zorunlu trafik sigortası", "kisa": "Kazaya neden olan sürücünün üçüncü kişilere karşı sorumluluğu için yasal sigorta.", "kaynak": "https://akfinans.one/insurance/"},
-    {"slug": "kasko", "brans": "kasko", "ad": "Kasko sigortası", "kisa": "Aracın park hâlinde ya da trafikteyken uğrayacağı zararlar için.", "kaynak": "https://akfinans.one/insurance/"},
-    {"slug": "yangin", "brans": "konut", "ad": "Yangın sigortası", "kisa": "Bina ve içindekiler için; deprem, sel gibi ek teminatlar eklenebiliyor.", "kaynak": "https://akfinans.one/insurance/"},
-    {"slug": "hirsizlik", "brans": "isyeri", "ad": "Hırsızlık sigortası", "kisa": "Ev ya da işyerinde zorla girilerek yapılan hırsızlık için.", "kaynak": "https://akfinans.one/insurance/"},
-    {"slug": "ferdi-kaza", "brans": "ferdi_kaza", "ad": "Ferdi kaza sigortası", "kisa": "Kaza sonucu ölüm, kalıcı ya da geçici sakatlık için tazminat.", "kaynak": "https://akfinans.one/insurance/"},
-    {"slug": "muhendislik", "brans": "muhendislik", "ad": "Mühendislik sigortaları", "kisa": "İnşaat all risk, makine kırılması ve elektronik cihaz sigortaları.", "kaynak": "https://akfinans.one/insurance/"},
-    {"slug": "isletme", "brans": "sorumluluk", "ad": "İşletmelere yönelik diğer sigortalar", "kisa": "Para nakli, emniyeti suistimal, cam ve asansör sorumluluk sigortaları.", "kaynak": "https://akfinans.one/insurance/"},
-    {"slug": "nakliyat", "brans": "nakliyat", "ad": "Nakliyat ve yat sigortası", "kisa": "Yük, tekne ve yat için deniz sigortaları.", "kaynak": "https://akfinans.one/about-us/"}
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Kazaya neden olan sürücünün üçüncü kişilere karşı sorumluluğu için yasal sigorta.",
+      "kaynak": "https://akfinans.one/insurance/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Aracın park hâlinde ya da trafikteyken uğrayacağı zararlar için.",
+      "kaynak": "https://akfinans.one/insurance/"
+    },
+    {
+      "slug": "yangin",
+      "brans": "konut",
+      "ad": "Yangın sigortası",
+      "kisa": "Bina ve içindekiler için; deprem, sel gibi ek teminatlar eklenebiliyor.",
+      "kaynak": "https://akfinans.one/insurance/"
+    },
+    {
+      "slug": "hirsizlik",
+      "brans": "isyeri",
+      "ad": "Hırsızlık sigortası",
+      "kisa": "Ev ya da işyerinde zorla girilerek yapılan hırsızlık için.",
+      "kaynak": "https://akfinans.one/insurance/"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Kaza sonucu ölüm, kalıcı ya da geçici sakatlık için tazminat.",
+      "kaynak": "https://akfinans.one/insurance/"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Mühendislik sigortaları",
+      "kisa": "İnşaat all risk, makine kırılması ve elektronik cihaz sigortaları.",
+      "kaynak": "https://akfinans.one/insurance/"
+    },
+    {
+      "slug": "isletme",
+      "brans": "sorumluluk",
+      "ad": "İşletme sigortaları",
+      "kisa": "Para nakli, emniyeti suistimal, cam ve asansör sorumluluk sigortaları.",
+      "kaynak": "https://akfinans.one/insurance/"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat ve yat sigortası",
+      "kisa": "Yük, tekne ve yat için deniz sigortaları.",
+      "kaynak": "https://akfinans.one/about-us/"
+    }
   ],
   "taranan_sayfalar": [
     "https://www.akfinans.one/",
