@@ -1,0 +1,107 @@
+{
+  "slug": "lightstar-insurance",
+  "ad": "Lightstar Insurance",
+  "ad_ilgi": "Lightstar Insurance'ın",
+  "unvan": "LIGHTSTAR INSURANCE LTD.",
+  "web": "https://www.lightstarinsurance.com.tr/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde LIGHTSTAR INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ofis",
+      "metin": "İletişim sayfasında Lefkoşa Kumsal'daki adres veriliyor.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/iletisim/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede altı ürünün ayrı sayfası var: trafik, kasko, konut, işyeri, sağlık ve seyahat sigortası.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede bir teklif formu ve 7/24 destek hattı bulunuyor.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/teklif-iste/"
+    },
+    {
+      "metin": "Sitede sigorta tanımları, dikkat edilecekler ve Garanti Fonu üzerine bilgi sayfaları, sık sorulan sorular ve bir blog bulunuyor.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/garanti-fonu/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Yıldırım Beyazıt Sokak No:4, Kumsal, Lefkoşa",
+    "telefon": "444 00 05",
+    "eposta": "info@lightstarinsurance.com.tr",
+    "instagram": "https://www.instagram.com/lightstarinsurancecy/",
+    "facebook": "https://www.facebook.com/lightstarinsurance/",
+    "kaynak": "https://www.lightstarinsurance.com.tr/iletisim/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Trafik sigortası",
+      "kisa": "Maddi zarar, sağlık gideri, sürekli sakatlık ve destekten yoksun kalma teminatları.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/trafik-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Çarpışma, yangın, hırsızlık ve infilaka karşı; kiralık araç, terör, sel ve fırtına teminatları.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/kasko-sigortasi/"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut sigortası",
+      "kisa": "Ev, bina ve eşya için hırsızlık, deprem, yangın ve yıldırıma karşı.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/konut-sigortasi/"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "İşyeri sigortası",
+      "kisa": "İşyeri içeriği için; iş durması ve kira kaybı eklenebiliyor.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/isyeri-sigortasi/"
+    },
+    {
+      "slug": "saglik",
+      "brans": "saglik",
+      "ad": "Sağlık sigortası",
+      "kisa": "Sağlık giderleri için.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/saglik-sigortasi/"
+    },
+    {
+      "slug": "seyahat",
+      "brans": "seyahat",
+      "ad": "Seyahat sigortası",
+      "kisa": "Seyahatteki riskler için.",
+      "kaynak": "https://www.lightstarinsurance.com.tr/seyahat-sigortasi/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.lightstarinsurance.com.tr/",
+    "https://www.lightstarinsurance.com.tr/biz-kimiz/",
+    "https://www.lightstarinsurance.com.tr/sss/",
+    "https://www.lightstarinsurance.com.tr/iletisim/",
+    "6 ürün sayfası",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "'24 saat içinde ödeme', 'ayrıcalıklı fiyatlar', 'güçlü mali yapı', 'AB standartları': taahhüt ve iddia.",
+    "'10+ yıllık deneyim' ve sayaçlar: doğrulanamaz sayı.",
+    "Adres semti sitede iki farklı biçimde geçiyor (Köşklüçiftlik ve Kumsal); iletişim sayfasındaki Kumsal yazıldı."
+  ]
+}

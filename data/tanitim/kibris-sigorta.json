@@ -1,0 +1,171 @@
+{
+  "slug": "kibris-sigorta",
+  "ad": "Kıbrıs Sigorta",
+  "ad_ilgi": "Kıbrıs Sigorta'nın",
+  "unvan": "KIBRIS SİGORTA ŞTİ. LTD.",
+  "web": "https://www.kibrissigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde KIBRIS SİGORTA ŞTİ. LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre halka açık şirket statüsünde 19 Nisan 1995'te tescil edildi ve 1 Eylül 1995'te faaliyete başladı.",
+      "kaynak": "https://www.kibrissigorta.com/tr/hakkimizda/"
+    },
+    {
+      "etiket": "Acenteler",
+      "metin": "Acenteler sayfasında 56 acente şehirlere göre listeleniyor: Lefkoşa 27, Gazimağusa 15, Girne 8, Güzelyurt 4, İskele 2.",
+      "kaynak": "https://www.kibrissigorta.com/tr/acenteler/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede yirmiyi aşkın ürünün ayrı sayfası var; araç, konut, sağlık, işyeri, mühendislik, nakliyat, sorumluluk ve havacılık sigortaları bu ürünler arasında.",
+      "kaynak": "https://www.kibrissigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe; online işlemler bölümü İngilizce de kullanılabiliyor.",
+      "kaynak": "https://online.kibrissigorta.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Zorunlu trafik sigortası için fiyat teklifi alınıp site üzerinden satın alınabiliyor.",
+      "kaynak": "https://police.kibrissigorta.com/?culture=tr"
+    },
+    {
+      "metin": "Online işlemler bölümünde poliçe numarası ya da plakayla ödeme yapılabiliyor ve müşteri girişi bulunuyor.",
+      "kaynak": "https://online.kibrissigorta.com/"
+    },
+    {
+      "metin": "Hasar işlemleri sayfasında araç, ev, işyeri ve diğer hasarlar için yapılacaklar ve istenen belgeler anlatılıyor.",
+      "kaynak": "https://www.kibrissigorta.com/tr/hasar-islemleri/"
+    },
+    {
+      "metin": "Sitede sık sorulan sorular için bir yardım merkezi ve anlaşmalı kurumlar sayfası bulunuyor.",
+      "kaynak": "https://www.kibrissigorta.com/tr/yardim-merkezi/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Abdi İpekçi Caddesi, Eti Binaları, Lefkoşa",
+    "telefon": "+90 392 444 57 57",
+    "eposta": "info@kibrissigorta.com",
+    "instagram": "https://www.instagram.com/kibrissigorta/",
+    "facebook": "https://www.facebook.com/kibrissigorta",
+    "kaynak": "https://www.kibrissigorta.com/tr/iletisim/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Karşı tarafa verilen zararlar için; online satın alınabiliyor.",
+      "kaynak": "https://www.kibrissigorta.com/tr/trafik-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Çarpışma, yangın, yıldırım ve infilaka karşı; ek teminatlar eklenebiliyor.",
+      "kaynak": "https://www.kibrissigorta.com/tr/kasko-sigortasi/"
+    },
+    {
+      "slug": "kismi-kasko",
+      "brans": "kasko",
+      "ad": "Kısmi kasko sigortası",
+      "kisa": "Yalnızca çarpışma hasarları için; Güney Kıbrıs ve ferdi kaza ek teminatlarıyla.",
+      "kaynak": "https://www.kibrissigorta.com/tr/kismi-kasko-sigortasi/"
+    },
+    {
+      "slug": "konut-paket",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Ev ve eşya için yangın, hırsızlık, deprem, sel ve dahili su.",
+      "kaynak": "https://www.kibrissigorta.com/tr/konut-paket-sigortasi/"
+    },
+    {
+      "slug": "acil-saglik",
+      "brans": "saglik",
+      "ad": "Acil sağlık sigortası",
+      "kisa": "Beklenmedik sağlık sorunları için.",
+      "kaynak": "https://www.kibrissigorta.com/tr/acil-saglik-sigortasi/"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Kazaların sigortalı üzerindeki sonuçları için.",
+      "kaynak": "https://www.kibrissigorta.com/tr/ferdi-kaza-sigortasi/"
+    },
+    {
+      "slug": "kredi-hayat",
+      "brans": "hayat",
+      "ad": "Kredi hayat sigortası",
+      "kisa": "Kredi borcuna bağlı hayat sigortası.",
+      "kaynak": "https://www.kibrissigorta.com/tr/kredi-hayat-sigortasi/"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket sigortası",
+      "kisa": "İşyerleri için paket sigorta.",
+      "kaynak": "https://www.kibrissigorta.com/tr/ticari-paket-sigortasi/"
+    },
+    {
+      "slug": "isyeri-diger",
+      "brans": "isyeri",
+      "ad": "Cam, hırsızlık, taşınan para ve emniyeti suistimal",
+      "kisa": "İşyerlerine yönelik ayrı teminatlar.",
+      "kaynak": "https://www.kibrissigorta.com/tr/hirsizlik-sigortasi-isyerleri-sigortasi/"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Mühendislik sigortaları",
+      "kisa": "Makine kırılması, elektronik cihaz ve inşaat all risk.",
+      "kaynak": "https://www.kibrissigorta.com/tr/insaat-all-risk-sigortasi/"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat (emtea) sigortası",
+      "kisa": "Taşınan mal için.",
+      "kaynak": "https://www.kibrissigorta.com/tr/nakliyat-emtea-sigortasi/"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "Üçüncü şahıs, işveren, mesleki, nakliyeci, asansör ve tehlikeli maddeler.",
+      "kaynak": "https://www.kibrissigorta.com/tr/ucuncu-sahis-mali-sorumluluk-sigortasi/"
+    },
+    {
+      "slug": "havacilik",
+      "brans": "sorumluluk",
+      "ad": "Havacılık sigortaları",
+      "kisa": "Uçak gövde, uçak mali sorumluluk ve uçak yolcu kaza.",
+      "kaynak": "https://www.kibrissigorta.com/tr/ucak-govde-sigortasi/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.kibrissigorta.com/",
+    "https://www.kibrissigorta.com/tr/hakkimizda/",
+    "https://www.kibrissigorta.com/tr/acenteler/",
+    "https://www.kibrissigorta.com/tr/hasar-islemleri/",
+    "https://www.kibrissigorta.com/tr/iletisim/",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "'İlk yerel sigorta şirketi', 'sektörün lokomotifi', 'güçlü mali yapı', 'en kapsamlı güvence': üstünlük ve mali iddia.",
+    "Devletin ortaklığından söz eden alıntı: hissedarlık bilgisi; hissedarlar sayfası okunamadı, yazılmadı.",
+    "Trafik sayfasındaki teminat tutarları: rakam yazılmaz.",
+    "Eski bakanın alıntısı, yönetim ve ekip adları: kişi adı."
+  ]
+}

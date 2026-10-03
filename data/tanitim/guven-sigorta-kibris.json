@@ -1,0 +1,151 @@
+{
+  "slug": "guven-sigorta-kibris",
+  "ad": "Güven Sigorta (Kıbrıs)",
+  "ad_ilgi": "Güven Sigorta'nın",
+  "unvan": "GÜVEN SİGORTA (KIBRIS) LTD.",
+  "web": "https://guvensigortakibris.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde GÜVEN SİGORTA (KIBRIS) LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Faaliyet süresi",
+      "metin": "Şirketin tanıtım sayfasına göre 35 yılı aşkın süredir faaliyette.",
+      "kaynak": "https://guvensigortakibris.com/hakkimizda/"
+    },
+    {
+      "etiket": "Şubeler ve acenteler",
+      "metin": "Tanıtım sayfasında 3 şube, 12 banka şubesi ve 55'e yakın acenteyle hizmet verildiği belirtiliyor.",
+      "kaynak": "https://guvensigortakibris.com/hakkimizda/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünler motorlu araç, yangın, nakliyat, mühendislik, sorumluluk ve diğer sigortalar başlıkları altında tanıtılıyor.",
+      "kaynak": "https://guvensigortakibris.com/urunlerimiz/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "https://guvensigortakibris.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Online işlemler bölümünde poliçe, plaka ya da poliçe numarasıyla bulunup ödenebiliyor.",
+      "kaynak": "https://online.guvensigortakibris.com/"
+    },
+    {
+      "metin": "Ürün sayfalarında ayrıntılı teklif formu bulunuyor.",
+      "kaynak": "https://guvensigortakibris.com/u/kasko-sigortasi/"
+    },
+    {
+      "metin": "Ürün sayfalarında ilgili genel şartlar ve bilgilendirme formları yayımlanıyor.",
+      "kaynak": "https://guvensigortakibris.com/urunlerimiz/"
+    },
+    {
+      "metin": "Sitede acenteler ve pert araçlar için ayrı sayfalar bulunuyor.",
+      "kaynak": "https://guvensigortakibris.com/acentelerimiz/"
+    }
+  ],
+  "iletisim": {
+    "adres": "4, Memduh Asaf Sokak, Köşklüçiftlik, Lefkoşa",
+    "telefon": "+90 392 444 40 44",
+    "eposta": "sigorta@guvensigortakibris.com",
+    "whatsapp": "+90 533 866 77 85",
+    "kaynak": "https://guvensigortakibris.com/iletisim/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Karşı tarafa ve üçüncü kişilere verilen zararlar için.",
+      "kaynak": "https://guvensigortakibris.com/u/zorunlu-trafik-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Çarpışmadan hırsızlığa, selden doluya araç için; Kuzey ve Güney Kıbrıs'ta geçerli olduğu belirtiliyor.",
+      "kaynak": "https://guvensigortakibris.com/u/kasko-sigortasi/"
+    },
+    {
+      "slug": "kismi-kasko",
+      "brans": "kasko",
+      "ad": "Kısmi kasko (çarpışma) sigortası",
+      "kisa": "Yalnızca motorlu araçlarla çarpışma hasarları için.",
+      "kaynak": "https://guvensigortakibris.com/u/kismi-kasko-sigortasi/"
+    },
+    {
+      "slug": "konut-paket",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Ev ve eşyalar için; deprem, sel, dahili su gibi ek teminatlarla.",
+      "kaynak": "https://guvensigortakibris.com/u/konut-paket/"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket sigortası",
+      "kisa": "İşyerleri için paket sigorta.",
+      "kaynak": "https://guvensigortakibris.com/u/ticari-paket/"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat emtea ve tekne sigortası",
+      "kisa": "Taşınan mal ve tekneler için.",
+      "kaynak": "https://guvensigortakibris.com/u/nakliyat-emtea-sigortasi/"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Makine kırılması ve elektronik cihaz sigortası",
+      "kisa": "Makine ve elektronik cihaz hasarları için.",
+      "kaynak": "https://guvensigortakibris.com/u/makine-kirilmasi-sigortasi/"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "Üçüncü şahıs, işveren, asansör ve mesleki sorumluluk.",
+      "kaynak": "https://guvensigortakibris.com/urunlerimiz/sorumluluk-sigortalari/"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Kazaların sigortalı üzerindeki sonuçları için.",
+      "kaynak": "https://guvensigortakibris.com/u/ferdi-kaza-sigortasi/"
+    },
+    {
+      "slug": "tasinan-para",
+      "brans": "isyeri",
+      "ad": "Taşınan para sigortası",
+      "kisa": "Taşınan nakit için.",
+      "kaynak": "https://guvensigortakibris.com/u/tasinan-para-sigortasi/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://guvensigortakibris.com/",
+    "https://guvensigortakibris.com/hakkimizda/",
+    "https://guvensigortakibris.com/urunlerimiz/",
+    "https://guvensigortakibris.com/iletisim/",
+    "https://guvensigortakibris.com/acentelerimiz/",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Yıllık prim üretimi ve müşteri sayısı: mali bilgi ve doğrulanamaz sayı.",
+    "'Lider yerel sigorta şirketlerinden biri': üstünlük iddiası.",
+    "Trafik sayfasındaki teminat tutarları ve kısmi kaskodaki limit seçenekleri: rakam yazılmaz.",
+    "Yönetim kurulu ve personel adları: kişi adı.",
+    "Menüde olup sayfası açılmayan ürünler (seyahat, acil sağlık, inşaat ve montaj): listelenmedi, yorum yazılmadı.",
+    "Adres sitede açık yazılmadığı için Birlik listesinden alındı."
+  ]
+}

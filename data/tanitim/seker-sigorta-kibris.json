@@ -1,0 +1,121 @@
+{
+  "slug": "seker-sigorta-kibris",
+  "ad": "Şeker Sigorta (Kıbrıs)",
+  "ad_ilgi": "Şeker Sigorta'nın",
+  "unvan": "ŞEKER SİGORTA (KIBRIS) LTD.",
+  "web": "https://www.sekerinsurance.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-04",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde ŞEKER SİGORTA (KIBRIS) LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Tarihçe sayfasına göre yerel şirket olarak 1 Ocak 1996'da tescil edilip faaliyete geçti.",
+      "kaynak": "https://www.sekerinsurance.com/aboutus/ourhistory/?lang=tr"
+    },
+    {
+      "etiket": "Ortaklık yapısı",
+      "metin": "Tarihçe sayfasına göre şirket, Türkiye'deki Şeker Sigorta A.Ş. ile Kıbrıs Türk Kooperatif Merkez Bankası'nın yarı yarıya ortaklığıyla kuruldu; banka 2012'de hisselerin tamamını satın aldı ve şirket bankanın tamamına sahip olduğu bir iştirak oldu.",
+      "kaynak": "https://www.sekerinsurance.com/aboutus/ourhistory/?lang=tr"
+    },
+    {
+      "etiket": "Acenteler",
+      "metin": "Sitede Kuzey Kıbrıs geneline yayılmış acentelerin listesi yayımlanıyor.",
+      "kaynak": "https://www.sekerinsurance.com/ouragencies/?lang=tr"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünler ev, araç, işyeri ve diğer başlıkları altında tanıtılıyor: konut paket, zorunlu trafik, kasko, kısmi kasko (çarpışma), Elit Kasko, ticari paket, işveren ve üçüncü şahıs sorumluluk, inşaat, makine kırılması ve elektronik cihaz sigortaları.",
+      "kaynak": "https://www.sekerinsurance.com/?lang=tr"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "https://www.sekerinsurance.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Online işlemler bölümünde poliçe numarası ya da plakayla ödeme yapılabiliyor ve müşteri girişi bulunuyor.",
+      "kaynak": "https://online.sekerinsurance.com"
+    },
+    {
+      "metin": "Konut, trafik ve işyeri sigortaları için ayrı teklif formları bulunuyor.",
+      "kaynak": "https://www.sekerinsurance.com/?lang=tr"
+    },
+    {
+      "metin": "Sitede hasarlı araçlar ve yedek parçalar için teklif verilebilen sayfalar ile kaportacı girişi bulunuyor.",
+      "kaynak": "https://www.sekerinsurance.com/damagedcars/?lang=tr"
+    }
+  ],
+  "iletisim": {
+    "adres": "İlhan Savut Sokak No:7, P.K.664, Köşklüçiftlik, Lefkoşa",
+    "telefon": "+90 392 444 04 04",
+    "eposta": "info@sekerinsurance.com",
+    "instagram": "https://www.instagram.com/sekersigortakibris/",
+    "kaynak": "https://www.sekerinsurance.com/contact/?lang=tr"
+  },
+  "urunler": [
+    {
+      "slug": "konut-paket",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Yangın, hırsızlık, deprem ve doğal afetler tek poliçede.",
+      "kaynak": "https://www.sekerinsurance.com/ourservices/foryourhome/fireinsurance/?lang=tr"
+    },
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta.",
+      "kaynak": "https://www.sekerinsurance.com/ourservices/foryourcar/MotorThirdPartyInsurance/?lang=tr"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko, Elit Kasko ve kısmi kasko",
+      "kisa": "Aracın kendisine gelen zararlar için seçenekler.",
+      "kaynak": "https://www.sekerinsurance.com/ourservices/foryourcar/?lang=tr"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket sigortası",
+      "kisa": "İşyerleri için paket sigorta.",
+      "kaynak": "https://www.sekerinsurance.com/ourservices/foryouroffice/?lang=tr"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "İşveren ve üçüncü şahıs sorumluluk",
+      "kisa": "İşverenin ve işletmenin sorumlulukları için.",
+      "kaynak": "https://www.sekerinsurance.com/ourservices/foryouroffice/EmployersLiabilityInsurance/?lang=tr"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "İnşaat, makine kırılması ve elektronik cihaz",
+      "kisa": "Mühendislik riskleri için.",
+      "kaynak": "https://www.sekerinsurance.com/ourservices/foryouroffice/?lang=tr"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.sekerinsurance.com/?lang=tr",
+    "https://www.sekerinsurance.com/aboutus/whoweare/?lang=tr",
+    "https://www.sekerinsurance.com/aboutus/ourhistory/?lang=tr",
+    "https://www.sekerinsurance.com/contact/?lang=tr",
+    "https://www.sekerinsurance.com/ouragencies/?lang=tr",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Acente sayısı: sitede 75 ve 90 olarak iki farklı geçiyor; yazılmadı.",
+    "'Sektörün lokomotifi', 'en güçlü yerel kuruluş', 'mali yapı ve kârlılık', 'en geniş acente ağı': üstünlük ve mali iddia.",
+    "Personel sayısı ve yönetim adları: iç yapı ve kişi adı."
+  ]
+}

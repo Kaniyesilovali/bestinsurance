@@ -1,0 +1,153 @@
+{
+  "slug": "iyi-gelecek-sigorta",
+  "ad": "İyi Gelecek Sigorta",
+  "ad_ilgi": "İyi Gelecek Sigorta'nın",
+  "unvan": "İYİ - GELECEK SİGORTA LTD.",
+  "web": "https://iyigeleceksigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde İYİ - GELECEK SİGORTA LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ofis",
+      "metin": "İletişim sayfasında Lefkoşa Kızılay'daki adres veriliyor.",
+      "kaynak": "https://iyigeleceksigorta.com/iletisim/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede yirmiyi aşkın ürünün ayrı sayfası var; bunlar arasında zorunlu trafik, kasko, hibrit batarya garanti, garanti teminatı, konut, ticari işyeri, nakliyat, tekne, mühendislik, sorumluluk, ferdi kaza, kredi hayat, seyahat sağlık ve bireysel siber güvenlik sigortaları bulunuyor.",
+      "kaynak": "https://iyigeleceksigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://iyigeleceksigorta.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Ürün sayfalarında ilgili genel şartlara bağlantı veriliyor.",
+      "kaynak": "https://iyigeleceksigorta.com/kasko/"
+    },
+    {
+      "metin": "Sitede hasarlı araçlar, sık sorulan sorular ve duyurular için ayrı sayfalar bulunuyor.",
+      "kaynak": "https://iyigeleceksigorta.com/hasarli-araclar/"
+    },
+    {
+      "metin": "Sitede WhatsApp üzerinden iletişim bağlantısı ve bir acil destek hattı bulunuyor; çalışma saatleri hafta içi 08.00–17.00.",
+      "kaynak": "https://iyigeleceksigorta.com/iletisim/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Şht. Ertuğrul Arif Sokak No:11, Kızılay, Lefkoşa",
+    "telefon": "+90 546 999 35 00",
+    "eposta": "info@iyigeleceksigorta.com",
+    "whatsapp": "+90 546 999 35 00",
+    "kaynak": "https://iyigeleceksigorta.com/iletisim/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta.",
+      "kaynak": "https://iyigeleceksigorta.com/zorunlu-trafik-sigortalari/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko",
+      "kisa": "Çarpma, devrilme, yanma ve çalınmaya karşı; ek teminatlar eklenebiliyor.",
+      "kaynak": "https://iyigeleceksigorta.com/kasko/"
+    },
+    {
+      "slug": "garanti",
+      "brans": "kasko",
+      "ad": "Garanti teminatı ve hibrit batarya garanti sigortası",
+      "kisa": "Aracın mekanik, elektrik ve elektronik arızaları ile hibrit bataryası için.",
+      "kaynak": "https://iyigeleceksigorta.com/garanti-teminati-sigortasi/"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut sigortası",
+      "kisa": "Yangından depreme, hırsızlıktan cam kırılmasına paket poliçe; aile mesuliyet teminatı.",
+      "kaynak": "https://iyigeleceksigorta.com/konut-sigortasi/"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "Ticari işyeri sigortası",
+      "kisa": "İşyerleri için yangın, deprem, hırsızlık ve diğer risklere karşı.",
+      "kaynak": "https://iyigeleceksigorta.com/is-yeri-sigortasi/"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat ve tekne sigortası",
+      "kisa": "Emtia, kıymet nakli ve tekneler için.",
+      "kaynak": "https://iyigeleceksigorta.com/nakliyat-sigortasi/"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Mühendislik sigortaları",
+      "kisa": "İnşaat all risk, montaj, makine kırılması ve elektronik cihaz.",
+      "kaynak": "https://iyigeleceksigorta.com/insaat-all-risk-sigortasi/"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "Üçüncü şahıs, işveren, mesleki, asansör, ürün ve sertifikalı mali sorumluluk.",
+      "kaynak": "https://iyigeleceksigorta.com/3-sahis-mali-sorumluluk-sigortasi/"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Kazaların sigortalı üzerindeki sonuçları için.",
+      "kaynak": "https://iyigeleceksigorta.com/ferdi-kaza-sigortasi/"
+    },
+    {
+      "slug": "kredi-hayat",
+      "brans": "hayat",
+      "ad": "Kredi hayat sigortası",
+      "kisa": "Kredi borcuna bağlı hayat sigortası.",
+      "kaynak": "https://iyigeleceksigorta.com/kredi-hayat-sigortasi/"
+    },
+    {
+      "slug": "seyahat-saglik",
+      "brans": "seyahat",
+      "ad": "Seyahat sağlık sigortası",
+      "kisa": "Seyahatteki sağlık riskleri için.",
+      "kaynak": "https://iyigeleceksigorta.com/seyahat-saglik-sigortasi/"
+    },
+    {
+      "slug": "siber",
+      "brans": "sorumluluk",
+      "ad": "Bireysel siber güvenlik sigortası",
+      "kisa": "Bireyler için siber risklere karşı.",
+      "kaynak": "https://iyigeleceksigorta.com/bireysel-siber-risk/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://iyigeleceksigorta.com/",
+    "https://iyigeleceksigorta.com/bizkimiz/",
+    "https://iyigeleceksigorta.com/iletisim/",
+    "https://iyigeleceksigorta.com/sss/",
+    "22 ürün sayfası",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Deneyim süresi: sitede 20, 30 ve 33 yıl olarak farklı geçiyor; yazılmadı.",
+    "'100B+ memnun müşteri', 'memnuniyet garantisi', 'öncü': doğrulanamaz iddia.",
+    "Trafik sayfasındaki teminat tutarları: rakam yazılmaz.",
+    "Şablondan kalma yer tutucu metinler: kusur yazılmaz."
+  ]
+}

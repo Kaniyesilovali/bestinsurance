@@ -1,0 +1,170 @@
+{
+  "slug": "kibris-kapital-insurance",
+  "ad": "Kıbrıs Kapital Insurance",
+  "ad_ilgi": "Kıbrıs Kapital Insurance'ın",
+  "unvan": "KIBRIS KAPITAL INSURANCE LTD.",
+  "web": "https://capitalinsurance.com.tr/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde KIBRIS KAPITAL INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre 13 Aralık 2013'te kuruldu ve 1 Ocak 2014'te faaliyete başladı.",
+      "kaynak": "https://capitalinsurance.com.tr/hakkimizda.html"
+    },
+    {
+      "etiket": "Grup",
+      "metin": "Tanıtım sayfasına göre Kuzey Kıbrıs'ta finans başta olmak üzere birçok alanda faaliyet gösteren Kapital Grubu'nun bir üyesi.",
+      "kaynak": "https://capitalinsurance.com.tr/hakkimizda.html"
+    },
+    {
+      "etiket": "Şubeler ve acenteler",
+      "metin": "Acente ve şubeler sayfasında 18 şube ve 50 acente olduğu belirtiliyor.",
+      "kaynak": "https://capitalinsurance.com.tr/hakkimizda/acente-ve-subelerimiz.html"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünler motorlu araç, yangın, sağlık, mühendislik, sorumluluk, nakliyat ve diğer ürünler başlıkları altında tanıtılıyor; acente ve şubeler sayfasına göre 21 ürün var.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz.html"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://capitalinsurance.com.tr/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede bir teklif formu ve kasko asistan hizmeti sayfası bulunuyor.",
+      "kaynak": "https://capitalinsurance.com.tr/teklif-al.html"
+    },
+    {
+      "metin": "Sitede sigorta tanımları, dikkat edilmesi gerekenler ve Garanti Fonu üzerine bilgi sayfaları bulunuyor.",
+      "kaynak": "https://capitalinsurance.com.tr/sigorta-bilgileri.html"
+    },
+    {
+      "metin": "Sitede hasarlı araçlar sayfası ve araç muayene listesi yayımlanıyor.",
+      "kaynak": "https://capitalinsurance.com.tr/hasarli-araclar.html"
+    },
+    {
+      "metin": "Sitede WhatsApp üzerinden iletişim bağlantısı var; çalışma saatleri hafta içi 08.00–13.00 ve 14.00–17.00.",
+      "kaynak": "https://capitalinsurance.com.tr/bize-ulasin.html"
+    }
+  ],
+  "iletisim": {
+    "adres": "Şht. Mustafa Ruso Caddesi, Muhtar Yusuf Galleria, Kat:1 No:102, Küçük Kaymaklı, Lefkoşa",
+    "telefon": "(+90) 392 227 20 02",
+    "whatsapp": "+90 533 824 44 00",
+    "instagram": "https://www.instagram.com/capitalinsurancecy",
+    "facebook": "https://www.facebook.com/Capitalinsurancekibris",
+    "kaynak": "https://capitalinsurance.com.tr/bize-ulasin.html"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Trafik sigortası",
+      "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/motorlu-arac-sigortalari/trafik-sigortasi.html"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko ve Yıldız Kasko",
+      "kisa": "Çarpışmadan yangına, hırsızlıktan doğal afetlere araç için.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/motorlu-arac-sigortalari/kasko-sigortasi.html"
+    },
+    {
+      "slug": "kismi-kasko",
+      "brans": "kasko",
+      "ad": "Kısmi kasko ve çarpışma sigortası",
+      "kisa": "Motorlu araçlarla çarpışma hasarlarıyla sınırlı seçenekler.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/motorlu-arac-sigortalari/kismi-kasko-sigortasi.html"
+    },
+    {
+      "slug": "konut-paket",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Ev ve eşya için yangından hırsızlığa, depremden su baskınına.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/yangin-sigortasi/konut-paket-sigortasi.html"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket sigortası",
+      "kisa": "İşyeri, bina ve muhteviyat için; iş durması ve kira kaybı dahil.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/yangin-sigortasi/ticari-paket-sigortasi.html"
+    },
+    {
+      "slug": "saglik",
+      "brans": "saglik",
+      "ad": "Özel ve acil sağlık sigortası",
+      "kisa": "Sağlık giderleri ve acil durumlar için.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/saglik-sigortalari/ozel-saglik-sigortasi.html"
+    },
+    {
+      "slug": "seyahat-saglik",
+      "brans": "seyahat",
+      "ad": "Seyahat sağlık sigortası",
+      "kisa": "Seyahatteki sağlık riskleri için.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/saglik-sigortalari/seyahat-saglik-sigortasi.html"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Mühendislik sigortaları",
+      "kisa": "Makine kırılması, elektronik cihaz, inşaat ve montaj all risk.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/muhendislik-sigortalari.html"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "Üçüncü şahıs, işveren, asansör ve mesleki sorumluluk.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/sorumluluk-sigortalari.html"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Emtea ve kıymet nakliyat sigortası",
+      "kisa": "Taşınan mal ve kıymetler için.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/nakliyat-sigortalari.html"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza ve eğitim sigortası",
+      "kisa": "Kaza sonuçları ve çocuğun eğitimine yönelik güvence.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/diger-urunlerimiz/ferdi-kaza-sigortasi.html"
+    },
+    {
+      "slug": "hirsizlik-cam",
+      "brans": "isyeri",
+      "ad": "Hırsızlık ve cam kırılma sigortası",
+      "kisa": "Hırsızlık ve cam hasarları için.",
+      "kaynak": "https://capitalinsurance.com.tr/urunlerimiz/diger-urunlerimiz/hirsizlik-sigortasi.html"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://capitalinsurance.com.tr/",
+    "https://capitalinsurance.com.tr/hakkimizda.html",
+    "https://capitalinsurance.com.tr/hakkimizda/acente-ve-subelerimiz.html",
+    "https://capitalinsurance.com.tr/urunlerimiz.html",
+    "https://capitalinsurance.com.tr/bize-ulasin.html",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Ödenmiş sermaye, özkaynak ve haberlerdeki hasar ödeme ve prim üretimi sıralamaları: mali bilgi.",
+    "Kasko sayfasındaki teminat tutarları ve kısmi kasko limitleri: rakam yazılmaz.",
+    "Kurucu, genel müdür ve acente kişi adları: kişi adı.",
+    "Şube sayfasında genel müdürlük adresi farklı geçiyor; site altbilgisindeki adres (Birlik listesiyle aynı) yazıldı.",
+    "İngilizce sürüm içeriği yok; dil olarak yazılmadı."
+  ]
+}

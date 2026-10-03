@@ -1,0 +1,103 @@
+{
+  "slug": "ion-insurance",
+  "ad": "ION Insurance",
+  "ad_ilgi": "ION Insurance'ın",
+  "unvan": "ION INSURANCE",
+  "web": "https://www.ioninsurance.com.tr/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde ION INSURANCE adıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ofis",
+      "metin": "Sitede Lefkoşa Ortaköy'deki adres veriliyor.",
+      "kaynak": "https://www.ioninsurance.com.tr/iletisim/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede dört ürünün ayrı sayfası var: zorunlu trafik, kasko, konut ve işyeri sigortası.",
+      "kaynak": "https://www.ioninsurance.com.tr/urunlerimiz/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "https://www.ioninsurance.com.tr/en/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Ürün sayfalarında 7/24 hizmet veren bir hasar ihbar hattı olduğu belirtiliyor.",
+      "kaynak": "https://www.ioninsurance.com.tr/zorunlu-trafik-sigortasi/"
+    },
+    {
+      "metin": "Sitede bir teklif formu ile ev, işyeri, araç ve diğer hasarlar için ayrı hasar bilgilendirme sayfaları bulunuyor.",
+      "kaynak": "https://www.ioninsurance.com.tr/teklif-iste/"
+    },
+    {
+      "metin": "Sitede sigorta tanımları, dikkat edilmesi gerekenler ve Garanti Fonu üzerine bilgi sayfaları ile bir blog bulunuyor.",
+      "kaynak": "https://www.ioninsurance.com.tr/garanti-fonu/"
+    },
+    {
+      "metin": "Zorunlu trafik genel şartları sitede yayımlanıyor.",
+      "kaynak": "https://www.ioninsurance.com.tr/zorunlu-trafik-sigortasi/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Ali Mehmet Küçük Sokak, Gözde Küçük İş Merkezi Kat:2 No:3/4, Ortaköy, Lefkoşa",
+    "telefon": "444 44 66",
+    "eposta": "info@ioninsurance.com.tr",
+    "instagram": "https://www.instagram.com/ioninsurancecy",
+    "facebook": "https://www.facebook.com/ioninsurancecy",
+    "kaynak": "https://www.ioninsurance.com.tr/iletisim/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Maddi zarar, sağlık gideri, sürekli sakatlık ve destekten yoksun kalma teminatları.",
+      "kaynak": "https://www.ioninsurance.com.tr/zorunlu-trafik-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Çarpışma, yangın, hırsızlık ve infilak gibi risklere karşı.",
+      "kaynak": "https://www.ioninsurance.com.tr/kasko-sigortasi/"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Ev, bina ve eşya için hırsızlıktan depreme birçok riske karşı.",
+      "kaynak": "https://www.ioninsurance.com.tr/konut-sigortasi/"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "İşyeri sigortası",
+      "kisa": "İşyerleri için paket sigorta.",
+      "kaynak": "https://www.ioninsurance.com.tr/isyeri-sigortasi/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.ioninsurance.com.tr/",
+    "https://www.ioninsurance.com.tr/biz-kimiz/",
+    "https://www.ioninsurance.com.tr/sss/",
+    "https://www.ioninsurance.com.tr/urunlerimiz/",
+    "https://www.ioninsurance.com.tr/iletisim/",
+    "ürün ve hasar sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "'20+ yıllık tecrübe', '10K+ mutlu müşteri': doğrulanamaz sayı.",
+    "'Hızlı onay garantisi', 'ayrıcalıklı fiyatlar', 'AB standartları': iddia ve taahhüt.",
+    "SSS'de sigortasız araca uygulanacak yaptırımlar: brief'te yasak konu (ceza).",
+    "Platform ana sayfasına giden sosyal medya bağlantıları: yalnızca şirket hesapları yazıldı."
+  ]
+}

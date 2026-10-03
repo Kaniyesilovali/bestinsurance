@@ -1,0 +1,126 @@
+{
+  "slug": "northprime-insurance",
+  "ad": "Northprime Insurance",
+  "ad_ilgi": "Northprime Insurance'ın",
+  "unvan": "NORTHPRIME INSURANCE LTD.",
+  "web": "https://npikibris.com/tr/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-04",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde NORTHPRIME INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Acenteler",
+      "metin": "Sitede acenteler Lefkoşa, Gazimağusa, Girne, Güzelyurt ve İskele için şehir şehir listeleniyor.",
+      "kaynak": "https://npikibris.com/tr/iletisim"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede sekiz ürünün ayrı sayfası var: zorunlu trafik, kasko, konut, ticari paket, sağlık, kredi hayat, ferdi kaza ve seyahat sigortası.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://npikibris.com/tr/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Şirketin iOS ve Android için bir mobil uygulaması var.",
+      "kaynak": "https://npikibris.com/tr/"
+    },
+    {
+      "metin": "Sitede bir hasar işlemleri formu, hasarlı araçlar sayfası ve öneri–şikâyet–talep formu bulunuyor.",
+      "kaynak": "https://npikibris.com/tr/hasar-islemleri"
+    },
+    {
+      "metin": "Sigortalar ve hasar işlemleri için ayrı WhatsApp hatları veriliyor.",
+      "kaynak": "https://npikibris.com/tr/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Cengiz Han Sokak No:5, Köşklüçiftlik, Lefkoşa",
+    "telefon": "0392 228 70 11",
+    "whatsapp": "+90 533 886 75 75",
+    "instagram": "https://www.instagram.com/northprime.insurance/",
+    "facebook": "https://www.facebook.com/NorthPrime/",
+    "kaynak": "https://npikibris.com/tr/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz/zorunlu-trafik-sigortasi"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko",
+      "kisa": "Aracın kendisine gelen zararlar için.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz/kasko"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut sigortası",
+      "kisa": "Ev ve eşya için.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz/konut-sigortasi"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket sigortası",
+      "kisa": "İşyerleri için paket sigorta.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz/isyeri-paket-sigortasi"
+    },
+    {
+      "slug": "saglik",
+      "brans": "saglik",
+      "ad": "Sağlık sigortası",
+      "kisa": "Sağlık giderleri için.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz/saglik-sigortasi"
+    },
+    {
+      "slug": "kredi-hayat",
+      "brans": "hayat",
+      "ad": "Kredi hayat sigortası",
+      "kisa": "Kredi borcuna bağlı hayat sigortası.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz/kredi-hayat-sigortasi"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Kazaların sigortalı üzerindeki sonuçları için.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz/ferdi-kaza-sigortasi"
+    },
+    {
+      "slug": "seyahat",
+      "brans": "seyahat",
+      "ad": "Seyahat sigortası",
+      "kisa": "Seyahatteki riskler için.",
+      "kaynak": "https://npikibris.com/tr/urunlerimiz/seyahat-sigortasi"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://npikibris.com/tr/",
+    "https://npikibris.com/tr/kurumsal/biz-kimiz",
+    "https://npikibris.com/tr/urunlerimiz",
+    "https://npikibris.com/tr/iletisim",
+    "https://npikibris.com/tr/hasar-islemleri",
+    "8 ürün sayfası",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "'93 bin mutlu müşteri', '13 yıllık tecrübe', 'en iyi fiyat garantisi', 'yapay zekâ ile en uygun teklif': doğrulanamaz sayı ve iddia.",
+    "Adres sitede metin olarak yazılmadığı için Birlik listesinden alındı.",
+    "Ana sayfadaki 'çalıştığımız tüm şirketler' ifadesi: yorumlanmadı."
+  ]
+}

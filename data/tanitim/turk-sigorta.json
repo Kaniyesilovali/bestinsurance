@@ -1,0 +1,154 @@
+{
+  "slug": "turk-sigorta",
+  "ad": "Türk Sigorta",
+  "ad_ilgi": "Türk Sigorta'nın",
+  "unvan": "TÜRK SİGORTA LTD.",
+  "web": "https://www.turksigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-04",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde TÜRK SİGORTA LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre Türk Bankası'nın sigorta kolu olarak 1996'da Saray Sigorta Ltd. adıyla faaliyete başladı; 2002'de adını Türk Sigorta Ltd. olarak değiştirdi.",
+      "kaynak": "https://www.turksigorta.com/turk-sigortayi-taniyin/"
+    },
+    {
+      "etiket": "Grup",
+      "metin": "Sitede şirketin TurkishBank Group'un bir parçası olduğu belirtiliyor.",
+      "kaynak": "https://www.turksigorta.com/"
+    },
+    {
+      "etiket": "Acenteler",
+      "metin": "Ana sayfada Gazimağusa, Girne, Güzelyurt ve Lefkoşa için şube ve acente araması bulunuyor.",
+      "kaynak": "https://www.turksigorta.com/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünler araç, konut, işyeri, nakliyat, mühendislik, sorumluluk ve diğer sigortalar başlıkları altında tanıtılıyor.",
+      "kaynak": "https://www.turksigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "https://www.turksigorta.com/en/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede genel şartlar, tüzükler ve yasaların yer aldığı bir mevzuat bölümü bulunuyor.",
+      "kaynak": "https://www.turksigorta.com/mevzuat/genel-sartlar/"
+    },
+    {
+      "metin": "Bize ulaşın sayfasında öneri, memnuniyetsizlik ve soru bildirilebilen bir form bulunuyor.",
+      "kaynak": "https://www.turksigorta.com/bize-ulasin/"
+    },
+    {
+      "metin": "Sitede sık sorulan sorular ve hasar işlemleri bölümleri bulunuyor.",
+      "kaynak": "https://www.turksigorta.com/sikca-sorulan-sorular/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Belediye Bulvarı, Akview Apt. No:4, Yenikent, Gönyeli, Lefkoşa",
+    "telefon": "0 (392) 444 34 00",
+    "eposta": "turksigorta@turksigorta.com",
+    "kaynak": "https://www.turksigorta.com/bize-ulasin/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu araç (3. şahıs) sigortası",
+      "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta.",
+      "kaynak": "https://www.turksigorta.com/zorunlu-arac-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko ve kısmi kasko",
+      "kisa": "Aracın kendisine gelen zararlar için.",
+      "kaynak": "https://www.turksigorta.com/arac-sigortasi/kasko-sigortasi/"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut paket ve yangın sigortası",
+      "kisa": "Ev, bina ve eşya için.",
+      "kaynak": "https://www.turksigorta.com/konut-sigortasi/konut-paket-sigortasi/"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket sigortası",
+      "kisa": "İşyerleri için paket sigorta.",
+      "kaynak": "https://www.turksigorta.com/is-yeri-sigortasi/ticari-paket/"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Emtea ve tekne nakliyat sigortası",
+      "kisa": "Taşınan mal ve tekneler için.",
+      "kaynak": "https://www.turksigorta.com/nakliyat-sigortasi/"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "İnşaat all risk ve makina montaj",
+      "kisa": "İnşaat ve montaj riskleri için.",
+      "kaynak": "https://www.turksigorta.com/insaat-all-risk-sigortasi/"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "İşveren, asansör, mesleki ve sertifika mali sorumluluk.",
+      "kaynak": "https://www.turksigorta.com/isveren-mali-sorumluluk-sigortasi/"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza ve tehlikeli hastalıklar",
+      "kisa": "Kaza sonuçları ve tehlikeli hastalıklar için.",
+      "kaynak": "https://www.turksigorta.com/diger-sigortalar/ferdi-kaza-sigortasi/"
+    },
+    {
+      "slug": "seyahat-saglik",
+      "brans": "seyahat",
+      "ad": "Seyahat sağlık sigortası",
+      "kisa": "Seyahatteki sağlık riskleri için.",
+      "kaynak": "https://www.turksigorta.com/diger-sigortalar/seyahat-saglik-sigortasi/"
+    },
+    {
+      "slug": "isyeri-diger",
+      "brans": "isyeri",
+      "ad": "Hırsızlık, cam kırılması ve taşınan para",
+      "kisa": "Ev ve işyeri için ayrı teminatlar.",
+      "kaynak": "https://www.turksigorta.com/diger-sigortalar/hirsizlik-sigortasi/"
+    },
+    {
+      "slug": "kredi-hayat",
+      "brans": "hayat",
+      "ad": "Kredi hayat ve kredi kartı hayat",
+      "kisa": "Kredi borcuna bağlı hayat sigortaları.",
+      "kaynak": "https://www.turksigorta.com/diger-sigortalar/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.turksigorta.com/",
+    "https://www.turksigorta.com/turk-sigortayi-taniyin/",
+    "https://www.turksigorta.com/bize-ulasin/",
+    "https://www.turksigorta.com/kurumsal-yonetim/ortaklik-yapisi/",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Sermaye yapısı, faaliyet ve ekonomi raporları, yatırım bültenleri: mali bilgi.",
+    "Grubun banka tarihçesi: şirketin değil grubun tarihi; yazılmadı.",
+    "Yönetim kurulu adları: kişi adı."
+  ]
+}

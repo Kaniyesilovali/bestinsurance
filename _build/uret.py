@@ -1597,10 +1597,19 @@ class Uretici:
         HUB_URL = {b: f"/tr/sigorta/{b}/" for b in HUB}
         sablon = self.jinja.get_template("sirket-brans.html")
 
-        # Hangi branşlarda kaç şirket var
+        # Branş üyeliği tanıtım dosyasındaki ürünlerden gelir (şirketin güncel sitesi);
+        # tanıtımı olmayan şirkette eski veri. Ad da tanıtımdaki kısa ad.
         havuz = {}
         for s in veri:
-            for br in (s.get("branslar") or []):
+            tanitim = TANITIM_KOK / f"{s['slug']}.json"
+            if tanitim.is_file():
+                tv = json.loads(tanitim.read_text(encoding="utf-8"))
+                s = dict(s, ad=tv["ad"])
+                branslar = {b for u in tv.get("urunler", [])
+                            for b in [u.get("brans"), *u.get("ek_brans", [])] if b}
+            else:
+                branslar = set(s.get("branslar") or [])
+            for br in branslar:
                 havuz.setdefault(br, []).append(s)
 
         for br, ad in BRANS.items():
@@ -1610,22 +1619,19 @@ class Uretici:
             if not sirketler:
                 continue
             sirketler = sorted(sirketler, key=lambda s: tr_sirala(s["ad"]))
-            liste = [{
-                "slug": s["slug"], "ad": s["ad"], "sehir": s.get("sehir", ""),
-                "brans_sayisi": len(s.get("branslar") or []),
-            } for s in sirketler]
+            liste = [{"slug": s["slug"], "ad": s["ad"], "sehir": s.get("sehir", "")}
+                     for s in sirketler]
 
-            bulgu = (f"39 ruhsatlı hayat dışı şirketin {len(sirketler)}'inde {ad.lower()} "
-                     f"ürünü sitesinden doğrulandı. Alfabetik sıralı; her ad "
-                     f"şirketin tam profiline gider.")
+            bulgu = (f"Kendi sitesinde {ad.lower()} ürünü tanıtan şirketler, alfabetik "
+                     f"sıralı. Her ad şirketin tanıtım sayfasına gider.")
 
             b = {"key": br, "ad": ad, "ad_kucuk": ad.lower(), "sayi": len(sirketler),
                  "sirketler": liste, "bulgu": bulgu, "hub_url": HUB_URL.get(br)}
 
             url = f"/tr/sirketler/{br}/"
             title = f"KKTC'de {ad.lower()} sigortası yapan {len(sirketler)} şirket"
-            desc = (f"Kuzey Kıbrıs'ta {ad.lower()} branşında ürünü doğrulanan {len(sirketler)} "
-                    f"ruhsatlı sigorta şirketi, alfabetik sıralı. Her şirketin tam profili.")
+            desc = (f"Kuzey Kıbrıs'ta kendi sitesinde {ad.lower()} ürünü tanıtan {len(sirketler)} "
+                    f"ruhsatlı sigorta şirketi, alfabetik sıralı; her birinin tanıtım sayfası.")
             jsonld = [json.dumps({
                 "@context": "https://schema.org", "@type": "ItemList",
                 "itemListElement": [
@@ -1639,7 +1645,7 @@ class Uretici:
                               aktif_menu="sirketler", og_aciklama=desc, jsonld=jsonld)
             bag["hreflang"] = {"tr": url}
             govde = sablon.render(b=b, **bag)
-            self.sayfa_yaz(url, bag, govde, date(2026, 7, 24))
+            self.sayfa_yaz(url, bag, govde, date(2026, 10, 4))
 
     # -- sitemap, robots, kök yönlendirme, 404 ------------------------------
 

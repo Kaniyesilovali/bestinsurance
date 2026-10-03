@@ -56,7 +56,10 @@
       "brans": "kasko",
       "ad": "Motorlu araç sigortaları",
       "kisa": "Zorunlu trafik ve kasko dahil araç sigortaları.",
-      "kaynak": "https://commercialcyprus.com/commercial-insurance-motorlu-arac-sigortalari.html"
+      "kaynak": "https://commercialcyprus.com/commercial-insurance-motorlu-arac-sigortalari.html",
+      "ek_brans": [
+        "trafik"
+      ]
     },
     {
       "slug": "yangin",

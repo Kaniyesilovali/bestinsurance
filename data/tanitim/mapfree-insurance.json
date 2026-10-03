@@ -1,0 +1,91 @@
+{
+  "slug": "mapfree-insurance",
+  "ad": "MAPFREE Insurance",
+  "ad_ilgi": "MAPFREE Insurance'ın",
+  "unvan": "MAPFREE INSURANCE LTD",
+  "web": "https://mapfreesigorta.com/",
+  "merkez": "Girne",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde MAPFREE INSURANCE LTD unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin sitesine göre 2011'de yüzde yüz yerel sermaye ile kuruldu.",
+      "kaynak": "https://mapfreesigorta.com/"
+    },
+    {
+      "etiket": "Ofis",
+      "metin": "İletişim sayfasında Girne Karaoğlanoğlu'ndaki adres veriliyor.",
+      "kaynak": "https://mapfreesigorta.com/contact-us.html"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ana sayfada üç ürün grubu tanıtılıyor: araç (zorunlu trafik ve kasko), konut ve ticari paket sigortası.",
+      "kaynak": "https://mapfreesigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://mapfreesigorta.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Araç sigortası tanıtımında Güney Kıbrıs ve yurt dışı teminatları ile 7/24 yol yardımı ve çekici hizmeti belirtiliyor.",
+      "kaynak": "https://mapfreesigorta.com/"
+    },
+    {
+      "metin": "Sitede WhatsApp üzerinden iletişim bağlantısı var; çalışma saatleri hafta içi 08.00–17.30, cumartesi 09.00–12.00.",
+      "kaynak": "https://mapfreesigorta.com/contact-us.html"
+    }
+  ],
+  "iletisim": {
+    "adres": "Karaoğlanoğlu Caddesi, Karaoğlanoğlu, Girne",
+    "telefon": "+90 548 829 80 00",
+    "whatsapp": "+90 546 993 30 09",
+    "eposta": "info@mapfreesigorta.com",
+    "instagram": "https://www.instagram.com/mapfreesigorta",
+    "facebook": "https://www.facebook.com/mapfreesigorta",
+    "kaynak": "https://mapfreesigorta.com/contact-us.html"
+  },
+  "urunler": [
+    {
+      "slug": "arac",
+      "brans": "kasko",
+      "ad": "Araç sigortası",
+      "kisa": "Zorunlu trafik ve kasko; Güney Kıbrıs ve yurt dışı teminatlarıyla.",
+      "kaynak": "https://mapfreesigorta.com/",
+      "ek_brans": [
+        "trafik"
+      ]
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut sigortası",
+      "kisa": "Bina ve eşya için; deprem, sel, hırsızlık gibi ek teminatlarla.",
+      "kaynak": "https://mapfreesigorta.com/"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket sigortası",
+      "kisa": "İşyeri bina, demirbaş ve makineleri için.",
+      "kaynak": "https://mapfreesigorta.com/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://mapfreesigorta.com/",
+    "https://mapfreesigorta.com/contact-us.html",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "'Güçlü mali yapı', 'uygun fiyatlar', 'klasik sigortacılık anlayışına son vermek': iddia.",
+    "Sitedeki şablondan kalma yabancı adres, telefon, e-posta ve yer tutucu metinler: kusur yazılmaz; yalnızca şirkete ait bilgiler alındı."
+  ]
+}

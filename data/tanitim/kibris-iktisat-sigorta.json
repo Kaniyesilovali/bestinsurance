@@ -1,0 +1,119 @@
+{
+  "slug": "kibris-iktisat-sigorta",
+  "ad": "Kıbrıs İktisat Sigorta",
+  "ad_ilgi": "Kıbrıs İktisat Sigorta'nın",
+  "unvan": "KIBRIS İKTİSAT SİGORTA LTD.",
+  "web": "https://iktisatsigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde KIBRIS İKTİSAT SİGORTA LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Faaliyet başlangıcı",
+      "metin": "Şirketin tanıtım sayfasına göre 2005'te KKTC'de faaliyete başladı.",
+      "kaynak": "https://iktisatsigorta.com/kurumsal"
+    },
+    {
+      "etiket": "Hizmet noktaları",
+      "metin": "Tanıtım sayfasına göre ürünler İktisatbank şubeleri aracılığıyla da sunuluyor; acenteler sayfasında bu şubeler listeleniyor.",
+      "kaynak": "https://iktisatsigorta.com/acentelerimiz"
+    },
+    {
+      "etiket": "Faaliyet alanı",
+      "metin": "Tanıtım sayfasına göre yangın, kaza, nakliyat, mühendislik, konut, işyeri, ferdi kaza, hayat kredi, zorunlu trafik ve kasko branşlarında hizmet veriyor.",
+      "kaynak": "https://iktisatsigorta.com/kurumsal"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://iktisatsigorta.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede genel telefondan ayrı bir hasar hattı numarası veriliyor.",
+      "kaynak": "https://iktisatsigorta.com/iletisim"
+    },
+    {
+      "metin": "İletişim sayfasında görüş ve öneriler için bir mesaj formu bulunuyor.",
+      "kaynak": "https://iktisatsigorta.com/iletisim"
+    },
+    {
+      "metin": "Acenteler sayfasında hizmet noktaları aranabiliyor.",
+      "kaynak": "https://iktisatsigorta.com/acentelerimiz"
+    }
+  ],
+  "iletisim": {
+    "adres": "15, Müftü Ziyai Efendi Sokak, Lefkoşa",
+    "telefon": "0392 444 56 78",
+    "hasar_hatti": "444 3 111",
+    "eposta": "info@iktisatsigorta.com",
+    "kaynak": "https://iktisatsigorta.com/iletisim"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Karşı tarafa verilen bedeni ve maddi zararlar için.",
+      "kaynak": "https://iktisatsigorta.com/urunler/zorunlu-trafik-sigortasi"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Çarpma, yanma ve çalınmaya karşı; deprem, sel, terör ve yurt dışı ek teminatlarıyla.",
+      "kaynak": "https://iktisatsigorta.com/urunler/kasko-sigortasi"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut sigortası",
+      "kisa": "Ev sahibi ya da kiracı için ev ve eşya; ek sözleşmeyle genişleyen teminatlar.",
+      "kaynak": "https://iktisatsigorta.com/urunler/konut-sigortasi"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "İşyeri sigortası",
+      "kisa": "Emtia, demirbaş, makine ve kasa muhteviyatı için.",
+      "kaynak": "https://iktisatsigorta.com/urunler/isyeri-sigortasi"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat emtea sigortası",
+      "kisa": "Deniz, hava ve karayoluyla taşınan mal için.",
+      "kaynak": "https://iktisatsigorta.com/urunler/nakliyat-emtea-sigortasi"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Kaza sonucu vefat ve sürekli sakatlık için.",
+      "kaynak": "https://iktisatsigorta.com/urunler/ferdi-kaza-sigortasi"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://iktisatsigorta.com/",
+    "https://iktisatsigorta.com/kurumsal",
+    "https://iktisatsigorta.com/kurumsal/iktisat-sigorta",
+    "https://iktisatsigorta.com/urunler",
+    "https://iktisatsigorta.com/acentelerimiz",
+    "https://iktisatsigorta.com/iletisim",
+    "6 ürün sayfası",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Banka şubesi sayısı: sitede 16 ve 20 olarak iki farklı geçiyor; yazılmadı.",
+    "Bir uluslararası reasürans brokeriyle işbirliği cümlesi: başka bir kurumla ilişki; yazılmadı.",
+    "'En etkin uygulayıcılarından', 'alanında lider': üstünlük iddiası.",
+    "Eski tarihli haberlerdeki indirim ve taksit oranları: rakam ve tarihli kampanya.",
+    "İngilizce sürümün henüz yayında olmaması, kapanmış sosyal ağ bağlantısı: kusur yazılmaz."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "tower-insurance",
+  "ad": "Tower Insurance",
+  "ad_ilgi": "Tower Insurance'ın",
+  "unvan": "TOWER INSURANCE LTD.",
+  "web": "http://tower-insurance.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-04",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde TOWER INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Web sitesi",
+      "metin": "Şirketin sitesi tek sayfadan oluşuyor; sayfada unvan, adres, telefon ve e-posta bilgisi veriliyor.",
+      "kaynak": "http://tower-insurance.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "http://tower-insurance.com/"
+    }
+  ],
+  "hizmetler": [],
+  "iletisim": {
+    "adres": "Organize Sanayi Bölgesi, 26. Sokak No:8, Cezaevi karşısı, Lefkoşa",
+    "telefon": "(0392) 444 20 01",
+    "eposta": "towerinsurance@hotmail.com",
+    "kaynak": "http://tower-insurance.com/"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "http://tower-insurance.com/",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Genel müdür adı: kişi adı.",
+    "Temmuz verisindeki ürün listesi: sitede artık ürün bilgisi yok."
+  ]
+}

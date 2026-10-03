@@ -1,0 +1,54 @@
+{
+  "slug": "turkiye-sigorta",
+  "ad": "Türkiye Sigorta",
+  "ad_ilgi": "Türkiye Sigorta'nın",
+  "unvan": "TÜRKİYE SİGORTA",
+  "web": "https://kibris.turkiyesigorta.com.tr/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-04",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde TÜRKİYE SİGORTA adıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "KKTC'deki yapı",
+      "metin": "Şirketin KKTC alt alan adındaki sitede bir KKTC Şube Müdürlüğü'nün adres ve telefonu veriliyor.",
+      "kaynak": "https://kibris.turkiyesigorta.com.tr/yardim-merkezi/iletisim/kktc-sube-mudurlugu-iletisim"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "KKTC sitesinde KKTC'ye özel bir ürün listesi yer almıyor; ürün bilgisi için şube müdürlüğüne başvurulabilir.",
+      "kaynak": "https://kibris.turkiyesigorta.com.tr/urunlerimiz"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://kibris.turkiyesigorta.com.tr/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "KKTC sitesinde hasar işlemleri, anlaşmalı kurumlar ve yardım merkezi bölümleri bulunuyor.",
+      "kaynak": "https://kibris.turkiyesigorta.com.tr/hasar-islemleri"
+    }
+  ],
+  "iletisim": {
+    "adres": "Server Somuncuoğlu Sokak No:14, Köşklüçiftlik, Lefkoşa",
+    "telefon": "0 (392) 228 66 90",
+    "kaynak": "https://kibris.turkiyesigorta.com.tr/yardim-merkezi/iletisim/kktc-sube-mudurlugu-iletisim"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "https://kibris.turkiyesigorta.com.tr/yardim-merkezi/iletisim/kktc-sube-mudurlugu-iletisim",
+    "https://kibris.turkiyesigorta.com.tr/hakkimizda",
+    "https://kibris.turkiyesigorta.com.tr/urunlerimiz",
+    "https://kibris.turkiyesigorta.com.tr/hasar-islemleri",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Türkiye'deki ana şirkete ait içerikler: KKTC'ye özgü olduğu belirtilmedikçe yazılmadı."
+  ]
+}

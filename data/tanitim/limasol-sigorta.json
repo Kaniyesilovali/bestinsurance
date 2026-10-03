@@ -1,0 +1,161 @@
+{
+  "slug": "limasol-sigorta",
+  "ad": "Limasol Sigorta",
+  "ad_ilgi": "Limasol Sigorta'nın",
+  "unvan": "LİMASOL SİGORTA LTD",
+  "web": "https://limasolsigorta.com/",
+  "merkez": "Girne",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde LİMASOL SİGORTA LTD unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre 1 Eylül 1997'de Girne'de kuruldu; sayfada halka açık bir şirket olduğu belirtiliyor.",
+      "kaynak": "https://limasolsigorta.com/hakkimizda/kurumsal/"
+    },
+    {
+      "etiket": "Şubeler ve acenteler",
+      "metin": "Tanıtım sayfasına göre merkezin yanında 57 acenteyle hizmet veriyor; iletişim sayfasında Güzelyurt ve Yeni Erenköy şubeleri, banka şubeleri sayfasında Limasol Türk Kooperatif Bankası şubeleri listeleniyor.",
+      "kaynak": "https://limasolsigorta.com/hakkimizda/kurumsal/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünler bireyler ve işletmeler için iki grupta tanıtılıyor; zorunlu araç, kasko, konut, ticari paket, acil sağlık, seyahat, ferdi kaza, hayat kredi, cam kırılması, sorumluluk, nakliyat ve mühendislik sigortaları bunlar arasında.",
+      "kaynak": "https://limasolsigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "http://limasolsigorta.com/?lang=en"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "İletişim sayfasına göre hasar müdürlüğüne mesai saatleri içinde ve dışında ulaşılabilen bir telefon hattı var.",
+      "kaynak": "https://limasolsigorta.com/iletisim/"
+    },
+    {
+      "metin": "Sitede bir hasar ihbar ve bilgi formu, hasar işlemleri sayfası ve online işlemler bağlantısı bulunuyor.",
+      "kaynak": "https://limasolsigorta.com/hasar-ihbar-bilgi-formu/"
+    },
+    {
+      "metin": "Sitede acentelik başvuru formu, pert araçlar ve talep–öneri bölümleri bulunuyor.",
+      "kaynak": "https://limasolsigorta.com/acentelik-basvuru/"
+    }
+  ],
+  "iletisim": {
+    "adres": "No:10, Orhaneli Sokak, Girne",
+    "telefon": "0392 444 00 55",
+    "hasar_hatti": "0533 866 63 63",
+    "eposta": "info@limasolsigorta.com",
+    "facebook": "https://www.facebook.com/limasolsigorta/",
+    "kaynak": "https://limasolsigorta.com/iletisim/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu araç sigortası",
+      "kisa": "Üçüncü kişilere verilen zararlar için yasal sigorta.",
+      "kaynak": "https://limasolsigorta.com/siz-ve-aileniz-icin/zorunlu-arac-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko araç sigortası",
+      "kisa": "Aracın kendisine gelen zararlar için.",
+      "kaynak": "https://limasolsigorta.com/siz-ve-aileniz-icin/kasko-arac-sigortasi/"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut paket ve konut sigortası",
+      "kisa": "Ev ve eşya için.",
+      "kaynak": "https://limasolsigorta.com/siz-ve-aileniz-icin/konut-paket-ve-konut-sigortasi/"
+    },
+    {
+      "slug": "ticari-paket",
+      "brans": "isyeri",
+      "ad": "Ticari paket (işyeri) sigortası",
+      "kisa": "İşyerleri için paket poliçe.",
+      "kaynak": "https://limasolsigorta.com/isiniz-icin/ticari-paket-sigorta-policesi/"
+    },
+    {
+      "slug": "acil-saglik",
+      "brans": "saglik",
+      "ad": "Acil sağlık sigortası",
+      "kisa": "Acil sağlık durumları için.",
+      "kaynak": "https://limasolsigorta.com/siz-ve-aileniz-icin/acil-saglik-sigortasi/"
+    },
+    {
+      "slug": "seyahat",
+      "brans": "seyahat",
+      "ad": "Seyahat sigortası",
+      "kisa": "Seyahatteki sağlık ve diğer riskler için.",
+      "kaynak": "https://limasolsigorta.com/siz-ve-aileniz-icin/seyahat-sigortasi/"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza ve koltuk ferdi kaza",
+      "kisa": "Sigortalı ve araçtaki yolcular için kaza sigortası.",
+      "kaynak": "https://limasolsigorta.com/siz-ve-aileniz-icin/ferdi-kaza-sigortasi/"
+    },
+    {
+      "slug": "hayat-kredi",
+      "brans": "hayat",
+      "ad": "Hayat kredi sigortası",
+      "kisa": "Kredi borcuna bağlı hayat sigortası.",
+      "kaynak": "https://limasolsigorta.com/siz-ve-aileniz-icin/hayat-kredi-sigortasi/"
+    },
+    {
+      "slug": "cam",
+      "brans": "konut",
+      "ad": "Cam kırılması sigortası",
+      "kisa": "Ev ve işyeri camları için.",
+      "kaynak": "https://limasolsigorta.com/siz-ve-aileniz-icin/cam-kirilmasi-sigortasi/"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Genel sorumluluk sigortası",
+      "kisa": "Üçüncü kişilere karşı sorumluluk için.",
+      "kaynak": "https://limasolsigorta.com/isiniz-icin/genel-sorumluluk-sigortasi/"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat sigortası",
+      "kisa": "Taşınan mal için.",
+      "kaynak": "https://limasolsigorta.com/isiniz-icin/nakliyat-sigortasi/"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Mühendislik sigortaları",
+      "kisa": "İnşaat, montaj ve makine riskleri için.",
+      "kaynak": "https://limasolsigorta.com/isiniz-icin/muhendislik-sigortalari/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://limasolsigorta.com/",
+    "https://limasolsigorta.com/hakkimizda/kurumsal/",
+    "https://limasolsigorta.com/banka-subelerimiz/",
+    "https://limasolsigorta.com/acentelerimiz/",
+    "https://limasolsigorta.com/iletisim/",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Kayıtlı sermaye, kâr payı dağıtımı: mali bilgi.",
+    "'KKTC'nin en iyi sigorta şirketi olmak', 'kiralık araç veren ilk şirket', 'öncü': üstünlük iddiası.",
+    "Kurucu ve yönetim adları, acente kişi adları: kişi adı.",
+    "Faaliyet yılı haberlerde farklı sayılarla geçiyor: kuruluş tarihi yazıldı.",
+    "'Online işlemler çok yakında' sayfası: durum yorumlanmadı."
+  ]
+}

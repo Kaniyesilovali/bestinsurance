@@ -1,0 +1,106 @@
+{
+  "slug": "smart-target-insurance",
+  "ad": "Smart Target Insurance",
+  "ad_ilgi": "Smart Target Insurance'ın",
+  "unvan": "SMART TARGET INSURANCE LTD.",
+  "web": "https://targetsigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-04",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde SMART TARGET INSURANCE LTD. unvanıyla yer alıyor; sitesinde Target Sigorta adını kullanıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ofisler",
+      "metin": "İletişim sayfasında Lefkoşa Köşklüçiftlik'teki ofisin yanında bir Girne şubesi telefonu veriliyor.",
+      "kaynak": "https://targetsigorta.com/index.php/iletisim/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede altı ürünün ayrı sayfası var: zorunlu trafik, araç kasko, konut, işyeri, seyahat ve nakliyat sigortası; hizmetler sayfasında sağlık sigortası da tanıtılıyor.",
+      "kaynak": "https://targetsigorta.com/hizmetlerimiz/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "https://targetsigorta.com/en/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "İletişim sayfasında destek hatlarından ayrı bir hasar ihbar numarası veriliyor.",
+      "kaynak": "https://targetsigorta.com/index.php/iletisim/"
+    },
+    {
+      "metin": "Ürün sayfalarında başvuru formu, sitede WhatsApp üzerinden iletişim bağlantısı bulunuyor.",
+      "kaynak": "https://targetsigorta.com/service/arac-kasko-sigorta/"
+    }
+  ],
+  "iletisim": {
+    "adres": "No:10, Sabri Kazmaoğlu Sokak, Köşklüçiftlik, Lefkoşa",
+    "telefon": "0539 146 00 10",
+    "hasar_hatti": "0539 146 00 19",
+    "eposta": "info@targetsigorta.com",
+    "instagram": "https://www.instagram.com/targetsigorta/",
+    "facebook": "https://www.facebook.com/targetsigorta",
+    "kaynak": "https://targetsigorta.com/index.php/iletisim/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Üçüncü kişilere verilen bedeni ve maddi zararlar için.",
+      "kaynak": "https://targetsigorta.com/service/zorunlu-trafik-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Araç kasko sigortası",
+      "kisa": "Deprem, sel, yangın, hırsızlık gibi zararlara karşı; tamir süresince ikame araç.",
+      "kaynak": "https://targetsigorta.com/service/arac-kasko-sigorta/"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut sigortası",
+      "kisa": "Ev ve eşya için yangın, hırsızlık ve doğal afetlere karşı.",
+      "kaynak": "https://targetsigorta.com/service/konut-sigortasi/"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "İşyeri sigortası",
+      "kisa": "İşletmenin mülkü ve ekipmanı için.",
+      "kaynak": "https://targetsigorta.com/service/is-sigortasi/"
+    },
+    {
+      "slug": "seyahat",
+      "brans": "seyahat",
+      "ad": "Seyahat sigortası",
+      "kisa": "Tıbbi acil durum, seyahat iptali ve bagaj kaybı için.",
+      "kaynak": "https://targetsigorta.com/service/seyahat-sigortasi/"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat sigortası",
+      "kisa": "Taşınan mal için.",
+      "kaynak": "https://targetsigorta.com/service/nakliyat-sigortasi/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://targetsigorta.com/",
+    "https://targetsigorta.com/index.php/hakkimizda/",
+    "https://targetsigorta.com/hizmetlerimiz/",
+    "https://targetsigorta.com/index.php/iletisim/",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "'3000'den fazla mutlu müşteri', müşteri yorumları, 'lider adres', 'uygun fiyat': doğrulanamaz iddia ve yorum."
+  ]
+}

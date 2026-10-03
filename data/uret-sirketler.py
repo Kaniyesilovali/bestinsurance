@@ -349,6 +349,12 @@ def main():
                       key=lambda b: BRANS_ADI[b])
     sehirler = sorted({c for s in VERI for c in (s.get("ofis_sehirler") or [s["sehir"]])})
     sayfasiz_kartlar = "".join(sayfasiz_kart(s) for s in SAYFASIZ)
+    # /tr/sirketler/<brans>/ sayfaları buradan bağlanır; aksi halde öksüz kalırlar.
+    # hayat ve yat için sayfa üretilmiyor (_build/uret.py > BRANS_SAYFASIZ).
+    brans_linkleri = "".join(
+        f'        <li><a href="/tr/sirketler/{b}/" class="link-u">{e(BRANS_ADI[b])}</a></li>\n'
+        for b in ("trafik", "kasko", "konut", "isyeri", "saglik", "seyahat", "ferdi_kaza",
+                  "nakliyat", "muhendislik", "sorumluluk"))
 
     brans_opt = "\n".join(
         f'            <option value="{e(b)}">{e(BRANS_ADI[b])}</option>' for b in branslar)
@@ -416,6 +422,12 @@ def main():
         <tbody>
 {"".join(satir_html(s, i) for i, s in enumerate(SAYFALI))}        </tbody>
       </table>
+    </div>
+
+    <div class="mt-8">
+      <p class="u-eyebrow mb-3">Branşa göre şirketler</p>
+      <ul class="flex flex-wrap gap-x-5 gap-y-2 text-[15px]">
+{brans_linkleri}      </ul>
     </div>
 
     <p class="text-sm text-muted mt-6 max-w-3xl leading-relaxed">

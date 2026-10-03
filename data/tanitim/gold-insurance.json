@@ -60,7 +60,10 @@
       "brans": "kasko",
       "ad": "Motorlu kara araçları sigortası",
       "kisa": "Zorunlu trafik ve isteğe bağlı kasko.",
-      "kaynak": "https://www.gold-insurance.com/motorlu-kara-araclari-sigortasi"
+      "kaynak": "https://www.gold-insurance.com/motorlu-kara-araclari-sigortasi",
+      "ek_brans": [
+        "trafik"
+      ]
     },
     {
       "slug": "yangin",

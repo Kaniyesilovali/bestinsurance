@@ -1,0 +1,135 @@
+{
+  "slug": "zirve-sigorta",
+  "ad": "Zirve Sigorta",
+  "ad_ilgi": "Zirve Sigorta'nın",
+  "unvan": "ZİRVE SİGORTA LTD.",
+  "web": "https://zirvesigortaltd.com/b/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-04",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde ZİRVE SİGORTA LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ofis",
+      "metin": "İletişim sayfasında Lefkoşa Yenişehir'deki merkez adresi veriliyor.",
+      "kaynak": "https://zirvesigortaltd.com/b/contact.html"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünler trafik ve kasko, sağlık, yangın, kaza, sorumluluk ve nakliyat sigortaları başlıkları altında yirmiyi aşkın ürünle tanıtılıyor.",
+      "kaynak": "https://zirvesigortaltd.com/b/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe; sitede otomatik çeviri aracıyla başka dil seçenekleri sunuluyor.",
+      "kaynak": "https://zirvesigortaltd.com/b/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Online bölümde poliçe, kaza ve ödeme sorgulaması yapılabiliyor.",
+      "kaynak": "http://zirvesigortaltd.com/online.html"
+    },
+    {
+      "metin": "Sitede hasar anında yapılacaklar ve hasar evrak listesi sayfaları, şikâyet–öneri bölümü, anlaşmalı servis ve eczane listeleri bulunuyor.",
+      "kaynak": "https://zirvesigortaltd.com/b/mesleki-denetim/2015-06-16-10-40-41.html"
+    },
+    {
+      "metin": "Sitede acenteler listesi ve acentelik başvuru formu bulunuyor.",
+      "kaynak": "https://zirvesigortaltd.com/b/yay-nlar/2015-06-16-10-43-04.html"
+    }
+  ],
+  "iletisim": {
+    "adres": "Şehit İbrahim Ramadan Sokak No:7, Yenişehir, Lefkoşa",
+    "telefon": "+90 392 228 71 54",
+    "kaynak": "https://zirvesigortaltd.com/b/contact.html"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Trafik sigortası",
+      "kisa": "Üçüncü şahıslara verilen zararlar için yasal sigorta.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-22-32.html"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko ve kısmi kasko",
+      "kisa": "Çarpışma, devrilme, yanma ve çalınmaya karşı araç sigortası.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-23-05.html"
+    },
+    {
+      "slug": "saglik",
+      "brans": "saglik",
+      "ad": "Özel ve acil sağlık sigortası",
+      "kisa": "Acil durumlar ve sağlık giderleri için.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-24-03.html"
+    },
+    {
+      "slug": "seyahat-saglik",
+      "brans": "seyahat",
+      "ad": "Seyahat sağlık sigortası",
+      "kisa": "Seyahatteki sağlık riskleri için.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-24-03/2015-06-16-10-26-16.html"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut ve eşya sigortası",
+      "kisa": "Ev ve eşya için yangın sigortaları.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-27-09/2015-06-16-10-29-51.html"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "İşyeri sigortası",
+      "kisa": "İşyerleri için yangın sigortası.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-27-09/2015-06-16-10-31-50.html"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza, Zirve Ailem ve eğitim sigortası",
+      "kisa": "Kaza sonuçları ve çocuğun eğitimi için.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-32-45/2015-06-16-10-33-07.html"
+    },
+    {
+      "slug": "kaza-diger",
+      "brans": "isyeri",
+      "ad": "Cam, hırsızlık, taşınan para, POS cihazı ve emniyeti suistimal",
+      "kisa": "Ev ve işyeri için kaza grubu teminatları.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-32-45.html"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "İşveren, mesleki, üçüncü şahıs ve asansör sorumluluk.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-37-26.html"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat emtea ve kıymet",
+      "kisa": "Taşınan mal ve kıymetler için.",
+      "kaynak": "https://zirvesigortaltd.com/b/kurumsal/2015-06-16-10-39-33.html"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://zirvesigortaltd.com/b/",
+    "https://zirvesigortaltd.com/b/contact.html",
+    "http://zirvesigortaltd.com/online.html",
+    "ürün ve hasar sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Trafik ve kısmi kasko sayfalarındaki tutarlar: rakam yazılmaz.",
+    "'En hızlı ve güvenilir', 'en ekonomik şartlar': iddia.",
+    "Asistans hizmetini veren firma adı: başka bir kurumla ilişki."
+  ]
+}

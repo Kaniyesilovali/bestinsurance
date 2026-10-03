@@ -1,0 +1,91 @@
+{
+  "slug": "london-insurance",
+  "ad": "London Insurance",
+  "ad_ilgi": "London Insurance'ın",
+  "unvan": "LONDON INSURANCE",
+  "web": "https://www.londoninsurance.com.tr/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde LONDON INSURANCE adıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ofis",
+      "metin": "İletişim sayfasında Lefkoşa Yenişehir'deki adres veriliyor.",
+      "kaynak": "https://www.londoninsurance.com.tr/index.php/pages/contact/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede dört ürünün ayrı sayfası var: zorunlu trafik, kasko, konut ve işyeri sigortası.",
+      "kaynak": "https://www.londoninsurance.com.tr/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://www.londoninsurance.com.tr/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Ürün sayfalarında 7/24 hizmet veren bir hasar ihbar hattı olduğu belirtiliyor.",
+      "kaynak": "https://www.londoninsurance.com.tr/index.php/portfolio-item/kasko-sigortasi/"
+    },
+    {
+      "metin": "Sitede araç ve ev–işyeri hasarları için hasar işlemleri sayfaları, sık sorulan sorular ve sigorta tanımları bulunuyor.",
+      "kaynak": "https://www.londoninsurance.com.tr/index.php/aracta-olusan-hasarlar/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Şht. Biray Mustafa Sokak No:9, Yenişehir, Lefkoşa",
+    "telefon": "0 (546) 996 56 78",
+    "eposta": "info@londoninsurance.com.tr",
+    "kaynak": "https://www.londoninsurance.com.tr/index.php/pages/contact/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Maddi zarar, sağlık gideri, sürekli sakatlık ve destekten yoksun kalma teminatları.",
+      "kaynak": "https://www.londoninsurance.com.tr/index.php/portfolio-item/zorunlu-trafik-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Çarpışma, yangın, hırsızlık ve infilaka karşı.",
+      "kaynak": "https://www.londoninsurance.com.tr/index.php/portfolio-item/kasko-sigortasi/"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Ev için yangın, hırsızlık, deprem ve yıldırıma karşı.",
+      "kaynak": "https://www.londoninsurance.com.tr/index.php/portfolio-item/konut-sigortasi/"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "İşyeri sigortası",
+      "kisa": "İşyeri içeriği için isteğe bağlı teminatlarla.",
+      "kaynak": "https://www.londoninsurance.com.tr/index.php/portfolio-item/isyeri-sigortasi/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.londoninsurance.com.tr/",
+    "https://www.londoninsurance.com.tr/index.php/portfolio-item/biz-kimiz/",
+    "https://www.londoninsurance.com.tr/index.php/portfolio-item/sikca-sorulan-sorular/",
+    "https://www.londoninsurance.com.tr/index.php/pages/contact/",
+    "4 ürün sayfası",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Ana sayfa sayaçları ('10K+ mutlu müşteri', '%100 memnuniyet'): doğrulanamaz.",
+    "'Hızlı onay garantisi', 'sağlam mali yapı', 'AB standartları': iddia.",
+    "Ürün sayfalarında başka bir şirketin adının geçmesi, şablondan kalma sayfalar ve bağlantılar: kusur yazılmaz."
+  ]
+}
