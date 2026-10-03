@@ -1,0 +1,37 @@
+{
+  "slug": "correct-choice-insurance",
+  "ad": "Correct Choice Insurance",
+  "ad_ilgi": "Correct Choice Insurance'ın",
+  "unvan": "CORRECT CHOICE INSURANCE LTD.",
+  "web": "",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde CORRECT CHOICE INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kaynak",
+      "metin": "Şirketin web sitesinden okunabilen bir tanıtım bilgisi bulunamadığı için bu sayfadaki bilgiler Birlik üye listesinden alındı. Ürün bilgisi için şirketle doğrudan iletişime geçilebilir.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    }
+  ],
+  "hizmetler": [],
+  "iletisim": {
+    "adres": "Şht. Kemal Ünal Caddesi No:104, Taşkınköy, Lefkoşa",
+    "telefon": "(0548) 857 00 77",
+    "kaynak": "https://www.kksrsb.org/uyelerimiz.html",
+    "eposta": "info@correctchoiceinsurance.com"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Alan adı ve sunucu ölçümleri (DNS, HTTP, SSL): şirketin sitesi hakkında teknik kusur bildirimi; yazılmaz.",
+    "Birlik listesindeki kişi adları: yazılmaz."
+  ]
+}

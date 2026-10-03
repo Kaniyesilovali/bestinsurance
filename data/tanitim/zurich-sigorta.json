@@ -1,0 +1,36 @@
+{
+  "slug": "zurich-sigorta",
+  "ad": "Zurich Sigorta",
+  "ad_ilgi": "Zurich Sigorta'nın",
+  "unvan": "ZURİCH SİGORTA A.Ş.",
+  "web": "",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde ZURİCH SİGORTA A.Ş. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kaynak",
+      "metin": "Şirketin web sitesinden okunabilen bir tanıtım bilgisi bulunamadığı için bu sayfadaki bilgiler Birlik üye listesinden alındı. Ürün bilgisi için şirketle doğrudan iletişime geçilebilir.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    }
+  ],
+  "hizmetler": [],
+  "iletisim": {
+    "adres": "Aydemet Mahallesi, Metehan Mevkii, Omağ Apt. Blok 44 Kat:3 Daire 32, Lefkoşa",
+    "telefon": "(0392) 229 04 70",
+    "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Alan adı ve sunucu ölçümleri (DNS, HTTP, SSL): şirketin sitesi hakkında teknik kusur bildirimi; yazılmaz.",
+    "Birlik listesindeki kişi adları: yazılmaz."
+  ]
+}

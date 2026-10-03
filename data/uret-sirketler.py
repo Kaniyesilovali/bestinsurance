@@ -18,6 +18,9 @@ VERI = json.loads((KOK / "data" / "sirketler.json").read_text(encoding="utf-8"))
 # verisinin DÖRDÜ BİRDEN boş. Ölçüt _build/uret.py > sayfasiz_mi() ile aynıdır;
 # ikisi birlikte değişir. Gerekçe: copy/02-programatik-seo.md §2.
 def sayfasiz_mi(s):
+    # Tanıtım dosyası olan şirketin her zaman sayfası vardır (_build/uret.py > sirket_tanitimi()).
+    if (KOK / "data" / "tanitim" / f"{s['slug']}.json").is_file():
+        return False
     return not any((s.get("adres"), s.get("email"), s.get("branslar"), s.get("diller")))
 
 
@@ -117,19 +120,13 @@ def kisa_ad(s):
 def satir_html(s, i):
     branslar = s.get("branslar") or []
     sehirler = s.get("ofis_sehirler") or [s["sehir"]]
-    canli = s.get("http_durum") in (200, 301, 302)
 
-    meta = f'{len(branslar)} branş' if branslar else 'ürün listesi yok'
     ofis = " · ".join(sehirler[:3]) + ("…" if len(sehirler) > 3 else "")
-    rozet = ""
-    if not canli:
-        rozet = ('<span class="badge badge--zorunlu ms-2">Site yayında değil</span>')
 
     return f'''            <tr data-name="{e(s['ad'])}" data-city="{e(' '.join(sehirler))}"
                 data-branches="{e(' '.join(branslar))}">
               <td class="pe-4">
-                <a href="/tr/sirketler/{e(s['slug'])}/" class="u-display text-[15px] link-u">{e(s['ad'])}</a>{rozet}
-                <div class="font-mono text-[11px] text-muted mt-1.5">{e(meta)}</div>
+                <a href="/tr/sirketler/{e(s['slug'])}/" class="u-display text-[15px] link-u">{e(s['ad'])}</a>
               </td>
               <td class="text-end align-top pt-4 text-[14px] text-muted">{e(ofis)}</td>
             </tr>
@@ -201,17 +198,13 @@ def sayfasiz_kart(s):
 def satir_html_en(s, i):
     branslar = s.get("branslar") or []
     sehirler = s.get("ofis_sehirler") or [s["sehir"]]
-    canli = s.get("http_durum") in (200, 301, 302)
 
-    meta = f'{len(branslar)} classes' if branslar else 'no product list'
     ofis = " · ".join(sehirler[:3]) + ("…" if len(sehirler) > 3 else "")
-    rozet = "" if canli else '<span class="badge badge--zorunlu ms-2">Website down</span>'
 
     return f'''            <tr data-name="{e(s['ad'])}" data-city="{e(' '.join(sehirler))}"
                 data-branches="{e(' '.join(branslar))}">
               <td class="pe-4">
-                <a href="/tr/sirketler/{e(s['slug'])}/" hreflang="tr" class="u-display text-[15px] link-u">{e(s['ad'])}</a><span class="u-cap ms-1.5" title="Company profiles are published in Turkish only">TR</span>{rozet}
-                <div class="font-mono text-[11px] text-muted mt-1.5">{e(meta)}</div>
+                <a href="/tr/sirketler/{e(s['slug'])}/" hreflang="tr" class="u-display text-[15px] link-u">{e(s['ad'])}</a><span class="u-cap ms-1.5" title="Company profiles are published in Turkish only">TR</span>
               </td>
               <td class="text-end align-top pt-4 text-[14px] text-muted">{e(ofis)}</td>
             </tr>
@@ -318,7 +311,7 @@ def govde_en(canli, olu):
     </p>
 
     <p class="text-sm text-muted mt-6 max-w-3xl leading-relaxed">
-      Data collected in July 2026. If something here about your company is wrong,
+      Company profiles were refreshed from the companies' own websites in October 2026. If something here about your company is wrong,
       <a href="/tr/duzeltme/" hreflang="tr" class="text-sea link-u">tell us with the
       source</a> <span class="u-cap">TR</span> — we will check it against the source
       and correct it.
@@ -426,7 +419,7 @@ def main():
     </div>
 
     <p class="text-sm text-muted mt-6 max-w-3xl leading-relaxed">
-      Veriler Temmuz 2026'da toplandı. Hakkınızdaki bir bilgi yanlışsa
+      Şirket tanıtımları Ekim 2026'da şirketlerin kendi sitelerinden yenilendi. Hakkınızdaki bir bilgi yanlışsa
       <a href="/tr/duzeltme/" class="text-sea link-u">kaynağıyla birlikte bildirin</a> —
       kaynağıyla birlikte inceleyip düzeltiriz.
     </p>
@@ -465,6 +458,9 @@ def main():
     # Sayfanın frontmatter'ı korunur, yalnızca gövde yenilenir.
     cikti = KOK / "content" / "tr" / "sayfa" / "sirketler" / "index.html"
     cikti.parent.mkdir(parents=True, exist_ok=True)
+    # Bütün şirketlerin sayfası varsa "veri toplayamadıklarımız" bölümü basılmaz.
+    if not SAYFASIZ:
+        govde = govde[:govde.index('<section id="veri-yok"')]
     cikti.write_text(frontmatter(cikti) + govde.lstrip("\n"), encoding="utf-8")
     print(f"→ content/tr/sayfa/sirketler/index.html ({len(SAYFALI)} profilli satır, {len(SAYFASIZ)} profilsiz, {canli} canlı, {olu} ölü)")
 
@@ -472,7 +468,10 @@ def main():
     en_cikti = KOK / "content" / "en" / "sayfa" / "companies" / "index.html"
     en_cikti.parent.mkdir(parents=True, exist_ok=True)
     en_fm = frontmatter(en_cikti) if en_cikti.is_file() else EN_FRONTMATTER
-    en_cikti.write_text(en_fm + govde_en(canli, olu).lstrip("\n"), encoding="utf-8")
+    en_govde = govde_en(canli, olu)
+    if not SAYFASIZ:
+        en_govde = en_govde[:en_govde.index('<section id="veri-yok"')]
+    en_cikti.write_text(en_fm + en_govde.lstrip("\n"), encoding="utf-8")
     print(f"→ content/en/sayfa/companies/index.html ({len(SAYFALI)} satır, {len(SAYFASIZ)} profilsiz)")
 
 

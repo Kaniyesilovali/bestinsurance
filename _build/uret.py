@@ -113,6 +113,9 @@ def evet_mi(deger):
 # aynı IP'de iki şirket, kişisel e-posta). Bu dördünde o bulgu da yok.
 # Gerekçe: copy/02-programatik-seo.md §2 "İnce içerik eşiği".
 def sayfasiz_mi(sirket):
+    # Tanıtım dosyası olan şirketin her zaman sayfası vardır (sirket_tanitimi()).
+    if (KOK / "data" / "tanitim" / f"{sirket['slug']}.json").is_file():
+        return False
     return not any((
         sirket.get("adres"),
         sirket.get("email"),
@@ -1210,7 +1213,8 @@ class Uretici:
             v = json.loads(dosya.read_text(encoding="utf-8"))
             kontrol = date.fromisoformat(v["kontrol_tarihi"])
             url = f"/tr/sirketler/{v['slug']}/"
-            web_kisa = re.sub(r"^https?://(www\.)?|/$", "", v["web"])
+            kisalt = lambda u: re.sub(r"^https?://(www\.)?|/$", "", u or "")
+            web_kisa = kisalt(v.get("web"))
 
             # Gövdesi (.md) yazılmış ürün kendi sayfasını alır; yazılmamış olan
             # tanıtım sayfasında bağlantısız kart olarak durur.
@@ -1258,20 +1262,26 @@ class Uretici:
                 "kontrol_metni": f"{kontrol.day} {AY[kontrol.month - 1]} {kontrol.year}",
                 "giris": (f"{v['unvan']}, Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri "
                           f"Birliği üyesi, {v['merkez']} merkezli bir sigorta şirketidir. "
-                          f"Bu sayfada şirketin kendi web sitesinde yayımladığı bilgileri "
-                          f"derledik."),
+                          + ("Bu sayfada şirketin kendi web sitesinde yayımladığı bilgileri "
+                             "derledik." if v.get("web") else
+                             "Şirketin bir web sitesi bulunmadığı için bu sayfadaki bilgiler "
+                             "yalnızca Birlik üye listesinden alındı.")),
                 "olgular": v.get("olgular", []), "hizmetler": v.get("hizmetler", []),
                 "urunler": urunler, "iletisim": iletisim,
                 "iletisim_kaynak": il.get("kaynak", v["web"]),
+                "iletisim_kaynak_kisa": kisalt(il.get("kaynak", v["web"])).split("/")[0],
                 "karsilastirma": karsilastirma.get(v["slug"], []), "sss": sss,
             }
 
             varlik = {"@type": "Organization", "name": v["unvan"], "alternateName": v["ad"],
-                      "url": v["web"], "areaServed": "Cyprus",
+                      "areaServed": "Cyprus",
                       "address": {"@type": "PostalAddress", "addressLocality": v["merkez"],
                                   "addressRegion": "Kuzey Kıbrıs", "addressCountry": "CY"}}
-            sameas = [x for x in (v["web"], il.get("instagram"), il.get("facebook")) if x]
-            varlik["sameAs"] = sameas
+            if v.get("web"):
+                varlik["url"] = v["web"]
+            sameas = [x for x in (v.get("web"), il.get("instagram"), il.get("facebook")) if x]
+            if sameas:
+                varlik["sameAs"] = sameas
             if il.get("eposta"):
                 varlik["email"] = il["eposta"]
             if il.get("telefon"):
@@ -1378,7 +1388,7 @@ class Uretici:
 
         for slug, kay in kayitlar.items():
             x = idx.get(slug)
-            if x is None:
+            if x is None or (TANITIM_KOK / f"{slug}.json").is_file():
                 continue
             v = {
                 "ad": x["ad"], "slug": slug,
@@ -1503,8 +1513,11 @@ class Uretici:
                 x = idx.get(sl)
                 if not x:
                     continue
+                tanitim = TANITIM_KOK / f"{sl}.json"
+                ad = (json.loads(tanitim.read_text(encoding="utf-8"))["ad"]
+                      if tanitim.is_file() else x["ad"])
                 taraflar.append({
-                    "slug": sl, "ad": x["ad"], "sehir": x.get("sehir") or "—",
+                    "slug": sl, "ad": ad, "sehir": x.get("sehir") or "—",
                     "brans_sayisi": len(x.get("branslar") or []),
                     "profil_var": sl in profilli,
                     "_x": x,
@@ -1512,29 +1525,11 @@ class Uretici:
             if not taraflar:
                 continue
 
-            def satir(ad, uret):
-                hucreler = []
-                for t in taraflar:
-                    d = uret(t["_x"])
-                    hucreler.append({"deger": d or "Doğrulanamadı", "bos": not d})
-                return {"ad": ad, "hucreler": hucreler}
-
-            tablo = [
-                satir("Ruhsat", lambda x: "KKSRSB üyesi"),
-                satir("Şirket türü", lambda x: TUR.get(x.get("sirket_turu"))),
-                satir("Kuruluş", lambda x: str(x["kurulus_yili"]) if x.get("kurulus_yili") else None),
-                satir("Merkez", lambda x: x.get("sehir")),
-                satir("Doğrulanan branş", lambda x: str(len(x.get("branslar") or []))
-                      if (x.get("branslar") or []) else None),
-                satir("Alan adı", lambda x: x.get("web")),
-            ]
-
             k = {
                 "h1": kay["h1"], "kisa_cevap": vurgu(kay["kisa_cevap"]),
-                "karisiklik": vurgu(kay["karisiklik"]), "pratik": vurgu(kay["pratik"]),
-                "dogrulanamayan": [vurgu(d) for d in kay["dogrulanamayan"]],
+                "karisiklik": vurgu(kay["karisiklik"]),
                 "dis_taraf": kay.get("dis_taraf"),
-                "taraflar": taraflar, "tablo": tablo,
+                "taraflar": taraflar,
             }
 
             url = f"/tr/sirketler/karsilastirma/{kay['slug']}/"
@@ -1580,7 +1575,7 @@ class Uretici:
                 og_aciklama=desc, jsonld=jsonld,
             )
             bag["hreflang"] = {"tr": url}
-            self.sayfa_yaz(url, bag, sablon.render(k=k, **bag), date(2026, 7, 24))
+            self.sayfa_yaz(url, bag, sablon.render(k=k, **bag), date(2026, 10, 3))
 
     # -- branşa göre şirket listeleri ---------------------------------------
 

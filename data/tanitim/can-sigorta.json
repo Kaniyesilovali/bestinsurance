@@ -1,0 +1,154 @@
+{
+  "slug": "can-sigorta",
+  "ad": "Can Sigorta",
+  "ad_ilgi": "Can Sigorta'nın",
+  "unvan": "CAN SİGORTA LTD.",
+  "web": "https://www.cansigorta.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde CAN SİGORTA LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre temelleri 1958'de Lefkoşa Sarayönü'nde atıldı.",
+      "kaynak": "https://www.cansigorta.com/tr/Kurumsal/hakkimizda/11"
+    },
+    {
+      "etiket": "Şubeler ve acenteler",
+      "metin": "İletişim sayfasına göre genel müdürlüğün yanında dört şubesi (Gazimağusa, Girne, Esentepe, Gönyeli) ve dokuz yetkili acentesi var.",
+      "kaynak": "https://www.cansigorta.com/tr/iletisim.aspx"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede on yedi ürünün ayrı sayfası var: kasko, trafik, ev, kısa dönem kiralama, işyeri, seyahat, nakliyat, mühendislik, sorumluluk ve bireysel kaza sigortaları.",
+      "kaynak": "https://www.cansigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe, İngilizce, Almanca ve Rusça.",
+      "kaynak": "https://www.cansigorta.com/en"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Zorunlu trafik poliçesi site üzerinden satın alınabiliyor; poliçe, plaka ya da poliçe numarasıyla online ödenebiliyor.",
+      "kaynak": "https://www.cansigorta.com/"
+    },
+    {
+      "metin": "Kasko ve ev sigortası için ayrı teklif formları, diğer sigortalar için genel bir teklif formu bulunuyor.",
+      "kaynak": "https://www.cansigorta.com/"
+    },
+    {
+      "metin": "Sitede online hasar bildirimi ve dijital ev değerlendirmesi bölümleri bulunuyor.",
+      "kaynak": "https://www.cansigorta.com/"
+    },
+    {
+      "metin": "Poliçe genel şartları sayfasında Birlik'in yayımladığı resmî genel şart metinleri Türkçe ve bazıları İngilizce, Almanca ve Rusça olarak indirilebiliyor.",
+      "kaynak": "https://www.cansigorta.com/tr/Kurumsal/police-genel-sartlari/102"
+    },
+    {
+      "metin": "7/24 hizmet verdiği belirtilen bir WhatsApp operasyon hattı var; çalışma saatleri hafta içi 08.00–17.00, cumartesi 08.00–13.00.",
+      "kaynak": "https://www.cansigorta.com/tr/iletisim.aspx"
+    }
+  ],
+  "iletisim": {
+    "adres": "Ali Rıza Efendi Caddesi, Efruz Apt. No: 2/4, Ortaköy, Lefkoşa",
+    "telefon": "+90 392 444 07 77",
+    "whatsapp": "+90 533 869 82 22",
+    "eposta": "info@cansigorta.com",
+    "instagram": "https://instagram.com/cansigortaltd",
+    "facebook": "https://www.facebook.com/cansigortaltd",
+    "kaynak": "https://www.cansigorta.com/tr/iletisim.aspx"
+  },
+  "urunler": [
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Aracın kendi hasarları için; Kuzey ve Güney Kıbrıs'ta geçerli olduğu belirtiliyor.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/kuzey-kibris-kasko-sigortasi/2"
+    },
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Trafik sigortası",
+      "kisa": "Üçüncü kişilere verilen maddi ve bedeni zararlar için zorunlu poliçe; online satın alınabiliyor.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/kuzey-kibris-trafik-sigortasi/62"
+    },
+    {
+      "slug": "ev",
+      "brans": "konut",
+      "ad": "Ev sigortası",
+      "kisa": "Ev ve eşyalar için konut sigortası.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/ev-sigortasi/4"
+    },
+    {
+      "slug": "kisa-donem-kiralama",
+      "brans": "konut",
+      "ad": "Airbnb ve kısa dönem kiralama sigortası",
+      "kisa": "Kısa süreli kiraya verilen evler için.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/airbnb-kisa-donem-kiralama-sigortasi/64"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "Kapsamlı işyeri sigortası",
+      "kisa": "İşyerleri için paket sigorta.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/kapsamli-is-yeri-sigortasi/5"
+    },
+    {
+      "slug": "seyahat",
+      "brans": "seyahat",
+      "ad": "Schengen ve dünya seyahat sigortası",
+      "kisa": "Yurt dışı seyahatler için.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/schengen-seyahat-sigortasi/3"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat sigortası",
+      "kisa": "Taşınan mal için.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/nakliyat-sigortasi/9"
+    },
+    {
+      "slug": "muhendislik",
+      "brans": "muhendislik",
+      "ad": "Mühendislik sigortaları",
+      "kisa": "İnşaat ve montaj tüm riskler, makine kırılması, elektronik cihaz.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/insaat-tum-riskler-sigortasi-car/65"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "Üçüncü şahıs, işveren, mesleki ve asansör sorumluluk sigortaları.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/ucuncu-sahis-mali-sorumluluk-sigortasi/51"
+    },
+    {
+      "slug": "bireysel-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Bireysel kaza sigortası",
+      "kisa": "Kazanın sigortalı üzerindeki sonuçları için.",
+      "kaynak": "https://www.cansigorta.com/tr/sigortalar/bireysel-kaza-sigortasi/7"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.cansigorta.com/",
+    "https://www.cansigorta.com/tr/Kurumsal/hakkimizda/11",
+    "https://www.cansigorta.com/tr/iletisim.aspx",
+    "https://www.cansigorta.com/tr/Kurumsal/police-genel-sartlari/102",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Acente adları ve kişisel telefonları: kişi adı yazılmaz; yalnızca sayı yazıldı.",
+    "'Bölgesel takım, bölge temsilcisi, toplum danışmanı' sayıları: tanıtım için ikincil.",
+    "Google değerlendirmeleri ve 'en iyi sigorta şirketi', 'güvenilir çözüm ortağı': reklam ve yorum.",
+    "'Aynı gün dijital poliçe' vaadi: hizmet taahhüdü; yazılmadı."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "universal-sigorta",
+  "ad": "Universal Sigorta",
+  "ad_ilgi": "Universal Sigorta'nın",
+  "unvan": "UNIVERSAL SİGORTA LTD.",
+  "web": "",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde UNIVERSAL SİGORTA LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kaynak",
+      "metin": "Şirkete ait bir web sitesi bulunamadığı için bu sayfadaki bilgiler Birlik üye listesinden alındı. Ürün bilgisi için şirketle doğrudan iletişime geçilebilir.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    }
+  ],
+  "hizmetler": [],
+  "iletisim": {
+    "adres": "57 Mehmet Akif Caddesi, Köşklüçiftlik, Lefkoşa",
+    "telefon": "(0392) 444 07 24",
+    "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Birlik listesindeki kişi adı ve kişisel görünen e-posta adresi: kişi bilgisi; yazılmadı."
+  ]
+}

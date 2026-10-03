@@ -1,0 +1,85 @@
+{
+  "slug": "grand-plus-insurance",
+  "ad": "Grand Plus Insurance",
+  "ad_ilgi": "Grand Plus Insurance'ın",
+  "unvan": "GRAND PLUS INSURANCE",
+  "web": "https://www.grandplusinsurance.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde GRAND PLUS INSURANCE adıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Ofis",
+      "metin": "İletişim sayfasında Lefkoşa Köşklüçiftlik'teki adres veriliyor.",
+      "kaynak": "https://www.grandplusinsurance.com/index.php/pages__trashed/contact/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede dört ürünün ayrı sayfası var: zorunlu trafik, kasko, konut ve işyeri sigortası.",
+      "kaynak": "https://www.grandplusinsurance.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://www.grandplusinsurance.com/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Ürün sayfalarında 7/24 hizmet veren bir hasar ihbar hattı olduğu belirtiliyor.",
+      "kaynak": "https://www.grandplusinsurance.com/index.php/portfolio-item/trafik-sigortasi/"
+    }
+  ],
+  "iletisim": {
+    "adres": "Osmanpaşa Caddesi, Yağcıoğlu Apt. No:3, Köşklüçiftlik, Lefkoşa",
+    "telefon": "0 546 990 05 07",
+    "kaynak": "https://www.grandplusinsurance.com/index.php/pages__trashed/contact/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Maddi zarar, sağlık gideri, sürekli sakatlık ve destekten yoksun kalma teminatları.",
+      "kaynak": "https://www.grandplusinsurance.com/index.php/portfolio-item/trafik-sigortasi/"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Çarpışma, yangın, hırsızlık ve infilak gibi risklere karşı araç sigortası.",
+      "kaynak": "https://www.grandplusinsurance.com/index.php/portfolio-item/kasko-sigortasi/"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Ev, bina ve eşya için yangın, hırsızlık, deprem gibi risklere karşı.",
+      "kaynak": "https://www.grandplusinsurance.com/index.php/portfolio-item/konut-sigortasi/"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "İşyeri sigortası",
+      "kisa": "Bina, demirbaş, emtia ve makineler için; iş durması ve kira kaybı eklenebiliyor.",
+      "kaynak": "https://www.grandplusinsurance.com/index.php/portfolio-item/isyeri-sigortasi/"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.grandplusinsurance.com/",
+    "https://www.grandplusinsurance.com/index.php/biz-kimiz/",
+    "https://www.grandplusinsurance.com/index.php/pages__trashed/contact/",
+    "4 ürün sayfası",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Ana sayfadaki '10K+ mutlu müşteri', '%100 müşteri memnuniyeti', '65B+ dosya işlemi', '10 yıl tecrübe': doğrulanamaz sayı ve iddia.",
+    "'Hızlı onay garantisi', 'AB standartları', 'sağlam mali yapı': iddia ve taahhüt.",
+    "Arama sayfasındaki şablondan kalma yabancı adres ve metinler; sosyal medya bağlantılarının platform ana sayfasına gitmesi: kusur yazılmaz."
+  ]
+}

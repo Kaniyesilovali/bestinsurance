@@ -1,0 +1,175 @@
+{
+  "slug": "dagli-sigorta",
+  "ad": "Dağlı Sigorta",
+  "ad_ilgi": "Dağlı Sigorta'nın",
+  "unvan": "DAĞLI SİGORTA CO LTD.",
+  "web": "https://www.daglisigorta.com/",
+  "merkez": "Gazimağusa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde DAĞLI SİGORTA CO LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım sayfasına göre 1967'de bir sigorta acentesi olarak kuruldu ve 1 Eylül 2001'de sigorta şirketi olarak tescil edildi.",
+      "kaynak": "https://www.daglisigorta.com/tr/kurumsal/hakkimizda"
+    },
+    {
+      "etiket": "Şubeler",
+      "metin": "Ana sayfada Lefkoşa, Gazimağusa, Girne ve İskele'de şubeleri olduğu belirtiliyor; genel müdürlük Gazimağusa'da.",
+      "kaynak": "https://www.daglisigorta.com/"
+    },
+    {
+      "etiket": "Acenteler",
+      "metin": "Acenteler sayfasında acenteler şehirlere göre (Gazimağusa, Lefkoşa, Girne, Güzelyurt, İskele) listeleniyor.",
+      "kaynak": "https://www.daglisigorta.com/tr/acenteler/"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Ürünler; dijital güvenlik, kişisel ve aile, sağlık, ev, araç, işyeri ve sorumluluk başlıkları altında yirmiyi aşkın ürünle tanıtılıyor.",
+      "kaynak": "https://www.daglisigorta.com/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe, İngilizce, Rusça ve Yunanca.",
+      "kaynak": "https://www.daglisigorta.com/en"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede online sigorta satın alma ve poliçe numarası ya da plakayla poliçe arama bölümleri bulunuyor.",
+      "kaynak": "https://online.daglisigorta.com/"
+    },
+    {
+      "metin": "Şirketin bir mobil uygulaması var.",
+      "kaynak": "https://www.daglisigorta.com/tr/kurumsal/hakkimizda"
+    },
+    {
+      "metin": "Anlaşmalı oto servisleri, sağlık kurumları ve çekicilerin aranabildiği bir sayfa bulunuyor.",
+      "kaynak": "https://www.daglisigorta.com/tr/anlasmali-kurumlar/"
+    },
+    {
+      "metin": "Hasar işlemleri sayfasında ev, araç, işyeri, sağlık ve diğer hasarlar için ayrı bilgilendirme bölümleri var.",
+      "kaynak": "https://www.daglisigorta.com/tr/hasar-islemleri/"
+    },
+    {
+      "metin": "Yangın, trafik ve kasko genel şartları sitede yayımlanıyor.",
+      "kaynak": "https://www.daglisigorta.com/"
+    }
+  ],
+  "iletisim": {
+    "adres": "İsmet İnönü Bulvarı No:104/B, Gazimağusa",
+    "telefon": "+90 392 444 09 00",
+    "whatsapp": "+90 533 884 09 00",
+    "eposta": "info@daglisigorta.com",
+    "instagram": "https://www.instagram.com/daglisigortaltd/",
+    "facebook": "https://www.facebook.com/dagliinsurance",
+    "kaynak": "https://www.daglisigorta.com/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Trafik sigortası",
+      "kisa": "Üçüncü kişilere verilen zararlar için zorunlu sigorta.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/trafik-sigortasi"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko, Elit Kasko ve kısmi kasko",
+      "kisa": "Aracın kendisine gelen zararlar için kasko seçenekleri.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/kasko-sigortasi"
+    },
+    {
+      "slug": "konut-paket",
+      "brans": "konut",
+      "ad": "Konut paket sigortası",
+      "kisa": "Yıldırımdan depreme, hırsızlıktan yangına ev için.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/konut-paket-sigortasi"
+    },
+    {
+      "slug": "isyeri-paket",
+      "brans": "isyeri",
+      "ad": "İşyeri ve eczane paket sigortası",
+      "kisa": "İşyerleri ve eczaneler için paket sigortalar.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/isyeri-paket-sigortasi"
+    },
+    {
+      "slug": "acil-saglik",
+      "brans": "saglik",
+      "ad": "Acil sağlık sigortası",
+      "kisa": "Acil sağlık durumları için.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/acil-saglik-sigortasi"
+    },
+    {
+      "slug": "seyahat-saglik",
+      "brans": "seyahat",
+      "ad": "Seyahat sağlık sigortası",
+      "kisa": "Seyahatteki sağlık riskleri için.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/seyahat-saglik-sigortasi"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza ve Ailem Güvende",
+      "kisa": "Kazaların sigortalı ve aile üzerindeki sonuçları için.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/ferdi-kaza-sigortasi"
+    },
+    {
+      "slug": "kredi-hayat",
+      "brans": "hayat",
+      "ad": "Kredi hayat ve eğitim güvence sigortası",
+      "kisa": "Kredi borcu ve çocuğun eğitimine yönelik güvence.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/kredi-hayat-sigortasi"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat (emtea) sigortası",
+      "kisa": "Taşınan mal için.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/nakliyat-emtea-sigortasi"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "Üçüncü şahıs, işveren, mesleki, doktor mesleki ve asansör sorumluluk.",
+      "kaynak": "https://www.daglisigorta.com/tr/sigortalar/sorumlulugum"
+    },
+    {
+      "slug": "siber",
+      "brans": "sorumluluk",
+      "ad": "Dijital güvenlik sigortaları",
+      "kisa": "Siber risklere karşı bireysel ve kurumsal ürünler.",
+      "kaynak": "https://www.daglisigorta.com/tr/sigortalar/dijital-guvenligim"
+    },
+    {
+      "slug": "emniyeti-suistimal",
+      "brans": "isyeri",
+      "ad": "Emniyeti suistimal sigortası",
+      "kisa": "Çalışanların neden olduğu maddi zararlar için.",
+      "kaynak": "https://www.daglisigorta.com/tr/s/emniyeti-suistimal-sigortasi"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.daglisigorta.com/",
+    "https://www.daglisigorta.com/tr/kurumsal/hakkimizda",
+    "https://www.daglisigorta.com/tr/hasar-islemleri/",
+    "https://www.daglisigorta.com/tr/anlasmali-kurumlar/",
+    "https://www.daglisigorta.com/tr/acenteler/",
+    "ürün sayfaları",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Acente sayısı: sitede iki farklı sayı (25 ve 22) geçiyor; yazılmadı.",
+    "'24 saat içinde ödeme', 'en saygın ve en büyük', 'ruhsat alan ilk şirket', 'güçlü mali yapı', 'AB standartları': iddia ve taahhüt.",
+    "Anlaşmalı kurum ve servis sayıları: sitede iki farklı sayı; yazılmadı.",
+    "Kurucu ve aile üyelerinin adları, ilk poliçenin kime düzenlendiği: kişi adı.",
+    "Başka bir şirketin acenteliği geçmişi: başka şirketle bağ; yazılmadı."
+  ]
+}

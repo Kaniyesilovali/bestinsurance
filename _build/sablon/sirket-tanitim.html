@@ -96,7 +96,7 @@
         </div>
         {% endfor %}
       </dl>
-      <p class="text-[13px] text-muted mt-5">Kaynak: <a href="{{ t.iletisim_kaynak }}" rel="nofollow noopener" class="link-u">{{ t.web_kisa }}</a></p>
+      <p class="text-[13px] text-muted mt-5">Kaynak: <a href="{{ t.iletisim_kaynak }}" rel="nofollow noopener" class="link-u">{{ t.iletisim_kaynak_kisa }}</a></p>
     </div>
   </div>
 </section>
@@ -143,9 +143,10 @@
     <div class="max-w-prose space-y-4 text-[14px] leading-relaxed text-muted">
       <p>
         <strong class="text-text">Bu sayfa nasıl hazırlandı.</strong>
-        Bilgiler yalnızca {{ t.ad_ilgi }} kendi web sitesinden
+        {% if t.web %}Bilgiler yalnızca {{ t.ad_ilgi }} kendi web sitesinden
         (<a href="{{ t.web }}" rel="nofollow noopener" class="link-u">{{ t.web_kisa }}</a>) ve
-        Birlik üye listesinden alındı. Sayfa yorum, değerlendirme ya da karşılaştırma
+        Birlik üye listesinden alındı.{% else %}Şirketin bir web sitesi bulunmadığı için
+        bilgiler yalnızca Birlik üye listesinden alındı.{% endif %} Sayfa yorum, değerlendirme ya da karşılaştırma
         içermez; mali bilgi yer almaz. Şirketin sitesi düzenli aralıklarla yeniden
         kontrol edilir. Son kontrol: {{ t.kontrol_metni }}.
       </p>

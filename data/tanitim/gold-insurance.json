@@ -1,0 +1,106 @@
+{
+  "slug": "gold-insurance",
+  "ad": "Gold Insurance",
+  "ad_ilgi": "Gold Insurance'ın",
+  "unvan": "GOLD INSURANCE LTD.",
+  "web": "https://www.gold-insurance.com/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde GOLD INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Faaliyet süresi",
+      "metin": "Şirketin sitesine göre 25 yıldır KKTC'de sigorta sektöründe hizmet veriyor.",
+      "kaynak": "https://www.gold-insurance.com/hizmetlerimiz"
+    },
+    {
+      "etiket": "Ofis",
+      "metin": "İletişim sayfasında Lefkoşa Yenişehir'deki genel müdürlük adresi veriliyor.",
+      "kaynak": "https://www.gold-insurance.com/iletisim"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitede on ürünün ayrı sayfası var: motorlu kara araçları, yangın, nakliyat, ferdi kaza ile üçüncü şahıs, işveren, mesleki, nakliyeci, asansör kaza ve inşaat mali sorumluluk sigortaları.",
+      "kaynak": "https://www.gold-insurance.com/hizmetlerimiz"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe ve İngilizce.",
+      "kaynak": "https://www.gold-insurance.com/en"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Sitede bir online şube bağlantısı bulunuyor.",
+      "kaynak": "http://police.gold-insurance.com"
+    },
+    {
+      "metin": "Ürün sayfalarında ilgili yasa ve genel şartlara, Birlik sitesindeki resmî metinler üzerinden bağlantı veriliyor; sitede yasalar, tüzükler, genelgeler ve genel şartlar için ayrı bir mevzuat bölümü var.",
+      "kaynak": "https://www.gold-insurance.com/genel-sartlar"
+    },
+    {
+      "metin": "Sitede belirtilen çalışma saatleri: hafta içi 08.30–17.30.",
+      "kaynak": "https://www.gold-insurance.com/iletisim"
+    }
+  ],
+  "iletisim": {
+    "adres": "19 Şht. İhsan Güven Sokak, Yenişehir, Lefkoşa",
+    "telefon": "+90 392 228 65 00",
+    "facebook": "https://www.facebook.com/insurancegold",
+    "kaynak": "https://www.gold-insurance.com/iletisim"
+  },
+  "urunler": [
+    {
+      "slug": "motorlu-arac",
+      "brans": "kasko",
+      "ad": "Motorlu kara araçları sigortası",
+      "kisa": "Zorunlu trafik ve isteğe bağlı kasko.",
+      "kaynak": "https://www.gold-insurance.com/motorlu-kara-araclari-sigortasi"
+    },
+    {
+      "slug": "yangin",
+      "brans": "konut",
+      "ad": "Yangın sigortası",
+      "kisa": "Konut ve işyeri için yangın, yıldırım ve infilak; ek teminatlarla genişletilebiliyor.",
+      "kaynak": "https://www.gold-insurance.com/yangin-sigortasi"
+    },
+    {
+      "slug": "nakliyat",
+      "brans": "nakliyat",
+      "ad": "Nakliyat sigortası",
+      "kisa": "Yurt içi ve yurt dışı taşımalar için.",
+      "kaynak": "https://www.gold-insurance.com/nakliyat-sigortasi"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Bireysel kazalara karşı.",
+      "kaynak": "https://www.gold-insurance.com/ferdi-kaza"
+    },
+    {
+      "slug": "sorumluluk",
+      "brans": "sorumluluk",
+      "ad": "Sorumluluk sigortaları",
+      "kisa": "Üçüncü şahıs, işveren, mesleki, nakliyeci, asansör kaza ve inşaat mali sorumluluk.",
+      "kaynak": "https://www.gold-insurance.com/3-sahis-mali-sorumluluk"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.gold-insurance.com/",
+    "https://www.gold-insurance.com/en",
+    "https://www.gold-insurance.com/hizmetlerimiz",
+    "https://www.gold-insurance.com/iletisim",
+    "10 ürün sayfası",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Sitede görünen tek e-posta şablon adresi (destek@ornek.com): yazılmadı.",
+    "'Sigorta çözümleri sunan bir lider', 'en iyi sigorta hizmeti', 'uygun fiyatlar': reklam iddiası."
+  ]
+}

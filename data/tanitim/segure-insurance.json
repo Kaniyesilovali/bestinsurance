@@ -1,0 +1,37 @@
+{
+  "slug": "segure-insurance",
+  "ad": "Segure Insurance",
+  "ad_ilgi": "Segure Insurance'ın",
+  "unvan": "SEGURE INSURANCE LTD.",
+  "web": "",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde SEGURE INSURANCE LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kaynak",
+      "metin": "Şirketin web sitesinden okunabilen bir tanıtım bilgisi bulunamadığı için bu sayfadaki bilgiler Birlik üye listesinden alındı. Ürün bilgisi için şirketle doğrudan iletişime geçilebilir.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    }
+  ],
+  "hizmetler": [],
+  "iletisim": {
+    "adres": "Hekim İzzet Bey Sokak No:13, Ortaköy, Lefkoşa",
+    "telefon": "(0392) 224 08 52",
+    "kaynak": "https://www.kksrsb.org/uyelerimiz.html",
+    "eposta": "info@segureinsurance.com"
+  },
+  "urunler": [],
+  "taranan_sayfalar": [
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Alan adı ve sunucu ölçümleri (DNS, HTTP, SSL): şirketin sitesi hakkında teknik kusur bildirimi; yazılmaz.",
+    "Birlik listesindeki kişi adları: yazılmaz."
+  ]
+}
