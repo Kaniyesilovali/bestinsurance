@@ -1,0 +1,197 @@
+{
+  "slug": "alfa-sigorta",
+  "ad": "Alfa Sigorta",
+  "ad_ilgi": "Alfa Sigorta'nın",
+  "unvan": "ALFA SİGORTA CO. LTD.",
+  "web": "https://www.alfasigorta.net/",
+  "merkez": "Lefkoşa",
+  "kontrol_tarihi": "2026-10-03",
+  "onay": "bekliyor",
+  "olgular": [
+    {
+      "etiket": "Birlik üyeliği",
+      "metin": "Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesinde ALFA SİGORTA CO. LTD. unvanıyla yer alıyor.",
+      "kaynak": "https://www.kksrsb.org/uyelerimiz.html"
+    },
+    {
+      "etiket": "Kuruluş",
+      "metin": "Şirketin tanıtım metnine göre kuruluş işlemleri 2021'de tamamlandı.",
+      "kaynak": "https://www.alfasigorta.net/hakkimizda"
+    },
+    {
+      "etiket": "Şubeler",
+      "metin": "Tanıtım metninde Lefkoşa'daki merkezle birlikte Gazimağusa, Girne ve İskele şubeleri sayılıyor.",
+      "kaynak": "https://www.alfasigorta.net/hakkimizda"
+    },
+    {
+      "etiket": "Ürünler",
+      "metin": "Sitesinde altı ürünün ayrı sayfası var: zorunlu trafik, kasko, acil sağlık, konut, işyeri ve ferdi kaza.",
+      "kaynak": "https://www.alfasigorta.net/"
+    },
+    {
+      "etiket": "Site dili",
+      "metin": "Türkçe.",
+      "kaynak": "https://www.alfasigorta.net/"
+    }
+  ],
+  "hizmetler": [
+    {
+      "metin": "Ürün sayfalarında fiyat teklifi almanın ve poliçe satın almanın site üzerinden yapılabildiği belirtiliyor.",
+      "kaynak": "https://www.alfasigorta.net/"
+    },
+    {
+      "metin": "Zorunlu trafik sigortası sayfasına göre poliçe, site üzerindeki hesap bölümünden görüntülenip yenilenebiliyor.",
+      "kaynak": "https://www.alfasigorta.net/urunlerimiz/zorunlu-trafik-sigortasi"
+    },
+    {
+      "metin": "Zorunlu trafik sigortası sayfasında 7/24 hizmet veren bir hasar ihbar hattı belirtiliyor.",
+      "kaynak": "https://www.alfasigorta.net/urunlerimiz/zorunlu-trafik-sigortasi"
+    },
+    {
+      "metin": "Sitede acentelik için bir başvuru formu bulunuyor.",
+      "kaynak": "https://www.alfasigorta.net/agency"
+    }
+  ],
+  "iletisim": {
+    "adres": "Marmara Bölgesi 4. Sok. No:4, Eski Ayko Ayakkabı Fabrikası Yolu, Lefkoşa",
+    "telefon": "444 25 32",
+    "eposta": "info@alfasigorta.net",
+    "instagram": "https://www.instagram.com/alfasigortakibris",
+    "facebook": "https://www.facebook.com/alfasigortakibris",
+    "kaynak": "https://www.alfasigorta.net/"
+  },
+  "urunler": [
+    {
+      "slug": "trafik",
+      "brans": "trafik",
+      "ad": "Zorunlu trafik sigortası",
+      "kisa": "Sürücünün kusurlu olduğu kazada üçüncü kişilere verilen zararlar için yasal sigorta.",
+      "kaynak": "https://www.alfasigorta.net/urunlerimiz/zorunlu-trafik-sigortasi",
+      "belgeler": [
+        {
+          "ad": "Zorunlu Trafik Sigortası Genel Şartları",
+          "url": "https://www.alfasigorta.net/sites/default/files/2020-11/MotorluAraclarZorunluSigortalarGenelSartlari.pdf"
+        },
+        {
+          "ad": "Zorunlu Trafik Sigortası Maddi Hasar Bildirim Formu",
+          "url": "https://www.alfasigorta.net/sites/default/files/2020-11/trafikhasarformu_0.pdf"
+        }
+      ],
+      "genel_rehber": "/tr/sigorta/trafik/",
+      "baslik": "Alfa Sigorta zorunlu trafik sigortası: kapsam ve işlemler",
+      "aciklama": "Alfa Sigorta zorunlu trafik sigortası: şirketin anlattığı kapsam, online işlemler, belgeler ve KKTC'de trafik sigortasının genel çerçevesi.",
+      "govde": "data/tanitim/alfa-sigorta/trafik.md"
+    },
+    {
+      "slug": "kasko",
+      "brans": "kasko",
+      "ad": "Kasko sigortası",
+      "kisa": "Aracın kendisine gelen zararlar için; kısmi ve tam olmak üzere iki seçenekle.",
+      "kaynak": "https://www.alfasigorta.net/urunlerimiz/kasko-sigortasi",
+      "belgeler": [
+        {
+          "ad": "Kasko Sigortası Genel Şartları'nda Sınıflandırma",
+          "url": "https://www.alfasigorta.net/sites/default/files/2020-11/KaskoSigortasiGenelSartlarSiniflandirma.pdf"
+        },
+        {
+          "ad": "Kasko Sigortası Maddi Hasar Bildirim Formu",
+          "url": "https://www.alfasigorta.net/sites/default/files/2020-11/kaskohasarformu.pdf"
+        }
+      ],
+      "genel_rehber": "/tr/sigorta/kasko/",
+      "baslik": "Alfa Sigorta kasko: kısmi ve tam kasko teminatları",
+      "aciklama": "Alfa Sigorta kasko sigortası: kısmi ve tam kasko arasındaki teminat farkı, hasar anındaki yükümlülükler, belgeler ve KKTC'de kasko.",
+      "govde": "data/tanitim/alfa-sigorta/kasko.md"
+    },
+    {
+      "slug": "acil-saglik",
+      "brans": "saglik",
+      "ad": "Acil sağlık sigortası",
+      "kisa": "Müdahale edilmezse hayati tehlike doğuran acil durumlar için sağlık güvencesi.",
+      "kaynak": "https://www.alfasigorta.net/urunlerimiz/acil-saglik-sigortasi",
+      "belgeler": [
+        {
+          "ad": "Sigorta Hizmetleri (Düzenleme ve Denetim) Yasası",
+          "url": "https://www.alfasigorta.net/sites/default/files/2020-11/sgrthizmetleriduzenlemedenetlemeyasasi_0.pdf"
+        }
+      ],
+      "genel_rehber": "/tr/sigorta/saglik/",
+      "baslik": "Alfa Sigorta acil sağlık sigortası: kapsam ve acil durumlar",
+      "aciklama": "Alfa Sigorta acil sağlık sigortası: şirketin acil saydığı durumlar, ürün tanımı ve KKTC'de Sağlık Fonu ile özel poliçe farkı.",
+      "govde": "data/tanitim/alfa-sigorta/acil-saglik.md"
+    },
+    {
+      "slug": "konut",
+      "brans": "konut",
+      "ad": "Konut sigortası",
+      "kisa": "Ev ve içindeki eşyalar için afet ve hasarlara karşı güvence.",
+      "kaynak": "https://www.alfasigorta.net/urunlerimiz/konut-sigortasi",
+      "belgeler": [
+        {
+          "ad": "Sigorta Hizmetleri (Düzenleme ve Denetim) Yasası",
+          "url": "https://www.alfasigorta.net/sites/default/files/2020-11/sgrthizmetleriduzenlemedenetlemeyasasi_1.pdf"
+        }
+      ],
+      "genel_rehber": "/tr/sigorta/konut/",
+      "baslik": "Alfa Sigorta konut sigortası: kapsam ve teminatlar",
+      "aciklama": "Alfa Sigorta konut sigortası: şirketin örnek verdiği riskler, deprem teminatı, bina ve eşya ayrımı ve poliçe öncesi dört soru.",
+      "govde": "data/tanitim/alfa-sigorta/konut.md"
+    },
+    {
+      "slug": "isyeri",
+      "brans": "isyeri",
+      "ad": "İşyeri sigortası",
+      "kisa": "Bina, demirbaş, emtia ve makine-tesisatı tek pakette toplayan ürün.",
+      "kaynak": "https://www.alfasigorta.net/urunlerimiz/isyeri-sigortasi",
+      "belgeler": [
+        {
+          "ad": "Sigorta Hizmetleri (Düzenleme ve Denetim) Yasası",
+          "url": "https://www.alfasigorta.net/sites/default/files/2020-11/sgrthizmetleriduzenlemedenetlemeyasasi.pdf"
+        }
+      ],
+      "genel_rehber": "/tr/sigorta/isyeri/",
+      "baslik": "Alfa Sigorta işyeri sigortası: teminatlar ve fiyat",
+      "aciklama": "Alfa Sigorta işyeri sigortası: ürün sayfasında sayılan teminatlar, fiyatın neye göre hesaplandığı ve KKTC'de işletmeler için çerçeve.",
+      "govde": "data/tanitim/alfa-sigorta/isyeri.md"
+    },
+    {
+      "slug": "ferdi-kaza",
+      "brans": "ferdi_kaza",
+      "ad": "Ferdi kaza sigortası",
+      "kisa": "Sigortalının başına gelen kazaların sonuçlarına karşı kişisel güvence.",
+      "kaynak": "https://www.alfasigorta.net/urunlerimiz/ferdi-kaza-sigortasi",
+      "belgeler": [
+        {
+          "ad": "Ferdi kaza sigortası teminatları",
+          "url": "https://www.alfasigorta.net/sites/default/files/2020-11/Ferdikazasigortateminatlari.pdf"
+        }
+      ],
+      "genel_rehber": "",
+      "baslik": "Alfa Sigorta ferdi kaza sigortası: teminatlar ve kapsam",
+      "aciklama": "Alfa Sigorta ferdi kaza sigortası: vefat, daimi maluliyet ve ek teminatlar, kapsam dışı riskler ve sigorta bedelinin belirlenmesi.",
+      "govde": "data/tanitim/alfa-sigorta/ferdi-kaza.md"
+    }
+  ],
+  "taranan_sayfalar": [
+    "https://www.alfasigorta.net/",
+    "https://www.alfasigorta.net/hakkimizda",
+    "https://www.alfasigorta.net/agency",
+    "https://www.alfasigorta.net/urunlerimiz/zorunlu-trafik-sigortasi",
+    "https://www.alfasigorta.net/urunlerimiz/kasko-sigortasi",
+    "https://www.alfasigorta.net/urunlerimiz/acil-saglik-sigortasi",
+    "https://www.alfasigorta.net/urunlerimiz/konut-sigortasi",
+    "https://www.alfasigorta.net/urunlerimiz/isyeri-sigortasi",
+    "https://www.alfasigorta.net/urunlerimiz/ferdi-kaza-sigortasi",
+    "https://www.kksrsb.org/uyelerimiz.html"
+  ],
+  "yazilmayanlar": [
+    "Tanıtım sayfasındaki 'KKTC'nin 1 numaralı sigorta şirketi' ifadesi: şirketin kendi reklam iddiası, olgu olarak aktarılmaz.",
+    "'20'ye yakın acente adayı': aday sayısı, acente sayısı değil; 2021'de gelecek zamanla yazılmış.",
+    "Faaliyete 2022 başında başlanacağı cümlesi: gelecek zamanlı niyet beyanı.",
+    "Zorunlu trafik sayfasındaki teminat tutarları: rakam ve limit yazılmaz.",
+    "Kasko sayfasındaki bildirim ve ödeme süreleri (gün sayıları): rakam yazılmaz; soru başlığı listelenir.",
+    "'Hızlı onay garantisi', 'en uygun fiyatlar', 'internete özel indirimler': reklam iddiası.",
+    "Konut, işyeri, acil sağlık ve ferdi kaza sayfalarındaki teminat tabloları: 'yapım aşamasında' notlu ve yer tutucu değerli.",
+    "Yanıt vermeyen bağlantılar (Tarihçe, Değerlerimiz, Yönetim Kurulu, Bizden Haberler, İletişim, bir kasko belgesi, bir yasa belgesi): listelenmez, hakkında yorum yazılmaz."
+  ]
+}

@@ -24,6 +24,7 @@ KOK = Path(__file__).resolve().parent.parent
 SABLON = KOK / "_build" / "sablon"
 ICERIK = KOK / "content"
 CIKTI = KOK / "dist"
+TANITIM_KOK = KOK / "data" / "tanitim"   # şirket tanıtım verisi, bkz. sirket_tanitimi()
 
 try:
     import markdown as md_kutuphane
@@ -885,6 +886,9 @@ class Uretici:
         sablon = self.jinja.get_template("sirket-profil.html")
 
         for s in veri:
+            # Tanıtım dosyası olan şirketin sayfasını sirket_tanitimi() üretir.
+            if (TANITIM_KOK / f"{s['slug']}.json").is_file():
+                continue
             branslar = set(s.get("branslar") or [])
             sehirler = s.get("ofis_sehirler") or ([s["sehir"]] if s.get("sehir") else [])
 
@@ -1175,6 +1179,164 @@ class Uretici:
             bag["hreflang"] = {"tr": url}
             govde = sablon.render(p=p, **bag)
             self.sayfa_yaz(url, bag, govde, date(2026, 7, 24))
+
+    # -- Şirket tanıtımı ve şirket × ürün sayfaları -------------------------
+
+    def sirket_tanitimi(self):
+        """data/tanitim/<slug>.json → /tr/sirketler/<slug>/ ve /tr/sirketler/<slug>/<urun>/.
+
+        Puanlamanın yerini alan sayfa. Yalnızca şirketin kendi sitesinde yazanı
+        şirkete atıfla aktarır: yorum, sıfat, karşılaştırma, rakam ve mali bilgi
+        yok; bir şeyin yokluğu da yazılmaz. Metinler veri dosyasında elle yazılır,
+        burada cümle üretilmez — SSS cevapları bile yalnızca olguları yeniden dizer.
+        Kurallar ve tarama sırası: copy/05-sirket-tanitim.md.
+        """
+        if not TANITIM_KOK.is_dir():
+            return
+        AY = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz",
+              "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
+        karsilastirma = {}
+        kar_yolu = KOK / "data" / "ad-karisikliklari.json"
+        if kar_yolu.is_file():
+            for kay in json.loads(kar_yolu.read_text(encoding="utf-8")).get("kayitlar", []):
+                for sl in kay["taraflar"]:
+                    karsilastirma.setdefault(sl, []).append({
+                        "url": f"/tr/sirketler/karsilastirma/{kay['slug']}/", "h1": kay["h1"]})
+
+        sablon = self.jinja.get_template("sirket-tanitim.html")
+        sablon_urun = self.jinja.get_template("sirket-urun.html")
+
+        for dosya in sorted(TANITIM_KOK.glob("*.json")):
+            v = json.loads(dosya.read_text(encoding="utf-8"))
+            kontrol = date.fromisoformat(v["kontrol_tarihi"])
+            url = f"/tr/sirketler/{v['slug']}/"
+            web_kisa = re.sub(r"^https?://(www\.)?|/$", "", v["web"])
+
+            urunler = [dict(u, url=f"{url}{u['slug']}/") for u in v.get("urunler", [])]
+
+            il = v.get("iletisim") or {}
+            iletisim = []
+            if il.get("adres"):
+                iletisim.append(("Adres", il["adres"], ""))
+            if il.get("telefon"):
+                iletisim.append(("Telefon", il["telefon"],
+                                 "tel:" + re.sub(r"[^\d+]", "", il["telefon"])))
+            if il.get("eposta"):
+                iletisim.append(("E-posta", il["eposta"], ""))
+            if il.get("whatsapp"):
+                iletisim.append(("WhatsApp", il["whatsapp"], ""))
+            for ag in ("instagram", "facebook"):
+                if il.get(ag):
+                    iletisim.append((ag.capitalize(),
+                                     re.sub(r"^https?://(www\.)?", "", il[ag]), il[ag]))
+
+            # SSS: yalnızca yukarıdaki olguları yeniden dizer, bilgi eklemez.
+            olgu = {o["etiket"]: o["metin"] for o in v.get("olgular", [])}
+            sss = []
+            if "Ürünler" in olgu:
+                sss.append({"soru": f"{v['ad']} hangi sigortaları sunuyor?",
+                            "cevap": olgu["Ürünler"]})
+            if "Şubeler" in olgu:
+                sss.append({"soru": f"{v['ad']} şubeleri nerede?", "cevap": olgu["Şubeler"]})
+            if iletisim:
+                sss.append({"soru": f"{v['ad']} ile nasıl iletişime geçilir?",
+                            "cevap": " ".join(f"{k}: {d}." for k, d, _ in iletisim
+                                              if k in ("Adres", "Telefon", "E-posta"))})
+            if "Birlik üyeliği" in olgu:
+                sss.append({"soru": f"{v['ad']} ruhsatlı bir sigorta şirketi mi?",
+                            "cevap": olgu["Birlik üyeliği"]})
+
+            t = {
+                "ad": v["ad"], "ad_ilgi": v["ad_ilgi"], "url": url,
+                "merkez": v["merkez"], "web": v["web"], "web_kisa": web_kisa,
+                "kontrol_metni": f"{kontrol.day} {AY[kontrol.month - 1]} {kontrol.year}",
+                "giris": (f"{v['unvan']}, Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri "
+                          f"Birliği üyesi, {v['merkez']} merkezli bir sigorta şirketidir. "
+                          f"Bu sayfada şirketin kendi web sitesinde yayımladığı bilgileri "
+                          f"derledik."),
+                "olgular": v.get("olgular", []), "hizmetler": v.get("hizmetler", []),
+                "urunler": urunler, "iletisim": iletisim,
+                "iletisim_kaynak": il.get("kaynak", v["web"]),
+                "karsilastirma": karsilastirma.get(v["slug"], []), "sss": sss,
+            }
+
+            varlik = {"@type": "Organization", "name": v["unvan"], "alternateName": v["ad"],
+                      "url": v["web"], "areaServed": "Cyprus",
+                      "address": {"@type": "PostalAddress", "addressLocality": v["merkez"],
+                                  "addressRegion": "Kuzey Kıbrıs", "addressCountry": "CY"}}
+            sameas = [x for x in (v["web"], il.get("instagram"), il.get("facebook")) if x]
+            varlik["sameAs"] = sameas
+            if il.get("eposta"):
+                varlik["email"] = il["eposta"]
+            if il.get("telefon"):
+                varlik["telephone"] = il["telefon"]
+
+            def kirinti(*adimlar):
+                return json.dumps({
+                    "@context": "https://schema.org", "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": i + 1, "name": ad,
+                         "item": f"{self.alan_adi}{u}"}
+                        for i, (ad, u) in enumerate([("Ana sayfa", "/tr/"),
+                                                     ("Şirketler", "/tr/sirketler/"), *adimlar])],
+                }, ensure_ascii=False)
+
+            jsonld = [
+                json.dumps({"@context": "https://schema.org", "@type": "ProfilePage",
+                            "dateModified": kontrol.isoformat(), "mainEntity": varlik},
+                           ensure_ascii=False),
+                json.dumps({"@context": "https://schema.org", "@type": "FAQPage",
+                            "mainEntity": [{"@type": "Question", "name": q["soru"],
+                                            "acceptedAnswer": {"@type": "Answer", "text": q["cevap"]}}
+                                           for q in sss]}, ensure_ascii=False),
+                kirinti((v["ad"], url)),
+            ]
+            desc = (f"{v['ad']}: {v['merkez']} merkezli KKTC sigorta şirketi. Ürünleri, "
+                    f"şubeleri ve iletişim bilgileri; şirketin kendi sitesinden derlendi.")
+            bag = self.baglam(dil="tr", url=url, baslik=f"{v['ad']} — şirket tanıtımı",
+                              aciklama=desc, aktif_menu="sirketler", og_tur="profile",
+                              og_baslik=v["ad"], jsonld=jsonld)
+            bag["hreflang"] = {"tr": url}
+            self.sayfa_yaz(url, bag, sablon.render(t=t, **bag), kontrol)
+
+            # -- şirket × ürün ------------------------------------------------
+            for u in urunler:
+                kucuk = _tr_kucult(u["ad"])
+                h1 = f"{v['ad']} {kucuk}"
+                # Gövde elle yazılmış Markdown'dır; sonundaki "## Sıkça Sorulan
+                # Sorular" bölümünün ### başlıkları FAQPage şemasına da basılır.
+                md = (KOK / u["govde"]).read_text(encoding="utf-8")
+                sss_md = md.split("## Sıkça Sorulan Sorular", 1)[1] if "## Sıkça Sorulan Sorular" in md else ""
+                usss = []
+                for blok in re.split(r"^### ", sss_md, flags=re.M)[1:]:
+                    soru, _, cevap = blok.partition("\n")
+                    cevap = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", cevap).replace("**", "")
+                    usss.append({"@type": "Question", "name": soru.strip(),
+                                 "acceptedAnswer": {"@type": "Answer",
+                                                    "text": " ".join(cevap.split())}})
+                uu = dict(u, h1=h1,
+                          giris=(f"{u['kisa']} {v['ad_ilgi']} kendi sitesinde anlattıkları "
+                                 f"ve bu sigortanın KKTC'de genel olarak nasıl işlediği."),
+                          govde=govde_isle(md, True, self.cevirici),
+                          diger=[d for d in urunler if d["slug"] != u["slug"]])
+                ujsonld = [
+                    json.dumps({"@context": "https://schema.org", "@type": "WebPage",
+                                "name": h1, "dateModified": kontrol.isoformat(),
+                                "about": {"@type": "Service", "name": u["ad"],
+                                          "provider": {"@type": "Organization",
+                                                       "name": v["unvan"], "url": v["web"]}},
+                                "isBasedOn": u["kaynak"]}, ensure_ascii=False),
+                    kirinti((v["ad"], url), (u["ad"], u["url"])),
+                ]
+                if usss:
+                    ujsonld.append(json.dumps({"@context": "https://schema.org",
+                                               "@type": "FAQPage", "mainEntity": usss},
+                                              ensure_ascii=False))
+                ubag = self.baglam(dil="tr", url=u["url"], baslik=u.get("baslik", h1),
+                                   aciklama=u.get("aciklama", ""), aktif_menu="sirketler",
+                                   og_baslik=h1, jsonld=ujsonld)
+                ubag["hreflang"] = {"tr": u["url"]}
+                self.sayfa_yaz(u["url"], ubag, sablon_urun.render(t=t, u=uu, **ubag), kontrol)
 
     # -- İP-2: web varlığı doğrulanamayan şirketler --------------------------
 
@@ -1754,6 +1916,7 @@ class Uretici:
         self.varliklar()
         self.statik_sayfalar()
         self.sirket_profilleri()
+        self.sirket_tanitimi()
         self.veri_yok_sayfalari()
         self.ad_karisikliklari()
         self.sirket_branslari()

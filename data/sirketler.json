@@ -48,7 +48,7 @@
   "sehir": "Lefkoşa",
   "web": "alfasigorta.net",
   "http_durum": 200,
-  "kurulus_yili": null,
+  "kurulus_yili": 2021,
   "sirket_turu": "yerel",
   "branslar": [
    "trafik",
@@ -68,7 +68,10 @@
   "diller_makine": false,
   "acente_sayisi": null,
   "ofis_sehirler": [
-   "Lefkoşa"
+   "Lefkoşa",
+   "Gazimağusa",
+   "Girne",
+   "İskele"
   ],
   "email": "info@alfasigorta.net",
   "email_kurumsal": true,
