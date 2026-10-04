@@ -48,6 +48,8 @@ KKTC'de kaskoda da şirketlerin altına inemeyeceği bir taban prim belirlenir. 
 
 Kasko teklifi alırken ruhsat bilgileri, aracın kullanım şekli ve önceki poliçenizin hasarsızlık bilgisi elinizde olursa teklifleri karşılaştırmak kolaylaşır. Muafiyet ile prim arasındaki dengeyi de göz önünde bulundurun.
 
+Aracı satarken kaskonun devri ve prim iadesi hakkında da bilgi alın.
+
 ## Teklif alırken sorulacaklar
 
 1. Hangi ek teminatlar (deprem, enflasyon, yurtdışı) eklenecek?
