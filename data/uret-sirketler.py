@@ -360,30 +360,27 @@ def main():
         f'            <option value="{e(b)}">{e(BRANS_ADI[b])}</option>' for b in branslar)
 
     govde = f'''
-<section class="bg-ink text-white">
-  <div class="mx-auto max-w-shell px-5 sm:px-8 py-14 sm:py-16">
-    <nav aria-label="Konum" class="font-mono text-[11px] uppercase tracking-widest text-muteddark mb-6">
-      <a href="/tr/" class="hover:text-white">Ana sayfa</a> <span class="mx-2">/</span> Şirketler
+<section class="bg-white">
+  <div class="mx-auto max-w-shell px-[22px] pt-[72px] pb-[40px] sm:pt-[96px] sm:pb-[56px]">
+    <nav aria-label="Konum" class="text-[12px] text-muted mb-6">
+      <a href="/tr/" class="hover:text-text">Ana sayfa</a> <span class="mx-2">/</span> Şirketler
     </nav>
     <div class="max-w-prose">
-        <h1 class="u-display u-display--tight text-[2.25rem] sm:text-[3rem] leading-[1.05] mb-5">
-          KKTC'de güvenilir sigorta şirketi nasıl seçilir
+        <h1 class="u-display u-display--tight text-[2.25rem] sm:text-[3rem] leading-[1.05] mb-6">
+          KKTC sigorta şirketleri
         </h1>
-        <p class="text-[17px] leading-relaxed text-white/75 mb-4">
-          Güvenilirliğin ölçülebilen kısmı, şirketin kendisi hakkında ne yayımladığıdır.
-          Mali güç ve hasar ödeme verisi Kuzey Kıbrıs'ta şirket bazında yayımlanmıyor —
-          bu yüzden bu sayfada yok. Aşağıdaki {len(VERI)} ruhsatlı şirket için yalnızca
-          dışarıdan doğrulanabilen bilgileri derledik.
+        <p class="u-lead mb-4">
+          Kuzey Kıbrıs Sigorta ve Reasürans Şirketleri Birliği'nin üye listesindeki
+          {len(VERI)} şirket, alfabetik. Her şirketin tanıtım sayfasında ürünleri, şubeleri
+          ve iletişim bilgileri var; bilgilerin tamamı şirketlerin kendi sitelerinden alındı.
         </p>
-        <p class="text-[15px] leading-relaxed text-white/75 mb-4">
-          Listedeki her şirket KKTC Sigorta ve Reasürans Şirketleri Birliği üyesidir.
-          Acenteler ve brokerler bu listede yer almaz — poliçenizin arkasındaki risk
-          taşıyıcı onlar değildir.
+        <p class="text-[15px] leading-relaxed text-muted mb-4">
+          Acenteler ve brokerler bu listede yer almaz; poliçenizin tarafı sigorta şirketidir.
+          Şirketler hakkında puan, sıralama ya da mali bilgi yayımlamıyoruz.
         </p>
-        <p class="text-[15px] leading-relaxed text-white/55 border-s-2 border-sun ps-4">
-          Bir şirketi kendiniz kontrol etmek isterseniz sekiz işaret var; her biri
-          şirketin kendi sitesinden beş dakikada doğrulanır.
-          <a href="/tr/rehber/kktc-sigorta-sirketi-guvenilir-mi/" class="text-sun link-u">Güvenilirlik nasıl ölçülür</a>
+        <p class="text-[15px] leading-relaxed text-muted">
+          Poliçe almadan önce bir şirketi kendiniz kontrol etmek isterseniz:
+          <a href="/tr/rehber/kktc-sigorta-sirketi-guvenilir-mi/" class="text-sea link-u">şirketi neye bakarak değerlendirirsiniz</a>
         </p>
     </div>
   </div>

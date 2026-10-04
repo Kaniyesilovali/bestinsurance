@@ -1,134 +1,111 @@
 ---
-baslik: "KKTC'de trafik sigortasını online yaptırmak: hangi şirkette gerçekten mümkün"
+baslik: "KKTC'de trafik sigortasını online yaptırmak: hangi sitelerde mümkün"
 h1: "KKTC'de trafik sigortasını online yaptırmak"
 kisa_baslik: "Online trafik sigortası"
-aciklama: "Kuzey Kıbrıs'ta trafik sigortası yazan 29 şirketten 10'u poliçeyi uçtan uca online kesiyor, 4'ü yalnızca teklif veriyor, 15'inde online akış yok. Şirket şirket tablo."
-ozet: "\"Online trafik sigortası\" tek bir şey değil: online teklif, online poliçe ve online hasar ihbarı üç ayrı yetenek ve KKTC'de aynı şirkette bir arada bulunmuyor. Trafik yazan 29 ruhsatlı şirketin üçünde de nerede durduğunu ölçüp tabloya döktük."
-giris: "Kuzey Kıbrıs'ta trafik sigortasını internetten yaptırmak mümkün — ama her şirkette değil, ve \"online\" kelimesinin arkasında çoğu zaman poliçe değil yalnızca bir teklif formu var. Ruhsatlı 39 şirketin tamamını bu gözle inceledik."
+aciklama: "Kuzey Kıbrıs'ta trafik sigortasını internetten almak: online poliçe, online teklif, online ödeme ve hasar bildirimi farkı; sitelerinde bu hizmetleri gördüğümüz şirketler (Ekim 2026)."
+ozet: "\"Online trafik sigortası\" tek bir şey değil: online poliçe, online teklif, mevcut poliçeyi online ödeme ve online hasar bildirimi ayrı hizmetler. Ekim 2026'da şirketlerin kendi sitelerinde gördüklerimizi hizmet hizmet sıraladık."
+giris: "Kuzey Kıbrıs'ta trafik sigortasını internetten yaptırmak bazı şirketlerde mümkün. Ama \"online\" kelimesinin arkasında bazen poliçe, bazen yalnızca teklif formu ya da ödeme ekranı var. Şirketlerin kendi sitelerinde gördüklerimizi hizmet hizmet ayırdık."
 kategori: Şirket seçimi
 tarih: 2026-09-02
-guncelleme: 2026-09-02
-og_baslik: "KKTC online trafik sigortası — 29 şirkette ölçüldü"
-og_aciklama: "10 şirket poliçeyi uçtan uca online kesiyor, 4'ü yalnızca teklif veriyor, 15'inde online akış yok."
+guncelleme: 2026-10-04
+og_baslik: "KKTC online trafik sigortası: hangi sitelerde mümkün"
+og_aciklama: "Online poliçe, teklif, ödeme ve hasar bildirimi farkı; Ekim 2026'da şirket sitelerinde gördüklerimiz."
 url: /tr/rehber/kktc-online-trafik-sigortasi/
 ---
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"KKTC'de trafik sigortası online yaptırılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, ancak her şirkette değil. Kuzey Kıbrıs'ta trafik branşı yazan 29 ruhsatlı şirketten 10'unun sitesinde poliçeyi baştan sona internetten kesip ödeyebileceğiniz bir akış var. 4 şirket yalnızca teklif formu sunuyor; poliçe için ofis ya da acente gerekiyor. Kalan 15 şirkette hiçbir online akış bulunmuyor. Ölçüm Temmuz 2026'da şirketlerin kendi siteleri üzerinden yapıldı."}},
-{"@type":"Question","name":"Online trafik sigortası daha mı ucuz?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kuzey Kıbrıs'ta trafik sigortası fiyatları serbest değil: araç kullanım tarzına göre taban prim belirlenir ve hiçbir şirket bu tabanın altında fiyat veremez. Poliçeyi internetten almak bu tabanı değiştirmez. İnternetten aldığınız poliçe ile ofisten aldığınız poliçe arasındaki fark fiyat değil, süre ve kanaldır."}},
-{"@type":"Question","name":"Online teklif ile online poliçe aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Değil. Online teklif, bilgilerinizi girip bir fiyat ya da geri dönüş sözü aldığınız formdur. Online poliçe ise ödemenin de internetten yapılıp poliçenin size dijital olarak ulaşmasıdır. Kuzey Kıbrıs'ta \"online sigorta\" diyen sitelerin bir bölümünde yalnızca teklif formu var; poliçe için yine ofise ya da acenteye gidiliyor. Üçüncü ve en seyrek yetenek online hasar ihbarıdır — trafik yazan 29 şirketten yalnızca 5'inde bulunuyor."}},
-{"@type":"Question","name":"KKTC'de online kesilen trafik poliçesinin teminat limitleri farklı mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Poliçenin nereden alındığı teminatı değiştirmez. Kuzey Kıbrıs'ta zorunlu trafik sigortası mal zararında 1.200.000 TL, ölüm ve yaralanmada hususi araçlarda 8.000.000 TL, ticari araçlarda 15.000.000 TL'ye kadar teminat verir. Teminat, poliçenin internetten mi ofisten mi alındığına göre değişmez."}},
-{"@type":"Question","name":"Poliçeyi acentenin sitesinden almakla şirketin sitesinden almak arasında fark var mı?","acceptedAnswer":{"@type":"Answer","text":"Poliçenin tarafı her iki durumda da sigorta şirketidir; acente aracıdır. Fark, hasarda ve şikâyette muhatabınızın kim olduğunu bilmenizde ortaya çıkar — muhatap şirkettir. Online kanalda bu ayrım bulanıklaşabiliyor, çünkü ödeme alabilen bir acente sitesi ile şirketin kendi sitesi dışarıdan benzer görünüyor. Poliçeyi almadan önce ekranda hangi ruhsatlı şirketin adının geçtiğine bakın."}},
-{"@type":"Question","name":"Türkiye'de kullandığım online sigorta sitesinden KKTC plakalı aracıma poliçe alabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kuzey Kıbrıs'ta trafiğe çıkan araç için Fasıl 333 kapsamında burada ruhsatlı bir şirketten poliçe gerekir. Daha önce kullandığınız online sigorta sitesi bu poliçeyi düzenleyemez. KKTC'ye taşındıysanız aracınızın poliçesini bu sayfadaki ruhsatlı şirketlerden biri üzerinden yeniden kurmanız gerekir."}},
-{"@type":"Question","name":"Hangi şirketler online hasar ihbarı kabul ediyor?","acceptedAnswer":{"@type":"Answer","text":"Trafik branşı yazan 29 şirketten 5'inin sitesinde online hasar ihbarı kanalı bulduk: Limasol Sigorta, Can Sigorta, Creditwest Sigorta, AXA Sigorta ve GİG Sigorta. Kalan şirketlerde ihbar telefon, WhatsApp ya da ofis üzerinden yapılıyor. Bazı şirketler metinlerinde online ihbardan söz ediyor ancak sitede buna karşılık gelen bir form bulunmuyor; bu durumda ihbar kanalını var saymadık."}}
+{"@type":"Question","name":"KKTC'de trafik sigortası online yaptırılabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet, bazı şirketlerde. Ekim 2026'da Aveon Sigorta, BiCare Insurance, Can Sigorta, Creditwest Sigorta, Dağlı Sigorta ve Kıbrıs Sigorta'nın sitelerinde zorunlu trafik poliçesinin internetten satın alınabildiği bir bölüm gördük. Diğer şirketlerde poliçe ofis ya da acente üzerinden düzenleniyor."}},
+{"@type":"Question","name":"Online trafik sigortası daha mı ucuz?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kuzey Kıbrıs'ta araç kullanım tarzına göre bir taban prim belirlenir ve hiçbir şirket bu tabanın altında fiyat veremez. Poliçeyi internetten almak bu tabanı değiştirmez; fark fiyat değil, süre ve kanaldır."}},
+{"@type":"Question","name":"Online teklif ile online poliçe aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Değil. Online teklif, bilgilerinizi girip bir fiyat ya da geri dönüş sözü aldığınız formdur. Online poliçe ise ödemenin de internetten yapılıp poliçenin size dijital olarak ulaşmasıdır. Mevcut poliçeyi plaka ya da poliçe numarasıyla online ödemek ise üçüncü, ayrı bir hizmettir."}},
+{"@type":"Question","name":"Online alınan trafik poliçesinin teminatı farklı mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Zorunlu trafik sigortasının teminat limitlerini yasa ve tüzük belirler; poliçenin internetten mi ofisten mi alındığı teminatı değiştirmez."}},
+{"@type":"Question","name":"Türkiye'de kullandığım online sigorta sitesinden KKTC plakalı aracıma poliçe alabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kuzey Kıbrıs'ta trafiğe çıkan araç için Fasıl 333 kapsamında burada ruhsatlı bir şirketten poliçe gerekir."}},
+{"@type":"Question","name":"Hangi şirketlerin sitesinde online hasar bildirimi var?","acceptedAnswer":{"@type":"Answer","text":"Ekim 2026'da Can Sigorta, Creditwest Sigorta ve Limasol Sigorta'nın sitelerinde bir hasar bildirim ya da ihbar formu gördük. Birçok şirket ise hasar ihbarı için 7/24 telefon ya da WhatsApp hattı veriyor."}}
 ]}
 </script>
 
-Kuzey Kıbrıs'ta bir şirketin sitesinde "online işlemler" yazması, poliçeyi oradan kesebileceğiniz anlamına gelmiyor. Çoğu sitede bulduğunuz şey bir teklif formu; ödeme ve poliçe yine ofiste tamamlanıyor. Her şirket yalnızca kendi akışını anlattığı için, bu işi kaçının gerçekten uçtan uca yapabildiğini gösteren bir liste yok.
-
-Ruhsatlı 39 şirketin tamamının sitesini bu soruyla açtık. Aşağıdaki tablo o ölçümün sonucu.
+Kuzey Kıbrıs'ta bir şirketin sitesinde "online işlemler" yazması dört farklı şeyden birini anlatabilir: poliçeyi internetten satın almak, teklif istemek, mevcut poliçeyi ödemek ya da hasar bildirmek. Bu yazıda bu dört hizmeti ayırıyor ve Ekim 2026'da şirketlerin kendi sitelerinde hangi hizmeti gördüğümüzü sıralıyoruz.
 
 ## Kısa cevap
 
-Kuzey Kıbrıs'ta trafik branşı yazan **29 ruhsatlı şirket** var. Bunlardan:
+- **Online trafik poliçesi:** Ekim 2026'da Aveon Sigorta, BiCare Insurance, Can Sigorta, Creditwest Sigorta, Dağlı Sigorta ve Kıbrıs Sigorta'nın sitelerinde poliçenin internetten satın alınabildiği bir bölüm gördük.
+- **Fiyat:** Online almak poliçeyi ucuzlatmaz. KKTC'de taban tarife uygulanır; internet kanalı bu tabanı değiştirmez.
+- **Teminat:** Online alınan poliçenin teminatı ofisten alınanla aynıdır; limitleri yasa ve tüzük belirler.
 
-- **10 şirket** poliçeyi uçtan uca internetten kesiyor — bilgi girişi, ödeme ve poliçenin size ulaşması dahil.
-- **4 şirket** yalnızca online teklif formu sunuyor; poliçe için ofis ya da acente gerekiyor.
-- **15 şirkette** hiçbir online akış yok.
+Aşağıdaki listeler şirketlerin sitelerinde gördüklerimizden oluşur. Bir şirketin adının burada geçmemesi, o hizmeti sunmadığı anlamına gelmez; şirketin ofisine, acentesine ya da sitesine sorabilirsiniz.
 
-Online almak poliçeyi **ucuzlatmaz**. KKTC'de taban tarife uygulanır; internet kanalı bu tabanı değiştirmez.
+## "Online" dört ayrı hizmet demek
 
-## "Online" üç ayrı şey demek
+| Hizmet | Ne demek |
+|---|---|
+| **Online poliçe** | Bilgileri girer, ödemeyi internetten yapar, poliçeyi dijital olarak alırsınız |
+| **Online teklif** | Bilgilerinizi girersiniz; fiyat ya da geri dönüş sözü alırsınız |
+| **Online ödeme** | Mevcut poliçenizi plaka ya da poliçe numarasıyla bulup ödersiniz |
+| **Online hasar bildirimi** | Hasarı telefon yerine bir formla bildirirsiniz |
 
-Bu ayrım, sorgunun içinde saklı olan asıl soru. Bir şirketin sitesinde "online işlemler" yazması üç farklı şeyden herhangi birini kastediyor olabilir:
+## Sitesinde online trafik poliçesi gördüğümüz şirketler
 
-| Yetenek | Ne demek | Trafik yazan 29 şirkette |
-|---|---|---|
-| **Online teklif** | Bilgilerinizi girersiniz, fiyat ya da geri dönüş sözü alırsınız | 13 şirket |
-| **Online poliçe** | Ödeme de internetten yapılır, poliçe dijital olarak ulaşır | 10 şirket |
-| **Online hasar ihbarı** | Hasarı bir formla bildirirsiniz, telefonla değil | 5 şirket |
+Ekim 2026'da şirketlerin kendi sitelerinde gördüklerimiz:
 
-Üçü aynı şirkette bir arada nadiren bulunuyor. Poliçeyi online kesen 10 şirketin yalnızca 4'ünde online hasar ihbarı da var — yani poliçeyi dakikalar içinde alabildiğiniz şirketlerin çoğunda, iş hasara geldiğinde telefona dönüyorsunuz.
+| Şirket | Sitede gördüğümüz |
+|---|---|
+| [Aveon Sigorta](/tr/sirketler/aveon-sigorta/) | Zorunlu trafik poliçesinin internetten düzenlenebildiği ayrı bir online poliçe sayfası |
+| [BiCare Insurance](/tr/sirketler/bicare-insurance/) | Bireysel araçlar için online trafik poliçesi sayfası; ticari araçlar için şirketle iletişime geçilmesi isteniyor |
+| [Can Sigorta](/tr/sirketler/can-sigorta/) | Zorunlu trafik poliçesinin site üzerinden satın alınabildiği bölüm |
+| [Creditwest Sigorta](/tr/sirketler/creditwest-sigorta/) | Online sigortacılık ve araç sigortası satın alma bölümleri |
+| [Dağlı Sigorta](/tr/sirketler/dagli-sigorta/) | Online sigorta satın alma bölümü |
+| [Kıbrıs Sigorta](/tr/sirketler/kibris-sigorta/) | "Online Satın Al" bağlantısıyla açılan poliçe sayfası |
 
-## Poliçeyi uçtan uca online kesen 10 şirket
+Birkaç şirket poliçe akışını ayrı bir alt alan adında tutuyor (örneğin `police.` ile başlayan adresler). Ana sayfada yalnızca "Teklif Al" düğmesini görmek, online poliçe olmadığı anlamına gelmeyebilir.
 
-Temmuz 2026'da şirketlerin kendi siteleri üzerinden ölçüldü.
+Şirketlerin trafik sigortasını kendi sitelerinde nasıl anlattığını tek tek okumak isterseniz: [Aveon](/tr/sirketler/aveon-sigorta/trafik/), [BiCare](/tr/sirketler/bicare-insurance/trafik/), [Can](/tr/sirketler/can-sigorta/trafik/) ve [Dağlı](/tr/sirketler/dagli-sigorta/trafik/) trafik sigortası yazılarımız.
 
-| Şirket | Şehir | Online hasar ihbarı | Mobil uygulama |
-|---|---|---|---|
-| [Alfa Sigorta](/tr/sirketler/alfa-sigorta/) | Lefkoşa | — | — |
-| [Aveon Sigorta](/tr/sirketler/aveon-sigorta/) | Lefkoşa | — | — |
-| [Bicare Insurance](/tr/sirketler/bicare-insurance/) | Lefkoşa | — | — |
-| [Can Sigorta](/tr/sirketler/can-sigorta/) | Lefkoşa | var | — |
-| [Creditwest Sigorta](/tr/sirketler/creditwest-sigorta/) | Lefkoşa | var | — |
-| [Dağlı Sigorta](/tr/sirketler/dagli-sigorta/) | Gazimağusa | — | var |
-| [GİG Sigorta](/tr/sirketler/gig-sigorta/) | Lefkoşa | var | var |
-| [Kıbrıs Sigorta](/tr/sirketler/kibris-sigorta/) | Lefkoşa | — | — |
-| [Limasol Sigorta](/tr/sirketler/limasol-sigorta/) | Girne | var | — |
-| [Şeker Sigorta (Kıbrıs)](/tr/sirketler/seker-sigorta-kibris/) | Lefkoşa | — | — |
+## Mevcut poliçeyi online ödeme
 
-Birkaç şirket poliçe akışını ayrı bir alt alan adında tutuyor — örneğin Dağlı'da `police.daglisigorta.com`, Aveon'da `police.aveoninsurance.com`. Ana sayfada "Teklif Al" düğmesini görüp poliçe kesilemediği sonucuna varmak bu yüzden yanıltıcı olabiliyor.
+Ekim 2026'da şu şirketlerin sitelerinde mevcut poliçenin plaka ya da poliçe numarasıyla bulunup ödenebildiği ya da sorgulanabildiği bir bölüm gördük: [Can Sigorta](/tr/sirketler/can-sigorta/), [Dağlı Sigorta](/tr/sirketler/dagli-sigorta/), [Güven Sigorta](/tr/sirketler/guven-sigorta-kibris/), [Kıbrıs Sigorta](/tr/sirketler/kibris-sigorta/), [Limasol Sigorta](/tr/sirketler/limasol-sigorta/), [Şeker Sigorta](/tr/sirketler/seker-sigorta-kibris/) ve [Zirve Sigorta](/tr/sirketler/zirve-sigorta/). Bu bölümler poliçe yenilemesini ve taksit ödemesini kolaylaştırıyor; yeni poliçe düzenlemekle aynı şey değil.
 
-## Yalnızca teklif veren 4 şirket
+## Online hasar bildirimi ve hasar hatları
 
-Bu şirketlerin sitesinde form var, ödeme yok. Poliçe için ofis ya da acente gerekiyor.
+Ekim 2026'da [Can Sigorta](/tr/sirketler/can-sigorta/), [Creditwest Sigorta](/tr/sirketler/creditwest-sigorta/) ve [Limasol Sigorta](/tr/sirketler/limasol-sigorta/) sitelerinde bir hasar bildirim ya da ihbar formu gördük. Birçok şirket ise sitesinde 7/24 hizmet verdiği belirtilen bir telefon ya da WhatsApp hasar hattı veriyor. Kaza anında hangi bilgilerin isteneceğini [kaza sonrası ilk 48 saat](/tr/rehber/kaza-sonrasi-ilk-48-saat/) yazısında anlattık.
 
-[AXA Sigorta](/tr/sirketler/axa-sigorta/) · [Lightstar Insurance](/tr/sirketler/lightstar-insurance/) · [Northprime Insurance](/tr/sirketler/northprime-insurance/) · [Türk Sigorta](/tr/sirketler/turk-sigorta/)
-
-Kalan 15 şirkette teklif formu da poliçe akışı da bulamadık. Trafik branşı yazan şirketlerin **çoğunluğu** bu grupta — yani Kuzey Kıbrıs'ta online poliçe kural değil, istisna. Tamamı için [trafik yazan şirketler listesine](/tr/sirketler/trafik/) bakabilirsiniz.
+Sitesinde bir mobil uygulamaya bağlantı verdiğini gördüğümüz şirketler: [Anadolu Sigorta](/tr/sirketler/anadolu-sigorta/), [Dağlı Sigorta](/tr/sirketler/dagli-sigorta/) ve [Northprime Insurance](/tr/sirketler/northprime-insurance/).
 
 ## Online almak fiyatı değiştirmez
 
-Online kanalın en çok beklenen faydası indirimdir: teklifleri yan yana koy, en ucuzunu seç. **Kuzey Kıbrıs'ta bu beklentinin karşılığı yok**, çünkü fiyat serbest değil.
+KKTC'de araç kullanım tarzına göre bir taban prim belirlenir; hiçbir şirket bu tabanın altında fiyat veremez. Şirketler yeni tarifelerini uygulamaya koymadan önce ilgili daireye bildirmek zorundadır. Ayrıntısı [taban tarife yazısında](/tr/rehber/kktc-taban-tarife/).
 
-KKTC'de araç kullanım tarzına göre bir taban prim belirlenir; hiçbir şirket bu tabanın altında fiyat veremez. Şirketler yeni tarifelerini uygulamaya koymadan en az 10 gün önce Para, Kambiyo ve İnkişaf Sandığı İşleri Dairesi'ne ve Kuzey Kıbrıs Sigorta Bilgi Merkezi'ne bildirmek zorundadır. Ayrıntısı ve 2025 prim tablosu [taban tarife yazısında](/tr/rehber/kktc-taban-tarife/) duruyor.
-
-Pratik sonuç: internetten aldığınız poliçe ile ofisten aldığınız poliçe arasındaki fark fiyat değil, **süre ve kanal**. Şirketler arasındaki fark ise tabanın üstünde kalan payda ve hizmette ortaya çıkıyor.
-
-Teminat da değişmiyor. Poliçe nereden alınırsa alınsın, KKTC zorunlu trafik sigortası mal zararında 1.200.000 ₺, ölüm ve yaralanmada hususi araçlarda 8 milyon ₺, ticari araçlarda 15 milyon ₺'ye kadar teminat verir. Limitlerin tamamı ve neyin kapsam dışı kaldığı [zorunlu trafik sigortası sayfasında](/tr/sigorta/trafik/).
+Pratik sonuç: internetten aldığınız poliçe ile ofisten aldığınız poliçe arasındaki fark fiyat değil, süre ve kanaldır. Teminat da değişmez; güncel yasal limitler ve kapsam dışı hâller [zorunlu trafik sigortası sayfasında](/tr/sigorta/trafik/).
 
 ## Online akış sizden ne istiyor
 
-İncelediğimiz akışlar aynı üç bilgi kümesini soruyor:
+Şirketlerin teklif ve poliçe formları genellikle şu bilgileri soruyor:
 
-1. **Araç bilgileri** — plaka, marka ve model, model yılı, motor ya da şasi numarası, kullanım tarzı (salon araç, ticari, motosiklet). Kullanım tarzı önemli, çünkü taban primi belirleyen sütun bu.
-2. **Ruhsat sahibi bilgileri** — kimlik ya da pasaport numarası, adres, telefon, e-posta.
-3. **Süre** — poliçeler yıllık düzenleniyor; bazı şirketler daha kısa süreli seçenek de gösteriyor.
+1. **Araç bilgileri:** plaka, marka ve model, model yılı, motor hacmi ve kullanım tarzı (hususi, ticari, motosiklet). Kullanım tarzı önemlidir, çünkü taban primi belirleyen sütun budur.
+2. **Ruhsat sahibi bilgileri:** kimlik ya da pasaport numarası, adres, telefon, e-posta.
+3. **Süre:** Poliçeler genellikle yıllık; bazı şirketler daha kısa süreli seçenekler de sunuyor.
 
-Ödeme adımında kart doğrulaması yapılıyor ve poliçe e-posta ile gönderiliyor. Akışların hiçbirini uçtan uca test etmedik — bunu aşağıda ayrıca yazıyoruz.
+Poliçe genellikle ödeme sonrasında e-postayla gönderiliyor. Poliçenin başlangıç tarihi ve saatine dikkat edin; ödeme yapmak tek başına teminatı başlatmaz.
 
-## Neyi doğrulayamadık
+## Neyi ölçmedik
 
-Bu yazının ölçtüğü şey **şirketlerin sitelerinde ilan ettiği yetenek**, o yeteneğin gerçekte nasıl çalıştığı değil. Üç boşluk var ve kapatılmadı:
-
-- **Hiçbir online akışı uçtan uca test etmedik.** Poliçe satın alıp ödeme yapmadık. Bir akışın ilan edildiği halde adım ortasında kesilmesi ya da geri dönüş vaadiyle bitmesi mümkündür.
-- **Teklif ekranlarının gerçekten fiyat verip vermediğini ölçmedik.** Bazı formlar ekranda prim gösteriyor, bazıları "en kısa sürede döneceğiz" diyor. Bu ikisini ayıramadık; ikisini de "online teklif" saydık.
-- **E-poliçenin kâğıt poliçeyle hukuki eşdeğerliğini doğrulayamadık.** Trafik kontrolünde telefonda duran bir PDF'in kabul edilip edilmediğine dair KKTC'ye özgü bir düzenleme metnine ulaşamadık. Şirketler poliçeyi e-posta ile gönderiyor; kabul rejimini doğrulayana kadar bu konuda bir şey yazmıyoruz.
-
-Ayrıca ölçüm **Temmuz 2026** tarihlidir. Bir şirket o tarihten sonra online akış açmış ya da kapatmış olabilir. Sitesinde artık farklı bir durum gördüğünüzü düşünüyorsanız [kaynağıyla bildirin](/tr/duzeltme/), inceleyip düzeltiriz.
+Bu yazı, şirketlerin sitelerinde gördüğümüz hizmetleri sıralar. Akışları poliçe satın alarak uçtan uca test etmedik; bir teklif ekranının anında fiyat verip vermediğini de ayırmadık. Elektronik poliçenin trafik kontrolünde nasıl kabul edildiğine dair KKTC'ye özgü bir düzenleme metnine ulaşamadık; bu konuda şirketinize sorun. Şirket sitelerinde bu yazıdakinden farklı bir durum görürseniz [kaynağıyla bildirin](/tr/duzeltme/), inceleyip düzeltiriz.
 
 ## Şirket mi acente mi
 
-"Kuzey Kıbrıs online sigorta" aramalarında çıkan sitelerin bir bölümü sigorta şirketi değil, **acentedir.** Acente poliçeyi satar; poliçenin tarafı olan tüzel kişi değildir. Hasarda ve şikâyette muhatabınız şirkettir.
-
-Bu ayrım online kanalda daha da bulanıklaşıyor, çünkü bir acentenin ödeme alabilen sitesi ile şirketin kendi sitesi dışarıdan aynı görünüyor. Poliçeyi almadan önce ekranda hangi şirketin adının geçtiğine bakın; bu sitedeki [39 ruhsatlı şirketin listesi](/tr/sirketler/) o kontrolü yapmanız için var.
-
-Hangi şirkette online teklif, online poliçe, online hasar ihbarı ve mobil uygulama bulunduğunu her şirketin [kendi profilinde](/tr/sirketler/) yazıyoruz.
+Online aramalarda çıkan sitelerin bir bölümü sigorta şirketi değil, acentedir. Acente poliçeyi satar; poliçenin tarafı sigorta şirketidir ve hasarda muhatabınız şirkettir. Ödeme öncesi ekranda hangi şirketin adının geçtiğine bakın ve o adı [ruhsatlı şirketler listesinde](/tr/sirketler/) arayın.
 
 ## Kısa cevaplar
 
-**Online poliçe kesen şirket sayısı neden bu kadar az?**
-Ölçtüğümüz şey yalnızca web varlığı. 15 şirketin online akışının olmaması, o şirketlerin poliçe kesmediği anlamına gelmiyor — ofis ve acente kanalıyla kesiyorlar. Bu ölçüt, şirketin dijital hizmetini gösterir, büyüklüğünü ya da güvenilirliğini değil.
-
-**Karşıma çıkan site acente mi şirket mi, nasıl anlarım?**
-Ekranda ödeme öncesi hangi şirketin adının geçtiğine bakın ve o adı [39 ruhsatlı şirketin listesinde](/tr/sirketler/) arayın. Listede yoksa karşınızdaki bir acentedir; poliçeyi satar ama poliçenin tarafı değildir.
-
 **KKTC'ye taşındım, Türkiye'de kullandığım sigorta sitesinden poliçe alabilir miyim?**
-Hayır. KKTC'de trafiğe çıkan araç için Fasıl 333 kapsamında burada ruhsatlı bir şirketten poliçe gerekiyor; daha önce kullandığınız site bu poliçeyi düzenleyemez. Yukarıdaki 10 şirket poliçeyi internetten kesebiliyor.
+Hayır. KKTC'de trafiğe çıkan araç için Fasıl 333 kapsamında burada ruhsatlı bir şirketten poliçe gerekir.
 
 **Araçla adaya geliyorum, poliçeyi önceden online alabilir miyim?**
-Sınır ve liman giriş noktalarında yapılan Geçici Kıbrıs Trafik Sigortası ayrı bir üründür ve kapıda düzenlenir. Ayrıntısı [sınır geçişi sigortası yazısında](/tr/rehber/sinir-gecisi-sigortasi/).
+Sınır ve liman giriş noktalarında yapılan geçici trafik sigortası ayrı bir üründür ve kapıda düzenlenir. Ayrıntısı [sınır geçişi sigortası yazısında](/tr/rehber/sinir-gecisi-sigortasi/).
 
 **Online aldığım poliçeyi nasıl saklamalıyım?**
-Poliçe e-posta ile geliyor. Kaza anında poliçe numarası ve şirketin ihbar kanalı gerekiyor; [kaza sonrası ilk 48 saat](/tr/rehber/kaza-sonrasi-ilk-48-saat/) yazısında hangi bilgilerin isteneceği yazıyor.
+Poliçe e-postayla gelir. Kaza anında poliçe numarası ve şirketin ihbar hattı gerekir; ikisini de telefonunuzda erişilebilir tutun.
+
+## Kaynaklar
+
+- **Şirketlerin kendi siteleri** — online poliçe, teklif, ödeme, hasar bildirimi ve mobil uygulama bağlantıları. 3 Ekim 2026'da görüldü; Alfa, Kıbrıs Sigorta, Limasol ve Şeker'in online bölümleri 4 Ekim 2026'da yeniden açıldı.
+- **KKSRSB üye listesi** — https://www.kksrsb.org/uyelerimiz.html — ruhsatlı şirketler. 3 Ekim 2026'da görüldü.

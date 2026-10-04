@@ -1,126 +1,94 @@
 ---
-baslik: "Bir sigorta şirketinin güvenilirliğini KKTC'de neye bakarak ölçebilirsiniz"
-h1: "Bir sigorta şirketinin güvenilirliğini neye bakarak ölçebilirsiniz"
-kisa_baslik: "Güvenilirlik nasıl ölçülür"
-aciklama: "KKTC'de mali güç ve hasar ödeme verisi yayımlanmıyor. Yine de kendiniz kontrol edebileceğiniz sekiz işaret var — 39 şirkette kaçının bunu yaptığıyla birlikte."
-ozet: "\"Bu şirket güvenilir mi\" sorusunun veriyle cevaplanabilen kısmı ile cevaplanamayan kısmını ayırıyoruz. Sekiz işaretin her biri sitesinden beş dakikada doğrulanabilir; her birinin yanında 39 şirketten kaçının o işareti verdiği yazıyor."
-giris: "Kuzey Kıbrıs'ta hiçbir sigorta şirketinin mali gücü ya da hasar ödeme geçmişi kamuya açık değil — bu soruyu veriyle kimse cevaplayamıyor. Cevaplanabilen kısmı ise şirketin kendi sitesinde duruyor ve kontrol etmek beş dakika sürüyor."
+baslik: "Bir sigorta şirketini KKTC'de neye bakarak değerlendirebilirsiniz"
+h1: "Bir sigorta şirketini neye bakarak değerlendirebilirsiniz"
+kisa_baslik: "Şirketi nasıl değerlendirirsiniz"
+aciklama: "Poliçe almadan önce bir sigorta şirketi hakkında kendiniz kontrol edebileceğiniz yedi şey: ruhsat, adres, iletişim, genel şartlar, ürün sayfaları, şube ve acenteler, hasar ihbar yolu."
+ozet: "Bir sigorta şirketi hakkında poliçe almadan önce kendiniz kontrol edebileceğiniz yedi şeyi ve bunların neyi gösterip neyi göstermediğini anlatıyoruz."
+giris: "Bir sigorta şirketini seçmeden önce şirketin kendi sitesinde ve poliçe belgelerinde kontrol edebileceğiniz somut şeyler var. Bu yazı onları sıralıyor; mali güç gibi dışarıdan değerlendiremeyeceğiniz konuları da açıkça ayırıyor."
 kategori: Şeffaflık
 tarih: 2026-08-30
-guncelleme: 2026-08-30
-og_baslik: "Sigorta şirketi güvenilir mi — KKTC'de neye bakılır"
+guncelleme: 2026-10-04
+og_baslik: "Sigorta şirketini KKTC'de neye bakarak değerlendirirsiniz"
 url: /tr/rehber/kktc-sigorta-sirketi-guvenilir-mi/
 ---
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"KKTC'de bir sigorta şirketinin güvenilir olduğu nasıl anlaşılır?","acceptedAnswer":{"@type":"Answer","text":"Güvenilirliğin en çok merak edilen iki bileşeni — mali güç ve hasar ödeme geçmişi — Kuzey Kıbrıs'ta şirket bazında yayımlanmadığı için dışarıdan ölçülemez. Ölçülebilen kısım şirketin kendi yayınlarıdır: ruhsat durumu, açık adres, kurumsal e-posta, poliçe genel şartları, kuruluş yılı, ürün sayfaları, ofis sayısı ve sitesinin ayakta olup olmadığı. Bu sekiz işaret şirketin ne kadar denetlenebilir olduğunu gösterir."}},
-{"@type":"Question","name":"KKTC'de sigorta şirketlerinin mali durumu nereden öğrenilir?","acceptedAnswer":{"@type":"Answer","text":"Öğrenilemiyor. 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı verisi kamuya açık bir kaynakta yayımlanmıyor. Bu yüzden bu sitede hiçbir şirketin mali gücü ya da hasar ödeme performansı hakkında bir değerlendirme yayımlanmıyor; tahmin üretmek yerine bu alanı boş bırakıyoruz."}},
-{"@type":"Question","name":"Sigorta şirketi ile acente arasındaki fark nedir?","acceptedAnswer":{"@type":"Answer","text":"Şirket poliçenin tarafı olan tüzel kişidir; acente ise poliçeyi satan aracıdır. Hasarda ve şikâyette muhatabınız şirkettir. Kuzey Kıbrıs'ta ruhsatlı şirketler KKSRSB üye listesinde yer alır; internetteki birçok \"sigorta şirketleri\" listesi acenteleri şirket gibi sıralar."}},
-{"@type":"Question","name":"Poliçe genel şartlarını sitesinde yayımlamayan şirketten poliçe alınır mı?","acceptedAnswer":{"@type":"Answer","text":"Alınabilir, ancak şartları imzadan önce yazılı olarak istemek gerekir. İncelediğimiz 39 şirketten yalnızca 3'ü poliçe genel şartlarını sitesinde yayımlıyor; yayımlamamak Kuzey Kıbrıs'ta istisna değil, kural. Bu yüzden tek başına olumsuz bir işaret sayılmaz ama şartları görmeden imzalamak için gerekçe de değildir."}},
-{"@type":"Question","name":"Sigorta şirketinin açık adresini yayımlamaması sorun mu?","acceptedAnswer":{"@type":"Answer","text":"Diğer eksiklerden daha dikkat çekicidir, çünkü yaygın değil: 39 şirketten 30'u açık posta adresini yayımlıyor. Yayımlamayan 9 şirket azınlıkta kalıyor. Adres, yazılı bildirim göndermeniz gerektiğinde işe yarar."}},
-{"@type":"Question","name":"Bu sekiz işaret şirketin hasarımı ödeyeceğini gösterir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Sekiz işaretin tamamı şirketin ne kadar denetlenebilir olduğunu ölçer, ödeme davranışını değil. Şeffaf bir şirketin hasarı ödeyeceğine ya da kapalı bir şirketin ödemeyeceğine dair elimizde veri yok. Bu ayrımı gizlemek yerine yazıyoruz."}}
+{"@type":"Question","name":"KKTC'de bir sigorta şirketini seçmeden önce neye bakmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Şirketin Birlik üye listesinde olup olmadığına, açık adresine ve iletişim kanallarına, poliçe genel şartlarına, ilgilendiğiniz ürünün teminat ve istisnalarına, size en yakın şube ya da acenteye ve hasar ihbar yoluna bakabilirsiniz. Bunların hepsi şirketin kendi sitesinden ya da poliçe belgelerinden kontrol edilebilir."}},
+{"@type":"Question","name":"Sigorta şirketlerinin mali durumunu bu sitede neden yazmıyorsunuz?","acceptedAnswer":{"@type":"Answer","text":"Bu sitede şirketler hakkında yalnızca şirketlerin kendi sitelerinde yazanları aktarıyoruz. Mali güç, hasar ödeme performansı ve satış rakamları hakkında bilgi ya da değerlendirme yayımlamıyoruz."}},
+{"@type":"Question","name":"Sigorta şirketi ile acente arasındaki fark nedir?","acceptedAnswer":{"@type":"Answer","text":"Şirket poliçenin tarafıdır; acente ise poliçeyi satan aracıdır. Hasarda ve şikâyette muhatabınız şirkettir. Kuzey Kıbrıs'ta ruhsatlı sigorta şirketleri KKSRSB üye listesinde yer alır."}},
+{"@type":"Question","name":"Poliçe genel şartlarını nereden okuyabilirim?","acceptedAnswer":{"@type":"Answer","text":"Birlik, zorunlu trafik, kasko ve yangın gibi branşların genel şartlarını yayımlıyor; birçok şirket de bu metinlere kendi ürün sayfalarından bağlantı veriyor. Bulamazsanız poliçeyi imzalamadan önce şirketten ya da acenteden yazılı olarak isteyin."}},
+{"@type":"Question","name":"Bu kontroller şirketin hasarımı ödeyeceğini gösterir mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Bu kontroller, bir sorun çıktığında şirkete nasıl ulaşacağınızı ve yükümlülüklerini nereden okuyacağınızı önceden bilmenizi sağlar. Ödeme davranışını ölçmezler."}}
 ]}
 </script>
 
-"Bu şirket güvenilir mi" sorusunun Kuzey Kıbrıs'ta iki ayrı cevabı var: veriyle cevaplanabilen kısmı ve cevaplanamayan kısmı. Cevaplanamayan kısmı önce söylemek gerekiyor, çünkü çoğu kişinin asıl merak ettiği şey orada.
+"Bu şirketi seçmeli miyim" sorusunun bir kısmını poliçe almadan önce kendiniz cevaplayabilirsiniz. Bu yazı, şirketin kendi sitesinde ve poliçe belgelerinde kontrol edebileceğiniz yedi şeyi sıralıyor ve bunların neyi gösterip neyi göstermediğini ayırıyor.
 
 ## Kısa cevap
 
-Bir sigorta şirketinin mali gücünü ve hasar ödeme geçmişini Kuzey Kıbrıs'ta dışarıdan ölçmek mümkün değil — bu veriler şirket bazında yayımlanmıyor. Ölçebileceğiniz şey şirketin **denetlenebilirliği**: kendisi hakkında ne kadar bilgi yayımladığı. Aşağıdaki sekiz işaretin tamamı şirketin sitesinden beş dakikada kontrol edilebilir.
+Poliçe almadan önce şirketin ruhsatlı olup olmadığını, nasıl ulaşılacağını, poliçe şartlarını, ürünün kapsamını ve hasar anında izlenecek yolu kontrol edebilirsiniz. Bunlar şirketin sizinle nasıl çalışacağını önceden görmenizi sağlar. Mali güç ve hasar ödeme performansı ise bu kontrollerle ölçülmez; bu sitede şirketlerin mali bilgilerini yazmıyoruz.
 
-## Önce: ölçülemeyen kısım
-
-Bir sigorta şirketinde en çok merak edilen iki şey, büyük bir hasarda ödeyecek gücünün olup olmadığı ve ödediğini gösteren bir geçmişinin bulunup bulunmadığıdır. Kuzey Kıbrıs'ta ikisi de kamuya açık veriyle cevaplanamıyor: 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı rakamı yayımlanmıyor.
-
-Bu yüzden bu sitede hiçbir şirketin mali gücü ya da hasar ödeme performansı hakkında bir şey **yazmıyoruz** — tahmin üretmek yerine bu alanı boş bırakma kararı aldık.
-
-Bunu bilmek işinize yarar: "en çok ödeyen şirket" ya da "mali gücü en yüksek şirket" iddiasıyla karşılaşırsanız, o iddianın dayanağı yoktur. Kimsede o veri yok.
-
-## Kendiniz kontrol edebileceğiniz sekiz işaret
-
-Her maddenin yanında, incelediğimiz 39 ruhsatlı şirketten kaçının o işareti verdiği yazıyor. Sayılar karşılaştırma içindir: bir eksiğin ne kadar sıra dışı olduğunu ancak sektörün geri kalanına bakarak anlarsınız.
+## Kendiniz kontrol edebileceğiniz yedi şey
 
 ### 1. Ruhsatlı şirket mi, acente mi
 
-En temel ayrım bu. Şirket, poliçenin tarafı olan tüzel kişidir; acente poliçeyi satan aracıdır. Hasarda ve şikâyette muhatabınız şirkettir. Kuzey Kıbrıs'ta ruhsatlı şirketler KKSRSB üye listesinde yer alır ve sayıları 39'dur. İnternetteki "KKTC sigorta şirketleri" listelerinin çoğu acenteleri şirket gibi sıralar; [şirket listemiz](/tr/sirketler/) yalnızca ruhsatlı şirketleri içerir.
+Şirket poliçenin tarafıdır; acente poliçeyi satan aracıdır. Hasarda ve şikâyette muhatabınız şirkettir. Kuzey Kıbrıs'ta ruhsatlı sigorta şirketleri KKSRSB üye listesinde yer alır. Poliçeyi bir acenteden alıyorsanız acentenin hangi şirket adına poliçe düzenlediğine ve poliçedeki unvana bakın. [Şirketler sayfamız](/tr/sirketler/) yalnızca Birlik üye listesindeki şirketleri içerir.
 
-### 2. Açık adresini yayımlıyor mu — *39 şirketten 30'u yayımlıyor*
+### 2. Açık adres ve iletişim kanalları
 
-Yazılı bildirim göndermeniz gerektiğinde adrese ihtiyacınız olur. Haritaya iğne koymak adres yayımlamak değildir. Bu, listedeki en ayırt edici eksiklerden biri: yayımlamayan 9 şirket açık azınlıkta.
+Yazılı bildirim göndermeniz ya da evrak teslim etmeniz gerektiğinde açık adrese ihtiyacınız olur. Telefon, e-posta ve varsa WhatsApp hattı da hasar ve bilgi talepleri için önemlidir. Her şirketin tanıtım sayfasında adres ve iletişim bilgilerini, kaynağını göstererek veriyoruz.
 
-### 3. E-postası kurumsal alan adında mı — *26 şirket e-posta yayımlıyor, 23'ü kurumsal alan adında*
+### 3. Poliçe genel şartları
 
-Şirketin kendi alan adındaki bir e-posta (`...@sirketadi.com`), ücretsiz bir posta kutusuna göre kurumsal süreklilik gösterir. On üç şirket sitesinde hiç e-posta yayımlamıyor.
+Neyin kapsam dışı olduğunu imzadan önce okumak isterseniz aradığınız belge budur. Birlik, zorunlu trafik, kasko ve yangın gibi branşların genel şartlarını yayımlıyor; birçok şirket de ürün sayfalarından bu metinlere bağlantı veriyor. Bulamazsanız poliçeyi imzalamadan önce yazılı olarak isteyin.
 
-### 4. Poliçe genel şartları sitesinde duruyor mu — *39 şirketten 3'ü*
+### 4. İlgilendiğiniz ürünün teminat ve istisnaları
 
-Neyin kapsam dışı olduğunu imzadan önce okumak isterseniz aradığınız belge budur. Kuzey Kıbrıs'ta yayımlamamak kural, yayımlamak istisna — bu yüzden tek başına olumsuz bir işaret saymıyoruz. Ama şartları imzadan önce yazılı olarak istemek her durumda hakkınız.
+Aynı adı taşıyan ürünler şirketten şirkete farklı kapsamlara sahip olabilir. Örneğin "kısmi kasko" bazı şirketlerde yalnızca çarpışmayı, bazılarında ise çalınma ve yangın gibi seçili riskleri kapsıyor. Şirketin ürün sayfasında neyin kapsandığını ve neyin kapsam dışında kaldığını okuyun. Şirketlerin ürünlerini kendi anlatımlarıyla özetlediğimiz yazılar her şirketin [tanıtım sayfasından](/tr/sirketler/) açılıyor.
 
-### 5. Kuruluş yılını söylüyor mu — *39 şirketten 8'i*
+### 5. Size en yakın şube ya da acente
 
-Kurumsal geçmişin doğrulanabilir tek işareti genelde budur. Otuz bir şirket kuruluş yılını hiçbir yerde yayımlamıyor; bazılarında "Tarihçemiz" bağlantısı 404 veriyor.
+Hasar sonrası evrak teslimi ve yüz yüze görüşme gerekirse mesafe önem kazanır. Şirketin şube ve acente sayfalarına bakarak yaşadığınız ya da çalıştığınız yere en yakın noktayı belirleyin.
 
-### 6. Saydığı branşların kaçında gerçekten ürün sayfası var — *ortalama 6 branş; 5 şirket 11 branşa ulaşıyor*
+### 6. Hasar ihbar yolu
 
-Ana sayfada sıralanan branş isimleri ile arkasında gerçek bir ürün sayfası bulunan branşlar farklı olabiliyor. Biz yalnızca ürün sayfası doğrulanabilenleri saydık. On şirket iki ya da daha az branşta ürün sayfasına sahip.
+Hasar anında kimi arayacağınızı önceden bilmek ilk saatleri kolaylaştırır. Şirketin hasar hattını, varsa online hasar bildirim formunu ve hasar için istenen belgeleri poliçe almadan önce öğrenin. Kaza sonrasında yapılacaklar [kaza sonrası ilk 48 saat](/tr/rehber/kaza-sonrasi-ilk-48-saat/) yazısında.
 
-### 7. Size ne kadar yakın — *25 şirket en fazla bir şehirde ofis yayımlıyor, biri hiç yayımlamıyor; 12 şirket üç ya da daha fazla şehirde*
+### 7. Fiyatın neye göre belirlendiği
 
-Hasar sonrası evrak teslimi ve yüz yüze görüşme gerekirse mesafe konu olur. Yirmi dört şirket tek bir şehirde ofis yayımlıyor; bir şirket ise sitesinde hiçbir KKTC ofis şehri, adresi ya da yerel telefonu yayımlamıyor — Kuzey Kıbrıs'a dair tek içeriği hasar beyan formu PDF'leri. Ofis sayısı hizmet kalitesini göstermez ama erişim maliyetini gösterir.
+Zorunlu trafik sigortasında ve kaskoda şirketlerin altına inemeyeceği bir taban prim var. Bu yüzden iki teklif arasındaki fark çoğu zaman teminat, muafiyet ve hizmette ortaya çıkar. Ayrıntısı [taban tarife yazısında](/tr/rehber/kktc-taban-tarife/).
 
-### 8. Sitesi ayakta mı — *39 şirketten 34'ünün sitesi yanıt verdi*
+## Bu kontroller neyi söylemez
 
-Temmuz 2026'da yaptığımız kontrolde beş şirketin sitesi ya hiç yoktu ya da yanıt vermiyordu. Çalışmayan bir site tek başına şirketin faaliyette olmadığı anlamına gelmez — faaliyet durumlarını ayrıca gözlemlemedik — ama iletişim kanallarını daralttığı kesin.
+Yedi kontrolün tamamı aynı şeyi gösterir: bir sorun çıktığında şirkete nasıl ulaşacağınızı ve yükümlülüklerini nereden okuyacağınızı önceden bilip bilmediğinizi. Ödeme davranışını ölçmezler.
 
-## Bu sekiz işaret neyi söylemez
+Bu sitede şirketler hakkında puan, sıralama ya da "en iyi" türü bir değerlendirme yayımlamıyoruz; mali güç, hasar ödeme performansı ve satış rakamları hakkında da bilgi vermiyoruz. "En çok ödeyen şirket" ya da "mali gücü en yüksek şirket" gibi bir iddiayla karşılaşırsanız, dayanağını sorun.
 
-Sekizinin tamamı aynı şeyi ölçer: şirketin **kendisi hakkında ne kadar bilgi yayımladığını.** Ödeme davranışını ölçmezler.
-
-Şeffaf bir şirketin hasarı ödeyeceğine ya da kapalı bir şirketin ödemeyeceğine dair elimizde veri yok. Aradaki bağ makul görünebilir ama doğrulanmış değil, o yüzden kurmuyoruz. Bu işaretlerin verdiği tek şey şu: bir sorun çıktığında şirketin sizinle nasıl iletişim kuracağı ve yükümlülüğünü nereden okuyabileceğiniz önceden belli mi, değil mi.
-
-Sekiz işareti toplayıp tek bir sayıya çevirmiyoruz. Böyle bir toplam, hangi eşiği seçtiğinize göre değişir — "kaç şehirde ofis yeterli sayılır" sorusunun veriden gelen bir cevabı yok, seçim yapanın kendi tercihidir. Kaynağını gösteremediğimiz bir sayı da bu sitede yayımlanmaz. Her maddenin yanındaki sayı tek tek doğrulanabilir; toplamı sizin neye ağırlık verdiğinize bağlı.
-
-Her şirket için doğrulayabildiğimiz bilgiler [şirket listesinde](/tr/sirketler/) duruyor.
-
-## Doğrulayamadıklarımız
-
-- **Mali güç ve hasar ödeme performansı.** Hiçbir şirket için ölçülemiyor; kamuya açık kaynak yok.
-- **Faaliyet durumu.** Sitesi yanıt vermeyen beş şirketin faaliyette olup olmadığını gözlemlemedik, yalnızca web varlığını ölçtük.
-- **Acente ağı büyüklükleri.** Bazı şirketler bir sayı beyan ediyor; beyanları doğrulayamadık, bu yüzden yukarıdaki sayılara katmadık.
-- **Prim tutarları.** Bu sitede hiçbir şirket için fiyat rakamı yayımlamıyoruz. Zorunlu trafikte fiyatın nasıl belirlendiği [taban tarife yazısında](/tr/rehber/kktc-taban-tarife/).
-- **Şirketlerin beyan ettiği kuruluş yıllarının doğruluğu.** Yayımlayan sekiz şirketin beyanını ayrıca bir sicil kaydıyla karşılaştırmadık.
-
-Bu sayfadaki bir bilgiyi yanlış ya da eskimiş buluyorsanız [düzeltme talebi](/tr/duzeltme/) gönderin.
+Şirketlerin her biri hakkında kendi sitelerinden derlediğimiz bilgiler [şirketler sayfasında](/tr/sirketler/) duruyor. Bu sayfada yanlış ya da eskimiş bir bilgi görürseniz [düzeltme talebi](/tr/duzeltme/) gönderin.
 
 ## Sıkça Sorulan Sorular
 
-### KKTC'de bir sigorta şirketinin güvenilir olduğu nasıl anlaşılır?
+### KKTC'de bir sigorta şirketini seçmeden önce neye bakmalıyım?
 
-Güvenilirliğin en çok merak edilen iki bileşeni — mali güç ve hasar ödeme geçmişi — Kuzey Kıbrıs'ta şirket bazında yayımlanmadığı için dışarıdan ölçülemez. Ölçülebilen kısım şirketin kendi yayınlarıdır: ruhsat durumu, açık adres, kurumsal e-posta, poliçe genel şartları, kuruluş yılı, ürün sayfaları, ofis sayısı ve sitesinin ayakta olup olmadığı. Bu sekiz işaret şirketin ne kadar denetlenebilir olduğunu gösterir.
+Şirketin Birlik üye listesinde olup olmadığına, açık adresine ve iletişim kanallarına, poliçe genel şartlarına, ilgilendiğiniz ürünün teminat ve istisnalarına, size en yakın şube ya da acenteye ve hasar ihbar yoluna bakabilirsiniz. Bunların hepsi şirketin kendi sitesinden ya da poliçe belgelerinden kontrol edilebilir.
 
-### KKTC'de sigorta şirketlerinin mali durumu nereden öğrenilir?
+### Sigorta şirketlerinin mali durumunu bu sitede neden yazmıyorsunuz?
 
-Öğrenilemiyor. 2016'dan bu yana şirket bazında prim, hasar, özkaynak ve pazar payı verisi kamuya açık bir kaynakta yayımlanmıyor. Bu yüzden bu sitede hiçbir şirketin mali gücü ya da hasar ödeme performansı hakkında bir değerlendirme yayımlanmıyor; tahmin üretmek yerine bu alan boş bırakılıyor.
+Bu sitede şirketler hakkında yalnızca şirketlerin kendi sitelerinde yazanları aktarıyoruz. Mali güç, hasar ödeme performansı ve satış rakamları hakkında bilgi ya da değerlendirme yayımlamıyoruz.
 
 ### Sigorta şirketi ile acente arasındaki fark nedir?
 
-Şirket poliçenin tarafı olan tüzel kişidir; acente ise poliçeyi satan aracıdır. Hasarda ve şikâyette muhatabınız şirkettir. Ruhsatlı şirketler KKSRSB üye listesinde yer alır; internetteki birçok "sigorta şirketleri" listesi acenteleri şirket gibi sıralar.
+Şirket poliçenin tarafıdır; acente ise poliçeyi satan aracıdır. Hasarda ve şikâyette muhatabınız şirkettir. Kuzey Kıbrıs'ta ruhsatlı sigorta şirketleri KKSRSB üye listesinde yer alır.
 
-### Poliçe genel şartlarını sitesinde yayımlamayan şirketten poliçe alınır mı?
+### Poliçe genel şartlarını nereden okuyabilirim?
 
-Alınabilir, ancak şartları imzadan önce yazılı olarak istemek gerekir. 39 şirketten yalnızca 3'ü genel şartları sitesinde yayımlıyor; yayımlamamak Kuzey Kıbrıs'ta istisna değil kural. Tek başına olumsuz bir işaret sayılmaz ama şartları görmeden imzalamak için gerekçe de değildir.
+Birlik, zorunlu trafik, kasko ve yangın gibi branşların genel şartlarını yayımlıyor; birçok şirket de bu metinlere kendi ürün sayfalarından bağlantı veriyor. Bulamazsanız poliçeyi imzalamadan önce şirketten ya da acenteden yazılı olarak isteyin.
 
-### Sigorta şirketinin açık adresini yayımlamaması sorun mu?
+### Bu kontroller şirketin hasarımı ödeyeceğini gösterir mi?
 
-Diğer eksiklerden daha dikkat çekicidir, çünkü yaygın değil: 39 şirketten 30'u açık posta adresini yayımlıyor. Yayımlamayan 9 şirket azınlıkta kalıyor. Adres, yazılı bildirim göndermeniz gerektiğinde işe yarar.
-
-### Bu sekiz işaret şirketin hasarımı ödeyeceğini gösterir mi?
-
-Hayır. Sekiz işaretin tamamı şirketin ne kadar denetlenebilir olduğunu ölçer, ödeme davranışını değil. Şeffaf bir şirketin hasarı ödeyeceğine ya da kapalı bir şirketin ödemeyeceğine dair elimizde veri yok. Bu ayrımı gizlemek yerine yazıyoruz.
+Hayır. Bu kontroller, bir sorun çıktığında şirkete nasıl ulaşacağınızı ve yükümlülüklerini nereden okuyacağınızı önceden bilmenizi sağlar. Ödeme davranışını ölçmezler.
 
 ## Kaynaklar
 
-- KKSRSB (KKTC Sigorta ve Reasürans Şirketleri Birliği) üye şirket listesi — ruhsatlı 39 şirketin tespiti. 22 Temmuz 2026'da görüldü.
-- 39 şirketin kurumsal siteleri — adres, e-posta, branş sayfaları, poliçe şartları, kuruluş yılı ve dil sürümleri tek tek kontrol edildi. 22 Temmuz 2026'da görüldü.
-- Bu sitenin şirket veri seti (`data/sirketler.json`), araştırma tarihi 22 Temmuz 2026. Yazıdaki bütün sayılar 39 şirketin tamamı üzerinden hesaplandı.
+- **KKSRSB üye listesi** — https://www.kksrsb.org/uyelerimiz.html — ruhsatlı sigorta şirketleri. 3 Ekim 2026'da görüldü.
+- **Şirketlerin kendi siteleri** — şirket tanıtım sayfalarımızdaki bilgilerin kaynağı. Ekim 2026'da görüldü.
