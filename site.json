@@ -365,22 +365,22 @@
     "tr": {
       "etiket": "Reklam",
       "baslik": "Bu sitede reklam verin",
-      "metin": "Sitenin reklam ve sponsorluk anlaşmalarını Mercan yürütüyor. Anlaşma koşullarını konuşmak için e-postayla ulaşın.",
+      "metin": "Sitenin reklam ve sponsorluk anlaşmalarını KKTC Sigorta Merkezi yürütüyor. Anlaşma koşullarını konuşmak için e-postayla ulaşın.",
       "dipnot": "Reklam anlaşmaları bir şirketin bu sitedeki kaydını etkilemez.",
       "eylem": "Anlaşma için yazın",
       "adres": "info@kktcsigortamerkezi.com",
       "adres_baglanti": "mailto:info@kktcsigortamerkezi.com",
-      "eylem_aria": "Mercan'a e-posta gönderin: info@kktcsigortamerkezi.com"
+      "eylem_aria": "KKTC Sigorta Merkezi'ne e-posta gönderin: info@kktcsigortamerkezi.com"
     },
     "en": {
       "etiket": "Advertising",
       "baslik": "Advertise on this site",
-      "metin": "Advertising and sponsorship on this site is handled by Mercan. Email us to discuss terms.",
+      "metin": "Advertising and sponsorship on this site is handled by KKTC Sigorta Merkezi. Email us to discuss terms.",
       "dipnot": "Advertising deals do not affect a company's entry on this site.",
       "eylem": "Email to arrange a deal",
       "adres": "info@kktcsigortamerkezi.com",
       "adres_baglanti": "mailto:info@kktcsigortamerkezi.com",
-      "eylem_aria": "Email Mercan: info@kktcsigortamerkezi.com"
+      "eylem_aria": "Email KKTC Sigorta Merkezi: info@kktcsigortamerkezi.com"
     }
   },
   "_rotalar_notu": "Bir sayfanın dört dildeki adresi. Anahtar = TR adresi. hreflang, dil değiştirici ve sitemap bunu kullanır. Yeni blog yazıları buraya YAZILMAZ — onların rotası yazı dosyasındaki 'ceviriler' alanından gelir.",
