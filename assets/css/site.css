@@ -47,10 +47,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Farsça sürüm: Vazirmatn her iki rolü de üstlenir */
-html[lang="fa"] body,
-html[lang="fa"] .u-display { font-family: 'Vazirmatn', 'Inter', sans-serif; }
-
 /* --------------------------------------------------------------------------
    Tipografi rolleri
    Tek aile, iki genişlik. Display Inter Tight — daha sıkı çizilmiş olduğu için

@@ -47,7 +47,6 @@ Yazının başka dillerdeki karşılığı varsa:
 ```yaml
 ceviriler:
   en: /en/guides/how-to-file-a-claim/
-  ru: /ru/rukovodstvo/podacha-zayavleniya/
 ```
 
 Karşı taraftaki sayfa gerçekten üretilmediği sürece bağlantı gösterilmez.

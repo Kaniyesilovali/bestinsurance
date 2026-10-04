@@ -16,7 +16,7 @@ ve doğrulayamadığımız yeri boş bırakıyoruz.
 | Kitle | Geldiği soru | Diline dikkat |
 |---|---|---|
 | KKTC'de yaşayan yerli | "Hangi şirket? Kaza olunca kime ulaşırım?" | Fiyat karşılaştırması bekliyor — taban tarife yüzünden yanılıyor |
-| Expat / öğrenci (EN, RU, FA) | "Oturma iznim için ne gerekiyor?" | AB/Güney mekanizmalarının burada işlediğini sanıyor |
+| Expat / öğrenci (TR, EN) | "Oturma iznim için ne gerekiyor?" | AB/Güney mekanizmalarının burada işlediğini sanıyor |
 | Türkiye'den gelen | "Poliçem geçerli mi?" | Türkiye rakamlarını KKTC sanıyor |
 
 ## Pazar kapsamı
@@ -113,11 +113,11 @@ Rakip içeriklerin hata yaptığı üç nokta. Her ilgili sayfada net yapılır:
 2. **Şirket ≠ acente.** Azant, Espada, ESTA acentedir; Birlik üyesi şirket değildir.
 3. **Öğrenci Sağlık Fonu ≠ özel sağlık sigortası.** Biri devlet primi (8/2012), diğeri poliçe.
 
-## Dördüncü ayrım — expat metinlerinde (EN/RU/FA)
+## Dördüncü ayrım — expat metinlerinde (EN)
 
 **Güney Kıbrıs'ın Financial Ombudsman'ı ve AB tüketici çözüm mekanizmaları KKTC'de
 geçerli değildir.** KKTC şirketleri AB sigorta şemaları kapsamında değil.
-Bu, EN/RU/FA sürümlerinde TR'dekinden daha görünür yerde durur.
+Bu, EN sürümünde TR'dekinden daha görünür yerde durur.
 
 ---
 

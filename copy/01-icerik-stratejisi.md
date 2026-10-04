@@ -2,7 +2,7 @@
 
 **Tarih:** 24 Temmuz 2026
 **Girdi:** `data/arastirma-kktc-sigorta.md` · `data/sirketler.json` (39 şirket) · `copy/00-brief.md`
-**Kapsam:** TR birincil; EN/RU/FA türetilmiş. Her başlığın dil kapsamı ayrıca işaretlidir.
+**Kapsam:** TR birincil; EN türetilmiş. Her başlığın dil kapsamı ayrıca işaretlidir.
 
 > **Arama hacmi verisi yok.** Elimizde Ahrefs/SEMrush/GSC ihracı bulunmuyor. Bu belgedeki
 > "arama potansiyeli" sütunu ölçüm değil, **gerekçeli tahmindir** ve öyle etiketlenmiştir.
@@ -31,9 +31,9 @@ Bu bir "en ucuz sigortayı bul" sitesi değil. Bir **referans sitesi.** Dolayıs
 | Kitle | Dil | Geldiği soru | Bizim cevabımızın farkı |
 |---|---|---|---|
 | KKTC'de yaşayan yerli | TR | "Hangi şirket? Kaza olunca kime ulaşırım?" | Fiyat kıyaslaması bekliyor — taban tarife yüzünden fiyat farkı sandığı kadar büyük değil |
-| Öğrenci (yabancı uyruklu) | TR/EN/RU/FA | "Oturma iznim için ne gerekiyor?" | Sağlık Fonu ≠ özel sigorta ayrımı |
-| Expat / yerleşik yabancı | EN/RU/FA | "Şikâyetimi nereye götürürüm?" | Güney'in Ombudsman'ı ve AB mekanizmaları burada geçmez |
-| Güney'den / TR'den araçla gelen | TR/EN/RU | "Poliçem geçerli mi?" | Yeşil kart geçmez; kapı sigortası tek yol, kapı saatleri kritik |
+| Öğrenci (yabancı uyruklu) | TR/EN | "Oturma iznim için ne gerekiyor?" | Sağlık Fonu ≠ özel sigorta ayrımı |
+| Expat / yerleşik yabancı | EN | "Şikâyetimi nereye götürürüm?" | Güney'in Ombudsman'ı ve AB mekanizmaları burada geçmez |
+| Güney'den / TR'den araçla gelen | TR/EN | "Poliçem geçerli mi?" | Yeşil kart geçmez; kapı sigortası tek yol, kapı saatleri kritik |
 | Türkiye'den taşınan | TR | "Limitler neydi?" | 1.200.000 ₺ / 8M ₺ — Türkiye rakamı değil |
 
 ---
@@ -49,7 +49,6 @@ Küme:
 - Düzenleyici karşılaştırması (Para Kambiyo Dairesi ≠ SEDDK · KKSBM ≠ SBM · KKSRSB Tahkim ≠ TR Tahkim)
 - Tarife rejimi (taban tarife + bildirim ≠ serbest tarife)
 - Hasarsızlık indirimi (KKTC oranları **bilinmiyor** — bu sayfanın işi boşluğu ilan etmek)
-- Yeşil kart (KKTC üye değil)
 - Şirket ≠ acente (Azant, Espada, ESTA acentedir)
 
 **Yayın kısıtı:** Sigortasız araç cezası ve hasarsızlık basamak oranları bu kümede
@@ -65,7 +64,7 @@ Küme:
 - Şirket türü açıklayıcıları: yerel Ltd. · TR şubesi · banka bağlı · reasürans
 - Branşa göre şirket listeleri (trafik / kasko / sağlık / konut / seyahat / işyeri / yat …)
 - Şehre göre erişim (Lefkoşa dışında ofisi olan şirketler)
-- Dil desteğine göre (İngilizce · Rusça hizmet veren şirketler)
+- Özelliğe göre (İngilizce hizmet veren · kurumsal e-posta kullanan şirketler)
 - Puanlama metodolojisi (mevcut sayfa — bu kümenin güven çıpası)
 
 **Yapısal avantaj:** 39 şirketin hiçbirinin kendi hakkında karşılaştırılabilir sayfası yok;
@@ -82,7 +81,7 @@ Küme:
 - Garanti Fonu: sigortasız/ehliyetsiz/kaçan araç — **avukat ücretini fon karşılıyor**
 - Sigorta Tahkim Komisyonu'na başvuru (adres, form, üyeler biliniyor; limit/ücret **bilinmiyor**)
 - Hasar dosyası reddedildiyse beş basamaklı başvuru yolu
-- Eksper süreci ve polis raporunun rolü
+- Eksper süreci ve eksper raporuna itiraz
 
 **En güçlü tek kanca:** *"Başvuru avukat aracılığıyla yapılır ve avukat ücretini Fon öder."*
 Bu cümle internette hiçbir yerde düzgün anlatılmıyor.
@@ -90,16 +89,13 @@ Bu cümle internette hiçbir yerde düzgün anlatılmıyor.
 ---
 
 ### P4 — "Burada yabancıyım" · *Expat sütunu*
-**Neden sütun:** EN/RU/FA sürümlerinin varlık sebebi. Sınır sigortasında ölçülmüş talep var:
+**Neden sütun:** EN sürümünün varlık sebebi. Sınır sigortasında ölçülmüş talep var:
 **2024'te 238.320 poliçe** (KKSBM). Bu, tahmin değil, resmî sayı.
 
 Küme:
-- Sınır geçişi sigortası *(yazıldı)* — kapı kapı saat/fiyat
+- Sınır geçişi sigortası *(yazıldı)*
 - Öğrenci Sağlık Fonu *(yazıldı)* — özel sigorta DEĞİL
-- 3 aydan uzun ikamette sağlık şartı (**hangi türün kabul edildiği net değil** — öyle yazılır)
-- Yabancı plakayla KKTC'de araç kullanmak
-- Güney ↔ Kuzey çift yönlü geçersizlik kuralı
-- **AB tüketici mekanizmaları burada işlemez** — EN/RU/FA'da TR'dekinden daha görünür yerde
+- **AB tüketici mekanizmaları burada işlemez** — EN'de TR'dekinden daha görünür yerde
 
 ---
 
@@ -139,16 +135,14 @@ Arama potansiyeli %20 (**tahmin**) · Kaynak gereksinimi %10.
 | 7 | Taban tarife nedir, fiyatı nasıl belirler | P1 | Aranabilir | Değerlendirme | 8 | 9 | 7 | 8 | **8,1** |
 | 8 | Şirket mi acente mi — 3 isim | P1 | Aranabilir | Değerlendirme | 7 | 9 | 6 | 9 | **7,6** |
 | 9 | Araç tipine göre 2025 taban prim (12 sayfa) | P1 | Aranabilir · pSEO | Değerlendirme | 8 | 8 | 8 | 6 | **7,8** |
-| 10 | Sınır kapısı kapı kapı (6 sayfa) | P4 | Aranabilir · pSEO | Uygulama | 9 | 7 | 8 | 7 | **8,0** |
-| 11 | Tahkim Komisyonu'na başvuru | P3 | Aranabilir | Uygulama | 8 | 8 | 5 | 6 | **7,3** |
-| 12 | 3 aydan uzun ikamet: sağlık şartı | P4 | Aranabilir | Farkındalık | 8 | 7 | 7 | 5 | **7,3** |
-| 13 | Şehre göre şirket erişimi (4 sayfa) | P2 | Aranabilir · pSEO | Değerlendirme | 6 | 9 | 7 | 8 | **7,3** |
-| 14 | 2024→2025'te taban primler neden %60 arttı | P5 | Paylaşılabilir | Farkındalık | 6 | 8 | 5 | 7 | **6,5** |
-| 15 | Sözlük: 20 terim | P1 | Aranabilir · pSEO | Farkındalık | 5 | 7 | 6 | 9 | **6,2** |
+| 10 | Tahkim Komisyonu'na başvuru | P3 | Aranabilir | Uygulama | 8 | 8 | 5 | 6 | **7,3** |
+| 11 | Şehre göre şirket erişimi (4 sayfa) | P2 | Aranabilir · pSEO | Değerlendirme | 6 | 9 | 7 | 8 | **7,3** |
+| 12 | 2024→2025'te taban primler neden %60 arttı | P5 | Paylaşılabilir | Farkındalık | 6 | 8 | 5 | 7 | **6,5** |
+| 13 | Sözlük: 20 terim | P1 | Aranabilir · pSEO | Farkındalık | 5 | 7 | 6 | 9 | **6,2** |
 
 \* **Arama potansiyeli sütunu tahmindir.** Hacim verisiyle doğrulanmamıştır.
 
-**Yayın sırası:** 1 → 2 → 3 → 5 → 4 → 7 → 6 → 10 → 9 → 8 → 11/12 → 13 → 14 → 15
+**Yayın sırası:** 1 → 2 → 3 → 5 → 4 → 7 → 6 → 9 → 8 → 10 → 11 → 12 → 13
 
 Gerekçe: (1) footer ve şirket listesi zaten var olmayan adreslere bağlanıyor — kırık iç
 bağlantı en acil teknik borç. (2) ve (3) sitenin iki tez cümlesini kanıtlar. (4) o ikisi
@@ -172,7 +166,7 @@ yayında olmadan yayımlanırsa dayanaksız kalır.
 │   ├── Şirket profili                    /tr/sirketler/<slug>/           ← pSEO ×35
 │   ├── Branşa göre                        /tr/sirketler/<brans>/          ← pSEO ×10
 │   ├── Şehre göre                         /tr/sirketler/sehir/<sehir>/    ← pSEO ×4
-│   ├── Dile göre                          /tr/sirketler/ozellik/<x>/      ← pSEO ×4
+│   ├── Özelliğe göre                      /tr/sirketler/ozellik/<x>/      ← pSEO ×2
 │   └── Nasıl puanlıyoruz                  /tr/metodoloji/                 [var]
 │
 ├── P3  Bir şey oldu                 → /tr/rehber/ (Hasar kategorisi)
@@ -181,11 +175,9 @@ yayında olmadan yayımlanırsa dayanaksız kalır.
 │   ├── Tahkim Komisyonu                   /tr/rehber/tahkim-komisyonu/
 │   └── Dosyanız reddedilirse               /tr/rehber/hasar-reddi/
 │
-├── P4  Burada yabancıyım            → EN/RU/FA'da ana giriş
+├── P4  Burada yabancıyım            → EN'de ana giriş
 │   ├── Sınır geçişi sigortası            /tr/rehber/sinir-gecisi-sigortasi/    [var]
-│   ├── Kapı kapı sınır sigortası          /tr/rehber/sinir/<kapi>/        ← pSEO ×6
-│   ├── Öğrenci Sağlık Fonu                /tr/rehber/ogrenci-saglik-sigortasi/  [var]
-│   └── İkamet ve sağlık şartı             /tr/rehber/ikamet-saglik-sarti/
+│   └── Öğrenci Sağlık Fonu                /tr/rehber/ogrenci-saglik-sigortasi/  [var]
 │
 ├── P5  Kimse söylemiyor             → /tr/rehber/ (Şeffaflık kategorisi)
 │   ├── Mali veri yayımlanmıyor           /tr/rehber/mali-veri-yok/
@@ -232,7 +224,7 @@ o tablodaki bir rakamı yazma iznine sahip değil. Özellikle:
 - **9 numaralı pSEO kümesi (araç tipi tarifeleri)** yalnızca **2025** etiketiyle yayımlanır.
   2026 tarifesi yayımlanmadı; sayfalarda bu açıkça yazılır. 2026 çıktığında güncellenir.
 - **8 numaralı başlık** MAPFREE/MAPFRE veya London Insurance grup bağı iddiasına girmez.
-- **6 ve 11 numaralı başlıklar** tahkim ücreti/limiti/süresi yazamaz — tüzük okunmadı.
+- **6 ve 10 numaralı başlıklar** tahkim ücreti/limiti/süresi yazamaz — tüzük okunmadı.
 - **3 numaralı başlık** Garanti Fonu ödeme limiti yazamaz — yalnızca kapsam ve süreç.
 
 ---

@@ -156,7 +156,7 @@ Türkiye'deki basamakların hiçbiri burada işlemiyor. KKTC'nin kendi sırası 
 
 **Bağlantı:** [Sigortasız araç size çarptıysa: Garanti Fonu →](/tr/rehber/garanti-fonu/)
 
-**EN/RU/FA sürümlerinde bu bölüme eklenecek — TR'de gerekmiyor:**
+**EN sürümünde bu bölüme eklenecek — TR'de gerekmiyor:**
 > Güney Kıbrıs'ın Financial Ombudsman'ı ve AB tüketici çözüm mekanizmaları KKTC'de
 > geçerli değildir. KKTC şirketleri AB sigorta şemaları kapsamında değildir. Yukarıdaki
 > beş basamak, elinizdeki yolların tamamıdır.
@@ -279,8 +279,6 @@ guncelleme: 2026-07-24
 og_baslik: "KKTC sigortası Türkiye'den nerede ayrılıyor"
 ceviriler:
   en: /en/guides/trnc-vs-turkey/
-  ru: /ru/rukovodstvo/skts-i-turciya/
-  fa: /fa/guides/trnc-vs-turkey/
 ```
 
 **Yeni kategori:** `Ayrım`. Rehber konu listesine eklenecek —

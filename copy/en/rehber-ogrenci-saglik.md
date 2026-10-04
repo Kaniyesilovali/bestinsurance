@@ -3,7 +3,7 @@
 
 **Page purpose:** Clear up the confusion the student has before applying.
 **Reader:** A newly arrived foreign national student or their parent. Probably knows the Turkish model.
-**This page will take more traffic in EN/RU/FA than in TR.**
+**This page will take more traffic in EN than in TR.**
 
 **Title:** Student health cover and the Health Fund premium in the TRNC | KKTC Sigorta Merkezi
 **Meta description:** The Health Fund premium paid for a student residence permit in Northern Cyprus is not private health insurance. How it is paid, what it covers, and what happens if it is not paid.
@@ -186,4 +186,4 @@ depends on the type of permit. Ask the Department of Immigration.
   page.
 - The Department of Immigration's official page could not be opened during research for
   technical reasons; it must be opened and the steps verified one by one.
-- This page should be given prominence in EN/RU/FA — the real readership is there.
+- This page should be given prominence in EN — the real readership is there.

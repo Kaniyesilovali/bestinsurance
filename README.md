@@ -35,7 +35,7 @@ Ayrıntı: [YAZI-YAZMA.md](YAZI-YAZMA.md).
 | `_build/yeni-yazi.py` | Yeni yazı iskeleti oluşturur. |
 | `assets/` | CSS ve JS. `tailwind.css` derlenir, `site.css` elle yazılır. |
 | `data/` | Şirket verisi ve veri betikleri. Siteye yüklenmez. |
-| `copy/` | Dört dildeki metin taslakları. Siteye yüklenmez. |
+| `copy/` | TR ve EN metin taslakları ve plan belgeleri. Siteye yüklenmez. |
 | `dist/` | **Üretilen çıktı.** Elle düzenlenmez, her üretimde silinip yeniden yazılır. |
 
 ## Neyi nerede değiştirirsiniz
@@ -70,16 +70,18 @@ Bunları elle yazmayın; her üretimde yeniden oluşturulurlar:
 
 ## Diller
 
-Yapı dört dili (`tr`, `en`, `ru`, `fa`) destekler; şu an **TR ve EN** üretiliyor.
-RU ve FA'nın metin taslakları `copy/` altında hazır bekliyor.
+Site **TR ve EN** üretir (`site.json` → `diller`). Üretici çok dillidir: yeni bir
+dil `site.json` ve `content/<dil>/` üzerinden eklenir, şablona dokunmak gerekmez.
 
 Dil değiştirici ve `hreflang` etiketleri yalnızca **üretilmiş** adresleri gösterir —
 var olmayan bir dile bağlantı verilmez, o dilin içeriği eklendiği anda bağlantılar
 kendiliğinden belirir.
 
-**Yeni bir dil açarken sıra şudur.** İlk üç adım atlanırsa üretici durur ya da
+**Yeni bir dil açarken sıra şudur.** İlk dört adım atlanırsa üretici durur ya da
 sayfa yanlış dilde çıkar:
 
+0. `site.json` → `diller.<dil>` — ad, kısa ad, `og_locale`, yazı yönü (`dir`);
+   statik sayfaların eş adresleri `rotalar` altına yazılır.
 1. `site.json` → `metinler.<dil>` — şablonların sabit arayüz metinleri (buton,
    `aria-label`, sayfalama, liste sayfasının alt blokları). **Eksikse üretim durur.**
 2. `site.json` → `menu.<dil>`, `footer.<dil>` — yalnızca üretilmiş adresler yazılır.

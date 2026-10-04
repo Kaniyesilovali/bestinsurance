@@ -108,7 +108,7 @@ Hedef kitle TR konuşmuyorsa (öğrenci, expat, yabancı uyruklu araç sahibi) s
 sayfayla karşılanamaz.
 
 - `dist/` altında o dil üretiliyor mu?
-- `copy/en|ru|fa/` altında ilgili taslak var mı?
+- `copy/en/` altında ilgili taslak var mı?
 
 Yoksa çıktı yeni bir TR yazısı değil, **çeviri/dil açma işidir.** Bunu böyle söyle;
 TR yazı önermek sorunu çözmez.

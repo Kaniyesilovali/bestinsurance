@@ -25,16 +25,14 @@ açık bir API'den çekilmiş veri değil. Avantaj burada; onu inceltip harcamay
 |---|---|---|---|---|
 | **A** | Şirket profili | **35** (+4 gizli) | 1 | `sirketler.json` — tam kayıt |
 | **B** | Branşa göre şirket listesi | **10** | 2 | `branslar[]` |
-| **C** | Sınır kapısı | **6** | 3 | Araştırma §3.2 |
-| **D** | Araç tipine göre taban prim | **12** | 4 | Araştırma §4.2 |
-| **E** | Şehre göre şirket erişimi | **4** | 5 | `ofis_sehirler[]` |
-| **F** | Özelliğe göre şirket listesi | **4** | 6 | Boolean alanlar |
-| **G** | Sözlük | **20** | 7 | Brief terim sözlüğü + araştırma |
-| | **TOPLAM** | **91** | | |
+| **D** | Araç tipine göre taban prim | **12** | 3 | Araştırma §4.2 |
+| **E** | Şehre göre şirket erişimi | **4** | 4 | `ofis_sehirler[]` |
+| **F** | Özelliğe göre şirket listesi | **2** | 5 | Boolean alanlar |
+| **G** | Sözlük | **20** | 6 | Brief terim sözlüğü + araştırma |
+| | **TOPLAM** | **83** | | |
 
-Mevcut site: 12 sayfa. Plan sonrası: **~103 TR sayfası.** Dört dilde tam açılım
-**412 sayfa** eder — ama bu plan **önce TR'yi tamamlamayı**, sonra A ve C setlerini
-EN/RU/FA'ya taşımayı öneriyor (gerekçe §9).
+Mevcut site: 12 sayfa. Plan sonrası: **~95 TR sayfası.** Plan **önce TR'yi
+tamamlamayı**, sonra setleri EN'e taşımayı öneriyor (gerekçe §8).
 
 ---
 
@@ -180,42 +178,7 @@ Her branş sayfası kendi verisinden bir **bulgu cümlesi** üretir:
 
 ---
 
-## 4. Set C — Sınır kapısı sayfaları
-
-**URL:** `/tr/rehber/sinir/<kapi>/`
-**Playbook:** Locations
-**Veri:** Araştırma §3.2 — **ölçülmüş talep var:** 2024'te 238.320 poliçe, 356,7M ₺ prim (KKSBM).
-
-| Kapı | 2024 poliçe | Prim (₺) | Sayfa |
-|---|---|---|---|
-| Metehan (Ayios Dometios) | 109.695 | 166.917.569,20 | ✓ |
-| Beyarmudu (Pergamos/Pile) | 41.511 | 69.171.774,74 | ✓ |
-| Derinya | 29.020 | 42.779.709,39 | ✓ |
-| Akyar | 26.042 | 40.074.097,67 | ✓ |
-| Güzelyurt (Astromeritis/Zodhia) | *(rapor satırı okunamadı)* | — | ✓ |
-| Pirgos | *(rapor satırı okunamadı)* | — | ✓ |
-| Strovilia | — | — | ✓ |
-| **Lefke** | — | — | ✗ ayrı sayfa yok — **sigorta satışı yok**, hub'da tek satır |
-| **Ledra Palace · Lokmacı** | — | — | ✗ yalnızca yaya — hub'da tek satır |
-
-Metehan tek başına **poliçelerin %46'sı.** O sayfa bu setin taşıyıcısı.
-
-**Sayfa başına özgün olan:** poliçe sayısı ve prim payı · kapının Güney'deki adı ·
-komşu kapıya mesafe · saat penceresi · o kapıya özgü bilinen pratik detay.
-
-**Her sayfada tekrar eden ama zorunlu üç uyarı:**
-1. Kapılar 7/24 açık, **sigorta yalnızca ~09:00–17:00/18:00 arası satılıyor.**
-2. Yalnızca zorunlu 3. şahıs satılıyor — **kasko satılmıyor.**
-3. **Çift yönlü geçersizlik:** Güney poliçesi Kuzey'de, Kuzey poliçesi Güney'de geçmez.
-
-> ⚠ İki kapının 2024 rakamı raporda okunamadı; o sayfalarda rakam **yazılmaz**, yerine
-> "bu kapının poliçe sayısı raporun okunamayan satırındadır" yazılır.
-> Rapor ara toplamı (367,7M) ile genel toplamı (356,7M) **tutarsız** — kullandığımız
-> rakamın hangisi olduğu her sayfada belirtilir.
-
----
-
-## 5. Set D — Araç tipine göre taban prim
+## 4. Set D — Araç tipine göre taban prim
 
 **URL:** `/tr/tarife/<arac-tipi>/`
 **Playbook:** Conversions/Templates hibriti
@@ -259,7 +222,7 @@ karşılaştırma olarak kalır. Set bunun için tasarlandı.
 
 ---
 
-## 6. Set E — Şehre göre şirket erişimi
+## 5. Set E — Şehre göre şirket erişimi
 
 **URL:** `/tr/sirketler/sehir/<sehir>/`
 
@@ -290,27 +253,25 @@ Bu, planın bilinçli olarak **almadığı** en büyük hacim.
 
 ---
 
-## 7. Set F — Özelliğe göre şirket listesi
+## 6. Set F — Özelliğe göre şirket listesi
 
 **URL:** `/tr/sirketler/ozellik/<ozellik>/`
 
 | Özellik | Şirket | Sayfa | Not |
 |---|---|---|---|
 | İngilizce hizmet veren | 17 | ✓ | EN sürümünün en değerli sayfası |
-| Online teklif veren | 13 | ✓ | Ekran görüntüsüyle kanıtlanabilir |
-| Online poliçe kesen | 10 | ✓ | |
 | Kurumsal e-posta kullanan | 23 | ✓ | Şeffaflık ölçütünün somut hâli |
-| Rusça hizmet veren | **2** | ✗ | 2 şirket — sayfa değil, RU sürümünde bir bölüm |
-| Mobil uygulaması olan | 4 | ✗ | 4 şirket — online teklif sayfasında alt bölüm |
-| Online hasar ihbarı | 5 | ✗ | Aynı — alt bölüm |
+| Rusça hizmet veren | **2** | ✗ | 2 şirket — sayfa değil |
+| Mobil uygulaması olan | 4 | ✗ | 4 şirket — sayfa değil; şirket profilinin dijital denetim bölümünde görünür |
+| Online hasar ihbarı | 5 | ✗ | Aynı — profilde görünür |
 | Poliçe şartlarını yayımlayan | **3** | ✗ | **39'un 3'ü.** Sayfa değil ama P5'te
   yayımlanacak bir bulgu — şeffaflık sütununa gider |
 
-**4 sayfa.** Beş şirketin altındaki hiçbir özellik ayrı sayfa olmuyor.
+**2 sayfa.** Beş şirketin altındaki hiçbir özellik ayrı sayfa olmuyor.
 
 ---
 
-## 8. Set G — Sözlük
+## 7. Set G — Sözlük
 
 **URL:** `/tr/sozluk/<terim>/` · hub `/tr/sozluk/`
 **Playbook:** Glossary
@@ -332,48 +293,43 @@ Bu eşik **yazım sırasında** uygulanır, üretim sonrası değil.
 
 ---
 
-## 9. Dil açılımı
+## 8. Dil açılımı
 
-Dört dilde tam açılım 91 × 4 = 364 yeni sayfa eder. **Önerilmiyor.**
+İki dilde tam açılım 83 × 2 = 166 sayfa eder. EN'de yalnızca şehir seti açılmaz.
 
-| Set | TR | EN | RU | FA |
-|---|---|---|---|---|
-| A Şirket profilleri | ✓ 35 | ✓ 35 | ✓ 35 | — |
-| B Branş listeleri | ✓ 10 | ✓ 10 | — | — |
-| C Sınır kapıları | ✓ 6 | ✓ 6 | ✓ 6 | — |
-| D Araç tipi tarife | ✓ 12 | ✓ 12 | — | — |
-| E Şehir | ✓ 4 | — | — | — |
-| F Özellik | ✓ 4 | ✓ 4 | ✓ 4 | — |
-| G Sözlük | ✓ 20 | ✓ 20 | — | — |
-| | **91** | **87** | **45** | **0** |
+| Set | TR | EN |
+|---|---|---|
+| A Şirket profilleri | ✓ 35 | ✓ 35 |
+| B Branş listeleri | ✓ 10 | ✓ 10 |
+| D Araç tipi tarife | ✓ 12 | ✓ 12 |
+| E Şehir | ✓ 4 | — |
+| F Özellik | ✓ 2 | ✓ 2 |
+| G Sözlük | ✓ 20 | ✓ 20 |
+| | **83** | **79** |
 
 Gerekçeler:
-- **FA:** İran'dan gelen öğrenci kitlesi için P4 (öğrenci sağlık, ikamet) yeterli.
-  Şirket profilini Farsça arayan bir kitle varsayımı doğrulanmadı — **veri yok, sayfa yok.**
-- **RU:** Girne yoğunluklu yerleşik kitle → profil + sınır + özellik anlamlı;
-  araç tipi tarifesi ve sözlük değil.
 - **EN:** neredeyse tam açılım. KKSRSB genel şartları **resmî olarak İngilizce yayımlıyor** —
   EN sürümü çeviri değil, birincil kaynağa dayanabiliyor. Bu setin kalitesini yükseltiyor.
+- **E Şehir** EN'de açılmaz: şehir bazlı şirket erişimi sorgusu Türkçe aranıyor; EN'de
+  `/en/companies/` listesindeki şehir bilgisi yeterli.
 
-Toplam: **223 sayfa.** 364 değil.
+Toplam: **162 sayfa.**
 
 ---
 
-## 10. Üretim — `_build/uret.py` uyarlaması
+## 9. Üretim — `_build/uret.py` uyarlaması
 
 Mevcut hat `content/tr/sayfa/**` ve `content/tr/rehber/*.html` okuyup `dist/` üretiyor.
-Programatik setler için **elle 89 HTML dosyası yazılmaz.** Gereken:
+Programatik setler için **elle 83 HTML dosyası yazılmaz.** Gereken:
 
 ```
 _build/sablon/
 ├── sirket-profil.html      Set A
 ├── liste-filtreli.html     Set B, E, F  (ortak — filtre + başlık + bulgu cümlesi)
-├── sinir-kapi.html         Set C
 ├── tarife-arac.html        Set D
 └── sozluk-terim.html       Set G
 
 content/tr/veri/
-├── sinir-kapilari.json     kapı adı, Güney adı, poliçe, prim, saat, notlar
 ├── taban-tarife-2025.json  kod, ad, taban1, taban2, 2024 karşılığı
 ├── sozluk.json             terim, tanım, TR farkı, dayanak
 └── liste-tanimlari.json    hangi filtre → hangi başlık, bulgu cümlesi, meta
@@ -390,7 +346,7 @@ noindex çıkar ve sitemap üretilmez. Alan adı belli olana kadar bu böyle kal
 
 ---
 
-## 11. Kalite kapıları — yayın öncesi
+## 10. Kalite kapıları — yayın öncesi
 
 - [ ] Her sayfada o sayfaya özgü **en az bir doğrulanmış olgu**
 - [ ] Her sayfada **en az bir boşluk ilanı** ya da "bu sayfada doğrulanamayan veri yok" cümlesi
@@ -405,16 +361,15 @@ noindex çıkar ve sitemap üretilmez. Alan adı belli olana kadar bu böyle kal
 
 ---
 
-## 12. Yayın sırası
+## 11. Yayın sırası
 
 | Sıra | Set | Sayfa | Neden bu sırada |
 |---|---|---|---|
 | 1 | A — Şirket profilleri | 35 | 39 kırık iç bağlantıyı kapatır |
 | 2 | B — Branş listeleri | 10 | A'yı besler, tür hub'larını bağlar |
-| 3 | C — Sınır kapıları | 6 | Ölçülmüş talep (238.320 poliçe) |
-| 4 | D — Araç tipi tarife | 12 | En yüksek risk — A ve B yerleştikten sonra |
-| 5 | E + F — Şehir + özellik | 8 | A'nın türevleri |
-| 6 | G — Sözlük | 20 | En düşük aciliyet, en yüksek LLM alıntı değeri |
+| 3 | D — Araç tipi tarife | 12 | En yüksek risk — A ve B yerleştikten sonra |
+| 4 | E + F — Şehir + özellik | 6 | A'nın türevleri |
+| 5 | G — Sözlük | 20 | En düşük aciliyet, en yüksek LLM alıntı değeri |
 
-**A yayımlanmadan hiçbir set yayımlanmaz.** Diğer beş set A'ya bağlanıyor; A yoksa
+**A yayımlanmadan hiçbir set yayımlanmaz.** Diğer dört set A'ya bağlanıyor; A yoksa
 hepsi öksüz doğar.

@@ -1,9 +1,9 @@
-# Dil katmanı stratejisi — EN · RU · FA
+# Dil katmanı stratejisi — EN
 
 **Tarih:** 8 Eylül 2026
 **Girdi:** `copy/00-brief.md` (Pazar kapsamı · ⛔ tablosu) · `copy/01-icerik-stratejisi.md` §3 P4 ·
 `data/sirketler.json` (39 şirket, dil alanı) · `data/arastirma-kktc-sigorta.md` §2.6, §3.1, §6 ·
-`site.json` (rotalar, menu, footer, blog) · `copy/en|ru|fa/` (34 taslak)
+`site.json` (rotalar, menu, footer, blog) · `copy/en/` (12 taslak)
 **Üstündeki belge:** `copy/00-brief.md`. Çatışma halinde brief kazanır.
 
 > Bu belge `01-icerik-stratejisi.md`'yi değiştirmez, onun **P4 sütununu** açar.
@@ -15,9 +15,9 @@
 ## 1. Kararın tek cümlesi
 
 Sitenin **tahmine dayanmayan tek talebi** yabancı dilde geliyor, ve o talebi
-karşılayacak 34 taslak yazılmış olduğu halde tek bir sayfa canlı değil.
-Bu katman açılır — ama üç dil eşit açılmaz: **şirket verisi hangi dili
-taşıyorsa o dil o kadar açılır.**
+karşılayacak 12 taslak yazılmış olduğu halde tek bir sayfa canlı değil.
+Bu katman İngilizce açılır, çünkü **şirket verisinin Türkçeden sonra taşıdığı
+dil İngilizce:** 39 şirketin 17'si İngilizce hizmet veriyor.
 
 ---
 
@@ -44,8 +44,6 @@ başka hiçbir sayfası arkasında bu ağırlıkta bir sayıya yaslanmıyor.
 |---|---|---|
 | Türkçe | 33 | Temel |
 | **İngilizce** | **17** | Arkasında gerçek bir arz var |
-| **Rusça** | **2** | Dağlı Sigorta, Creditwest Sigorta |
-| **Farsça** | **0** | Karşılaştırılacak şirket yok |
 
 Bu tablo dil kapsamı kararını tahminden çıkarıp veriye bağlıyor. Ayrıntısı §5'te.
 
@@ -73,24 +71,20 @@ karşılaştırma kaynağı yok — alan boş, ve dolduran taraf poliçe satan a
 
 ## 3. Envanter — elde ne var
 
-| | EN | RU | FA |
-|---|---|---|---|
-| `copy/` taslağı | **12** | 11 | 11 |
-| `content/` sayfası | **12** (A + B + C) | 0 | 0 |
-| `dist/` canlı adres | **16** (12 sayfa + liste + 3 konu) | 0 | 0 |
-| `site.json` rotası | 10 adres tanımlı | yok | yok |
-| `site.json` menu | var (**6 madde**, TR ile birebir) | yok | yok |
-| `site.json` footer | var (AB uyarısı + 2 sütun) | yok | yok |
-| `site.json` blog | var (`/en/guides/`) | yok | yok |
-| `site.json` metinler | var (**arayüz metinleri**) | yok | yok |
+| | EN |
+|---|---|
+| `copy/` taslağı | **12** |
+| `content/` sayfası | **12** (A + B + C) |
+| `dist/` canlı adres | **16** (12 sayfa + liste + 3 konu) |
+| `site.json` rotası | 10 adres tanımlı |
+| `site.json` menu | var (**6 madde**, TR ile birebir) |
+| `site.json` footer | var (AB uyarısı + 2 sütun) |
+| `site.json` blog | var (`/en/guides/`) |
+| `site.json` metinler | var (**arayüz metinleri**) |
 
-**Taslakların kapsamı** (her dilde aynı iskelet): ana sayfa · metodoloji ·
-şirketler · 6 sigorta türü · 3 rehber. Yani çekirdek sitenin tamamı.
-
-**RU ve FA'da eksik olan tek taslak:** `sigorta-trafik`. Üç dilde birden
-eksikti; 2 Eylül'de yalnızca EN'i yazıldı (commit `801b966`). Zorunlu trafik
-sayfası diğer motor sayfalarının şablonu olduğu için bu eksik RU/FA'yı
-kilitliyor.
+**Taslakların kapsamı:** ana sayfa · metodoloji · şirketler · 6 sigorta türü ·
+3 rehber. Yani çekirdek sitenin tamamı. Zorunlu trafik taslağı 2 Eylül'de
+yazıldı (commit `801b966`).
 
 ---
 
@@ -103,7 +97,7 @@ Yazılmış tek EN sayfası — `content/en/sayfa/insurance/motor-third-party/` 
 - `_build/uret.py` > `kok_yonlendirme()`: dil değiştirici ve kök yönlendirme yalnızca `/{dil}/` üretilmiş dilleri listeler.
 
 Yani **hiçbir EN sayfası `/en/` olmadan tek başına yayımlanamaz** — kırık
-bağlantı doğar. Aynı kural RU ve FA için de geçerli.
+bağlantı doğar.
 
 > Bu, katmanın tamamını tek bir sayfanın arkasında bekleten bir bağımlılık.
 > Yayın sırası (§6) bu kapıdan başlar; başka hiçbir sıralama tartışması
@@ -111,11 +105,10 @@ bağlantı doğar. Aynı kural RU ve FA için de geçerli.
 
 ---
 
-## 5. Dil kapsamı kararı — üç dil, üç ayrı sınır
+## 5. Dil kapsamı kararı — EN tam katman
 
-Üç dili aynı genişlikte açmak, elde 34 taslak varken cazip görünüyor. Veri
-buna izin vermiyor. Sitenin kuralı burada da işler: **karşılaştıramadığımız
-yeri boş bırakırız.**
+Sitenin kuralı dil katmanında da işler: **karşılaştıramadığımız yeri boş
+bırakırız.** EN'de karşılaştırılacak arz var; bu yüzden katman tam açılır.
 
 ### EN — tam katman
 
@@ -123,48 +116,20 @@ yeri boş bırakırız.**
 geçişi hacminin ana kitlesi burada. Beş sütunun beşi de EN'de kurulabilir:
 `/en/companies/` gerçek bir karşılaştırma sunar, çünkü 17 şirketlik bir arz var.
 
-### RU — çekirdek + ilan edilmiş sınır
-
-2 şirket Rusça hizmet veriyor. Bu, rehber sayfalarını (P4) tamamen meşru
-kılar — sınır geçişi, öğrenci sağlığı, kaza sonrası ilk 48 saat okurun
-diliyle okunması gereken metinler ve şirketin dilinden bağımsız.
-
-Ama **P2 (hangi şirket) sütunu RU'da tam kurulamaz.** `/ru/kompanii/` sayfası
-39 şirketi listeler, okurun konuşabileceği ikisini gösterir ve bunu **açıkça
-yazar.** Gizlenecek bir şey değil — sayfanın bulgusu bu.
-
-> RU'da ilan edilecek boşluk: *"39 ruhsatlı şirketten yalnızca ikisinin Rusça
-> hizmet verdiğini doğrulayabildik. Kalan 37'sinde Rusça hizmet olup olmadığı
-> şirket sitelerinden ölçülemedi."*
-
-### FA — yalnızca P4, ve boşluk ilanıyla
-
-**Hiçbir şirket Farsça hizmet vermiyor.** FA katmanında bir şirket
-karşılaştırması yayımlamak, okuru hiçbirinin kendisiyle konuşamayacağı 39
-şirkete yönlendirmek olur. Bu, sitenin CTA kuralına da ters: eylem okumaktır,
-ama okunacak şey yanlış yere çıkıyorsa eylem de yanlıştır.
-
-FA'da açılan: ana sayfa · metodoloji · sınır geçişi · öğrenci sağlığı ·
-kaza sonrası ilk 48 saat · sağlık. Yani **zarar anı ve ikamet** — dil desteği
-gerektirmeyen, prosedürel bilgi.
-
-FA'da açılmayan: `/fa/companies/` ve branş karşılaştırma sayfaları — ta ki
-en az bir şirkette Farsça hizmet doğrulanana kadar.
-
-> FA'da ilan edilecek boşluk: *"KKTC'de ruhsatlı 39 sigorta şirketinin
-> hiçbirinde Farsça hizmet doğrulayamadık. Bu sayfalar bu yüzden şirket
-> karşılaştırması içermiyor."*
+Şirket profilleri yalnızca TR'de var. `/en/companies/` satırındaki ad TR
+profiline bağlanır ve bağlantı görünür biçimde TR olarak işaretlenir; bu boşluk
+sayfanın kendisinde de ilan edilir.
 
 ### Karar tablosu
 
-| | EN | RU | FA |
-|---|---|---|---|
-| P1 Ayrım | ✔ | ✔ | kısmi |
-| P2 Hangi şirket | ✔ | **sınırlı + ilan** | **açılmaz** |
-| P3 Bir şey oldu | ✔ | ✔ | ✔ |
-| P4 Burada yabancıyım | ✔ | ✔ | ✔ |
-| P5 Kimse söylemiyor | ✔ | kısmi | kısmi |
-| Hedef sayfa sayısı | 12 | 8 | 6 |
+| | EN |
+|---|---|
+| P1 Ayrım | ✔ |
+| P2 Hangi şirket | ✔ |
+| P3 Bir şey oldu | ✔ |
+| P4 Burada yabancıyım | ✔ |
+| P5 Kimse söylemiyor | ✔ |
+| Hedef sayfa sayısı | 12 |
 
 ---
 
@@ -211,33 +176,20 @@ Blok C bittiğinde §5'in EN satırı kapanır: **hedeflenen 12 sayfanın 12'si 
 EN ana sayfası da Blok A'da işaret edecek sayfası olmadığı için yazılmamış iki
 bölümü kazandı: sigorta türleri kartları ve rehber kartları.
 
-### Blok D — RU
-
-`copy/ru/sigorta-trafik.md` **önce yazılır** (§3'teki eksik). Sonra:
-`/ru/` → `/ru/strahovanie/osago/` → `/ru/metodologiya/` → `/ru/kompanii/`
-(sınır ilanıyla) → sınır geçişi → öğrenci sağlığı → kaza 48 saat.
-
-### Blok E — FA
-
-`copy/fa/sigorta-trafik.md` yazılır. Sonra: `/fa/` → metodoloji →
-zorunlu trafik → sınır geçişi → öğrenci sağlığı → sağlık → kaza 48 saat.
-**Şirket sayfası üretilmez** (§5).
-
 ---
 
-## 7. Sorgu sahipliği — TR kuyruğundan devredilenler
+## 7. Sorgu sahipliği — İngilizce hedef sorgular
 
 `03-marka-sorgulari.md` §10: bir sorgunun bir sahibi olur. `sorgu-sec`
 Kapı 4: hedef kitle TR konuşmuyorsa sorgu TR sayfayla karşılanamaz.
 
-Kuyrukta hedef sorgusu **başka bir dilde yazılmış** üç satır var. Bunlar
-TR yazıyla karşılanamaz:
+Kuyrukta hedef sorgusu **İngilizce yazılmış** iki satır var. Bunlar TR yazıyla
+karşılanamaz; sahipleri EN katmanıdır:
 
 | № | Başlık | Hedef sorgu | Karar |
 |---|---|---|---|
-| 41 | AB tüketici mekanizmaları KKTC'de neden işlemez | `north cyprus insurance complaint` | **EN'e devir.** Sahibi `/en/methodology/` + footer.en'deki AB uyarısı (A3). |
-| 60 | İngilizce hizmet veren şirketler nasıl bulunur | `north cyprus english speaking insurance` | **EN'e devir.** Sahibi `/en/companies/` (A4) — 17 şirketlik filtre zaten orada. |
-| 75 | Rusça hizmet: KKTC sigortasında gerçek durum | `северный кипр страхование` | **RU'ya devir.** Sahibi `/ru/kompanii/` (Blok D) — iki şirket bulgusu o sayfanın kendi içeriği. |
+| 41 | AB tüketici mekanizmaları KKTC'de neden işlemez | `north cyprus insurance complaint` | **EN yazı.** `/en/guides/` altında İngilizce yazılır; footer.en'deki AB uyarısı (A3) ona bağlanır. |
+| 60 | İngilizce hizmet veren şirketler nasıl bulunur | `north cyprus english speaking insurance` | **EN sayfa karşılar.** Sahibi `/en/companies/` (A4) — 17 şirketlik filtre zaten orada. |
 
 ### Kuyrukta nasıl işaretlenir
 
@@ -245,30 +197,13 @@ Bu satırlar **`✅` yapılamaz** — hiçbir şey yayımlanmadı, öyle işaret
 sayacı yalanlar. **`⬜` de kalamaz** — `yazi-uret` sırası gelince TR yazı üretir
 ve yanlış dilde bir sayfa doğar.
 
-Kuyruk kuralı 2'deki `⛔` semantiği ("henüz yazılamaz, atlanır") bu duruma
-uyar. Gerekçe metni değişir:
+Kuyruk kuralı 2'deki `⛔` semantiği ("atlanır") bu duruma uyar. Satırın başlık
+hücresi İngilizce yazılacağını ya da hangi EN sayfanın karşıladığını söyler:
 
 ```
-| 41 | ⛔ | AB tüketici mekanizmaları KKTC'de neden işlemez — **EN katmanına devredildi** (04-dil-katmani §7); TR yazıyla karşılanamaz | Yabancılar | north cyprus insurance complaint | `/en/methodology/` | KKTC şirketlerinin AB şema dışılığı resmî metinle doğrulanmadı |
-| 60 | ⛔ | İngilizce hizmet veren şirketler nasıl bulunur — **EN katmanına devredildi** (04-dil-katmani §7) | Yabancılar | north cyprus english speaking insurance | `/en/companies/` | Hizmetin gerçekten İngilizce verildiği test edilmedi |
-| 75 | ⛔ | Rusça hizmet: KKTC sigortasında gerçek durum — **RU katmanına devredildi** (04-dil-katmani §7) | Yabancılar | северный кипр страхование | `/ru/kompanii/` | İki şirket dışında Rusça hizmet doğrulanamadı |
+| 41 | ⛔ | AB tüketici mekanizmaları KKTC'de neden işlemez — **İngilizce yazılır** (`/en/guides/` altında, `04-dil-katmani.md` §7); hedef sorgu İngilizce, TR yazıyla karşılanmaz. TR yazı becerisi bu satırı atlar | Yabancılar | north cyprus insurance complaint | `/en/guides/` | KKTC şirketlerinin AB şema dışılığı resmî metinle doğrulanmadı |
+| 60 | ⛔ | İngilizce hizmet veren şirketler nasıl bulunur — **İngilizce sorgu**; `/en/companies/` karşılar (`04-dil-katmani.md` §7), TR yazı yazılmaz | Yabancılar | north cyprus english speaking insurance | `/en/companies/` | Hizmetin gerçekten İngilizce verildiği test edilmedi |
 ```
-
-Zorunlu bağlantı sütunu ilgili dil sayfası **üretildikten sonra** geçerlidir;
-o zamana kadar satır zaten `⛔` olduğu için beceri dokunmaz.
-
-### Devredilmeyen ama dil ikizi hak eden satırlar
-
-Hedef sorgusu TR ama okur kitlesi ağırlıklı yabancı olan satırlar. Bunlar
-TR'de kalır — Türkçe konuşan yabancı da gerçek bir okur (`00-brief.md`
-okur tablosu). EN karşılığı Blok C sonrasında ayrı satır olarak açılır:
-
-| № | Başlık | TR'de kalma gerekçesi |
-|---|---|---|
-| 29 | Kuzey'de alınan poliçe Güney'de neden geçmez | Çift yönlü kural TR okuru da ilgilendiriyor |
-| 45 | KKTC'de ev satın alan yabancı için konut sigortası | Alıcıların bir kısmı TR konuşuyor |
-| 63 | Emeklilikte KKTC'ye yerleşenler için sağlık | — |
-| 67 | Turist olarak araç kiralarken sigorta | Türkiye'den gelen turist TR okuyor |
 
 ---
 
@@ -279,19 +214,16 @@ dökülürken korunacaklar:
 
 1. **Dördüncü ayrım daha görünür yerde.** Güney Kıbrıs'ın Financial
    Ombudsman'ı ve AB tüketici mekanizmaları KKTC'de geçmez. `00-brief.md`
-   bunu EN/RU/FA'da TR'dekinden **daha görünür** yere koymayı şart koşuyor.
-   `footer.en` bu uyarıyı zaten taşıyor; `footer.ru` ve `footer.fa` yazılırken
-   aynı metin girer.
+   bunu EN'de TR'dekinden **daha görünür** yere koymayı şart koşuyor.
+   `footer.en` bu uyarıyı taşıyor.
 2. **Terim sözlüğü sabittir.** `00-brief.md` terim tablosu bağlayıcı.
    Kurum adları çevrilmez, ilk geçişte açıklanır: KKSRSB, KKSBM.
    Para birimi ondalık ayırıcısı EN'de **nokta**, TR'de virgül.
 3. **⛔ tablosu dile bakmaz.** Türkiye'nin limitleri, sigortasız araç cezası,
    hasarsızlık oranları — hiçbir dilde yazılmaz.
-4. **Her sayfa bir boşluk ifadesi taşır.** RU ve FA'da §5'teki dil boşluğu
-   ifadeleri bu şartı kendiliğinden karşılamaz; sayfanın kendi konusuna ait
-   bir boşluk ayrıca yazılır.
-5. **FA sağdan sola.** `site.json` → `diller.fa.dir = "rtl"` tanımlı;
-   şablonun bunu gerçekten uyguladığı ilk FA sayfasında kontrol edilir.
+4. **Her sayfa bir boşluk ifadesi taşır.** §5'teki profil boşluğu bu şartı
+   kendiliğinden karşılamaz; sayfanın kendi konusuna ait bir boşluk ayrıca
+   yazılır.
 
 ---
 
@@ -307,10 +239,6 @@ Yayın sırası bunlara takılır. Sırası gelince kapatılır, önceden hepsi 
 | **`/en/insurance/kasko/` mi `comprehensive/` mi** | ✅ karara bağlandı | **Rota kazanır.** `00-brief.md` terim tablosu: "Comprehensive motor insurance", "Kasko" parantez içinde korunur. |
 | `menu.en` | ✅ 6 madde (Blok C sonu) | TR menüsünün birebir karşılığı; yasal sayfalar EN'de olmadığı için footer'da yasal sütun **açılmadı** |
 | `metinler.en` | ✅ eklendi | Şablonların sabit arayüz metinleri. Yeni dil açılırken önce bu blok yazılır — §14 |
-| `menu.ru`, `menu.fa` | yok | Blok D / E başında |
-| `footer.ru`, `footer.fa` | yok | Blok D / E başında, AB uyarısı dahil |
-| `blog.ru`, `blog.fa` | yok | Rehber sayfası üretilecekse gerekir |
-| `rotalar` → RU/FA rehber adresleri | yok | Blok D / E |
 
 ---
 
@@ -323,13 +251,8 @@ Yayın sırası bunlara takılır. Sırası gelince kapatılır, önceden hepsi 
 | EN katmanı indekslendi mi | GSC Sayfalar → `/en/` öneki |
 | Doğru kitle mi geliyor | GSC → `/en/` sorgularında "north cyprus" / "trnc" payı |
 | Sınır geçişi talebi karşılanıyor mu | `/en/insurance/travel/` + `/en/guides/border-crossing-insurance/` tıklaması |
-| RU sınır ilanı işe yarıyor mu | `/ru/kompanii/` çıkış oranı — okur ikinci sayfaya geçiyor mu |
-| FA kararı doğru muydu | FA sayfalarında şirket sorgusu geliyorsa karar gözden geçirilir |
+| Şirket listesi işe yarıyor mu | `/en/companies/` çıkış oranı — okur TR profiline geçiyor mu |
 | LLM alıntısı | 10 sabit sorgunun EN karşılıkları aylık kontrol |
-
-**Kararı değiştirecek tek bulgu:** bir şirkette Farsça ya da üçüncü bir
-şirkette Rusça hizmet doğrulanırsa §5 tablosu güncellenir. Karar veriye
-bağlı, dolayısıyla veri değişince karar da değişir.
 
 ---
 
@@ -340,7 +263,7 @@ Bu turun kapsamı değil ama katman açılmadan önce kapanmalı — ikisi de
 
 1. ✅ **Kategori bütünlüğü.** `can-sigorta-lefkosa.md` → `Şirket seçimi`;
    öksüz `/tr/rehber/konu/sirket/` konu sayfası kalktı.
-2. ✅ **Kuyruk sayacı.** 7 `✅` · 77 `⬜` · 3 `⛔`; kapsam 87 satır olarak düzeltildi.
+2. ✅ **Kuyruk sayacı.** Kapsam 87 satır olarak düzeltildi.
 3. ✅ **Üretici onarımı** — planlanmamıştı, Blok A sırasında çıktı. Ayrıntı §12.
 
 Ayrıca not: `Ürün` kategorisinde hiç yayın yok, bu yüzden o sütunun konu
@@ -390,14 +313,12 @@ onarılan hatanın aynısı.
 
 ## 13. Bu belgenin yazmadıkları
 
-- **Metin yazmaz.** Taslaklar `copy/en|ru|fa/` altında hazır; bu belge
+- **Metin yazmaz.** Taslaklar `copy/en/` altında hazır; bu belge
   hangisinin ne zaman ve hangi sınırla sayfaya döküleceğine karar verir.
 - **Arama hacmi tahmini üretmez.** 238.320 rakamı ölçümdür ve kaynağı
   yazılıdır; onun dışında bu belgede hacim iddiası yok.
-- **TR kuyruğunun sırasını değiştirmez.** §7'deki üç satır dışında hiçbir
+- **TR kuyruğunun sırasını değiştirmez.** §7'deki iki satır dışında hiçbir
   satıra dokunulmaz; ilk `⬜` kuralı işlemeye devam eder.
-- **FA'yı kapatmaz.** FA katmanı açılır, yalnızca şirket karşılaştırması
-  içermez. Bu bir kapsam kararıdır, bir vazgeçiş değil.
 
 ---
 
@@ -446,6 +367,3 @@ Yani TR tarafı anlamca bir karakter değişmedi. Değişen tek şey, Blok A'nı
 dört EN sayfasının Türkçe `aria-label` ve atlama bağlantısından kurtulması —
 o zaten hatalıydı, sadece görünmüyordu.
 
-**RU ve FA'ya etkisi.** `metinler.ru` ve `metinler.fa` yazılmadan o dillerde
-sayfa üretilemez; üretici durur. Blok D ve E'nin ilk adımı artık menü ve footer
-değil, **bu blok.** FA'da ayrıca `dir="rtl"` kontrolü buraya eklenir (§8.5).

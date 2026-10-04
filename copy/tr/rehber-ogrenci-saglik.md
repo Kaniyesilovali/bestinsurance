@@ -3,7 +3,7 @@
 
 **Sayfa amacı:** Öğrencinin başvuru öncesi kafasındaki karışıklığı gidermek.
 **Okur:** Yeni gelen yabancı uyruklu öğrenci veya velisi. Muhtemelen Türkiye modelini biliyor.
-**Bu sayfa EN/RU/FA sürümlerinde TR'den daha çok trafik alacak.**
+**Bu sayfa EN sürümünde TR'den daha çok trafik alacak.**
 
 **Title:** KKTC'de öğrenci sağlık sigortası ve Sağlık Fonu primi | KKTC Sigorta Merkezi
 **Meta description:** Kuzey Kıbrıs'ta öğrenci ikamet izni için ödenen Sağlık Fonu primi özel sağlık sigortası değildir. Nasıl ödenir, ne kapsar, ödenmezse ne olur.
@@ -179,4 +179,4 @@ değişir; Muhaceret Dairesi'ne sorun.
 - **Prim tutarı ve %10 oranı doğrulanmalı** — sayfanın en zayıf noktası burası.
 - Muhaceret Dairesi'nin resmî sayfası araştırmada teknik nedenle açılamadı; açılıp
   adımlar birebir doğrulanmalı.
-- Bu sayfa EN/RU/FA'da öne çıkarılmalı — asıl okur orada.
+- Bu sayfa EN'de öne çıkarılmalı — asıl okur orada.

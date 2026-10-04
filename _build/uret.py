@@ -535,7 +535,7 @@ class Uretici:
     # -- ortak bağlam -------------------------------------------------------
 
     def hreflang(self, url, dil, ceviriler=None):
-        """Sayfanın dört dildeki adresi. Yalnızca tanımlı olanlar döner.
+        """Sayfanın her dildeki adresi. Yalnızca tanımlı olanlar döner.
 
         `rotalar` yalnızca TR adresiyle anahtarlanır. Karşılığı olan bir kümeye
         hangi dilden bakılırsa bakılsın **aynı** küme dönmelidir: hreflang
@@ -868,7 +868,7 @@ class Uretici:
             "ölü": "Şirketin alan adı Temmuz 2026'da yanıt vermedi.",
             "site_yok": "Şirketin bir web sitesi bulunamadı.",
         }
-        DIL_ADI = {"en": "İngilizce", "ru": "Rusça", "el": "Yunanca", "fa": "Farsça"}
+        DIL_ADI = {"en": "İngilizce", "ru": "Rusça", "el": "Yunanca"}
         ESLI = {"eurocity-sigorta": "eig-sigorta", "eig-sigorta": "eurocity-sigorta"}
 
         def vir(x):
@@ -1685,7 +1685,7 @@ class Uretici:
     # -- sitemap, robots, kök yönlendirme, 404 ------------------------------
 
     # Sitemap dört dosyaya ayrılır: her setin indekslenme oranı ayrı ölçülsün.
-    # Gerekçe: copy/02-programatik-seo.md §10 ve copy/03-marka-sorgulari.md §16.
+    # Gerekçe: copy/02-programatik-seo.md §9 ve copy/03-marka-sorgulari.md §16.
     SITEMAP_SETLERI = [
         ("karsilastirma", lambda u: u.startswith("/tr/sirketler/karsilastirma/")),
         ("sirketler", lambda u: u.startswith("/tr/sirketler/")),
@@ -1701,7 +1701,7 @@ class Uretici:
         adresleri "sayfalar" setine düşüp TR statik sayfalarıyla karışıyordu.
         Dil katmanının indekslenip indekslenmediği o karışımda ölçülemez —
         copy/04-dil-katmani.md §10'un ilk sorusu tam olarak budur. Dil setleri
-        kendiliğinden doğar: RU ve FA açıldığında ayrıca bir şey yazılmaz.
+        kendiliğinden doğar: yeni bir dil açıldığında ayrıca bir şey yazılmaz.
         """
         varsayilan = self.yapilandirma["varsayilan_dil"]
         dil_setleri = [

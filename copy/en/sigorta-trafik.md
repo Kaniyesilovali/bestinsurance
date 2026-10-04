@@ -153,7 +153,6 @@ Of the 29 licensed companies writing motor third-party business:
 |---|---|
 | Serve in English | 17 |
 | Serve in Russian | 2 |
-| Serve in Farsi | 0 |
 | Issue a policy fully online | 10 |
 
 Six companies do both — English and an end-to-end online policy: Aveon, Can, Creditwest,

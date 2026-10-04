@@ -26,18 +26,6 @@
       "kisa": "EN",
       "og_locale": "en_GB",
       "dir": "ltr"
-    },
-    "ru": {
-      "ad": "Русский",
-      "kisa": "RU",
-      "og_locale": "ru_RU",
-      "dir": "ltr"
-    },
-    "fa": {
-      "ad": "فارسی",
-      "kisa": "FA",
-      "og_locale": "fa_IR",
-      "dir": "rtl"
     }
   },
   "blog": {
@@ -383,52 +371,34 @@
       "eylem_aria": "Email KKTC Sigorta Merkezi: info@kktcsigortamerkezi.com"
     }
   },
-  "_rotalar_notu": "Bir sayfanın dört dildeki adresi. Anahtar = TR adresi. hreflang, dil değiştirici ve sitemap bunu kullanır. Yeni blog yazıları buraya YAZILMAZ — onların rotası yazı dosyasındaki 'ceviriler' alanından gelir.",
+  "_rotalar_notu": "Bir sayfanın her dildeki adresi. Anahtar = TR adresi. hreflang, dil değiştirici ve sitemap bunu kullanır. Yeni blog yazıları buraya YAZILMAZ — onların rotası yazı dosyasındaki 'ceviriler' alanından gelir.",
   "rotalar": {
     "/tr/": {
-      "en": "/en/",
-      "ru": "/ru/",
-      "fa": "/fa/"
+      "en": "/en/"
     },
     "/tr/sirketler/": {
-      "en": "/en/companies/",
-      "ru": "/ru/kompanii/",
-      "fa": "/fa/companies/"
+      "en": "/en/companies/"
     },
     "/tr/sigorta/trafik/": {
-      "en": "/en/insurance/motor-third-party/",
-      "ru": "/ru/strahovanie/osago/",
-      "fa": "/fa/insurance/motor-third-party/"
+      "en": "/en/insurance/motor-third-party/"
     },
     "/tr/sigorta/kasko/": {
-      "en": "/en/insurance/comprehensive/",
-      "ru": "/ru/strahovanie/kasko/",
-      "fa": "/fa/insurance/comprehensive/"
+      "en": "/en/insurance/comprehensive/"
     },
     "/tr/sigorta/saglik/": {
-      "en": "/en/insurance/health/",
-      "ru": "/ru/strahovanie/zdorove/",
-      "fa": "/fa/insurance/health/"
+      "en": "/en/insurance/health/"
     },
     "/tr/sigorta/konut/": {
-      "en": "/en/insurance/home/",
-      "ru": "/ru/strahovanie/zhilje/",
-      "fa": "/fa/insurance/home/"
+      "en": "/en/insurance/home/"
     },
     "/tr/sigorta/seyahat/": {
-      "en": "/en/insurance/travel/",
-      "ru": "/ru/strahovanie/puteshestvie/",
-      "fa": "/fa/insurance/travel/"
+      "en": "/en/insurance/travel/"
     },
     "/tr/sigorta/isyeri/": {
-      "en": "/en/insurance/business/",
-      "ru": "/ru/strahovanie/biznes/",
-      "fa": "/fa/insurance/business/"
+      "en": "/en/insurance/business/"
     },
     "/tr/rehber/": {
-      "en": "/en/guides/",
-      "ru": "/ru/rukovodstvo/",
-      "fa": "/fa/guides/"
+      "en": "/en/guides/"
     }
   }
 }

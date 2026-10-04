@@ -367,7 +367,7 @@ Veriden hesaplanan dağılım (15 şirket, 105 olası çift):
 | 0–2 | 12 | ✗ |
 
 **28 sayfa.** 105 değil. Alınmayan 77 çift bilinçli olarak alınmıyor —
-`02-programatik-seo.md` §6'daki branş × şehir matrisi kararıyla aynı gerekçe.
+`02-programatik-seo.md` §5'teki branş × şehir matrisi kararıyla aynı gerekçe.
 
 En güçlü dördü: `dağlı × kıbrıs iktisat` · `limasol × anadolu` · `can × bicare` ·
 `creditwest × commercial`.
@@ -557,7 +557,7 @@ reklam. Site poliçe satmıyor; ölçü trafik değil alıntılanabilirlik.
 
 ## 12. EN sürümü
 
-`02-programatik-seo.md` §9 Set A'nın EN açılımını zaten öneriyor. Marka sorgularında
+`02-programatik-seo.md` §8 Set A'nın EN açılımını zaten öneriyor. Marka sorgularında
 EN'in kendi gerekçesi var: **17 şirket İngilizce hizmet verdiğini beyan ediyor** ve
 expat kitlesi şirket adını İngilizce niteleyicilerle arıyor
 (`is x insurance reliable`, `x insurance cyprus reviews`).
@@ -568,9 +568,6 @@ expat kitlesi şirket adını İngilizce niteleyicilerle arıyor
 | İP-2 K1 sayfaları | ✓ 5 | ✓ 5 | Expat için de rakipsiz |
 | Set H karıştırılan adlar | ✓ 16 | ✓ 9 | Yalnız H-a ve H-b; banka karışıklığı yerel bir sorun |
 | Set I karşılaştırma | ✓ 28 | ✗ | Önce TR'de indekslenme ölçülür |
-
-RU ve FA bu planda **yok.** Şirket profilini Rusça ya da Farsça arayan bir kitle
-varsayımı doğrulanmadı — veri yok, sayfa yok.
 
 ---
 
@@ -664,6 +661,6 @@ gerçekliğin kabulü. Ticari değer 2. satırda değil, 4. ve 5. satırlarda.
 
 ### Ölçüm ayrımı
 
-`02-programatik-seo.md` §10'daki sitemap ayrımı korunur ve genişletilir:
+`02-programatik-seo.md` §9'daki sitemap ayrımı korunur ve genişletilir:
 `sitemap-sirketler.xml` (profiller + K1) · `sitemap-karsilastirma.xml` (Set H + I) ·
 `sitemap-rehber.xml` · `sitemap-sayfalar.xml`. Dört setin indekslenme oranı ayrı ölçülür.
