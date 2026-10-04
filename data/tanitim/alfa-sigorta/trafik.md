@@ -21,8 +21,8 @@ Online poliçe almanın genel olarak nasıl işlediğini ve ödeme öncesi neler
 
 Şirket ürün sayfasından iki belgeye bağlantı veriyor:
 
-- [Zorunlu Trafik Sigortası Genel Şartları](https://www.alfasigorta.net/sites/default/files/2020-11/MotorluAraclarZorunluSigortalarGenelSartlari.pdf) (PDF)
-- [Zorunlu Trafik Sigortası Maddi Hasar Bildirim Formu](https://www.alfasigorta.net/sites/default/files/2020-11/trafikhasarformu_0.pdf) (PDF)
+- Zorunlu Trafik Sigortası Genel Şartları (PDF)
+- Zorunlu Trafik Sigortası Maddi Hasar Bildirim Formu (PDF)
 
 Genel şartlar, poliçenin neyi kapsayıp neyi kapsamadığını belirleyen metindir. Hasar bildirim formu ise kaza sonrası doldurulan belgedir. İkisini de poliçeyi almadan önce bir kez okumanız işinizi kolaylaştırır.
 

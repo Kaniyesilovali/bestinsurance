@@ -21,12 +21,12 @@ Tablo yalnızca bu dört kalemi karşılaştırıyor. İki seçeneğin ortak tem
 
 ### Ürün sayfasındaki diğer sorular
 
-Şirket ürün sayfasında şu sorulara da yanıt veriyor: kasko ile trafik sigortası arasındaki fark, sigortalı vefat ettiğinde poliçenin durumu ve hasar tazminatının ödeme süreci. Sayfaya göre sigortalının vefatında poliçedeki hak ve borçlar kanuni mirasçılara geçiyor ve devir için veraset ilamı isteniyor. Ödeme sürecinin, istenen belgelerin eksiksiz verilmesine ve gerekiyorsa eksper raporunun teslimine bağlı olduğu anlatılıyor. Yanıtların tamamını [ürün sayfasında](https://www.alfasigorta.net/urunlerimiz/kasko-sigortasi) şirketin kendi ifadesiyle okuyabilirsiniz.
+Şirket ürün sayfasında şu sorulara da yanıt veriyor: kasko ile trafik sigortası arasındaki fark, sigortalı vefat ettiğinde poliçenin durumu ve hasar tazminatının ödeme süreci. Sayfaya göre sigortalının vefatında poliçedeki hak ve borçlar kanuni mirasçılara geçiyor ve devir için veraset ilamı isteniyor. Ödeme sürecinin, istenen belgelerin eksiksiz verilmesine ve gerekiyorsa eksper raporunun teslimine bağlı olduğu anlatılıyor. Yanıtların tamamını ürün sayfasında şirketin kendi ifadesiyle okuyabilirsiniz.
 
 ### Ürün sayfasındaki belgeler
 
-- [Kasko Sigortası Genel Şartları'nda Sınıflandırma](https://www.alfasigorta.net/sites/default/files/2020-11/KaskoSigortasiGenelSartlarSiniflandirma.pdf) (PDF)
-- [Kasko Sigortası Maddi Hasar Bildirim Formu](https://www.alfasigorta.net/sites/default/files/2020-11/kaskohasarformu.pdf) (PDF)
+- Kasko Sigortası Genel Şartları'nda Sınıflandırma (PDF)
+- Kasko Sigortası Maddi Hasar Bildirim Formu (PDF)
 
 ## KKTC'de kasko nasıl işler
 

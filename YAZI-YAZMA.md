@@ -139,4 +139,5 @@ yazarsanız `<head>` bölümüne taşınır. `BlogPosting` şeması zaten otomat
 - Doğrulayamadığınız rakamı yazmayın. Boş bırakın ve neden boş olduğunu söyleyin.
 - Türkiye mevzuatını KKTC'ye taşımayın; sitenin ayırt edici yanı bu.
 - İç bağlantı verin — ilgili sigorta türü ve şirket listesi sayfasına.
+- Hiçbir sigorta şirketine ya da acenteye (sitesi, ürün sayfası, PDF'i, sosyal medya hesabı) bağlantı verilmez; bu bağlantılar ileride ücretli olarak satılacak. Şirket adı ve alan adı düz metin yazılır. Dış bağlantı yalnızca kamu kurumlarına (KKSRSB, KKSBM, gov.ct.tr) verilir. `_build/uret.py` izin listesi dışındaki dış bağlantıları zaten söker ve yayın çıktısında uyarır.
 - `guncelleme` alanını gerçekten güncellediğinizde değiştirin; sitemap onu kullanır.

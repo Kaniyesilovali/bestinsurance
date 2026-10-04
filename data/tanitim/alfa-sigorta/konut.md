@@ -17,7 +17,7 @@ Sayfada bu tür kayıpların, poliçede yer alan teminatlar ve limitler doğrult
 
 ### Ürün sayfasındaki belge
 
-Şirket ürün sayfasından [Sigorta Hizmetleri (Düzenleme ve Denetim) Yasası](https://www.alfasigorta.net/sites/default/files/2020-11/sgrthizmetleriduzenlemedenetlemeyasasi_1.pdf) metnine bağlantı veriyor. Bu, KKTC'de sigortacılığın ana çerçeve yasasıdır (60/2010); konut poliçesine özgü bir şart metni değildir.
+Şirket ürün sayfasından Sigorta Hizmetleri (Düzenleme ve Denetim) Yasası metnine bağlantı veriyor. Bu, KKTC'de sigortacılığın ana çerçeve yasasıdır (60/2010); konut poliçesine özgü bir şart metni değildir.
 
 ## KKTC'de konut sigortası nasıl işler
 

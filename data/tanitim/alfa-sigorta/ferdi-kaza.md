@@ -8,7 +8,7 @@ Sayfada "kaza" tanımı da yapılıyor: ani ve dışarıdan gelen bir olay sonuc
 
 ### Teminatlar
 
-Şirketin ürün sayfasından bağlantı verdiği [teminat belgesine](https://www.alfasigorta.net/sites/default/files/2020-11/Ferdikazasigortateminatlari.pdf) göre poliçenin temelinde iki teminat var. Bunlara ek olarak iki teminattan biri ya da ikisi verilebiliyor:
+Şirketin ürün sayfasından bağlantı verdiği teminat belgesine göre poliçenin temelinde iki teminat var. Bunlara ek olarak iki teminattan biri ya da ikisi verilebiliyor:
 
 - **Vefat:** Kaza sigortalının ölümüne yol açarsa sigorta bedeli, poliçede gösterilen lehtarlara, yoksa kanuni hak sahiplerine ödeniyor.
 - **Daimi maluliyet:** Kaza kalıcı bir sakatlığa yol açarsa, tedavi bitip maluliyet kesin olarak tespit edildikten sonra poliçedeki oranlar dahilinde sigortalıya ödeme yapılıyor.

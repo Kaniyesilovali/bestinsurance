@@ -176,6 +176,8 @@ Kuyruğun "zorunlu bağlantı" sütunundaki her adres yazıda geçmeli. Ek olara
 bir dosyaya ya da üretilen bir sayfaya karşılık gelmiyorsa **bağlantı verilmez.**
 Kırık iç bağlantı bu sitede içerik hatasından ağır bir hatadır.
 
+**Şirket ve acenteye bağlantı yok.** Hiçbir sigorta şirketine ya da acenteye (sitesi, ürün sayfası, PDF'i, sosyal medya hesabı) bağlantı verilmez; bu bağlantılar ileride ücretli olarak satılacak. Şirket adı ve alan adı düz metin yazılır. Dış bağlantı yalnızca kamu kurumlarına (KKSRSB, KKSBM, gov.ct.tr) verilir. `_build/uret.py` izin listesi dışındaki dış bağlantıları zaten söker ve yayın çıktısında uyarır.
+
 Kontrol:
 
 ```bash

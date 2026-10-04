@@ -18,11 +18,11 @@ Sayfada poliçe kapsamının, ihtiyaç duyulan teminatlar seçilerek oluşturula
 - Şeker koması ve bilinç kaybına yol açan durumlar
 - Başlamış doğum
 
-Listenin tamamını [ürün sayfasında](https://www.alfasigorta.net/urunlerimiz/acil-saglik-sigortasi) okuyabilirsiniz. Bir durumun poliçeniz kapsamında acil sayılıp sayılmadığını belirleyen metin ise poliçenizin kendisi ve genel şartlarıdır.
+Listenin tamamını ürün sayfasında okuyabilirsiniz. Bir durumun poliçeniz kapsamında acil sayılıp sayılmadığını belirleyen metin ise poliçenizin kendisi ve genel şartlarıdır.
 
 ### Ürün sayfasındaki belge
 
-Şirket ürün sayfasından [Sigorta Hizmetleri (Düzenleme ve Denetim) Yasası](https://www.alfasigorta.net/sites/default/files/2020-11/sgrthizmetleriduzenlemedenetlemeyasasi_0.pdf) metnine bağlantı veriyor. Bu, KKTC'de sigortacılığın ana çerçeve yasasıdır (60/2010); ürüne özgü bir şart metni değildir.
+Şirket ürün sayfasından Sigorta Hizmetleri (Düzenleme ve Denetim) Yasası metnine bağlantı veriyor. Bu, KKTC'de sigortacılığın ana çerçeve yasasıdır (60/2010); ürüne özgü bir şart metni değildir.
 
 ## KKTC'de sağlık sigortası: önce iki ayrımı bilin
 

@@ -27,8 +27,7 @@
         {% for o in t.olgular %}
         <div class="py-4 border-b border-line/60">
           <dt class="u-eyebrow mb-1">{{ o.etiket }}</dt>
-          <dd class="text-[15px] leading-relaxed">{{ o.metin }}
-            <a href="{{ o.kaynak }}" rel="nofollow noopener" class="text-[13px] text-muted link-u ms-1">kaynak</a></dd>
+          <dd class="text-[15px] leading-relaxed">{{ o.metin }}</dd>
         </div>
         {% endfor %}
       </dl>
@@ -73,8 +72,7 @@
       <h2 class="u-display text-[1.5rem] sm:text-[1.875rem] leading-[1.15] mb-6">Sitesinde belirtilen hizmetler</h2>
       <ul class="border-t border-line">
         {% for h in t.hizmetler %}
-        <li class="text-[15px] leading-relaxed py-3 border-b border-line/60">{{ h.metin }}
-          <a href="{{ h.kaynak }}" rel="nofollow noopener" class="text-[13px] text-muted link-u ms-1">kaynak</a></li>
+        <li class="text-[15px] leading-relaxed py-3 border-b border-line/60">{{ h.metin }}</li>
         {% endfor %}
       </ul>
     </div>
@@ -92,11 +90,11 @@
         {% for k, v, href in t.iletisim %}
         <div>
           <dt class="u-eyebrow mb-1">{{ k }}</dt>
-          <dd class="break-words">{% if href %}<a href="{{ href }}" rel="nofollow noopener" class="link-u">{{ v }}</a>{% else %}{{ v }}{% endif %}</dd>
+          <dd class="break-words">{% if href and not href.startswith("http") %}<a href="{{ href }}" class="link-u">{{ v }}</a>{% else %}{{ v }}{% endif %}</dd>
         </div>
         {% endfor %}
       </dl>
-      <p class="text-[13px] text-muted mt-5">Kaynak: <a href="{{ t.iletisim_kaynak }}" rel="nofollow noopener" class="link-u">{{ t.iletisim_kaynak_kisa }}</a></p>
+      <p class="text-[13px] text-muted mt-5">Kaynak: {{ t.iletisim_kaynak_kisa }}</p>
     </div>
   </div>
 </section>
@@ -144,7 +142,7 @@
       <p>
         <strong class="text-text">Bu sayfa nasıl hazırlandı.</strong>
         {% if t.web %}Bilgiler yalnızca {{ t.ad_ilgi }} kendi web sitesinden
-        (<a href="{{ t.web }}" rel="nofollow noopener" class="link-u">{{ t.web_kisa }}</a>) ve
+        ({{ t.web_kisa }}) ve
         Birlik üye listesinden alındı.{% else %}Şirketin bir web sitesi bulunmadığı için
         bilgiler yalnızca Birlik üye listesinden alındı.{% endif %} Sayfa yorum, değerlendirme ya da karşılaştırma
         içermez; mali bilgi yer almaz. Şirketin sitesi düzenli aralıklarla yeniden

@@ -373,8 +373,30 @@ def govde_isle(kaynak, markdown_mi, cevirici):
     return "\n\n".join(cikti)
 
 
+# Sitede hiçbir sigorta şirketine ya da acenteye bağlantı verilmez: bu
+# bağlantılar ileride ücretli (backlink) olarak satılacak. Yalnızca aşağıdaki
+# kamu kurumlarına ve sitenin kendisine dış bağlantı kalır; geri kalan her
+# <a href="http..."> etiketi, içindeki yazı korunarak düz metne çevrilir.
+# Yeni bir kurum eklenecekse buraya eklenir.
+IZINLI_DIS_ALANLAR = ("kktcsigortamerkezi.com", "kksrsb.org", "kksbm.org", "gov.ct.tr")
+DIS_BAGLANTI = re.compile(r'<a\s[^>]*href="https?://([^"/:]+)[^"]*"[^>]*>(.*?)</a>', re.S | re.I)
+SOKULEN_BAGLANTILAR = []
+
+
+def dis_baglantilari_sok(metin, hedef):
+    def degistir(m):
+        alan = m.group(1).lower()
+        if any(alan == a or alan.endswith("." + a) for a in IZINLI_DIS_ALANLAR):
+            return m.group(0)
+        SOKULEN_BAGLANTILAR.append((alan, hedef))
+        return m.group(2)
+    return DIS_BAGLANTI.sub(degistir, metin)
+
+
 def yaz(hedef: Path, metin):
     hedef.parent.mkdir(parents=True, exist_ok=True)
+    if hedef.suffix == ".html":
+        metin = dis_baglantilari_sok(metin, hedef)
     hedef.write_text(metin, encoding="utf-8")
 
 
@@ -1980,6 +2002,11 @@ class Uretici:
                 print(f"    {len(kirik)} kırık bağlantı:")
                 for adres, kaynak in kirik:
                     print(f"      {adres}   <- {kaynak}")
+            if SOKULEN_BAGLANTILAR:
+                alanlar = sorted({a for a, _ in SOKULEN_BAGLANTILAR})
+                print(f"\n  Şirket/acente bağlantısı düz metne çevrildi: {len(SOKULEN_BAGLANTILAR)} adet "
+                      f"({len(alanlar)} alan adı) — kaynağından da kaldırın:")
+                print("    " + ", ".join(alanlar[:15]) + (" …" if len(alanlar) > 15 else ""))
             return 1 if kirik else 0
         return 0
 
