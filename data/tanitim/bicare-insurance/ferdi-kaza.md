@@ -34,6 +34,8 @@ Bu bölümdeki bilgiler BiCare Insurance'a özgü değildir.
 
 Kaza sonrasında hastane kayıtlarını, raporları ve varsa polis tutanağını saklamak, tazminat başvurusunda istenecek belgelerin temelini oluşturur.
 
+Birden fazla ferdi kaza poliçeniz varsa, vefat ve maluliyet teminatları genellikle her poliçeden ayrı ödenir.
+
 ## Poliçe almadan önce sorulacaklar
 
 1. Gündelik tazminat ve tedavi masrafları poliçeye eklendi mi?
