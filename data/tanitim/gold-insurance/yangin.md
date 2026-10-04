@@ -44,6 +44,8 @@ Genel çerçeve [KKTC konut sigortası](/tr/sigorta/konut/) ve [KKTC işyeri sig
 
 Hasar anında zararı fotoğraflamak, büyümesini önleyecek makul önlemleri almak ve şirkete vakit kaybetmeden bildirimde bulunmak eksper sürecini hızlandırır. Eşya bedeli için faturaları ve fotoğrafları evin ya da işyerinin dışında saklamak da kanıt toplamayı kolaylaştırır.
 
+Poliçeyi yenilerken yapılan tadilatları ve yeni alınan değerli eşyaları da bildirmek gerekir.
+
 ## Poliçeyi imzalamadan önce sorulacaklar
 
 1. Hangi ek teminatlar poliçeye yazılacak?
